@@ -6,12 +6,12 @@
 // IRISA - UBS  / IUT Informatique Vannes
 //========================================================================
 
-#ifndef __CPIECE_ABSTRACT_H__  // routine qui sert à éviter l'inclusion multiple
-#define __CPIECE_ABSTRACT_H__  //
+#ifndef __CPIECE_ABSTRACT_H__
+#define __CPIECE_ABSTRACT_H__
 
 #include "Common.h"
 
-typedef vector<int> TPieceRow;  // 1 = case coloriée, 0 = case vide
+typedef vector<int>       TPieceRow;  // 1 = case coloriée, 0 = case vide
 typedef vector<TPieceRow> TPieceTable;
 
 //-------------------------------------------------------------------------------------------------------------------
@@ -36,7 +36,8 @@ class CPieceAbstract {
     void TurnLeft();
 
     /**
-      \brief rotation de la piece en fonction de l'état courant (à redéfinir dans les classes filles)
+      \brief rotation de la piece en fonction de l'état courant (à redéfinir
+      dans les classes filles)
       */
     virtual void Turn() = 0;
 
@@ -95,8 +96,8 @@ class CPieceAbstract {
     const CVector3& GetColor();
 
     /**
-      affiche le contenu de la matrice TPieceTable à l'écran
-      */
+     * affiche le contenu de la matrice TPieceTable à l'écran
+     */
     friend ostream& operator<< ( ostream& flux, const CPieceAbstract& p );
   protected:
     /**
@@ -109,7 +110,8 @@ class CPieceAbstract {
       */
     CPieceAbstract ( unsigned int dim, int iX, int iY, const CVector3& color );
 
-    // Eventuellement à cause de l'héritage => appel par la sous-classe du constructeur vide
+    // Eventuellement à cause de l'héritage => appel par la sous-classe du
+    // constructeur vide
     CPieceAbstract() {;}
 
     //----------------------------------------------------------

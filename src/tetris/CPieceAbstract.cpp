@@ -14,15 +14,17 @@
 //
 //-------------------------------------------------------------------------------------------------------------------
 
-CPieceAbstract::CPieceAbstract ( unsigned int dim, int iX, int iY, const CVector3& color ) {
-
-  m_dim = dim;
+CPieceAbstract::CPieceAbstract ( unsigned int dim, int iX, int iY,
+    const CVector3& color )
+{
   TPieceRow rows = TPieceRow ( dim, 0 );
-  m_table = TPieceTable ( dim, rows );
-  m_state = S_Top;
-  m_colIndex = iX;
-  m_rowIndex = iY;
-  m_color = color;
+
+  this->m_dim      = dim;
+  this->m_table    = TPieceTable ( dim, rows );
+  this->m_state    = S_Top;
+  this->m_colIndex = iX;
+  this->m_rowIndex = iY;
+  this->m_color    = color;
 }
 
 CPieceAbstract::~CPieceAbstract()
@@ -30,10 +32,26 @@ CPieceAbstract::~CPieceAbstract()
 }
 
 void CPieceAbstract::TurnRight() {
+  unsigned int tabSize = this->m_table.size();
+  TPieceTable  curTab  = this->m_table;
+
+  for (unsigned int row = 0; row < tabSize; row++) {
+    for (unsigned int col = 0; col < tabSize; col++)
+      this->m_table[row][col] = curTab[tabSize-col-1][row];
+  }
+
   this->m_state = static_cast<State>((this->m_state + 1) % 4);
 }
 
 void CPieceAbstract::TurnLeft() {
+  unsigned int tabSize = this->m_table.size();
+  TPieceTable  curTab  = this->m_table;
+
+  for (unsigned int row = 0; row < tabSize; row++) {
+    for (unsigned int col = 0; col < tabSize; col++)
+      this->m_table[row][col] = curTab[col][tabSize-row-1];
+  }
+
   this->m_state = static_cast<State>((this->m_state - 1) % 4);
 }
 
@@ -74,11 +92,14 @@ const CVector3& CPieceAbstract::GetColor() {
 }
 
 ostream& operator<<(ostream& flux, const CPieceAbstract& p) {
-  for (unsigned int row = 0; row < p.m_table.size(); row++) {
-    for (unsigned int col = 0; col < p.m_table[row].size(); col++)
+  unsigned int tabSize = p.m_table.size();
+
+  for (unsigned int row = 0; row < tabSize; row++) {
+    for (unsigned int col = 0; col < tabSize; col++)
       flux << " " << p.m_table[row][col];
     flux << endl;
   }
+
   return flux;
 }
 
