@@ -41,6 +41,7 @@ CRandomizer.o: $(SRC)/tetris/CRandomizer.cpp
 
 CTGameTable.o: $(SRC)/tetris/CTGameTable.cpp
 	$(GPP) -o $(BIN)/CTGameTable.o -c $(SRC)/tetris/CTGameTable.cpp 
+
 		
 #------------------------------------------------------------
 # compilation application 3D + Matrix44
@@ -60,7 +61,17 @@ CMatrix44.o: $(SRC)/math/CMatrix44.cpp
 main.o: $(SRC)/main.cpp
 	$(GPP) -o $(BIN)/main.o -c $(SRC)/main.cpp 
 
+#------------------------------------------------------------
+# Compilation et exécution des tests
+#------------------------------------------------------------
+test: testCPieceAbstract
+	$(BIN)/CPieceAbstract.test
 
+test.o:
+	$(GPP) -o $(BIN)/test.o -c $(SRC)/tetris/test.cpp
+
+testCPieceAbstract: CPieceAbstract.o test.o
+	$(GPP) -o $(BIN)/CPieceAbstract.test $(BIN)/test.o $(BIN)/CPieceAbstract.o $(SRC)/tetris/testCPieceAbstract.cpp
 
 #------------------------------------------------------------
 # autres commandes

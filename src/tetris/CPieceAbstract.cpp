@@ -32,24 +32,22 @@ CPieceAbstract::~CPieceAbstract()
 }
 
 void CPieceAbstract::TurnRight() {
-  unsigned int tabSize = this->m_table.size();
   TPieceTable  curTab  = this->m_table;
 
-  for (unsigned int row = 0; row < tabSize; row++) {
-    for (unsigned int col = 0; col < tabSize; col++)
-      this->m_table[row][col] = curTab[tabSize-col-1][row];
+  for (unsigned int row = 0; row < this->m_dim; row++) {
+    for (unsigned int col = 0; col < this->m_dim; col++)
+      this->m_table[row][col] = curTab[this->m_dim-col-1][row];
   }
 
   this->m_state = static_cast<State>((this->m_state + 1) % 4);
 }
 
 void CPieceAbstract::TurnLeft() {
-  unsigned int tabSize = this->m_table.size();
   TPieceTable  curTab  = this->m_table;
 
-  for (unsigned int row = 0; row < tabSize; row++) {
-    for (unsigned int col = 0; col < tabSize; col++)
-      this->m_table[row][col] = curTab[col][tabSize-row-1];
+  for (unsigned int row = 0; row < this->m_dim; row++) {
+    for (unsigned int col = 0; col < this->m_dim; col++)
+      this->m_table[row][col] = curTab[col][this->m_dim-row-1];
   }
 
   this->m_state = static_cast<State>((this->m_state - 1) % 4);

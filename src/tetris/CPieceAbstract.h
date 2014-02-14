@@ -99,6 +99,7 @@ class CPieceAbstract {
      * affiche le contenu de la matrice TPieceTable à l'écran
      */
     friend ostream& operator<< ( ostream& flux, const CPieceAbstract& p );
+
   protected:
     /**
       \brief constructeur de piece
