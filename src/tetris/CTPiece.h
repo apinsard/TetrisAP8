@@ -8,6 +8,7 @@ class CTPiece : public CPieceAbstract {
 
   public:
     CTPiece(int iX, int iY, const CVector3& color);
+    void Turn();
 };
 
 #endif

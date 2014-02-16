@@ -36,10 +36,10 @@ void CPieceAbstract::TurnRight() {
 
   for (unsigned int row = 0; row < this->m_dim; row++) {
     for (unsigned int col = 0; col < this->m_dim; col++)
-      this->m_table[row][col] = curTab[this->m_dim-col-1][row];
+      this->m_table[row][col] = curTab[col][this->m_dim-row-1];
   }
 
-  this->m_state = static_cast<State>((this->m_state + 1) % 4);
+  this->m_state = static_cast<State>((this->m_state - 1) % 4);
 }
 
 void CPieceAbstract::TurnLeft() {
@@ -47,10 +47,10 @@ void CPieceAbstract::TurnLeft() {
 
   for (unsigned int row = 0; row < this->m_dim; row++) {
     for (unsigned int col = 0; col < this->m_dim; col++)
-      this->m_table[row][col] = curTab[col][this->m_dim-row-1];
+      this->m_table[row][col] = curTab[this->m_dim-col-1][row];
   }
 
-  this->m_state = static_cast<State>((this->m_state - 1) % 4);
+  this->m_state = static_cast<State>((this->m_state + 1) % 4);
 }
 
 TPieceTable& CPieceAbstract::GetTable() {
@@ -92,7 +92,7 @@ const CVector3& CPieceAbstract::GetColor() {
 ostream& operator<<(ostream& flux, const CPieceAbstract& p) {
   unsigned int tabSize = p.m_table.size();
 
-  for (unsigned int row = 0; row < tabSize; row++) {
+  for (int row = tabSize-1; row >= 0; row--) {
     for (unsigned int col = 0; col < tabSize; col++)
       flux << " " << p.m_table[row][col];
     flux << endl;

@@ -21,57 +21,45 @@ all: tetris
 #------------------------------------------------------------
 # execution projet tetris
 #------------------------------------------------------------
-tetris: CProjetTetris.o CTetrisGame.o CPieceAbstract.o CRandomizer.o CGuiGlut.o CApplication.o CRenderer.o CMatrix44.o CTGameTable.o main.o
-	$(GPP) -o $(BIN)/tetris.bin $(BIN)/CProjetTetris.o $(BIN)/CTetrisGame.o $(BIN)/CPieceAbstract.o $(BIN)/CRandomizer.o $(BIN)/CGuiGlut.o $(BIN)/CApplication.o $(BIN)/CRenderer.o $(BIN)/CMatrix44.o $(BIN)/CTGameTable.o $(LIBS) $(BIN)/main.o
+tetris: $(BIN)/CProjetTetris.o $(BIN)/CTetrisGame.o $(BIN)/CPieceAbstract.o $(BIN)/CTPiece.o $(BIN)/CRandomizer.o $(BIN)/CGuiGlut.o $(BIN)/CApplication.o $(BIN)/CRenderer.o $(BIN)/CMatrix44.o $(BIN)/CTGameTable.o $(BIN)/main.o
+	$(GPP) -o $(BIN)/tetris.bin $^ $(LIBS)
 
 #------------------------------------------------------------
 # compilation projet tetris
 #------------------------------------------------------------
-CProjetTetris.o: $(SRC)/tetris/CProjetTetris.cpp
-	$(GPP) -o $(BIN)/CProjetTetris.o -c $(SRC)/tetris/CProjetTetris.cpp 
 
-CTetrisGame.o: $(SRC)/tetris/CTetrisGame.cpp
-	$(GPP) -o $(BIN)/CTetrisGame.o -c $(SRC)/tetris/CTetrisGame.cpp 
+$(BIN)/%.o: $(SRC)/tetris/%.cpp
+	$(GPP) -o $@ -c $<
 
-CPieceAbstract.o: $(SRC)/tetris/CPieceAbstract.cpp
-	$(GPP) -o $(BIN)/CPieceAbstract.o -c $(SRC)/tetris/CPieceAbstract.cpp
-
-CRandomizer.o: $(SRC)/tetris/CRandomizer.cpp
-	$(GPP) -o $(BIN)/CRandomizer.o -c $(SRC)/tetris/CRandomizer.cpp 
-
-CTGameTable.o: $(SRC)/tetris/CTGameTable.cpp
-	$(GPP) -o $(BIN)/CTGameTable.o -c $(SRC)/tetris/CTGameTable.cpp 
-
-		
 #------------------------------------------------------------
 # compilation application 3D + Matrix44
 #------------------------------------------------------------
-CGuiGlut.o:  $(SRC)/appliBase/CGuiGlut.cpp
-	$(GPP) -o $(BIN)/CGuiGlut.o -c $(SRC)/appliBase/CGuiGlut.cpp  
 
-CApplication.o: $(SRC)/appliBase/CApplication.cpp
-	$(GPP) -o $(BIN)/CApplication.o -c $(SRC)/appliBase/CApplication.cpp 
+$(BIN)/%.o: $(SRC)/appliBase/%.cpp
+	$(GPP) -o $@ -c $<
 
-CRenderer.o: $(SRC)/appliBase/CRenderer.cpp 
-	$(GPP) -o $(BIN)/CRenderer.o -c $(SRC)/appliBase/CRenderer.cpp 
+$(BIN)/%.o: $(SRC)/math/%.cpp
+	$(GPP) -o $@ -c $<
 
-CMatrix44.o: $(SRC)/math/CMatrix44.cpp
-	$(GPP) -o $(BIN)/CMatrix44.o -c $(SRC)/math/CMatrix44.cpp 
-
-main.o: $(SRC)/main.cpp
-	$(GPP) -o $(BIN)/main.o -c $(SRC)/main.cpp 
+$(BIN)/main.o: $(SRC)/main.cpp
+	$(GPP) -o $@ -c $<
 
 #------------------------------------------------------------
-# Compilation et exécution des tests
+# compilation des tests
 #------------------------------------------------------------
-test: testCPieceAbstract
-	$(BIN)/CPieceAbstract.test
 
-test.o:
-	$(GPP) -o $(BIN)/test.o -c $(SRC)/tetris/test.cpp
+$(BIN)/%.o: $(SRC)/tetris/testPiece/%.cpp
+	$(GPP) -o $@ -c $<
 
-testCPieceAbstract: CPieceAbstract.o test.o
-	$(GPP) -o $(BIN)/CPieceAbstract.test $(BIN)/test.o $(BIN)/CPieceAbstract.o $(SRC)/tetris/testCPieceAbstract.cpp
+#------------------------------------------------------------
+# execution des tests
+#------------------------------------------------------------
+
+testCTPiece: $(BIN)/testCTPiece.o $(BIN)/CTPiece.o $(BIN)/CPieceAbstract.o $(BIN)/test.o
+	$(GPP) -o $(BIN)/$@.bin $^
+	$(BIN)/$@.bin
+	
+test: testCTPiece
 
 #------------------------------------------------------------
 # autres commandes
@@ -80,7 +68,7 @@ clean:
 	rm -rf $(BIN)/*.o
 
 mrproper: clean
-	rm -rf $(BIN)/tetris.bin
+	rm -rf $(BIN)/*.bin
 
 cleansrctetris:
 	rm -f $(SRC)/tetris/*.*~
