@@ -1,10 +1,10 @@
-#include "CTPiece.h"
+#include "CLPiece.h"
 #include "test.h"
 
 int main(int argc, char* argv[]) {
 
-  cout << "Création d'une pièce en T :" << endl;
-  CTPiece piece = CTPiece(0, 0, CVector3(0, 0, 0));
+  cout << "Création d'une pièce en L :" << endl;
+  CLPiece piece = CLPiece(0, 0, CVector3(0, 0, 0));
   cout << piece << endl;
 
   for (int i=0; i<4; i++) {

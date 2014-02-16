@@ -58,8 +58,16 @@ $(BIN)/%.o: $(SRC)/tetris/testPiece/%.cpp
 testCTPiece: $(BIN)/testCTPiece.o $(BIN)/CTPiece.o $(BIN)/CPieceAbstract.o $(BIN)/test.o
 	$(GPP) -o $(BIN)/$@.bin $^
 	$(BIN)/$@.bin
-	
-test: testCTPiece
+
+testCLPiece: $(BIN)/testCLPiece.o $(BIN)/CLPiece.o $(BIN)/CPieceAbstract.o $(BIN)/test.o
+	$(GPP) -o $(BIN)/$@.bin $^
+	$(BIN)/$@.bin
+
+testCZPiece: $(BIN)/testCZPiece.o $(BIN)/CZPiece.o $(BIN)/CPieceAbstract.o $(BIN)/test.o
+	$(GPP) -o $(BIN)/$@.bin $^
+	$(BIN)/$@.bin
+
+test: testCTPiece testCLPiece testCZPiece
 
 #------------------------------------------------------------
 # autres commandes

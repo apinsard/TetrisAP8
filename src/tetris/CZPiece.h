@@ -1,4 +1,3 @@
-
 #ifndef __CZPIECE_H__
 #define __CZPIECE_H__
 
@@ -8,6 +7,7 @@ class CZPiece : public CPieceAbstract {
 
   public:
     CZPiece(int iX, int iY, const CVector3& color);
+    void Turn();
 };
 
 #endif
