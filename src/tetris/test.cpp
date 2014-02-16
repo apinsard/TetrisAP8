@@ -38,9 +38,7 @@ string formatResult(int depth, string label, bool success) {
   return line;
 }
 
-/**
- *
- */
 void printTestResult(string label, bool success) {
   cout << formatResult(2, label, success) << endl;
 }
+

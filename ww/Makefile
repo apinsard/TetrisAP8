@@ -45,15 +45,15 @@ $(BIN)/main.o: $(SRC)/main.cpp
 	$(GPP) -o $@ -c $<
 
 #------------------------------------------------------------
-# compilation des tests
+# compilation et exécution des tests
 #------------------------------------------------------------
+
+test: testPiece
+
+testPiece: testCTPiece testCLPiece testCZPiece
 
 $(BIN)/%.o: $(SRC)/tetris/testPiece/%.cpp
 	$(GPP) -o $@ -c $<
-
-#------------------------------------------------------------
-# execution des tests
-#------------------------------------------------------------
 
 testCTPiece: $(BIN)/testCTPiece.o $(BIN)/CTPiece.o $(BIN)/CPieceAbstract.o $(BIN)/test.o
 	$(GPP) -o $(BIN)/$@.bin $^
@@ -67,8 +67,6 @@ testCZPiece: $(BIN)/testCZPiece.o $(BIN)/CZPiece.o $(BIN)/CPieceAbstract.o $(BIN
 	$(GPP) -o $(BIN)/$@.bin $^
 	$(BIN)/$@.bin
 
-test: testCTPiece testCLPiece testCZPiece
-
 #------------------------------------------------------------
 # autres commandes
 #------------------------------------------------------------
@@ -80,6 +78,4 @@ mrproper: clean
 
 cleansrctetris:
 	rm -f $(SRC)/tetris/*.*~
-
-	
 
