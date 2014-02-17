@@ -1,7 +1,7 @@
 
-#include "CLPiece.h"
+#include "CL1Piece.h"
 
-CLPiece::CLPiece(int iX, int iY, const CVector3& color) :
+CL1Piece::CL1Piece(int iX, int iY, const CVector3& color) :
     CPieceAbstract(3, iX, iY, color)
 {
 
@@ -16,6 +16,6 @@ CLPiece::CLPiece(int iX, int iY, const CVector3& color) :
 
 }
 
-void CLPiece::Turn() {
+void CL1Piece::Turn() {
   this->TurnRight();
 }

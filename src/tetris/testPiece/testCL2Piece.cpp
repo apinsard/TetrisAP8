@@ -1,32 +1,32 @@
-#include "CLPiece.h"
+#include "CL2Piece.h"
 #include "test.h"
 
 int main(int argc, char* argv[]) {
 
   string pieceT = " 0 1 0\n";
          pieceT+= " 0 1 0\n";
-         pieceT+= " 0 1 1\n";
+         pieceT+= " 1 1 0\n";
 
-  string pieceR = " 0 0 0\n";
+  string pieceR = " 1 0 0\n";
          pieceR+= " 1 1 1\n";
-         pieceR+= " 1 0 0\n";
+         pieceR+= " 0 0 0\n";
 
-  string pieceB = " 1 1 0\n";
+  string pieceB = " 0 1 1\n";
          pieceB+= " 0 1 0\n";
          pieceB+= " 0 1 0\n";
 
-  string pieceL = " 0 0 1\n";
+  string pieceL = " 0 0 0\n";
          pieceL+= " 1 1 1\n";
-         pieceL+= " 0 0 0\n";
+         pieceL+= " 0 0 1\n";
 
   ostringstream pout;
   bool success;
 
-  cout << fillLine("Test de la classe CLPiece") << endl;
+  cout << fillLine("Test de la classe CL2Piece") << endl;
 
-  cout << fillLine("  CLPiece(int, int, const CVector3&)") << endl;
+  cout << fillLine("  CL2Piece(int, int, const CVector3&)") << endl;
 
-  CLPiece piece = CLPiece(0, 0, CVector3(0, 0, 0));
+  CL2Piece piece = CL2Piece(0, 0, CVector3(0, 0, 0));
   pout << piece;
   success = (pieceT == pout.str());
 

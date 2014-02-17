@@ -21,7 +21,7 @@ all: tetris
 #------------------------------------------------------------
 # execution projet tetris
 #------------------------------------------------------------
-tetris: $(BIN)/CProjetTetris.o $(BIN)/CTetrisGame.o $(BIN)/CPieceAbstract.o $(BIN)/CTPiece.o $(BIN)/CRandomizer.o $(BIN)/CGuiGlut.o $(BIN)/CApplication.o $(BIN)/CRenderer.o $(BIN)/CMatrix44.o $(BIN)/CTGameTable.o $(BIN)/main.o
+tetris: $(BIN)/CProjetTetris.o $(BIN)/CTetrisGame.o $(BIN)/CPieceAbstract.o $(BIN)/CTPiece.o $(BIN)/COPiece.o $(BIN)/CIPiece.o $(BIN)/CZ1Piece.o $(BIN)/CZ2Piece.o $(BIN)/CL1Piece.o $(BIN)/CL2Piece.o $(BIN)/CRandomizer.o $(BIN)/CGuiGlut.o $(BIN)/CApplication.o $(BIN)/CRenderer.o $(BIN)/CMatrix44.o $(BIN)/CTGameTable.o $(BIN)/main.o
 	$(GPP) -o $(BIN)/tetris.bin $^ $(LIBS)
 
 #------------------------------------------------------------
@@ -50,7 +50,7 @@ $(BIN)/main.o: $(SRC)/main.cpp
 
 test: testPiece
 
-testPiece: testCTPiece testCLPiece testCZPiece
+testPiece: testCTPiece testCOPiece testCIPiece testCZ1Piece testCZ2Piece testCL1Piece testCL2Piece
 
 $(BIN)/%.o: $(SRC)/tetris/testPiece/%.cpp
 	$(GPP) -o $@ -c $<
@@ -59,11 +59,27 @@ testCTPiece: $(BIN)/testCTPiece.o $(BIN)/CTPiece.o $(BIN)/CPieceAbstract.o $(BIN
 	$(GPP) -o $(BIN)/$@.bin $^
 	$(BIN)/$@.bin
 
-testCLPiece: $(BIN)/testCLPiece.o $(BIN)/CLPiece.o $(BIN)/CPieceAbstract.o $(BIN)/test.o
+testCOPiece: $(BIN)/testCOPiece.o $(BIN)/COPiece.o $(BIN)/CPieceAbstract.o $(BIN)/test.o
 	$(GPP) -o $(BIN)/$@.bin $^
 	$(BIN)/$@.bin
 
-testCZPiece: $(BIN)/testCZPiece.o $(BIN)/CZPiece.o $(BIN)/CPieceAbstract.o $(BIN)/test.o
+testCIPiece: $(BIN)/testCIPiece.o $(BIN)/CIPiece.o $(BIN)/CPieceAbstract.o $(BIN)/test.o
+	$(GPP) -o $(BIN)/$@.bin $^
+	$(BIN)/$@.bin
+
+testCZ1Piece: $(BIN)/testCZ1Piece.o $(BIN)/CZ1Piece.o $(BIN)/CPieceAbstract.o $(BIN)/test.o
+	$(GPP) -o $(BIN)/$@.bin $^
+	$(BIN)/$@.bin
+
+testCZ2Piece: $(BIN)/testCZ2Piece.o $(BIN)/CZ2Piece.o $(BIN)/CPieceAbstract.o $(BIN)/test.o
+	$(GPP) -o $(BIN)/$@.bin $^
+	$(BIN)/$@.bin
+
+testCL1Piece: $(BIN)/testCL1Piece.o $(BIN)/CL1Piece.o $(BIN)/CPieceAbstract.o $(BIN)/test.o
+	$(GPP) -o $(BIN)/$@.bin $^
+	$(BIN)/$@.bin
+
+testCL2Piece: $(BIN)/testCL2Piece.o $(BIN)/CL2Piece.o $(BIN)/CPieceAbstract.o $(BIN)/test.o
 	$(GPP) -o $(BIN)/$@.bin $^
 	$(BIN)/$@.bin
 
