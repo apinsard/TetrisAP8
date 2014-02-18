@@ -52,7 +52,7 @@ test: testPiece
 
 testPiece: testCTPiece testCOPiece testCIPiece testCZ1Piece testCZ2Piece testCL1Piece testCL2Piece
 
-$(BIN)/%.o: $(SRC)/tetris/testPiece/%.cpp
+$(BIN)/%.o: $(SRC)/test/%.cpp
 	$(GPP) -o $@ -c $<
 
 testCTPiece: $(BIN)/testCTPiece.o $(BIN)/CTPiece.o $(BIN)/CPieceAbstract.o $(BIN)/test.o
