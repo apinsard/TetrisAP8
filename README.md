@@ -18,7 +18,7 @@ Nous avons fait le choix de ne pas implémenter la méthode
 `CPieceAbstract::Turn()` dans les classes filles et d'effectuer la rotation de
 la pièce directement dans les méthodes `CPieceAbstract::TurnRight()` et
 `CPieceAbstract::TurnLeft()`. En effet, pour la rotation nous ne nous basons pas
-sur un disjonction de cas en fonction de l'état de la pièce, mais sur un calcul
+sur une disjonction de cas en fonction de l'état de la pièce, mais sur un calcul
 dépendant de la matrice actuelle de la pièce et du sens de rotation définit.
 Pour faire tourner une pièce vers la droite, il suffit, pour chaque élément de
 la matrice, de modifier son ordonnée en son abscisse actuelle, et son abscisse

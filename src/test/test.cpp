@@ -42,3 +42,84 @@ void printTestResult(string label, bool success) {
   cout << formatResult(2, label, success) << endl;
 }
 
+void testPieceCli(string pieceT, string pieceR, string pieceB, string pieceL,
+    CPieceAbstract piece)
+{
+  ostringstream pout;
+  bool success;
+
+  pout << piece;
+  success = (pieceT == pout.str());
+
+  printTestResult("(0, 0, CVector3(0, 0, 0))", success);
+
+  cout << fillLine("  TurnRight()") << endl;
+
+  pout.str("");
+  pout.clear();
+  piece.TurnRight();
+  pout << piece;
+  success = (pieceR == pout.str());
+
+  printTestResult("from state Top", success);
+
+  pout.str("");
+  pout.clear();
+  piece.TurnRight();
+  pout << piece;
+  success = (pieceB == pout.str());
+
+  printTestResult("from state Right", success);
+
+  pout.str("");
+  pout.clear();
+  piece.TurnRight();
+  pout << piece;
+  success = (pieceL == pout.str());
+
+  printTestResult("from state Bottom", success);
+
+  pout.str("");
+  pout.clear();
+  piece.TurnRight();
+  pout << piece;
+  success = (pieceT == pout.str());
+
+  printTestResult("from state Left", success);
+
+  cout << fillLine("  TurnLeft()") << endl;
+
+  pout.str("");
+  pout.clear();
+  piece.TurnLeft();
+  pout << piece;
+  success = (pieceL == pout.str());
+
+  printTestResult("from state Top", success);
+
+  pout.str("");
+  pout.clear();
+  piece.TurnLeft();
+  pout << piece;
+  success = (pieceB == pout.str());
+
+  printTestResult("from state Left", success);
+
+  pout.str("");
+  pout.clear();
+  piece.TurnLeft();
+  pout << piece;
+  success = (pieceR == pout.str());
+
+  printTestResult("from state Bottom", success);
+
+  pout.str("");
+  pout.clear();
+  piece.TurnLeft();
+  pout << piece;
+  success = (pieceT == pout.str());
+
+  printTestResult("from state Right", success);
+}
+
+

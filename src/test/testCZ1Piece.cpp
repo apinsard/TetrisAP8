@@ -26,86 +26,12 @@ int main(int argc, char* argv[]) {
          pieceL+= " 1 1 0\n";
          pieceL+= " 1 0 0\n";
 
-  ostringstream pout;
-  bool success;
-
   cout << fillLine("Test de la classe CZ1Piece") << endl;
-
   cout << fillLine("  CZ1Piece(int, int, const CVector3&)") << endl;
 
   CZ1Piece piece = CZ1Piece(0, 0, CVector3(0, 0, 0));
-  pout << piece;
-  success = (pieceT == pout.str());
 
-  printTestResult("(0, 0, CVector3(0, 0, 0))", success);
-
-  cout << fillLine("  TurnRight()") << endl;
-
-  pout.str("");
-  pout.clear();
-  piece.TurnRight();
-  pout << piece;
-  success = (pieceR == pout.str());
-
-  printTestResult("from state Top", success);
-
-  pout.str("");
-  pout.clear();
-  piece.TurnRight();
-  pout << piece;
-  success = (pieceB == pout.str());
-
-  printTestResult("from state Right", success);
-
-  pout.str("");
-  pout.clear();
-  piece.TurnRight();
-  pout << piece;
-  success = (pieceL == pout.str());
-
-  printTestResult("from state Bottom", success);
-
-  pout.str("");
-  pout.clear();
-  piece.TurnRight();
-  pout << piece;
-  success = (pieceT == pout.str());
-
-  printTestResult("from state Left", success);
-
-  cout << fillLine("  TurnLeft()") << endl;
-
-  pout.str("");
-  pout.clear();
-  piece.TurnLeft();
-  pout << piece;
-  success = (pieceL == pout.str());
-
-  printTestResult("from state Top", success);
-
-  pout.str("");
-  pout.clear();
-  piece.TurnLeft();
-  pout << piece;
-  success = (pieceB == pout.str());
-
-  printTestResult("from state Left", success);
-
-  pout.str("");
-  pout.clear();
-  piece.TurnLeft();
-  pout << piece;
-  success = (pieceR == pout.str());
-
-  printTestResult("from state Bottom", success);
-
-  pout.str("");
-  pout.clear();
-  piece.TurnLeft();
-  pout << piece;
-  success = (pieceT == pout.str());
-
-  printTestResult("from state Right", success);
+  testPieceCli(pieceT, pieceR, pieceB, pieceL, piece);
 
   if (gui) {
     CProjetTetrisPiece* tetris = new CProjetTetrisPiece();

@@ -9,6 +9,7 @@
 
 #include <iostream>
 #include <string>
+#include "CPieceAbstract.h"
 
 using namespace std;
 
@@ -32,5 +33,7 @@ string formatResult(int depth, string label, bool success);
  */
 void printTestResult(string label, bool success);
 
+void testPieceCli(string pieceT, string pieceR, string pieceB, string pieceL,
+    CPieceAbstract piece);
 
 #endif
