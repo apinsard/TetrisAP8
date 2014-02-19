@@ -66,10 +66,12 @@ test%Piece: $(BIN)/test%Piece.o $(BIN)/%Piece.o $(BIN)/test%Piece/CProjetTetrisP
 # autres commandes
 #------------------------------------------------------------
 clean:
-	rm -rf $(BIN)/*.o
+	rm -f $(BIN)/*.o
+	rm -f $(BIN)/*/*.o
 
 mrproper: clean
-	rm -rf $(BIN)/*.bin
+	rm -f $(BIN)/*.bin
+	rm -f $(BIN)/*/*.bin
 
 cleansrctetris:
 	rm -f $(SRC)/tetris/*.*~

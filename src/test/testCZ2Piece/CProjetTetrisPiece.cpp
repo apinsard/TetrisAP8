@@ -17,7 +17,7 @@ CProjetTetrisPiece::CProjetTetrisPiece() {
   this->m_game = CTetrisGame(
       POSX_BOARD, POSY_BOARD, WIDTH_BOARD, HEIGHT_BOARD, DIM_CASE);
 
-  this->m_pPiece = new CTPiece(0, 0, CVector3(255.0f/255.0f,153.0f/255.0f,153.0f/255.0f));
+  this->m_pPiece = new CZ2Piece(0, 0, CVector3(255.0f/255.0f,153.0f/255.0f,153.0f/255.0f));
 
 }
 
@@ -113,7 +113,6 @@ void CProjetTetrisPiece::DrawTetris() {
 
 
   // affichage de la pîece en cours
-
   int   x   = this->m_game.GetXPos() + this->m_pPiece->GetColIndex();
   int   y   = this->m_game.GetYPos() + this->m_pPiece->GetRowIndex();
   float dim = this->m_game.GetCaseDim();

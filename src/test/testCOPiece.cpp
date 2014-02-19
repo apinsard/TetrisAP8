@@ -1,7 +1,14 @@
 #include "COPiece.h"
+#include "testCOPiece/CProjetTetrisPiece.h"
+#include "CGuiGlut.h"
 #include "test.h"
 
 int main(int argc, char* argv[]) {
+  bool gui = true;
+  for (int i=0; i<argc; i++) {
+    if (string(argv[i]) == "--no-gui")
+      gui = false;
+  }
 
   string pieceT = " 1 1\n";
          pieceT+= " 1 1\n";
@@ -95,6 +102,13 @@ int main(int argc, char* argv[]) {
   success = (pieceT == pout.str());
 
   printTestResult("from state Right", success);
+
+  if (gui) {
+    CProjetTetrisPiece* tetris = new CProjetTetrisPiece();
+    CGuiGlut::InitializeGraphics(argc, argv, tetris);
+    CGuiGlut::RunGraphics();
+    delete tetris;
+  }
 
   return 0;
 }

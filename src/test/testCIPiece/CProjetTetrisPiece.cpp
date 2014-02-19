@@ -17,7 +17,7 @@ CProjetTetrisPiece::CProjetTetrisPiece() {
   this->m_game = CTetrisGame(
       POSX_BOARD, POSY_BOARD, WIDTH_BOARD, HEIGHT_BOARD, DIM_CASE);
 
-  this->m_pPiece = new CTPiece(0, 0, CVector3(255.0f/255.0f,153.0f/255.0f,153.0f/255.0f));
+  this->m_pPiece = new CIPiece(0, 0, CVector3(255.0f/255.0f,153.0f/255.0f,153.0f/255.0f));
 
 }
 
