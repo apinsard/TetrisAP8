@@ -4,6 +4,10 @@ Sujet de TP de C++ de deuxième année Informatique à l'IUT de Vannes.
 
 Par Julien Cadic et Antoine Pinsard
 
+Si vous lisez ce README dans un éditeur de texte, nous vous conseillez plutôt de
+le consulter à cette adresse : https://github.com/apinsard/TetrisAP8 pour plus
+de clarté.
+
 ## Avancement
 
 Les pièces T, I, O, Z1, Z2, L1 et L2 ont été implémentées et testées.
