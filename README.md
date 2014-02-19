@@ -1,6 +1,7 @@
 # Tetris - Projet AP8
 
 Sujet de TP de C++ de deuxième année Informatique à l'IUT de Vannes.
+
 Par Julien Cadic et Antoine Pinsard
 
 ## Avancement
@@ -22,6 +23,12 @@ Voici la liste des tests disponibles :
 Lance le test de la pièce "?". Par exemple, pour tester la pièce T, lancer la
 commande `make testCTPiece`. Pour tester la pièce L2, lancer la commande `make
 testCL2Piece`.
+
+Cette commande compile le fichier de test et le lance avec l'argument `--no-gui`
+pour n'afficher que le résultat des tests en mode console. Pour tester
+l'affichage en mode GUI, il suffit ensuite de lancer le fichier de test sans
+arguments (`../bin/testC?Piece.bin` en remplaçant évidemment le ? par la pièce à
+tester).
 
 ### `make testPiece`
 Lance tous les tests des pièces (testCTPiece, testCIPiece, testCOPiece, ...)
