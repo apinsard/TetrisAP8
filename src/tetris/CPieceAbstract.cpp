@@ -85,6 +85,10 @@ void CPieceAbstract::SetRowIndex(int newRowIndex) {
   this->m_rowIndex = newRowIndex;
 }
 
+unsigned int CPieceAbstract::GetDim() {
+  return this->m_dim;
+}
+
 const CVector3& CPieceAbstract::GetColor() {
   return this->m_color;
 }

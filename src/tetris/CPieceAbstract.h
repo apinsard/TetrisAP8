@@ -89,6 +89,8 @@ class CPieceAbstract {
       */
     void SetRowIndex ( int newRowIndex );
 
+    unsigned int GetDim();
+
     /**
       \brief renvoit la couleur de la piece
       \return vecteur 3 sur la couleur rgb de la piece
