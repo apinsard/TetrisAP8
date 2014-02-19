@@ -47,10 +47,10 @@ void CProjetTetris::OnRender() {
   //-------------------------------------------------------
   // gestion du temps
   //-------------------------------------------------------
-  if ( m_step> 50 ) 
+  if ( m_step> 50 )
   {
-    m_step = 0; 
-    m_posYPiece--; // à chaque pas de temps, on fait évoluer la coordonnée en y de la pièce 
+    m_step = 0;
+    m_posYPiece--; // à chaque pas de temps, on fait évoluer la coordonnée en y de la pièce
   }
 
   //-------------------------------------------------------
@@ -92,24 +92,23 @@ void CProjetTetris::OnRender() {
 void CProjetTetris::OnRelease() {
 
   // Rien a liberer
-}	
+}
 
 //----------------------------------------------------------
 //
 //----------------------------------------------------------
-void CProjetTetris::DrawInfo() 
+void CProjetTetris::DrawInfo()
 {
   std::string title = Helpers::ToString("Mon Tetris");
   std::string scoreStr = "Score : " + Helpers::ToString(200000);
 
   m_renderer.DrawText(title, 300, 500, CRenderer::TS_18, CVector3(1.0f, 1.0f, 1.0f));
-  m_renderer.DrawText(scoreStr, 500, 160, CRenderer::TS_12, CVector3(0.0f, 1.0f, 0.0f));	
+  m_renderer.DrawText(scoreStr, 500, 160, CRenderer::TS_12, CVector3(0.0f, 1.0f, 0.0f));
 }
 
 /****************************************/
 
 void CProjetTetris::DrawTetris() {
-
   vector<TGameRow> gameTable = m_game.GetBoard().GetGameTable();
   float	tetrisWidth = gameTable[0].size()* m_game.GetCaseDim();
   float	tetrisHeight = gameTable.size() * m_game.GetCaseDim();
