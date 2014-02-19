@@ -39,7 +39,7 @@ class CPieceAbstract {
       \brief rotation de la piece en fonction de l'état courant (à redéfinir
       dans les classes filles)
       */
-    virtual void Turn() = 0;
+    // virtual void Turn() = 0; ///< Not used
 
     /**
       \brief renvoit la matrice d'état courante
