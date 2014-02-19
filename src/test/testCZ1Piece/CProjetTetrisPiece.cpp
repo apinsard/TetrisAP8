@@ -6,34 +6,34 @@
 // IRISA - UBS  / IUT Informatique Vannes
 //========================================================================
 
-#include "CProjetTetris.h"
+#include "CProjetTetrisPiece.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Projet Tetris
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-CProjetTetris::CProjetTetris() {
+CProjetTetrisPiece::CProjetTetrisPiece() {
 
-  m_game = CTetrisGame(POSX_BOARD, POSY_BOARD, WIDTH_BOARD, HEIGHT_BOARD, DIM_CASE);
-  m_step = 0;
+  this->m_game = CTetrisGame(
+      POSX_BOARD, POSY_BOARD, WIDTH_BOARD, HEIGHT_BOARD, DIM_CASE);
 
-  // attributs rajoutés pour montrer un exemple de pièce qui descend
-  m_posYPiece = HEIGHT_BOARD;
-  m_posXPiece = WIDTH_BOARD/2;
+  this->m_pPiece = new CZ1Piece(0, 0, CVector3(255.0f/255.0f,153.0f/255.0f,153.0f/255.0f));
+
 }
 
 /****************************************/
 
-CProjetTetris::~CProjetTetris() {
+CProjetTetrisPiece::~CProjetTetrisPiece() {
 
-  cout << "Destruction objet CProjetTetris" << endl;
+  cout << "Destruction objet CProjetTetrisPiece" << endl;
+  delete[] this->m_pPiece;
 }
 
 //----------------------------------------------------------
 // initilisation de notre appli (rien car dessiner un cube à l'écran ne nécéssite aucune initialisation)
 // !! Méthode appelée dans la méthode Init de la classe CApplication
 //----------------------------------------------------------
-bool CProjetTetris::OnInit() {
+bool CProjetTetrisPiece::OnInit() {
 
   return true;
 }
@@ -42,16 +42,7 @@ bool CProjetTetris::OnInit() {
 // notre scène à dessiner
 // !! Méthode appelée dans la méthode Run de la classe CApplication
 //----------------------------------------------------------
-void CProjetTetris::OnRender() {
-
-  //-------------------------------------------------------
-  // gestion du temps
-  //-------------------------------------------------------
-  if ( m_step> 50 )
-  {
-    m_step = 0;
-    m_posYPiece--; // à chaque pas de temps, on fait évoluer la coordonnée en y de la pièce
-  }
+void CProjetTetrisPiece::OnRender() {
 
   //-------------------------------------------------------
   // commande utilisateur
@@ -75,40 +66,36 @@ void CProjetTetris::OnRender() {
   // affichage du tetris
   DrawTetris();
 
-  // ICI AFFICHAGE DE MON CARRE DE TEST
-  DrawFillRect ( m_game.GetXPos() + m_posXPiece*m_game.GetCaseDim(), m_game.GetYPos()+ m_posYPiece*m_game.GetCaseDim(), m_game.GetCaseDim(), m_game.GetCaseDim(), CVector3(255.0f/255.0f,153.0f/255.0f,153.0f/255.0f) );
-
   // fin du rendu 2d
   m_renderer.End2DRender();
 
-  // maj du compteur de passage dans cette fonction
-  m_step ++;
 }
 
 //----------------------------------------------------------
 // destructuion de notre appli (rien car dessiner un cube à l'écran ne nécéssite aucune destruction)
 // !! Méthode appelée dans la méthode Release de la classe CApplication
 //----------------------------------------------------------
-void CProjetTetris::OnRelease() {
+void CProjetTetrisPiece::OnRelease() {
 
   // Rien a liberer
-}
+}	
 
 //----------------------------------------------------------
 //
 //----------------------------------------------------------
-void CProjetTetris::DrawInfo()
+void CProjetTetrisPiece::DrawInfo() 
 {
   std::string title = Helpers::ToString("Mon Tetris");
   std::string scoreStr = "Score : " + Helpers::ToString(200000);
 
   m_renderer.DrawText(title, 300, 500, CRenderer::TS_18, CVector3(1.0f, 1.0f, 1.0f));
-  m_renderer.DrawText(scoreStr, 500, 160, CRenderer::TS_12, CVector3(0.0f, 1.0f, 0.0f));
+  m_renderer.DrawText(scoreStr, 500, 160, CRenderer::TS_12, CVector3(0.0f, 1.0f, 0.0f));	
 }
 
 /****************************************/
 
-void CProjetTetris::DrawTetris() {
+void CProjetTetrisPiece::DrawTetris() {
+
   vector<TGameRow> gameTable = m_game.GetBoard().GetGameTable();
   float	tetrisWidth = gameTable[0].size()* m_game.GetCaseDim();
   float	tetrisHeight = gameTable.size() * m_game.GetCaseDim();
@@ -126,13 +113,24 @@ void CProjetTetris::DrawTetris() {
 
 
   // affichage de la pîece en cours
+  int   x   = this->m_game.GetXPos() + this->m_pPiece->GetColIndex();
+  int   y   = this->m_game.GetYPos() + this->m_pPiece->GetRowIndex();
+  float dim = this->m_game.GetCaseDim();
+  const CVector3 color = this->m_pPiece->GetColor();
+
+  for (unsigned int i=0; i<this->m_pPiece->GetDim(); i++) {
+    for (unsigned int j=0; j<this->m_pPiece->GetDim(); j++) {
+      if (this->m_pPiece->GetTable()[i][j] == 1)
+        DrawFillRect(x+(j*dim), y+(i*dim), dim, dim, color);
+    }
+  }
 
 }
 
 //----------------------------------------------------------
 // quelques outils pour afficher des carré et des rectangles
 //----------------------------------------------------------
-void CProjetTetris::DrawFillRect(int x, int y, float w, float h, const CVector3 &color) {
+void CProjetTetrisPiece::DrawFillRect(int x, int y, float w, float h, const CVector3 &color) {
 
   glColor3f(color.x,color.y,color.z);
   glBegin(GL_QUADS);
@@ -145,7 +143,7 @@ void CProjetTetris::DrawFillRect(int x, int y, float w, float h, const CVector3 
 
 /****************************************/
 
-void CProjetTetris::DrawRect(int x, int y, float w, float h, const CVector3 &color, float lineWidth)  {
+void CProjetTetrisPiece::DrawRect(int x, int y, float w, float h, const CVector3 &color, float lineWidth)  {
 
   glColor3f(color.x,color.y,color.z);
   glLineWidth(lineWidth);
@@ -163,7 +161,7 @@ void CProjetTetris::DrawRect(int x, int y, float w, float h, const CVector3 &col
 
 /****************************************/
 
-void CProjetTetris::DrawFillSquare(int x, int y, float dim, const CVector3 &color)  {
+void CProjetTetrisPiece::DrawFillSquare(int x, int y, float dim, const CVector3 &color)  {
 
   glColor3f(color.x,color.y,color.z);
   glBegin(GL_QUADS);

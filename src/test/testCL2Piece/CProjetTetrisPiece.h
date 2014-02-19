@@ -8,8 +8,8 @@
 
 
 
-#ifndef __PROJET_TETRIS_H__	// routine qui sert à pas inclure 2 fois le même fichier
-#define __PROJET_TETRIS_H__	//
+#ifndef __PROJET_TETRIS_H__  // routine qui sert à pas inclure 2 fois le même fichier
+#define __PROJET_TETRIS_H__  //
 
 //-----------------------------------------------------------------
 // Notre programme va avoir besoin 
@@ -18,8 +18,9 @@
 //
 // On inclu les fichiers .h qui contiennent les déclarations des fonctions
 //-----------------------------------------------------------------
-#include "CApplication.h"		// ensemble des fonctions contenant notre environnement de développement
-#include "CTetrisGame.h"			// le jeu tétris (pas d'affichage dedans  !!!!!)
+#include "CApplication.h"    // ensemble des fonctions contenant notre environnement de développement
+#include "CTetrisGame.h"      // le jeu tétris (pas d'affichage dedans  !!!!!)
+#include "CL2Piece.h"
 
 ////////////////////////////////////////////////////////////////////////
 /// classe Demo: elle est notre classe cliente, elle possède l'ensemble des propriétés de la classe CApplication
@@ -28,18 +29,18 @@
 // Projet Tetris
 //
 ////////////////////////////////////////////////////////////////////////
-class CProjetTetris: public CApplication {
+class CProjetTetrisPiece: public CApplication {
 
   public:
     /** 
-      \brief constructeur par défaut de CProjetTetris
+      \brief constructeur par défaut de CProjetTetrisPiece
       */
-    CProjetTetris();
+    CProjetTetrisPiece();
 
     /**
-      \brief destructeur de CProjetTetris
+      \brief destructeur de CProjetTetrisPiece
       */
-    ~CProjetTetris();
+    ~CProjetTetrisPiece();
 
     /**
       \brief initilisation de notre appli (rien car dessiner un cube à l'écran ne nécéssite aucune initialisation)
@@ -65,13 +66,8 @@ class CProjetTetris: public CApplication {
     //----------------------------------------------------------
     // Données membres
     //----------------------------------------------------------
-    unsigned int		m_step;			///< compteur de passage dans la méthode onRender() permet de gérer implicitement le temps
-    CTetrisGame		m_game;			///< le jeu !!
-
-    // Attributs temporaires
-    // Il s'agit d'un test i.e. un carré qui descend pour vous montrer comment évolue le jeu au cours du temps
-    int				m_posYPiece;			
-    int				m_posXPiece;
+    CTetrisGame m_game;      ///< le jeu !!
+    CL2Piece*    m_pPiece;
 
     /** 
       \brief affichage de la grille de jeu
@@ -82,9 +78,6 @@ class CProjetTetris: public CApplication {
       \brief affichage des informations du jeu
       */
     void DrawInfo();
-
-
-
 
     //----------------------------------------------------------
     // quelques outils pour afficher des carré et des rectangles

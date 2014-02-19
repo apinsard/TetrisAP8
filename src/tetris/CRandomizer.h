@@ -38,7 +38,7 @@ private:
 	/* Remplir la liste */
 	void Fill();
 
-    	unsigned int	m_max		;
+  unsigned int	m_max				;
 	unsigned int	m_sizeList	;
 
 };

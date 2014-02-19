@@ -52,45 +52,26 @@ test: testPiece
 
 testPiece: testCTPiece testCOPiece testCIPiece testCZ1Piece testCZ2Piece testCL1Piece testCL2Piece
 
-$(BIN)/%.o: $(SRC)/tetris/testPiece/%.cpp
+$(BIN)/%.o: $(SRC)/test/%.cpp
 	$(GPP) -o $@ -c $<
 
-testCTPiece: $(BIN)/testCTPiece.o $(BIN)/CTPiece.o $(BIN)/CPieceAbstract.o $(BIN)/test.o
-	$(GPP) -o $(BIN)/$@.bin $^
-	$(BIN)/$@.bin
+$(BIN)/test%Piece/CProjetTetris.o: $(SRC)/test/test%Piece/CProjetTetrisPiece.cpp
+	$(GPP) -o $@ -c $<
 
-testCOPiece: $(BIN)/testCOPiece.o $(BIN)/COPiece.o $(BIN)/CPieceAbstract.o $(BIN)/test.o
-	$(GPP) -o $(BIN)/$@.bin $^
-	$(BIN)/$@.bin
-
-testCIPiece: $(BIN)/testCIPiece.o $(BIN)/CIPiece.o $(BIN)/CPieceAbstract.o $(BIN)/test.o
-	$(GPP) -o $(BIN)/$@.bin $^
-	$(BIN)/$@.bin
-
-testCZ1Piece: $(BIN)/testCZ1Piece.o $(BIN)/CZ1Piece.o $(BIN)/CPieceAbstract.o $(BIN)/test.o
-	$(GPP) -o $(BIN)/$@.bin $^
-	$(BIN)/$@.bin
-
-testCZ2Piece: $(BIN)/testCZ2Piece.o $(BIN)/CZ2Piece.o $(BIN)/CPieceAbstract.o $(BIN)/test.o
-	$(GPP) -o $(BIN)/$@.bin $^
-	$(BIN)/$@.bin
-
-testCL1Piece: $(BIN)/testCL1Piece.o $(BIN)/CL1Piece.o $(BIN)/CPieceAbstract.o $(BIN)/test.o
-	$(GPP) -o $(BIN)/$@.bin $^
-	$(BIN)/$@.bin
-
-testCL2Piece: $(BIN)/testCL2Piece.o $(BIN)/CL2Piece.o $(BIN)/CPieceAbstract.o $(BIN)/test.o
-	$(GPP) -o $(BIN)/$@.bin $^
-	$(BIN)/$@.bin
+test%Piece: $(BIN)/test%Piece.o $(BIN)/%Piece.o $(BIN)/test%Piece/CProjetTetrisPiece.o $(BIN)/CTetrisGame.o $(BIN)/CPieceAbstract.o $(BIN)/CRenderer.o $(BIN)/CTGameTable.o $(BIN)/CMatrix44.o $(BIN)/CGuiGlut.o $(BIN)/CApplication.o $(BIN)/test.o
+	$(GPP) -o $(BIN)/$@.bin $^ $(LIBS)
+	$(BIN)/$@.bin --no-gui
 
 #------------------------------------------------------------
 # autres commandes
 #------------------------------------------------------------
 clean:
-	rm -rf $(BIN)/*.o
+	rm -f $(BIN)/*.o
+	rm -f $(BIN)/*/*.o
 
 mrproper: clean
-	rm -rf $(BIN)/*.bin
+	rm -f $(BIN)/*.bin
+	rm -f $(BIN)/*/*.bin
 
 cleansrctetris:
 	rm -f $(SRC)/tetris/*.*~
