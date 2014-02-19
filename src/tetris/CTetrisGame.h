@@ -139,12 +139,13 @@ private:
 	//----------------------------------------------------------
 	// Données membres
 	//----------------------------------------------------------
-	CTGameTable		m_board				;	///< le tableau du jeu avec les cases occupées et leur couleur
+	CTGameTable		  m_board				;	///< le tableau du jeu avec les cases occupées et leur couleur
+	CPieceAbstract  m_curPiece    ; ///< piece courante
 
-	unsigned int	m_xPos				;	///< position en abcisse du jeu dans la fenètre openGL
-	unsigned int	m_yPos				;	///< position en ordonnée du jeu dans la fenètre openGL
-	unsigned int	m_score				;	///< score courant
-	float			    m_caseDim			;	///< taille d'une case du tetris
+	unsigned int	  m_xPos				;	///< position en abcisse du jeu dans la fenètre openGL
+	unsigned int	  m_yPos				;	///< position en ordonnée du jeu dans la fenètre openGL
+	unsigned int	  m_score				;	///< score courant
+	float			      m_caseDim			;	///< taille d'une case du tetris
 };
 
 #endif

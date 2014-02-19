@@ -13,7 +13,7 @@ CRandomizer::CRandomizer(void)
 	:m_max(7), m_sizeList(6)
 {
 	unsigned int i;
-	for(i = 0 ; i < m_max; i++) 
+	for(i = 0 ; i < m_max; i++)
 		m_set.push_back(i);
 }
 
@@ -23,14 +23,13 @@ CRandomizer::CRandomizer(unsigned int sizeList, unsigned int maxRand)
 	:m_max(maxRand), m_sizeList(sizeList)
 {
 	unsigned int i;
-	for(i = 0 ; i < m_max; i++) 
+	for(i = 0 ; i < m_max; i++)
 		m_set.push_back(i);
 }
 
 /****************************************/
 
 void CRandomizer::Fill() {
-
 	unsigned int i;
 	for(i = m_next.size(); i < m_sizeList; i++) {
 		std::random_shuffle(m_set.begin(),m_set.end());
@@ -41,7 +40,6 @@ void CRandomizer::Fill() {
 /****************************************/
 
 int CRandomizer::Next() {
-
 	// on rempli la liste par la fin
 	Fill();
 
@@ -50,7 +48,7 @@ int CRandomizer::Next() {
 
 	// puis on l'élimine
 	m_next.erase(m_next.begin());
-	
+
 	// on renvoit le premier de la liste
 	return tmp;
 }
@@ -59,7 +57,6 @@ int CRandomizer::Next() {
 
 /* renvoit la première valeur */
 int CRandomizer::First() {
-
 	// on rempli la liste par la fin
 	Fill();
 

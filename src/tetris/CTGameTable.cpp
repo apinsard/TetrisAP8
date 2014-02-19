@@ -1,7 +1,6 @@
 #include "CTGameTable.h"
 
 CTGameTable::CTGameTable(int width, int height) {
-
 	Case uneCase = Case();
 
 	TGameRow uneLgn(width, uneCase);
@@ -24,7 +23,15 @@ ostream& operator<< (ostream& out, const CTGameTable& tab) {
 }
 
 /****************************************/
-vector<TGameRow>& CTGameTable::GetGameTable() {
-	return m_GameTable;
+void CTGameTable::setCase(unsigned int x, unsigned int y, Case newCase) {
+	if( m_GameTable.size() > 0
+		  && m_GameTable.size() >= y-1
+		  && m_GameTable[0].size() >= x-1)
+	{
+		m_GameTable[y][x] = newCase;
+	} else
+		throw logic_error("This cord x:" + x + " y:" + y + " it's outted");
 }
+
+vector<TGameRow>& CTGameTable::GetGameTable() { return m_GameTable; }
 
