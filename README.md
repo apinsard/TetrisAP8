@@ -31,7 +31,7 @@ la gauche, c'est l'inverse. Ce qui nous donne simplement :
 L'intérêt est d'avoir une méthode générique à toutes les pièces, plutôt que de
 faire une disjonction de cas pour chaque sens (Top, Right, Bottom, Left) de
 chaque pièce (T, I, O, L1, L2, Z1, Z2). Nous avons ainsi deux cas à gérer au
-lieu de 21 ((4×6)-3, la pièce O étant "insensible" à la rotation).
+lieu de 21 (`4×6 - 3`, la pièce O étant "insensible" à la rotation).
 
 ## Tests
 
