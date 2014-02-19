@@ -23,10 +23,10 @@ public:
 	CTetrisGame() {;}
 
 	/**
-		\brief constructeur 
+		\brief constructeur
 	*/
 	CTetrisGame ( unsigned int gamePosX, unsigned int gamePosY, unsigned int boardWidth, unsigned int boardHeight, float dimCase );
-	
+
 	/**
 		\brief destructeur de CTetrisGame
 	*/
@@ -140,9 +140,11 @@ private:
 	// Données membres
 	//----------------------------------------------------------
 	CTGameTable		m_board				;	///< le tableau du jeu avec les cases occupées et leur couleur
+
 	unsigned int	m_xPos				;	///< position en abcisse du jeu dans la fenètre openGL
 	unsigned int	m_yPos				;	///< position en ordonnée du jeu dans la fenètre openGL
-	float			m_caseDim			;	///< taille d'une case du tetris
+	unsigned int	m_score				;	///< score courant
+	float			    m_caseDim			;	///< taille d'une case du tetris
 };
 
 #endif

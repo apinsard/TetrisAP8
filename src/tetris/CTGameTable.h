@@ -12,7 +12,6 @@
 #include "Common.h"
 
 struct Case {
-
 	Case() { m_used = false; }
 	bool			m_used	;
 	CVector3		m_color	;
@@ -31,7 +30,7 @@ class CTGameTable {
 		CTGameTable () {};							// constructeur par défaut obligatoire pour la déclaration CTGameTable m_board dans CTetrisGame
 
 		friend ostream& operator<< ( ostream& out, const CTGameTable& obj ); 	// affichage de la grille au terminal
-		
+
 		// Accesseur
 		vector<TGameRow>& GetGameTable();
 };
