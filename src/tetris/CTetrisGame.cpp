@@ -99,9 +99,6 @@ bool CTetrisGame::IsGameOver() {
 }
 
 ActionResult CTetrisGame::MovePiece(PieceAction action) {
-  //if (this->IsGameOver())
-  //  return AR_GameOver;
-  
   switch (action) {
     case PA_RotateRight:
       this->m_pPiece->TurnRight();
@@ -115,15 +112,39 @@ ActionResult CTetrisGame::MovePiece(PieceAction action) {
     case PA_MoveLeft:
       this->m_pPiece->SetIncDecColIndex(-1);
       break;
+    case PA_MoveBottom2:
+      break; // Non implémenté
     case PA_MoveBottom:
       this->m_pPiece->SetIncDecRowIndex(-1);
-      break;
-    case PA_MoveBottom2:
-      this->m_pPiece->SetIncDecRowIndex(-3);
       break;
   }
 
   this->CheckBorderCollision();
+
+  if (this->CheckCollision()) {
+    switch(action) {
+      case PA_RotateRight:
+        this->m_pPiece->TurnLeft();
+        break;
+      case PA_RotateLeft:
+        this->m_pPiece->TurnRight();
+        break;
+      case PA_MoveRight:
+        this->m_pPiece->SetIncDecColIndex(-1);
+        break;
+      case PA_MoveLeft:
+        this->m_pPiece->SetIncDecColIndex(1);
+        break;
+      case PA_MoveBottom2:
+        break; // Non implémenté
+      case PA_MoveBottom:
+        this->m_pPiece->SetIncDecRowIndex(1);
+        
+        if (this->IsGameOver())
+          return AR_GameOver;
+        return AR_Collision;
+    }
+  }
 
   return AR_Ok;
 }
@@ -133,12 +154,18 @@ ActionResult CTetrisGame::Update(unsigned int step) {
     return AR_Ok;
 
   if (!this->m_pPiece) {
+    cout << "Il n'y a pas de pièce" << endl;
     this->AddPiece();
     return AR_Ok;
   }
 
-  this->MovePiece(PA_MoveBottom);
-  return AR_Ok;
+  ActionResult ar = this->MovePiece(PA_MoveBottom);
+  if (ar == AR_Collision) {
+    this->InsertPiece();
+    this->AddPiece();
+  }
+
+  return ar;
 }
 
 void CTetrisGame::InsertPiece() {
@@ -151,6 +178,8 @@ void CTetrisGame::InsertPiece() {
       this->m_board.setCase(this->m_pPiece->GetRowIndex()+i, this->m_pPiece->GetColIndex()+j, pieceCase);
     }
   }
+  delete this->m_pPiece;
+  this->m_pPiece = NULL;
 }
 
 bool CTetrisGame::CheckBorderCollision() {
@@ -199,11 +228,47 @@ bool CTetrisGame::CheckBorderCollision() {
   return false;
 }
 
+bool CTetrisGame::CheckCollision() {
+  // On vérifie la collision avec le bord inférieur
+  int bottomIndex = 0;
+  for (unsigned int row=0; row<m_pPiece->GetDim(); row++) {
+    for (unsigned int col=0; col<m_pPiece->GetDim(); col++) {
+      if (m_pPiece->GetTable()[row][col] == 1) {
+        // L'index est la ligne la plus basse comportant au moins un 1.
+        bottomIndex = row;
+        // Et on quitte les boucles
+        row = m_pPiece->GetDim();
+        break;
+      }
+    }
+  }
+  bottomIndex += m_pPiece->GetRowIndex();
+  if (bottomIndex < 0)
+    return true; // La pièce a atteint le bord inférieur
+  
+  // On vérifie la collision avec les autres pièces.
+  for (unsigned int i=0; i<m_pPiece->GetDim(); i++) {
+    for (unsigned int j=0; j<m_pPiece->GetDim(); j++) {
+      if (m_pPiece->GetTable()[i][j] == 1) {
+        unsigned int x = m_pPiece->GetColIndex()+j;
+        unsigned int y = m_pPiece->GetRowIndex()+i;
+        cout << "cell "<< x <<", "<< y <<" is the piece" << endl;
+        if (m_board.GetGameTable()[y][x].m_used == 1) {
+          cout << "cell "<< x <<", "<< y <<" is used" << endl;
+          cout << m_board << endl;
+          return true;
+        }
+      }
+    }
+  }
+
+  return false;
+}
+
 /****************************************/
 CTGameTable&    CTetrisGame::GetBoard()    { return m_board; }
 unsigned int    CTetrisGame::GetXPos()     { return m_xPos; }
 unsigned int    CTetrisGame::GetYPos()     { return m_yPos; }
 float&          CTetrisGame::GetCaseDim()  { return m_caseDim; }
 CPieceAbstract* CTetrisGame::GetPiece()    { return m_pPiece; }
-
 
