@@ -82,3 +82,12 @@ Lance tous les tests des pièces (testCTPiece, testCIPiece, testCOPiece, ...)
 ### `make test`
 Lance l'intégralité des tests en mode console
 
+## TODO
+
+* Gérer le cas du "Game Over"
+* Revoir les commentaires du code
+* Revoir les tests
+* Revoir les couleurs des pièces
+* Implémenter le score
+* Implémenter la fonctionnalité "avance rapide" (barre d'espace).
+
