@@ -31,10 +31,10 @@ CTetrisGame::CTetrisGame(unsigned int gamePosX, unsigned int gamePosY,
 
   AddPiece();
 
-  cout << GetFullRow() << endl;
-  cout << m_board << endl;
+//  cout << GetFullRow() << endl;
+//  cout << m_board << endl;
   DeleteRow(GetFullRow());
-  cout << m_board << endl;
+//  cout << m_board << endl;
 }
 
 /****************************************/
@@ -107,6 +107,12 @@ void CTetrisGame::DeleteRow(unsigned int rowIndex) {
     for (unsigned int i=0; i<gameTable[gameTable.size()-1].size(); i++)
       gameTable[gameTable.size()-1][i].m_used = 0;
   }
+}
+
+bool CTetrisGame::IsGameOver() {
+  unsigned int topIndex =
+    this->m_pPiece->GetRowIndex()+this->m_pPiece->GetDim()-1;
+  return (topIndex >= this->m_board.GetGameTable().size());
 }
 
 void CTetrisGame::InsertPiece() {
