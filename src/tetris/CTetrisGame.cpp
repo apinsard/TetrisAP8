@@ -41,16 +41,18 @@ void CTetrisGame::InsertPiece() {
       pieceCase.m_used  = (this->m_pPiece->GetTable()[i][j] == 1);
       pieceCase.m_color = this->m_pPiece->GetColor();
 
-      this->m_board.setCase(i, j, pieceCase);
+      this->m_board.setCase(this->m_pPiece->GetRowIndex()+i, this->m_pPiece->GetColIndex()+j, pieceCase);
     }
   }
+
+  cout << this->m_board << endl;
 
 }
 
 /****************************************/
 CTGameTable& CTetrisGame::GetBoard()    { return m_board; }
 unsigned int CTetrisGame::GetXPos()     { return m_xPos; }
-unsigned int CTetrisGame::GetYPos()     {  return m_yPos; }
+unsigned int CTetrisGame::GetYPos()     { return m_yPos; }
 float&       CTetrisGame::GetCaseDim()  { return m_caseDim; }
 
 

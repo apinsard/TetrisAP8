@@ -110,8 +110,9 @@ void CProjetTetris::DrawInfo()
 
 void CProjetTetris::DrawTetris() {
   vector<TGameRow> gameTable = m_game.GetBoard().GetGameTable();
-  float	tetrisWidth = gameTable[0].size()* m_game.GetCaseDim();
+  float	tetrisWidth  = gameTable[0].size()* m_game.GetCaseDim();
   float	tetrisHeight = gameTable.size() * m_game.GetCaseDim();
+  float dim = m_game.GetCaseDim();
 
   // fond du tetris
   DrawFillRect ( m_game.GetXPos(), m_game.GetYPos(), tetrisWidth, tetrisHeight, CVector3(153.0f/255.0f,153.0f/255.0f,153.0f/255.0f) );
@@ -120,9 +121,10 @@ void CProjetTetris::DrawTetris() {
   // affichage du "cadre" tetris
   DrawRect ( m_game.GetXPos()-0.1f, m_game.GetYPos()-0.1f, (tetrisWidth+0.2f), (tetrisHeight+0.2f), CVector3(213.0f/255.0f,213.0f/255.0f,213.0f/255.0f) );
 
-
-
   // affichage du tableau tetris
+  for (unsigned int i=0; i<gameTable.size(); i++)
+    for (unsigned int j=0; j<gameTable[i].size(); j++)
+      DrawFillSquare(m_game.GetXPos() + j, m_game.GetYPos() + i, dim, gameTable[i][j].m_color);
 
 
   // affichage de la pîece en cours

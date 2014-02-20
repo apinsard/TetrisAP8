@@ -12,9 +12,9 @@ CTGameTable::CTGameTable(int width, int height) {
 ostream& operator<< (ostream& out, const CTGameTable& tab) {
   unsigned int i,j;
 
-  for (i=0; i<tab.m_GameTable.size(); i++) {
-    for (j=0; j<tab.m_GameTable[i].size(); j++)
-      out << tab.m_GameTable[i][j].m_used <<  " ";
+  for (i=tab.m_GameTable.size(); i>0; i--) {
+    for (j=0; j<tab.m_GameTable[i-1].size(); j++)
+      out << tab.m_GameTable[i-1][j].m_used <<  " ";
 
     out << endl;
   }
@@ -28,7 +28,8 @@ void CTGameTable::setCase(unsigned int x, unsigned int y, Case newCase) {
       && m_GameTable.size() >= y-1
       && m_GameTable[0].size() >= x-1)
   {
-    m_GameTable[y][x] = newCase;
+    cout << newCase.m_used << endl;
+    m_GameTable[x][y] = newCase;
   }
   /*else {
     throw logic_error(

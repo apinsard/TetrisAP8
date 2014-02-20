@@ -12,9 +12,9 @@
 #include "Common.h"
 
 struct Case {
-  Case() { m_used = false; }
+  Case()  { m_used = false; }
   bool      m_used  ;
-  CVector3    m_color  ;
+  CVector3  m_color ;
 };
 
 typedef vector<Case> TGameRow;
