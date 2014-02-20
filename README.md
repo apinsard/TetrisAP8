@@ -14,16 +14,18 @@ Les pièces T, I, O, Z1, Z2, L1 et L2 ont été implémentées et testées.
 
 ## Choix techniques
 
+### Rotation des pièces
+
 Nous avons fait le choix de ne pas implémenter la méthode
 `CPieceAbstract::Turn()` dans les classes filles et d'effectuer la rotation de
 la pièce directement dans les méthodes `CPieceAbstract::TurnRight()` et
 `CPieceAbstract::TurnLeft()`. En effet, pour la rotation nous ne nous basons pas
 sur une disjonction de cas en fonction de l'état de la pièce, mais sur un calcul
-dépendant de la matrice actuelle de la pièce et du sens de rotation définit.
-Pour faire tourner une pièce vers la droite, il suffit, pour chaque élément de
-la matrice, de modifier son ordonnée en son abscisse actuelle, et son abscisse
-en la taille de la matrice moins 1 moins son ordonnée. Et pour la rotation vers
-la gauche, c'est l'inverse. Ce qui nous donne simplement :
+dépendant de la matrice de la pièce et du sens de rotation. Pour faire tourner
+une pièce vers la droite, il suffit, pour chaque élément de la matrice, de
+modifier son ordonnée en son abscisse actuelle, et son abscisse en la taille de
+la matrice moins 1 moins son ordonnée. Et pour la rotation vers la gauche, c'est
+l'inverse. Ce qui nous donne simplement :
 
 * Rotation vers droite :
   * newRow = oldCol
@@ -36,6 +38,19 @@ L'intérêt est d'avoir une méthode générique à toutes les pièces, plutôt 
 faire une disjonction de cas pour chaque sens (Top, Right, Bottom, Left) de
 chaque pièce (T, I, O, L1, L2, Z1, Z2). Nous avons ainsi deux cas à gérer au
 lieu de 21 (`4×6 - 3`, la pièce O étant "insensible" à la rotation).
+
+### Génération aléatoire des pièces
+
+Ayant du mal à cerner le but de la classe CRandomize et comment l'utiliser, nous
+avons fait le choix d'utiliser la fonction `rand()` de C++. Nous générons un
+nombre entre 0 et 6 associé arbitrairement à une pièce.
+
+Au niveau des couleurs nous avons aussi généré le taux de rouge, vert et bleu
+aléatoirement. L'inconvénient est que le contraste de la pièce et du fond peut
+être un peu faible. Celà rajoute un peu de "difficulté" au jeu. Ce serait
+intéressant d'évaluer ce contraste et regénérer la couleur s'il est jugé trop
+faible par l'algorithme. Dans la grande majorité des cas, la pièce est tout de
+même bien visible.
 
 ## Tests
 
