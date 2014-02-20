@@ -10,7 +10,7 @@
 
 /****************************************/
 CTetrisGame::CTetrisGame(unsigned int gamePosX, unsigned int gamePosY,
-  unsigned int boardWidth, unsigned int boardHeight, float dimCase)
+    unsigned int boardWidth, unsigned int boardHeight, float dimCase)
 {
   m_board = CTGameTable(boardWidth, boardHeight);  //appel de CTGameTable(int width, int height)
 
@@ -39,8 +39,7 @@ void CTetrisGame::AddPiece() {
   unsigned int posX = 3;
   unsigned int posY = 19;
 
-  ///switch (rand() % 7) {
-  switch (1) {
+  switch (rand() % 7) {
     case 0:
       this->m_pPiece = new CTPiece(posX, posY, color);
       break;
