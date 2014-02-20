@@ -36,14 +36,16 @@ bool CProjetTetris::OnInit() { return true; }
 // !! Méthode appelée dans la méthode Run de la classe CApplication
 //----------------------------------------------------------
 void CProjetTetris::OnRender() {
-
   //-------------------------------------------------------
   // gestion du temps
   //-------------------------------------------------------
-  if (m_step > 50)
+  if (m_step > 6)
     m_step = 0;
 
-  this->m_game.Update(m_step);
+  if(AR_GameOver == this->m_game.Update(m_step)) {
+    return;
+  }
+
 
   //-------------------------------------------------------
   // commande utilisateur
@@ -99,9 +101,8 @@ void CProjetTetris::OnRelease() {
 //----------------------------------------------------------
 void CProjetTetris::DrawInfo()
 {
-
-  std::string title = Helpers::ToString("Mon Tetris");
-  std::string scoreStr = "Score : " + Helpers::ToString(200000);
+  std::string title = Helpers::ToString("Juan revival TeTrIs");
+  std::string scoreStr = "Score : " + Helpers::ToString(m_game.GetScore());
 
   m_renderer.DrawText(title, 300, 500, CRenderer::TS_18, CVector3(1.0f, 1.0f, 1.0f));
   m_renderer.DrawText(scoreStr, 500, 160, CRenderer::TS_12, CVector3(0.0f, 1.0f, 0.0f));

@@ -14,16 +14,19 @@ CTetrisGame::CTetrisGame(unsigned int gamePosX, unsigned int gamePosY,
 {
   m_board = CTGameTable(boardWidth, boardHeight);  //appel de CTGameTable(int width, int height)
 
-  m_xPos    = gamePosX;
-  m_yPos    = gamePosY;
-  m_caseDim = dimCase;
-  m_pPiece  = NULL;
+  m_xPos     = gamePosX;
+  m_yPos     = gamePosY;
+  m_caseDim  = dimCase;
+  m_score    = 0;
+  m_pPiece   = NULL;
+  m_gameOver = false;
 }
 
 /****************************************/
 
 CTetrisGame::~CTetrisGame(){
-
+  if(m_pPiece)
+    delete m_pPiece;
 }
 
 
@@ -66,17 +69,19 @@ void CTetrisGame::AddPiece() {
 }
 
 int CTetrisGame::GetFullRow() {
-  int i = -1, size = m_board.GetGameTable().size();
-  bool isFull = true;
+  for (unsigned int i=0; i < m_board.GetGameTable().size(); i++) {
+    bool isFull = true;
+    for (unsigned int j=0; j < m_board.GetGameTable()[i].size(); j++) {
+      if (!m_board.GetGameTable()[i][j].m_used) {
+        isFull = false;
+        break;
+      }
+    }
+    if (isFull)
+      return i;
+  }
 
-  do {
-    i++;
-    for(unsigned int j=0; j < m_board.GetGameTable()[i].size() && isFull; j++)
-      isFull &= m_board.GetGameTable()[i][j].m_used;
-
-  } while(i < size && !isFull);
-
-  return (isFull) ? i : -1;
+  return -1;
 }
 
 void CTetrisGame::DeleteRow(unsigned int rowIndex) {
@@ -89,16 +94,22 @@ void CTetrisGame::DeleteRow(unsigned int rowIndex) {
     // Et on vide la ligne du haut
     for (unsigned int i=0; i<gameTable[gameTable.size()-1].size(); i++)
       gameTable[gameTable.size()-1][i].m_used = false;
+
+    m_score += 42;
   }
 }
 
 bool CTetrisGame::IsGameOver() {
   unsigned int topIndex =
     this->m_pPiece->GetRowIndex()+this->m_pPiece->GetDim()-1;
-  return (topIndex >= this->m_board.GetGameTable().size());
+    m_gameOver = (topIndex >= this->m_board.GetGameTable().size());
+  return m_gameOver;
 }
 
 ActionResult CTetrisGame::MovePiece(PieceAction action) {
+  if(m_gameOver)
+    return AR_Ok;
+
   switch (action) {
     case PA_RotateRight:
       this->m_pPiece->TurnRight();
@@ -139,9 +150,10 @@ ActionResult CTetrisGame::MovePiece(PieceAction action) {
         break; // Non implémenté
       case PA_MoveBottom:
         this->m_pPiece->SetIncDecRowIndex(1);
-        
-        if (this->IsGameOver())
+
+        if (this->IsGameOver()) {
           return AR_GameOver;
+        }
         return AR_Collision;
     }
   }
@@ -151,6 +163,9 @@ ActionResult CTetrisGame::MovePiece(PieceAction action) {
 
 ActionResult CTetrisGame::Update(unsigned int step) {
   if (step != 0)
+    return AR_Ok;
+
+  if(m_gameOver)
     return AR_Ok;
 
   if (!this->m_pPiece) {
@@ -249,14 +264,14 @@ bool CTetrisGame::CheckCollision() {
   bottomIndex += m_pPiece->GetRowIndex();
   if (bottomIndex < 0)
     return true; // La pièce a atteint le bord inférieur
-  
+
   // On vérifie la collision avec les autres pièces.
   for (unsigned int i=0; i<m_pPiece->GetDim(); i++) {
     for (unsigned int j=0; j<m_pPiece->GetDim(); j++) {
       if (m_pPiece->GetTable()[i][j] == 1) {
         unsigned int x = m_pPiece->GetColIndex()+j;
         unsigned int y = m_pPiece->GetRowIndex()+i;
-        
+
         if (y < m_board.GetGameTable().size()
             && x < m_board.GetGameTable()[0].size()
             && m_board.GetGameTable()[y][x].m_used)
@@ -275,5 +290,6 @@ CTGameTable&    CTetrisGame::GetBoard()    { return m_board; }
 unsigned int    CTetrisGame::GetXPos()     { return m_xPos; }
 unsigned int    CTetrisGame::GetYPos()     { return m_yPos; }
 float&          CTetrisGame::GetCaseDim()  { return m_caseDim; }
+unsigned int    CTetrisGame::GetScore()    { return m_score; }
 CPieceAbstract* CTetrisGame::GetPiece()    { return m_pPiece; }
 

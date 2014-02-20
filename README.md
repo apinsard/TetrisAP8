@@ -84,10 +84,10 @@ Lance l'intégralité des tests en mode console
 
 ## TODO
 
-* Gérer le cas du "Game Over"
+* / Gérer le cas du "Game Over"
 * Revoir les commentaires du code
 * Revoir les tests
-* Revoir les couleurs des pièces
-* Implémenter le score
+* / Revoir les couleurs des pièces
+* X Implémenter le score
 * Implémenter la fonctionnalité "avance rapide" (barre d'espace).
 
