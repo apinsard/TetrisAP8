@@ -78,9 +78,9 @@ int CTetrisGame::GetFullRow() {
   bool isFull = true;
 
   do {
-      i++;
-      for(unsigned int j=0; j < m_board.GetGameTable()[i].size() && isFull; j++)
-        isFull &= m_board.GetGameTable()[i][j].m_used;
+    i++;
+    for(unsigned int j=0; j < m_board.GetGameTable()[i].size() && isFull; j++)
+      isFull &= m_board.GetGameTable()[i][j].m_used;
 
   } while(i < size && !isFull);
 
