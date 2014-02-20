@@ -32,7 +32,7 @@ string formatResult(int depth, string label, bool success) {
   for (int i=0; i<depth*2; i++)
     label = ' ' + label;
   
-  line = fillLine(label, "["+result+"]").substr(0, 74);
+  line = fillLine(label, "["+result+"]").substr(0, COL_WIDTH-6);
   line += "["+ color + result + string(COLOR_RESET) +"]";
 
   return line;
