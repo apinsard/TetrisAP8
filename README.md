@@ -1,7 +1,7 @@
 <!--
-Si vous lisez ce README dans un éditeur de texte, nous vous conseillez plutôt de
-le consulter à cette adresse : https://github.com/apinsard/TetrisAP8 pour plus
-de clarté.
+Si vous lisez ce README dans un éditeur de texte, nous vous conseillons plutôt
+de le consulter à cette adresse : https://github.com/apinsard/TetrisAP8 pour
+plus de clarté.
 -->
 
 # Tetris - Projet AP8
