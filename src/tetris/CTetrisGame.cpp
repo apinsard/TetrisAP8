@@ -37,9 +37,10 @@ void CTetrisGame::AddPiece() {
   CVector3 color = CVector3(red, green, blue);
 
   unsigned int posX = 3;
-  unsigned int posY = 18;
+  unsigned int posY = 19;
 
-  switch (rand() % 7) {
+  ///switch (rand() % 7) {
+  switch (1) {
     case 0:
       this->m_pPiece = new CTPiece(posX, posY, color);
       break;
@@ -154,7 +155,6 @@ ActionResult CTetrisGame::Update(unsigned int step) {
     return AR_Ok;
 
   if (!this->m_pPiece) {
-    cout << "Il n'y a pas de pièce" << endl;
     this->AddPiece();
     return AR_Ok;
   }
@@ -256,10 +256,11 @@ bool CTetrisGame::CheckCollision() {
       if (m_pPiece->GetTable()[i][j] == 1) {
         unsigned int x = m_pPiece->GetColIndex()+j;
         unsigned int y = m_pPiece->GetRowIndex()+i;
-        cout << "cell "<< x <<", "<< y <<" is the piece" << endl;
-        if (m_board.GetGameTable()[y][x].m_used) {
-          cout << "cell "<< x <<", "<< y <<" is used" << endl;
-          cout << m_board << endl;
+        
+        if (y < m_board.GetGameTable().size()
+            && x < m_board.GetGameTable()[0].size()
+            && m_board.GetGameTable()[y][x].m_used)
+        {
           return true;
         }
       }

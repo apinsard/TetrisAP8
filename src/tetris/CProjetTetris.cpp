@@ -22,7 +22,6 @@ CProjetTetris::CProjetTetris() {
 /****************************************/
 
 CProjetTetris::~CProjetTetris() {
-
   cout << "Destruction objet CProjetTetris" << endl;
 }
 
@@ -30,10 +29,7 @@ CProjetTetris::~CProjetTetris() {
 // initilisation de notre appli (rien car dessiner un cube à l'écran ne nécéssite aucune initialisation)
 // !! Méthode appelée dans la méthode Init de la classe CApplication
 //----------------------------------------------------------
-bool CProjetTetris::OnInit() {
-
-  return true;
-}
+bool CProjetTetris::OnInit() { return true; }
 
 //----------------------------------------------------------
 // notre scène à dessiner
@@ -44,10 +40,8 @@ void CProjetTetris::OnRender() {
   //-------------------------------------------------------
   // gestion du temps
   //-------------------------------------------------------
-  if ( m_step> 50 )
-  {
+  if (m_step > 50)
     m_step = 0;
-  }
 
   this->m_game.Update(m_step);
 
@@ -55,27 +49,21 @@ void CProjetTetris::OnRender() {
   // commande utilisateur
   //-------------------------------------------------------
   if (m_UserEvents->m_keyBoardEvents[Key_a]) {
-    cout << "la touche 'a' a bien été utilisée" << endl;
     this->m_game.MovePiece(PA_RotateLeft);
   }
   if (m_UserEvents->m_keyBoardEvents[Key_z]) {
-    cout << "la touche 'z' a bien été utilisée" << endl;
     this->m_game.MovePiece(PA_RotateRight);
   }
   if (m_UserEvents->m_keyBoardEvents[Key_DOWN]) {
-    cout << "la touche flèche bas a bien été utilisée" << endl;
     this->m_game.MovePiece(PA_MoveBottom);
   }
   if (m_UserEvents->m_keyBoardEvents[Key_RIGHT]) {
-    cout << "la touche flèche droite a bien été utilisée" << endl;
     this->m_game.MovePiece(PA_MoveRight);
   }
   if (m_UserEvents->m_keyBoardEvents[Key_LEFT]) {
-    cout << "la touche flèche gauche a bien été utilisée" << endl;
     this->m_game.MovePiece(PA_MoveLeft);
   }
   if (m_UserEvents->m_keyBoardEvents[Key_SPACE]) {
-    cout << "la touche espace a bien été utilisée" << endl;
     this->m_game.MovePiece(PA_MoveBottom2);
   }
 
@@ -103,7 +91,6 @@ void CProjetTetris::OnRender() {
 // !! Méthode appelée dans la méthode Release de la classe CApplication
 //----------------------------------------------------------
 void CProjetTetris::OnRelease() {
-
   // Rien a liberer
 }
 
@@ -112,6 +99,7 @@ void CProjetTetris::OnRelease() {
 //----------------------------------------------------------
 void CProjetTetris::DrawInfo()
 {
+
   std::string title = Helpers::ToString("Mon Tetris");
   std::string scoreStr = "Score : " + Helpers::ToString(200000);
 
@@ -122,9 +110,10 @@ void CProjetTetris::DrawInfo()
 /****************************************/
 
 void CProjetTetris::DrawTetris() {
+
   vector<TGameRow> gameTable = m_game.GetBoard().GetGameTable();
-  float	tetrisWidth  = gameTable[0].size()* m_game.GetCaseDim();
-  float	tetrisHeight = gameTable.size() * m_game.GetCaseDim();
+  float tetrisWidth  = gameTable[0].size()* m_game.GetCaseDim();
+  float tetrisHeight = gameTable.size() * m_game.GetCaseDim();
   float dim = m_game.GetCaseDim();
 
   // fond du tetris
