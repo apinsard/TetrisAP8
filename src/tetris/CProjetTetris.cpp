@@ -137,7 +137,7 @@ void CProjetTetris::DrawTetris() {
   // affichage du tableau tetris
   for (unsigned int i=0; i<gameTable.size(); i++){
       for (unsigned int j=0; j<gameTable[i].size(); j++)
-        if(gameTable[i][j].m_used == 1)
+        if(gameTable[i][j].m_used)
           DrawFillSquare(m_game.GetXPos()+(j*dim), m_game.GetYPos()+(i*dim), dim, gameTable[i][j].m_color);
   }
 

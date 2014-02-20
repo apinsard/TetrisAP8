@@ -37,7 +37,7 @@ void CTetrisGame::AddPiece() {
   CVector3 color = CVector3(red, green, blue);
 
   unsigned int posX = 3;
-  unsigned int posY = 19;
+  unsigned int posY = 18;
 
   switch (rand() % 7) {
     case 0:
@@ -88,7 +88,7 @@ void CTetrisGame::DeleteRow(unsigned int rowIndex) {
 
     // Et on vide la ligne du haut
     for (unsigned int i=0; i<gameTable[gameTable.size()-1].size(); i++)
-      gameTable[gameTable.size()-1][i].m_used = 0;
+      gameTable[gameTable.size()-1][i].m_used = false;
   }
 }
 
@@ -171,11 +171,13 @@ ActionResult CTetrisGame::Update(unsigned int step) {
 void CTetrisGame::InsertPiece() {
   for(unsigned int i=0; i<this->m_pPiece->GetDim(); i++) {
     for(unsigned int j=0; j<this->m_pPiece->GetDim(); j++) {
-      Case pieceCase    = Case();
-      pieceCase.m_used  = (this->m_pPiece->GetTable()[i][j] == 1);
-      pieceCase.m_color = this->m_pPiece->GetColor();
+      if (this->m_pPiece->GetTable()[i][j] == 1) {
+        Case pieceCase    = Case();
+        pieceCase.m_used  = true;
+        pieceCase.m_color = this->m_pPiece->GetColor();
 
-      this->m_board.setCase(this->m_pPiece->GetRowIndex()+i, this->m_pPiece->GetColIndex()+j, pieceCase);
+        this->m_board.setCase(this->m_pPiece->GetRowIndex()+i, this->m_pPiece->GetColIndex()+j, pieceCase);
+      }
     }
   }
   delete this->m_pPiece;
@@ -253,7 +255,7 @@ bool CTetrisGame::CheckCollision() {
         unsigned int x = m_pPiece->GetColIndex()+j;
         unsigned int y = m_pPiece->GetRowIndex()+i;
         cout << "cell "<< x <<", "<< y <<" is the piece" << endl;
-        if (m_board.GetGameTable()[y][x].m_used == 1) {
+        if (m_board.GetGameTable()[y][x].m_used) {
           cout << "cell "<< x <<", "<< y <<" is used" << endl;
           cout << m_board << endl;
           return true;
