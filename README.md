@@ -1,12 +1,14 @@
+<!--
+Si vous lisez ce README dans un éditeur de texte, nous vous conseillez plutôt de
+le consulter à cette adresse : https://github.com/apinsard/TetrisAP8 pour plus
+de clarté.
+-->
+
 # Tetris - Projet AP8
 
 Sujet de TP de C++ de deuxième année Informatique à l'IUT de Vannes.
 
 Par Julien Cadic et Antoine Pinsard
-
-Si vous lisez ce README dans un éditeur de texte, nous vous conseillez plutôt de
-le consulter à cette adresse : https://github.com/apinsard/TetrisAP8 pour plus
-de clarté.
 
 ## Avancement
 
