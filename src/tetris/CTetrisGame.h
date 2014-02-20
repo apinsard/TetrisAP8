@@ -10,6 +10,8 @@
 
 #include "CPieceAbstract.h"
 #include "CIPiece.h"
+#include "CTPiece.h"
+#include "CZ1Piece.h"
 #include "CTGameTable.h"
 #include "CRandomizer.h"
 #include "TetrisUtils.h"

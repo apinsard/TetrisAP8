@@ -122,10 +122,11 @@ void CProjetTetris::DrawTetris() {
   DrawRect ( m_game.GetXPos()-0.1f, m_game.GetYPos()-0.1f, (tetrisWidth+0.2f), (tetrisHeight+0.2f), CVector3(213.0f/255.0f,213.0f/255.0f,213.0f/255.0f) );
 
   // affichage du tableau tetris
-  for (unsigned int i=0; i<gameTable.size(); i++)
-    for (unsigned int j=0; j<gameTable[i].size(); j++)
-      DrawFillSquare(m_game.GetXPos() + j, m_game.GetYPos() + i, dim, gameTable[i][j].m_color);
-
+  for (unsigned int i=0; i<gameTable.size(); i++){
+      for (unsigned int j=0; j<gameTable[i].size(); j++)
+        if(gameTable[i][j].m_used == 1)
+          DrawFillSquare(m_game.GetXPos()+(j*dim), m_game.GetYPos()+(i*dim), dim, gameTable[i][j].m_color);
+  }
 
   // affichage de la pîece en cours
 

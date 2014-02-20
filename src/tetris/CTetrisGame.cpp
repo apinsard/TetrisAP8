@@ -44,9 +44,6 @@ void CTetrisGame::InsertPiece() {
       this->m_board.setCase(this->m_pPiece->GetRowIndex()+i, this->m_pPiece->GetColIndex()+j, pieceCase);
     }
   }
-
-  cout << this->m_board << endl;
-
 }
 
 /****************************************/
