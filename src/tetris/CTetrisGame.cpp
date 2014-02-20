@@ -166,7 +166,7 @@ ActionResult CTetrisGame::Update(unsigned int step) {
     return AR_Ok;
 
   if(m_gameOver)
-    return AR_Ok;
+    return AR_GameOver;
 
   if (!this->m_pPiece) {
     this->AddPiece();
