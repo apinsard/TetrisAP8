@@ -54,7 +54,7 @@ void CTetrisGame::AddPiece() {
   CVector3 color = CVector3(red, green, blue);
 
   unsigned int posX = 3;
-  unsigned int posY = 19;
+  unsigned int posY = 16;
 
   switch (rand() % 7) {
     case 0:
@@ -113,6 +113,34 @@ bool CTetrisGame::IsGameOver() {
   unsigned int topIndex =
     this->m_pPiece->GetRowIndex()+this->m_pPiece->GetDim()-1;
   return (topIndex >= this->m_board.GetGameTable().size());
+}
+
+ActionResult CTetrisGame::MovePiece(PieceAction action) {
+  if (this->IsGameOver())
+    return AR_GameOver;
+  
+  switch (action) {
+    case PA_RotateRight:
+      this->m_pPiece->TurnRight();
+      break;
+    case PA_RotateLeft:
+      this->m_pPiece->TurnLeft();
+      break;
+    case PA_MoveRight:
+      this->m_pPiece->SetIncDecColIndex(1);
+      break;
+    case PA_MoveLeft:
+      this->m_pPiece->SetIncDecColIndex(-1);
+      break;
+    case PA_MoveBottom:
+      this->m_pPiece->SetIncDecRowIndex(-1);
+      break;
+    case PA_MoveBottom2:
+      this->m_pPiece->SetIncDecRowIndex(-3);
+      break;
+  }
+
+  return AR_Ok;
 }
 
 void CTetrisGame::InsertPiece() {
