@@ -14,9 +14,9 @@
 
 CProjetTetris::CProjetTetris() {
 
-  m_game = CTetrisGame(POSX_BOARD, POSY_BOARD, WIDTH_BOARD, HEIGHT_BOARD, DIM_CASE);
-  m_step = 0;
-
+  m_game  = CTetrisGame(POSX_BOARD, POSY_BOARD, WIDTH_BOARD, HEIGHT_BOARD, DIM_CASE);
+  m_step  = 0;
+  m_level = 0;
 }
 
 /****************************************/
@@ -39,28 +39,19 @@ void CProjetTetris::OnRender() {
   //-------------------------------------------------------
   // gestion du temps
   //-------------------------------------------------------
-  float dMax = 6.0f;    //Max difficulty
+  float dMax = 2.0f;    //Max difficulty
   float dMin = 30.0f;   //Min difficulty
-  float sMax = 1680.0f; //Max difficulty for score
+  float sMax = 2688.0f; //Max difficulty for score
 
   float d = max(dMax, dMax + (((dMin - dMax) / sMax) * (sMax - m_game.GetScore())));
 
   if (m_step > round(d))
     m_step = 0;
 
+  m_level = round((dMin - d)/2.0f);
+
   if(AR_GameOver == this->m_game.Update(m_step)) {
-    m_renderer.Start2DRender();
-
-    std::string title = Helpers::ToString("GAME OVER");
-    m_renderer.DrawText(title, 320, 380, CRenderer::TS_18, CVector3(1.0f, 1.0f, 1.0f));
-
-    std::string score = Helpers::ToString("Score : " + Helpers::ToString(m_game.GetScore()));
-    m_renderer.DrawText(score, 340, 340, CRenderer::TS_12, CVector3(1.0f, 1.0f, 1.0f));
-
-    std::string level = Helpers::ToString("Level : " + Helpers::ToString(round((dMin - d)/2.0f)));
-    m_renderer.DrawText(level, 340, 320, CRenderer::TS_12, CVector3(0.0f, 1.0f, 0.0f));
-
-    m_renderer.End2DRender();
+    DrawGameOver();
     return;
   }
 
@@ -93,9 +84,6 @@ void CProjetTetris::OnRender() {
   // on passe en rendu 2d
   m_renderer.Start2DRender();
 
-  std::string level = Helpers::ToString("Level : " + Helpers::ToString(round((dMin - d)/2.0f)));
-  m_renderer.DrawText(level, 500, 180, CRenderer::TS_12, CVector3(0.0f, 1.0f, 0.0f));
-
   // affichage du score
   DrawInfo();
 
@@ -120,13 +108,30 @@ void CProjetTetris::OnRelease() {
 //----------------------------------------------------------
 //
 //----------------------------------------------------------
+void CProjetTetris::DrawGameOver()
+{
+  std::string title = Helpers::ToString("GAME OVER");
+  std::string score = Helpers::ToString("Score : " + Helpers::ToString(m_game.GetScore()));
+  std::string level = Helpers::ToString("Level : " + Helpers::ToString(m_level));
+
+  m_renderer.Start2DRender();
+
+  m_renderer.DrawText(title, 320, 380, CRenderer::TS_18, CVector3(1.0f, 1.0f, 1.0f));
+  m_renderer.DrawText(score, 340, 340, CRenderer::TS_12, CVector3(1.0f, 1.0f, 1.0f));
+  m_renderer.DrawText(level, 340, 320, CRenderer::TS_12, CVector3(1.0f, 1.0f, 1.0f));
+
+  m_renderer.End2DRender();
+}
+
 void CProjetTetris::DrawInfo()
 {
   std::string title = Helpers::ToString("Juan revival TeTrIs");
-  std::string scoreStr = "Score : " + Helpers::ToString(m_game.GetScore());
+  std::string score = "Score : " + Helpers::ToString(m_game.GetScore());
+  std::string level = Helpers::ToString("Level : " + Helpers::ToString(m_level));
 
   m_renderer.DrawText(title, 300, 500, CRenderer::TS_18, CVector3(1.0f, 1.0f, 1.0f));
-  m_renderer.DrawText(scoreStr, 500, 160, CRenderer::TS_12, CVector3(0.0f, 1.0f, 0.0f));
+  m_renderer.DrawText(score, 500, 160, CRenderer::TS_12, CVector3(0.0f, 1.0f, 0.0f));
+  m_renderer.DrawText(level, 500, 180, CRenderer::TS_12, CVector3(0.0f, 1.0f, 0.0f));
 }
 
 /****************************************/
@@ -139,7 +144,7 @@ void CProjetTetris::DrawTetris() {
   float dim = m_game.GetCaseDim();
 
   // fond du tetris
-  DrawFillRect ( m_game.GetXPos(), m_game.GetYPos(), tetrisWidth, tetrisHeight, CVector3(153.0f/255.0f,153.0f/255.0f,153.0f/255.0f) );
+  DrawFillRect ( m_game.GetXPos(), m_game.GetYPos(), tetrisWidth, tetrisHeight, CVector3(0.0f, 0.0f, 0.0f));
   //DrawFillRect ( m_game.GetXPos(), m_game.GetYPos(), tetrisWidth, tetrisHeight, CVector3(17.0f/255.0f,218.0f/255.0f,84.0f/255.0f) );
 
   // affichage du "cadre" tetris

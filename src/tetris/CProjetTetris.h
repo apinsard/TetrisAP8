@@ -12,7 +12,7 @@
 #define __PROJET_TETRIS_H__  //
 
 //-----------------------------------------------------------------
-// Notre programme va avoir besoin 
+// Notre programme va avoir besoin
 // des fonctions spécifiques à l'utilisateur (iterface graphique utilisateur GUI) et
 // des fonctions nécéssaires au rendu (dessin) d'un objet dans la scene
 //
@@ -23,7 +23,7 @@
 
 ////////////////////////////////////////////////////////////////////////
 /// classe Demo: elle est notre classe cliente, elle possède l'ensemble des propriétés de la classe CApplication
-/// et donc utilise le GUI et le renderer. 
+/// et donc utilise le GUI et le renderer.
 //
 // Projet Tetris
 //
@@ -31,7 +31,7 @@
 class CProjetTetris: public CApplication {
 
   public:
-    /** 
+    /**
       \brief constructeur par défaut de CProjetTetris
       */
     CProjetTetris();
@@ -66,17 +66,20 @@ class CProjetTetris: public CApplication {
     // Données membres
     //----------------------------------------------------------
     unsigned int    m_step;      ///< compteur de passage dans la méthode onRender() permet de gérer implicitement le temps
-    CTetrisGame    m_game;      ///< le jeu !!
+    unsigned int    m_level;     ///< le niveau
+    CTetrisGame     m_game;      ///< le jeu !!
 
-    /** 
+    /**
       \brief affichage de la grille de jeu
       */
     void DrawTetris();
 
-    /** 
+    /**
       \brief affichage des informations du jeu
       */
     void DrawInfo();
+
+    void DrawGameOver();
 
 
 
@@ -84,7 +87,7 @@ class CProjetTetris: public CApplication {
     //----------------------------------------------------------
     // quelques outils pour afficher des carré et des rectangles
     //----------------------------------------------------------
-    /** 
+    /**
       \brief affiche un carré plein
       \param 1&2 coordonnées
       \param 3: dimension (coté) du carré
@@ -92,7 +95,7 @@ class CProjetTetris: public CApplication {
       */
     void DrawFillSquare(int x, int y, float dim, const CVector3 &color) ;
 
-    /** 
+    /**
       \brief affiche un rectangle plein
       \param 1&2 coordonnées
       \param 3&4: largeur et hauteur
@@ -100,8 +103,8 @@ class CProjetTetris: public CApplication {
       */
     void DrawFillRect(int x, int y, float w, float h, const CVector3 &color) ;
 
-    /** 
-      \brief affiche le contour d'un rectangle 
+    /**
+      \brief affiche le contour d'un rectangle
       \param 1&2 coordonnées
       \param 3&4: largeur et hauteur
       \param 4: couleur
