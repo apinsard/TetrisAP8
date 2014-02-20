@@ -75,9 +75,6 @@ void CProjetTetris::OnRender() {
   // affichage du tetris
   DrawTetris();
 
-  // ICI AFFICHAGE DE MON CARRE DE TEST
-  DrawFillRect ( m_game.GetXPos() + m_posXPiece*m_game.GetCaseDim(), m_game.GetYPos()+ m_posYPiece*m_game.GetCaseDim(), m_game.GetCaseDim(), m_game.GetCaseDim(), CVector3(255.0f/255.0f,153.0f/255.0f,153.0f/255.0f) );
-
   // fin du rendu 2d
   m_renderer.End2DRender();
 
@@ -129,6 +126,17 @@ void CProjetTetris::DrawTetris() {
   }
 
   // affichage de la pîece en cours
+  CPieceAbstract* piece = this->m_game.GetPiece();
+  for (unsigned int i=0; i<piece->GetDim(); i++) {
+    for (unsigned int j=0; j<piece->GetDim(); j++) {
+      if (piece->GetTable()[i][j] == 1) {
+        DrawFillSquare(
+            this->m_game.GetXPos()+(piece->GetColIndex()+j)*dim,
+            this->m_game.GetYPos()+(piece->GetRowIndex()+i)*dim,
+            dim, piece->GetColor());
+      }
+    }
+  }
 
 }
 

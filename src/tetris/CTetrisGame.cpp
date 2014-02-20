@@ -18,7 +18,6 @@ CTetrisGame::CTetrisGame(unsigned int gamePosX, unsigned int gamePosY,
   m_yPos    = gamePosY;
   m_caseDim = dimCase;
 
-  //AddPiece();
   this->m_pPiece = new COPiece(0, 0, CVector3(0, 0, 0));
   InsertPiece();
   this->m_pPiece = new COPiece(2, 0, CVector3(0, 0, 0));
@@ -29,6 +28,8 @@ CTetrisGame::CTetrisGame(unsigned int gamePosX, unsigned int gamePosY,
   InsertPiece();
   this->m_pPiece = new COPiece(8, 0, CVector3(0, 0, 0));
   InsertPiece();
+
+  AddPiece();
 
   cout << GetFullRow() << endl;
   cout << m_board << endl;
@@ -47,27 +48,35 @@ CTetrisGame::~CTetrisGame(){
 void CTetrisGame::AddPiece() {
   srand(time(NULL));
 
+  float red   = (rand()%256)/255.0f;
+  float green = (rand()%256)/255.0f;
+  float blue  = (rand()%256)/255.0f;
+  CVector3 color = CVector3(red, green, blue);
+
+  unsigned int posX = 3;
+  unsigned int posY = 19;
+
   switch (rand() % 7) {
     case 0:
-      this->m_pPiece = new CTPiece(0, 0, CVector3(0, 0, 0));
+      this->m_pPiece = new CTPiece(posX, posY, color);
       break;
     case 1:
-      this->m_pPiece = new CIPiece(0, 0, CVector3(0, 0, 0));
+      this->m_pPiece = new CIPiece(posX, posY, color);
       break;
     case 2:
-      this->m_pPiece = new COPiece(0, 0, CVector3(0, 0, 0));
+      this->m_pPiece = new COPiece(posX, posY, color);
       break;
     case 3:
-      this->m_pPiece = new CZ1Piece(0, 0, CVector3(0, 0, 0));
+      this->m_pPiece = new CZ1Piece(posX, posY, color);
       break;
     case 4:
-      this->m_pPiece = new CZ2Piece(0, 0, CVector3(0, 0, 0));
+      this->m_pPiece = new CZ2Piece(posX, posY, color);
       break;
     case 5:
-      this->m_pPiece = new CL1Piece(0, 0, CVector3(0, 0, 0));
+      this->m_pPiece = new CL1Piece(posX, posY, color);
       break;
     case 6:
-      this->m_pPiece = new CL2Piece(0, 0, CVector3(0, 0, 0));
+      this->m_pPiece = new CL2Piece(posX, posY, color);
       break;
   }
 
@@ -88,11 +97,16 @@ int CTetrisGame::GetFullRow() {
 }
 
 void CTetrisGame::DeleteRow(unsigned int rowIndex) {
-  unsigned int i, size = m_board.GetGameTable().size();
+  vector<TGameRow> &gameTable = this->m_board.GetGameTable();
+  if (0 <= rowIndex && rowIndex < gameTable.size()) {
+    // On descend toutes les lignes au dessus
+    for (unsigned int i=rowIndex; i+1 < gameTable.size(); i++)
+      gameTable[i] = gameTable[i+1];
 
-  if(size < rowIndex && 0 <= rowIndex)
-    for(i=rowIndex; (i < size && i+1 < size); i++)
-      m_board.GetGameTable()[i] = m_board.GetGameTable()[i+1];
+    // Et on vide la ligne du haut
+    for (unsigned int i=0; i<gameTable[gameTable.size()-1].size(); i++)
+      gameTable[gameTable.size()-1][i].m_used = 0;
+  }
 }
 
 void CTetrisGame::InsertPiece() {
@@ -108,9 +122,10 @@ void CTetrisGame::InsertPiece() {
 }
 
 /****************************************/
-CTGameTable& CTetrisGame::GetBoard()    { return m_board; }
-unsigned int CTetrisGame::GetXPos()     { return m_xPos; }
-unsigned int CTetrisGame::GetYPos()     { return m_yPos; }
-float&       CTetrisGame::GetCaseDim()  { return m_caseDim; }
+CTGameTable&    CTetrisGame::GetBoard()    { return m_board; }
+unsigned int    CTetrisGame::GetXPos()     { return m_xPos; }
+unsigned int    CTetrisGame::GetYPos()     { return m_yPos; }
+float&          CTetrisGame::GetCaseDim()  { return m_caseDim; }
+CPieceAbstract* CTetrisGame::GetPiece()    { return m_pPiece; }
 
 

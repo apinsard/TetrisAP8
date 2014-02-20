@@ -25,8 +25,8 @@ ostream& operator<< (ostream& out, const CTGameTable& tab) {
 /****************************************/
 void CTGameTable::setCase(unsigned int x, unsigned int y, Case newCase) {
   if( m_GameTable.size() > 0
-      && m_GameTable.size() >= x
-      && m_GameTable[0].size() >= y)
+      && m_GameTable.size() > x
+      && m_GameTable[0].size() > y)
   {
     m_GameTable[x][y] = newCase;
   }
