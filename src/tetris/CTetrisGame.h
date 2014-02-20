@@ -152,6 +152,7 @@ private:
   unsigned int    m_yPos; ///< position en ordonnée du jeu dans la fenètre openGL
   unsigned int    m_score; ///< score courant
   float           m_caseDim; ///< taille d'une case du tetris
+  bool            m_gameOver; ///< vrai quand le joueur a perdu
 };
 
 #endif

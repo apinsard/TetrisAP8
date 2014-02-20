@@ -64,15 +64,15 @@ public:	// les fonctions suivantes peuvent être appelées par d'autres classes / 
 	// instruction a lancer pour le rendu de la scene
 	//----------------------------------------------------------
 	static void RunGraphics (void);
-	
+
 protected:	// les fonctions suivantes peuvent être appelées seulement pas cettte même classe et les classes filles de cette classe
-	
+
 	static void InitGL(void);
 	static void ReshapeFunc(int width, int height);
 	static void DisplayFunc(void);
 	static void KeyboardFunc(unsigned char key, int /*x*/, int /*y*/);
 	static void SpecialFunc(int key, int /*x*/, int /*y*/);
-	
+
 	// application
 	static CApplication*	m_application;
 

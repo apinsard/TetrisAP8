@@ -3,13 +3,13 @@
 //
 //------------------------------------------------------------------------
 // Copyright (c) 2010-2011 Equipe SAMSARA (T. LE NAOUR, N. COURTY, S. GIBET)
-// VALORIA - UBS 
+// VALORIA - UBS
 //========================================================================
 
 
 //-----------------------------------------------------------------
 // On inclut les fichiers .h qui contiennent les déclarations des méthodes
-// Les implémentations de nos méthodes ont besoin de leurs déclarations 
+// Les implémentations de nos méthodes ont besoin de leurs déclarations
 // ainsi que des déclarations des fonctions OPENGL
 //-----------------------------------------------------------------
 #include "CApplication.h"

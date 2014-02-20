@@ -16,7 +16,7 @@
 
 
 //-----------------------------------------------------------------
-// Notre programme va avoir besoin 
+// Notre programme va avoir besoin
 // des fonctions spécifiques à l'utilisateur (iterface graphique utilisateur GUI) et
 // des fonctions nécéssaires au rendu d'un objet dans la scene
 //
@@ -36,7 +36,7 @@ public:
 	//----------------------------------------------------------
 	// constructeur de l'objet
 	//----------------------------------------------------------
-	CApplication() 
+	CApplication()
 		:m_windowSetUp(new WindowSetup(800, 640)), m_UserEvents(0), m_camera(0)  {}
 
 	//----------------------------------------------------------
@@ -96,7 +96,7 @@ protected:
 	// Données membres
 	//----------------------------------------------------------
 	WindowSetup*	m_windowSetUp;	///< infos liées à la fenêtre (pointeur car paratagé par deux objets)
-	CRenderer		m_renderer	;	///< Déclaration du renderer 
+	CRenderer		m_renderer	;	///< Déclaration du renderer
 	UserEvents*		m_UserEvents;	///< infos liées à la souris/caméra (pointeur car paratagé par deux objets)
 	CCamera*			m_camera	;	// la camera
 };
