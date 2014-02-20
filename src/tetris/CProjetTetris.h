@@ -8,8 +8,8 @@
 
 
 
-#ifndef __PROJET_TETRIS_H__	// routine qui sert à pas inclure 2 fois le même fichier
-#define __PROJET_TETRIS_H__	//
+#ifndef __PROJET_TETRIS_H__  // routine qui sert à pas inclure 2 fois le même fichier
+#define __PROJET_TETRIS_H__  //
 
 //-----------------------------------------------------------------
 // Notre programme va avoir besoin 
@@ -18,8 +18,8 @@
 //
 // On inclu les fichiers .h qui contiennent les déclarations des fonctions
 //-----------------------------------------------------------------
-#include "CApplication.h"		// ensemble des fonctions contenant notre environnement de développement
-#include "CTetrisGame.h"			// le jeu tétris (pas d'affichage dedans  !!!!!)
+#include "CApplication.h"    // ensemble des fonctions contenant notre environnement de développement
+#include "CTetrisGame.h"      // le jeu tétris (pas d'affichage dedans  !!!!!)
 
 ////////////////////////////////////////////////////////////////////////
 /// classe Demo: elle est notre classe cliente, elle possède l'ensemble des propriétés de la classe CApplication
@@ -65,13 +65,8 @@ class CProjetTetris: public CApplication {
     //----------------------------------------------------------
     // Données membres
     //----------------------------------------------------------
-    unsigned int		m_step;			///< compteur de passage dans la méthode onRender() permet de gérer implicitement le temps
-    CTetrisGame		m_game;			///< le jeu !!
-
-    // Attributs temporaires
-    // Il s'agit d'un test i.e. un carré qui descend pour vous montrer comment évolue le jeu au cours du temps
-    int				m_posYPiece;			
-    int				m_posXPiece;
+    unsigned int    m_step;      ///< compteur de passage dans la méthode onRender() permet de gérer implicitement le temps
+    CTetrisGame    m_game;      ///< le jeu !!
 
     /** 
       \brief affichage de la grille de jeu

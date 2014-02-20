@@ -37,7 +37,7 @@ void CTetrisGame::AddPiece() {
   CVector3 color = CVector3(red, green, blue);
 
   unsigned int posX = 3;
-  unsigned int posY = 16;
+  unsigned int posY = 19;
 
   switch (rand() % 7) {
     case 0:
@@ -99,8 +99,8 @@ bool CTetrisGame::IsGameOver() {
 }
 
 ActionResult CTetrisGame::MovePiece(PieceAction action) {
-  if (this->IsGameOver())
-    return AR_GameOver;
+  //if (this->IsGameOver())
+  //  return AR_GameOver;
   
   switch (action) {
     case PA_RotateRight:
@@ -123,6 +123,8 @@ ActionResult CTetrisGame::MovePiece(PieceAction action) {
       break;
   }
 
+  this->CheckBorderCollision();
+
   return AR_Ok;
 }
 
@@ -130,13 +132,13 @@ ActionResult CTetrisGame::Update(unsigned int step) {
   if (step != 0)
     return AR_Ok;
 
-  cout << this->m_pPiece << " ";
   if (!this->m_pPiece) {
     this->AddPiece();
     return AR_Ok;
   }
 
-  return this->MovePiece(PA_MoveBottom);
+  this->MovePiece(PA_MoveBottom);
+  return AR_Ok;
 }
 
 void CTetrisGame::InsertPiece() {
@@ -149,6 +151,52 @@ void CTetrisGame::InsertPiece() {
       this->m_board.setCase(this->m_pPiece->GetRowIndex()+i, this->m_pPiece->GetColIndex()+j, pieceCase);
     }
   }
+}
+
+bool CTetrisGame::CheckBorderCollision() {
+  int leftIndex = 0;
+  for (unsigned int col=0; col<m_pPiece->GetDim(); col++) {
+    for (unsigned int row=0; row<m_pPiece->GetDim(); row++) {
+      if (m_pPiece->GetTable()[row][col] == 1) {
+        // L'index est la colonne la plus à gauche comportant au moins un 1.
+        leftIndex = col;
+        // Et on quitte les boucles
+        col = m_pPiece->GetDim();
+        break;
+      }
+    }
+  }
+  leftIndex += m_pPiece->GetColIndex();
+
+  if (leftIndex < 0) {
+    // Débordement par la gauche
+    this->m_pPiece->SetIncDecColIndex(-1*leftIndex);
+    return true;
+  }
+
+  unsigned int width = this->m_board.GetGameTable()[0].size();
+  unsigned int rightIndex = this->m_pPiece->GetDim() - 1;
+
+  for (unsigned int col=m_pPiece->GetDim(); col>0; col--) {
+    for (unsigned int row=0; row<m_pPiece->GetDim(); row++) {
+      if (m_pPiece->GetTable()[row][col-1] == 1) {
+        // L'index est la colonne la plus à droite comportant au moins un 1.
+        rightIndex = col-1;
+        // Et on quitte les boucles
+        col = 1;
+        break;
+      }
+    }
+  }
+  rightIndex += m_pPiece->GetColIndex();
+
+  if (rightIndex >= width) {
+    // Débordement par la droite
+    this->m_pPiece->SetIncDecColIndex(width-rightIndex-1);
+    return true;
+  }
+
+  return false;
 }
 
 /****************************************/

@@ -17,9 +17,6 @@ CProjetTetris::CProjetTetris() {
   m_game = CTetrisGame(POSX_BOARD, POSY_BOARD, WIDTH_BOARD, HEIGHT_BOARD, DIM_CASE);
   m_step = 0;
 
-  // attributs rajoutés pour montrer un exemple de pièce qui descend
-  m_posYPiece = HEIGHT_BOARD;
-  m_posXPiece = WIDTH_BOARD/2;
 }
 
 /****************************************/
@@ -50,7 +47,6 @@ void CProjetTetris::OnRender() {
   if ( m_step> 50 )
   {
     m_step = 0;
-    m_posYPiece--; // à chaque pas de temps, on fait évoluer la coordonnée en y de la pièce
   }
 
   this->m_game.Update(m_step);
@@ -199,8 +195,8 @@ void CProjetTetris::DrawFillSquare(int x, int y, float dim, const CVector3 &colo
   glColor3f(color.x,color.y,color.z);
   glBegin(GL_QUADS);
   glVertex2f(x, y);
-  glVertex2f(x,  y+dim);
-  glVertex2f(x+dim,  y+dim);
+  glVertex2f(x, y+dim);
+  glVertex2f(x+dim, y+dim);
   glVertex2f(x+dim, y);
   glEnd();
 }
