@@ -27,6 +27,8 @@
 #include <vector>
 #include <cmath>
 #include <cstring>
+#include <cstdlib>
+#include <ctime>
 #include "CVector3.h"
 #include "CVector4.h"
 #include "CMatrix44.h"
