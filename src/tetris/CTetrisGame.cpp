@@ -18,8 +18,19 @@ CTetrisGame::CTetrisGame(unsigned int gamePosX, unsigned int gamePosY,
   m_yPos    = gamePosY;
   m_caseDim = dimCase;
 
-  AddPiece();
+  //AddPiece();
+  this->m_pPiece = new COPiece(0, 0, CVector3(0, 0, 0));
   InsertPiece();
+  this->m_pPiece = new COPiece(2, 0, CVector3(0, 0, 0));
+  InsertPiece();
+  this->m_pPiece = new COPiece(4, 0, CVector3(0, 0, 0));
+  InsertPiece();
+  this->m_pPiece = new COPiece(6, 0, CVector3(0, 0, 0));
+  InsertPiece();
+  this->m_pPiece = new COPiece(8, 0, CVector3(0, 0, 0));
+  InsertPiece();
+
+  cout << GetFullRow() << endl;
 }
 
 /****************************************/
@@ -32,6 +43,24 @@ CTetrisGame::~CTetrisGame(){
 /****************************************/
 void CTetrisGame::AddPiece() {
   this->m_pPiece = new CIPiece(0, 0, CVector3(0, 0, 0));
+}
+
+int CTetrisGame::GetFullRow() {
+  int i = -1;
+  bool isFull = true;
+
+  do {
+      i++;
+      for(unsigned int j=0; j < m_board.GetGameTable()[i].size() && isFull; j++)
+        isFull &= m_board.GetGameTable()[i][j].m_used;
+
+  } while(i < m_board.GetGameTable().size() && !isFull);
+
+  return (isFull) ? i : -1;
+}
+
+void CTetrisGame::DeleteRow(unsigned int rowIndex) {
+
 }
 
 void CTetrisGame::InsertPiece() {

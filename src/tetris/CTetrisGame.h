@@ -11,6 +11,7 @@
 #include "CPieceAbstract.h"
 #include "CIPiece.h"
 #include "CTPiece.h"
+#include "COPiece.h"
 #include "CZ1Piece.h"
 #include "CTGameTable.h"
 #include "CRandomizer.h"
