@@ -45,7 +45,32 @@ CTetrisGame::~CTetrisGame(){
 
 /****************************************/
 void CTetrisGame::AddPiece() {
-  this->m_pPiece = new CIPiece(0, 0, CVector3(0, 0, 0));
+  srand(time(NULL));
+
+  switch (rand() % 7) {
+    case 0:
+      this->m_pPiece = new CTPiece(0, 0, CVector3(0, 0, 0));
+      break;
+    case 1:
+      this->m_pPiece = new CIPiece(0, 0, CVector3(0, 0, 0));
+      break;
+    case 2:
+      this->m_pPiece = new COPiece(0, 0, CVector3(0, 0, 0));
+      break;
+    case 3:
+      this->m_pPiece = new CZ1Piece(0, 0, CVector3(0, 0, 0));
+      break;
+    case 4:
+      this->m_pPiece = new CZ2Piece(0, 0, CVector3(0, 0, 0));
+      break;
+    case 5:
+      this->m_pPiece = new CL1Piece(0, 0, CVector3(0, 0, 0));
+      break;
+    case 6:
+      this->m_pPiece = new CL2Piece(0, 0, CVector3(0, 0, 0));
+      break;
+  }
+
 }
 
 int CTetrisGame::GetFullRow() {

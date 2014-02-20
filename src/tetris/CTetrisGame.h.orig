@@ -12,8 +12,11 @@
 #include "CIPiece.h"
 #include "CTPiece.h"
 #include "COPiece.h"
+<<<<<<< HEAD
 #include "CL1Piece.h"
 #include "CL2Piece.h"
+=======
+>>>>>>> 6c4855c4352df81ddb3fb60cd47ba10a0f0eae88
 #include "CZ1Piece.h"
 #include "CZ2Piece.h"
 #include "CTGameTable.h"
