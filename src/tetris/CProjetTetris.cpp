@@ -53,6 +53,8 @@ void CProjetTetris::OnRender() {
     m_posYPiece--; // à chaque pas de temps, on fait évoluer la coordonnée en y de la pièce
   }
 
+  this->m_game.Update(m_step);
+
   //-------------------------------------------------------
   // commande utilisateur
   //-------------------------------------------------------

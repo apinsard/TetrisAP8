@@ -17,24 +17,7 @@ CTetrisGame::CTetrisGame(unsigned int gamePosX, unsigned int gamePosY,
   m_xPos    = gamePosX;
   m_yPos    = gamePosY;
   m_caseDim = dimCase;
-
-  this->m_pPiece = new COPiece(0, 0, CVector3(0, 0, 0));
-  InsertPiece();
-  this->m_pPiece = new COPiece(2, 0, CVector3(0, 0, 0));
-  InsertPiece();
-  this->m_pPiece = new COPiece(4, 0, CVector3(0, 0, 0));
-  InsertPiece();
-  this->m_pPiece = new COPiece(6, 0, CVector3(0, 0, 0));
-  InsertPiece();
-  this->m_pPiece = new COPiece(8, 0, CVector3(0, 0, 0));
-  InsertPiece();
-
-  AddPiece();
-
-//  cout << GetFullRow() << endl;
-//  cout << m_board << endl;
-  DeleteRow(GetFullRow());
-//  cout << m_board << endl;
+  m_pPiece  = NULL;
 }
 
 /****************************************/
@@ -141,6 +124,19 @@ ActionResult CTetrisGame::MovePiece(PieceAction action) {
   }
 
   return AR_Ok;
+}
+
+ActionResult CTetrisGame::Update(unsigned int step) {
+  if (step != 0)
+    return AR_Ok;
+
+  cout << this->m_pPiece << " ";
+  if (!this->m_pPiece) {
+    this->AddPiece();
+    return AR_Ok;
+  }
+
+  return this->MovePiece(PA_MoveBottom);
 }
 
 void CTetrisGame::InsertPiece() {
