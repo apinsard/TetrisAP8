@@ -162,6 +162,8 @@ ActionResult CTetrisGame::Update(unsigned int step) {
   ActionResult ar = this->MovePiece(PA_MoveBottom);
   if (ar == AR_Collision) {
     this->InsertPiece();
+    while (this->GetFullRow() != -1)
+      this->DeleteRow(this->GetFullRow());
     this->AddPiece();
   }
 
