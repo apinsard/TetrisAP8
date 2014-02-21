@@ -12,7 +12,9 @@ Par Julien Cadic et Antoine Pinsard
 
 ## Avancement
 
-Les pièces T, I, O, Z1, Z2, L1 et L2 ont été implémentées et testées.
+Les pièces T, I, O, Z1, Z2, L1 et L2 ont été implémentées et testées. Tous les
+déplacements ont été implémentés à l'exception de la « descente rapide » *(Cf.
+Fonctionnalités à implémenter)*.
 
 ## Choix techniques
 
@@ -82,12 +84,24 @@ Lance tous les tests des pièces (testCTPiece, testCIPiece, testCOPiece, ...)
 ### `make test`
 Lance l'intégralité des tests en mode console
 
-## TODO
+## Fonctionnalités à implémenter
 
-* / Gérer le cas du "Game Over"
-* Revoir les commentaires du code
-* Revoir les tests
-* / Revoir les couleurs des pièces
-* X Implémenter le score
-* Implémenter la fonctionnalité "avance rapide" (barre d'espace).
+### « Descente rapide » avec la barre d'espace
+
+Cette fonctionnalité n'a pas été implémentée pour l'instant car elle n'est pas
+indispensable : Laisser enfoncer la touche `↓` a un effet similaire. De plus
+elle est légèrement plus complexe à implémenter que les autres mouvements.
+Effectivement, lors d'une collision, on replace la pièce dans la position
+précédente, ce qui a tout son sens pour un déplacement d'une unité. Mais pas
+dans un déplacement de plusieurs cases en même temps. Il faudrait en fait
+descendre la pièce de une case *n* fois plutôt que la descendre une fois de *n*
+cases. Ou, pour faire complètement tomber la pièce, la faire descendre de une
+case jusqu'à ce que l'on rencontre une collision.
+
+## Bugs connus
+
+### Gestion de l'aléatoire
+
+Lorsque les pièces défilent très rapidement (niveau élevé ou lorsqu'on laisse
+enfoncé la touche `↓`), la forme et la couleur des pièces ne change pas.
 
