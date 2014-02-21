@@ -1,0 +1,959 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>Tetris: Référence du fichier /home/cj/workspace/Tetris/src/appliBase/Common.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Les-Stages-a-l-IUT-Informatique-de-Vannes-en-2006_img_200.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Tetris
+   &#160;<span id="projectnumber">alpha</span>
+   </div>
+   <div id="projectbrief">Juan revival</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_common_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Énumérations</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier Common.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;string&gt;</code><br/>
+<code>#include &lt;sstream&gt;</code><br/>
+<code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;algorithm&gt;</code><br/>
+<code>#include &lt;vector&gt;</code><br/>
+<code>#include &lt;cmath&gt;</code><br/>
+<code>#include &lt;cstring&gt;</code><br/>
+<code>#include &lt;cstdlib&gt;</code><br/>
+<code>#include &lt;ctime&gt;</code><br/>
+<code>#include &quot;<a class="el" href="_c_vector3_8h_source.html">CVector3.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_c_vector4_8h_source.html">CVector4.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_c_matrix44_8h_source.html">CMatrix44.h</a>&quot;</code><br/>
+</div>
+<p><a href="_common_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_window_setup.html">WindowSetup</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_renderer_setup.html">RendererSetup</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_t_l_delete.html">STLDelete</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_helpers.html">Helpers</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_user_events.html">UserEvents</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a5dd40006a8db1c832f788950d00ab0ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_common_8h.html#a5dd40006a8db1c832f788950d00ab0ec">__COMMON_H__</a></td></tr>
+<tr class="separator:a5dd40006a8db1c832f788950d00ab0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:ab3c7af4820830f9166ede9e5623c4e73"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73">Key</a> { <br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a56f383e6ea6b7f6eefacada9527226ce">Key_UNKNOWN</a> = 0, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ab344c9c58f084c916918c3bf0d5e047e">Key_FIRST</a> = 0, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a29a2f57f7d4a077ea118c27d777bce4a">Key_BACKSPACE</a> = 8, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a739e2c12062d8cdf58dcae334285fba4">Key_TAB</a> = 9, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a31ca6ba3dd45f8eed2b2d5a2b9c4173c">Key_CLEAR</a> = 12, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ac881bedad4d6304c8954eb89644cc57e">Key_RETURN</a> = 13, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a81d68920edccb6009bc2c50639217e88">Key_PAUSE</a> = 19, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73aaeafdc1b1202fe06bc33ee4fdb1437c9">Key_ESCAPE</a> = 27, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a02008819bc53440c14be7991f01164d2">Key_SPACE</a> = 32, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73aa6250e2db101352f8c37dafa934446dc">Key_EXCLAIM</a> = 33, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a0ffc0e7ff072a7209dd83704b52effaf">Key_QUOTEDBL</a> = 34, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a19c3938adf5fba42993f282539ea426c">Key_HASH</a> = 35, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73adddf7afc83368e25baf139a9b9787751">Key_DOLLAR</a> = 36, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a9a3226a468eb3d573362d5b98c28d0df">Key_AMPERSAND</a> = 38, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a5289e7239873c7dd3238b790643760c0">Key_QUOTE</a> = 39, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a26172a709b4982f5c7a0723e241ec8d7">Key_LEFTPAREN</a> = 40, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a07a81ef9b84d2366b40c209184447472">Key_RIGHTPAREN</a> = 41, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a73e583df8ae2cb3255bfd0a18a6ac468">Key_ASTERISK</a> = 42, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a1daed6d5655fe12948e314f8c771b902">Key_PLUS</a> = 43, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ab983432ef635cb92d2f70d67ef0d2b61">Key_COMMA</a> = 44, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73af912d1d03d4a592076d1bd1900b2e35e">Key_MINUS</a> = 45, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a3279edd67ada17976a452484f00c3856">Key_PERIOD</a> = 46, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a613f5f4c9fe7094ee63f8d50f31d36cb">Key_SLASH</a> = 47, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a5b3c0a4648c1367f1643e1c066e1181b">Key_0</a> = 48, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a846203f1da6ebfe97bf0d4e1da3be8dd">Key_1</a> = 49, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ad3ef639807c7a01599af3d549758321a">Key_2</a> = 50, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73aae77d4e18f4e9e94804e685afa31314a">Key_3</a> = 51, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a02a35e1a57e76bde3692dce541233c25">Key_4</a> = 52, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a64d351e8b57aed2d9a254039c8708dc5">Key_5</a> = 53, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a6ac6144ae4a0e371ac7b71ec4a5b29ef">Key_6</a> = 54, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73abb1ba79242750de243a5ee87f5bac439">Key_7</a> = 55, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a6a6a02ed96280697c14d1201814b7c26">Key_8</a> = 56, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a090eac0b08b494f5cdc271fd22ef985b">Key_9</a> = 57, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a8865c5f009f321a14002d0a9c3c11203">Key_COLON</a> = 58, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73aa2f54d600d8f6da50ad18d5f3c56a21d">Key_SEMICOLON</a> = 59, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ab46b20b5978cdb2a7adb4416420b6b5a">Key_LESS</a> = 60, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a56098be54c97140c047536e36c0d279d">Key_EQUALS</a> = 61, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a795c3a7f3e29af83fda9f9d8ad8bd060">Key_GREATER</a> = 62, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a65e6fe5903eb10627d3b7c75b55d8bc0">Key_QUESTION</a> = 63, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ab68a55ce85e8f925fc92ed05125b2d82">Key_AT</a> = 64, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a067fd9a7018b9804c468b52ad5eb8ca5">Key_LEFTBRACKET</a> = 91, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73acabd602a6ca72b5298e9b043235dc28b">Key_BACKSLASH</a> = 92, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a980583b98044bae5deaa582ce88e4908">Key_RIGHTBRACKET</a> = 93, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a1e421086d94de8d77d443a7be2babadc">Key_CARET</a> = 94, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a07861e6b0c8fbab6e7c502fefc549633">Key_UNDERSCORE</a> = 95, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ac28a42dbfae24a373f8227eb6d5bff15">Key_BACKQUOTE</a> = 96, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a9cae408665a69de1075ed731f2701bdc">Key_a</a> = 97, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a1670cf8eb71a45cc047658c791917c3b">Key_b</a> = 98, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a9ed6ef653f8c8a41c3897c8faa347a3e">Key_c</a> = 99, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a128526610f541a6f909054d0dd64f565">Key_d</a> = 100, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a6820564a7653f02a14fef8c9f1789de2">Key_e</a> = 101, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73af6a7178c91357dd55e6e2730c59e9944">Key_f</a> = 102, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a6668e1e77c5f207727f08851ef37b17a">Key_g</a> = 103, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a1a2be49caab3dae7ae05947661e0c930">Key_h</a> = 104, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a7f495df380d6255a12efb20c7d605a93">Key_i</a> = 105, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a80acdd087183e100a764fc8391aca222">Key_j</a> = 106, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a97d1ed88df3f847fe356922f36f01f42">Key_k</a> = 107, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73af143411c7829c43751560c6e814a1aa6">Key_l</a> = 108, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a0d079e3b4cfe8ce168c3f12014ce16a8">Key_m</a> = 109, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ae755d457dd59f6cd41406aa151660c1f">Key_n</a> = 110, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a0fb8898f0fac9be9aa743216d0218c02">Key_o</a> = 111, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a6063117414787840b8fdebd671d505be">Key_p</a> = 112, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a875683f6be8d44cd9bcd55e49a98c812">Key_q</a> = 113, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ad3fc27eadb16334cbe8798e37b7c0805">Key_r</a> = 114, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a031cadba47a7ff10092eb50c48e15125">Key_s</a> = 115, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a89cfb5db5f53d0e41a685e5a8758447a">Key_t</a> = 116, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a666398939cf315a014e454b85dda7b7a">Key_u</a> = 117, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a214d03ee34d26b67db9b9276a0492519">Key_v</a> = 118, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a9559da62987dbfd9328db765261d38d3">Key_w</a> = 119, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a4acd2eaf8278f23dc81d1f3c5195215e">Key_x</a> = 120, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a87b352ebfa0bd2787ce4b48c64e594f2">Key_y</a> = 121, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a1a71b8087e5678a1b98ca6f3534a8a3f">Key_z</a> = 122, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a4ae72030415879b9b10a31d34f33de51">Key_DELETE</a> = 127, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ab04b5985b41e56b537ff84b3ee6404c8">Key_WORLD_0</a> = 160, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a198c465f596310516fb25712ba884bde">Key_WORLD_1</a> = 161, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ac188a39274d715b53c29ec464aa826cc">Key_WORLD_2</a> = 162, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a1a1ccf72796c95a5c5bd27ba3dd9fd79">Key_WORLD_3</a> = 163, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ae20b6d83a1a75afafcb4f205dbb74bf0">Key_WORLD_4</a> = 164, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a715fc361254cd9dd92a4e9939fa3b587">Key_WORLD_5</a> = 165, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a7ba66f2ef51d882a30845145bd97a927">Key_WORLD_6</a> = 166, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a78baceb70d416c9d802e04b589adb2fe">Key_WORLD_7</a> = 167, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a05782bef6c0f3bc5bdfdd89bff8e09d6">Key_WORLD_8</a> = 168, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73aeaeb9fab28ee966b55fa32a3a693bb16">Key_WORLD_9</a> = 169, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a9aed81ff3d1a56fb306a0b06fc7faef2">Key_WORLD_10</a> = 170, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a6d0e50da631e3474de44ee0e467b458d">Key_WORLD_11</a> = 171, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a01d1ce1739b4bd52e64c7ce8556d6c1b">Key_WORLD_12</a> = 172, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ae1c866a81ed5db197c6c84031b3b1b2d">Key_WORLD_13</a> = 173, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a8669a93b3e6ed35ff9531bc1e01e120a">Key_WORLD_14</a> = 174, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ac9aa9af01e01c6261fcb9f44a6ddc971">Key_WORLD_15</a> = 175, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a4c597a16a54da780451a894db95b9d87">Key_WORLD_16</a> = 176, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a3020494a5cb39804550f32122b96faf5">Key_WORLD_17</a> = 177, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a95aa6054bf697431c29df738bf420759">Key_WORLD_18</a> = 178, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73aace6d2636adfbfd3161e08a4c82f40ee">Key_WORLD_19</a> = 179, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a41d0eb30a26e01e19fb218b0a5408734">Key_WORLD_20</a> = 180, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a22984175113ac45436645c75cf0b4363">Key_WORLD_21</a> = 181, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a85c7c65b647d2b0335ec8e6dd350aa99">Key_WORLD_22</a> = 182, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a084227cf0308b0708c24350fb2acbce9">Key_WORLD_23</a> = 183, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a891002c5d9461ebcd7f12ea8b7082bec">Key_WORLD_24</a> = 184, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a3a78aec12fc4dbed008a4b78f619510d">Key_WORLD_25</a> = 185, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a4886f268735758fd4e1f0065b194375b">Key_WORLD_26</a> = 186, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73acc093567056cd62efd2fb1b30f400e84">Key_WORLD_27</a> = 187, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a7ef7ecb73f8777d4275ff5d718ff53cd">Key_WORLD_28</a> = 188, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a24fefa97f008ba3f9eafde0d52845b5e">Key_WORLD_29</a> = 189, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ae31c1a4d638d2714e820bc0227de817b">Key_WORLD_30</a> = 190, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a8849bf299d3dc3311c3ba22ee02ecfc1">Key_WORLD_31</a> = 191, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73aafa723c7a4b40f2dc5781cc857891973">Key_WORLD_32</a> = 192, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a47a0357faa99e9e686c3ad4c7e14865f">Key_WORLD_33</a> = 193, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73af776618e2d2bf8607059629c36de06d7">Key_WORLD_34</a> = 194, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73acdea3da884547d6fe19362ca3c93f809">Key_WORLD_35</a> = 195, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a3dcc855bb7e6bb5a216c9f98ebe48316">Key_WORLD_36</a> = 196, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73aab6b1e65f653fb7ee6003645cf5f8c72">Key_WORLD_37</a> = 197, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73afd87f4091a690b47e11f8579ca50ef48">Key_WORLD_38</a> = 198, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a8e358c576e2a53d2d8865732ce221dee">Key_WORLD_39</a> = 199, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a40e753b4bc3d19153207e409d1ecdc23">Key_WORLD_40</a> = 200, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a761e1f8677a223d5770eb57e3f337182">Key_WORLD_41</a> = 201, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ae2b12a2a8f99566c12cb437fd9c94cbd">Key_WORLD_42</a> = 202, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a9c1ea488dd28756189d547979492fe71">Key_WORLD_43</a> = 203, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73abb2d2712fe41b4fea4bcf81590f62b75">Key_WORLD_44</a> = 204, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a32d637099c2fd440f1d4779b21f48fa4">Key_WORLD_45</a> = 205, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a43d896ca275e0839e81dd20cb3ef66be">Key_WORLD_46</a> = 206, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73af18f7a8346ce5d032556f9d3b325b660">Key_WORLD_47</a> = 207, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a28dc0138478341347e5c38f0bdd5ffb3">Key_WORLD_48</a> = 208, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a6917aec870ef1640ae656bf5ccdb5cb2">Key_WORLD_49</a> = 209, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a3a512c82add6c8743b17efc5124f9095">Key_WORLD_50</a> = 210, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a584e07a9042364dc14c5d9310b69f797">Key_WORLD_51</a> = 211, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a69a065b266dd12773a06143088e2f110">Key_WORLD_52</a> = 212, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ac195e5c7247fda97d754ee4e799fd32d">Key_WORLD_53</a> = 213, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a1e198126fddb305ede8d594f7d54aa43">Key_WORLD_54</a> = 214, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a6577e2fa55f18ee603061ae1664e7d08">Key_WORLD_55</a> = 215, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a09c251543ef91e0b3421e1d1efb1a082">Key_WORLD_56</a> = 216, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ad5c7709b45fd6093b74986c2be2a3a5c">Key_WORLD_57</a> = 217, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a1cc36285f36bf0e0496eb0855abe17e8">Key_WORLD_58</a> = 218, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a6256f4720aac41a6c3024f7429f196a9">Key_WORLD_59</a> = 219, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a2eb6187dd6439d93b81899e29bfb90f6">Key_WORLD_60</a> = 220, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a7a1ab8363a1184e87d8f5fb9be07fa55">Key_WORLD_61</a> = 221, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a0b47ad72003ee7b8dc2baad3a2b25601">Key_WORLD_62</a> = 222, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73afeb4edafae8bf0212ddd13362af60b6c">Key_WORLD_63</a> = 223, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ac8e13299ab3bf43c60359fd77c25c780">Key_WORLD_64</a> = 224, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73aa524c2fc628c404560212c296463a089">Key_WORLD_65</a> = 225, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a588cf4da99e16c5c539af06309d56142">Key_WORLD_66</a> = 226, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a20b34a978c36f84d5acd97dd8596bd07">Key_WORLD_67</a> = 227, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a5619922364b2beb0019331a71bf28a70">Key_WORLD_68</a> = 228, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ad483a3d8de7c83c1a3442d8f99e75b69">Key_WORLD_69</a> = 229, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ad5a27a2e121da7cb5c1b327c249c3901">Key_WORLD_70</a> = 230, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a556e6c202b727c368430594fe80c052e">Key_WORLD_71</a> = 231, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a3f6d4145f6765affdf190ff1a56316d5">Key_WORLD_72</a> = 232, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a20fd0e31ea413e1003b8949048166019">Key_WORLD_73</a> = 233, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73af63f35adc0b7d14d1913d1c291662317">Key_WORLD_74</a> = 234, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ade435565fa46480d6278c6ee68fb8f8b">Key_WORLD_75</a> = 235, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73aa8aabf948d2382501df110cefde5ad55">Key_WORLD_76</a> = 236, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a5a47e9f7ebbb2cc85f65731a79963efd">Key_WORLD_77</a> = 237, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a9d4a71d96d61250c0fdb3a59ea20aff9">Key_WORLD_78</a> = 238, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a9aa2b346ab4fbdee693cc87120292554">Key_WORLD_79</a> = 239, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a352fea13b9e32462bcf0277e005f8c56">Key_WORLD_80</a> = 240, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a80406d95c3cb6466b51d88257aba2a38">Key_WORLD_81</a> = 241, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a1887468b58a4c26fefe8ca4d219d4df2">Key_WORLD_82</a> = 242, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73adcb7b20def004350a5d9811905be86bc">Key_WORLD_83</a> = 243, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a0751805a82850c2c7fc45168b21bcbbf">Key_WORLD_84</a> = 244, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a63de21f0204fc74d30ed8833c7698975">Key_WORLD_85</a> = 245, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a3dc0015c0504dcac5353b6aabf274da0">Key_WORLD_86</a> = 246, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a85d3f5e64311d194e2203f95b73d43a0">Key_WORLD_87</a> = 247, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ad115db453ba5e9cd4fd9ae98ab2d780d">Key_WORLD_88</a> = 248, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73aa4bb8095e58659f76cba409b39b3f31b">Key_WORLD_89</a> = 249, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73aa2964b3442c3837570059e75233ab95e">Key_WORLD_90</a> = 250, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a565425254648cd51df4247cfd6ffafe3">Key_WORLD_91</a> = 251, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73aad1fcc8b6636a4a27c4b919d9309f74f">Key_WORLD_92</a> = 252, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ac4ef16ce8f802fb62d7ed5cfd74ae11c">Key_WORLD_93</a> = 253, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a725a5f48ab21e1a6d4eb40a7d30e52cd">Key_WORLD_94</a> = 254, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73af7f7daa6c4b4b828ca69d6f46d1ee9ed">Key_WORLD_95</a> = 255, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a9f36143aeb6d9decfb488efd5fa70c57">Key_KP0</a> = 256, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a294fc735c74eb0bb46611eb71c137838">Key_KP1</a> = 257, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a9511d25bc3e12b6034cc8b309269856f">Key_KP2</a> = 258, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73afc9b8dd0496af009105439bd364b7b17">Key_KP3</a> = 259, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a332d59b582b6b516312c7645399c5d92">Key_KP4</a> = 260, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ac2b90a0c5e13f9ef195cfc20d998d79b">Key_KP5</a> = 261, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a892e8447ed04cb425c8fe65ffeeaabc0">Key_KP6</a> = 262, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73afc54e59f3d5d69dbc3cca9e653cf6c89">Key_KP7</a> = 263, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a4e32518ebc1c5cfb2e58faa3badaad30">Key_KP8</a> = 264, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a76297b2a2b5b6319c5b1a4725abef485">Key_KP9</a> = 265, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73aa47f509da9d76fd434eeca44acd9e412">Key_KP_PERIOD</a> = 266, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73adad0d70c9df536721f7763a9b03ba0f0">Key_KP_DIVIDE</a> = 267, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a61bb4776fafbfda8692bfc7974205e10">Key_KP_MULTIPLY</a> = 268, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a341f620c2836c485d12cc00af4850b96">Key_KP_MINUS</a> = 269, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ac724524fa0e63a5f3f1893e851e1bdc9">Key_KP_PLUS</a> = 270, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a2ef45a22db2db6b608a6bb5f53b3fb04">Key_KP_ENTER</a> = 271, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ad0a66ec69979eec103fcbffe22189645">Key_KP_EQUALS</a> = 272, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a827c3467decbb9b750927873f257a3d1">Key_UP</a> = 273, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73aeb420f51e58db5a4d8ec7f886a057212">Key_DOWN</a> = 274, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ac6d72e4d0f834fc4d08444e8333b6c1b">Key_RIGHT</a> = 275, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a07831ab83d819996d92f853b3354799e">Key_LEFT</a> = 276, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ac4559698de1e972a0fd1c3877923dd62">Key_INSERT</a> = 277, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73accd5947ac336c3adc5bfee282c7120d3">Key_HOME</a> = 278, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a3e03cb5b9a49049b168a7bfe971846eb">Key_END</a> = 279, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a40247ec1efaa3b79b45f891bd061e92f">Key_PAGEUP</a> = 280, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a3d8dbdcfe16463aa2e2fcdafcdac5fea">Key_PAGEDOWN</a> = 281, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a89eca773438115314da5b20380e94c54">Key_F1</a> = 282, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a512b6e81954793577fb8d59704158c70">Key_F2</a> = 283, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a4b872aecf5f258800f50c46f5aed5864">Key_F3</a> = 284, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a601caf5a60c9f2491f02a9f651886bee">Key_F4</a> = 285, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ae000c0a058e6209050f2971ddb4fedc0">Key_F5</a> = 286, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a8f45ea1aedc850bf53bc34d642ac3aa8">Key_F6</a> = 287, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a57a37b0b73bc17e18476d8cd08a55c23">Key_F7</a> = 288, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73add0990da37bb3fe3f068131a6f05b9c9">Key_F8</a> = 289, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a0470646e859d81d60e5a4ee9bc5f7497">Key_F9</a> = 290, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a266a1eb78791136405280972f7b7e0d5">Key_F10</a> = 291, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a7e3e42968216b662525cd04b2b74b98c">Key_F11</a> = 292, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a5003c48bcbfc196b77b68012a1510cc2">Key_F12</a> = 293, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ade9022f72c1c251e5029e85b574f56b8">Key_F13</a> = 294, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73aed416a75a15e8cd27963303ca699192c">Key_F14</a> = 295, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a08217f58623f4045b03d4ac8f4e8659b">Key_F15</a> = 296, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a546771e002d2e3e6a42f95ec17a90728">Key_NUMLOCK</a> = 300, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a119403a58e59fe0ba3c7e839d6d805a6">Key_CAPSLOCK</a> = 301, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ab013cb1c8781f2ca76a11ff539710f8a">Key_SCROLLOCK</a> = 302, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a849dfa11144b58f8097ca71425aa3b5b">Key_RSHIFT</a> = 303, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a5f08447ed0c97d5063ab59c6ce5292d2">Key_LSHIFT</a> = 304, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73aaf616e50351bbd2a45caab81c1c35c4d">Key_RCTRL</a> = 305, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73af9df43cec92916e14613d6918fa2e90c">Key_LCTRL</a> = 306, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a20ede4862f966f8894d654c86bc1060b">Key_RALT</a> = 307, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a86ef1e98e61b64b22e243c5288cb385f">Key_LALT</a> = 308, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73addd24c3f46c0fab31055f33bc1435a7a">Key_RMETA</a> = 309, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a816143523ddb61006a7de0bed6f7cb6e">Key_LMETA</a> = 310, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a75eda6af4fa5b43422420165da100b0a">Key_LSUPER</a> = 311, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a845647cd2838a5a907583a7ecf049df0">Key_RSUPER</a> = 312, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73af37ee1d00c8d4b3d24a7be7e5a9eae72">Key_MODE</a> = 313, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73aae496f31f43513d852f2b220093c4110">Key_COMPOSE</a> = 314, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ac99b17464d8309b03e3ad5a35a740d77">Key_HELP</a> = 315, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a46c82d2f4ab9c86a48429ddce45ad116">Key_PRINT</a> = 316, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73ac37813706a18b386277791a96fcf92c4">Key_SYSREQ</a> = 317, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a292999706966936acabdcf6a0627e7b9">Key_BREAK</a> = 318, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a7e33b3b391a778169842a9de691e4113">Key_MENU</a> = 319, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a8f8e94e7c8a51789cd7cb49e068e2fd1">Key_POWER</a> = 320, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a88ced517825c3c2b104b131b8d292e8e">Key_EURO</a> = 321, 
+<br/>
+&#160;&#160;<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a8fa5736ec484dc0680912106a29ac711">Key_UNDO</a> = 322, 
+<a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73a14b58752079987ef5b8a59bc02240cfc">Key_LAST</a>
+<br/>
+ }</td></tr>
+<tr class="separator:ab3c7af4820830f9166ede9e5623c4e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des macros</h2>
+<a class="anchor" id="a5dd40006a8db1c832f788950d00ab0ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __COMMON_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_common_8h_source.html#l00018">18</a> du fichier <a class="el" href="_common_8h_source.html">Common.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_common_8h.html#ab3c7af4820830f9166ede9e5623c4e73">Key</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a56f383e6ea6b7f6eefacada9527226ce"></a>Key_UNKNOWN</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ab344c9c58f084c916918c3bf0d5e047e"></a>Key_FIRST</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a29a2f57f7d4a077ea118c27d777bce4a"></a>Key_BACKSPACE</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a739e2c12062d8cdf58dcae334285fba4"></a>Key_TAB</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a31ca6ba3dd45f8eed2b2d5a2b9c4173c"></a>Key_CLEAR</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ac881bedad4d6304c8954eb89644cc57e"></a>Key_RETURN</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a81d68920edccb6009bc2c50639217e88"></a>Key_PAUSE</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73aaeafdc1b1202fe06bc33ee4fdb1437c9"></a>Key_ESCAPE</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a02008819bc53440c14be7991f01164d2"></a>Key_SPACE</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73aa6250e2db101352f8c37dafa934446dc"></a>Key_EXCLAIM</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a0ffc0e7ff072a7209dd83704b52effaf"></a>Key_QUOTEDBL</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a19c3938adf5fba42993f282539ea426c"></a>Key_HASH</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73adddf7afc83368e25baf139a9b9787751"></a>Key_DOLLAR</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a9a3226a468eb3d573362d5b98c28d0df"></a>Key_AMPERSAND</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a5289e7239873c7dd3238b790643760c0"></a>Key_QUOTE</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a26172a709b4982f5c7a0723e241ec8d7"></a>Key_LEFTPAREN</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a07a81ef9b84d2366b40c209184447472"></a>Key_RIGHTPAREN</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a73e583df8ae2cb3255bfd0a18a6ac468"></a>Key_ASTERISK</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a1daed6d5655fe12948e314f8c771b902"></a>Key_PLUS</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ab983432ef635cb92d2f70d67ef0d2b61"></a>Key_COMMA</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73af912d1d03d4a592076d1bd1900b2e35e"></a>Key_MINUS</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a3279edd67ada17976a452484f00c3856"></a>Key_PERIOD</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a613f5f4c9fe7094ee63f8d50f31d36cb"></a>Key_SLASH</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a5b3c0a4648c1367f1643e1c066e1181b"></a>Key_0</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a846203f1da6ebfe97bf0d4e1da3be8dd"></a>Key_1</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ad3ef639807c7a01599af3d549758321a"></a>Key_2</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73aae77d4e18f4e9e94804e685afa31314a"></a>Key_3</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a02a35e1a57e76bde3692dce541233c25"></a>Key_4</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a64d351e8b57aed2d9a254039c8708dc5"></a>Key_5</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a6ac6144ae4a0e371ac7b71ec4a5b29ef"></a>Key_6</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73abb1ba79242750de243a5ee87f5bac439"></a>Key_7</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a6a6a02ed96280697c14d1201814b7c26"></a>Key_8</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a090eac0b08b494f5cdc271fd22ef985b"></a>Key_9</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a8865c5f009f321a14002d0a9c3c11203"></a>Key_COLON</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73aa2f54d600d8f6da50ad18d5f3c56a21d"></a>Key_SEMICOLON</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ab46b20b5978cdb2a7adb4416420b6b5a"></a>Key_LESS</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a56098be54c97140c047536e36c0d279d"></a>Key_EQUALS</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a795c3a7f3e29af83fda9f9d8ad8bd060"></a>Key_GREATER</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a65e6fe5903eb10627d3b7c75b55d8bc0"></a>Key_QUESTION</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ab68a55ce85e8f925fc92ed05125b2d82"></a>Key_AT</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a067fd9a7018b9804c468b52ad5eb8ca5"></a>Key_LEFTBRACKET</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73acabd602a6ca72b5298e9b043235dc28b"></a>Key_BACKSLASH</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a980583b98044bae5deaa582ce88e4908"></a>Key_RIGHTBRACKET</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a1e421086d94de8d77d443a7be2babadc"></a>Key_CARET</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a07861e6b0c8fbab6e7c502fefc549633"></a>Key_UNDERSCORE</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ac28a42dbfae24a373f8227eb6d5bff15"></a>Key_BACKQUOTE</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a9cae408665a69de1075ed731f2701bdc"></a>Key_a</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a1670cf8eb71a45cc047658c791917c3b"></a>Key_b</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a9ed6ef653f8c8a41c3897c8faa347a3e"></a>Key_c</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a128526610f541a6f909054d0dd64f565"></a>Key_d</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a6820564a7653f02a14fef8c9f1789de2"></a>Key_e</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73af6a7178c91357dd55e6e2730c59e9944"></a>Key_f</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a6668e1e77c5f207727f08851ef37b17a"></a>Key_g</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a1a2be49caab3dae7ae05947661e0c930"></a>Key_h</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a7f495df380d6255a12efb20c7d605a93"></a>Key_i</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a80acdd087183e100a764fc8391aca222"></a>Key_j</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a97d1ed88df3f847fe356922f36f01f42"></a>Key_k</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73af143411c7829c43751560c6e814a1aa6"></a>Key_l</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a0d079e3b4cfe8ce168c3f12014ce16a8"></a>Key_m</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ae755d457dd59f6cd41406aa151660c1f"></a>Key_n</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a0fb8898f0fac9be9aa743216d0218c02"></a>Key_o</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a6063117414787840b8fdebd671d505be"></a>Key_p</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a875683f6be8d44cd9bcd55e49a98c812"></a>Key_q</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ad3fc27eadb16334cbe8798e37b7c0805"></a>Key_r</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a031cadba47a7ff10092eb50c48e15125"></a>Key_s</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a89cfb5db5f53d0e41a685e5a8758447a"></a>Key_t</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a666398939cf315a014e454b85dda7b7a"></a>Key_u</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a214d03ee34d26b67db9b9276a0492519"></a>Key_v</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a9559da62987dbfd9328db765261d38d3"></a>Key_w</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a4acd2eaf8278f23dc81d1f3c5195215e"></a>Key_x</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a87b352ebfa0bd2787ce4b48c64e594f2"></a>Key_y</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a1a71b8087e5678a1b98ca6f3534a8a3f"></a>Key_z</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a4ae72030415879b9b10a31d34f33de51"></a>Key_DELETE</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ab04b5985b41e56b537ff84b3ee6404c8"></a>Key_WORLD_0</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a198c465f596310516fb25712ba884bde"></a>Key_WORLD_1</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ac188a39274d715b53c29ec464aa826cc"></a>Key_WORLD_2</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a1a1ccf72796c95a5c5bd27ba3dd9fd79"></a>Key_WORLD_3</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ae20b6d83a1a75afafcb4f205dbb74bf0"></a>Key_WORLD_4</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a715fc361254cd9dd92a4e9939fa3b587"></a>Key_WORLD_5</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a7ba66f2ef51d882a30845145bd97a927"></a>Key_WORLD_6</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a78baceb70d416c9d802e04b589adb2fe"></a>Key_WORLD_7</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a05782bef6c0f3bc5bdfdd89bff8e09d6"></a>Key_WORLD_8</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73aeaeb9fab28ee966b55fa32a3a693bb16"></a>Key_WORLD_9</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a9aed81ff3d1a56fb306a0b06fc7faef2"></a>Key_WORLD_10</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a6d0e50da631e3474de44ee0e467b458d"></a>Key_WORLD_11</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a01d1ce1739b4bd52e64c7ce8556d6c1b"></a>Key_WORLD_12</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ae1c866a81ed5db197c6c84031b3b1b2d"></a>Key_WORLD_13</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a8669a93b3e6ed35ff9531bc1e01e120a"></a>Key_WORLD_14</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ac9aa9af01e01c6261fcb9f44a6ddc971"></a>Key_WORLD_15</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a4c597a16a54da780451a894db95b9d87"></a>Key_WORLD_16</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a3020494a5cb39804550f32122b96faf5"></a>Key_WORLD_17</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a95aa6054bf697431c29df738bf420759"></a>Key_WORLD_18</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73aace6d2636adfbfd3161e08a4c82f40ee"></a>Key_WORLD_19</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a41d0eb30a26e01e19fb218b0a5408734"></a>Key_WORLD_20</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a22984175113ac45436645c75cf0b4363"></a>Key_WORLD_21</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a85c7c65b647d2b0335ec8e6dd350aa99"></a>Key_WORLD_22</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a084227cf0308b0708c24350fb2acbce9"></a>Key_WORLD_23</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a891002c5d9461ebcd7f12ea8b7082bec"></a>Key_WORLD_24</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a3a78aec12fc4dbed008a4b78f619510d"></a>Key_WORLD_25</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a4886f268735758fd4e1f0065b194375b"></a>Key_WORLD_26</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73acc093567056cd62efd2fb1b30f400e84"></a>Key_WORLD_27</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a7ef7ecb73f8777d4275ff5d718ff53cd"></a>Key_WORLD_28</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a24fefa97f008ba3f9eafde0d52845b5e"></a>Key_WORLD_29</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ae31c1a4d638d2714e820bc0227de817b"></a>Key_WORLD_30</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a8849bf299d3dc3311c3ba22ee02ecfc1"></a>Key_WORLD_31</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73aafa723c7a4b40f2dc5781cc857891973"></a>Key_WORLD_32</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a47a0357faa99e9e686c3ad4c7e14865f"></a>Key_WORLD_33</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73af776618e2d2bf8607059629c36de06d7"></a>Key_WORLD_34</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73acdea3da884547d6fe19362ca3c93f809"></a>Key_WORLD_35</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a3dcc855bb7e6bb5a216c9f98ebe48316"></a>Key_WORLD_36</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73aab6b1e65f653fb7ee6003645cf5f8c72"></a>Key_WORLD_37</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73afd87f4091a690b47e11f8579ca50ef48"></a>Key_WORLD_38</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a8e358c576e2a53d2d8865732ce221dee"></a>Key_WORLD_39</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a40e753b4bc3d19153207e409d1ecdc23"></a>Key_WORLD_40</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a761e1f8677a223d5770eb57e3f337182"></a>Key_WORLD_41</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ae2b12a2a8f99566c12cb437fd9c94cbd"></a>Key_WORLD_42</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a9c1ea488dd28756189d547979492fe71"></a>Key_WORLD_43</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73abb2d2712fe41b4fea4bcf81590f62b75"></a>Key_WORLD_44</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a32d637099c2fd440f1d4779b21f48fa4"></a>Key_WORLD_45</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a43d896ca275e0839e81dd20cb3ef66be"></a>Key_WORLD_46</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73af18f7a8346ce5d032556f9d3b325b660"></a>Key_WORLD_47</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a28dc0138478341347e5c38f0bdd5ffb3"></a>Key_WORLD_48</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a6917aec870ef1640ae656bf5ccdb5cb2"></a>Key_WORLD_49</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a3a512c82add6c8743b17efc5124f9095"></a>Key_WORLD_50</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a584e07a9042364dc14c5d9310b69f797"></a>Key_WORLD_51</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a69a065b266dd12773a06143088e2f110"></a>Key_WORLD_52</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ac195e5c7247fda97d754ee4e799fd32d"></a>Key_WORLD_53</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a1e198126fddb305ede8d594f7d54aa43"></a>Key_WORLD_54</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a6577e2fa55f18ee603061ae1664e7d08"></a>Key_WORLD_55</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a09c251543ef91e0b3421e1d1efb1a082"></a>Key_WORLD_56</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ad5c7709b45fd6093b74986c2be2a3a5c"></a>Key_WORLD_57</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a1cc36285f36bf0e0496eb0855abe17e8"></a>Key_WORLD_58</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a6256f4720aac41a6c3024f7429f196a9"></a>Key_WORLD_59</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a2eb6187dd6439d93b81899e29bfb90f6"></a>Key_WORLD_60</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a7a1ab8363a1184e87d8f5fb9be07fa55"></a>Key_WORLD_61</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a0b47ad72003ee7b8dc2baad3a2b25601"></a>Key_WORLD_62</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73afeb4edafae8bf0212ddd13362af60b6c"></a>Key_WORLD_63</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ac8e13299ab3bf43c60359fd77c25c780"></a>Key_WORLD_64</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73aa524c2fc628c404560212c296463a089"></a>Key_WORLD_65</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a588cf4da99e16c5c539af06309d56142"></a>Key_WORLD_66</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a20b34a978c36f84d5acd97dd8596bd07"></a>Key_WORLD_67</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a5619922364b2beb0019331a71bf28a70"></a>Key_WORLD_68</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ad483a3d8de7c83c1a3442d8f99e75b69"></a>Key_WORLD_69</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ad5a27a2e121da7cb5c1b327c249c3901"></a>Key_WORLD_70</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a556e6c202b727c368430594fe80c052e"></a>Key_WORLD_71</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a3f6d4145f6765affdf190ff1a56316d5"></a>Key_WORLD_72</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a20fd0e31ea413e1003b8949048166019"></a>Key_WORLD_73</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73af63f35adc0b7d14d1913d1c291662317"></a>Key_WORLD_74</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ade435565fa46480d6278c6ee68fb8f8b"></a>Key_WORLD_75</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73aa8aabf948d2382501df110cefde5ad55"></a>Key_WORLD_76</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a5a47e9f7ebbb2cc85f65731a79963efd"></a>Key_WORLD_77</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a9d4a71d96d61250c0fdb3a59ea20aff9"></a>Key_WORLD_78</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a9aa2b346ab4fbdee693cc87120292554"></a>Key_WORLD_79</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a352fea13b9e32462bcf0277e005f8c56"></a>Key_WORLD_80</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a80406d95c3cb6466b51d88257aba2a38"></a>Key_WORLD_81</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a1887468b58a4c26fefe8ca4d219d4df2"></a>Key_WORLD_82</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73adcb7b20def004350a5d9811905be86bc"></a>Key_WORLD_83</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a0751805a82850c2c7fc45168b21bcbbf"></a>Key_WORLD_84</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a63de21f0204fc74d30ed8833c7698975"></a>Key_WORLD_85</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a3dc0015c0504dcac5353b6aabf274da0"></a>Key_WORLD_86</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a85d3f5e64311d194e2203f95b73d43a0"></a>Key_WORLD_87</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ad115db453ba5e9cd4fd9ae98ab2d780d"></a>Key_WORLD_88</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73aa4bb8095e58659f76cba409b39b3f31b"></a>Key_WORLD_89</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73aa2964b3442c3837570059e75233ab95e"></a>Key_WORLD_90</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a565425254648cd51df4247cfd6ffafe3"></a>Key_WORLD_91</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73aad1fcc8b6636a4a27c4b919d9309f74f"></a>Key_WORLD_92</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ac4ef16ce8f802fb62d7ed5cfd74ae11c"></a>Key_WORLD_93</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a725a5f48ab21e1a6d4eb40a7d30e52cd"></a>Key_WORLD_94</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73af7f7daa6c4b4b828ca69d6f46d1ee9ed"></a>Key_WORLD_95</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a9f36143aeb6d9decfb488efd5fa70c57"></a>Key_KP0</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a294fc735c74eb0bb46611eb71c137838"></a>Key_KP1</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a9511d25bc3e12b6034cc8b309269856f"></a>Key_KP2</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73afc9b8dd0496af009105439bd364b7b17"></a>Key_KP3</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a332d59b582b6b516312c7645399c5d92"></a>Key_KP4</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ac2b90a0c5e13f9ef195cfc20d998d79b"></a>Key_KP5</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a892e8447ed04cb425c8fe65ffeeaabc0"></a>Key_KP6</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73afc54e59f3d5d69dbc3cca9e653cf6c89"></a>Key_KP7</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a4e32518ebc1c5cfb2e58faa3badaad30"></a>Key_KP8</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a76297b2a2b5b6319c5b1a4725abef485"></a>Key_KP9</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73aa47f509da9d76fd434eeca44acd9e412"></a>Key_KP_PERIOD</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73adad0d70c9df536721f7763a9b03ba0f0"></a>Key_KP_DIVIDE</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a61bb4776fafbfda8692bfc7974205e10"></a>Key_KP_MULTIPLY</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a341f620c2836c485d12cc00af4850b96"></a>Key_KP_MINUS</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ac724524fa0e63a5f3f1893e851e1bdc9"></a>Key_KP_PLUS</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a2ef45a22db2db6b608a6bb5f53b3fb04"></a>Key_KP_ENTER</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ad0a66ec69979eec103fcbffe22189645"></a>Key_KP_EQUALS</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a827c3467decbb9b750927873f257a3d1"></a>Key_UP</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73aeb420f51e58db5a4d8ec7f886a057212"></a>Key_DOWN</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ac6d72e4d0f834fc4d08444e8333b6c1b"></a>Key_RIGHT</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a07831ab83d819996d92f853b3354799e"></a>Key_LEFT</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ac4559698de1e972a0fd1c3877923dd62"></a>Key_INSERT</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73accd5947ac336c3adc5bfee282c7120d3"></a>Key_HOME</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a3e03cb5b9a49049b168a7bfe971846eb"></a>Key_END</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a40247ec1efaa3b79b45f891bd061e92f"></a>Key_PAGEUP</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a3d8dbdcfe16463aa2e2fcdafcdac5fea"></a>Key_PAGEDOWN</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a89eca773438115314da5b20380e94c54"></a>Key_F1</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a512b6e81954793577fb8d59704158c70"></a>Key_F2</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a4b872aecf5f258800f50c46f5aed5864"></a>Key_F3</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a601caf5a60c9f2491f02a9f651886bee"></a>Key_F4</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ae000c0a058e6209050f2971ddb4fedc0"></a>Key_F5</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a8f45ea1aedc850bf53bc34d642ac3aa8"></a>Key_F6</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a57a37b0b73bc17e18476d8cd08a55c23"></a>Key_F7</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73add0990da37bb3fe3f068131a6f05b9c9"></a>Key_F8</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a0470646e859d81d60e5a4ee9bc5f7497"></a>Key_F9</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a266a1eb78791136405280972f7b7e0d5"></a>Key_F10</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a7e3e42968216b662525cd04b2b74b98c"></a>Key_F11</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a5003c48bcbfc196b77b68012a1510cc2"></a>Key_F12</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ade9022f72c1c251e5029e85b574f56b8"></a>Key_F13</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73aed416a75a15e8cd27963303ca699192c"></a>Key_F14</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a08217f58623f4045b03d4ac8f4e8659b"></a>Key_F15</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a546771e002d2e3e6a42f95ec17a90728"></a>Key_NUMLOCK</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a119403a58e59fe0ba3c7e839d6d805a6"></a>Key_CAPSLOCK</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ab013cb1c8781f2ca76a11ff539710f8a"></a>Key_SCROLLOCK</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a849dfa11144b58f8097ca71425aa3b5b"></a>Key_RSHIFT</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a5f08447ed0c97d5063ab59c6ce5292d2"></a>Key_LSHIFT</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73aaf616e50351bbd2a45caab81c1c35c4d"></a>Key_RCTRL</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73af9df43cec92916e14613d6918fa2e90c"></a>Key_LCTRL</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a20ede4862f966f8894d654c86bc1060b"></a>Key_RALT</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a86ef1e98e61b64b22e243c5288cb385f"></a>Key_LALT</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73addd24c3f46c0fab31055f33bc1435a7a"></a>Key_RMETA</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a816143523ddb61006a7de0bed6f7cb6e"></a>Key_LMETA</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a75eda6af4fa5b43422420165da100b0a"></a>Key_LSUPER</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a845647cd2838a5a907583a7ecf049df0"></a>Key_RSUPER</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73af37ee1d00c8d4b3d24a7be7e5a9eae72"></a>Key_MODE</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73aae496f31f43513d852f2b220093c4110"></a>Key_COMPOSE</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ac99b17464d8309b03e3ad5a35a740d77"></a>Key_HELP</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a46c82d2f4ab9c86a48429ddce45ad116"></a>Key_PRINT</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73ac37813706a18b386277791a96fcf92c4"></a>Key_SYSREQ</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a292999706966936acabdcf6a0627e7b9"></a>Key_BREAK</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a7e33b3b391a778169842a9de691e4113"></a>Key_MENU</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a8f8e94e7c8a51789cd7cb49e068e2fd1"></a>Key_POWER</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a88ced517825c3c2b104b131b8d292e8e"></a>Key_EURO</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a8fa5736ec484dc0680912106a29ac711"></a>Key_UNDO</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab3c7af4820830f9166ede9e5623c4e73a14b58752079987ef5b8a59bc02240cfc"></a>Key_LAST</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Définition à la ligne <a class="el" href="_common_8h_source.html#l00161">161</a> du fichier <a class="el" href="_common_8h_source.html">Common.h</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9124c449f6ad3e74f678d7ea8bacc325.html">appliBase</a></li><li class="navelem"><a class="el" href="_common_8h.html">Common.h</a></li>
+    <li class="footer">Généré le Vendredi Février 21 2014 22:34:25 pour Tetris par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
+  </ul>
+</div>
+</body>
+</html>

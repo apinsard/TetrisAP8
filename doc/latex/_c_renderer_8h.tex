@@ -1,0 +1,70 @@
+\hypertarget{_c_renderer_8h}{\section{RÃ©fÃ©rence du fichier /home/cj/workspace/\-Tetris/src/appli\-Base/\-C\-Renderer.h}
+\label{_c_renderer_8h}\index{/home/cj/workspace/\-Tetris/src/appli\-Base/\-C\-Renderer.\-h@{/home/cj/workspace/\-Tetris/src/appli\-Base/\-C\-Renderer.\-h}}
+}
+{\ttfamily \#include \char`\"{}Common.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\-L/glut.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_camera}{C\-Camera}
+\item 
+class \hyperlink{class_c_camera_look_at}{C\-Camera\-Look\-At}
+\item 
+struct \hyperlink{struct_c_graphic_cylinder}{C\-Graphic\-Cylinder}
+\begin{DoxyCompactList}\small\item\em Noeud graphique représentant un cylindre. Le cylindre est décrit par les rayons de lsa base et de son sommet, ainsi que par sa hauteur. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_c_graphic_sphere}{C\-Graphic\-Sphere}
+\begin{DoxyCompactList}\small\item\em Noeud de géométrie représentant une sphère. \end{DoxyCompactList}\item 
+class \hyperlink{class_c_renderer}{C\-Renderer}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_c_renderer_8h_adaf2e88873b28de8f5bca6db4f48dc53}{\-\_\-\-\_\-\-R\-E\-N\-D\-E\-R\-E\-R\-\_\-\-H\-\_\-\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Ã‰numÃ©rations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_c_renderer_8h_a240c1924416689e5700ff0d9f30539d9}{Primitive\-Type} \{ \hyperlink{_c_renderer_8h_a240c1924416689e5700ff0d9f30539d9a915f906f584da40cd4c601bcb312087d}{P\-T\-\_\-\-Face} = 1, 
+\hyperlink{_c_renderer_8h_a240c1924416689e5700ff0d9f30539d9a5bac2363bf071c0a3452b8f8dcbe9421}{P\-T\-\_\-\-Edge} = 10, 
+\hyperlink{_c_renderer_8h_a240c1924416689e5700ff0d9f30539d9abc120163d92d76b97883802227e87742}{P\-T\-\_\-\-Vertex} = 100
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des macros}
+\hypertarget{_c_renderer_8h_adaf2e88873b28de8f5bca6db4f48dc53}{\index{C\-Renderer.\-h@{C\-Renderer.\-h}!\-\_\-\-\_\-\-R\-E\-N\-D\-E\-R\-E\-R\-\_\-\-H\-\_\-\-\_\-@{\-\_\-\-\_\-\-R\-E\-N\-D\-E\-R\-E\-R\-\_\-\-H\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-\-R\-E\-N\-D\-E\-R\-E\-R\-\_\-\-H\-\_\-\-\_\-@{\-\_\-\-\_\-\-R\-E\-N\-D\-E\-R\-E\-R\-\_\-\-H\-\_\-\-\_\-}!CRenderer.h@{C\-Renderer.\-h}}
+\subsubsection[{\-\_\-\-\_\-\-R\-E\-N\-D\-E\-R\-E\-R\-\_\-\-H\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-\-\_\-\-R\-E\-N\-D\-E\-R\-E\-R\-\_\-\-H\-\_\-\-\_\-}}\label{_c_renderer_8h_adaf2e88873b28de8f5bca6db4f48dc53}
+
+
+DÃ©finition Ã  la ligne 17 du fichier C\-Renderer.\-h.
+
+
+
+\subsection{Documentation du type de l'Ã©numÃ©ration}
+\hypertarget{_c_renderer_8h_a240c1924416689e5700ff0d9f30539d9}{\index{C\-Renderer.\-h@{C\-Renderer.\-h}!Primitive\-Type@{Primitive\-Type}}
+\index{Primitive\-Type@{Primitive\-Type}!CRenderer.h@{C\-Renderer.\-h}}
+\subsubsection[{Primitive\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Primitive\-Type}}}\label{_c_renderer_8h_a240c1924416689e5700ff0d9f30539d9}
+tutorial sympa pour commencer \-: \href{http://www-evasion.imag.fr/Membres/Antoine.Bouthors/teaching/opengl/}{\tt http\-://www-\/evasion.\-imag.\-fr/\-Membres/\-Antoine.\-Bouthors/teaching/opengl/}
+
+le renderer est notre classe qui va
+\begin{DoxyItemize}
+\item intialiser notre matrice de transformation de l'espace caméra à l'espace de projection
+\item initialiser notre matrice de transformation de l'espace monde à l'espace caméra
+\item intialiser notre scene dans l'espace monde
+\item dessiner des objets 3\-D, des gémométries 
+\end{DoxyItemize}\begin{Desc}
+\item[Valeurs Ã©numÃ©rÃ©es]\par
+\begin{description}
+\index{P\-T\-\_\-\-Face@{P\-T\-\_\-\-Face}!C\-Renderer.\-h@{C\-Renderer.\-h}}\index{C\-Renderer.\-h@{C\-Renderer.\-h}!P\-T\-\_\-\-Face@{P\-T\-\_\-\-Face}}\item[{\em 
+\hypertarget{_c_renderer_8h_a240c1924416689e5700ff0d9f30539d9a915f906f584da40cd4c601bcb312087d}{P\-T\-\_\-\-Face}\label{_c_renderer_8h_a240c1924416689e5700ff0d9f30539d9a915f906f584da40cd4c601bcb312087d}
+}]\index{P\-T\-\_\-\-Edge@{P\-T\-\_\-\-Edge}!C\-Renderer.\-h@{C\-Renderer.\-h}}\index{C\-Renderer.\-h@{C\-Renderer.\-h}!P\-T\-\_\-\-Edge@{P\-T\-\_\-\-Edge}}\item[{\em 
+\hypertarget{_c_renderer_8h_a240c1924416689e5700ff0d9f30539d9a5bac2363bf071c0a3452b8f8dcbe9421}{P\-T\-\_\-\-Edge}\label{_c_renderer_8h_a240c1924416689e5700ff0d9f30539d9a5bac2363bf071c0a3452b8f8dcbe9421}
+}]\index{P\-T\-\_\-\-Vertex@{P\-T\-\_\-\-Vertex}!C\-Renderer.\-h@{C\-Renderer.\-h}}\index{C\-Renderer.\-h@{C\-Renderer.\-h}!P\-T\-\_\-\-Vertex@{P\-T\-\_\-\-Vertex}}\item[{\em 
+\hypertarget{_c_renderer_8h_a240c1924416689e5700ff0d9f30539d9abc120163d92d76b97883802227e87742}{P\-T\-\_\-\-Vertex}\label{_c_renderer_8h_a240c1924416689e5700ff0d9f30539d9abc120163d92d76b97883802227e87742}
+}]\end{description}
+\end{Desc}
+
+
+DÃ©finition Ã  la ligne 134 du fichier C\-Renderer.\-h.
+

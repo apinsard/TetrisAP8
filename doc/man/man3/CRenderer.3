@@ -1,0 +1,228 @@
+.TH "CRenderer" 3 "Vendredi Février 21 2014" "Version alpha" "Tetris" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CRenderer \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CRenderer\&.h>\fP
+.SS "Types publics"
+
+.in +1c
+.ti -1c
+.RI "enum \fBTextSize\fP { \fBTS_10\fP, \fBTS_12\fP, \fBTS_18\fP }"
+.br
+.in -1c
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBCRenderer\fP ()"
+.br
+.ti -1c
+.RI "\fBCRenderer\fP (\fBWindowSetup\fP *windowSetup, \fBUserEvents\fP *\fBUserEvents\fP, \fBCCamera\fP *camera)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBCreate\fP (\fBWindowSetup\fP *windowSetup, \fBUserEvents\fP *\fBUserEvents\fP, \fBCCamera\fP *camera)"
+.br
+.ti -1c
+.RI "\fB~CRenderer\fP ()"
+.br
+.ti -1c
+.RI "bool \fBInit\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBStartRender\fP ()"
+.br
+.ti -1c
+.RI "\fBRendererSetup\fP * \fBSetUpRenderer\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBLoadProjectionMatrix\fP (\fBCMatrix44\fP &projection)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBLoadViewMatrix\fP (const \fBCMatrix44\fP &view)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBStart2DRender\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBEnd2DRender\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBDrawText\fP (const \fBstd::string\fP &text, int \fBx\fP, int \fBy\fP, \fBTextSize\fP \fBs\fP=\fBTS_12\fP, \fBCVector3\fP \fBcolor\fP=\fBCVector3\fP(1\&.0f, 0\&.0f, 0\&.0f))"
+.br
+.in -1c
+.SS "Fonctions membres protégées"
+
+.in +1c
+.ti -1c
+.RI "\fBvoid\fP \fBDrawGround\fP (float _size)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBDrawText\fP (const \fBstd::string\fP &text, int \fBx\fP, int \fBy\fP, \fBvoid\fP *police)"
+.br
+.in -1c
+.SS "Attributs protégés"
+
+.in +1c
+.ti -1c
+.RI "\fBWindowSetup\fP * \fBm_windowSetup\fP"
+.br
+.ti -1c
+.RI "\fBCCamera\fP * \fBm_camera\fP"
+.br
+.ti -1c
+.RI "\fBRendererSetup\fP \fBm_rendererSetup\fP"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+Définition à la ligne 141 du fichier CRenderer\&.h\&.
+.SH "Documentation des énumérations membres"
+.PP 
+.SS "enum \fBCRenderer::TextSize\fP"
+
+.PP
+\fBValeurs énumérées\fP
+.in +1c
+.TP
+\fB\fITS_10 \fP\fP
+.TP
+\fB\fITS_12 \fP\fP
+.TP
+\fB\fITS_18 \fP\fP
+.PP
+Définition à la ligne 216 du fichier CRenderer\&.h\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "CRenderer::CRenderer ()\fC [inline]\fP"
+
+.PP
+Définition à la ligne 246 du fichier CRenderer\&.h\&.
+.SS "CRenderer::CRenderer (\fBWindowSetup\fP *windowSetup, \fBUserEvents\fP *UserEvents, \fBCCamera\fP *camera)\fC [inline]\fP"
+
+.PP
+Définition à la ligne 248 du fichier CRenderer\&.h\&.
+.SS "CRenderer::~CRenderer ()\fC [inline]\fP"
+
+.PP
+Définition à la ligne 247 du fichier CRenderer\&.h\&.
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "\fBvoid\fP CRenderer::Create (\fBWindowSetup\fP *windowSetup, \fBUserEvents\fP *UserEvents, \fBCCamera\fP *camera)\fC [inline]\fP"
+
+.PP
+Définition à la ligne 254 du fichier CRenderer\&.h\&.
+.SS "\fBvoid\fP CRenderer::DrawGround (float_size)\fC [protected]\fP"
+dessine un sol
+.PP
+\fBParamètres:\fP
+.RS 4
+\fI_size\fP : Taille d'un carreau 
+.RE
+.PP
+
+.PP
+Définition à la ligne 228 du fichier CRenderer\&.cpp\&.
+.SS "\fBvoid\fP CRenderer::DrawText (const \fBstd::string\fP &text, intx, inty, \fBTextSize\fPs = \fC\fBTS_12\fP\fP, \fBCVector3\fPcolor = \fC\fBCVector3\fP(1\&.0f, 0\&.0f, 0\&.0f)\fP)"
+Affichage d'un texte
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIstring\fP : le texte 
+.br
+\fIint\fP : position en x 
+.br
+\fIint\fP : position en y 
+.RE
+.PP
+
+.PP
+Définition à la ligne 187 du fichier CRenderer\&.cpp\&.
+.SS "\fBvoid\fP CRenderer::DrawText (const \fBstd::string\fP &text, intx, inty, \fBvoid\fP *police)\fC [protected]\fP"
+Affichage d'un texte
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIstring\fP : le texte 
+.br
+\fIint\fP : position en x 
+.br
+\fIint\fP : position en y 
+.br
+\fIvoid\fP : police GLUT 
+.RE
+.PP
+
+.PP
+Définition à la ligne 209 du fichier CRenderer\&.cpp\&.
+.SS "\fBvoid\fP CRenderer::End2DRender ()"
+fin d'affichage 2D ( A appeler �ventuellement dans OnRender() 
+.PP
+Définition à la ligne 166 du fichier CRenderer\&.cpp\&.
+.SS "bool CRenderer::Init ()"
+Initialise le renderer
+.PP
+\fBRenvoie:\fP
+.RS 4
+code d'erreur 
+.RE
+.PP
+
+.PP
+Définition à la ligne 26 du fichier CRenderer\&.cpp\&.
+.SS "\fBvoid\fP CRenderer::LoadProjectionMatrix (\fBCMatrix44\fP &projection)"
+charge la matrice de projection
+.PP
+\fBParamètres:\fP
+.RS 4
+\fImatrice\fP de projection 
+.RE
+.PP
+
+.PP
+Définition à la ligne 91 du fichier CRenderer\&.cpp\&.
+.SS "\fBvoid\fP CRenderer::LoadViewMatrix (const \fBCMatrix44\fP &view)"
+charge la matrice de vue
+.PP
+\fBParamètres:\fP
+.RS 4
+\fImatrice\fP de vue 
+.RE
+.PP
+
+.PP
+Définition à la ligne 115 du fichier CRenderer\&.cpp\&.
+.SS "\fBRendererSetup\fP * CRenderer::SetUpRenderer ()\fC [inline]\fP"
+
+.PP
+Définition à la ligne 260 du fichier CRenderer\&.h\&.
+.SS "\fBvoid\fP CRenderer::Start2DRender ()"
+lancement d'une phase d'affichage 2D ( A appeler �ventuellement dans OnRender() 
+.PP
+Définition à la ligne 149 du fichier CRenderer\&.cpp\&.
+.SS "\fBvoid\fP CRenderer::StartRender ()"
+lance les m�thodes communes � chaque frame 
+.PP
+Définition à la ligne 72 du fichier CRenderer\&.cpp\&.
+.SH "Documentation des données membres"
+.PP 
+.SS "\fBCCamera\fP* CRenderer::m_camera\fC [protected]\fP"
+
+.PP
+Définition à la ligne 227 du fichier CRenderer\&.h\&.
+.SS "\fBRendererSetup\fP CRenderer::m_rendererSetup\fC [protected]\fP"
+
+.PP
+Définition à la ligne 228 du fichier CRenderer\&.h\&.
+.SS "\fBWindowSetup\fP* CRenderer::m_windowSetup\fC [protected]\fP"
+
+.PP
+Définition à la ligne 226 du fichier CRenderer\&.h\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Tetris à partir du code source\&.

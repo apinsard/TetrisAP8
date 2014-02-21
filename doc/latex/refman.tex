@@ -1,0 +1,222 @@
+\documentclass{book}
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage{makeidx}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{sectsty}
+\usepackage{amssymb}
+\usepackage[titles]{tocloft}
+\usepackage{doxygen}
+\lstset{language=C++,inputencoding=utf8,basicstyle=\footnotesize,breaklines=true,breakatwhitespace=true,tabsize=4,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\familydefault}{\sfdefault}
+\hfuzz=15pt
+\setlength{\emergencystretch}{15pt}
+\hbadness=750
+\tolerance=750
+\begin{document}
+\hypersetup{pageanchor=false,citecolor=blue}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large Tetris \\[1ex]\large alpha }\\
+\vspace*{1cm}
+{\large Généré par Doxygen 1.8.3.1}\\
+\vspace*{0.5cm}
+{\small Vendredi Février 21 2014 22:34:27}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true,citecolor=blue}
+\chapter{Liste des choses à faire}
+\label{todo}
+\hypertarget{todo}{}
+\input{todo}
+\chapter{Liste des bogues}
+\label{bug}
+\hypertarget{bug}{}
+\input{bug}
+\chapter{Index hiérarchique}
+\input{hierarchy}
+\chapter{Index des classes}
+\input{annotated}
+\chapter{Index des fichiers}
+\input{files}
+\chapter{Documentation des classes}
+\input{struct_____d_r_i2config_query_extension_rec}
+\input{struct_____d_r_i2flush_extension_rec}
+\input{struct_____d_r_i2throttle_extension_rec}
+\input{struct_____d_r_ibuffer_rec}
+\input{struct_____d_r_icopy_sub_buffer_extension_rec}
+\input{struct_____d_r_icore_extension_rec}
+\input{struct_____d_r_idamage_extension_rec}
+\input{struct_____d_r_idri2_extension_rec}
+\input{struct_____d_r_idri2_loader_extension_rec}
+\input{struct_____d_r_iextension_rec}
+\input{struct_____d_r_iframebuffer_rec}
+\input{struct_____d_r_iframe_tracking_extension_rec}
+\input{struct_____d_r_iget_drawable_info_extension_rec}
+\input{struct_____d_r_iimage_extension_rec}
+\input{struct_____d_r_iimage_lookup_extension_rec}
+\input{struct_____d_r_ilegacy_extension_rec}
+\input{struct_____d_r_imedia_stream_counter_extension_rec}
+\input{struct_____d_r_iswap_control_extension_rec}
+\input{struct_____d_r_iswrast_extension_rec}
+\input{struct_____d_r_iswrast_loader_extension_rec}
+\input{struct_____d_r_isystem_time_extension_rec}
+\input{struct_____d_r_itex_buffer_extension_rec}
+\input{struct_____d_r_itex_offset_extension_rec}
+\input{struct_____d_r_iuse_invalidate_extension_rec}
+\input{struct_____d_r_iversion_rec}
+\input{union_____g_l_x_event}
+\input{class_c_application}
+\input{struct_case}
+\input{class_c_camera}
+\input{class_c_camera_look_at}
+\input{struct_c_graphic_cylinder}
+\input{struct_c_graphic_sphere}
+\input{class_c_gui_glut}
+\input{class_c_i_piece}
+\input{class_c_l1_piece}
+\input{class_c_l2_piece}
+\input{class_c_matrix44}
+\input{class_c_o_piece}
+\input{class_c_piece_abstract}
+\input{class_c_projet_tetris}
+\input{class_c_projet_tetris_piece}
+\input{class_c_randomizer}
+\input{class_c_renderer}
+\input{class_c_tetris_game}
+\input{class_c_t_game_table}
+\input{class_c_t_piece}
+\input{class_c_vector3}
+\input{class_c_vector4}
+\input{class_c_z1_piece}
+\input{class_c_z2_piece}
+\input{struct_g_l_x_buffer_clobber_event_s_g_i_x}
+\input{struct_g_l_x_buffer_swap_complete}
+\input{struct_g_l_x_hyperpipe_config_s_g_i_x}
+\input{struct_g_l_x_hyperpipe_network_s_g_i_x}
+\input{struct_g_l_x_pbuffer_clobber_event}
+\input{struct_g_l_x_pipe_rect}
+\input{struct_g_l_x_pipe_rect_limits}
+\input{struct_helpers}
+\input{struct_renderer_setup}
+\input{struct_s_t_l_delete}
+\input{struct_user_events}
+\input{struct_window_setup}
+\chapter{Documentation des fichiers}
+\input{_c_application_8cpp}
+\input{_c_application_8h}
+\input{_c_gui_glut_8cpp}
+\input{_c_gui_glut_8h}
+\input{_common_8h}
+\input{_c_renderer_8cpp}
+\input{_c_renderer_8h}
+\input{freeglut_8h}
+\input{freeglut__ext_8h}
+\input{freeglut__std_8h}
+\input{gl_8h}
+\input{gl__mangle_8h}
+\input{glext_8h}
+\input{glu_8h}
+\input{glu__mangle_8h}
+\input{glut_8h}
+\input{glx_8h}
+\input{glx__mangle_8h}
+\input{glxext_8h}
+\input{dri__interface_8h}
+\input{main_8cpp}
+\input{mainpage_8dox}
+\input{_c_matrix44_8cpp}
+\input{_c_matrix44_8h}
+\input{_c_vector3_8h}
+\input{_c_vector4_8h}
+\input{test_8cpp}
+\input{test_8h}
+\input{test_c_i_piece_8cpp}
+\input{test_c_i_piece_2_c_projet_tetris_piece_8cpp}
+\input{test_c_l1_piece_2_c_projet_tetris_piece_8cpp}
+\input{test_c_l2_piece_2_c_projet_tetris_piece_8cpp}
+\input{test_c_o_piece_2_c_projet_tetris_piece_8cpp}
+\input{test_c_t_piece_2_c_projet_tetris_piece_8cpp}
+\input{test_c_z1_piece_2_c_projet_tetris_piece_8cpp}
+\input{test_c_z2_piece_2_c_projet_tetris_piece_8cpp}
+\input{test_c_i_piece_2_c_projet_tetris_piece_8h}
+\input{test_c_l1_piece_2_c_projet_tetris_piece_8h}
+\input{test_c_l2_piece_2_c_projet_tetris_piece_8h}
+\input{test_c_o_piece_2_c_projet_tetris_piece_8h}
+\input{test_c_t_piece_2_c_projet_tetris_piece_8h}
+\input{test_c_z1_piece_2_c_projet_tetris_piece_8h}
+\input{test_c_z2_piece_2_c_projet_tetris_piece_8h}
+\input{test_c_l1_piece_8cpp}
+\input{test_c_l2_piece_8cpp}
+\input{test_c_o_piece_8cpp}
+\input{test_c_t_piece_8cpp}
+\input{test_c_z1_piece_8cpp}
+\input{test_c_z2_piece_8cpp}
+\input{_c_i_piece_8cpp}
+\input{_c_i_piece_8h}
+\input{_c_l1_piece_8cpp}
+\input{_c_l1_piece_8h}
+\input{_c_l2_piece_8cpp}
+\input{_c_l2_piece_8h}
+\input{_c_o_piece_8cpp}
+\input{_c_o_piece_8h}
+\input{_c_piece_abstract_8cpp}
+\input{_c_piece_abstract_8h}
+\input{_c_projet_tetris_8cpp}
+\input{_c_projet_tetris_8h}
+\input{_c_randomizer_8cpp}
+\input{_c_randomizer_8h}
+\input{_c_tetris_game_8cpp}
+\input{_c_tetris_game_8h}
+\input{_c_t_game_table_8cpp}
+\input{_c_t_game_table_8h}
+\input{_c_t_piece_8cpp}
+\input{_c_t_piece_8h}
+\input{_c_z1_piece_8cpp}
+\input{_c_z1_piece_8h}
+\input{_c_z2_piece_8cpp}
+\input{_c_z2_piece_8h}
+\input{_tetris_utils_8h}
+\addcontentsline{toc}{part}{Index}
+\printindex
+\end{document}

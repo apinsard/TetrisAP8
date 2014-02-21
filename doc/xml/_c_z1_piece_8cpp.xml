@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_c_z1_piece_8cpp" kind="file">
+    <compoundname>CZ1Piece.cpp</compoundname>
+    <includes refid="_c_z1_piece_8h" local="yes">CZ1Piece.h</includes>
+    <incdepgraph>
+      <node id="1886">
+        <label>CPieceAbstract.h</label>
+        <link refid="_c_piece_abstract_8h"/>
+        <childnode refid="1887" relation="include">
+        </childnode>
+      </node>
+      <node id="1898">
+        <label>limits</label>
+      </node>
+      <node id="1893">
+        <label>cmath</label>
+      </node>
+      <node id="1888">
+        <label>string</label>
+      </node>
+      <node id="1884">
+        <label>/home/cj/workspace/Tetris/src/tetris/CZ1Piece.cpp</label>
+        <link refid="CZ1Piece.cpp"/>
+        <childnode refid="1885" relation="include">
+        </childnode>
+      </node>
+      <node id="1899">
+        <label>CVector4.h</label>
+        <link refid="_c_vector4_8h"/>
+        <childnode refid="1898" relation="include">
+        </childnode>
+        <childnode refid="1890" relation="include">
+        </childnode>
+        <childnode refid="1897" relation="include">
+        </childnode>
+      </node>
+      <node id="1900">
+        <label>CMatrix44.h</label>
+        <link refid="_c_matrix44_8h"/>
+        <childnode refid="1897" relation="include">
+        </childnode>
+        <childnode refid="1899" relation="include">
+        </childnode>
+        <childnode refid="1894" relation="include">
+        </childnode>
+      </node>
+      <node id="1885">
+        <label>CZ1Piece.h</label>
+        <link refid="_c_z1_piece_8h"/>
+        <childnode refid="1886" relation="include">
+        </childnode>
+      </node>
+      <node id="1896">
+        <label>ctime</label>
+      </node>
+      <node id="1892">
+        <label>vector</label>
+      </node>
+      <node id="1889">
+        <label>sstream</label>
+      </node>
+      <node id="1897">
+        <label>CVector3.h</label>
+        <link refid="_c_vector3_8h"/>
+        <childnode refid="1898" relation="include">
+        </childnode>
+        <childnode refid="1890" relation="include">
+        </childnode>
+        <childnode refid="1893" relation="include">
+        </childnode>
+      </node>
+      <node id="1895">
+        <label>cstdlib</label>
+      </node>
+      <node id="1890">
+        <label>iostream</label>
+      </node>
+      <node id="1887">
+        <label>Common.h</label>
+        <link refid="_common_8h"/>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+        <childnode refid="1890" relation="include">
+        </childnode>
+        <childnode refid="1891" relation="include">
+        </childnode>
+        <childnode refid="1892" relation="include">
+        </childnode>
+        <childnode refid="1893" relation="include">
+        </childnode>
+        <childnode refid="1894" relation="include">
+        </childnode>
+        <childnode refid="1895" relation="include">
+        </childnode>
+        <childnode refid="1896" relation="include">
+        </childnode>
+        <childnode refid="1897" relation="include">
+        </childnode>
+        <childnode refid="1899" relation="include">
+        </childnode>
+        <childnode refid="1900" relation="include">
+        </childnode>
+      </node>
+      <node id="1891">
+        <label>algorithm</label>
+      </node>
+      <node id="1894">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_z1_piece_8h" kindref="compound">CZ1Piece.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_c_z1_piece_1a5c730e998894b7be34e7a661cec424fe" refkind="member"><highlight class="normal"><ref refid="class_c_z1_piece_1a5c730e998894b7be34e7a661cec424fe" kindref="member">CZ1Piece::CZ1Piece</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iY,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>&amp;<sp/><ref refid="glext_8h_1a3ea846f998d64f079b86052b6c4193a8" kindref="member">color</ref>)<sp/>:</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_piece_abstract" kindref="compound" tooltip="classe CPieceAbstract abstraite">CPieceAbstract</ref>(3,<sp/>iX,<sp/>iY,<sp/>color)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><ref refid="_c_piece_abstract_8h_1a8e72c785588cdd5c58585a3d43eafea8" kindref="member">TPieceRow</ref><sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref><sp/>=<sp/><ref refid="_c_piece_abstract_8h_1a8e72c785588cdd5c58585a3d43eafea8" kindref="member">TPieceRow</ref>(3,<sp/>0);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/>row[0]<sp/>=<sp/>1;<sp/>row[1]<sp/>=<sp/>1;<sp/>row[2]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/>this-&gt;<ref refid="class_c_piece_abstract_1add153cf74a7e17a41e867a9f4f671971" kindref="member" tooltip="matrice d&amp;#39;état de la piece">m_table</ref>[2]<sp/>=<sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/>row[0]<sp/>=<sp/>0;<sp/>row[1]<sp/>=<sp/>1;<sp/>row[2]<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/>this-&gt;<ref refid="class_c_piece_abstract_1add153cf74a7e17a41e867a9f4f671971" kindref="member" tooltip="matrice d&amp;#39;état de la piece">m_table</ref>[1]<sp/>=<sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/>row[0]<sp/>=<sp/>0;<sp/>row[1]<sp/>=<sp/>0;<sp/>row[2]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/>this-&gt;<ref refid="class_c_piece_abstract_1add153cf74a7e17a41e867a9f4f671971" kindref="member" tooltip="matrice d&amp;#39;état de la piece">m_table</ref>[0]<sp/>=<sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_c_z1_piece_1a90ea4a7acba47d45fea2208b636cad02" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_z1_piece_1a90ea4a7acba47d45fea2208b636cad02" kindref="member">CZ1Piece::Turn</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>this-&gt;<ref refid="class_c_piece_abstract_1a059a706ab5504a7390e63230d89dcbf5" kindref="member" tooltip="rotation de la piece vers la droite">TurnRight</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/cj/workspace/Tetris/src/tetris/CZ1Piece.cpp"/>
+  </compounddef>
+</doxygen>

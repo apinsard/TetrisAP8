@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="class_c_i_piece" kind="class" prot="public">
+    <compoundname>CIPiece</compoundname>
+    <basecompoundref refid="class_c_piece_abstract" prot="public" virt="non-virtual">CPieceAbstract</basecompoundref>
+    <includes refid="_c_i_piece_8h" local="no">CIPiece.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_i_piece_1a50a5efe272b2a1f2d75908acec027d92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CIPiece::CIPiece</definition>
+        <argsstring>(int iX, int iY, const CVector3 &amp;color)</argsstring>
+        <name>CIPiece</name>
+        <param>
+          <type>int</type>
+          <declname>iX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iY</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_c_vector3" kindref="compound">CVector3</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/CIPiece.h" line="10" bodyfile="/home/cj/workspace/Tetris/src/tetris/CIPiece.cpp" bodystart="4" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_i_piece_1aa12d81b1311c8835029b03df6f41b219" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void CIPiece::Turn</definition>
+        <argsstring>()</argsstring>
+        <name>Turn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/CIPiece.h" line="11" bodyfile="/home/cj/workspace/Tetris/src/tetris/CIPiece.cpp" bodystart="21" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="119">
+        <label>CPieceAbstract</label>
+        <link refid="class_c_piece_abstract"/>
+      </node>
+      <node id="118">
+        <label>CIPiece</label>
+        <link refid="class_c_i_piece"/>
+        <childnode refid="119" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="122">
+        <label>CVector3</label>
+        <link refid="class_c_vector3"/>
+      </node>
+      <node id="121">
+        <label>CPieceAbstract</label>
+        <link refid="class_c_piece_abstract"/>
+        <childnode refid="122" relation="usage">
+          <edgelabel>m_color</edgelabel>
+        </childnode>
+      </node>
+      <node id="120">
+        <label>CIPiece</label>
+        <link refid="class_c_i_piece"/>
+        <childnode refid="121" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/cj/workspace/Tetris/src/tetris/CIPiece.h" line="7" bodyfile="/home/cj/workspace/Tetris/src/tetris/CIPiece.h" bodystart="7" bodyend="12"/>
+    <listofallmembers>
+      <member refid="class_c_i_piece_1a50a5efe272b2a1f2d75908acec027d92" prot="public" virt="non-virtual"><scope>CIPiece</scope><name>CIPiece</name></member>
+      <member refid="class_c_piece_abstract_1a240ad2fabd11a2b758f6be4d99d082f9" prot="protected" virt="non-virtual"><scope>CIPiece</scope><name>CPieceAbstract</name></member>
+      <member refid="class_c_piece_abstract_1aa041b39e2f0d7914ff31def19062768f" prot="protected" virt="non-virtual"><scope>CIPiece</scope><name>CPieceAbstract</name></member>
+      <member refid="class_c_piece_abstract_1a23475b762834cd871101dd838564e0af" prot="public" virt="non-virtual"><scope>CIPiece</scope><name>GetColIndex</name></member>
+      <member refid="class_c_piece_abstract_1a85eb0b4bb71d4058229ff61f711803e4" prot="public" virt="non-virtual"><scope>CIPiece</scope><name>GetColor</name></member>
+      <member refid="class_c_piece_abstract_1aabf812ae9a7462f3724ad71c7bd687cf" prot="public" virt="non-virtual"><scope>CIPiece</scope><name>GetDim</name></member>
+      <member refid="class_c_piece_abstract_1a8769db975fc272bcaf735c98f14fd419" prot="public" virt="non-virtual"><scope>CIPiece</scope><name>GetRowIndex</name></member>
+      <member refid="class_c_piece_abstract_1a4ea785d6771cde3f1bc302214259f059" prot="public" virt="non-virtual"><scope>CIPiece</scope><name>GetTable</name></member>
+      <member refid="class_c_piece_abstract_1ae7bd8b881cfe7906a437e45d07503db1" prot="protected" virt="non-virtual"><scope>CIPiece</scope><name>m_colIndex</name></member>
+      <member refid="class_c_piece_abstract_1a7bbd378ef0f9d55345658adf16ffc7ed" prot="protected" virt="non-virtual"><scope>CIPiece</scope><name>m_color</name></member>
+      <member refid="class_c_piece_abstract_1a5b572bea63dc23e5b0dee2ecb0297d0d" prot="protected" virt="non-virtual"><scope>CIPiece</scope><name>m_dim</name></member>
+      <member refid="class_c_piece_abstract_1a56ace921199f8d7cd7ed0b67cbf3f44b" prot="protected" virt="non-virtual"><scope>CIPiece</scope><name>m_rowIndex</name></member>
+      <member refid="class_c_piece_abstract_1a8bb8a977cbaf0d5c02d3a6f20a5e9bc6" prot="protected" virt="non-virtual"><scope>CIPiece</scope><name>m_state</name></member>
+      <member refid="class_c_piece_abstract_1add153cf74a7e17a41e867a9f4f671971" prot="protected" virt="non-virtual"><scope>CIPiece</scope><name>m_table</name></member>
+      <member refid="class_c_piece_abstract_1a26cf88535ccf18d447db48ef92ac5452a2709db6bc83f8f6d368c0715c55e8b7d" prot="protected" virt="non-virtual"><scope>CIPiece</scope><name>S_Bottom</name></member>
+      <member refid="class_c_piece_abstract_1a26cf88535ccf18d447db48ef92ac5452afd22cba46c5bd75b4bf84938919bdde7" prot="protected" virt="non-virtual"><scope>CIPiece</scope><name>S_Left</name></member>
+      <member refid="class_c_piece_abstract_1a26cf88535ccf18d447db48ef92ac5452a02e063c865417b081e0f234dfe52a442" prot="protected" virt="non-virtual"><scope>CIPiece</scope><name>S_Right</name></member>
+      <member refid="class_c_piece_abstract_1a26cf88535ccf18d447db48ef92ac5452ac7946185608ed01260c03cc170d74421" prot="protected" virt="non-virtual"><scope>CIPiece</scope><name>S_Top</name></member>
+      <member refid="class_c_piece_abstract_1ac819011df0e42c55eee8385281873072" prot="public" virt="non-virtual"><scope>CIPiece</scope><name>SetColIndex</name></member>
+      <member refid="class_c_piece_abstract_1a9c39807ad0cfab6eaad33df42a3f1be8" prot="public" virt="non-virtual"><scope>CIPiece</scope><name>SetIncDecColIndex</name></member>
+      <member refid="class_c_piece_abstract_1a88061bcd953015f183d77b9fdcd37e88" prot="public" virt="non-virtual"><scope>CIPiece</scope><name>SetIncDecRowIndex</name></member>
+      <member refid="class_c_piece_abstract_1a7403cba8c95f9d6898c37bb2b01b6616" prot="public" virt="non-virtual"><scope>CIPiece</scope><name>SetRowIndex</name></member>
+      <member refid="class_c_piece_abstract_1ab32c265408d3f4251e757a5b769fa5c6" prot="public" virt="non-virtual"><scope>CIPiece</scope><name>SetTable</name></member>
+      <member refid="class_c_piece_abstract_1a26cf88535ccf18d447db48ef92ac5452" prot="protected" virt="non-virtual"><scope>CIPiece</scope><name>State</name></member>
+      <member refid="class_c_i_piece_1aa12d81b1311c8835029b03df6f41b219" prot="public" virt="non-virtual"><scope>CIPiece</scope><name>Turn</name></member>
+      <member refid="class_c_piece_abstract_1a440affcbdf9cbae4989e9828cc1b5d6d" prot="public" virt="non-virtual"><scope>CIPiece</scope><name>TurnLeft</name></member>
+      <member refid="class_c_piece_abstract_1a059a706ab5504a7390e63230d89dcbf5" prot="public" virt="non-virtual"><scope>CIPiece</scope><name>TurnRight</name></member>
+      <member refid="class_c_piece_abstract_1ad16f516708789b9e64ae738220d4d7cd" prot="public" virt="virtual"><scope>CIPiece</scope><name>~CPieceAbstract</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

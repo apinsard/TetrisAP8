@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_ae9a93452e2a84339148a16bcf2eb561" kind="dir">
+    <compoundname>/home/cj/workspace/Tetris/src/math</compoundname>
+    <innerfile refid="_c_matrix44_8cpp">CMatrix44.cpp</innerfile>
+    <innerfile refid="_c_matrix44_8h">CMatrix44.h</innerfile>
+    <innerfile refid="_c_vector3_8h">CVector3.h</innerfile>
+    <innerfile refid="_c_vector4_8h">CVector4.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/cj/workspace/Tetris/src/math/"/>
+  </compounddef>
+</doxygen>

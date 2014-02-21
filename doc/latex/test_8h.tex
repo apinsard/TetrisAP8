@@ -1,0 +1,176 @@
+\hypertarget{test_8h}{\section{Référence du fichier /home/cj/workspace/\-Tetris/src/test/test.h}
+\label{test_8h}\index{/home/cj/workspace/\-Tetris/src/test/test.\-h@{/home/cj/workspace/\-Tetris/src/test/test.\-h}}
+}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include \char`\"{}C\-Piece\-Abstract.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{test_8h_ad6780b305e9bea9dc8e2bfd25bd062bd}{C\-O\-L\-\_\-\-W\-I\-D\-T\-H}~80
+\item 
+\#define \hyperlink{test_8h_aff95b03d90aea646cc034a4bf274c0b3}{F\-I\-L\-L\-\_\-\-C\-H\-A\-R}~'.'
+\item 
+\#define \hyperlink{test_8h_a17f760256046df23dd0ab46602f04d02}{C\-O\-L\-O\-R\-\_\-\-R\-E\-S\-E\-T}~\char`\"{}\textbackslash{}033\mbox{[}0m\char`\"{}
+\item 
+\#define \hyperlink{test_8h_a61c6cdf74741d1145ecc13e5f6c37711}{C\-O\-L\-O\-R\-\_\-\-P\-A\-S\-S}~\char`\"{}\textbackslash{}033\mbox{[}1;32m\char`\"{}
+\item 
+\#define \hyperlink{test_8h_ac3c186ac6329d3533b0781fdeb95f70c}{C\-O\-L\-O\-R\-\_\-\-F\-A\-I\-L}~\char`\"{}\textbackslash{}033\mbox{[}1;31m\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{glext_8h_a06b88fc81ad0b30d1512e9609e3d7c82}{string} \hyperlink{test_8h_a8da3206e3bcfc0bcd87b8cee4381dba6}{fill\-Line} (\hyperlink{glext_8h_a06b88fc81ad0b30d1512e9609e3d7c82}{string} begin, \hyperlink{glext_8h_a06b88fc81ad0b30d1512e9609e3d7c82}{string} \hyperlink{gl_8h_a432111147038972f06e049e18a837002}{end})
+\begin{DoxyCompactList}\small\item\em Remplit une ligne avec des points entre le début et la fin de manière à ce qu'elle fasse exactement C\-O\-L\-\_\-\-W\-I\-D\-T\-H caractères. \end{DoxyCompactList}\item 
+\hyperlink{glext_8h_a06b88fc81ad0b30d1512e9609e3d7c82}{string} \hyperlink{test_8h_ac09ead110788fc64034d07038d30ebe3}{fill\-Line} (\hyperlink{glext_8h_a06b88fc81ad0b30d1512e9609e3d7c82}{string} begin)
+\begin{DoxyCompactList}\small\item\em Remplit une ligne avec des points à la fin de manière à ce qu'elle fasse exactement C\-O\-L\-\_\-\-W\-I\-D\-T\-H caractères. \end{DoxyCompactList}\item 
+\hyperlink{glext_8h_a06b88fc81ad0b30d1512e9609e3d7c82}{string} \hyperlink{test_8h_a9de15fb09f30d48b79c5f407a2b62bf7}{format\-Result} (int \hyperlink{gl_8h_a1d280defca3cdf21d6a3144bb2ab95ab}{depth}, \hyperlink{glext_8h_a06b88fc81ad0b30d1512e9609e3d7c82}{string} label, bool success)
+\begin{DoxyCompactList}\small\item\em Formate un résultat (échec ou succès) avec la méthode fill\-Line. Si le résultat est un succès, on ajoute \mbox{[}P\-A\-S\-S\mbox{]} en vert à la fin. Dans le cas contraire, on ajoute \mbox{[}F\-A\-I\-L\mbox{]} en vert à la fin. \end{DoxyCompactList}\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{test_8h_adaeac9fbf3cc6edd27bc852e7ae12bdf}{print\-Test\-Result} (\hyperlink{glext_8h_a06b88fc81ad0b30d1512e9609e3d7c82}{string} label, bool success)
+\begin{DoxyCompactList}\small\item\em Affiche à l'écran format\-Result avec un niveau d'indentation de 2 (cas le plus usuel). \end{DoxyCompactList}\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{test_8h_a605e701470bfef1b96e36a04bc6ec049}{test\-Piece\-Cli} (\hyperlink{glext_8h_a06b88fc81ad0b30d1512e9609e3d7c82}{string} piece\-T, \hyperlink{glext_8h_a06b88fc81ad0b30d1512e9609e3d7c82}{string} piece\-R, \hyperlink{glext_8h_a06b88fc81ad0b30d1512e9609e3d7c82}{string} piece\-B, \hyperlink{glext_8h_a06b88fc81ad0b30d1512e9609e3d7c82}{string} piece\-L, \hyperlink{class_c_piece_abstract}{C\-Piece\-Abstract} piece)
+\begin{DoxyCompactList}\small\item\em Test une pièce du jeu en mode console. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des macros}
+\hypertarget{test_8h_ad6780b305e9bea9dc8e2bfd25bd062bd}{\index{test.\-h@{test.\-h}!C\-O\-L\-\_\-\-W\-I\-D\-T\-H@{C\-O\-L\-\_\-\-W\-I\-D\-T\-H}}
+\index{C\-O\-L\-\_\-\-W\-I\-D\-T\-H@{C\-O\-L\-\_\-\-W\-I\-D\-T\-H}!test.h@{test.\-h}}
+\subsubsection[{C\-O\-L\-\_\-\-W\-I\-D\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-O\-L\-\_\-\-W\-I\-D\-T\-H~80}}\label{test_8h_ad6780b305e9bea9dc8e2bfd25bd062bd}
+
+
+Définition à la ligne 4 du fichier test.\-h.
+
+\hypertarget{test_8h_ac3c186ac6329d3533b0781fdeb95f70c}{\index{test.\-h@{test.\-h}!C\-O\-L\-O\-R\-\_\-\-F\-A\-I\-L@{C\-O\-L\-O\-R\-\_\-\-F\-A\-I\-L}}
+\index{C\-O\-L\-O\-R\-\_\-\-F\-A\-I\-L@{C\-O\-L\-O\-R\-\_\-\-F\-A\-I\-L}!test.h@{test.\-h}}
+\subsubsection[{C\-O\-L\-O\-R\-\_\-\-F\-A\-I\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-O\-L\-O\-R\-\_\-\-F\-A\-I\-L~\char`\"{}\textbackslash{}033\mbox{[}1;31m\char`\"{}}}\label{test_8h_ac3c186ac6329d3533b0781fdeb95f70c}
+
+
+Définition à la ligne 8 du fichier test.\-h.
+
+\hypertarget{test_8h_a61c6cdf74741d1145ecc13e5f6c37711}{\index{test.\-h@{test.\-h}!C\-O\-L\-O\-R\-\_\-\-P\-A\-S\-S@{C\-O\-L\-O\-R\-\_\-\-P\-A\-S\-S}}
+\index{C\-O\-L\-O\-R\-\_\-\-P\-A\-S\-S@{C\-O\-L\-O\-R\-\_\-\-P\-A\-S\-S}!test.h@{test.\-h}}
+\subsubsection[{C\-O\-L\-O\-R\-\_\-\-P\-A\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-O\-L\-O\-R\-\_\-\-P\-A\-S\-S~\char`\"{}\textbackslash{}033\mbox{[}1;32m\char`\"{}}}\label{test_8h_a61c6cdf74741d1145ecc13e5f6c37711}
+
+
+Définition à la ligne 7 du fichier test.\-h.
+
+\hypertarget{test_8h_a17f760256046df23dd0ab46602f04d02}{\index{test.\-h@{test.\-h}!C\-O\-L\-O\-R\-\_\-\-R\-E\-S\-E\-T@{C\-O\-L\-O\-R\-\_\-\-R\-E\-S\-E\-T}}
+\index{C\-O\-L\-O\-R\-\_\-\-R\-E\-S\-E\-T@{C\-O\-L\-O\-R\-\_\-\-R\-E\-S\-E\-T}!test.h@{test.\-h}}
+\subsubsection[{C\-O\-L\-O\-R\-\_\-\-R\-E\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-O\-L\-O\-R\-\_\-\-R\-E\-S\-E\-T~\char`\"{}\textbackslash{}033\mbox{[}0m\char`\"{}}}\label{test_8h_a17f760256046df23dd0ab46602f04d02}
+
+
+Définition à la ligne 6 du fichier test.\-h.
+
+\hypertarget{test_8h_aff95b03d90aea646cc034a4bf274c0b3}{\index{test.\-h@{test.\-h}!F\-I\-L\-L\-\_\-\-C\-H\-A\-R@{F\-I\-L\-L\-\_\-\-C\-H\-A\-R}}
+\index{F\-I\-L\-L\-\_\-\-C\-H\-A\-R@{F\-I\-L\-L\-\_\-\-C\-H\-A\-R}!test.h@{test.\-h}}
+\subsubsection[{F\-I\-L\-L\-\_\-\-C\-H\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-I\-L\-L\-\_\-\-C\-H\-A\-R~'.'}}\label{test_8h_aff95b03d90aea646cc034a4bf274c0b3}
+
+
+Définition à la ligne 5 du fichier test.\-h.
+
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{test_8h_a8da3206e3bcfc0bcd87b8cee4381dba6}{\index{test.\-h@{test.\-h}!fill\-Line@{fill\-Line}}
+\index{fill\-Line@{fill\-Line}!test.h@{test.\-h}}
+\subsubsection[{fill\-Line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf string} fill\-Line (
+\begin{DoxyParamCaption}
+\item[{{\bf string}}]{begin, }
+\item[{{\bf string}}]{end}
+\end{DoxyParamCaption}
+)}}\label{test_8h_a8da3206e3bcfc0bcd87b8cee4381dba6}
+
+
+Remplit une ligne avec des points entre le début et la fin de manière à ce qu'elle fasse exactement C\-O\-L\-\_\-\-W\-I\-D\-T\-H caractères. 
+
+
+
+Définition à la ligne 3 du fichier test.\-cpp.
+
+\hypertarget{test_8h_ac09ead110788fc64034d07038d30ebe3}{\index{test.\-h@{test.\-h}!fill\-Line@{fill\-Line}}
+\index{fill\-Line@{fill\-Line}!test.h@{test.\-h}}
+\subsubsection[{fill\-Line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf string} fill\-Line (
+\begin{DoxyParamCaption}
+\item[{{\bf string}}]{begin}
+\end{DoxyParamCaption}
+)}}\label{test_8h_ac09ead110788fc64034d07038d30ebe3}
+
+
+Remplit une ligne avec des points à la fin de manière à ce qu'elle fasse exactement C\-O\-L\-\_\-\-W\-I\-D\-T\-H caractères. 
+
+
+
+Définition à la ligne 14 du fichier test.\-cpp.
+
+\hypertarget{test_8h_a9de15fb09f30d48b79c5f407a2b62bf7}{\index{test.\-h@{test.\-h}!format\-Result@{format\-Result}}
+\index{format\-Result@{format\-Result}!test.h@{test.\-h}}
+\subsubsection[{format\-Result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf string} format\-Result (
+\begin{DoxyParamCaption}
+\item[{int}]{depth, }
+\item[{{\bf string}}]{label, }
+\item[{bool}]{success}
+\end{DoxyParamCaption}
+)}}\label{test_8h_a9de15fb09f30d48b79c5f407a2b62bf7}
+
+
+Formate un résultat (échec ou succès) avec la méthode fill\-Line. Si le résultat est un succès, on ajoute \mbox{[}P\-A\-S\-S\mbox{]} en vert à la fin. Dans le cas contraire, on ajoute \mbox{[}F\-A\-I\-L\mbox{]} en vert à la fin. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em depth} & le niveau d'indentation de la ligne \\
+\hline
+{\em label} & le libellé du test \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 18 du fichier test.\-cpp.
+
+\hypertarget{test_8h_adaeac9fbf3cc6edd27bc852e7ae12bdf}{\index{test.\-h@{test.\-h}!print\-Test\-Result@{print\-Test\-Result}}
+\index{print\-Test\-Result@{print\-Test\-Result}!test.h@{test.\-h}}
+\subsubsection[{print\-Test\-Result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} print\-Test\-Result (
+\begin{DoxyParamCaption}
+\item[{{\bf string}}]{label, }
+\item[{bool}]{success}
+\end{DoxyParamCaption}
+)}}\label{test_8h_adaeac9fbf3cc6edd27bc852e7ae12bdf}
+
+
+Affiche à l'écran format\-Result avec un niveau d'indentation de 2 (cas le plus usuel). 
+
+
+
+Définition à la ligne 41 du fichier test.\-cpp.
+
+\hypertarget{test_8h_a605e701470bfef1b96e36a04bc6ec049}{\index{test.\-h@{test.\-h}!test\-Piece\-Cli@{test\-Piece\-Cli}}
+\index{test\-Piece\-Cli@{test\-Piece\-Cli}!test.h@{test.\-h}}
+\subsubsection[{test\-Piece\-Cli}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} test\-Piece\-Cli (
+\begin{DoxyParamCaption}
+\item[{{\bf string}}]{piece\-T, }
+\item[{{\bf string}}]{piece\-R, }
+\item[{{\bf string}}]{piece\-B, }
+\item[{{\bf string}}]{piece\-L, }
+\item[{{\bf C\-Piece\-Abstract}}]{piece}
+\end{DoxyParamCaption}
+)}}\label{test_8h_a605e701470bfef1b96e36a04bc6ec049}
+
+
+Test une pièce du jeu en mode console. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em piece\-T} & la représentation sous forme de string de la pièce dans l'état T\-O\-P. \\
+\hline
+{\em piece\-R} & la représentation de la pièce dans l'état R\-I\-G\-H\-T \\
+\hline
+{\em piece\-B} & la représentation de la pièce dans l'état B\-O\-T\-T\-O\-M \\
+\hline
+{\em piece\-L} & la représentation de la pièce dans l'état L\-E\-F\-T \\
+\hline
+{\em piece} & la pièce a tester \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 45 du fichier test.\-cpp.
+

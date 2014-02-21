@@ -1,0 +1,51 @@
+.TH "__DRIswrastLoaderExtensionRec" 3 "Vendredi Février 21 2014" "Version alpha" "Tetris" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+__DRIswrastLoaderExtensionRec \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <dri_interface\&.h>\fP
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "\fB__DRIextension\fP \fBbase\fP"
+.br
+.ti -1c
+.RI "\fBvoid\fP(* \fBgetDrawableInfo\fP )(\fB__DRIdrawable\fP *drawable, int *\fBx\fP, int *\fBy\fP, int *\fBwidth\fP, int *\fBheight\fP, \fBvoid\fP *loaderPrivate)"
+.br
+.ti -1c
+.RI "\fBvoid\fP(* \fBputImage\fP )(\fB__DRIdrawable\fP *drawable, int op, int \fBx\fP, int \fBy\fP, int \fBwidth\fP, int \fBheight\fP, char *\fBdata\fP, \fBvoid\fP *loaderPrivate)"
+.br
+.ti -1c
+.RI "\fBvoid\fP(* \fBgetImage\fP )(\fB__DRIdrawable\fP *readable, int \fBx\fP, int \fBy\fP, int \fBwidth\fP, int \fBheight\fP, char *\fBdata\fP, \fBvoid\fP *loaderPrivate)"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+Définition à la ligne 418 du fichier dri_interface\&.h\&.
+.SH "Documentation des données membres"
+.PP 
+.SS "\fB__DRIextension\fP __DRIswrastLoaderExtensionRec::base"
+
+.PP
+Définition à la ligne 419 du fichier dri_interface\&.h\&.
+.SS "\fBvoid\fP(* __DRIswrastLoaderExtensionRec::getDrawableInfo)(\fB__DRIdrawable\fP *drawable, int *\fBx\fP, int *\fBy\fP, int *\fBwidth\fP, int *\fBheight\fP, \fBvoid\fP *loaderPrivate)"
+
+.PP
+Définition à la ligne 424 du fichier dri_interface\&.h\&.
+.SS "\fBvoid\fP(* __DRIswrastLoaderExtensionRec::getImage)(\fB__DRIdrawable\fP *readable, int \fBx\fP, int \fBy\fP, int \fBwidth\fP, int \fBheight\fP, char *\fBdata\fP, \fBvoid\fP *loaderPrivate)"
+Get image from readable 
+.PP
+Définition à la ligne 438 du fichier dri_interface\&.h\&.
+.SS "\fBvoid\fP(* __DRIswrastLoaderExtensionRec::putImage)(\fB__DRIdrawable\fP *drawable, int op, int \fBx\fP, int \fBy\fP, int \fBwidth\fP, int \fBheight\fP, char *\fBdata\fP, \fBvoid\fP *loaderPrivate)"
+Put image to drawable 
+.PP
+Définition à la ligne 431 du fichier dri_interface\&.h\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Tetris à partir du code source\&.

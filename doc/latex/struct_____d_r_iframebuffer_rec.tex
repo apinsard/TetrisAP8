@@ -1,0 +1,99 @@
+\hypertarget{struct_____d_r_iframebuffer_rec}{\section{Référence de la structure \-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec}
+\label{struct_____d_r_iframebuffer_rec}\index{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec@{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec}}
+}
+
+
+{\ttfamily \#include $<$dri\-\_\-interface.\-h$>$}
+
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char $\ast$ \hyperlink{struct_____d_r_iframebuffer_rec_ad4b7d037cf68bf62da49568e6826a2d6}{base}
+\item 
+int \hyperlink{struct_____d_r_iframebuffer_rec_aa3a4d320b15693103d593499abce5b08}{size}
+\item 
+int \hyperlink{struct_____d_r_iframebuffer_rec_a2889cbb92d1327c5bebb4cacbe9f6774}{stride}
+\item 
+int \hyperlink{struct_____d_r_iframebuffer_rec_a9b92fd71279bc61c4d58d88a8b06425b}{width}
+\item 
+int \hyperlink{struct_____d_r_iframebuffer_rec_aae5cb6f3fb0d56e7a8989bcb2a2d3761}{height}
+\item 
+int \hyperlink{struct_____d_r_iframebuffer_rec_a0bfbde5e050baa8aa3450a60ce51a85d}{dev\-\_\-priv\-\_\-size}
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} $\ast$ \hyperlink{struct_____d_r_iframebuffer_rec_af315b382c3a95a2acbddd5ed8157bfad}{dev\-\_\-priv}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Framebuffer information record. Used by lib\-G\-L to communicate information about the framebuffer to the driver's {\ttfamily \-\_\-\-\_\-dri\-Create\-New\-Screen} function.
+
+In X\-Free86, most of this information is derrived from data returned by calling {\ttfamily X\-F86\-D\-R\-I\-Get\-Device\-Info}.
+
+\begin{DoxySeeAlso}{Voir également}
+X\-F86\-D\-R\-I\-Get\-Device\-Info \-\_\-\-\_\-\-D\-R\-Idisplay\-Rec\-::create\-New\-Screen \-\_\-\-\_\-dri\-Util\-Create\-New\-Screen Call\-Create\-New\-Screen
+\end{DoxySeeAlso}
+\begin{DoxyRefDesc}{Bogue}
+\item[\hyperlink{bug__bug000001}{Bogue}]This structure could be better named. \end{DoxyRefDesc}
+
+
+Définition à la ligne 625 du fichier dri\-\_\-interface.\-h.
+
+
+
+\subsection{Documentation des données membres}
+\hypertarget{struct_____d_r_iframebuffer_rec_ad4b7d037cf68bf62da49568e6826a2d6}{\index{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec@{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec}!base@{base}}
+\index{base@{base}!__DRIframebufferRec@{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec}}
+\subsubsection[{base}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char$\ast$ \-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec\-::base}}\label{struct_____d_r_iframebuffer_rec_ad4b7d037cf68bf62da49568e6826a2d6}
+\begin{DoxyVerb}                 Framebuffer base address in the CPU's
+\end{DoxyVerb}
+ address space. This value is calculated by calling {\ttfamily drm\-Map} on the framebuffer handle returned by {\ttfamily X\-F86\-D\-R\-I\-Get\-Device\-Info} (or a similar function). 
+
+Définition à la ligne 626 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_iframebuffer_rec_af315b382c3a95a2acbddd5ed8157bfad}{\index{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec@{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec}!dev\-\_\-priv@{dev\-\_\-priv}}
+\index{dev\-\_\-priv@{dev\-\_\-priv}!__DRIframebufferRec@{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec}}
+\subsubsection[{dev\-\_\-priv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void}$\ast$ \-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec\-::dev\-\_\-priv}}\label{struct_____d_r_iframebuffer_rec_af315b382c3a95a2acbddd5ed8157bfad}
+Pointer to the driver's dev-\/priv structure. 
+
+Définition à la ligne 637 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_iframebuffer_rec_a0bfbde5e050baa8aa3450a60ce51a85d}{\index{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec@{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec}!dev\-\_\-priv\-\_\-size@{dev\-\_\-priv\-\_\-size}}
+\index{dev\-\_\-priv\-\_\-size@{dev\-\_\-priv\-\_\-size}!__DRIframebufferRec@{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec}}
+\subsubsection[{dev\-\_\-priv\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}int \-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec\-::dev\-\_\-priv\-\_\-size}}\label{struct_____d_r_iframebuffer_rec_a0bfbde5e050baa8aa3450a60ce51a85d}
+Size of the driver's dev-\/priv structure. 
+
+Définition à la ligne 636 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_iframebuffer_rec_aae5cb6f3fb0d56e7a8989bcb2a2d3761}{\index{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec@{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec}!height@{height}}
+\index{height@{height}!__DRIframebufferRec@{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec}}
+\subsubsection[{height}]{\setlength{\rightskip}{0pt plus 5cm}int \-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec\-::height}}\label{struct_____d_r_iframebuffer_rec_aae5cb6f3fb0d56e7a8989bcb2a2d3761}
+Pixel height of the framebuffer. 
+
+Définition à la ligne 635 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_iframebuffer_rec_aa3a4d320b15693103d593499abce5b08}{\index{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec@{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec}!size@{size}}
+\index{size@{size}!__DRIframebufferRec@{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int \-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec\-::size}}\label{struct_____d_r_iframebuffer_rec_aa3a4d320b15693103d593499abce5b08}
+Framebuffer size, in bytes. 
+
+Définition à la ligne 632 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_iframebuffer_rec_a2889cbb92d1327c5bebb4cacbe9f6774}{\index{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec@{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec}!stride@{stride}}
+\index{stride@{stride}!__DRIframebufferRec@{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec}}
+\subsubsection[{stride}]{\setlength{\rightskip}{0pt plus 5cm}int \-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec\-::stride}}\label{struct_____d_r_iframebuffer_rec_a2889cbb92d1327c5bebb4cacbe9f6774}
+Number of bytes from one line to the next. 
+
+Définition à la ligne 633 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_iframebuffer_rec_a9b92fd71279bc61c4d58d88a8b06425b}{\index{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec@{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec}!width@{width}}
+\index{width@{width}!__DRIframebufferRec@{\-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec}}
+\subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}int \-\_\-\-\_\-\-D\-R\-Iframebuffer\-Rec\-::width}}\label{struct_____d_r_iframebuffer_rec_a9b92fd71279bc61c4d58d88a8b06425b}
+Pixel width of the framebuffer. 
+
+Définition à la ligne 634 du fichier dri\-\_\-interface.\-h.
+
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+/home/cj/workspace/\-Tetris/src/glut/internal/\hyperlink{dri__interface_8h}{dri\-\_\-interface.\-h}\end{DoxyCompactItemize}

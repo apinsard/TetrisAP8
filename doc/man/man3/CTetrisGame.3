@@ -1,0 +1,180 @@
+.TH "CTetrisGame" 3 "Vendredi FÃ©vrier 21 2014" "Version alpha" "Tetris" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CTetrisGame \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CTetrisGame\&.h>\fP
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBCTetrisGame\fP ()"
+.br
+.RI "\fIconstructeur par défaut de la piece \fP"
+.ti -1c
+.RI "\fBCTetrisGame\fP (unsigned int gamePosX, unsigned int gamePosY, unsigned int boardWidth, unsigned int boardHeight, float dimCase)"
+.br
+.RI "\fIconstructeur \fP"
+.ti -1c
+.RI "\fB~CTetrisGame\fP ()"
+.br
+.RI "\fIdestructeur de \fBCTetrisGame\fP \fP"
+.ti -1c
+.RI "\fBActionResult\fP \fBUpdate\fP (unsigned int step)"
+.br
+.RI "\fImet à jour le tetris en fonction du temps passé (le nombre de fois que la boucle de rendu est appelée) la méthode descend automatiquement la pièce courante check si collision, si ligne à détruire, le score et si game over \fP"
+.ti -1c
+.RI "\fBActionResult\fP \fBMovePiece\fP (\fBPieceAction\fP action)"
+.br
+.RI "\fImodifie la position et l'orientation de la piece courante \fP"
+.ti -1c
+.RI "\fBCTGameTable\fP & \fBGetBoard\fP ()"
+.br
+.RI "\fIrenvoit le tableau du jeu avec les cases occupées et leur couleur \fP"
+.ti -1c
+.RI "unsigned int \fBGetXPos\fP ()"
+.br
+.RI "\fIrenvoit position du jeu dans la fenètre openGL \fP"
+.ti -1c
+.RI "unsigned int \fBGetYPos\fP ()"
+.br
+.RI "\fIrenvoit position du jeu dans la fenètre openGL \fP"
+.ti -1c
+.RI "float & \fBGetCaseDim\fP ()"
+.br
+.RI "\fIrenvoit la taille d'une case du tetris \fP"
+.ti -1c
+.RI "\fBCPieceAbstract\fP * \fBGetPiece\fP ()"
+.br
+.RI "\fIrenvoit un pointeur sur la pièce courante \fP"
+.ti -1c
+.RI "unsigned int \fBGetScore\fP ()"
+.br
+.RI "\fIrenvoit le score courant \fP"
+.in -1c
+.SH "Description dÃ©taillÃ©e"
+.PP 
+DÃ©finition Ã  la ligne 23 du fichier CTetrisGame\&.h\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "CTetrisGame::CTetrisGame ()\fC [inline]\fP"
+
+.PP
+constructeur par défaut de la piece 
+.PP
+DÃ©finition Ã  la ligne 29 du fichier CTetrisGame\&.h\&.
+.SS "CTetrisGame::CTetrisGame (unsigned intgamePosX, unsigned intgamePosY, unsigned intboardWidth, unsigned intboardHeight, floatdimCase)"
+
+.PP
+constructeur 
+.PP
+DÃ©finition Ã  la ligne 12 du fichier CTetrisGame\&.cpp\&.
+.SS "CTetrisGame::~CTetrisGame ()"
+
+.PP
+destructeur de \fBCTetrisGame\fP 
+.PP
+DÃ©finition Ã  la ligne 27 du fichier CTetrisGame\&.cpp\&.
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "\fBCTGameTable\fP & CTetrisGame::GetBoard ()"
+
+.PP
+renvoit le tableau du jeu avec les cases occupées et leur couleur \fBRenvoie:\fP
+.RS 4
+le tableau du jeu 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 288 du fichier CTetrisGame\&.cpp\&.
+.SS "float & CTetrisGame::GetCaseDim ()"
+
+.PP
+renvoit la taille d'une case du tetris \fBParamÃ¨tres:\fP
+.RS 4
+\fIentier\fP sur la taille des cases 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 291 du fichier CTetrisGame\&.cpp\&.
+.SS "\fBCPieceAbstract\fP * CTetrisGame::GetPiece ()"
+
+.PP
+renvoit un pointeur sur la pièce courante \fBRenvoie:\fP
+.RS 4
+poniteur sur \fBCPieceAbstract\fP 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 293 du fichier CTetrisGame\&.cpp\&.
+.SS "unsigned int CTetrisGame::GetScore ()"
+
+.PP
+renvoit le score courant \fBRenvoie:\fP
+.RS 4
+entier > 0 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 292 du fichier CTetrisGame\&.cpp\&.
+.SS "unsigned int CTetrisGame::GetXPos ()"
+
+.PP
+renvoit position du jeu dans la fenètre openGL \fBParamÃ¨tres:\fP
+.RS 4
+\fIentier\fP en abcisse 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 289 du fichier CTetrisGame\&.cpp\&.
+.SS "unsigned int CTetrisGame::GetYPos ()"
+
+.PP
+renvoit position du jeu dans la fenètre openGL \fBParamÃ¨tres:\fP
+.RS 4
+\fIentier\fP en ordonnée 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 290 du fichier CTetrisGame\&.cpp\&.
+.SS "\fBActionResult\fP CTetrisGame::MovePiece (\fBPieceAction\fPaction)"
+
+.PP
+modifie la position et l'orientation de la piece courante \fBParamÃ¨tres:\fP
+.RS 4
+\fIaction\fP à faire 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+l'état du jeu (ok, collision ou game over) 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 109 du fichier CTetrisGame\&.cpp\&.
+.SS "\fBActionResult\fP CTetrisGame::Update (unsigned intstep)"
+
+.PP
+met à jour le tetris en fonction du temps passé (le nombre de fois que la boucle de rendu est appelée) la méthode descend automatiquement la pièce courante check si collision, si ligne à détruire, le score et si game over \fBRenvoie:\fP
+.RS 4
+l'état du jeu (ok ou game over) 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 163 du fichier CTetrisGame\&.cpp\&.
+
+.SH "Auteur"
+.PP 
+GÃ©nÃ©rÃ© automatiquement par Doxygen pour Tetris Ã  partir du code source\&.

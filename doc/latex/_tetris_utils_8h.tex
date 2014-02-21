@@ -1,0 +1,154 @@
+\hypertarget{_tetris_utils_8h}{\section{Référence du fichier /home/cj/workspace/\-Tetris/src/tetris/\-Tetris\-Utils.h}
+\label{_tetris_utils_8h}\index{/home/cj/workspace/\-Tetris/src/tetris/\-Tetris\-Utils.\-h@{/home/cj/workspace/\-Tetris/src/tetris/\-Tetris\-Utils.\-h}}
+}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_tetris_utils_8h_a46d34b374b75fd6743e3651b796168f5}{\-\_\-\-\_\-\-T\-E\-T\-R\-I\-S\-\_\-\-U\-T\-I\-L\-S\-\_\-\-H\-\_\-\-\_\-}
+\item 
+\#define \hyperlink{_tetris_utils_8h_a9df0cc58e9feb5f773d9664dcc978ea5}{W\-I\-D\-T\-H\-\_\-\-B\-O\-A\-R\-D}~10
+\begin{DoxyCompactList}\small\item\em largeur de la grille du jeu \end{DoxyCompactList}\item 
+\#define \hyperlink{_tetris_utils_8h_acf0268c13877ff90d1f4ec3e5326c369}{H\-E\-I\-G\-H\-T\-\_\-\-B\-O\-A\-R\-D}~20
+\begin{DoxyCompactList}\small\item\em hauteur de la grille du jeu \end{DoxyCompactList}\item 
+\#define \hyperlink{_tetris_utils_8h_a87d3da0dbc66a688633b8b54236cdaca}{P\-O\-S\-X\-\_\-\-B\-O\-A\-R\-D}~300
+\begin{DoxyCompactList}\small\item\em position en X de la grille du jeu dans la fen�tre G\-L\-U\-T \end{DoxyCompactList}\item 
+\#define \hyperlink{_tetris_utils_8h_a224b8c50f38cfc135c907bf36ad3a45a}{P\-O\-S\-Y\-\_\-\-B\-O\-A\-R\-D}~100
+\begin{DoxyCompactList}\small\item\em position en Y de la grille du jeu dans la fen�tre G\-L\-U\-T \end{DoxyCompactList}\item 
+\#define \hyperlink{_tetris_utils_8h_ae1a59328c9b22cbb12ac88999ba0fcd3}{D\-I\-M\-\_\-\-C\-A\-S\-E}~17.\-0
+\begin{DoxyCompactList}\small\item\em taille d'une case de la grille du jeu (carr�e) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8}{Piece\-Action} \{ \\*
+\hyperlink{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8a84380f7c056a1d381a3b1889a48109d9}{P\-A\-\_\-\-Rotate\-Right}, 
+\hyperlink{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8a27ec28fc72ef8c4d4c17654dd902ff69}{P\-A\-\_\-\-Rotate\-Left}, 
+\hyperlink{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8adcec83af27ecc2ef0102fc7f50259e2c}{P\-A\-\_\-\-Move\-Right}, 
+\hyperlink{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8a5e5493ef9fa9bf628f739f0c6b4f8d71}{P\-A\-\_\-\-Move\-Left}, 
+\\*
+\hyperlink{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8adf2e2d247e618ea931d6e4ad7bed7464}{P\-A\-\_\-\-Move\-Bottom}, 
+\hyperlink{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8aa1205ee48206a302e6bfe972ce68927f}{P\-A\-\_\-\-Move\-Bottom2}
+ \}
+\begin{DoxyCompactList}\small\item\em Actions possibles par l'utilisateur. \end{DoxyCompactList}\item 
+enum \hyperlink{_tetris_utils_8h_aee2205359d0b7e255e34eef4d76435df}{Action\-Result} \{ \hyperlink{_tetris_utils_8h_aee2205359d0b7e255e34eef4d76435dfaba20083622789a2ed8fe08664e5605c1}{A\-R\-\_\-\-Ok}, 
+\hyperlink{_tetris_utils_8h_aee2205359d0b7e255e34eef4d76435dfa1f42fecf7c4f8a62b84008002163f1a4}{A\-R\-\_\-\-Collision}, 
+\hyperlink{_tetris_utils_8h_aee2205359d0b7e255e34eef4d76435dfaa4933e0dea9d95e26410e76c1d9f7456}{A\-R\-\_\-\-Game\-Over}
+ \}
+\begin{DoxyCompactList}\small\item\em Etat du jeu apr�s une action (update, modification de position ou orientation piece) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des macros}
+\hypertarget{_tetris_utils_8h_a46d34b374b75fd6743e3651b796168f5}{\index{Tetris\-Utils.\-h@{Tetris\-Utils.\-h}!\-\_\-\-\_\-\-T\-E\-T\-R\-I\-S\-\_\-\-U\-T\-I\-L\-S\-\_\-\-H\-\_\-\-\_\-@{\-\_\-\-\_\-\-T\-E\-T\-R\-I\-S\-\_\-\-U\-T\-I\-L\-S\-\_\-\-H\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-\-T\-E\-T\-R\-I\-S\-\_\-\-U\-T\-I\-L\-S\-\_\-\-H\-\_\-\-\_\-@{\-\_\-\-\_\-\-T\-E\-T\-R\-I\-S\-\_\-\-U\-T\-I\-L\-S\-\_\-\-H\-\_\-\-\_\-}!TetrisUtils.h@{Tetris\-Utils.\-h}}
+\subsubsection[{\-\_\-\-\_\-\-T\-E\-T\-R\-I\-S\-\_\-\-U\-T\-I\-L\-S\-\_\-\-H\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-\-\_\-\-T\-E\-T\-R\-I\-S\-\_\-\-U\-T\-I\-L\-S\-\_\-\-H\-\_\-\-\_\-}}\label{_tetris_utils_8h_a46d34b374b75fd6743e3651b796168f5}
+
+
+Définition à la ligne 2 du fichier Tetris\-Utils.\-h.
+
+\hypertarget{_tetris_utils_8h_ae1a59328c9b22cbb12ac88999ba0fcd3}{\index{Tetris\-Utils.\-h@{Tetris\-Utils.\-h}!D\-I\-M\-\_\-\-C\-A\-S\-E@{D\-I\-M\-\_\-\-C\-A\-S\-E}}
+\index{D\-I\-M\-\_\-\-C\-A\-S\-E@{D\-I\-M\-\_\-\-C\-A\-S\-E}!TetrisUtils.h@{Tetris\-Utils.\-h}}
+\subsubsection[{D\-I\-M\-\_\-\-C\-A\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-M\-\_\-\-C\-A\-S\-E~17.\-0}}\label{_tetris_utils_8h_ae1a59328c9b22cbb12ac88999ba0fcd3}
+
+
+taille d'une case de la grille du jeu (carr�e) 
+
+
+
+Définition à la ligne 9 du fichier Tetris\-Utils.\-h.
+
+\hypertarget{_tetris_utils_8h_acf0268c13877ff90d1f4ec3e5326c369}{\index{Tetris\-Utils.\-h@{Tetris\-Utils.\-h}!H\-E\-I\-G\-H\-T\-\_\-\-B\-O\-A\-R\-D@{H\-E\-I\-G\-H\-T\-\_\-\-B\-O\-A\-R\-D}}
+\index{H\-E\-I\-G\-H\-T\-\_\-\-B\-O\-A\-R\-D@{H\-E\-I\-G\-H\-T\-\_\-\-B\-O\-A\-R\-D}!TetrisUtils.h@{Tetris\-Utils.\-h}}
+\subsubsection[{H\-E\-I\-G\-H\-T\-\_\-\-B\-O\-A\-R\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\-E\-I\-G\-H\-T\-\_\-\-B\-O\-A\-R\-D~20}}\label{_tetris_utils_8h_acf0268c13877ff90d1f4ec3e5326c369}
+
+
+hauteur de la grille du jeu 
+
+
+
+Définition à la ligne 6 du fichier Tetris\-Utils.\-h.
+
+\hypertarget{_tetris_utils_8h_a87d3da0dbc66a688633b8b54236cdaca}{\index{Tetris\-Utils.\-h@{Tetris\-Utils.\-h}!P\-O\-S\-X\-\_\-\-B\-O\-A\-R\-D@{P\-O\-S\-X\-\_\-\-B\-O\-A\-R\-D}}
+\index{P\-O\-S\-X\-\_\-\-B\-O\-A\-R\-D@{P\-O\-S\-X\-\_\-\-B\-O\-A\-R\-D}!TetrisUtils.h@{Tetris\-Utils.\-h}}
+\subsubsection[{P\-O\-S\-X\-\_\-\-B\-O\-A\-R\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-O\-S\-X\-\_\-\-B\-O\-A\-R\-D~300}}\label{_tetris_utils_8h_a87d3da0dbc66a688633b8b54236cdaca}
+
+
+position en X de la grille du jeu dans la fen�tre G\-L\-U\-T 
+
+
+
+Définition à la ligne 7 du fichier Tetris\-Utils.\-h.
+
+\hypertarget{_tetris_utils_8h_a224b8c50f38cfc135c907bf36ad3a45a}{\index{Tetris\-Utils.\-h@{Tetris\-Utils.\-h}!P\-O\-S\-Y\-\_\-\-B\-O\-A\-R\-D@{P\-O\-S\-Y\-\_\-\-B\-O\-A\-R\-D}}
+\index{P\-O\-S\-Y\-\_\-\-B\-O\-A\-R\-D@{P\-O\-S\-Y\-\_\-\-B\-O\-A\-R\-D}!TetrisUtils.h@{Tetris\-Utils.\-h}}
+\subsubsection[{P\-O\-S\-Y\-\_\-\-B\-O\-A\-R\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-O\-S\-Y\-\_\-\-B\-O\-A\-R\-D~100}}\label{_tetris_utils_8h_a224b8c50f38cfc135c907bf36ad3a45a}
+
+
+position en Y de la grille du jeu dans la fen�tre G\-L\-U\-T 
+
+
+
+Définition à la ligne 8 du fichier Tetris\-Utils.\-h.
+
+\hypertarget{_tetris_utils_8h_a9df0cc58e9feb5f773d9664dcc978ea5}{\index{Tetris\-Utils.\-h@{Tetris\-Utils.\-h}!W\-I\-D\-T\-H\-\_\-\-B\-O\-A\-R\-D@{W\-I\-D\-T\-H\-\_\-\-B\-O\-A\-R\-D}}
+\index{W\-I\-D\-T\-H\-\_\-\-B\-O\-A\-R\-D@{W\-I\-D\-T\-H\-\_\-\-B\-O\-A\-R\-D}!TetrisUtils.h@{Tetris\-Utils.\-h}}
+\subsubsection[{W\-I\-D\-T\-H\-\_\-\-B\-O\-A\-R\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\-I\-D\-T\-H\-\_\-\-B\-O\-A\-R\-D~10}}\label{_tetris_utils_8h_a9df0cc58e9feb5f773d9664dcc978ea5}
+
+
+largeur de la grille du jeu 
+
+
+
+Définition à la ligne 5 du fichier Tetris\-Utils.\-h.
+
+
+
+\subsection{Documentation du type de l'énumération}
+\hypertarget{_tetris_utils_8h_aee2205359d0b7e255e34eef4d76435df}{\index{Tetris\-Utils.\-h@{Tetris\-Utils.\-h}!Action\-Result@{Action\-Result}}
+\index{Action\-Result@{Action\-Result}!TetrisUtils.h@{Tetris\-Utils.\-h}}
+\subsubsection[{Action\-Result}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Action\-Result}}}\label{_tetris_utils_8h_aee2205359d0b7e255e34eef4d76435df}
+
+
+Etat du jeu apr�s une action (update, modification de position ou orientation piece) 
+
+\begin{Desc}
+\item[Valeurs énumérées]\par
+\begin{description}
+\index{A\-R\-\_\-\-Ok@{A\-R\-\_\-\-Ok}!Tetris\-Utils.\-h@{Tetris\-Utils.\-h}}\index{Tetris\-Utils.\-h@{Tetris\-Utils.\-h}!A\-R\-\_\-\-Ok@{A\-R\-\_\-\-Ok}}\item[{\em 
+\hypertarget{_tetris_utils_8h_aee2205359d0b7e255e34eef4d76435dfaba20083622789a2ed8fe08664e5605c1}{A\-R\-\_\-\-Ok}\label{_tetris_utils_8h_aee2205359d0b7e255e34eef4d76435dfaba20083622789a2ed8fe08664e5605c1}
+}]\index{A\-R\-\_\-\-Collision@{A\-R\-\_\-\-Collision}!Tetris\-Utils.\-h@{Tetris\-Utils.\-h}}\index{Tetris\-Utils.\-h@{Tetris\-Utils.\-h}!A\-R\-\_\-\-Collision@{A\-R\-\_\-\-Collision}}\item[{\em 
+\hypertarget{_tetris_utils_8h_aee2205359d0b7e255e34eef4d76435dfa1f42fecf7c4f8a62b84008002163f1a4}{A\-R\-\_\-\-Collision}\label{_tetris_utils_8h_aee2205359d0b7e255e34eef4d76435dfa1f42fecf7c4f8a62b84008002163f1a4}
+}]\index{A\-R\-\_\-\-Game\-Over@{A\-R\-\_\-\-Game\-Over}!Tetris\-Utils.\-h@{Tetris\-Utils.\-h}}\index{Tetris\-Utils.\-h@{Tetris\-Utils.\-h}!A\-R\-\_\-\-Game\-Over@{A\-R\-\_\-\-Game\-Over}}\item[{\em 
+\hypertarget{_tetris_utils_8h_aee2205359d0b7e255e34eef4d76435dfaa4933e0dea9d95e26410e76c1d9f7456}{A\-R\-\_\-\-Game\-Over}\label{_tetris_utils_8h_aee2205359d0b7e255e34eef4d76435dfaa4933e0dea9d95e26410e76c1d9f7456}
+}]\end{description}
+\end{Desc}
+
+
+Définition à la ligne 27 du fichier Tetris\-Utils.\-h.
+
+\hypertarget{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8}{\index{Tetris\-Utils.\-h@{Tetris\-Utils.\-h}!Piece\-Action@{Piece\-Action}}
+\index{Piece\-Action@{Piece\-Action}!TetrisUtils.h@{Tetris\-Utils.\-h}}
+\subsubsection[{Piece\-Action}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Piece\-Action}}}\label{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8}
+
+
+Actions possibles par l'utilisateur. 
+
+\begin{Desc}
+\item[Valeurs énumérées]\par
+\begin{description}
+\index{P\-A\-\_\-\-Rotate\-Right@{P\-A\-\_\-\-Rotate\-Right}!Tetris\-Utils.\-h@{Tetris\-Utils.\-h}}\index{Tetris\-Utils.\-h@{Tetris\-Utils.\-h}!P\-A\-\_\-\-Rotate\-Right@{P\-A\-\_\-\-Rotate\-Right}}\item[{\em 
+\hypertarget{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8a84380f7c056a1d381a3b1889a48109d9}{P\-A\-\_\-\-Rotate\-Right}\label{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8a84380f7c056a1d381a3b1889a48109d9}
+}]\index{P\-A\-\_\-\-Rotate\-Left@{P\-A\-\_\-\-Rotate\-Left}!Tetris\-Utils.\-h@{Tetris\-Utils.\-h}}\index{Tetris\-Utils.\-h@{Tetris\-Utils.\-h}!P\-A\-\_\-\-Rotate\-Left@{P\-A\-\_\-\-Rotate\-Left}}\item[{\em 
+\hypertarget{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8a27ec28fc72ef8c4d4c17654dd902ff69}{P\-A\-\_\-\-Rotate\-Left}\label{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8a27ec28fc72ef8c4d4c17654dd902ff69}
+}]\index{P\-A\-\_\-\-Move\-Right@{P\-A\-\_\-\-Move\-Right}!Tetris\-Utils.\-h@{Tetris\-Utils.\-h}}\index{Tetris\-Utils.\-h@{Tetris\-Utils.\-h}!P\-A\-\_\-\-Move\-Right@{P\-A\-\_\-\-Move\-Right}}\item[{\em 
+\hypertarget{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8adcec83af27ecc2ef0102fc7f50259e2c}{P\-A\-\_\-\-Move\-Right}\label{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8adcec83af27ecc2ef0102fc7f50259e2c}
+}]\index{P\-A\-\_\-\-Move\-Left@{P\-A\-\_\-\-Move\-Left}!Tetris\-Utils.\-h@{Tetris\-Utils.\-h}}\index{Tetris\-Utils.\-h@{Tetris\-Utils.\-h}!P\-A\-\_\-\-Move\-Left@{P\-A\-\_\-\-Move\-Left}}\item[{\em 
+\hypertarget{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8a5e5493ef9fa9bf628f739f0c6b4f8d71}{P\-A\-\_\-\-Move\-Left}\label{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8a5e5493ef9fa9bf628f739f0c6b4f8d71}
+}]\index{P\-A\-\_\-\-Move\-Bottom@{P\-A\-\_\-\-Move\-Bottom}!Tetris\-Utils.\-h@{Tetris\-Utils.\-h}}\index{Tetris\-Utils.\-h@{Tetris\-Utils.\-h}!P\-A\-\_\-\-Move\-Bottom@{P\-A\-\_\-\-Move\-Bottom}}\item[{\em 
+\hypertarget{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8adf2e2d247e618ea931d6e4ad7bed7464}{P\-A\-\_\-\-Move\-Bottom}\label{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8adf2e2d247e618ea931d6e4ad7bed7464}
+}]\index{P\-A\-\_\-\-Move\-Bottom2@{P\-A\-\_\-\-Move\-Bottom2}!Tetris\-Utils.\-h@{Tetris\-Utils.\-h}}\index{Tetris\-Utils.\-h@{Tetris\-Utils.\-h}!P\-A\-\_\-\-Move\-Bottom2@{P\-A\-\_\-\-Move\-Bottom2}}\item[{\em 
+\hypertarget{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8aa1205ee48206a302e6bfe972ce68927f}{P\-A\-\_\-\-Move\-Bottom2}\label{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8aa1205ee48206a302e6bfe972ce68927f}
+}]\end{description}
+\end{Desc}
+
+
+Définition à la ligne 14 du fichier Tetris\-Utils.\-h.
+

@@ -1,0 +1,619 @@
+\hypertarget{class_c_matrix44}{\section{Référence de la classe C\-Matrix44}
+\label{class_c_matrix44}\index{C\-Matrix44@{C\-Matrix44}}
+}
+
+
+\mbox{[}Smr\-Core\-Math\mbox{]} define float 4$\ast$4 Matrix  
+
+
+
+
+{\ttfamily \#include $<$C\-Matrix44.\-h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_matrix44_a55dd2245b2ee3abecae6834c07daa739}{C\-Matrix44} ()
+\begin{DoxyCompactList}\small\item\em default constructor, init matrix to identity \end{DoxyCompactList}\item 
+\hyperlink{class_c_matrix44_a584fe9facfac7807923a1f1870a3d53f}{C\-Matrix44} (float $\ast$buff)
+\begin{DoxyCompactList}\small\item\em constructor, init matrix with a buffer of values \end{DoxyCompactList}\item 
+\hyperlink{class_c_matrix44_a39a96a7aa171ad973d9cc8d195c9ad4e}{C\-Matrix44} (const \hyperlink{class_c_vector3}{C\-Vector3} \&\hyperlink{gl_8h_a0cdec8e97a75ee9458b23d152bf962d4}{x}, const \hyperlink{class_c_vector3}{C\-Vector3} \&\hyperlink{gl_8h_a74d80fd479c0f6d0153c709949a089ef}{y}, const \hyperlink{class_c_vector3}{C\-Vector3} \&\hyperlink{glext_8h_aee38b51639b577753f6a92029fb92000}{z})
+\begin{DoxyCompactList}\small\item\em constructor, init matrix with 3 axes \end{DoxyCompactList}\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_matrix44_a7d0859d97ff67c23e7767445f7f6b759}{Set\-Translation} (const \hyperlink{class_c_vector3}{C\-Vector3} \&vec)
+\begin{DoxyCompactList}\small\item\em set translation \end{DoxyCompactList}\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_matrix44_a95eed7e918c9a0acac1615cc9059908e}{Set\-Translation} (const \hyperlink{class_c_vector4}{C\-Vector4} \&vec)
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_matrix44_a7fe9f37064ceb07e41f0d34f14340ba2}{Translate} (const \hyperlink{class_c_vector3}{C\-Vector3} \&vec)
+\begin{DoxyCompactList}\small\item\em Add translation. \end{DoxyCompactList}\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_matrix44_a57162e8484192db5286f7cb03bd065a6}{Translate} (const \hyperlink{class_c_vector4}{C\-Vector4} \&vec)
+\item 
+\hyperlink{class_c_vector3}{C\-Vector3} \hyperlink{class_c_matrix44_aa849d2b509dd5cc56ec6563822240c84}{Get\-Translation} () const 
+\begin{DoxyCompactList}\small\item\em get translation \end{DoxyCompactList}\item 
+\hyperlink{class_c_vector3}{C\-Vector3} \hyperlink{class_c_matrix44_aae42214fe24fb05be617b27caac9d66b}{Get\-Scale} ()
+\begin{DoxyCompactList}\small\item\em get scale \end{DoxyCompactList}\item 
+\hyperlink{class_c_vector3}{C\-Vector3} \hyperlink{class_c_matrix44_a0b8ee58e05352544361280918f2ca235}{Get\-X\-Axis} ()
+\begin{DoxyCompactList}\small\item\em get axis x,y,z \end{DoxyCompactList}\item 
+\hyperlink{class_c_vector3}{C\-Vector3} \hyperlink{class_c_matrix44_abcb2267e652096e7d83ce98665f1de6a}{Get\-Y\-Axis} ()
+\item 
+\hyperlink{class_c_vector3}{C\-Vector3} \hyperlink{class_c_matrix44_a8d98f62457193075af83da52c6f8d884}{Get\-Z\-Axis} ()
+\item 
+const float \& \hyperlink{class_c_matrix44_a895ba1d9a64183cee70eedddce95c8b8}{operator()} (unsigned int \hyperlink{glext_8h_a11b277b422822f784ee248b43eee3e1e}{row}, unsigned int col) const 
+\begin{DoxyCompactList}\small\item\em operator to get a value into matrix \end{DoxyCompactList}\item 
+float \& \hyperlink{class_c_matrix44_a9c7447aea10dbe50b5d08fc14ee855ea}{operator()} (unsigned int \hyperlink{glext_8h_a11b277b422822f784ee248b43eee3e1e}{row}, unsigned int col)
+\item 
+float \hyperlink{class_c_matrix44_a8b7503251ee013f9b124bc9c7368e6c0}{det} ()
+\begin{DoxyCompactList}\small\item\em get determinant of matrix \end{DoxyCompactList}\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_matrix44_abeff331b137cedd256d6758b1cb11c4f}{invert} ()
+\begin{DoxyCompactList}\small\item\em invert the matrix \end{DoxyCompactList}\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_matrix44_adfef3f6ae63043cd713e379bc7a1cfdd}{transpose} ()
+\begin{DoxyCompactList}\small\item\em invert the matrix \end{DoxyCompactList}\item 
+\hyperlink{class_c_matrix44}{C\-Matrix44} \hyperlink{class_c_matrix44_a4ded0d0824852b2aff8af3a3132a31d2}{operator$\ast$} (const \hyperlink{class_c_matrix44}{C\-Matrix44} \&\hyperlink{glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}) const 
+\begin{DoxyCompactList}\small\item\em operator to multiply current matrix with other matrix \end{DoxyCompactList}\item 
+\hyperlink{class_c_vector4}{C\-Vector4} \hyperlink{class_c_matrix44_a41c31a6bbcc11ba8d3e915eb889577bc}{operator$\ast$} (const \hyperlink{class_c_vector4}{C\-Vector4} \&\hyperlink{gl_8h_a4568fc090febc136eed4577a600739ca}{v}) const 
+\begin{DoxyCompactList}\small\item\em operator to multiply current matrix with other matrix \end{DoxyCompactList}\item 
+\hyperlink{class_c_vector3}{C\-Vector3} \hyperlink{class_c_matrix44_ad792d8110c173872084afd817c2f7045}{operator$\ast$} (const \hyperlink{class_c_vector3}{C\-Vector3} \&\hyperlink{gl_8h_a4568fc090febc136eed4577a600739ca}{v}) const 
+\begin{DoxyCompactList}\small\item\em operator to multiply current matrix with other matrix \end{DoxyCompactList}\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_matrix44_a7af596a54cb4e3163915ca1b66a3d0b5}{Perspective} (float fovy, float aspect, float \hyperlink{glext_8h_a12d99226e590bbaaf0be69169eeb4834}{z\-Near}, float \hyperlink{glext_8h_a18a2583fe65967bceff8903e2769f8e2}{z\-Far})
+\begin{DoxyCompactList}\small\item\em specifies a viewing frustum into the world coordinate system (\href{http://www.opengl.org/sdk/docs/man/xhtml/gluPerspective.xml}{\tt http\-://www.\-opengl.\-org/sdk/docs/man/xhtml/glu\-Perspective.\-xml}) \end{DoxyCompactList}\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_matrix44_a4f3c80947a24bb83d74ad17c01bea491}{Look\-At} (const \hyperlink{class_c_vector3}{C\-Vector3} \&eye, const \hyperlink{class_c_vector3}{C\-Vector3} \&center, const \hyperlink{class_c_vector3}{C\-Vector3} \&up)
+\begin{DoxyCompactList}\small\item\em creates a viewing matrix derived from an eye point (\href{http://www.opengl.org/sdk/docs/man/xhtml/gluLookAt.xml}{\tt http\-://www.\-opengl.\-org/sdk/docs/man/xhtml/glu\-Look\-At.\-xml}) \end{DoxyCompactList}\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_matrix44_ae378f7ef8a3a121bd598329b23f271fb}{Orthographic} (float \hyperlink{glext_8h_a85b8f6c07fbc1fb5d77c2ae090f21995}{left}, float \hyperlink{glext_8h_a5ffadbbacc6b89cf6218bc43b384d3fe}{right}, float \hyperlink{glext_8h_a95fc257e5ddf46f7db9d5e898cdf1991}{bottom}, float \hyperlink{glext_8h_a5ab323daeacf8dfdb8f91132fecdca23}{top}, float near\-Val, float far\-Val)
+\begin{DoxyCompactList}\small\item\em creates a Orthographic (\href{http://www.opengl.org/sdk/docs/man/xhtml/glOrtho.xml}{\tt http\-://www.\-opengl.\-org/sdk/docs/man/xhtml/gl\-Ortho.\-xml}) \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_matrix44_ae4d2eb3a41998637b2f1bd02e3b7b0cc}{operator==} (const \hyperlink{class_c_matrix44}{C\-Matrix44} \&\hyperlink{gl_8h_a00140d6f5c548b26daf170bf16e86a6d}{t}) const 
+\item 
+bool \hyperlink{class_c_matrix44_a7a652abf026c230ae3a03781070d5360}{operator!=} (const \hyperlink{class_c_matrix44}{C\-Matrix44} \&\hyperlink{gl_8h_a00140d6f5c548b26daf170bf16e86a6d}{t}) const 
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_c_matrix44}{C\-Matrix44} \hyperlink{class_c_matrix44_ade53879722c73f788672f122ce79384d}{Create\-Perspective} (float fovy, float aspect, float \hyperlink{glext_8h_a12d99226e590bbaaf0be69169eeb4834}{z\-Near}, float \hyperlink{glext_8h_a18a2583fe65967bceff8903e2769f8e2}{z\-Far})
+\item 
+static \hyperlink{class_c_matrix44}{C\-Matrix44} \hyperlink{class_c_matrix44_acb0ca1cac92022effb2781b5e56c532a}{Create\-Look\-At} (const \hyperlink{class_c_vector3}{C\-Vector3} \&eye, const \hyperlink{class_c_vector3}{C\-Vector3} \&center, const \hyperlink{class_c_vector3}{C\-Vector3} \&up)
+\item 
+static \hyperlink{class_c_matrix44}{C\-Matrix44} \hyperlink{class_c_matrix44_a9300c08531de617b22d861687cfe0ea6}{Create\-Orthographic} (float \hyperlink{glext_8h_a85b8f6c07fbc1fb5d77c2ae090f21995}{left}, float \hyperlink{glext_8h_a5ffadbbacc6b89cf6218bc43b384d3fe}{right}, float \hyperlink{glext_8h_a95fc257e5ddf46f7db9d5e898cdf1991}{bottom}, float \hyperlink{glext_8h_a5ab323daeacf8dfdb8f91132fecdca23}{top}, float near\-Val, float far\-Val)
+\end{DoxyCompactItemize}
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>float \hyperlink{class_c_matrix44_a0cdad394489ff192554c7f29ca5ae78a}{m} \mbox{[}4\mbox{]}\mbox{[}4\mbox{]}\\
+\>float \hyperlink{class_c_matrix44_a5977be8ee90c365cb2e14be49f749739}{b} \mbox{[}16\mbox{]}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+\subsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_c_matrix44}{C\-Matrix44} \hyperlink{class_c_matrix44_a18198dedeaf35ac255b368f5c54ceed0}{Identity} = \hyperlink{class_c_matrix44}{C\-Matrix44}()
+\begin{DoxyCompactList}\small\item\em identity transformation \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+\mbox{[}Smr\-Core\-Math\mbox{]} define float 4$\ast$4 Matrix 
+
+Définition à la ligne 56 du fichier C\-Matrix44.\-h.
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_c_matrix44_a55dd2245b2ee3abecae6834c07daa739}{\index{C\-Matrix44@{C\-Matrix44}!C\-Matrix44@{C\-Matrix44}}
+\index{C\-Matrix44@{C\-Matrix44}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{C\-Matrix44}]{\setlength{\rightskip}{0pt plus 5cm}C\-Matrix44\-::\-C\-Matrix44 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_matrix44_a55dd2245b2ee3abecae6834c07daa739}
+
+
+default constructor, init matrix to identity 
+
+
+
+Définition à la ligne 72 du fichier C\-Matrix44.\-h.
+
+\hypertarget{class_c_matrix44_a584fe9facfac7807923a1f1870a3d53f}{\index{C\-Matrix44@{C\-Matrix44}!C\-Matrix44@{C\-Matrix44}}
+\index{C\-Matrix44@{C\-Matrix44}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{C\-Matrix44}]{\setlength{\rightskip}{0pt plus 5cm}C\-Matrix44\-::\-C\-Matrix44 (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{buff}
+\end{DoxyParamCaption}
+)}}\label{class_c_matrix44_a584fe9facfac7807923a1f1870a3d53f}
+
+
+constructor, init matrix with a buffer of values 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em buffer} & of values \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 31 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{class_c_matrix44_a39a96a7aa171ad973d9cc8d195c9ad4e}{\index{C\-Matrix44@{C\-Matrix44}!C\-Matrix44@{C\-Matrix44}}
+\index{C\-Matrix44@{C\-Matrix44}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{C\-Matrix44}]{\setlength{\rightskip}{0pt plus 5cm}C\-Matrix44\-::\-C\-Matrix44 (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector3} \&}]{x, }
+\item[{const {\bf C\-Vector3} \&}]{y, }
+\item[{const {\bf C\-Vector3} \&}]{z}
+\end{DoxyParamCaption}
+)}}\label{class_c_matrix44_a39a96a7aa171ad973d9cc8d195c9ad4e}
+
+
+constructor, init matrix with 3 axes 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em axis} & 1 \\
+\hline
+{\em axis} & 2 \\
+\hline
+{\em axis} & 3 \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 20 du fichier C\-Matrix44.\-cpp.
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_c_matrix44_acb0ca1cac92022effb2781b5e56c532a}{\index{C\-Matrix44@{C\-Matrix44}!Create\-Look\-At@{Create\-Look\-At}}
+\index{Create\-Look\-At@{Create\-Look\-At}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{Create\-Look\-At}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Matrix44} C\-Matrix44\-::\-Create\-Look\-At (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector3} \&}]{eye, }
+\item[{const {\bf C\-Vector3} \&}]{center, }
+\item[{const {\bf C\-Vector3} \&}]{up}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_matrix44_acb0ca1cac92022effb2781b5e56c532a}
+
+
+Définition à la ligne 342 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{class_c_matrix44_a9300c08531de617b22d861687cfe0ea6}{\index{C\-Matrix44@{C\-Matrix44}!Create\-Orthographic@{Create\-Orthographic}}
+\index{Create\-Orthographic@{Create\-Orthographic}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{Create\-Orthographic}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Matrix44} C\-Matrix44\-::\-Create\-Orthographic (
+\begin{DoxyParamCaption}
+\item[{float}]{left, }
+\item[{float}]{right, }
+\item[{float}]{bottom, }
+\item[{float}]{top, }
+\item[{float}]{near\-Val, }
+\item[{float}]{far\-Val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_matrix44_a9300c08531de617b22d861687cfe0ea6}
+
+
+Définition à la ligne 366 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{class_c_matrix44_ade53879722c73f788672f122ce79384d}{\index{C\-Matrix44@{C\-Matrix44}!Create\-Perspective@{Create\-Perspective}}
+\index{Create\-Perspective@{Create\-Perspective}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{Create\-Perspective}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Matrix44} C\-Matrix44\-::\-Create\-Perspective (
+\begin{DoxyParamCaption}
+\item[{float}]{fovy, }
+\item[{float}]{aspect, }
+\item[{float}]{z\-Near, }
+\item[{float}]{z\-Far}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_matrix44_ade53879722c73f788672f122ce79384d}
+
+
+Définition à la ligne 306 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{class_c_matrix44_a8b7503251ee013f9b124bc9c7368e6c0}{\index{C\-Matrix44@{C\-Matrix44}!det@{det}}
+\index{det@{det}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{det}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Matrix44\-::det (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_matrix44_a8b7503251ee013f9b124bc9c7368e6c0}
+
+
+get determinant of matrix 
+
+\begin{DoxyReturn}{Renvoie}
+float of determinant 
+\end{DoxyReturn}
+
+
+Définition à la ligne 176 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{class_c_matrix44_aae42214fe24fb05be617b27caac9d66b}{\index{C\-Matrix44@{C\-Matrix44}!Get\-Scale@{Get\-Scale}}
+\index{Get\-Scale@{Get\-Scale}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{Get\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Vector3} C\-Matrix44\-::\-Get\-Scale (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_matrix44_aae42214fe24fb05be617b27caac9d66b}
+
+
+get scale 
+
+\begin{DoxyReturn}{Renvoie}
+scale 
+\end{DoxyReturn}
+
+
+Définition à la ligne 374 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{class_c_matrix44_aa849d2b509dd5cc56ec6563822240c84}{\index{C\-Matrix44@{C\-Matrix44}!Get\-Translation@{Get\-Translation}}
+\index{Get\-Translation@{Get\-Translation}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{Get\-Translation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Vector3} C\-Matrix44\-::\-Get\-Translation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_matrix44_aa849d2b509dd5cc56ec6563822240c84}
+
+
+get translation 
+
+\begin{DoxyReturn}{Renvoie}
+translation 
+\end{DoxyReturn}
+
+
+Définition à la ligne 295 du fichier C\-Matrix44.\-h.
+
+\hypertarget{class_c_matrix44_a0b8ee58e05352544361280918f2ca235}{\index{C\-Matrix44@{C\-Matrix44}!Get\-X\-Axis@{Get\-X\-Axis}}
+\index{Get\-X\-Axis@{Get\-X\-Axis}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{Get\-X\-Axis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Vector3} C\-Matrix44\-::\-Get\-X\-Axis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_matrix44_a0b8ee58e05352544361280918f2ca235}
+
+
+get axis x,y,z 
+
+\begin{DoxyReturn}{Renvoie}
+axis 
+\end{DoxyReturn}
+
+
+Définition à la ligne 125 du fichier C\-Matrix44.\-h.
+
+\hypertarget{class_c_matrix44_abcb2267e652096e7d83ce98665f1de6a}{\index{C\-Matrix44@{C\-Matrix44}!Get\-Y\-Axis@{Get\-Y\-Axis}}
+\index{Get\-Y\-Axis@{Get\-Y\-Axis}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{Get\-Y\-Axis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Vector3} C\-Matrix44\-::\-Get\-Y\-Axis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_matrix44_abcb2267e652096e7d83ce98665f1de6a}
+
+
+Définition à la ligne 129 du fichier C\-Matrix44.\-h.
+
+\hypertarget{class_c_matrix44_a8d98f62457193075af83da52c6f8d884}{\index{C\-Matrix44@{C\-Matrix44}!Get\-Z\-Axis@{Get\-Z\-Axis}}
+\index{Get\-Z\-Axis@{Get\-Z\-Axis}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{Get\-Z\-Axis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Vector3} C\-Matrix44\-::\-Get\-Z\-Axis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_matrix44_a8d98f62457193075af83da52c6f8d884}
+
+
+Définition à la ligne 133 du fichier C\-Matrix44.\-h.
+
+\hypertarget{class_c_matrix44_abeff331b137cedd256d6758b1cb11c4f}{\index{C\-Matrix44@{C\-Matrix44}!invert@{invert}}
+\index{invert@{invert}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{invert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Matrix44\-::invert (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_matrix44_abeff331b137cedd256d6758b1cb11c4f}
+
+
+invert the matrix 
+
+
+
+Définition à la ligne 202 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{class_c_matrix44_a4f3c80947a24bb83d74ad17c01bea491}{\index{C\-Matrix44@{C\-Matrix44}!Look\-At@{Look\-At}}
+\index{Look\-At@{Look\-At}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{Look\-At}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Matrix44\-::\-Look\-At (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector3} \&}]{eye, }
+\item[{const {\bf C\-Vector3} \&}]{center, }
+\item[{const {\bf C\-Vector3} \&}]{up}
+\end{DoxyParamCaption}
+)}}\label{class_c_matrix44_a4f3c80947a24bb83d74ad17c01bea491}
+
+
+creates a viewing matrix derived from an eye point (\href{http://www.opengl.org/sdk/docs/man/xhtml/gluLookAt.xml}{\tt http\-://www.\-opengl.\-org/sdk/docs/man/xhtml/glu\-Look\-At.\-xml}) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Specifies} & the position of the eye point. \\
+\hline
+{\em Specifies} & the position of the reference point \\
+\hline
+{\em Specifies} & the direction of the up vector \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 319 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{class_c_matrix44_a7a652abf026c230ae3a03781070d5360}{\index{C\-Matrix44@{C\-Matrix44}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-Matrix44\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Matrix44} \&}]{t}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_matrix44_a7a652abf026c230ae3a03781070d5360}
+
+
+Définition à la ligne 223 du fichier C\-Matrix44.\-h.
+
+\hypertarget{class_c_matrix44_a895ba1d9a64183cee70eedddce95c8b8}{\index{C\-Matrix44@{C\-Matrix44}!operator()@{operator()}}
+\index{operator()@{operator()}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}const float \& C\-Matrix44\-::operator() (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{row, }
+\item[{unsigned int}]{col}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_matrix44_a895ba1d9a64183cee70eedddce95c8b8}
+
+
+operator to get a value into matrix 
+
+\begin{DoxyReturn}{Renvoie}
+translation 
+\end{DoxyReturn}
+
+
+Définition à la ligne 303 du fichier C\-Matrix44.\-h.
+
+\hypertarget{class_c_matrix44_a9c7447aea10dbe50b5d08fc14ee855ea}{\index{C\-Matrix44@{C\-Matrix44}!operator()@{operator()}}
+\index{operator()@{operator()}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}float \& C\-Matrix44\-::operator() (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{row, }
+\item[{unsigned int}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_matrix44_a9c7447aea10dbe50b5d08fc14ee855ea}
+
+
+Définition à la ligne 309 du fichier C\-Matrix44.\-h.
+
+\hypertarget{class_c_matrix44_a4ded0d0824852b2aff8af3a3132a31d2}{\index{C\-Matrix44@{C\-Matrix44}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Matrix44} C\-Matrix44\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Matrix44} \&}]{m}
+\end{DoxyParamCaption}
+) const}}\label{class_c_matrix44_a4ded0d0824852b2aff8af3a3132a31d2}
+
+
+operator to multiply current matrix with other matrix 
+
+\begin{DoxyReturn}{Renvoie}
+result matrinx 
+\end{DoxyReturn}
+
+
+Définition à la ligne 42 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{class_c_matrix44_a41c31a6bbcc11ba8d3e915eb889577bc}{\index{C\-Matrix44@{C\-Matrix44}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Vector4} C\-Matrix44\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector4} \&}]{v}
+\end{DoxyParamCaption}
+) const}}\label{class_c_matrix44_a41c31a6bbcc11ba8d3e915eb889577bc}
+
+
+operator to multiply current matrix with other matrix 
+
+\begin{DoxyReturn}{Renvoie}
+result matrinx 
+\end{DoxyReturn}
+
+
+Définition à la ligne 70 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{class_c_matrix44_ad792d8110c173872084afd817c2f7045}{\index{C\-Matrix44@{C\-Matrix44}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Vector3} C\-Matrix44\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector3} \&}]{v}
+\end{DoxyParamCaption}
+) const}}\label{class_c_matrix44_ad792d8110c173872084afd817c2f7045}
+
+
+operator to multiply current matrix with other matrix 
+
+\begin{DoxyReturn}{Renvoie}
+result matrinx 
+\end{DoxyReturn}
+
+
+Définition à la ligne 79 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{class_c_matrix44_ae4d2eb3a41998637b2f1bd02e3b7b0cc}{\index{C\-Matrix44@{C\-Matrix44}!operator==@{operator==}}
+\index{operator==@{operator==}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-Matrix44\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Matrix44} \&}]{t}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_matrix44_ae4d2eb3a41998637b2f1bd02e3b7b0cc}
+
+
+Définition à la ligne 214 du fichier C\-Matrix44.\-h.
+
+\hypertarget{class_c_matrix44_ae378f7ef8a3a121bd598329b23f271fb}{\index{C\-Matrix44@{C\-Matrix44}!Orthographic@{Orthographic}}
+\index{Orthographic@{Orthographic}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{Orthographic}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Matrix44\-::\-Orthographic (
+\begin{DoxyParamCaption}
+\item[{float}]{left, }
+\item[{float}]{right, }
+\item[{float}]{bottom, }
+\item[{float}]{top, }
+\item[{float}]{near\-Val, }
+\item[{float}]{far\-Val}
+\end{DoxyParamCaption}
+)}}\label{class_c_matrix44_ae378f7ef8a3a121bd598329b23f271fb}
+
+
+creates a Orthographic (\href{http://www.opengl.org/sdk/docs/man/xhtml/glOrtho.xml}{\tt http\-://www.\-opengl.\-org/sdk/docs/man/xhtml/gl\-Ortho.\-xml}) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Specify} & the coordinates for the left and right vertical clipping planes \\
+\hline
+{\em Specify} & the coordinates for the bottom and top horizontal clipping planes. \\
+\hline
+{\em Specify} & the distances to the nearer and farther depth clipping planes. These values are negative if the plane is to be behind the viewer \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 350 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{class_c_matrix44_a7af596a54cb4e3163915ca1b66a3d0b5}{\index{C\-Matrix44@{C\-Matrix44}!Perspective@{Perspective}}
+\index{Perspective@{Perspective}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{Perspective}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Matrix44\-::\-Perspective (
+\begin{DoxyParamCaption}
+\item[{float}]{fovy, }
+\item[{float}]{aspect, }
+\item[{float}]{z\-Near, }
+\item[{float}]{z\-Far}
+\end{DoxyParamCaption}
+)}}\label{class_c_matrix44_a7af596a54cb4e3163915ca1b66a3d0b5}
+
+
+specifies a viewing frustum into the world coordinate system (\href{http://www.opengl.org/sdk/docs/man/xhtml/gluPerspective.xml}{\tt http\-://www.\-opengl.\-org/sdk/docs/man/xhtml/glu\-Perspective.\-xml}) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Specifies} & the field of view angle, in degrees, in the y direction. \\
+\hline
+{\em Specifies} & the aspect ratio that determines the field of view in the x direction. The aspect ratio is the ratio of x (width) to y (height) \\
+\hline
+{\em Specifies} & the distance from the viewer to the near clipping plane (always positive) \\
+\hline
+{\em Specifies} & the distance from the viewer to the far clipping plane (always positive) \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 284 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{class_c_matrix44_a7d0859d97ff67c23e7767445f7f6b759}{\index{C\-Matrix44@{C\-Matrix44}!Set\-Translation@{Set\-Translation}}
+\index{Set\-Translation@{Set\-Translation}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{Set\-Translation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Matrix44\-::\-Set\-Translation (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector3} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_matrix44_a7d0859d97ff67c23e7767445f7f6b759}
+
+
+set translation 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em translation} & \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 265 du fichier C\-Matrix44.\-h.
+
+\hypertarget{class_c_matrix44_a95eed7e918c9a0acac1615cc9059908e}{\index{C\-Matrix44@{C\-Matrix44}!Set\-Translation@{Set\-Translation}}
+\index{Set\-Translation@{Set\-Translation}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{Set\-Translation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Matrix44\-::\-Set\-Translation (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector4} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_matrix44_a95eed7e918c9a0acac1615cc9059908e}
+
+
+Définition à la ligne 272 du fichier C\-Matrix44.\-h.
+
+\hypertarget{class_c_matrix44_a7fe9f37064ceb07e41f0d34f14340ba2}{\index{C\-Matrix44@{C\-Matrix44}!Translate@{Translate}}
+\index{Translate@{Translate}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{Translate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Matrix44\-::\-Translate (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector3} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_matrix44_a7fe9f37064ceb07e41f0d34f14340ba2}
+
+
+Add translation. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em translation} & \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 280 du fichier C\-Matrix44.\-h.
+
+\hypertarget{class_c_matrix44_a57162e8484192db5286f7cb03bd065a6}{\index{C\-Matrix44@{C\-Matrix44}!Translate@{Translate}}
+\index{Translate@{Translate}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{Translate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Matrix44\-::\-Translate (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector4} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_matrix44_a57162e8484192db5286f7cb03bd065a6}
+
+
+Définition à la ligne 287 du fichier C\-Matrix44.\-h.
+
+\hypertarget{class_c_matrix44_adfef3f6ae63043cd713e379bc7a1cfdd}{\index{C\-Matrix44@{C\-Matrix44}!transpose@{transpose}}
+\index{transpose@{transpose}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{transpose}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Matrix44\-::transpose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_matrix44_adfef3f6ae63043cd713e379bc7a1cfdd}
+
+
+invert the matrix 
+
+
+
+Définition à la ligne 190 du fichier C\-Matrix44.\-cpp.
+
+
+
+\subsection{Documentation des données membres}
+\hypertarget{class_c_matrix44_a2b20713cab35009fc2b8441168704cef}{\subsubsection[{"@1}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \} }}\label{class_c_matrix44_a2b20713cab35009fc2b8441168704cef}
+\hypertarget{class_c_matrix44_a5977be8ee90c365cb2e14be49f749739}{\index{C\-Matrix44@{C\-Matrix44}!b@{b}}
+\index{b@{b}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{b}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Matrix44\-::b\mbox{[}16\mbox{]}}}\label{class_c_matrix44_a5977be8ee90c365cb2e14be49f749739}
+
+
+Définition à la ligne 63 du fichier C\-Matrix44.\-h.
+
+\hypertarget{class_c_matrix44_a18198dedeaf35ac255b368f5c54ceed0}{\index{C\-Matrix44@{C\-Matrix44}!Identity@{Identity}}
+\index{Identity@{Identity}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{Identity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Matrix44} C\-Matrix44\-::\-Identity = {\bf C\-Matrix44}()\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_matrix44_a18198dedeaf35ac255b368f5c54ceed0}
+
+
+identity transformation 
+
+
+
+Définition à la ligne 228 du fichier C\-Matrix44.\-h.
+
+\hypertarget{class_c_matrix44_a0cdad394489ff192554c7f29ca5ae78a}{\index{C\-Matrix44@{C\-Matrix44}!m@{m}}
+\index{m@{m}!CMatrix44@{C\-Matrix44}}
+\subsubsection[{m}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Matrix44\-::m\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}}}\label{class_c_matrix44_a0cdad394489ff192554c7f29ca5ae78a}
+
+
+Définition à la ligne 62 du fichier C\-Matrix44.\-h.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+/home/cj/workspace/\-Tetris/src/math/\hyperlink{_c_matrix44_8h}{C\-Matrix44.\-h}\item 
+/home/cj/workspace/\-Tetris/src/math/\hyperlink{_c_matrix44_8cpp}{C\-Matrix44.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,412 @@
+\hypertarget{class_c_vector3}{\section{RÃ©fÃ©rence de la classe C\-Vector3}
+\label{class_c_vector3}\index{C\-Vector3@{C\-Vector3}}
+}
+
+
+{\ttfamily \#include $<$C\-Vector3.\-h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_vector3_a174def5c24cc7447191c845208f43b03}{C\-Vector3} (float X=0, float Y=0, float Z=0)
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_vector3_a98f13cb2666174eea0d103b84e138439}{Set} (float X, float Y, float Z)
+\item 
+float \hyperlink{class_c_vector3_acddbb14f5ba40ae501445d6623247c66}{Length} () const 
+\item 
+float \hyperlink{class_c_vector3_ad2e5d04d2fdb91de5a7d88be7ade81fc}{Length\-Sq} () const 
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_vector3_a01244f1a6afa17ce2f6b3be3b4b5d642}{Normalize} ()
+\item 
+\hyperlink{class_c_vector3}{C\-Vector3} \hyperlink{class_c_vector3_a4b9cee1bd80cdd61870e450d9f2ea973}{operator+} () const 
+\item 
+\hyperlink{class_c_vector3}{C\-Vector3} \hyperlink{class_c_vector3_a3e17d7ed8ac714742f9621f1da38e39a}{operator-\/} () const 
+\item 
+\hyperlink{class_c_vector3}{C\-Vector3} \hyperlink{class_c_vector3_a22c7b320db43f4c46ebfb61bec9e2877}{operator+} (const \hyperlink{class_c_vector3}{C\-Vector3} \&\hyperlink{gl_8h_a4568fc090febc136eed4577a600739ca}{v}) const 
+\item 
+\hyperlink{class_c_vector3}{C\-Vector3} \hyperlink{class_c_vector3_a5c858d07d899ea01693d37583ad212c5}{operator-\/} (const \hyperlink{class_c_vector3}{C\-Vector3} \&\hyperlink{gl_8h_a4568fc090febc136eed4577a600739ca}{v}) const 
+\item 
+const \hyperlink{class_c_vector3}{C\-Vector3} \& \hyperlink{class_c_vector3_acb474e7070d90940aafcab5be32159b9}{operator+=} (const \hyperlink{class_c_vector3}{C\-Vector3} \&\hyperlink{gl_8h_a4568fc090febc136eed4577a600739ca}{v})
+\item 
+const \hyperlink{class_c_vector3}{C\-Vector3} \& \hyperlink{class_c_vector3_a0aa9b01d91a5db23343a951e4ef23193}{operator-\/=} (const \hyperlink{class_c_vector3}{C\-Vector3} \&\hyperlink{gl_8h_a4568fc090febc136eed4577a600739ca}{v})
+\item 
+const \hyperlink{class_c_vector3}{C\-Vector3} \& \hyperlink{class_c_vector3_a43a4a287de701b36bb1f46a4ff453ff0}{operator$\ast$=} (float \hyperlink{gl_8h_a00140d6f5c548b26daf170bf16e86a6d}{t})
+\item 
+const \hyperlink{class_c_vector3}{C\-Vector3} \& \hyperlink{class_c_vector3_ab8fad59e43f5551c1cc2411d741104ab}{operator/=} (float \hyperlink{gl_8h_a00140d6f5c548b26daf170bf16e86a6d}{t})
+\item 
+bool \hyperlink{class_c_vector3_a4996ab60ef779a199b8f99aed8329e9f}{operator==} (const \hyperlink{class_c_vector3}{C\-Vector3} \&\hyperlink{gl_8h_a4568fc090febc136eed4577a600739ca}{v}) const 
+\item 
+bool \hyperlink{class_c_vector3_af026bd73555b1bc377a2360c7f348b2b}{operator!=} (const \hyperlink{class_c_vector3}{C\-Vector3} \&\hyperlink{gl_8h_a4568fc090febc136eed4577a600739ca}{v}) const 
+\item 
+\hyperlink{class_c_vector3_a316116ffe85965109afbc85e3d8178e7}{operator float $\ast$} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_c_vector3_a06b092361b335f9971323be0ddf759b1}{x}
+\begin{DoxyCompactList}\small\item\em Composante X. \end{DoxyCompactList}\item 
+float \hyperlink{class_c_vector3_a20d0b1099477995b22a4f1407e41a7a1}{y}
+\begin{DoxyCompactList}\small\item\em Composante Y. \end{DoxyCompactList}\item 
+float \hyperlink{class_c_vector3_a9dd3ce85f6aaa17ccc67bfe50a089b3a}{z}
+\begin{DoxyCompactList}\small\item\em Composante Z. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description dÃ©taillÃ©e}
+
+
+DÃ©finition Ã  la ligne 17 du fichier C\-Vector3.\-h.
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_c_vector3_a174def5c24cc7447191c845208f43b03}{\index{C\-Vector3@{C\-Vector3}!C\-Vector3@{C\-Vector3}}
+\index{C\-Vector3@{C\-Vector3}!CVector3@{C\-Vector3}}
+\subsubsection[{C\-Vector3}]{\setlength{\rightskip}{0pt plus 5cm}C\-Vector3\-::\-C\-Vector3 (
+\begin{DoxyParamCaption}
+\item[{float}]{X = {\ttfamily 0}, }
+\item[{float}]{Y = {\ttfamily 0}, }
+\item[{float}]{Z = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector3_a174def5c24cc7447191c845208f43b03}
+Constructeur par défaut
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em X} & \-: Composante X du vecteur \\
+\hline
+{\em Y} & \-: Composante Y du vecteur \\
+\hline
+{\em Z} & \-: Composante Z du vecteur \\
+\hline
+\end{DoxyParams}
+
+
+DÃ©finition Ã  la ligne 110 du fichier C\-Vector3.\-h.
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_c_vector3_acddbb14f5ba40ae501445d6623247c66}{\index{C\-Vector3@{C\-Vector3}!Length@{Length}}
+\index{Length@{Length}!CVector3@{C\-Vector3}}
+\subsubsection[{Length}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Vector3\-::\-Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector3_acddbb14f5ba40ae501445d6623247c66}
+Renvoie la norme du vecteur
+
+\begin{DoxyReturn}{Renvoie}
+Valeur de la norme du vecteur sqrt(x² + y² + z²) 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 137 du fichier C\-Vector3.\-h.
+
+\hypertarget{class_c_vector3_ad2e5d04d2fdb91de5a7d88be7ade81fc}{\index{C\-Vector3@{C\-Vector3}!Length\-Sq@{Length\-Sq}}
+\index{Length\-Sq@{Length\-Sq}!CVector3@{C\-Vector3}}
+\subsubsection[{Length\-Sq}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Vector3\-::\-Length\-Sq (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector3_ad2e5d04d2fdb91de5a7d88be7ade81fc}
+Renvoie la norme au carré du vecteur
+
+\begin{DoxyReturn}{Renvoie}
+Carré de la norme du vecteur (x² + y² + z²) 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 149 du fichier C\-Vector3.\-h.
+
+\hypertarget{class_c_vector3_a01244f1a6afa17ce2f6b3be3b4b5d642}{\index{C\-Vector3@{C\-Vector3}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!CVector3@{C\-Vector3}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Vector3\-::\-Normalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector3_a01244f1a6afa17ce2f6b3be3b4b5d642}
+Normalise le vecteur 
+
+DÃ©finition Ã  la ligne 159 du fichier C\-Vector3.\-h.
+
+\hypertarget{class_c_vector3_a316116ffe85965109afbc85e3d8178e7}{\index{C\-Vector3@{C\-Vector3}!operator float $\ast$@{operator float $\ast$}}
+\index{operator float $\ast$@{operator float $\ast$}!CVector3@{C\-Vector3}}
+\subsubsection[{operator float $\ast$}]{\setlength{\rightskip}{0pt plus 5cm}C\-Vector3\-::operator float $\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector3_a316116ffe85965109afbc85e3d8178e7}
+Opérateur de cast en float$\ast$
+
+\begin{DoxyReturn}{Renvoie}
+Pointeur sur les composantes du vecteur 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 334 du fichier C\-Vector3.\-h.
+
+\hypertarget{class_c_vector3_af026bd73555b1bc377a2360c7f348b2b}{\index{C\-Vector3@{C\-Vector3}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!CVector3@{C\-Vector3}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-Vector3\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector3} \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector3_af026bd73555b1bc377a2360c7f348b2b}
+Opérateur de comparaison !=
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em v} & \-: Vecteur à comparer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+True si les deux vecteurs sont différents 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 322 du fichier C\-Vector3.\-h.
+
+\hypertarget{class_c_vector3_a43a4a287de701b36bb1f46a4ff453ff0}{\index{C\-Vector3@{C\-Vector3}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!CVector3@{C\-Vector3}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\-Vector3} \& C\-Vector3\-::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{float}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector3_a43a4a287de701b36bb1f46a4ff453ff0}
+Opérateur $\ast$= avec un scalaire
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em t} & \-: Scalaire\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Résultat de l'opération 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 270 du fichier C\-Vector3.\-h.
+
+\hypertarget{class_c_vector3_a4b9cee1bd80cdd61870e450d9f2ea973}{\index{C\-Vector3@{C\-Vector3}!operator+@{operator+}}
+\index{operator+@{operator+}!CVector3@{C\-Vector3}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Vector3} C\-Vector3\-::operator+ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector3_a4b9cee1bd80cdd61870e450d9f2ea973}
+Opérateur unaire +
+
+\begin{DoxyReturn}{Renvoie}
+Résultat de l'opération 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 178 du fichier C\-Vector3.\-h.
+
+\hypertarget{class_c_vector3_a22c7b320db43f4c46ebfb61bec9e2877}{\index{C\-Vector3@{C\-Vector3}!operator+@{operator+}}
+\index{operator+@{operator+}!CVector3@{C\-Vector3}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Vector3} C\-Vector3\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector3} \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector3_a22c7b320db43f4c46ebfb61bec9e2877}
+Opérateur binaire +
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em v} & \-: Vecteur à additionner\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Résultat de l'opération 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 206 du fichier C\-Vector3.\-h.
+
+\hypertarget{class_c_vector3_acb474e7070d90940aafcab5be32159b9}{\index{C\-Vector3@{C\-Vector3}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!CVector3@{C\-Vector3}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\-Vector3} \& C\-Vector3\-::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector3} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector3_acb474e7070d90940aafcab5be32159b9}
+Opérateur +=
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em v} & \-: Vecteur à additioner\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Résultat de l'opération 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 234 du fichier C\-Vector3.\-h.
+
+\hypertarget{class_c_vector3_a3e17d7ed8ac714742f9621f1da38e39a}{\index{C\-Vector3@{C\-Vector3}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!CVector3@{C\-Vector3}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Vector3} C\-Vector3\-::operator-\/ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector3_a3e17d7ed8ac714742f9621f1da38e39a}
+Opérateur unaire -\/
+
+\begin{DoxyReturn}{Renvoie}
+Résultat de l'opération 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 191 du fichier C\-Vector3.\-h.
+
+\hypertarget{class_c_vector3_a5c858d07d899ea01693d37583ad212c5}{\index{C\-Vector3@{C\-Vector3}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!CVector3@{C\-Vector3}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Vector3} C\-Vector3\-::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector3} \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector3_a5c858d07d899ea01693d37583ad212c5}
+Opérateur binaire -\/
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em v} & \-: Vecteur à soustraire\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Résultat de l'opération 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 221 du fichier C\-Vector3.\-h.
+
+\hypertarget{class_c_vector3_a0aa9b01d91a5db23343a951e4ef23193}{\index{C\-Vector3@{C\-Vector3}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!CVector3@{C\-Vector3}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\-Vector3} \& C\-Vector3\-::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector3} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector3_a0aa9b01d91a5db23343a951e4ef23193}
+Opérateur -\/=
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em v} & \-: Vecteur à soustraire\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Résultat de l'opération 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 252 du fichier C\-Vector3.\-h.
+
+\hypertarget{class_c_vector3_ab8fad59e43f5551c1cc2411d741104ab}{\index{C\-Vector3@{C\-Vector3}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!CVector3@{C\-Vector3}}
+\subsubsection[{operator/=}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\-Vector3} \& C\-Vector3\-::operator/= (
+\begin{DoxyParamCaption}
+\item[{float}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector3_ab8fad59e43f5551c1cc2411d741104ab}
+Opérateur /= avec un scalaire
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em t} & \-: Scalaire\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Résultat de l'opération 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 288 du fichier C\-Vector3.\-h.
+
+\hypertarget{class_c_vector3_a4996ab60ef779a199b8f99aed8329e9f}{\index{C\-Vector3@{C\-Vector3}!operator==@{operator==}}
+\index{operator==@{operator==}!CVector3@{C\-Vector3}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-Vector3\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector3} \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector3_a4996ab60ef779a199b8f99aed8329e9f}
+Opérateur de comparaison ==
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em v} & \-: Vecteur à comparer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+True si les deux vecteurs sont identiques 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 306 du fichier C\-Vector3.\-h.
+
+\hypertarget{class_c_vector3_a98f13cb2666174eea0d103b84e138439}{\index{C\-Vector3@{C\-Vector3}!Set@{Set}}
+\index{Set@{Set}!CVector3@{C\-Vector3}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Vector3\-::\-Set (
+\begin{DoxyParamCaption}
+\item[{float}]{X, }
+\item[{float}]{Y, }
+\item[{float}]{Z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector3_a98f13cb2666174eea0d103b84e138439}
+Réinitialise le vecteur
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em X} & \-: Composante X du vecteur \\
+\hline
+{\em Y} & \-: Composante Y du vecteur \\
+\hline
+{\em Z} & \-: Composante Z du vecteur \\
+\hline
+\end{DoxyParams}
+
+
+DÃ©finition Ã  la ligne 123 du fichier C\-Vector3.\-h.
+
+
+
+\subsection{Documentation des donnÃ©es membres}
+\hypertarget{class_c_vector3_a06b092361b335f9971323be0ddf759b1}{\index{C\-Vector3@{C\-Vector3}!x@{x}}
+\index{x@{x}!CVector3@{C\-Vector3}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Vector3\-::x}}\label{class_c_vector3_a06b092361b335f9971323be0ddf759b1}
+
+
+Composante X. 
+
+
+
+DÃ©finition Ã  la ligne 84 du fichier C\-Vector3.\-h.
+
+\hypertarget{class_c_vector3_a20d0b1099477995b22a4f1407e41a7a1}{\index{C\-Vector3@{C\-Vector3}!y@{y}}
+\index{y@{y}!CVector3@{C\-Vector3}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Vector3\-::y}}\label{class_c_vector3_a20d0b1099477995b22a4f1407e41a7a1}
+
+
+Composante Y. 
+
+
+
+DÃ©finition Ã  la ligne 85 du fichier C\-Vector3.\-h.
+
+\hypertarget{class_c_vector3_a9dd3ce85f6aaa17ccc67bfe50a089b3a}{\index{C\-Vector3@{C\-Vector3}!z@{z}}
+\index{z@{z}!CVector3@{C\-Vector3}}
+\subsubsection[{z}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Vector3\-::z}}\label{class_c_vector3_a9dd3ce85f6aaa17ccc67bfe50a089b3a}
+
+
+Composante Z. 
+
+
+
+DÃ©finition Ã  la ligne 86 du fichier C\-Vector3.\-h.
+
+
+
+La documentation de cette classe a Ã©tÃ© gÃ©nÃ©rÃ©e Ã  partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+/home/cj/workspace/\-Tetris/src/math/\hyperlink{_c_vector3_8h}{C\-Vector3.\-h}\end{DoxyCompactItemize}

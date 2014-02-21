@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_c_t_game_table_8cpp" kind="file">
+    <compoundname>CTGameTable.cpp</compoundname>
+    <includes refid="_c_t_game_table_8h" local="yes">CTGameTable.h</includes>
+    <incdepgraph>
+      <node id="1775">
+        <label>limits</label>
+      </node>
+      <node id="1770">
+        <label>cmath</label>
+      </node>
+      <node id="1765">
+        <label>string</label>
+      </node>
+      <node id="1776">
+        <label>CVector4.h</label>
+        <link refid="_c_vector4_8h"/>
+        <childnode refid="1775" relation="include">
+        </childnode>
+        <childnode refid="1767" relation="include">
+        </childnode>
+        <childnode refid="1774" relation="include">
+        </childnode>
+      </node>
+      <node id="1777">
+        <label>CMatrix44.h</label>
+        <link refid="_c_matrix44_8h"/>
+        <childnode refid="1774" relation="include">
+        </childnode>
+        <childnode refid="1776" relation="include">
+        </childnode>
+        <childnode refid="1771" relation="include">
+        </childnode>
+      </node>
+      <node id="1773">
+        <label>ctime</label>
+      </node>
+      <node id="1763">
+        <label>CTGameTable.h</label>
+        <link refid="_c_t_game_table_8h"/>
+        <childnode refid="1764" relation="include">
+        </childnode>
+      </node>
+      <node id="1769">
+        <label>vector</label>
+      </node>
+      <node id="1766">
+        <label>sstream</label>
+      </node>
+      <node id="1774">
+        <label>CVector3.h</label>
+        <link refid="_c_vector3_8h"/>
+        <childnode refid="1775" relation="include">
+        </childnode>
+        <childnode refid="1767" relation="include">
+        </childnode>
+        <childnode refid="1770" relation="include">
+        </childnode>
+      </node>
+      <node id="1772">
+        <label>cstdlib</label>
+      </node>
+      <node id="1767">
+        <label>iostream</label>
+      </node>
+      <node id="1764">
+        <label>Common.h</label>
+        <link refid="_common_8h"/>
+        <childnode refid="1765" relation="include">
+        </childnode>
+        <childnode refid="1766" relation="include">
+        </childnode>
+        <childnode refid="1767" relation="include">
+        </childnode>
+        <childnode refid="1768" relation="include">
+        </childnode>
+        <childnode refid="1769" relation="include">
+        </childnode>
+        <childnode refid="1770" relation="include">
+        </childnode>
+        <childnode refid="1771" relation="include">
+        </childnode>
+        <childnode refid="1772" relation="include">
+        </childnode>
+        <childnode refid="1773" relation="include">
+        </childnode>
+        <childnode refid="1774" relation="include">
+        </childnode>
+        <childnode refid="1776" relation="include">
+        </childnode>
+        <childnode refid="1777" relation="include">
+        </childnode>
+      </node>
+      <node id="1762">
+        <label>/home/cj/workspace/Tetris/src/tetris/CTGameTable.cpp</label>
+        <link refid="CTGameTable.cpp"/>
+        <childnode refid="1763" relation="include">
+        </childnode>
+      </node>
+      <node id="1768">
+        <label>algorithm</label>
+      </node>
+      <node id="1771">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_c_t_game_table_8cpp_1aaeceb0fff8f925e3b15f0c6d5ab18a05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;out, const CTGameTable &amp;tab)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_c_t_game_table" kindref="compound">CTGameTable</ref> &amp;</type>
+          <declname>tab</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/CTGameTable.cpp" line="12" bodyfile="/home/cj/workspace/Tetris/src/tetris/CTGameTable.cpp" bodystart="12" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_t_game_table_8h" kindref="compound">CTGameTable.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_c_t_game_table_1a432c463fb469454b0923c3ab868650cc" refkind="member"><highlight class="normal"><ref refid="class_c_t_game_table_1a4a52b184a392cb914cd9fd92234be744" kindref="member">CTGameTable::CTGameTable</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a30a197eaed803ac3cd1b444d4c972354" kindref="member">width</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1aab021b2df174b06135ca6744356dcf34" kindref="member">height</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><ref refid="struct_case" kindref="compound">Case</ref><sp/>uneCase<sp/>=<sp/><ref refid="struct_case" kindref="compound">Case</ref>();</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><ref refid="_c_t_game_table_8h_1a2170512a04991cf2b86082f2ca5992a6" kindref="member">TGameRow</ref><sp/>uneLgn(width,<sp/>uneCase);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/>m_GameTable<sp/>=<sp/>vector&lt;TGameRow&gt;(<ref refid="gl_8h_1aab021b2df174b06135ca6744356dcf34" kindref="member">height</ref>,<sp/>uneLgn);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/****************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="_c_t_game_table_8cpp_1aaeceb0fff8f925e3b15f0c6d5ab18a05" refkind="member"><highlight class="normal">ostream&amp;<sp/><ref refid="_c_matrix44_8h_1a958f13c8f77b6d4892f40aa2ee382970" kindref="member">operator&lt;&lt; </ref>(ostream&amp;<sp/>out,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_t_game_table" kindref="compound">CTGameTable</ref>&amp;<sp/>tab)<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,j;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i=tab.m_GameTable.size();<sp/>i&gt;0;<sp/>i--)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j=0;<sp/>j&lt;tab.m_GameTable[i-1].size();<sp/>j++)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>tab.m_GameTable[i-1][j].m_used<sp/>&lt;&lt;<sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/****************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_c_t_game_table_1a93e226e7dfc8ea98582bcbc861504d85" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_t_game_table_1a93e226e7dfc8ea98582bcbc861504d85" kindref="member">CTGameTable::setCase</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a0cdec8e97a75ee9458b23d152bf962d4" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a74d80fd479c0f6d0153c709949a089ef" kindref="member">y</ref>,<sp/><ref refid="struct_case" kindref="compound">Case</ref><sp/>newCase)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>m_GameTable.size()<sp/>&gt;<sp/>0</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>m_GameTable.size()<sp/>&gt;<sp/>x</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>m_GameTable[0].size()<sp/>&gt;<sp/><ref refid="gl_8h_1a74d80fd479c0f6d0153c709949a089ef" kindref="member">y</ref>)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>m_GameTable[<ref refid="gl_8h_1a0cdec8e97a75ee9458b23d152bf962d4" kindref="member">x</ref>][<ref refid="gl_8h_1a74d80fd479c0f6d0153c709949a089ef" kindref="member">y</ref>]<sp/>=<sp/>newCase;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="class_c_t_game_table_1a1ae234b52213c9ffad0dc129a5279719" refkind="member"><highlight class="normal">vector&lt;TGameRow&gt;&amp;<sp/><ref refid="class_c_t_game_table_1a1ae234b52213c9ffad0dc129a5279719" kindref="member">CTGameTable::GetGameTable</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_GameTable;<sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/cj/workspace/Tetris/src/tetris/CTGameTable.cpp"/>
+  </compounddef>
+</doxygen>

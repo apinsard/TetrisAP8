@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_s_t_l_delete" kind="struct" prot="public">
+    <compoundname>STLDelete</compoundname>
+    <includes refid="_common_8h" local="no">Common.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_t_l_delete_1acd0719f1242f394f995070a76ece587e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class <ref refid="mainpage_8dox_1a71ef61e8a878d267945d3d068101c6cb" kindref="member">T</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void STLDelete::operator()</definition>
+        <argsstring>(T *&amp;p) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="mainpage_8dox_1a71ef61e8a878d267945d3d068101c6cb" kindref="member">T</ref> *&amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/Common.h" line="91" bodyfile="/home/cj/workspace/Tetris/src/appliBase/Common.h" bodystart="90" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/cj/workspace/Tetris/src/appliBase/Common.h" line="88" bodyfile="/home/cj/workspace/Tetris/src/appliBase/Common.h" bodystart="88" bodyend="95"/>
+    <listofallmembers>
+      <member refid="struct_s_t_l_delete_1acd0719f1242f394f995070a76ece587e" prot="public" virt="non-virtual"><scope>STLDelete</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

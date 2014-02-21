@@ -1,0 +1,438 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="test_8h" kind="file">
+    <compoundname>test.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includes refid="_c_piece_abstract_8h" local="yes">CPieceAbstract.h</includes>
+    <includedby refid="test_8cpp" local="yes">/home/cj/workspace/Tetris/src/test/test.cpp</includedby>
+    <includedby refid="test_c_i_piece_8cpp" local="yes">/home/cj/workspace/Tetris/src/test/testCIPiece.cpp</includedby>
+    <includedby refid="test_c_l1_piece_8cpp" local="yes">/home/cj/workspace/Tetris/src/test/testCL1Piece.cpp</includedby>
+    <includedby refid="test_c_l2_piece_8cpp" local="yes">/home/cj/workspace/Tetris/src/test/testCL2Piece.cpp</includedby>
+    <includedby refid="test_c_o_piece_8cpp" local="yes">/home/cj/workspace/Tetris/src/test/testCOPiece.cpp</includedby>
+    <includedby refid="test_c_t_piece_8cpp" local="yes">/home/cj/workspace/Tetris/src/test/testCTPiece.cpp</includedby>
+    <includedby refid="test_c_z1_piece_8cpp" local="yes">/home/cj/workspace/Tetris/src/test/testCZ1Piece.cpp</includedby>
+    <includedby refid="test_c_z2_piece_8cpp" local="yes">/home/cj/workspace/Tetris/src/test/testCZ2Piece.cpp</includedby>
+    <incdepgraph>
+      <node id="543">
+        <label>CPieceAbstract.h</label>
+        <link refid="_c_piece_abstract_8h"/>
+        <childnode refid="544" relation="include">
+        </childnode>
+      </node>
+      <node id="553">
+        <label>limits</label>
+      </node>
+      <node id="548">
+        <label>cmath</label>
+      </node>
+      <node id="542">
+        <label>string</label>
+      </node>
+      <node id="554">
+        <label>CVector4.h</label>
+        <link refid="_c_vector4_8h"/>
+        <childnode refid="553" relation="include">
+        </childnode>
+        <childnode refid="541" relation="include">
+        </childnode>
+        <childnode refid="552" relation="include">
+        </childnode>
+      </node>
+      <node id="555">
+        <label>CMatrix44.h</label>
+        <link refid="_c_matrix44_8h"/>
+        <childnode refid="552" relation="include">
+        </childnode>
+        <childnode refid="554" relation="include">
+        </childnode>
+        <childnode refid="549" relation="include">
+        </childnode>
+      </node>
+      <node id="551">
+        <label>ctime</label>
+      </node>
+      <node id="547">
+        <label>vector</label>
+      </node>
+      <node id="545">
+        <label>sstream</label>
+      </node>
+      <node id="552">
+        <label>CVector3.h</label>
+        <link refid="_c_vector3_8h"/>
+        <childnode refid="553" relation="include">
+        </childnode>
+        <childnode refid="541" relation="include">
+        </childnode>
+        <childnode refid="548" relation="include">
+        </childnode>
+      </node>
+      <node id="550">
+        <label>cstdlib</label>
+      </node>
+      <node id="541">
+        <label>iostream</label>
+      </node>
+      <node id="544">
+        <label>Common.h</label>
+        <link refid="_common_8h"/>
+        <childnode refid="542" relation="include">
+        </childnode>
+        <childnode refid="545" relation="include">
+        </childnode>
+        <childnode refid="541" relation="include">
+        </childnode>
+        <childnode refid="546" relation="include">
+        </childnode>
+        <childnode refid="547" relation="include">
+        </childnode>
+        <childnode refid="548" relation="include">
+        </childnode>
+        <childnode refid="549" relation="include">
+        </childnode>
+        <childnode refid="550" relation="include">
+        </childnode>
+        <childnode refid="551" relation="include">
+        </childnode>
+        <childnode refid="552" relation="include">
+        </childnode>
+        <childnode refid="554" relation="include">
+        </childnode>
+        <childnode refid="555" relation="include">
+        </childnode>
+      </node>
+      <node id="540">
+        <label>/home/cj/workspace/Tetris/src/test/test.h</label>
+        <link refid="test.h"/>
+        <childnode refid="541" relation="include">
+        </childnode>
+        <childnode refid="542" relation="include">
+        </childnode>
+        <childnode refid="543" relation="include">
+        </childnode>
+      </node>
+      <node id="546">
+        <label>algorithm</label>
+      </node>
+      <node id="549">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="557">
+        <label>/home/cj/workspace/Tetris/src/test/test.cpp</label>
+        <link refid="test_8cpp"/>
+      </node>
+      <node id="561">
+        <label>/home/cj/workspace/Tetris/src/test/testCOPiece.cpp</label>
+        <link refid="test_c_o_piece_8cpp"/>
+      </node>
+      <node id="562">
+        <label>/home/cj/workspace/Tetris/src/test/testCTPiece.cpp</label>
+        <link refid="test_c_t_piece_8cpp"/>
+      </node>
+      <node id="558">
+        <label>/home/cj/workspace/Tetris/src/test/testCIPiece.cpp</label>
+        <link refid="test_c_i_piece_8cpp"/>
+      </node>
+      <node id="559">
+        <label>/home/cj/workspace/Tetris/src/test/testCL1Piece.cpp</label>
+        <link refid="test_c_l1_piece_8cpp"/>
+      </node>
+      <node id="563">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ1Piece.cpp</label>
+        <link refid="test_c_z1_piece_8cpp"/>
+      </node>
+      <node id="560">
+        <label>/home/cj/workspace/Tetris/src/test/testCL2Piece.cpp</label>
+        <link refid="test_c_l2_piece_8cpp"/>
+      </node>
+      <node id="556">
+        <label>/home/cj/workspace/Tetris/src/test/test.h</label>
+        <link refid="test.h"/>
+        <childnode refid="557" relation="include">
+        </childnode>
+        <childnode refid="558" relation="include">
+        </childnode>
+        <childnode refid="559" relation="include">
+        </childnode>
+        <childnode refid="560" relation="include">
+        </childnode>
+        <childnode refid="561" relation="include">
+        </childnode>
+        <childnode refid="562" relation="include">
+        </childnode>
+        <childnode refid="563" relation="include">
+        </childnode>
+        <childnode refid="564" relation="include">
+        </childnode>
+      </node>
+      <node id="564">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ2Piece.cpp</label>
+        <link refid="test_c_z2_piece_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="test_8h_1ad6780b305e9bea9dc8e2bfd25bd062bd" prot="public" static="no">
+        <name>COL_WIDTH</name>
+        <initializer>80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/test/test.h" line="4" bodyfile="/home/cj/workspace/Tetris/src/test/test.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="test_8h_1aff95b03d90aea646cc034a4bf274c0b3" prot="public" static="no">
+        <name>FILL_CHAR</name>
+        <initializer>&apos;.&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/test/test.h" line="5" bodyfile="/home/cj/workspace/Tetris/src/test/test.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="test_8h_1a17f760256046df23dd0ab46602f04d02" prot="public" static="no">
+        <name>COLOR_RESET</name>
+        <initializer>&quot;\033[0m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/test/test.h" line="6" bodyfile="/home/cj/workspace/Tetris/src/test/test.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="test_8h_1a61c6cdf74741d1145ecc13e5f6c37711" prot="public" static="no">
+        <name>COLOR_PASS</name>
+        <initializer>&quot;\033[1;32m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/test/test.h" line="7" bodyfile="/home/cj/workspace/Tetris/src/test/test.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="test_8h_1ac3c186ac6329d3533b0781fdeb95f70c" prot="public" static="no">
+        <name>COLOR_FAIL</name>
+        <initializer>&quot;\033[1;31m&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/test/test.h" line="8" bodyfile="/home/cj/workspace/Tetris/src/test/test.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="test_8h_1a8da3206e3bcfc0bcd87b8cee4381dba6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+        <definition>string fillLine</definition>
+        <argsstring>(string begin, string end)</argsstring>
+        <name>fillLine</name>
+        <param>
+          <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Remplit une ligne avec des points entre le début et la fin de manière à ce qu&apos;elle fasse exactement COL_WIDTH caractères. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/test/test.h" line="20" bodyfile="/home/cj/workspace/Tetris/src/test/test.cpp" bodystart="3" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="test_8h_1ac09ead110788fc64034d07038d30ebe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+        <definition>string fillLine</definition>
+        <argsstring>(string begin)</argsstring>
+        <name>fillLine</name>
+        <param>
+          <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+          <declname>begin</declname>
+        </param>
+        <briefdescription>
+<para>Remplit une ligne avec des points à la fin de manière à ce qu&apos;elle fasse exactement COL_WIDTH caractères. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/test/test.h" line="26" bodyfile="/home/cj/workspace/Tetris/src/test/test.cpp" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="test_8h_1a9de15fb09f30d48b79c5f407a2b62bf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+        <definition>string formatResult</definition>
+        <argsstring>(int depth, string label, bool success)</argsstring>
+        <name>formatResult</name>
+        <param>
+          <type>int</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>success</declname>
+        </param>
+        <briefdescription>
+<para>Formate un résultat (échec ou succès) avec la méthode fillLine. Si le résultat est un succès, on ajoute [PASS] en vert à la fin. Dans le cas contraire, on ajoute [FAIL] en vert à la fin. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>le niveau d&apos;indentation de la ligne </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>le libellé du test </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/test/test.h" line="36" bodyfile="/home/cj/workspace/Tetris/src/test/test.cpp" bodystart="18" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="test_8h_1adaeac9fbf3cc6edd27bc852e7ae12bdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void printTestResult</definition>
+        <argsstring>(string label, bool success)</argsstring>
+        <name>printTestResult</name>
+        <param>
+          <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>success</declname>
+        </param>
+        <briefdescription>
+<para>Affiche à l&apos;écran formatResult avec un niveau d&apos;indentation de 2 (cas le plus usuel). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/test/test.h" line="42" bodyfile="/home/cj/workspace/Tetris/src/test/test.cpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="test_8h_1a605e701470bfef1b96e36a04bc6ec049" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void testPieceCli</definition>
+        <argsstring>(string pieceT, string pieceR, string pieceB, string pieceL, CPieceAbstract piece)</argsstring>
+        <name>testPieceCli</name>
+        <param>
+          <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+          <declname>pieceT</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+          <declname>pieceR</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+          <declname>pieceB</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+          <declname>pieceL</declname>
+        </param>
+        <param>
+          <type><ref refid="class_c_piece_abstract" kindref="compound">CPieceAbstract</ref></type>
+          <declname>piece</declname>
+        </param>
+        <briefdescription>
+<para>Test une pièce du jeu en mode console. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pieceT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>la représentation sous forme de string de la pièce dans l&apos;état TOP. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pieceR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>la représentation de la pièce dans l&apos;état RIGHT </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pieceB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>la représentation de la pièce dans l&apos;état BOTTOM </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pieceL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>la représentation de la pièce dans l&apos;état LEFT </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>piece</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>la pièce a tester </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/test/test.h" line="54" bodyfile="/home/cj/workspace/Tetris/src/test/test.cpp" bodystart="45" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__TEST_H__</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__TEST_H__</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="test_8h_1ad6780b305e9bea9dc8e2bfd25bd062bd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COL_WIDTH<sp/><sp/><sp/>80</highlight></codeline>
+<codeline lineno="5" refid="test_8h_1aff95b03d90aea646cc034a4bf274c0b3" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FILL_CHAR<sp/><sp/><sp/>&apos;.&apos;</highlight></codeline>
+<codeline lineno="6" refid="test_8h_1a17f760256046df23dd0ab46602f04d02" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>COLOR_RESET<sp/>&quot;\033[0m&quot;</highlight></codeline>
+<codeline lineno="7" refid="test_8h_1a61c6cdf74741d1145ecc13e5f6c37711" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>COLOR_PASS<sp/><sp/>&quot;\033[1;32m&quot;</highlight></codeline>
+<codeline lineno="8" refid="test_8h_1ac3c186ac6329d3533b0781fdeb95f70c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>COLOR_FAIL<sp/><sp/>&quot;\033[1;31m&quot;</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_piece_abstract_8h" kindref="compound">CPieceAbstract.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="test_8cpp_1a8da3206e3bcfc0bcd87b8cee4381dba6" kindref="member" tooltip="Remplit une ligne avec des points entre le début et la fin de manière à ce qu&amp;#39;elle fasse exactement C...">fillLine</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>begin,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a432111147038972f06e049e18a837002" kindref="member">end</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="test_8cpp_1a8da3206e3bcfc0bcd87b8cee4381dba6" kindref="member" tooltip="Remplit une ligne avec des points entre le début et la fin de manière à ce qu&amp;#39;elle fasse exactement C...">fillLine</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>begin);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="test_8cpp_1a9de15fb09f30d48b79c5f407a2b62bf7" kindref="member" tooltip="Formate un résultat (échec ou succès) avec la méthode fillLine. Si le résultat est un succès...">formatResult</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a1d280defca3cdf21d6a3144bb2ab95ab" kindref="member">depth</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>label,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>success);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="test_8cpp_1adaeac9fbf3cc6edd27bc852e7ae12bdf" kindref="member" tooltip="Affiche à l&amp;#39;écran formatResult avec un niveau d&amp;#39;indentation de 2 (cas le plus usuel).">printTestResult</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>label,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>success);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="test_8cpp_1a605e701470bfef1b96e36a04bc6ec049" kindref="member" tooltip="Test une pièce du jeu en mode console.">testPieceCli</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>pieceT,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>pieceR,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>pieceB,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>pieceL,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_piece_abstract" kindref="compound" tooltip="classe CPieceAbstract abstraite">CPieceAbstract</ref><sp/>piece);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/cj/workspace/Tetris/src/test/test.h"/>
+  </compounddef>
+</doxygen>

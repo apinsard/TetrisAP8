@@ -1,0 +1,128 @@
+.TH "CCameraLookAt" 3 "Vendredi Février 21 2014" "Version alpha" "Tetris" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CCameraLookAt \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CRenderer\&.h>\fP
+.PP
+Est dérivée de \fBCCamera\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBCCameraLookAt\fP ()"
+.br
+.ti -1c
+.RI "\fB~CCameraLookAt\fP ()"
+.br
+.ti -1c
+.RI "\fBCMatrix44\fP & \fBCompute\fP ()"
+.br
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "float \fBm_posX\fP"
+.br
+.ti -1c
+.RI "float \fBm_posY\fP"
+.br
+.ti -1c
+.RI "float \fBm_posZ\fP"
+.br
+.RI "\fIlook at variables (pos) \fP"
+.ti -1c
+.RI "float \fBm_viewX\fP"
+.br
+.ti -1c
+.RI "float \fBm_viewY\fP"
+.br
+.ti -1c
+.RI "float \fBm_viewZ\fP"
+.br
+.RI "\fIlook at variables (view) \fP"
+.ti -1c
+.RI "float \fBm_upX\fP"
+.br
+.ti -1c
+.RI "float \fBm_upY\fP"
+.br
+.ti -1c
+.RI "float \fBm_upZ\fP"
+.br
+.RI "\fIlook at variables (up) \fP"
+.in -1c
+.SH "Description détaillée"
+.PP 
+Définition à la ligne 65 du fichier CRenderer\&.h\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "CCameraLookAt::CCameraLookAt ()\fC [inline]\fP"
+
+.PP
+Définition à la ligne 71 du fichier CRenderer\&.h\&.
+.SS "CCameraLookAt::~CCameraLookAt ()\fC [inline]\fP"
+
+.PP
+Définition à la ligne 79 du fichier CRenderer\&.h\&.
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "\fBCMatrix44\fP & CCameraLookAt::Compute ()\fC [virtual]\fP"
+mets � jour les attributs de la cam�ra en fonction des �venements souris 
+.PP
+Implémente \fBCCamera\fP\&.
+.PP
+Définition à la ligne 285 du fichier CRenderer\&.cpp\&.
+.SH "Documentation des données membres"
+.PP 
+.SS "float CCameraLookAt::m_posX"
+
+.PP
+Définition à la ligne 90 du fichier CRenderer\&.h\&.
+.SS "float CCameraLookAt::m_posY"
+
+.PP
+Définition à la ligne 90 du fichier CRenderer\&.h\&.
+.SS "float CCameraLookAt::m_posZ"
+
+.PP
+look at variables (pos) 
+.PP
+Définition à la ligne 90 du fichier CRenderer\&.h\&.
+.SS "float CCameraLookAt::m_upX"
+
+.PP
+Définition à la ligne 92 du fichier CRenderer\&.h\&.
+.SS "float CCameraLookAt::m_upY"
+
+.PP
+Définition à la ligne 92 du fichier CRenderer\&.h\&.
+.SS "float CCameraLookAt::m_upZ"
+
+.PP
+look at variables (up) 
+.PP
+Définition à la ligne 92 du fichier CRenderer\&.h\&.
+.SS "float CCameraLookAt::m_viewX"
+
+.PP
+Définition à la ligne 91 du fichier CRenderer\&.h\&.
+.SS "float CCameraLookAt::m_viewY"
+
+.PP
+Définition à la ligne 91 du fichier CRenderer\&.h\&.
+.SS "float CCameraLookAt::m_viewZ"
+
+.PP
+look at variables (view) 
+.PP
+Définition à la ligne 91 du fichier CRenderer\&.h\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Tetris à partir du code source\&.

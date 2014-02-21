@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_____d_r_idri2_loader_extension_rec" kind="struct" prot="public">
+    <compoundname>__DRIdri2LoaderExtensionRec</compoundname>
+    <includes refid="dri__interface_8h" local="no">dri_interface.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_____d_r_idri2_loader_extension_rec_1a017db553ff9b672e344aca9f6846711e" prot="public" static="no" mutable="no">
+        <type><ref refid="dri__interface_8h_1a4e0a61c8ece00d2b2c6792a9a1b55385" kindref="member">__DRIextension</ref></type>
+        <definition>__DRIextension __DRIdri2LoaderExtensionRec::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="749" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="749" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_r_idri2_loader_extension_rec_1aaddcff60eea6077e13b8f240bca17851" prot="public" static="no" mutable="no">
+        <type><ref refid="dri__interface_8h_1a99ccb036a4865817ec4d06d153ba2446" kindref="member">__DRIbuffer</ref> *(*</type>
+        <definition>__DRIbuffer*(* __DRIdri2LoaderExtensionRec::getBuffers)(__DRIdrawable *driDrawable, int *width, int *height, unsigned int *attachments, int count, int *out_count, void *loaderPrivate)</definition>
+        <argsstring>)(__DRIdrawable *driDrawable, int *width, int *height, unsigned int *attachments, int count, int *out_count, void *loaderPrivate)</argsstring>
+        <name>getBuffers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="754" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="751" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_r_idri2_loader_extension_rec_1a0acfcc5a94fa38e1df5fba2c99f26d47" prot="public" static="no" mutable="no">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref>(*</type>
+        <definition>void(* __DRIdri2LoaderExtensionRec::flushFrontBuffer)(__DRIdrawable *driDrawable, void *loaderPrivate)</definition>
+        <argsstring>)(__DRIdrawable *driDrawable, void *loaderPrivate)</argsstring>
+        <name>flushFrontBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flush pending front-buffer rendering</para><para>Any rendering that has been performed to the <computeroutput>__DRI_BUFFER_FAKE_FRONT_LEFT</computeroutput> will be flushed to the <computeroutput>__DRI_BUFFER_FRONT_LEFT</computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>driDrawable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Drawable whose front-buffer is to be flushed </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>loaderPrivate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Loader&apos;s private data that was previously passed into <ref refid="struct_____d_r_idri2_extension_rec_1ad8dee7e9945357051c9fe893d34f06fe" kindref="member">__DRIdri2ExtensionRec::createNewDrawable</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="767" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="767" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_r_idri2_loader_extension_rec_1a4fc1ed3cfad3c47df68f9c4d555760b2" prot="public" static="no" mutable="no">
+        <type><ref refid="dri__interface_8h_1a99ccb036a4865817ec4d06d153ba2446" kindref="member">__DRIbuffer</ref> *(*</type>
+        <definition>__DRIbuffer*(* __DRIdri2LoaderExtensionRec::getBuffersWithFormat)(__DRIdrawable *driDrawable, int *width, int *height, unsigned int *attachments, int count, int *out_count, void *loaderPrivate)</definition>
+        <argsstring>)(__DRIdrawable *driDrawable, int *width, int *height, unsigned int *attachments, int count, int *out_count, void *loaderPrivate)</argsstring>
+        <name>getBuffersWithFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get list of buffers from the server</para><para>Gets a list of buffer for the specified set of attachments. Unlike <computeroutput>::getBuffers</computeroutput>, this function takes a list of attachments paired with opaque <computeroutput>unsigned</computeroutput> <computeroutput>int</computeroutput> value describing the format of the buffer. It is the responsibility of the caller to know what the service that allocates the buffers will expect to receive for the format.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>driDrawable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Drawable whose buffers are being queried. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output where the width of the buffers is stored. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output where the height of the buffers is stored. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attachments</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of pairs of attachment ID and opaque format requested for the drawable. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attachment / format pairs stored in <computeroutput>attachments</computeroutput>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>loaderPrivate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Loader&apos;s private data that was previously passed into <ref refid="struct_____d_r_idri2_extension_rec_1ad8dee7e9945357051c9fe893d34f06fe" kindref="member">__DRIdri2ExtensionRec::createNewDrawable</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="792" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="789" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="25">
+        <label>__DRIdri2LoaderExtensionRec</label>
+        <link refid="struct_____d_r_idri2_loader_extension_rec"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>getBuffers</edgelabel>
+          <edgelabel>getBuffersWithFormat</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>base</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>__DRIbufferRec</label>
+        <link refid="struct_____d_r_ibuffer_rec"/>
+      </node>
+      <node id="27">
+        <label>__DRIextensionRec</label>
+        <link refid="struct_____d_r_iextension_rec"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="748" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="748" bodyend="793"/>
+    <listofallmembers>
+      <member refid="struct_____d_r_idri2_loader_extension_rec_1a017db553ff9b672e344aca9f6846711e" prot="public" virt="non-virtual"><scope>__DRIdri2LoaderExtensionRec</scope><name>base</name></member>
+      <member refid="struct_____d_r_idri2_loader_extension_rec_1a0acfcc5a94fa38e1df5fba2c99f26d47" prot="public" virt="non-virtual"><scope>__DRIdri2LoaderExtensionRec</scope><name>flushFrontBuffer</name></member>
+      <member refid="struct_____d_r_idri2_loader_extension_rec_1aaddcff60eea6077e13b8f240bca17851" prot="public" virt="non-virtual"><scope>__DRIdri2LoaderExtensionRec</scope><name>getBuffers</name></member>
+      <member refid="struct_____d_r_idri2_loader_extension_rec_1a4fc1ed3cfad3c47df68f9c4d555760b2" prot="public" virt="non-virtual"><scope>__DRIdri2LoaderExtensionRec</scope><name>getBuffersWithFormat</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

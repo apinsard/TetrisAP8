@@ -1,0 +1,255 @@
+\hypertarget{class_c_tetris_game}{\section{RÃ©fÃ©rence de la classe C\-Tetris\-Game}
+\label{class_c_tetris_game}\index{C\-Tetris\-Game@{C\-Tetris\-Game}}
+}
+
+
+{\ttfamily \#include $<$C\-Tetris\-Game.\-h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_tetris_game_ac4ffeac09f4218644d39fbf54dfc57b9}{C\-Tetris\-Game} ()
+\begin{DoxyCompactList}\small\item\em constructeur par défaut de la piece \end{DoxyCompactList}\item 
+\hyperlink{class_c_tetris_game_a349807d252d13104379650f9642d597a}{C\-Tetris\-Game} (unsigned int game\-Pos\-X, unsigned int game\-Pos\-Y, unsigned int board\-Width, unsigned int board\-Height, float dim\-Case)
+\begin{DoxyCompactList}\small\item\em constructeur \end{DoxyCompactList}\item 
+\hyperlink{class_c_tetris_game_a4493ebe53948ec8a60cf8e81c3d8cebc}{$\sim$\-C\-Tetris\-Game} ()
+\begin{DoxyCompactList}\small\item\em destructeur de \hyperlink{class_c_tetris_game}{C\-Tetris\-Game} \end{DoxyCompactList}\item 
+\hyperlink{_tetris_utils_8h_aee2205359d0b7e255e34eef4d76435df}{Action\-Result} \hyperlink{class_c_tetris_game_a865fe41b3de2f99a1675cf8f799823bb}{Update} (unsigned int step)
+\begin{DoxyCompactList}\small\item\em met à jour le tetris en fonction du temps passé (le nombre de fois que la boucle de rendu est appelée) la méthode descend automatiquement la pièce courante check si collision, si ligne à détruire, le score et si game over \end{DoxyCompactList}\item 
+\hyperlink{_tetris_utils_8h_aee2205359d0b7e255e34eef4d76435df}{Action\-Result} \hyperlink{class_c_tetris_game_a39c3fb5b3b114f99d9a20248c0bddc07}{Move\-Piece} (\hyperlink{_tetris_utils_8h_a85e4ec079d684f89238ec06b40d024a8}{Piece\-Action} action)
+\begin{DoxyCompactList}\small\item\em modifie la position et l'orientation de la piece courante \end{DoxyCompactList}\item 
+\hyperlink{class_c_t_game_table}{C\-T\-Game\-Table} \& \hyperlink{class_c_tetris_game_a2349ec74b3f03c09a3e58603a965526d}{Get\-Board} ()
+\begin{DoxyCompactList}\small\item\em renvoit le tableau du jeu avec les cases occupées et leur couleur \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_c_tetris_game_a4778a2c417381872d053a036eaed1c67}{Get\-X\-Pos} ()
+\begin{DoxyCompactList}\small\item\em renvoit position du jeu dans la fenètre open\-G\-L \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_c_tetris_game_ad51b2248159ecb93c3d677a9fd09e984}{Get\-Y\-Pos} ()
+\begin{DoxyCompactList}\small\item\em renvoit position du jeu dans la fenètre open\-G\-L \end{DoxyCompactList}\item 
+float \& \hyperlink{class_c_tetris_game_a8cd74a8fffb5355326915564cd82425e}{Get\-Case\-Dim} ()
+\begin{DoxyCompactList}\small\item\em renvoit la taille d'une case du tetris \end{DoxyCompactList}\item 
+\hyperlink{class_c_piece_abstract}{C\-Piece\-Abstract} $\ast$ \hyperlink{class_c_tetris_game_ab27572baf8ecf5e40de3438329fa1238}{Get\-Piece} ()
+\begin{DoxyCompactList}\small\item\em renvoit un pointeur sur la pièce courante \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_c_tetris_game_a1eb1b3e8b0443fe6665f4233035d394f}{Get\-Score} ()
+\begin{DoxyCompactList}\small\item\em renvoit le score courant \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description dÃ©taillÃ©e}
+
+
+DÃ©finition Ã  la ligne 23 du fichier C\-Tetris\-Game.\-h.
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_c_tetris_game_ac4ffeac09f4218644d39fbf54dfc57b9}{\index{C\-Tetris\-Game@{C\-Tetris\-Game}!C\-Tetris\-Game@{C\-Tetris\-Game}}
+\index{C\-Tetris\-Game@{C\-Tetris\-Game}!CTetrisGame@{C\-Tetris\-Game}}
+\subsubsection[{C\-Tetris\-Game}]{\setlength{\rightskip}{0pt plus 5cm}C\-Tetris\-Game\-::\-C\-Tetris\-Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_tetris_game_ac4ffeac09f4218644d39fbf54dfc57b9}
+
+
+constructeur par défaut de la piece 
+
+
+
+DÃ©finition Ã  la ligne 29 du fichier C\-Tetris\-Game.\-h.
+
+\hypertarget{class_c_tetris_game_a349807d252d13104379650f9642d597a}{\index{C\-Tetris\-Game@{C\-Tetris\-Game}!C\-Tetris\-Game@{C\-Tetris\-Game}}
+\index{C\-Tetris\-Game@{C\-Tetris\-Game}!CTetrisGame@{C\-Tetris\-Game}}
+\subsubsection[{C\-Tetris\-Game}]{\setlength{\rightskip}{0pt plus 5cm}C\-Tetris\-Game\-::\-C\-Tetris\-Game (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{game\-Pos\-X, }
+\item[{unsigned int}]{game\-Pos\-Y, }
+\item[{unsigned int}]{board\-Width, }
+\item[{unsigned int}]{board\-Height, }
+\item[{float}]{dim\-Case}
+\end{DoxyParamCaption}
+)}}\label{class_c_tetris_game_a349807d252d13104379650f9642d597a}
+
+
+constructeur 
+
+
+
+DÃ©finition Ã  la ligne 12 du fichier C\-Tetris\-Game.\-cpp.
+
+\hypertarget{class_c_tetris_game_a4493ebe53948ec8a60cf8e81c3d8cebc}{\index{C\-Tetris\-Game@{C\-Tetris\-Game}!$\sim$\-C\-Tetris\-Game@{$\sim$\-C\-Tetris\-Game}}
+\index{$\sim$\-C\-Tetris\-Game@{$\sim$\-C\-Tetris\-Game}!CTetrisGame@{C\-Tetris\-Game}}
+\subsubsection[{$\sim$\-C\-Tetris\-Game}]{\setlength{\rightskip}{0pt plus 5cm}C\-Tetris\-Game\-::$\sim$\-C\-Tetris\-Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_tetris_game_a4493ebe53948ec8a60cf8e81c3d8cebc}
+
+
+destructeur de \hyperlink{class_c_tetris_game}{C\-Tetris\-Game} 
+
+
+
+DÃ©finition Ã  la ligne 27 du fichier C\-Tetris\-Game.\-cpp.
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_c_tetris_game_a2349ec74b3f03c09a3e58603a965526d}{\index{C\-Tetris\-Game@{C\-Tetris\-Game}!Get\-Board@{Get\-Board}}
+\index{Get\-Board@{Get\-Board}!CTetrisGame@{C\-Tetris\-Game}}
+\subsubsection[{Get\-Board}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-T\-Game\-Table} \& C\-Tetris\-Game\-::\-Get\-Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_tetris_game_a2349ec74b3f03c09a3e58603a965526d}
+
+
+renvoit le tableau du jeu avec les cases occupées et leur couleur 
+
+\begin{DoxyReturn}{Renvoie}
+le tableau du jeu 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 288 du fichier C\-Tetris\-Game.\-cpp.
+
+\hypertarget{class_c_tetris_game_a8cd74a8fffb5355326915564cd82425e}{\index{C\-Tetris\-Game@{C\-Tetris\-Game}!Get\-Case\-Dim@{Get\-Case\-Dim}}
+\index{Get\-Case\-Dim@{Get\-Case\-Dim}!CTetrisGame@{C\-Tetris\-Game}}
+\subsubsection[{Get\-Case\-Dim}]{\setlength{\rightskip}{0pt plus 5cm}float \& C\-Tetris\-Game\-::\-Get\-Case\-Dim (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_tetris_game_a8cd74a8fffb5355326915564cd82425e}
+
+
+renvoit la taille d'une case du tetris 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em entier} & sur la taille des cases \\
+\hline
+\end{DoxyParams}
+
+
+DÃ©finition Ã  la ligne 291 du fichier C\-Tetris\-Game.\-cpp.
+
+\hypertarget{class_c_tetris_game_ab27572baf8ecf5e40de3438329fa1238}{\index{C\-Tetris\-Game@{C\-Tetris\-Game}!Get\-Piece@{Get\-Piece}}
+\index{Get\-Piece@{Get\-Piece}!CTetrisGame@{C\-Tetris\-Game}}
+\subsubsection[{Get\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Piece\-Abstract} $\ast$ C\-Tetris\-Game\-::\-Get\-Piece (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_tetris_game_ab27572baf8ecf5e40de3438329fa1238}
+
+
+renvoit un pointeur sur la pièce courante 
+
+\begin{DoxyReturn}{Renvoie}
+poniteur sur \hyperlink{class_c_piece_abstract}{C\-Piece\-Abstract} 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 293 du fichier C\-Tetris\-Game.\-cpp.
+
+\hypertarget{class_c_tetris_game_a1eb1b3e8b0443fe6665f4233035d394f}{\index{C\-Tetris\-Game@{C\-Tetris\-Game}!Get\-Score@{Get\-Score}}
+\index{Get\-Score@{Get\-Score}!CTetrisGame@{C\-Tetris\-Game}}
+\subsubsection[{Get\-Score}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-Tetris\-Game\-::\-Get\-Score (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_tetris_game_a1eb1b3e8b0443fe6665f4233035d394f}
+
+
+renvoit le score courant 
+
+\begin{DoxyReturn}{Renvoie}
+entier $>$ 0 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 292 du fichier C\-Tetris\-Game.\-cpp.
+
+\hypertarget{class_c_tetris_game_a4778a2c417381872d053a036eaed1c67}{\index{C\-Tetris\-Game@{C\-Tetris\-Game}!Get\-X\-Pos@{Get\-X\-Pos}}
+\index{Get\-X\-Pos@{Get\-X\-Pos}!CTetrisGame@{C\-Tetris\-Game}}
+\subsubsection[{Get\-X\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-Tetris\-Game\-::\-Get\-X\-Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_tetris_game_a4778a2c417381872d053a036eaed1c67}
+
+
+renvoit position du jeu dans la fenètre open\-G\-L 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em entier} & en abcisse \\
+\hline
+\end{DoxyParams}
+
+
+DÃ©finition Ã  la ligne 289 du fichier C\-Tetris\-Game.\-cpp.
+
+\hypertarget{class_c_tetris_game_ad51b2248159ecb93c3d677a9fd09e984}{\index{C\-Tetris\-Game@{C\-Tetris\-Game}!Get\-Y\-Pos@{Get\-Y\-Pos}}
+\index{Get\-Y\-Pos@{Get\-Y\-Pos}!CTetrisGame@{C\-Tetris\-Game}}
+\subsubsection[{Get\-Y\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-Tetris\-Game\-::\-Get\-Y\-Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_tetris_game_ad51b2248159ecb93c3d677a9fd09e984}
+
+
+renvoit position du jeu dans la fenètre open\-G\-L 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em entier} & en ordonnée \\
+\hline
+\end{DoxyParams}
+
+
+DÃ©finition Ã  la ligne 290 du fichier C\-Tetris\-Game.\-cpp.
+
+\hypertarget{class_c_tetris_game_a39c3fb5b3b114f99d9a20248c0bddc07}{\index{C\-Tetris\-Game@{C\-Tetris\-Game}!Move\-Piece@{Move\-Piece}}
+\index{Move\-Piece@{Move\-Piece}!CTetrisGame@{C\-Tetris\-Game}}
+\subsubsection[{Move\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Action\-Result} C\-Tetris\-Game\-::\-Move\-Piece (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece\-Action}}]{action}
+\end{DoxyParamCaption}
+)}}\label{class_c_tetris_game_a39c3fb5b3b114f99d9a20248c0bddc07}
+
+
+modifie la position et l'orientation de la piece courante 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em action} & à faire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+l'état du jeu (ok, collision ou game over) 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 109 du fichier C\-Tetris\-Game.\-cpp.
+
+\hypertarget{class_c_tetris_game_a865fe41b3de2f99a1675cf8f799823bb}{\index{C\-Tetris\-Game@{C\-Tetris\-Game}!Update@{Update}}
+\index{Update@{Update}!CTetrisGame@{C\-Tetris\-Game}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Action\-Result} C\-Tetris\-Game\-::\-Update (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{step}
+\end{DoxyParamCaption}
+)}}\label{class_c_tetris_game_a865fe41b3de2f99a1675cf8f799823bb}
+
+
+met à jour le tetris en fonction du temps passé (le nombre de fois que la boucle de rendu est appelée) la méthode descend automatiquement la pièce courante check si collision, si ligne à détruire, le score et si game over 
+
+\begin{DoxyReturn}{Renvoie}
+l'état du jeu (ok ou game over) 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 163 du fichier C\-Tetris\-Game.\-cpp.
+
+
+
+La documentation de cette classe a Ã©tÃ© gÃ©nÃ©rÃ©e Ã  partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+/home/cj/workspace/\-Tetris/src/tetris/\hyperlink{_c_tetris_game_8h}{C\-Tetris\-Game.\-h}\item 
+/home/cj/workspace/\-Tetris/src/tetris/\hyperlink{_c_tetris_game_8cpp}{C\-Tetris\-Game.\-cpp}\end{DoxyCompactItemize}

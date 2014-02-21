@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_____d_r_itex_offset_extension_rec" kind="struct" prot="public">
+    <compoundname>__DRItexOffsetExtensionRec</compoundname>
+    <includes refid="dri__interface_8h" local="no">dri_interface.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_____d_r_itex_offset_extension_rec_1a75c040a9b68575c6dd7f470edbe2dbc4" prot="public" static="no" mutable="no">
+        <type><ref refid="dri__interface_8h_1a4e0a61c8ece00d2b2c6792a9a1b55385" kindref="member">__DRIextension</ref></type>
+        <definition>__DRIextension __DRItexOffsetExtensionRec::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="208" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_r_itex_offset_extension_rec_1a889d52a2d3520b99644315fe8e947076" prot="public" static="no" mutable="no">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref>(*</type>
+        <definition>void(* __DRItexOffsetExtensionRec::setTexOffset)(__DRIcontext *pDRICtx, GLint texname, unsigned long long offset, GLint depth, GLuint pitch)</definition>
+        <argsstring>)(__DRIcontext *pDRICtx, GLint texname, unsigned long long offset, GLint depth, GLuint pitch)</argsstring>
+        <name>setTexOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method to override base texture image with a driver specific &apos;offset&apos;. The depth passed in allows e.g. to ignore the alpha channel of texture images where the non-alpha components don&apos;t occupy a whole texel.</para><para>For GLX_EXT_texture_from_pixmap with AIGLX. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="218" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="66">
+        <label>__DRItexOffsetExtensionRec</label>
+        <link refid="struct_____d_r_itex_offset_extension_rec"/>
+        <childnode refid="67" relation="usage">
+          <edgelabel>base</edgelabel>
+        </childnode>
+      </node>
+      <node id="67">
+        <label>__DRIextensionRec</label>
+        <link refid="struct_____d_r_iextension_rec"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="207" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="207" bodyend="219"/>
+    <listofallmembers>
+      <member refid="struct_____d_r_itex_offset_extension_rec_1a75c040a9b68575c6dd7f470edbe2dbc4" prot="public" virt="non-virtual"><scope>__DRItexOffsetExtensionRec</scope><name>base</name></member>
+      <member refid="struct_____d_r_itex_offset_extension_rec_1a889d52a2d3520b99644315fe8e947076" prot="public" virt="non-virtual"><scope>__DRItexOffsetExtensionRec</scope><name>setTexOffset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

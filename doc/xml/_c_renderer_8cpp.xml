@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_c_renderer_8cpp" kind="file">
+    <compoundname>CRenderer.cpp</compoundname>
+    <includes refid="_c_renderer_8h" local="yes">CRenderer.h</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="195">
+        <label>GL/glut.h</label>
+      </node>
+      <node id="192">
+        <label>limits</label>
+      </node>
+      <node id="187">
+        <label>cmath</label>
+      </node>
+      <node id="182">
+        <label>string</label>
+      </node>
+      <node id="193">
+        <label>CVector4.h</label>
+        <link refid="_c_vector4_8h"/>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>CMatrix44.h</label>
+        <link refid="_c_matrix44_8h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>/home/cj/workspace/Tetris/src/appliBase/CRenderer.cpp</label>
+        <link refid="CRenderer.cpp"/>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>ctime</label>
+      </node>
+      <node id="180">
+        <label>CRenderer.h</label>
+        <link refid="_c_renderer_8h"/>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>vector</label>
+      </node>
+      <node id="183">
+        <label>sstream</label>
+      </node>
+      <node id="191">
+        <label>CVector3.h</label>
+        <link refid="_c_vector3_8h"/>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>cstdlib</label>
+      </node>
+      <node id="184">
+        <label>iostream</label>
+      </node>
+      <node id="181">
+        <label>Common.h</label>
+        <link refid="_common_8h"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+      <node id="185">
+        <label>algorithm</label>
+      </node>
+      <node id="188">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Projet<sp/>C/C++</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2013-2014<sp/>Equipe<sp/>SEASIDE<sp/>(T.<sp/>LE<sp/>NAOUR,<sp/>J.F<sp/>KAMP)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IRISA<sp/>-<sp/>UBS<sp/><sp/>/<sp/>IUT<sp/>Informatique<sp/>Vannes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>On<sp/>inclu<sp/>les<sp/>fichiers<sp/>.h<sp/>qui<sp/>contiennent<sp/>les<sp/>déclarations<sp/>des<sp/>fonctions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Les<sp/>implémentations<sp/>de<sp/>nos<sp/>fonctions<sp/>ont<sp/>besoin<sp/>de<sp/>leurs<sp/>déclarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ainsi<sp/>que<sp/>des<sp/>déclarations<sp/>des<sp/>fonctions<sp/>OPENGL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_renderer_8h" kindref="compound">CRenderer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>utiliser<sp/>par<sp/>la<sp/>fonction<sp/>&quot;cout&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_c_renderer_1a4253c2477ff48b0a50b2d6e256aeee78" refkind="member"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_c_renderer_1a4253c2477ff48b0a50b2d6e256aeee78" kindref="member">CRenderer::Init</ref>()</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>init<sp/>glew</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//GLenum<sp/>error<sp/>=<sp/>glewInit();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Problem:<sp/>glewInit<sp/>failed,<sp/>something<sp/>is<sp/>seriously<sp/>wrong.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//if(<sp/>GLEW_OK<sp/>!=<sp/>error<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>&quot;GLEW<sp/>ERROR<sp/>!&quot;<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>glewGetErrorString(<sp/>error<sp/>)<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>return<sp/>false;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>assurons<sp/>nous<sp/>que<sp/>la<sp/>caméra<sp/>et<sp/>la<sp/>srtucture<sp/>de<sp/>config<sp/>de<sp/>la<sp/>fenêtre<sp/>a<sp/>été<sp/>bien<sp/>intialisée</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(!m_camera-&gt;m_UserEvents)<sp/>||<sp/>(!m_windowSetup))</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>intialisation<sp/>de<sp/>notre<sp/>matrice<sp/>de<sp/>transformation<sp/>de<sp/>l&apos;espace<sp/>caméra<sp/>à<sp/>l&apos;espace<sp/>de<sp/>projection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_matrix44" kindref="compound" tooltip="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</ref><sp/>projection<sp/>=<sp/><ref refid="class_c_matrix44_1ade53879722c73f788672f122ce79384d" kindref="member">CMatrix44::CreatePerspective</ref>(45.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,<sp/>static_cast&lt;float&gt;(m_windowSetup-&gt;m_width)<sp/>/<sp/>static_cast&lt;float&gt;(m_windowSetup-&gt;m_height),<sp/>0.2f,<sp/>5000.0f);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>LoadProjectionMatrix(projection);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>donne<sp/>une<sp/>colueur<sp/>à<sp/>notre<sp/>fond<sp/>d&apos;espace<sp/>(background)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1af339551012daa99fef8c4d313e98b546" kindref="member">glClearColor</ref>(m_rendererSetup.m_clearColor[0],<sp/>m_rendererSetup.m_clearColor[1],</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_rendererSetup.m_clearColor[2],<sp/>m_rendererSetup.m_clearColor[3]);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>OpenGL<sp/>pour<sp/>traiter<sp/>les<sp/>objets<sp/>dans<sp/>la<sp/>scene<sp/>a<sp/>besoin<sp/>de<sp/>2/3<sp/>routines,<sp/>savoir<sp/>dans<sp/>quel<sp/>ordre<sp/>il<sp/>affiche<sp/>les<sp/>éléments</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>affiche<sp/>t&apos;on<sp/>les<sp/>faces<sp/>caché<sp/>(normale<sp/>dans<sp/>le<sp/>sens<sp/>de<sp/>la<sp/>caméra)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>http://www.linuxgraphic.org/section3d/openGL/didacticiels/didac2/didac4.html</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a1beaf822e5a901dc3fe429b68efb77d4" kindref="member">glEnable</ref>(<ref refid="gl_8h_1a4ccf1dc093190cc3798b9abea3655f98" kindref="member">GL_DEPTH_TEST</ref>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a193efd842a4f4d9bf391afd286c4eef4" kindref="member">glDepthFunc</ref>(<ref refid="gl_8h_1a8b778a06f153b4d59ebc6aa1d0996191" kindref="member">GL_LEQUAL</ref>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>spécifie<sp/>la<sp/>couleur<sp/>de<sp/>remplissage<sp/>des<sp/>faces<sp/>(soit<sp/>opengl<sp/>calcule<sp/>un<sp/>dégradé<sp/>entre<sp/>les<sp/>différents<sp/>sommet<sp/>de<sp/>la<sp/>face,<sp/>soit<sp/>vous<sp/>remplissez</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>la<sp/>face<sp/>par<sp/>la<sp/>couleur<sp/>d&apos;un<sp/>des<sp/>sommets(GL_FLAT):<sp/>http://rvirtual.free.fr/programmation/OpenGl/Debut_3D.htm)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1af1e3a750be50d9edd85f0fe49a6fe4a0" kindref="member">glShadeModel</ref>(<ref refid="gl_8h_1a56868bb05cb46aca6f2baf4168b58c63" kindref="member">GL_SMOOTH</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>dimension<sp/>de<sp/>la<sp/>fenetre<sp/>de<sp/>sortie</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a8e93835e91933b7078c88f905dd8599c" kindref="member">glViewport</ref>(0,0,m_windowSetup-&gt;m_width,<sp/>m_windowSetup-&gt;m_height);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="class_c_renderer_1ac2fb4f50b7bd87f667d0f27640d6f97e" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_renderer_1ac2fb4f50b7bd87f667d0f27640d6f97e" kindref="member">CRenderer::StartRender</ref>()</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>remet<sp/>à<sp/>zeros<sp/>les<sp/>buffer<sp/>précédents</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1affc6c383998f3d5c0a5e74a07788f6ed" kindref="member">glClear</ref>(<ref refid="gl_8h_1a947db9ff944c4b78e652144c3dd1060c" kindref="member">GL_COLOR_BUFFER_BIT</ref><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Efface<sp/>le<sp/>frame<sp/>buffer<sp/>(l&apos;image<sp/>précédente)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gl_8h_1aef2a9e9a4b130bc4de57514327847b4f" kindref="member">GL_DEPTH_BUFFER_BIT</ref>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Efface<sp/>le<sp/>Z-buffer<sp/>(le<sp/>calcul<sp/>de<sp/>profondeur<sp/>l&apos;image<sp/>précédente)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>mise<sp/>a<sp/>jour<sp/>des<sp/>coordonnées<sp/>de<sp/>la<sp/>caméra<sp/>et<sp/>on<sp/>mets<sp/>à<sp/>jour<sp/>la<sp/>transformation<sp/>de<sp/>la<sp/>caméra</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>LoadViewMatrix(m_camera-&gt;Compute());</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>afficher<sp/>le<sp/>sol</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>m_rendererSetup.m_drawGround<sp/>)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DrawGround(500.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="class_c_renderer_1a02dc846e2a724aec1a5955868c1cea4d" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_renderer_1a02dc846e2a724aec1a5955868c1cea4d" kindref="member">CRenderer::LoadProjectionMatrix</ref>(<ref refid="class_c_matrix44" kindref="compound" tooltip="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</ref>&amp;<sp/>projection)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1af14e38e22806d0220680b52edbc3bcef" kindref="member">glMatrixMode</ref>(<ref refid="gl_8h_1a85e93b355494186ced027f1a1142fefb" kindref="member">GL_PROJECTION</ref>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>on<sp/>spécifie<sp/>qu&apos;on<sp/>se<sp/>positionne<sp/>dans<sp/>l&apos;espase<sp/>de<sp/>projection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a6577472f85b23086331edadaf0311a49" kindref="member">glLoadIdentity</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>on<sp/>lui<sp/>donne<sp/>comme<sp/>transformation<sp/>la<sp/>matrice<sp/>identité</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>on<sp/>envoit<sp/>la<sp/>matrice<sp/>de<sp/>projection<sp/>à<sp/>la<sp/>carte<sp/>graphique</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a137dd30e913277535731eccb9b69a0c0" kindref="member">glLoadMatrixf</ref>(&amp;(projection.<ref refid="class_c_matrix44_1a5977be8ee90c365cb2e14be49f749739" kindref="member">b</ref>[0]));</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Ancien<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>on<sp/>envoit<sp/>la<sp/>matrice<sp/>de<sp/>projection<sp/>à<sp/>la<sp/>carte<sp/>graphique</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CMatrix44<sp/>projection<sp/>=<sp/>CMatrix44::CreatePerspective(45.0f,<sp/>static_cast&lt;float&gt;(m_windowSetup-&gt;m_width)<sp/>/<sp/>static_cast&lt;float&gt;(m_windowSetup-&gt;m_height),<sp/>0.2f,<sp/>100.0f);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//glLoadMatrixf(&amp;(projection.b[0]));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Autre<sp/>méthode:<sp/>il<sp/>existe<sp/>une<sp/>librairie<sp/>directement<sp/>intégré<sp/>à<sp/>OPENGL<sp/>(glu)<sp/>qui<sp/>forunit<sp/>directement<sp/>une<sp/>fonction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//gluPerspective(45.0f,<sp/>800.0f/640.0f,<sp/>0.2f,<sp/>100.0f);<sp/><sp/><sp/>//<sp/>Angle<sp/>de<sp/>la<sp/>caméra,<sp/>clipping<sp/>entre<sp/>1<sp/>et<sp/>100<sp/>(pas<sp/>à<sp/>partir<sp/>de<sp/>0,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>sinon<sp/>on<sp/>perd<sp/>toute<sp/>la<sp/>précision<sp/>du<sp/>z-buffer)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="class_c_renderer_1a7c935b45be28e843a16f9c0d06545351" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_renderer_1a7c935b45be28e843a16f9c0d06545351" kindref="member">CRenderer::LoadViewMatrix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44" kindref="compound" tooltip="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</ref>&amp;<sp/>view)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1af14e38e22806d0220680b52edbc3bcef" kindref="member">glMatrixMode</ref>(<ref refid="gl_8h_1a8c0f92b5d50914825a1424b1cd4480cd" kindref="member">GL_MODELVIEW</ref>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>on<sp/>se<sp/>place<sp/>dans<sp/>le<sp/>repere<sp/>de<sp/>la<sp/>camera</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a6577472f85b23086331edadaf0311a49" kindref="member">glLoadIdentity</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>on<sp/>lui<sp/>donne<sp/>comme<sp/>transformation<sp/>la<sp/>matrice<sp/>identité</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>matrice<sp/>de<sp/>vue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a137dd30e913277535731eccb9b69a0c0" kindref="member">glLoadMatrixf</ref>(&amp;(view.<ref refid="class_c_matrix44_1a5977be8ee90c365cb2e14be49f749739" kindref="member">b</ref>[0]));</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Ancien<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>matrice<sp/>de<sp/>vue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CMatrix44<sp/>view<sp/>=<sp/>CMatrix44::CreatelookAt(CVector3(m_camera.m_posX,<sp/>m_camera.m_posY,<sp/>m_camera.m_posZ),<sp/><sp/><sp/><sp/><sp/>//<sp/>position<sp/>de<sp/>la<sp/>camera</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CVector3(m_camera.m_viewX,<sp/>m_camera.m_viewY,<sp/>m_camera.m_viewZ),<sp/><sp/><sp/><sp/>//<sp/>endroit<sp/>de<sp/>la<sp/>scene<sp/>vers<sp/>ou<sp/>la<sp/>caméra<sp/>pointe<sp/>(regarde)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CVector3(m_camera.m_upX,<sp/>m_camera.m_upY,<sp/>m_camera.m_upZ));<sp/><sp/><sp/><sp/><sp/>//<sp/>orientation<sp/>verticale</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//glLoadMatrixf(&amp;(view.b[0])));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Autre<sp/>méthode:<sp/>il<sp/>existe<sp/>une<sp/>librairie<sp/>directement<sp/>intégré<sp/>à<sp/>OPENGL<sp/>(glu)<sp/>qui<sp/>forunit<sp/>directement<sp/>une<sp/>fonction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//gluLookAt(m_camera.m_posX,<sp/>m_camera.m_posY,<sp/>m_camera.m_posZ,<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>position<sp/>de<sp/>la<sp/>camera</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_camera.m_viewX,<sp/>m_camera.m_viewY,<sp/>m_camera.m_viewZ,<sp/><sp/><sp/>//<sp/>endroit<sp/>de<sp/>la<sp/>scene<sp/>vers<sp/>ou<sp/>la<sp/>caméra<sp/>pointe<sp/>(regarde)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_camera.m_upX,<sp/>m_camera.m_upY,<sp/>m_camera.m_upZ);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>orientation<sp/>verticale</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="class_c_renderer_1a304c6e86e556ebaf250e46342b99a95e" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_renderer_1a304c6e86e556ebaf250e46342b99a95e" kindref="member">CRenderer::Start2DRender</ref>()</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1acfd692f7e3361a218a542300f35ea816" kindref="member">glDisable</ref>(<ref refid="gl_8h_1a4ccf1dc093190cc3798b9abea3655f98" kindref="member">GL_DEPTH_TEST</ref>);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a1beaf822e5a901dc3fe429b68efb77d4" kindref="member">glEnable</ref>(<ref refid="gl_8h_1aa290e8f9ee6f6862778355aa22bb0b13" kindref="member">GL_BLEND</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a8e13e72c3a7bac1f4685fcf3d32bf98c" kindref="member">glBlendFunc</ref>(<ref refid="gl_8h_1a51e6c75d54b3a9fb93fbc880463c212c" kindref="member">GL_SRC_ALPHA</ref>,<sp/><ref refid="gl_8h_1aa3926eb5e008f14829baa8d72435215f" kindref="member">GL_ONE_MINUS_SRC_ALPHA</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1af14e38e22806d0220680b52edbc3bcef" kindref="member">glMatrixMode</ref>(<ref refid="gl_8h_1a85e93b355494186ced027f1a1142fefb" kindref="member">GL_PROJECTION</ref>);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a64e877be265de9d7e1e8e479768cc86c" kindref="member">glPushMatrix</ref>();</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a6577472f85b23086331edadaf0311a49" kindref="member">glLoadIdentity</ref>();</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glu_8h_1a0a599657e43e85a42c7054719f7cc528" kindref="member">gluOrtho2D</ref>(0.0,<sp/>m_windowSetup-&gt;m_width,<sp/>0.0,<sp/>m_windowSetup-&gt;m_height);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1af14e38e22806d0220680b52edbc3bcef" kindref="member">glMatrixMode</ref>(<ref refid="gl_8h_1a8c0f92b5d50914825a1424b1cd4480cd" kindref="member">GL_MODELVIEW</ref>);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a64e877be265de9d7e1e8e479768cc86c" kindref="member">glPushMatrix</ref>();</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a6577472f85b23086331edadaf0311a49" kindref="member">glLoadIdentity</ref>();</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="class_c_renderer_1a180311e3b15212752710a0ad66cedcb6" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_renderer_1a180311e3b15212752710a0ad66cedcb6" kindref="member">CRenderer::End2DRender</ref>()</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1af14e38e22806d0220680b52edbc3bcef" kindref="member">glMatrixMode</ref>(<ref refid="gl_8h_1a85e93b355494186ced027f1a1142fefb" kindref="member">GL_PROJECTION</ref>);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a9e424a5503edd5a5b76442b503661afe" kindref="member">glPopMatrix</ref>();</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1af14e38e22806d0220680b52edbc3bcef" kindref="member">glMatrixMode</ref>(<ref refid="gl_8h_1a8c0f92b5d50914825a1424b1cd4480cd" kindref="member">GL_MODELVIEW</ref>);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a9e424a5503edd5a5b76442b503661afe" kindref="member">glPopMatrix</ref>();</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a1beaf822e5a901dc3fe429b68efb77d4" kindref="member">glEnable</ref>(<ref refid="gl_8h_1a4ccf1dc093190cc3798b9abea3655f98" kindref="member">GL_DEPTH_TEST</ref>);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//glFlush();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187" refid="class_c_renderer_1a967c742c349b52eac2551fa8b1567814" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_renderer_1a967c742c349b52eac2551fa8b1567814" kindref="member">CRenderer::DrawText</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">std::string</ref>&amp;<sp/>text,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a0cdec8e97a75ee9458b23d152bf962d4" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a74d80fd479c0f6d0153c709949a089ef" kindref="member">y</ref>,<sp/><ref refid="class_c_renderer_1ae92b4f96fd8512b28a3800cd673c73e6" kindref="member">TextSize</ref><sp/><ref refid="gl_8h_1ad585a1393cfa368fa9dc3d8ebff640d5" kindref="member">s</ref>,<sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref><sp/><ref refid="glext_8h_1a3ea846f998d64f079b86052b6c4193a8" kindref="member">color</ref>)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1acee7240272b34e83a4567a1fb586be99" kindref="member">glColor3f</ref>(color.<ref refid="class_c_vector3_1a06b092361b335f9971323be0ddf759b1" kindref="member" tooltip="Composante X.">x</ref>,color.<ref refid="class_c_vector3_1a20d0b1099477995b22a4f1407e41a7a1" kindref="member" tooltip="Composante Y.">y</ref>,color.<ref refid="class_c_vector3_1a9dd3ce85f6aaa17ccc67bfe50a089b3a" kindref="member" tooltip="Composante Z.">z</ref>);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(s)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>TS_10:<sp/>DrawText(text,x,y,<ref refid="freeglut__std_8h_1ac11db7b9af4fb9c1b2e37be43728f34d" kindref="member">GLUT_BITMAP_HELVETICA_10</ref>);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>TS_12:<sp/>DrawText(text,x,y,<ref refid="freeglut__std_8h_1a7148f404947be386e4a4cbd2ec84d15e" kindref="member">GLUT_BITMAP_HELVETICA_12</ref>);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>TS_18:<sp/>DrawText(text,x,y,<ref refid="freeglut__std_8h_1aa2733cf18efd2cf595fe00e2eef5fd46" kindref="member">GLUT_BITMAP_HELVETICA_18</ref>);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209" refid="class_c_renderer_1a5655eabae23e53c7a871a90c7774cb7c" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_renderer_1a967c742c349b52eac2551fa8b1567814" kindref="member">CRenderer::DrawText</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">std::string</ref>&amp;<sp/>text,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a0cdec8e97a75ee9458b23d152bf962d4" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a74d80fd479c0f6d0153c709949a089ef" kindref="member">y</ref>,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*police)</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1ae36ecd91a0bf99013401360db42b6777" kindref="member">glRasterPos2f</ref>(x,<sp/>y);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::string::const_iterator<sp/>it<sp/>=<sp/>text.begin();<sp/>it<sp/>&lt;<sp/>text.end();<sp/>it++)</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="freeglut__std_8h_1a06594ef1f5e548bc1d4907609f7ad8a5" kindref="member">glutBitmapCharacter</ref>(police,<sp/>*it);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228" refid="class_c_renderer_1a21d9ea20232f017980f6ad52b643ccf1" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_renderer_1a21d9ea20232f017980f6ad52b643ccf1" kindref="member">CRenderer::DrawGround</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_size)</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>step<sp/>=<sp/>_size/40;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1acfd692f7e3361a218a542300f35ea816" kindref="member">glDisable</ref>(<ref refid="gl_8h_1afc85bbf684091bb3ae03070b521739cf" kindref="member">GL_LIGHTING</ref>);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1adde7d85b385fac85463d780f77074f8f" kindref="member">glColor3d</ref>(0.3,0.3,0.3);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a4e867eee5910f6b2df6123b47ab70dae" kindref="member">count</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0<sp/>;<sp/>i<sp/>&lt;=<sp/>2.0*_size<sp/>;<sp/>i=i+step,<sp/>count++)</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(count%5))<sp/><ref refid="gl_8h_1a8ac47f6bf1d1c4699a40b5458db28833" kindref="member">glLineWidth</ref>(3.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a8ac47f6bf1d1c4699a40b5458db28833" kindref="member">glLineWidth</ref>(1.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a98964453975519f92d6cc59ef77f7436" kindref="member">glBegin</ref>(<ref refid="gl_8h_1a532ed3612eae8eaed8a7a53ecd7a28f3" kindref="member">GL_LINES</ref>);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gl_8h_1af2a34ba084502f0c20671ba3ef5b825c" kindref="member">glVertex3d</ref>(-_size+i,0.001,-_size);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gl_8h_1af2a34ba084502f0c20671ba3ef5b825c" kindref="member">glVertex3d</ref>(-_size+i,0.001,_size);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gl_8h_1af2a34ba084502f0c20671ba3ef5b825c" kindref="member">glVertex3d</ref>(-_size,0.001,-_size+i);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gl_8h_1af2a34ba084502f0c20671ba3ef5b825c" kindref="member">glVertex3d</ref>(_size,0.001,-_size+i);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gl_8h_1abbff207d1fa71b296ff35b149cef7238" kindref="member">glEnd</ref>();</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>draw<sp/>some<sp/>plane</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1adde7d85b385fac85463d780f77074f8f" kindref="member">glColor3d</ref>(0.4,0.4,0.4);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a98964453975519f92d6cc59ef77f7436" kindref="member">glBegin</ref>(<ref refid="gl_8h_1a36b428225d54dd9cf2e564e5ada3ad3d" kindref="member">GL_QUADS</ref>);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gl_8h_1af2a34ba084502f0c20671ba3ef5b825c" kindref="member">glVertex3d</ref>(-_size,-0.01,-_size);<ref refid="gl_8h_1af2a34ba084502f0c20671ba3ef5b825c" kindref="member">glVertex3d</ref>(-_size,-0.01,_size);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gl_8h_1af2a34ba084502f0c20671ba3ef5b825c" kindref="member">glVertex3d</ref>(_size,-0.01,_size);<ref refid="gl_8h_1af2a34ba084502f0c20671ba3ef5b825c" kindref="member">glVertex3d</ref>(_size,-0.01,-_size);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1abbff207d1fa71b296ff35b149cef7238" kindref="member">glEnd</ref>();</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="comment">//<sp/>Partie<sp/>Animation</highlight></codeline>
+<codeline lineno="258" refid="struct_c_graphic_cylinder_1a60dcaa2b9850bda875b00ab2661587bb" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_c_graphic_cylinder_1a60dcaa2b9850bda875b00ab2661587bb" kindref="member">CGraphicCylinder::Draw</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a0cdec8e97a75ee9458b23d152bf962d4" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a74d80fd479c0f6d0153c709949a089ef" kindref="member">y</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1aee38b51639b577753f6a92029fb92000" kindref="member">z</ref>)</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a64e877be265de9d7e1e8e479768cc86c" kindref="member">glPushMatrix</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a8ac47f6bf1d1c4699a40b5458db28833" kindref="member">glLineWidth</ref>(radius);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1acee7240272b34e83a4567a1fb586be99" kindref="member">glColor3f</ref>(1.0F,<sp/>1.0F,<sp/>0.0F)<sp/>;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a98964453975519f92d6cc59ef77f7436" kindref="member">glBegin</ref>(<ref refid="gl_8h_1a532ed3612eae8eaed8a7a53ecd7a28f3" kindref="member">GL_LINES</ref>);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a9a95e17961303a80a5bf052b8c1cf677" kindref="member">glVertex3f</ref>(0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a9a95e17961303a80a5bf052b8c1cf677" kindref="member">glVertex3f</ref>(x,<sp/>y,<sp/>z)<sp/>;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1abbff207d1fa71b296ff35b149cef7238" kindref="member">glEnd</ref>();</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1a9e424a5503edd5a5b76442b503661afe" kindref="member">glPopMatrix</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271" refid="struct_c_graphic_sphere_1a31e5ad66feb6cd8988acafc917848a0f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_c_graphic_sphere_1a31e5ad66feb6cd8988acafc917848a0f" kindref="member" tooltip="Gestion de l&amp;#39;affichage OpenGL.">CGraphicSphere::Draw</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius,<sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref><sp/><ref refid="glext_8h_1a3ea846f998d64f079b86052b6c4193a8" kindref="member">color</ref>)</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glu_8h_1a101ef3784c466660e922c88e6ed3164a" kindref="member">GLUquadric</ref><sp/>*<sp/>quadric=<ref refid="glu_8h_1a0e816d1afd5dee71c863ffe6cf80e505" kindref="member">gluNewQuadric</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glu_8h_1ab9ea0dace035a454631daacdcd38cb9a" kindref="member">gluQuadricOrientation</ref>(quadric,<sp/><ref refid="glu_8h_1a023a2f5205994b8bebacba9c584beb45" kindref="member">GLU_OUTSIDE</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gl_8h_1acee7240272b34e83a4567a1fb586be99" kindref="member">glColor3f</ref>(color.<ref refid="class_c_vector3_1a06b092361b335f9971323be0ddf759b1" kindref="member" tooltip="Composante X.">x</ref>,<sp/>color.<ref refid="class_c_vector3_1a20d0b1099477995b22a4f1407e41a7a1" kindref="member" tooltip="Composante Y.">y</ref>,<sp/>color.<ref refid="class_c_vector3_1a9dd3ce85f6aaa17ccc67bfe50a089b3a" kindref="member" tooltip="Composante Z.">z</ref>)<sp/>;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glu_8h_1a438a52f651a35e281b606b0e19016f4c" kindref="member">gluSphere</ref>(quadric,<sp/>radius,<sp/>10,<sp/>10)<sp/>;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glu_8h_1a7134104af7525415612b738d219adf00" kindref="member">gluDeleteQuadric</ref>(quadric)<sp/>;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285" refid="class_c_camera_look_at_1a700fcf7befa6fa590b856c1d5e2e096c" refkind="member"><highlight class="normal"><ref refid="class_c_matrix44" kindref="compound" tooltip="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</ref>&amp;<sp/><ref refid="class_c_camera_look_at_1a700fcf7befa6fa590b856c1d5e2e096c" kindref="member">CCameraLookAt::Compute</ref>()</highlight></codeline>
+<codeline lineno="286"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>si<sp/>boutton<sp/>du<sp/>milieu<sp/>on<sp/>fait<sp/>varier<sp/>la<sp/>distance<sp/>entre<sp/>la<sp/>caméra<sp/>et<sp/>le<sp/>point<sp/>vers<sp/>lequelle<sp/>elle<sp/>pointe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>le<sp/>zoom<sp/>quoi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(m_UserEvents-&gt;mousebuttons[1])<sp/></highlight><highlight class="comment">//<sp/>bouton<sp/>droite</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>si<sp/>boutton<sp/>de<sp/>droite<sp/>on<sp/>fait<sp/>tourner<sp/>la<sp/>caméra<sp/>autour<sp/>du<sp/>point<sp/>vers<sp/>lequelle<sp/>elle<sp/>pointe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(m_UserEvents-&gt;mousebuttons[2])<sp/></highlight><highlight class="comment">//<sp/>boutton<sp/>molette</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>m_viewMatrix<sp/>=<sp/><ref refid="class_c_matrix44_1acb0ca1cac92022effb2781b5e56c532a" kindref="member">CMatrix44::CreateLookAt</ref>(<sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>(m_posX,<sp/>m_posY,<sp/>m_posZ),<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>position<sp/>de<sp/>la<sp/>camera</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>(m_viewX,<sp/>m_viewY,<sp/>m_viewZ),<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>endroit<sp/>de<sp/>la<sp/>scene<sp/>vers<sp/>ou<sp/>la<sp/>caméra<sp/>pointe<sp/>(regarde)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>(m_upX,<sp/>m_upY,<sp/>m_upZ));<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>orientation<sp/>verticale</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(m_UserEvents-&gt;mousebuttons[0])<sp/></highlight><highlight class="comment">//<sp/>boutton<sp/>gauche</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>m_viewMatrix.Translate(m_translate);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_viewMatrix;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/cj/workspace/Tetris/src/appliBase/CRenderer.cpp"/>
+  </compounddef>
+</doxygen>

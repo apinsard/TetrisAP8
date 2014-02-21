@@ -1,0 +1,225 @@
+\hypertarget{class_c_application}{\section{R√©f√©rence de la classe C\-Application}
+\label{class_c_application}\index{C\-Application@{C\-Application}}
+}
+
+
+{\ttfamily \#include $<$C\-Application.\-h$>$}
+
+
+
+D√©riv√©e par \hyperlink{class_c_projet_tetris}{C\-Projet\-Tetris}, \hyperlink{class_c_projet_tetris_piece}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece}{C\-Projet\-Tetris\-Piece}, et \hyperlink{class_c_projet_tetris_piece}{C\-Projet\-Tetris\-Piece}.
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_application_ad102d285eeedbf21d0c8b1c435c912fb}{C\-Application} ()
+\item 
+virtual \hyperlink{class_c_application_a439d55233550e3973583a71fb8f2f149}{$\sim$\-C\-Application} ()
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_application_a78a287240ca36378ecf6df88547e87ae}{Init} ()
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_application_adc82a249014512699d88e75c3df74cc3}{Render} ()
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_application_a2f12f6a6db597d7ee071f197ee06a28f}{Release} ()
+\item 
+\hyperlink{struct_user_events}{User\-Events} $\ast$ \hyperlink{class_c_application_a8e460269b5c90882cca831a8138b7346}{Get\-User\-Events} ()
+\item 
+\hyperlink{struct_window_setup}{Window\-Setup} $\ast$ \hyperlink{class_c_application_aa2a759eb0487530b412cd20faf00fa04}{Get\-Window\-Info} ()
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres prot√©g√©es}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_c_application_ad371542b040d86ff8a07a4df8f5d4ea4}{On\-Init} ()=0
+\item 
+virtual \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_application_a731c5cea9ea63bd0d60d45c534e6c9ea}{On\-Render} ()=0
+\item 
+virtual \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_application_a73fbe0652a7be90bee7acfd02c10c67d}{On\-Release} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Attributs prot√©g√©s}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_window_setup}{Window\-Setup} $\ast$ \hyperlink{class_c_application_a0898c5b55383910f6c6af14d56434d4e}{m\-\_\-window\-Set\-Up}
+\begin{DoxyCompactList}\small\item\em infos liÈes ‡ la fenÍtre (pointeur car paratagÈ par deux objets) \end{DoxyCompactList}\item 
+\hyperlink{class_c_renderer}{C\-Renderer} \hyperlink{class_c_application_a175c63828573c70b8383d0a7d06ca5c7}{m\-\_\-renderer}
+\begin{DoxyCompactList}\small\item\em DÈclaration du renderer. \end{DoxyCompactList}\item 
+\hyperlink{struct_user_events}{User\-Events} $\ast$ \hyperlink{class_c_application_af9cb02fda32ea439bcae6c3c9802e004}{m\-\_\-\-User\-Events}
+\begin{DoxyCompactList}\small\item\em infos liÈes ‡ la souris/camÈra (pointeur car paratagÈ par deux objets) \end{DoxyCompactList}\item 
+\hyperlink{class_c_camera}{C\-Camera} $\ast$ \hyperlink{class_c_application_a665fa9502db461f2fa7770c03449b32e}{m\-\_\-camera}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description d√©taill√©e}
+classe \hyperlink{class_c_application}{C\-Application}\-: elle encapsule l'ensemble de l'application ‡ savoir l'utilisation du G\-U\-I et du renderer L'objectif Ètant qu'elle sert de classe commune ‡ ttes applications qui se serviront des fonctions suivantes 
+
+D√©finition √† la ligne 33 du fichier C\-Application.\-h.
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_c_application_ad102d285eeedbf21d0c8b1c435c912fb}{\index{C\-Application@{C\-Application}!C\-Application@{C\-Application}}
+\index{C\-Application@{C\-Application}!CApplication@{C\-Application}}
+\subsubsection[{C\-Application}]{\setlength{\rightskip}{0pt plus 5cm}C\-Application\-::\-C\-Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_application_ad102d285eeedbf21d0c8b1c435c912fb}
+
+
+D√©finition √† la ligne 39 du fichier C\-Application.\-h.
+
+\hypertarget{class_c_application_a439d55233550e3973583a71fb8f2f149}{\index{C\-Application@{C\-Application}!$\sim$\-C\-Application@{$\sim$\-C\-Application}}
+\index{$\sim$\-C\-Application@{$\sim$\-C\-Application}!CApplication@{C\-Application}}
+\subsubsection[{$\sim$\-C\-Application}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Application\-::$\sim$\-C\-Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_application_a439d55233550e3973583a71fb8f2f149}
+
+
+D√©finition √† la ligne 45 du fichier C\-Application.\-h.
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_c_application_a8e460269b5c90882cca831a8138b7346}{\index{C\-Application@{C\-Application}!Get\-User\-Events@{Get\-User\-Events}}
+\index{Get\-User\-Events@{Get\-User\-Events}!CApplication@{C\-Application}}
+\subsubsection[{Get\-User\-Events}]{\setlength{\rightskip}{0pt plus 5cm}{\bf User\-Events} $\ast$ C\-Application\-::\-Get\-User\-Events (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_application_a8e460269b5c90882cca831a8138b7346}
+
+
+D√©finition √† la ligne 105 du fichier C\-Application.\-h.
+
+\hypertarget{class_c_application_aa2a759eb0487530b412cd20faf00fa04}{\index{C\-Application@{C\-Application}!Get\-Window\-Info@{Get\-Window\-Info}}
+\index{Get\-Window\-Info@{Get\-Window\-Info}!CApplication@{C\-Application}}
+\subsubsection[{Get\-Window\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Window\-Setup} $\ast$ C\-Application\-::\-Get\-Window\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_application_aa2a759eb0487530b412cd20faf00fa04}
+
+
+D√©finition √† la ligne 104 du fichier C\-Application.\-h.
+
+\hypertarget{class_c_application_a78a287240ca36378ecf6df88547e87ae}{\index{C\-Application@{C\-Application}!Init@{Init}}
+\index{Init@{Init}!CApplication@{C\-Application}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Application\-::\-Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_application_a78a287240ca36378ecf6df88547e87ae}
+Initialise le G\-U\-I (Graphic user interface), le renderer et l'application enfant
+
+\begin{DoxyReturn}{Renvoie}
+code d'erreur 
+\end{DoxyReturn}
+
+
+D√©finition √† la ligne 22 du fichier C\-Application.\-cpp.
+
+\hypertarget{class_c_application_ad371542b040d86ff8a07a4df8f5d4ea4}{\index{C\-Application@{C\-Application}!On\-Init@{On\-Init}}
+\index{On\-Init@{On\-Init}!CApplication@{C\-Application}}
+\subsubsection[{On\-Init}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool C\-Application\-::\-On\-Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_c_application_ad371542b040d86ff8a07a4df8f5d4ea4}
+
+
+Impl√©ment√© dans \hyperlink{class_c_projet_tetris_piece_a47cd605eda1c1cda40448f77e92efcad}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece_a47cd605eda1c1cda40448f77e92efcad}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece_a47cd605eda1c1cda40448f77e92efcad}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece_a47cd605eda1c1cda40448f77e92efcad}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece_a47cd605eda1c1cda40448f77e92efcad}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece_a47cd605eda1c1cda40448f77e92efcad}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece_a47cd605eda1c1cda40448f77e92efcad}{C\-Projet\-Tetris\-Piece}, et \hyperlink{class_c_projet_tetris_ad64be3a4f7af30e896ee8a7c609d6931}{C\-Projet\-Tetris}.
+
+\hypertarget{class_c_application_a73fbe0652a7be90bee7acfd02c10c67d}{\index{C\-Application@{C\-Application}!On\-Release@{On\-Release}}
+\index{On\-Release@{On\-Release}!CApplication@{C\-Application}}
+\subsubsection[{On\-Release}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} C\-Application\-::\-On\-Release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_c_application_a73fbe0652a7be90bee7acfd02c10c67d}
+
+
+Impl√©ment√© dans \hyperlink{class_c_projet_tetris_piece_ae885c3e40072a0346b9746106e3960d2}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece_ae885c3e40072a0346b9746106e3960d2}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece_ae885c3e40072a0346b9746106e3960d2}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece_ae885c3e40072a0346b9746106e3960d2}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece_ae885c3e40072a0346b9746106e3960d2}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece_ae885c3e40072a0346b9746106e3960d2}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece_ae885c3e40072a0346b9746106e3960d2}{C\-Projet\-Tetris\-Piece}, et \hyperlink{class_c_projet_tetris_a1124dfbd1be9deb52a83b1a4eae34306}{C\-Projet\-Tetris}.
+
+\hypertarget{class_c_application_a731c5cea9ea63bd0d60d45c534e6c9ea}{\index{C\-Application@{C\-Application}!On\-Render@{On\-Render}}
+\index{On\-Render@{On\-Render}!CApplication@{C\-Application}}
+\subsubsection[{On\-Render}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} C\-Application\-::\-On\-Render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_c_application_a731c5cea9ea63bd0d60d45c534e6c9ea}
+
+
+Impl√©ment√© dans \hyperlink{class_c_projet_tetris_piece_a40e5090362124e1fa2a715d682bebda6}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece_a40e5090362124e1fa2a715d682bebda6}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece_a40e5090362124e1fa2a715d682bebda6}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece_a40e5090362124e1fa2a715d682bebda6}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece_a40e5090362124e1fa2a715d682bebda6}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece_a40e5090362124e1fa2a715d682bebda6}{C\-Projet\-Tetris\-Piece}, \hyperlink{class_c_projet_tetris_piece_a40e5090362124e1fa2a715d682bebda6}{C\-Projet\-Tetris\-Piece}, et \hyperlink{class_c_projet_tetris_a339f4345e18b94f4305f0fc054a942f8}{C\-Projet\-Tetris}.
+
+\hypertarget{class_c_application_a2f12f6a6db597d7ee071f197ee06a28f}{\index{C\-Application@{C\-Application}!Release@{Release}}
+\index{Release@{Release}!CApplication@{C\-Application}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Application\-::\-Release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_application_a2f12f6a6db597d7ee071f197ee06a28f}
+Fini l'application\-: dÈtruit les objets plus utilisÈs 
+
+D√©finition √† la ligne 53 du fichier C\-Application.\-cpp.
+
+\hypertarget{class_c_application_adc82a249014512699d88e75c3df74cc3}{\index{C\-Application@{C\-Application}!Render@{Render}}
+\index{Render@{Render}!CApplication@{C\-Application}}
+\subsubsection[{Render}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Application\-::\-Render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_application_adc82a249014512699d88e75c3df74cc3}
+lance la boucle d'affichage, gËre les Èvenements systËme et le rendu de la scËne 
+
+D√©finition √† la ligne 43 du fichier C\-Application.\-cpp.
+
+
+
+\subsection{Documentation des donn√©es membres}
+\hypertarget{class_c_application_a665fa9502db461f2fa7770c03449b32e}{\index{C\-Application@{C\-Application}!m\-\_\-camera@{m\-\_\-camera}}
+\index{m\-\_\-camera@{m\-\_\-camera}!CApplication@{C\-Application}}
+\subsubsection[{m\-\_\-camera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Camera}$\ast$ C\-Application\-::m\-\_\-camera\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_application_a665fa9502db461f2fa7770c03449b32e}
+
+
+D√©finition √† la ligne 101 du fichier C\-Application.\-h.
+
+\hypertarget{class_c_application_a175c63828573c70b8383d0a7d06ca5c7}{\index{C\-Application@{C\-Application}!m\-\_\-renderer@{m\-\_\-renderer}}
+\index{m\-\_\-renderer@{m\-\_\-renderer}!CApplication@{C\-Application}}
+\subsubsection[{m\-\_\-renderer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Renderer} C\-Application\-::m\-\_\-renderer\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_application_a175c63828573c70b8383d0a7d06ca5c7}
+
+
+DÈclaration du renderer. 
+
+
+
+D√©finition √† la ligne 99 du fichier C\-Application.\-h.
+
+\hypertarget{class_c_application_af9cb02fda32ea439bcae6c3c9802e004}{\index{C\-Application@{C\-Application}!m\-\_\-\-User\-Events@{m\-\_\-\-User\-Events}}
+\index{m\-\_\-\-User\-Events@{m\-\_\-\-User\-Events}!CApplication@{C\-Application}}
+\subsubsection[{m\-\_\-\-User\-Events}]{\setlength{\rightskip}{0pt plus 5cm}{\bf User\-Events}$\ast$ C\-Application\-::m\-\_\-\-User\-Events\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_application_af9cb02fda32ea439bcae6c3c9802e004}
+
+
+infos liÈes ‡ la souris/camÈra (pointeur car paratagÈ par deux objets) 
+
+
+
+D√©finition √† la ligne 100 du fichier C\-Application.\-h.
+
+\hypertarget{class_c_application_a0898c5b55383910f6c6af14d56434d4e}{\index{C\-Application@{C\-Application}!m\-\_\-window\-Set\-Up@{m\-\_\-window\-Set\-Up}}
+\index{m\-\_\-window\-Set\-Up@{m\-\_\-window\-Set\-Up}!CApplication@{C\-Application}}
+\subsubsection[{m\-\_\-window\-Set\-Up}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Window\-Setup}$\ast$ C\-Application\-::m\-\_\-window\-Set\-Up\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_application_a0898c5b55383910f6c6af14d56434d4e}
+
+
+infos liÈes ‡ la fenÍtre (pointeur car paratagÈ par deux objets) 
+
+
+
+D√©finition √† la ligne 98 du fichier C\-Application.\-h.
+
+
+
+La documentation de cette classe a √©t√© g√©n√©r√©e √† partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+/home/cj/workspace/\-Tetris/src/appli\-Base/\hyperlink{_c_application_8h}{C\-Application.\-h}\item 
+/home/cj/workspace/\-Tetris/src/appli\-Base/\hyperlink{_c_application_8cpp}{C\-Application.\-cpp}\end{DoxyCompactItemize}

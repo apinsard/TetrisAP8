@@ -1,0 +1,199 @@
+\hypertarget{_c_vector3_8h}{\section{RÃ©fÃ©rence du fichier /home/cj/workspace/\-Tetris/src/math/\-C\-Vector3.h}
+\label{_c_vector3_8h}\index{/home/cj/workspace/\-Tetris/src/math/\-C\-Vector3.\-h@{/home/cj/workspace/\-Tetris/src/math/\-C\-Vector3.\-h}}
+}
+{\ttfamily \#include $<$limits$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_vector3}{C\-Vector3}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_vector3}{C\-Vector3} \hyperlink{_c_vector3_8h_a479753f35fba0491141721203b8c6778}{operator$\ast$} (const \hyperlink{class_c_vector3}{C\-Vector3} \&\hyperlink{gl_8h_a4568fc090febc136eed4577a600739ca}{v}, float \hyperlink{gl_8h_a00140d6f5c548b26daf170bf16e86a6d}{t})
+\item 
+\hyperlink{class_c_vector3}{C\-Vector3} \hyperlink{_c_vector3_8h_abe295a73cad9a00bac318b61165e5be9}{operator/} (const \hyperlink{class_c_vector3}{C\-Vector3} \&\hyperlink{gl_8h_a4568fc090febc136eed4577a600739ca}{v}, float \hyperlink{gl_8h_a00140d6f5c548b26daf170bf16e86a6d}{t})
+\item 
+\hyperlink{class_c_vector3}{C\-Vector3} \hyperlink{_c_vector3_8h_a85ec9ad670cfc9a85e6c731dd6047381}{operator$\ast$} (float \hyperlink{gl_8h_a00140d6f5c548b26daf170bf16e86a6d}{t}, const \hyperlink{class_c_vector3}{C\-Vector3} \&\hyperlink{gl_8h_a4568fc090febc136eed4577a600739ca}{v})
+\item 
+float \hyperlink{_c_vector3_8h_ae6ccab39033a67267947223d879b4e33}{Dot} (const \hyperlink{class_c_vector3}{C\-Vector3} \&\hyperlink{glext_8h_acaffa8fbe193d1ebac80bcfbe74d337f}{v1}, const \hyperlink{class_c_vector3}{C\-Vector3} \&\hyperlink{glext_8h_ad75eed9bae3bbcf220d596c3277e8102}{v2})
+\item 
+\hyperlink{class_c_vector3}{C\-Vector3} \hyperlink{_c_vector3_8h_a3ed7ca754a0890e7f9fd02abdecda652}{Cross} (const \hyperlink{class_c_vector3}{C\-Vector3} \&\hyperlink{glext_8h_acaffa8fbe193d1ebac80bcfbe74d337f}{v1}, const \hyperlink{class_c_vector3}{C\-Vector3} \&\hyperlink{glext_8h_ad75eed9bae3bbcf220d596c3277e8102}{v2})
+\item 
+std\-::istream \& \hyperlink{_c_vector3_8h_a4fd1d30e8b7221d18fc18156c6bd97e2}{operator$>$$>$} (std\-::istream \&Stream, \hyperlink{class_c_vector3}{C\-Vector3} \&Vector)
+\item 
+std\-::ostream \& \hyperlink{_c_vector3_8h_a1b77cff553329976bef0b60b5930643a}{operator$<$$<$} (std\-::ostream \&Stream, const \hyperlink{class_c_vector3}{C\-Vector3} \&Vector)
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{_c_vector3_8h_a3ed7ca754a0890e7f9fd02abdecda652}{\index{C\-Vector3.\-h@{C\-Vector3.\-h}!Cross@{Cross}}
+\index{Cross@{Cross}!CVector3.h@{C\-Vector3.\-h}}
+\subsubsection[{Cross}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Vector3} Cross (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector3} \&}]{v1, }
+\item[{const {\bf C\-Vector3} \&}]{v2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{_c_vector3_8h_a3ed7ca754a0890e7f9fd02abdecda652}
+Effectue le produit vectoriel entre deux vecteurs
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em v1} & \-: Vecteur 1 \\
+\hline
+{\em v2} & \-: Vecteur 2\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Résultat du produit vectoriel 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 409 du fichier C\-Vector3.\-h.
+
+\hypertarget{_c_vector3_8h_ae6ccab39033a67267947223d879b4e33}{\index{C\-Vector3.\-h@{C\-Vector3.\-h}!Dot@{Dot}}
+\index{Dot@{Dot}!CVector3.h@{C\-Vector3.\-h}}
+\subsubsection[{Dot}]{\setlength{\rightskip}{0pt plus 5cm}float Dot (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector3} \&}]{v1, }
+\item[{const {\bf C\-Vector3} \&}]{v2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{_c_vector3_8h_ae6ccab39033a67267947223d879b4e33}
+Effectue le produit scalaire entre deux vecteurs
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em v1} & \-: Vecteur 1 \\
+\hline
+{\em v2} & \-: Vecteur 2\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Résultat du produit scalaire 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 394 du fichier C\-Vector3.\-h.
+
+\hypertarget{_c_vector3_8h_a479753f35fba0491141721203b8c6778}{\index{C\-Vector3.\-h@{C\-Vector3.\-h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!CVector3.h@{C\-Vector3.\-h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Vector3} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector3} \&}]{v, }
+\item[{float}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{_c_vector3_8h_a479753f35fba0491141721203b8c6778}
+Opérateurs de multiplication avec un scalaire
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em v} & \-: Vecteur \\
+\hline
+{\em t} & \-: Scalaire\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Résultat de l'opération 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 349 du fichier C\-Vector3.\-h.
+
+\hypertarget{_c_vector3_8h_a85ec9ad670cfc9a85e6c731dd6047381}{\index{C\-Vector3.\-h@{C\-Vector3.\-h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!CVector3.h@{C\-Vector3.\-h}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Vector3} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{float}]{t, }
+\item[{const {\bf C\-Vector3} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{_c_vector3_8h_a85ec9ad670cfc9a85e6c731dd6047381}
+Opérateurs de multiplication avec un scalaire
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em t} & \-: Scalaire \\
+\hline
+{\em v} & \-: Vecteur\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Résultat de l'opération 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 379 du fichier C\-Vector3.\-h.
+
+\hypertarget{_c_vector3_8h_abe295a73cad9a00bac318b61165e5be9}{\index{C\-Vector3.\-h@{C\-Vector3.\-h}!operator/@{operator/}}
+\index{operator/@{operator/}!CVector3.h@{C\-Vector3.\-h}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Vector3} operator/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector3} \&}]{v, }
+\item[{float}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{_c_vector3_8h_abe295a73cad9a00bac318b61165e5be9}
+Opérateurs de division par un scalaire
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em v} & \-: Vecteur \\
+\hline
+{\em t} & \-: Scalaire\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Résultat de l'opération 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 364 du fichier C\-Vector3.\-h.
+
+\hypertarget{_c_vector3_8h_a1b77cff553329976bef0b60b5930643a}{\index{C\-Vector3.\-h@{C\-Vector3.\-h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!CVector3.h@{C\-Vector3.\-h}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream \& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{Stream, }
+\item[{const {\bf C\-Vector3} \&}]{Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{_c_vector3_8h_a1b77cff553329976bef0b60b5930643a}
+Surcharge de l'opérateur $<$$<$ entre un flux et un vecteur
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em Stream} & \-: Flux de sortie \\
+\hline
+{\em Vector} & \-: Vecteur\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Référence sur le flux de sortie 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 441 du fichier C\-Vector3.\-h.
+
+\hypertarget{_c_vector3_8h_a4fd1d30e8b7221d18fc18156c6bd97e2}{\index{C\-Vector3.\-h@{C\-Vector3.\-h}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!CVector3.h@{C\-Vector3.\-h}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::istream \& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\-::istream \&}]{Stream, }
+\item[{{\bf C\-Vector3} \&}]{Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{_c_vector3_8h_a4fd1d30e8b7221d18fc18156c6bd97e2}
+Surcharge de l'opérateur $>$$>$ entre un flux et un vecteur
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em Stream} & \-: Flux d'entrée \\
+\hline
+{\em Vector} & \-: Vecteur\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Référence sur le flux d'entrée 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 425 du fichier C\-Vector3.\-h.
+

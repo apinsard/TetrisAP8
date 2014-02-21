@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>Tetris: Référence du fichier /home/cj/workspace/Tetris/src/math/CVector3.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Les-Stages-a-l-IUT-Informatique-de-Vannes-en-2006_img_200.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Tetris
+   &#160;<span id="projectnumber">alpha</span>
+   </div>
+   <div id="projectbrief">Juan revival</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_c_vector3_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier CVector3.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;limits&gt;</code><br/>
+<code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;cmath&gt;</code><br/>
+</div>
+<p><a href="_c_vector3_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_vector3.html">CVector3</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a479753f35fba0491141721203b8c6778"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_vector3.html">CVector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_vector3_8h.html#a479753f35fba0491141721203b8c6778">operator*</a> (const <a class="el" href="class_c_vector3.html">CVector3</a> &amp;<a class="el" href="gl_8h.html#a4568fc090febc136eed4577a600739ca">v</a>, float <a class="el" href="gl_8h.html#a00140d6f5c548b26daf170bf16e86a6d">t</a>)</td></tr>
+<tr class="separator:a479753f35fba0491141721203b8c6778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe295a73cad9a00bac318b61165e5be9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_vector3.html">CVector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_vector3_8h.html#abe295a73cad9a00bac318b61165e5be9">operator/</a> (const <a class="el" href="class_c_vector3.html">CVector3</a> &amp;<a class="el" href="gl_8h.html#a4568fc090febc136eed4577a600739ca">v</a>, float <a class="el" href="gl_8h.html#a00140d6f5c548b26daf170bf16e86a6d">t</a>)</td></tr>
+<tr class="separator:abe295a73cad9a00bac318b61165e5be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ec9ad670cfc9a85e6c731dd6047381"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_vector3.html">CVector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_vector3_8h.html#a85ec9ad670cfc9a85e6c731dd6047381">operator*</a> (float <a class="el" href="gl_8h.html#a00140d6f5c548b26daf170bf16e86a6d">t</a>, const <a class="el" href="class_c_vector3.html">CVector3</a> &amp;<a class="el" href="gl_8h.html#a4568fc090febc136eed4577a600739ca">v</a>)</td></tr>
+<tr class="separator:a85ec9ad670cfc9a85e6c731dd6047381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ccab39033a67267947223d879b4e33"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_vector3_8h.html#ae6ccab39033a67267947223d879b4e33">Dot</a> (const <a class="el" href="class_c_vector3.html">CVector3</a> &amp;<a class="el" href="glext_8h.html#acaffa8fbe193d1ebac80bcfbe74d337f">v1</a>, const <a class="el" href="class_c_vector3.html">CVector3</a> &amp;<a class="el" href="glext_8h.html#ad75eed9bae3bbcf220d596c3277e8102">v2</a>)</td></tr>
+<tr class="separator:ae6ccab39033a67267947223d879b4e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ed7ca754a0890e7f9fd02abdecda652"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_vector3.html">CVector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_vector3_8h.html#a3ed7ca754a0890e7f9fd02abdecda652">Cross</a> (const <a class="el" href="class_c_vector3.html">CVector3</a> &amp;<a class="el" href="glext_8h.html#acaffa8fbe193d1ebac80bcfbe74d337f">v1</a>, const <a class="el" href="class_c_vector3.html">CVector3</a> &amp;<a class="el" href="glext_8h.html#ad75eed9bae3bbcf220d596c3277e8102">v2</a>)</td></tr>
+<tr class="separator:a3ed7ca754a0890e7f9fd02abdecda652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd1d30e8b7221d18fc18156c6bd97e2"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_vector3_8h.html#a4fd1d30e8b7221d18fc18156c6bd97e2">operator&gt;&gt;</a> (std::istream &amp;Stream, <a class="el" href="class_c_vector3.html">CVector3</a> &amp;Vector)</td></tr>
+<tr class="separator:a4fd1d30e8b7221d18fc18156c6bd97e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b77cff553329976bef0b60b5930643a"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_vector3_8h.html#a1b77cff553329976bef0b60b5930643a">operator&lt;&lt;</a> (std::ostream &amp;Stream, const <a class="el" href="class_c_vector3.html">CVector3</a> &amp;Vector)</td></tr>
+<tr class="separator:a1b77cff553329976bef0b60b5930643a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="a3ed7ca754a0890e7f9fd02abdecda652"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_vector3.html">CVector3</a> Cross </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_vector3.html">CVector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_c_vector3.html">CVector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Effectue le produit vectoriel entre deux vecteurs</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td>: Vecteur 1 </td></tr>
+    <tr><td class="paramname">v2</td><td>: Vecteur 2</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>R�sultat du produit vectoriel </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="_c_vector3_8h_source.html#l00409">409</a> du fichier <a class="el" href="_c_vector3_8h_source.html">CVector3.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae6ccab39033a67267947223d879b4e33"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Dot </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_vector3.html">CVector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_c_vector3.html">CVector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Effectue le produit scalaire entre deux vecteurs</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td>: Vecteur 1 </td></tr>
+    <tr><td class="paramname">v2</td><td>: Vecteur 2</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>R�sultat du produit scalaire </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="_c_vector3_8h_source.html#l00394">394</a> du fichier <a class="el" href="_c_vector3_8h_source.html">CVector3.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a479753f35fba0491141721203b8c6778"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_vector3.html">CVector3</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_vector3.html">CVector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Op�rateurs de multiplication avec un scalaire</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>: Vecteur </td></tr>
+    <tr><td class="paramname">t</td><td>: Scalaire</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>R�sultat de l'op�ration </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="_c_vector3_8h_source.html#l00349">349</a> du fichier <a class="el" href="_c_vector3_8h_source.html">CVector3.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a85ec9ad670cfc9a85e6c731dd6047381"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_vector3.html">CVector3</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_c_vector3.html">CVector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Op�rateurs de multiplication avec un scalaire</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>: Scalaire </td></tr>
+    <tr><td class="paramname">v</td><td>: Vecteur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>R�sultat de l'op�ration </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="_c_vector3_8h_source.html#l00379">379</a> du fichier <a class="el" href="_c_vector3_8h_source.html">CVector3.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abe295a73cad9a00bac318b61165e5be9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_vector3.html">CVector3</a> operator/ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_vector3.html">CVector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Op�rateurs de division par un scalaire</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>: Vecteur </td></tr>
+    <tr><td class="paramname">t</td><td>: Scalaire</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>R�sultat de l'op�ration </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="_c_vector3_8h_source.html#l00364">364</a> du fichier <a class="el" href="_c_vector3_8h_source.html">CVector3.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1b77cff553329976bef0b60b5930643a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>Stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_c_vector3.html">CVector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>Vector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Surcharge de l'op�rateur &lt;&lt; entre un flux et un vecteur</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Stream</td><td>: Flux de sortie </td></tr>
+    <tr><td class="paramname">Vector</td><td>: Vecteur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>R�f�rence sur le flux de sortie </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="_c_vector3_8h_source.html#l00441">441</a> du fichier <a class="el" href="_c_vector3_8h_source.html">CVector3.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4fd1d30e8b7221d18fc18156c6bd97e2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::istream &amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>Stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_vector3.html">CVector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>Vector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Surcharge de l'op�rateur &gt;&gt; entre un flux et un vecteur</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Stream</td><td>: Flux d'entr�e </td></tr>
+    <tr><td class="paramname">Vector</td><td>: Vecteur</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>R�f�rence sur le flux d'entr�e </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="_c_vector3_8h_source.html#l00425">425</a> du fichier <a class="el" href="_c_vector3_8h_source.html">CVector3.h</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ae9a93452e2a84339148a16bcf2eb561.html">math</a></li><li class="navelem"><a class="el" href="_c_vector3_8h.html">CVector3.h</a></li>
+    <li class="footer">Généré le Vendredi Février 21 2014 22:34:27 pour Tetris par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
+  </ul>
+</div>
+</body>
+</html>

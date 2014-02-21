@@ -1,0 +1,443 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_c_projet_tetris_8cpp" kind="file">
+    <compoundname>CProjetTetris.cpp</compoundname>
+    <includes refid="_c_projet_tetris_8h" local="yes">CProjetTetris.h</includes>
+    <incdepgraph>
+      <node id="1602">
+        <label>CPieceAbstract.h</label>
+        <link refid="_c_piece_abstract_8h"/>
+        <childnode refid="1585" relation="include">
+        </childnode>
+      </node>
+      <node id="1600">
+        <label>GL/glut.h</label>
+      </node>
+      <node id="1596">
+        <label>limits</label>
+      </node>
+      <node id="1607">
+        <label>CL2Piece.h</label>
+        <link refid="_c_l2_piece_8h"/>
+        <childnode refid="1602" relation="include">
+        </childnode>
+      </node>
+      <node id="1606">
+        <label>CL1Piece.h</label>
+        <link refid="_c_l1_piece_8h"/>
+        <childnode refid="1602" relation="include">
+        </childnode>
+      </node>
+      <node id="1612">
+        <label>TetrisUtils.h</label>
+        <link refid="_tetris_utils_8h"/>
+      </node>
+      <node id="1591">
+        <label>cmath</label>
+      </node>
+      <node id="1604">
+        <label>CTPiece.h</label>
+        <link refid="_c_t_piece_8h"/>
+        <childnode refid="1602" relation="include">
+        </childnode>
+      </node>
+      <node id="1586">
+        <label>string</label>
+      </node>
+      <node id="1605">
+        <label>COPiece.h</label>
+        <link refid="_c_o_piece_8h"/>
+        <childnode refid="1602" relation="include">
+        </childnode>
+      </node>
+      <node id="1597">
+        <label>CVector4.h</label>
+        <link refid="_c_vector4_8h"/>
+        <childnode refid="1596" relation="include">
+        </childnode>
+        <childnode refid="1588" relation="include">
+        </childnode>
+        <childnode refid="1595" relation="include">
+        </childnode>
+      </node>
+      <node id="1583">
+        <label>CProjetTetris.h</label>
+        <link refid="_c_projet_tetris_8h"/>
+        <childnode refid="1584" relation="include">
+        </childnode>
+        <childnode refid="1601" relation="include">
+        </childnode>
+      </node>
+      <node id="1603">
+        <label>CIPiece.h</label>
+        <link refid="_c_i_piece_8h"/>
+        <childnode refid="1602" relation="include">
+        </childnode>
+      </node>
+      <node id="1609">
+        <label>CZ2Piece.h</label>
+        <link refid="_c_z2_piece_8h"/>
+        <childnode refid="1602" relation="include">
+        </childnode>
+      </node>
+      <node id="1598">
+        <label>CMatrix44.h</label>
+        <link refid="_c_matrix44_8h"/>
+        <childnode refid="1595" relation="include">
+        </childnode>
+        <childnode refid="1597" relation="include">
+        </childnode>
+        <childnode refid="1592" relation="include">
+        </childnode>
+      </node>
+      <node id="1608">
+        <label>CZ1Piece.h</label>
+        <link refid="_c_z1_piece_8h"/>
+        <childnode refid="1602" relation="include">
+        </childnode>
+      </node>
+      <node id="1594">
+        <label>ctime</label>
+      </node>
+      <node id="1582">
+        <label>/home/cj/workspace/Tetris/src/tetris/CProjetTetris.cpp</label>
+        <link refid="CProjetTetris.cpp"/>
+        <childnode refid="1583" relation="include">
+        </childnode>
+      </node>
+      <node id="1610">
+        <label>CTGameTable.h</label>
+        <link refid="_c_t_game_table_8h"/>
+        <childnode refid="1585" relation="include">
+        </childnode>
+      </node>
+      <node id="1599">
+        <label>CRenderer.h</label>
+        <link refid="_c_renderer_8h"/>
+        <childnode refid="1585" relation="include">
+        </childnode>
+        <childnode refid="1600" relation="include">
+        </childnode>
+      </node>
+      <node id="1590">
+        <label>vector</label>
+      </node>
+      <node id="1587">
+        <label>sstream</label>
+      </node>
+      <node id="1611">
+        <label>CRandomizer.h</label>
+        <link refid="_c_randomizer_8h"/>
+        <childnode refid="1590" relation="include">
+        </childnode>
+      </node>
+      <node id="1595">
+        <label>CVector3.h</label>
+        <link refid="_c_vector3_8h"/>
+        <childnode refid="1596" relation="include">
+        </childnode>
+        <childnode refid="1588" relation="include">
+        </childnode>
+        <childnode refid="1591" relation="include">
+        </childnode>
+      </node>
+      <node id="1593">
+        <label>cstdlib</label>
+      </node>
+      <node id="1588">
+        <label>iostream</label>
+      </node>
+      <node id="1585">
+        <label>Common.h</label>
+        <link refid="_common_8h"/>
+        <childnode refid="1586" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+        <childnode refid="1588" relation="include">
+        </childnode>
+        <childnode refid="1589" relation="include">
+        </childnode>
+        <childnode refid="1590" relation="include">
+        </childnode>
+        <childnode refid="1591" relation="include">
+        </childnode>
+        <childnode refid="1592" relation="include">
+        </childnode>
+        <childnode refid="1593" relation="include">
+        </childnode>
+        <childnode refid="1594" relation="include">
+        </childnode>
+        <childnode refid="1595" relation="include">
+        </childnode>
+        <childnode refid="1597" relation="include">
+        </childnode>
+        <childnode refid="1598" relation="include">
+        </childnode>
+      </node>
+      <node id="1601">
+        <label>CTetrisGame.h</label>
+        <link refid="_c_tetris_game_8h"/>
+        <childnode refid="1602" relation="include">
+        </childnode>
+        <childnode refid="1603" relation="include">
+        </childnode>
+        <childnode refid="1604" relation="include">
+        </childnode>
+        <childnode refid="1605" relation="include">
+        </childnode>
+        <childnode refid="1606" relation="include">
+        </childnode>
+        <childnode refid="1607" relation="include">
+        </childnode>
+        <childnode refid="1608" relation="include">
+        </childnode>
+        <childnode refid="1609" relation="include">
+        </childnode>
+        <childnode refid="1610" relation="include">
+        </childnode>
+        <childnode refid="1611" relation="include">
+        </childnode>
+        <childnode refid="1612" relation="include">
+        </childnode>
+      </node>
+      <node id="1584">
+        <label>CApplication.h</label>
+        <link refid="_c_application_8h"/>
+        <childnode refid="1585" relation="include">
+        </childnode>
+        <childnode refid="1599" relation="include">
+        </childnode>
+      </node>
+      <node id="1589">
+        <label>algorithm</label>
+      </node>
+      <node id="1592">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Projet<sp/>C/C++</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2013-2014<sp/>Equipe<sp/>SEASIDE<sp/>(T.<sp/>LE<sp/>NAOUR,<sp/>J.F<sp/>KAMP)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IRISA<sp/>-<sp/>UBS<sp/><sp/>/<sp/>IUT<sp/>Informatique<sp/>Vannes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_projet_tetris_8h" kindref="compound">CProjetTetris.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">//<sp/>Projet<sp/>Tetris</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_c_projet_tetris_1a23313d3c05825be373c38918f32ce526" refkind="member"><highlight class="normal"><ref refid="class_c_projet_tetris_1a23313d3c05825be373c38918f32ce526" kindref="member" tooltip="constructeur par défaut de CProjetTetris">CProjetTetris::CProjetTetris</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/>m_game<sp/><sp/>=<sp/><ref refid="class_c_tetris_game" kindref="compound">CTetrisGame</ref>(<ref refid="_tetris_utils_8h_1a87d3da0dbc66a688633b8b54236cdaca" kindref="member" tooltip="position en X de la grille du jeu dans la fenêtre GLUT">POSX_BOARD</ref>,<sp/><ref refid="_tetris_utils_8h_1a224b8c50f38cfc135c907bf36ad3a45a" kindref="member" tooltip="position en Y de la grille du jeu dans la fenêtre GLUT">POSY_BOARD</ref>,<sp/><ref refid="_tetris_utils_8h_1a9df0cc58e9feb5f773d9664dcc978ea5" kindref="member" tooltip="largeur de la grille du jeu">WIDTH_BOARD</ref>,<sp/><ref refid="_tetris_utils_8h_1acf0268c13877ff90d1f4ec3e5326c369" kindref="member" tooltip="hauteur de la grille du jeu">HEIGHT_BOARD</ref>,<sp/><ref refid="_tetris_utils_8h_1ae1a59328c9b22cbb12ac88999ba0fcd3" kindref="member" tooltip="taille d&amp;#39;une case de la grille du jeu (carrée)">DIM_CASE</ref>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>m_step<sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>m_level<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/****************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_c_projet_tetris_1aae5236dd2e2407ee291f8df8bc00db56" refkind="member"><highlight class="normal"><ref refid="class_c_projet_tetris_1aae5236dd2e2407ee291f8df8bc00db56" kindref="member" tooltip="destructeur de CProjetTetris">CProjetTetris::~CProjetTetris</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Destruction<sp/>objet<sp/>CProjetTetris&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>initilisation<sp/>de<sp/>notre<sp/>appli<sp/>(rien<sp/>car<sp/>dessiner<sp/>un<sp/>cube<sp/>à<sp/>l&apos;écran<sp/>ne<sp/>nécéssite<sp/>aucune<sp/>initialisation)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>!!<sp/>Méthode<sp/>appelée<sp/>dans<sp/>la<sp/>méthode<sp/>Init<sp/>de<sp/>la<sp/>classe<sp/>CApplication</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="class_c_projet_tetris_1ad64be3a4f7af30e896ee8a7c609d6931" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_c_projet_tetris_1ad64be3a4f7af30e896ee8a7c609d6931" kindref="member" tooltip="initilisation de notre appli (rien car dessiner un cube à l&amp;#39;écran ne nécéssite aucune initialisation) !! Méth...">CProjetTetris::OnInit</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>notre<sp/>scène<sp/>à<sp/>dessiner</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>!!<sp/>Méthode<sp/>appelée<sp/>dans<sp/>la<sp/>méthode<sp/>Run<sp/>de<sp/>la<sp/>classe<sp/>CApplication</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_c_projet_tetris_1a339f4345e18b94f4305f0fc054a942f8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_projet_tetris_1a339f4345e18b94f4305f0fc054a942f8" kindref="member" tooltip="notre scène à dessiner !! Méthode appelée dans la méthode Run de la classe CApplication">CProjetTetris::OnRender</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//-------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>gestion<sp/>du<sp/>temps</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//-------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dMax<sp/>=<sp/>2.0f;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Max<sp/>difficulty</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dMin<sp/>=<sp/>30.0f;<sp/><sp/><sp/></highlight><highlight class="comment">//Min<sp/>difficulty</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sMax<sp/>=<sp/>2688.0f;<sp/></highlight><highlight class="comment">//Max<sp/>difficulty<sp/>for<sp/>score</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>d<sp/>=<sp/>max(dMax,<sp/>dMax<sp/>+<sp/>(((dMin<sp/>-<sp/>dMax)<sp/>/<sp/>sMax)<sp/>*<sp/>(sMax<sp/>-<sp/>m_game.<ref refid="class_c_tetris_game_1a1eb1b3e8b0443fe6665f4233035d394f" kindref="member" tooltip="renvoit le score courant">GetScore</ref>())));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_step<sp/>&gt;<sp/>round(d))</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>m_step<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>m_level<sp/>=<sp/>round((dMin<sp/>-<sp/>d)/2.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435dfaa4933e0dea9d95e26410e76c1d9f7456" kindref="member">AR_GameOver</ref><sp/>==<sp/>this-&gt;m_game.<ref refid="class_c_tetris_game_1a865fe41b3de2f99a1675cf8f799823bb" kindref="member" tooltip="met à jour le tetris en fonction du temps passé (le nombre de fois que la boucle de rendu est appelée) la m...">Update</ref>(m_step))<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>DrawGameOver();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//-------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>commande<sp/>utilisateur</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//-------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_c_application_1af9cb02fda32ea439bcae6c3c9802e004" kindref="member" tooltip="infos liées à la souris/caméra (pointeur car paratagé par deux objets)">m_UserEvents</ref>-&gt;<ref refid="struct_user_events_1ae9e99946331657426862610d57e58c3e" kindref="member">m_keyBoardEvents</ref>[<ref refid="_common_8h_1ab3c7af4820830f9166ede9e5623c4e73a9cae408665a69de1075ed731f2701bdc" kindref="member">Key_a</ref>])<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;m_game.<ref refid="class_c_tetris_game_1a39c3fb5b3b114f99d9a20248c0bddc07" kindref="member" tooltip="modifie la position et l&amp;#39;orientation de la piece courante">MovePiece</ref>(<ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8a27ec28fc72ef8c4d4c17654dd902ff69" kindref="member">PA_RotateLeft</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_c_application_1af9cb02fda32ea439bcae6c3c9802e004" kindref="member" tooltip="infos liées à la souris/caméra (pointeur car paratagé par deux objets)">m_UserEvents</ref>-&gt;<ref refid="struct_user_events_1ae9e99946331657426862610d57e58c3e" kindref="member">m_keyBoardEvents</ref>[<ref refid="_common_8h_1ab3c7af4820830f9166ede9e5623c4e73a1a71b8087e5678a1b98ca6f3534a8a3f" kindref="member">Key_z</ref>])<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;m_game.<ref refid="class_c_tetris_game_1a39c3fb5b3b114f99d9a20248c0bddc07" kindref="member" tooltip="modifie la position et l&amp;#39;orientation de la piece courante">MovePiece</ref>(<ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8a84380f7c056a1d381a3b1889a48109d9" kindref="member">PA_RotateRight</ref>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_c_application_1af9cb02fda32ea439bcae6c3c9802e004" kindref="member" tooltip="infos liées à la souris/caméra (pointeur car paratagé par deux objets)">m_UserEvents</ref>-&gt;<ref refid="struct_user_events_1ae9e99946331657426862610d57e58c3e" kindref="member">m_keyBoardEvents</ref>[<ref refid="_common_8h_1ab3c7af4820830f9166ede9e5623c4e73aeb420f51e58db5a4d8ec7f886a057212" kindref="member">Key_DOWN</ref>])<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;m_game.<ref refid="class_c_tetris_game_1a39c3fb5b3b114f99d9a20248c0bddc07" kindref="member" tooltip="modifie la position et l&amp;#39;orientation de la piece courante">MovePiece</ref>(<ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8adf2e2d247e618ea931d6e4ad7bed7464" kindref="member">PA_MoveBottom</ref>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_c_application_1af9cb02fda32ea439bcae6c3c9802e004" kindref="member" tooltip="infos liées à la souris/caméra (pointeur car paratagé par deux objets)">m_UserEvents</ref>-&gt;<ref refid="struct_user_events_1ae9e99946331657426862610d57e58c3e" kindref="member">m_keyBoardEvents</ref>[<ref refid="_common_8h_1ab3c7af4820830f9166ede9e5623c4e73ac6d72e4d0f834fc4d08444e8333b6c1b" kindref="member">Key_RIGHT</ref>])<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;m_game.<ref refid="class_c_tetris_game_1a39c3fb5b3b114f99d9a20248c0bddc07" kindref="member" tooltip="modifie la position et l&amp;#39;orientation de la piece courante">MovePiece</ref>(<ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8adcec83af27ecc2ef0102fc7f50259e2c" kindref="member">PA_MoveRight</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_c_application_1af9cb02fda32ea439bcae6c3c9802e004" kindref="member" tooltip="infos liées à la souris/caméra (pointeur car paratagé par deux objets)">m_UserEvents</ref>-&gt;<ref refid="struct_user_events_1ae9e99946331657426862610d57e58c3e" kindref="member">m_keyBoardEvents</ref>[<ref refid="_common_8h_1ab3c7af4820830f9166ede9e5623c4e73a07831ab83d819996d92f853b3354799e" kindref="member">Key_LEFT</ref>])<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;m_game.<ref refid="class_c_tetris_game_1a39c3fb5b3b114f99d9a20248c0bddc07" kindref="member" tooltip="modifie la position et l&amp;#39;orientation de la piece courante">MovePiece</ref>(<ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8a5e5493ef9fa9bf628f739f0c6b4f8d71" kindref="member">PA_MoveLeft</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_c_application_1af9cb02fda32ea439bcae6c3c9802e004" kindref="member" tooltip="infos liées à la souris/caméra (pointeur car paratagé par deux objets)">m_UserEvents</ref>-&gt;<ref refid="struct_user_events_1ae9e99946331657426862610d57e58c3e" kindref="member">m_keyBoardEvents</ref>[<ref refid="_common_8h_1ab3c7af4820830f9166ede9e5623c4e73a02008819bc53440c14be7991f01164d2" kindref="member">Key_SPACE</ref>])<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;m_game.<ref refid="class_c_tetris_game_1a39c3fb5b3b114f99d9a20248c0bddc07" kindref="member" tooltip="modifie la position et l&amp;#39;orientation de la piece courante">MovePiece</ref>(<ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8aa1205ee48206a302e6bfe972ce68927f" kindref="member">PA_MoveBottom2</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//-------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>affichage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//-------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>on<sp/>passe<sp/>en<sp/>rendu<sp/>2d</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><ref refid="class_c_application_1a175c63828573c70b8383d0a7d06ca5c7" kindref="member" tooltip="Déclaration du renderer.">m_renderer</ref>.<ref refid="class_c_renderer_1a304c6e86e556ebaf250e46342b99a95e" kindref="member">Start2DRender</ref>();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>affichage<sp/>du<sp/>score</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>DrawInfo();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>affichage<sp/>du<sp/>tetris</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>DrawTetris();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>fin<sp/>du<sp/>rendu<sp/>2d</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><ref refid="class_c_application_1a175c63828573c70b8383d0a7d06ca5c7" kindref="member" tooltip="Déclaration du renderer.">m_renderer</ref>.<ref refid="class_c_renderer_1a180311e3b15212752710a0ad66cedcb6" kindref="member">End2DRender</ref>();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>maj<sp/>du<sp/>compteur<sp/>de<sp/>passage<sp/>dans<sp/>cette<sp/>fonction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>m_step<sp/>++;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">//<sp/>destructuion<sp/>de<sp/>notre<sp/>appli<sp/>(rien<sp/>car<sp/>dessiner<sp/>un<sp/>cube<sp/>à<sp/>l&apos;écran<sp/>ne<sp/>nécéssite<sp/>aucune<sp/>destruction)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">//<sp/>!!<sp/>Méthode<sp/>appelée<sp/>dans<sp/>la<sp/>méthode<sp/>Release<sp/>de<sp/>la<sp/>classe<sp/>CApplication</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="class_c_projet_tetris_1a1124dfbd1be9deb52a83b1a4eae34306" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_projet_tetris_1a1124dfbd1be9deb52a83b1a4eae34306" kindref="member" tooltip="destructuion de notre appli (rien car dessiner un cube à l&amp;#39;écran ne nécéssite aucune destruction) !! Méthode ...">CProjetTetris::OnRelease</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Rien<sp/>a<sp/>liberer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CProjetTetris::DrawGameOver()</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">std::string</ref><sp/>title<sp/>=<sp/><ref refid="struct_helpers_1af4a24bc3741919a1dace4729299fe58f" kindref="member">Helpers::ToString</ref>(</highlight><highlight class="stringliteral">&quot;GAME<sp/>OVER&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">std::string</ref><sp/>score<sp/>=<sp/><ref refid="struct_helpers_1af4a24bc3741919a1dace4729299fe58f" kindref="member">Helpers::ToString</ref>(</highlight><highlight class="stringliteral">&quot;Score<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="struct_helpers_1af4a24bc3741919a1dace4729299fe58f" kindref="member">Helpers::ToString</ref>(m_game.<ref refid="class_c_tetris_game_1a1eb1b3e8b0443fe6665f4233035d394f" kindref="member" tooltip="renvoit le score courant">GetScore</ref>()));</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">std::string</ref><sp/><ref refid="gl_8h_1aeb776e5e0b0aff9ecb4c615ec0d92452" kindref="member">level</ref><sp/>=<sp/><ref refid="struct_helpers_1af4a24bc3741919a1dace4729299fe58f" kindref="member">Helpers::ToString</ref>(</highlight><highlight class="stringliteral">&quot;Level<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="struct_helpers_1af4a24bc3741919a1dace4729299fe58f" kindref="member">Helpers::ToString</ref>(m_level));</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><ref refid="class_c_application_1a175c63828573c70b8383d0a7d06ca5c7" kindref="member" tooltip="Déclaration du renderer.">m_renderer</ref>.<ref refid="class_c_renderer_1a304c6e86e556ebaf250e46342b99a95e" kindref="member">Start2DRender</ref>();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><ref refid="class_c_application_1a175c63828573c70b8383d0a7d06ca5c7" kindref="member" tooltip="Déclaration du renderer.">m_renderer</ref>.<ref refid="class_c_renderer_1a967c742c349b52eac2551fa8b1567814" kindref="member">DrawText</ref>(title,<sp/>320,<sp/>380,<sp/><ref refid="class_c_renderer_1ae92b4f96fd8512b28a3800cd673c73e6a4bc17bab5c43df73339d80f85ea9e3ee" kindref="member">CRenderer::TS_18</ref>,<sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>(1.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>));</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><ref refid="class_c_application_1a175c63828573c70b8383d0a7d06ca5c7" kindref="member" tooltip="Déclaration du renderer.">m_renderer</ref>.<ref refid="class_c_renderer_1a967c742c349b52eac2551fa8b1567814" kindref="member">DrawText</ref>(score,<sp/>340,<sp/>340,<sp/><ref refid="class_c_renderer_1ae92b4f96fd8512b28a3800cd673c73e6ab44fb4c932da34b5f1649a02ac7738e0" kindref="member">CRenderer::TS_12</ref>,<sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>(1.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>));</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><ref refid="class_c_application_1a175c63828573c70b8383d0a7d06ca5c7" kindref="member" tooltip="Déclaration du renderer.">m_renderer</ref>.<ref refid="class_c_renderer_1a967c742c349b52eac2551fa8b1567814" kindref="member">DrawText</ref>(level,<sp/>340,<sp/>320,<sp/><ref refid="class_c_renderer_1ae92b4f96fd8512b28a3800cd673c73e6ab44fb4c932da34b5f1649a02ac7738e0" kindref="member">CRenderer::TS_12</ref>,<sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>(1.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>));</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><ref refid="class_c_application_1a175c63828573c70b8383d0a7d06ca5c7" kindref="member" tooltip="Déclaration du renderer.">m_renderer</ref>.<ref refid="class_c_renderer_1a180311e3b15212752710a0ad66cedcb6" kindref="member">End2DRender</ref>();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CProjetTetris::DrawInfo()</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">std::string</ref><sp/>title<sp/>=<sp/><ref refid="struct_helpers_1af4a24bc3741919a1dace4729299fe58f" kindref="member">Helpers::ToString</ref>(</highlight><highlight class="stringliteral">&quot;Juan<sp/>revival<sp/>TeTrIs&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">std::string</ref><sp/>score<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Score<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="struct_helpers_1af4a24bc3741919a1dace4729299fe58f" kindref="member">Helpers::ToString</ref>(m_game.<ref refid="class_c_tetris_game_1a1eb1b3e8b0443fe6665f4233035d394f" kindref="member" tooltip="renvoit le score courant">GetScore</ref>());</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">std::string</ref><sp/>level<sp/>=<sp/><ref refid="struct_helpers_1af4a24bc3741919a1dace4729299fe58f" kindref="member">Helpers::ToString</ref>(</highlight><highlight class="stringliteral">&quot;Level<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="struct_helpers_1af4a24bc3741919a1dace4729299fe58f" kindref="member">Helpers::ToString</ref>(m_level));</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><ref refid="class_c_application_1a175c63828573c70b8383d0a7d06ca5c7" kindref="member" tooltip="Déclaration du renderer.">m_renderer</ref>.<ref refid="class_c_renderer_1a967c742c349b52eac2551fa8b1567814" kindref="member">DrawText</ref>(title,<sp/>300,<sp/>500,<sp/><ref refid="class_c_renderer_1ae92b4f96fd8512b28a3800cd673c73e6a4bc17bab5c43df73339d80f85ea9e3ee" kindref="member">CRenderer::TS_18</ref>,<sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>(1.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>));</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><ref refid="class_c_application_1a175c63828573c70b8383d0a7d06ca5c7" kindref="member" tooltip="Déclaration du renderer.">m_renderer</ref>.<ref refid="class_c_renderer_1a967c742c349b52eac2551fa8b1567814" kindref="member">DrawText</ref>(score,<sp/>500,<sp/>160,<sp/><ref refid="class_c_renderer_1ae92b4f96fd8512b28a3800cd673c73e6ab44fb4c932da34b5f1649a02ac7738e0" kindref="member">CRenderer::TS_12</ref>,<sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>(0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>));</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><ref refid="class_c_application_1a175c63828573c70b8383d0a7d06ca5c7" kindref="member" tooltip="Déclaration du renderer.">m_renderer</ref>.<ref refid="class_c_renderer_1a967c742c349b52eac2551fa8b1567814" kindref="member">DrawText</ref>(level,<sp/>500,<sp/>180,<sp/><ref refid="class_c_renderer_1ae92b4f96fd8512b28a3800cd673c73e6ab44fb4c932da34b5f1649a02ac7738e0" kindref="member">CRenderer::TS_12</ref>,<sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>(0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,<sp/>1.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>));</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">/****************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CProjetTetris::DrawTetris()<sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>vector&lt;TGameRow&gt;<sp/>gameTable<sp/>=<sp/>m_game.<ref refid="class_c_tetris_game_1a2349ec74b3f03c09a3e58603a965526d" kindref="member" tooltip="renvoit le tableau du jeu avec les cases occupées et leur couleur">GetBoard</ref>().<ref refid="class_c_t_game_table_1a1ae234b52213c9ffad0dc129a5279719" kindref="member">GetGameTable</ref>();</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>tetrisWidth<sp/><sp/>=<sp/>gameTable[0].size()*<sp/>m_game.<ref refid="class_c_tetris_game_1a8cd74a8fffb5355326915564cd82425e" kindref="member" tooltip="renvoit la taille d&amp;#39;une case du tetris">GetCaseDim</ref>();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>tetrisHeight<sp/>=<sp/>gameTable.size()<sp/>*<sp/>m_game.<ref refid="class_c_tetris_game_1a8cd74a8fffb5355326915564cd82425e" kindref="member" tooltip="renvoit la taille d&amp;#39;une case du tetris">GetCaseDim</ref>();</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dim<sp/>=<sp/>m_game.<ref refid="class_c_tetris_game_1a8cd74a8fffb5355326915564cd82425e" kindref="member" tooltip="renvoit la taille d&amp;#39;une case du tetris">GetCaseDim</ref>();</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>fond<sp/>du<sp/>tetris</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>DrawFillRect<sp/>(<sp/>m_game.<ref refid="class_c_tetris_game_1a4778a2c417381872d053a036eaed1c67" kindref="member" tooltip="renvoit position du jeu dans la fenètre openGL">GetXPos</ref>(),<sp/>m_game.<ref refid="class_c_tetris_game_1ad51b2248159ecb93c3d677a9fd09e984" kindref="member" tooltip="renvoit position du jeu dans la fenètre openGL">GetYPos</ref>(),<sp/>tetrisWidth,<sp/>tetrisHeight,<sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>(0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>));</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//DrawFillRect<sp/>(<sp/>m_game.GetXPos(),<sp/>m_game.GetYPos(),<sp/>tetrisWidth,<sp/>tetrisHeight,<sp/>CVector3(17.0f/255.0f,218.0f/255.0f,84.0f/255.0f)<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>affichage<sp/>du<sp/>&quot;cadre&quot;<sp/>tetris</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>DrawRect<sp/>(<sp/>m_game.<ref refid="class_c_tetris_game_1a4778a2c417381872d053a036eaed1c67" kindref="member" tooltip="renvoit position du jeu dans la fenètre openGL">GetXPos</ref>()-0.1f,<sp/>m_game.<ref refid="class_c_tetris_game_1ad51b2248159ecb93c3d677a9fd09e984" kindref="member" tooltip="renvoit position du jeu dans la fenètre openGL">GetYPos</ref>()-0.1f,<sp/>(tetrisWidth+0.2f),<sp/>(tetrisHeight+0.2<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>),<sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>(213.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>/255.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,213.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>/255.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,213.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>/255.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>)<sp/>);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>affichage<sp/>du<sp/>tableau<sp/>tetris</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;gameTable.size();<sp/>i++){</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;<sp/>j&lt;gameTable[i].size();<sp/>j++)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(gameTable[i][j].m_used)</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DrawFillSquare(m_game.<ref refid="class_c_tetris_game_1a4778a2c417381872d053a036eaed1c67" kindref="member" tooltip="renvoit position du jeu dans la fenètre openGL">GetXPos</ref>()+(j*dim),<sp/>m_game.<ref refid="class_c_tetris_game_1ad51b2248159ecb93c3d677a9fd09e984" kindref="member" tooltip="renvoit position du jeu dans la fenètre openGL">GetYPos</ref>()+(i*dim),<sp/>dim,<sp/>gameTable[i][j].m_color);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>affichage<sp/>de<sp/>la<sp/>pîece<sp/>en<sp/>cours</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><ref refid="class_c_piece_abstract" kindref="compound" tooltip="classe CPieceAbstract abstraite">CPieceAbstract</ref>*<sp/>piece<sp/>=<sp/>this-&gt;m_game.<ref refid="class_c_tetris_game_1ab27572baf8ecf5e40de3438329fa1238" kindref="member" tooltip="renvoit un pointeur sur la pièce courante">GetPiece</ref>();</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;piece-&gt;<ref refid="class_c_piece_abstract_1aabf812ae9a7462f3724ad71c7bd687cf" kindref="member">GetDim</ref>();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;<sp/>j&lt;piece-&gt;<ref refid="class_c_piece_abstract_1aabf812ae9a7462f3724ad71c7bd687cf" kindref="member">GetDim</ref>();<sp/>j++)<sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(piece-&gt;<ref refid="class_c_piece_abstract_1a4ea785d6771cde3f1bc302214259f059" kindref="member" tooltip="rotation de la piece en fonction de l&amp;#39;état courant (à redéfinir dans les classes filles)">GetTable</ref>()[i][j]<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DrawFillSquare(</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_game.<ref refid="class_c_tetris_game_1a4778a2c417381872d053a036eaed1c67" kindref="member" tooltip="renvoit position du jeu dans la fenètre openGL">GetXPos</ref>()+(piece-&gt;<ref refid="class_c_piece_abstract_1a23475b762834cd871101dd838564e0af" kindref="member" tooltip="index en abcisse de la piece dans le tetrix">GetColIndex</ref>()+j)*dim,</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_game.<ref refid="class_c_tetris_game_1ad51b2248159ecb93c3d677a9fd09e984" kindref="member" tooltip="renvoit position du jeu dans la fenètre openGL">GetYPos</ref>()+(piece-&gt;<ref refid="class_c_piece_abstract_1a8769db975fc272bcaf735c98f14fd419" kindref="member" tooltip="index en ordonnée de la piece dans le tetrix">GetRowIndex</ref>()+i)*dim,</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dim,<sp/>piece-&gt;<ref refid="class_c_piece_abstract_1a85eb0b4bb71d4058229ff61f711803e4" kindref="member" tooltip="renvoit la couleur de la piece">GetColor</ref>());</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="comment">//<sp/>quelques<sp/>outils<sp/>pour<sp/>afficher<sp/>des<sp/>carré<sp/>et<sp/>des<sp/>rectangles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CProjetTetris::DrawFillRect(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a0cdec8e97a75ee9458b23d152bf962d4" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a74d80fd479c0f6d0153c709949a089ef" kindref="member">y</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1adb12a0d439f32ca388b2c806150cc54d" kindref="member">w</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1afa0fb1b5e976920c0abeff2dca3ed774" kindref="member">h</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref><sp/>&amp;<ref refid="glext_8h_1a3ea846f998d64f079b86052b6c4193a8" kindref="member">color</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1acee7240272b34e83a4567a1fb586be99" kindref="member">glColor3f</ref>(color.<ref refid="class_c_vector3_1a06b092361b335f9971323be0ddf759b1" kindref="member" tooltip="Composante X.">x</ref>,color.<ref refid="class_c_vector3_1a20d0b1099477995b22a4f1407e41a7a1" kindref="member" tooltip="Composante Y.">y</ref>,color.<ref refid="class_c_vector3_1a9dd3ce85f6aaa17ccc67bfe50a089b3a" kindref="member" tooltip="Composante Z.">z</ref>);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1a98964453975519f92d6cc59ef77f7436" kindref="member">glBegin</ref>(<ref refid="gl_8h_1a36b428225d54dd9cf2e564e5ada3ad3d" kindref="member">GL_QUADS</ref>);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1a43e94a9a0586067872b96a8a790e60bc" kindref="member">glVertex2i</ref>(x,<sp/>y);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1a43e94a9a0586067872b96a8a790e60bc" kindref="member">glVertex2i</ref>(x,<sp/><sp/>y+h);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1a43e94a9a0586067872b96a8a790e60bc" kindref="member">glVertex2i</ref>(x+w,<sp/><sp/>y+h);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1a43e94a9a0586067872b96a8a790e60bc" kindref="member">glVertex2i</ref>(x+w,<sp/>y);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1abbff207d1fa71b296ff35b149cef7238" kindref="member">glEnd</ref>();</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="comment">/****************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CProjetTetris::DrawRect(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a0cdec8e97a75ee9458b23d152bf962d4" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a74d80fd479c0f6d0153c709949a089ef" kindref="member">y</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1adb12a0d439f32ca388b2c806150cc54d" kindref="member">w</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1afa0fb1b5e976920c0abeff2dca3ed774" kindref="member">h</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref><sp/>&amp;<ref refid="glext_8h_1a3ea846f998d64f079b86052b6c4193a8" kindref="member">color</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>lineWidth)<sp/><sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1acee7240272b34e83a4567a1fb586be99" kindref="member">glColor3f</ref>(color.<ref refid="class_c_vector3_1a06b092361b335f9971323be0ddf759b1" kindref="member" tooltip="Composante X.">x</ref>,color.<ref refid="class_c_vector3_1a20d0b1099477995b22a4f1407e41a7a1" kindref="member" tooltip="Composante Y.">y</ref>,color.<ref refid="class_c_vector3_1a9dd3ce85f6aaa17ccc67bfe50a089b3a" kindref="member" tooltip="Composante Z.">z</ref>);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1a8ac47f6bf1d1c4699a40b5458db28833" kindref="member">glLineWidth</ref>(lineWidth);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1a98964453975519f92d6cc59ef77f7436" kindref="member">glBegin</ref>(<ref refid="gl_8h_1a532ed3612eae8eaed8a7a53ecd7a28f3" kindref="member">GL_LINES</ref>);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1a474f4498ace02f86e7f299eb8bf27da3" kindref="member">glVertex2f</ref>(x,<sp/>y);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1a474f4498ace02f86e7f299eb8bf27da3" kindref="member">glVertex2f</ref>(x,<sp/><sp/>y+h);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1a474f4498ace02f86e7f299eb8bf27da3" kindref="member">glVertex2f</ref>(x,<sp/><sp/>y+h);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1a474f4498ace02f86e7f299eb8bf27da3" kindref="member">glVertex2f</ref>(x+w,<sp/><sp/>y+h);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1a474f4498ace02f86e7f299eb8bf27da3" kindref="member">glVertex2f</ref>(x+w,<sp/><sp/>y+h);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1a474f4498ace02f86e7f299eb8bf27da3" kindref="member">glVertex2f</ref>(x+w,<sp/>y);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1a474f4498ace02f86e7f299eb8bf27da3" kindref="member">glVertex2f</ref>(x+w,<sp/>y);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1a474f4498ace02f86e7f299eb8bf27da3" kindref="member">glVertex2f</ref>(x,<sp/>y);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1abbff207d1fa71b296ff35b149cef7238" kindref="member">glEnd</ref>();</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="comment">/****************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CProjetTetris::DrawFillSquare(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a0cdec8e97a75ee9458b23d152bf962d4" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a74d80fd479c0f6d0153c709949a089ef" kindref="member">y</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dim,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref><sp/>&amp;<ref refid="glext_8h_1a3ea846f998d64f079b86052b6c4193a8" kindref="member">color</ref>)<sp/><sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1acee7240272b34e83a4567a1fb586be99" kindref="member">glColor3f</ref>(color.<ref refid="class_c_vector3_1a06b092361b335f9971323be0ddf759b1" kindref="member" tooltip="Composante X.">x</ref>,color.<ref refid="class_c_vector3_1a20d0b1099477995b22a4f1407e41a7a1" kindref="member" tooltip="Composante Y.">y</ref>,color.<ref refid="class_c_vector3_1a9dd3ce85f6aaa17ccc67bfe50a089b3a" kindref="member" tooltip="Composante Z.">z</ref>);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1a98964453975519f92d6cc59ef77f7436" kindref="member">glBegin</ref>(<ref refid="gl_8h_1a36b428225d54dd9cf2e564e5ada3ad3d" kindref="member">GL_QUADS</ref>);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1a474f4498ace02f86e7f299eb8bf27da3" kindref="member">glVertex2f</ref>(x,<sp/>y);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1a474f4498ace02f86e7f299eb8bf27da3" kindref="member">glVertex2f</ref>(x,<sp/>y+dim);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1a474f4498ace02f86e7f299eb8bf27da3" kindref="member">glVertex2f</ref>(x+dim,<sp/>y+dim);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1a474f4498ace02f86e7f299eb8bf27da3" kindref="member">glVertex2f</ref>(x+dim,<sp/>y);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><ref refid="gl_8h_1abbff207d1fa71b296ff35b149cef7238" kindref="member">glEnd</ref>();</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/cj/workspace/Tetris/src/tetris/CProjetTetris.cpp"/>
+  </compounddef>
+</doxygen>

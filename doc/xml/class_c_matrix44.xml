@@ -1,0 +1,778 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="class_c_matrix44" kind="class" prot="public">
+    <compoundname>CMatrix44</compoundname>
+    <includes refid="_c_matrix44_8h" local="no">CMatrix44.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_c_matrix44_1a0cdad394489ff192554c7f29ca5ae78a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CMatrix44::m[4][4]</definition>
+        <argsstring>[4][4]</argsstring>
+        <name>m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="62" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_matrix44_1a5977be8ee90c365cb2e14be49f749739" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CMatrix44::b[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="63" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_matrix44_1a2b20713cab35009fc2b8441168704cef" prot="public" static="no" mutable="no">
+        <type>union CMatrix44::@0</type>
+        <definition>union CMatrix44::@0 CMatrix44::@1</definition>
+        <argsstring></argsstring>
+        <name>@1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="64"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_c_matrix44_1a18198dedeaf35ac255b368f5c54ceed0" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_c_matrix44" kindref="compound">CMatrix44</ref></type>
+        <definition>CMatrix44 CMatrix44::Identity</definition>
+        <argsstring></argsstring>
+        <name>Identity</name>
+        <initializer>= <ref refid="class_c_matrix44" kindref="compound">CMatrix44</ref>()</initializer>
+        <briefdescription>
+<para>identity transformation </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="228" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_matrix44_1a55dd2245b2ee3abecae6834c07daa739" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMatrix44::CMatrix44</definition>
+        <argsstring>()</argsstring>
+        <name>CMatrix44</name>
+        <briefdescription>
+<para>default constructor, init matrix to identity </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="73" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.h" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1a584fe9facfac7807923a1f1870a3d53f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CMatrix44::CMatrix44</definition>
+        <argsstring>(float *buff)</argsstring>
+        <name>CMatrix44</name>
+        <param>
+          <type>float *</type>
+          <declname>buff</declname>
+        </param>
+        <briefdescription>
+<para>constructor, init matrix with a buffer of values </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of values </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="81" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.cpp" bodystart="31" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1a39a96a7aa171ad973d9cc8d195c9ad4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CMatrix44::CMatrix44</definition>
+        <argsstring>(const CVector3 &amp;x, const CVector3 &amp;y, const CVector3 &amp;z)</argsstring>
+        <name>CMatrix44</name>
+        <param>
+          <type>const <ref refid="class_c_vector3" kindref="compound">CVector3</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_c_vector3" kindref="compound">CVector3</ref> &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_c_vector3" kindref="compound">CVector3</ref> &amp;</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>constructor, init matrix with 3 axes </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>axis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>axis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>axis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>3 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="89" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.cpp" bodystart="20" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1a7d0859d97ff67c23e7767445f7f6b759" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void CMatrix44::SetTranslation</definition>
+        <argsstring>(const CVector3 &amp;vec)</argsstring>
+        <name>SetTranslation</name>
+        <param>
+          <type>const <ref refid="class_c_vector3" kindref="compound">CVector3</ref> &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>set translation </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>translation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="99" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.h" bodystart="265" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1a95eed7e918c9a0acac1615cc9059908e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void CMatrix44::SetTranslation</definition>
+        <argsstring>(const CVector4 &amp;vec)</argsstring>
+        <name>SetTranslation</name>
+        <param>
+          <type>const <ref refid="class_c_vector4" kindref="compound">CVector4</ref> &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="100" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.h" bodystart="272" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1a7fe9f37064ceb07e41f0d34f14340ba2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void CMatrix44::Translate</definition>
+        <argsstring>(const CVector3 &amp;vec)</argsstring>
+        <name>Translate</name>
+        <param>
+          <type>const <ref refid="class_c_vector3" kindref="compound">CVector3</ref> &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>Add translation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>translation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="106" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.h" bodystart="280" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1a57162e8484192db5286f7cb03bd065a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void CMatrix44::Translate</definition>
+        <argsstring>(const CVector4 &amp;vec)</argsstring>
+        <name>Translate</name>
+        <param>
+          <type>const <ref refid="class_c_vector4" kindref="compound">CVector4</ref> &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="107" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.h" bodystart="287" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1aa849d2b509dd5cc56ec6563822240c84" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_vector3" kindref="compound">CVector3</ref></type>
+        <definition>CVector3 CMatrix44::GetTranslation</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTranslation</name>
+        <briefdescription>
+<para>get translation </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>translation </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="113" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.h" bodystart="295" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1aae42214fe24fb05be617b27caac9d66b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_c_vector3" kindref="compound">CVector3</ref></type>
+        <definition>CVector3 CMatrix44::GetScale</definition>
+        <argsstring>()</argsstring>
+        <name>GetScale</name>
+        <briefdescription>
+<para>get scale </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>scale </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="119" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.cpp" bodystart="374" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1a0b8ee58e05352544361280918f2ca235" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_vector3" kindref="compound">CVector3</ref></type>
+        <definition>CVector3 CMatrix44::GetXAxis</definition>
+        <argsstring>()</argsstring>
+        <name>GetXAxis</name>
+        <briefdescription>
+<para>get axis x,y,z </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>axis </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="126" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.h" bodystart="125" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1abcb2267e652096e7d83ce98665f1de6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_vector3" kindref="compound">CVector3</ref></type>
+        <definition>CVector3 CMatrix44::GetYAxis</definition>
+        <argsstring>()</argsstring>
+        <name>GetYAxis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="130" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.h" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1a8d98f62457193075af83da52c6f8d884" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_vector3" kindref="compound">CVector3</ref></type>
+        <definition>CVector3 CMatrix44::GetZAxis</definition>
+        <argsstring>()</argsstring>
+        <name>GetZAxis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="134" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.h" bodystart="133" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1a895ba1d9a64183cee70eedddce95c8b8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const float &amp;</type>
+        <definition>const float &amp; CMatrix44::operator()</definition>
+        <argsstring>(unsigned int row, unsigned int col) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+<para>operator to get a value into matrix </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>translation </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="142" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.h" bodystart="303" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1a9c7447aea10dbe50b5d08fc14ee855ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float &amp;</type>
+        <definition>float &amp; CMatrix44::operator()</definition>
+        <argsstring>(unsigned int row, unsigned int col)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="143" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.h" bodystart="309" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1a8b7503251ee013f9b124bc9c7368e6c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float CMatrix44::det</definition>
+        <argsstring>()</argsstring>
+        <name>det</name>
+        <briefdescription>
+<para>get determinant of matrix </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float of determinant </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="149" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.cpp" bodystart="176" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1abeff331b137cedd256d6758b1cb11c4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void CMatrix44::invert</definition>
+        <argsstring>()</argsstring>
+        <name>invert</name>
+        <briefdescription>
+<para>invert the matrix </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="154" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.cpp" bodystart="202" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1adfef3f6ae63043cd713e379bc7a1cfdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void CMatrix44::transpose</definition>
+        <argsstring>()</argsstring>
+        <name>transpose</name>
+        <briefdescription>
+<para>invert the matrix </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="159" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.cpp" bodystart="190" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1a4ded0d0824852b2aff8af3a3132a31d2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_c_matrix44" kindref="compound">CMatrix44</ref></type>
+        <definition>CMatrix44 CMatrix44::operator*</definition>
+        <argsstring>(const CMatrix44 &amp;m) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="class_c_matrix44" kindref="compound">CMatrix44</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>operator to multiply current matrix with other matrix </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>result matrinx </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="165" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.cpp" bodystart="42" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1a41c31a6bbcc11ba8d3e915eb889577bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_c_vector4" kindref="compound">CVector4</ref></type>
+        <definition>CVector4 CMatrix44::operator*</definition>
+        <argsstring>(const CVector4 &amp;v) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="class_c_vector4" kindref="compound">CVector4</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>operator to multiply current matrix with other matrix </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>result matrinx </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="171" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.cpp" bodystart="70" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1ad792d8110c173872084afd817c2f7045" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_c_vector3" kindref="compound">CVector3</ref></type>
+        <definition>CVector3 CMatrix44::operator*</definition>
+        <argsstring>(const CVector3 &amp;v) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="class_c_vector3" kindref="compound">CVector3</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>operator to multiply current matrix with other matrix </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>result matrinx </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="177" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.cpp" bodystart="79" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1a7af596a54cb4e3163915ca1b66a3d0b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void CMatrix44::Perspective</definition>
+        <argsstring>(float fovy, float aspect, float zNear, float zFar)</argsstring>
+        <name>Perspective</name>
+        <param>
+          <type>float</type>
+          <declname>fovy</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>aspect</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>zNear</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>zFar</declname>
+        </param>
+        <briefdescription>
+<para>specifies a viewing frustum into the world coordinate system (<ulink url="http://www.opengl.org/sdk/docs/man/xhtml/gluPerspective.xml">http://www.opengl.org/sdk/docs/man/xhtml/gluPerspective.xml</ulink>) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Specifies</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the field of view angle, in degrees, in the y direction. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Specifies</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the aspect ratio that determines the field of view in the x direction. The aspect ratio is the ratio of x (width) to y (height) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Specifies</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the distance from the viewer to the near clipping plane (always positive) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Specifies</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the distance from the viewer to the far clipping plane (always positive) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="191" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.cpp" bodystart="284" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1a4f3c80947a24bb83d74ad17c01bea491" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void CMatrix44::LookAt</definition>
+        <argsstring>(const CVector3 &amp;eye, const CVector3 &amp;center, const CVector3 &amp;up)</argsstring>
+        <name>LookAt</name>
+        <param>
+          <type>const <ref refid="class_c_vector3" kindref="compound">CVector3</ref> &amp;</type>
+          <declname>eye</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_c_vector3" kindref="compound">CVector3</ref> &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_c_vector3" kindref="compound">CVector3</ref> &amp;</type>
+          <declname>up</declname>
+        </param>
+        <briefdescription>
+<para>creates a viewing matrix derived from an eye point (<ulink url="http://www.opengl.org/sdk/docs/man/xhtml/gluLookAt.xml">http://www.opengl.org/sdk/docs/man/xhtml/gluLookAt.xml</ulink>) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Specifies</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the position of the eye point. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Specifies</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the position of the reference point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Specifies</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the direction of the up vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="200" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.cpp" bodystart="319" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1ae378f7ef8a3a121bd598329b23f271fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void CMatrix44::Orthographic</definition>
+        <argsstring>(float left, float right, float bottom, float top, float nearVal, float farVal)</argsstring>
+        <name>Orthographic</name>
+        <param>
+          <type>float</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>top</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>nearVal</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>farVal</declname>
+        </param>
+        <briefdescription>
+<para>creates a Orthographic (<ulink url="http://www.opengl.org/sdk/docs/man/xhtml/glOrtho.xml">http://www.opengl.org/sdk/docs/man/xhtml/glOrtho.xml</ulink>) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Specify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the coordinates for the left and right vertical clipping planes </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Specify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the coordinates for the bottom and top horizontal clipping planes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Specify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the distances to the nearer and farther depth clipping planes. These values are negative if the plane is to be behind the viewer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="210" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.cpp" bodystart="350" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1ae4d2eb3a41998637b2f1bd02e3b7b0cc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMatrix44::operator==</definition>
+        <argsstring>(const CMatrix44 &amp;t) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="class_c_matrix44" kindref="compound">CMatrix44</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="215" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.h" bodystart="214" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1a7a652abf026c230ae3a03781070d5360" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMatrix44::operator!=</definition>
+        <argsstring>(const CMatrix44 &amp;t) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="class_c_matrix44" kindref="compound">CMatrix44</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="224" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.h" bodystart="223" bodyend="226"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_c_matrix44_1ade53879722c73f788672f122ce79384d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_c_matrix44" kindref="compound">CMatrix44</ref></type>
+        <definition>CMatrix44 CMatrix44::CreatePerspective</definition>
+        <argsstring>(float fovy, float aspect, float zNear, float zFar)</argsstring>
+        <name>CreatePerspective</name>
+        <param>
+          <type>float</type>
+          <declname>fovy</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>aspect</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>zNear</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>zFar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="192" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.cpp" bodystart="306" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1acb0ca1cac92022effb2781b5e56c532a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_c_matrix44" kindref="compound">CMatrix44</ref></type>
+        <definition>CMatrix44 CMatrix44::CreateLookAt</definition>
+        <argsstring>(const CVector3 &amp;eye, const CVector3 &amp;center, const CVector3 &amp;up)</argsstring>
+        <name>CreateLookAt</name>
+        <param>
+          <type>const <ref refid="class_c_vector3" kindref="compound">CVector3</ref> &amp;</type>
+          <declname>eye</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_c_vector3" kindref="compound">CVector3</ref> &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_c_vector3" kindref="compound">CVector3</ref> &amp;</type>
+          <declname>up</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="201" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.cpp" bodystart="342" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_matrix44_1a9300c08531de617b22d861687cfe0ea6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_c_matrix44" kindref="compound">CMatrix44</ref></type>
+        <definition>CMatrix44 CMatrix44::CreateOrthographic</definition>
+        <argsstring>(float left, float right, float bottom, float top, float nearVal, float farVal)</argsstring>
+        <name>CreateOrthographic</name>
+        <param>
+          <type>float</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>top</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>nearVal</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>farVal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="211" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.cpp" bodystart="366" bodyend="371"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>[SmrCoreMath] define float 4*4 Matrix </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="134">
+        <label>CMatrix44</label>
+        <link refid="class_c_matrix44"/>
+        <childnode refid="134" relation="usage">
+          <edgelabel>Identity</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="57" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.h" bodystart="56" bodyend="229"/>
+    <listofallmembers>
+      <member refid="class_c_matrix44_1a5977be8ee90c365cb2e14be49f749739" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>b</name></member>
+      <member refid="class_c_matrix44_1a55dd2245b2ee3abecae6834c07daa739" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>CMatrix44</name></member>
+      <member refid="class_c_matrix44_1a584fe9facfac7807923a1f1870a3d53f" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>CMatrix44</name></member>
+      <member refid="class_c_matrix44_1a39a96a7aa171ad973d9cc8d195c9ad4e" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>CMatrix44</name></member>
+      <member refid="class_c_matrix44_1acb0ca1cac92022effb2781b5e56c532a" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>CreateLookAt</name></member>
+      <member refid="class_c_matrix44_1a9300c08531de617b22d861687cfe0ea6" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>CreateOrthographic</name></member>
+      <member refid="class_c_matrix44_1ade53879722c73f788672f122ce79384d" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>CreatePerspective</name></member>
+      <member refid="class_c_matrix44_1a8b7503251ee013f9b124bc9c7368e6c0" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>det</name></member>
+      <member refid="class_c_matrix44_1aae42214fe24fb05be617b27caac9d66b" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>GetScale</name></member>
+      <member refid="class_c_matrix44_1aa849d2b509dd5cc56ec6563822240c84" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>GetTranslation</name></member>
+      <member refid="class_c_matrix44_1a0b8ee58e05352544361280918f2ca235" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>GetXAxis</name></member>
+      <member refid="class_c_matrix44_1abcb2267e652096e7d83ce98665f1de6a" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>GetYAxis</name></member>
+      <member refid="class_c_matrix44_1a8d98f62457193075af83da52c6f8d884" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>GetZAxis</name></member>
+      <member refid="class_c_matrix44_1a18198dedeaf35ac255b368f5c54ceed0" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>Identity</name></member>
+      <member refid="class_c_matrix44_1abeff331b137cedd256d6758b1cb11c4f" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>invert</name></member>
+      <member refid="class_c_matrix44_1a4f3c80947a24bb83d74ad17c01bea491" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>LookAt</name></member>
+      <member refid="class_c_matrix44_1a0cdad394489ff192554c7f29ca5ae78a" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>m</name></member>
+      <member refid="class_c_matrix44_1a7a652abf026c230ae3a03781070d5360" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>operator!=</name></member>
+      <member refid="class_c_matrix44_1a895ba1d9a64183cee70eedddce95c8b8" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>operator()</name></member>
+      <member refid="class_c_matrix44_1a9c7447aea10dbe50b5d08fc14ee855ea" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>operator()</name></member>
+      <member refid="class_c_matrix44_1a4ded0d0824852b2aff8af3a3132a31d2" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>operator*</name></member>
+      <member refid="class_c_matrix44_1a41c31a6bbcc11ba8d3e915eb889577bc" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>operator*</name></member>
+      <member refid="class_c_matrix44_1ad792d8110c173872084afd817c2f7045" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>operator*</name></member>
+      <member refid="class_c_matrix44_1ae4d2eb3a41998637b2f1bd02e3b7b0cc" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>operator==</name></member>
+      <member refid="class_c_matrix44_1ae378f7ef8a3a121bd598329b23f271fb" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>Orthographic</name></member>
+      <member refid="class_c_matrix44_1a7af596a54cb4e3163915ca1b66a3d0b5" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>Perspective</name></member>
+      <member refid="class_c_matrix44_1a7d0859d97ff67c23e7767445f7f6b759" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>SetTranslation</name></member>
+      <member refid="class_c_matrix44_1a95eed7e918c9a0acac1615cc9059908e" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>SetTranslation</name></member>
+      <member refid="class_c_matrix44_1a7fe9f37064ceb07e41f0d34f14340ba2" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>Translate</name></member>
+      <member refid="class_c_matrix44_1a57162e8484192db5286f7cb03bd065a6" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>Translate</name></member>
+      <member refid="class_c_matrix44_1adfef3f6ae63043cd713e379bc7a1cfdd" prot="public" virt="non-virtual"><scope>CMatrix44</scope><name>transpose</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

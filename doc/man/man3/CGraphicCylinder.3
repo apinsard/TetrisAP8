@@ -1,0 +1,51 @@
+.TH "CGraphicCylinder" 3 "Vendredi Février 21 2014" "Version alpha" "Tetris" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGraphicCylinder \- 
+.PP
+Noeud graphique repr�sentant un cylindre\&. Le cylindre est d�crit par les rayons de lsa base et de son sommet, ainsi que par sa hauteur\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CRenderer\&.h>\fP
+.SS "Fonctions membres publiques statiques"
+
+.in +1c
+.ti -1c
+.RI "static \fBvoid\fP \fBDraw\fP (float radius, float \fBx\fP, float \fBy\fP, float \fBz\fP)"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+Noeud graphique repr�sentant un cylindre\&. Le cylindre est d�crit par les rayons de lsa base et de son sommet, ainsi que par sa hauteur\&. 
+
+\fBAvertissement:\fP
+.RS 4
+: La hauteur se situe sur l'axe des Z\&. 
+.RE
+.PP
+
+.PP
+Définition à la ligne 104 du fichier CRenderer\&.h\&.
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "\fBvoid\fP CGraphicCylinder::Draw (floatradius, floatx, floaty, floatz)\fC [static]\fP"
+Gestion de l'affichage openGL 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIradiues\fP : le rayon du cylindre 
+.br
+\fIx,y,z\fP : extremite du rayon 
+.RE
+.PP
+
+.PP
+Définition à la ligne 258 du fichier CRenderer\&.cpp\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Tetris à partir du code source\&.

@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_tetris_utils_8h" kind="file">
+    <compoundname>TetrisUtils.h</compoundname>
+    <includedby refid="_c_tetris_game_8h" local="yes">/home/cj/workspace/Tetris/src/tetris/CTetrisGame.h</includedby>
+    <invincdepgraph>
+      <node id="2035">
+        <label>/home/cj/workspace/Tetris/src/tetris/CTetrisGame.cpp</label>
+        <link refid="_c_tetris_game_8cpp"/>
+      </node>
+      <node id="2020">
+        <label>/home/cj/workspace/Tetris/src/test/testCOPiece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_o_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="2021" relation="include">
+        </childnode>
+        <childnode refid="2022" relation="include">
+        </childnode>
+      </node>
+      <node id="2009">
+        <label>/home/cj/workspace/Tetris/src/tetris/TetrisUtils.h</label>
+        <link refid="TetrisUtils.h"/>
+        <childnode refid="2010" relation="include">
+        </childnode>
+      </node>
+      <node id="2022">
+        <label>/home/cj/workspace/Tetris/src/test/testCOPiece.cpp</label>
+        <link refid="test_c_o_piece_8cpp"/>
+      </node>
+      <node id="2025">
+        <label>/home/cj/workspace/Tetris/src/test/testCTPiece.cpp</label>
+        <link refid="test_c_t_piece_8cpp"/>
+      </node>
+      <node id="2026">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ1Piece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_z1_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="2027" relation="include">
+        </childnode>
+        <childnode refid="2028" relation="include">
+        </childnode>
+      </node>
+      <node id="2014">
+        <label>/home/cj/workspace/Tetris/src/test/testCL1Piece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_l1_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="2015" relation="include">
+        </childnode>
+        <childnode refid="2016" relation="include">
+        </childnode>
+      </node>
+      <node id="2032">
+        <label>/home/cj/workspace/Tetris/src/tetris/CProjetTetris.h</label>
+        <link refid="_c_projet_tetris_8h"/>
+        <childnode refid="2033" relation="include">
+        </childnode>
+        <childnode refid="2034" relation="include">
+        </childnode>
+      </node>
+      <node id="2029">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ2Piece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_z2_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="2030" relation="include">
+        </childnode>
+        <childnode refid="2031" relation="include">
+        </childnode>
+      </node>
+      <node id="2033">
+        <label>/home/cj/workspace/Tetris/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="2034">
+        <label>/home/cj/workspace/Tetris/src/tetris/CProjetTetris.cpp</label>
+        <link refid="_c_projet_tetris_8cpp"/>
+      </node>
+      <node id="2011">
+        <label>/home/cj/workspace/Tetris/src/test/testCIPiece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_i_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="2012" relation="include">
+        </childnode>
+        <childnode refid="2013" relation="include">
+        </childnode>
+      </node>
+      <node id="2017">
+        <label>/home/cj/workspace/Tetris/src/test/testCL2Piece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_l2_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="2018" relation="include">
+        </childnode>
+        <childnode refid="2019" relation="include">
+        </childnode>
+      </node>
+      <node id="2013">
+        <label>/home/cj/workspace/Tetris/src/test/testCIPiece.cpp</label>
+        <link refid="test_c_i_piece_8cpp"/>
+      </node>
+      <node id="2016">
+        <label>/home/cj/workspace/Tetris/src/test/testCL1Piece.cpp</label>
+        <link refid="test_c_l1_piece_8cpp"/>
+      </node>
+      <node id="2028">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ1Piece.cpp</label>
+        <link refid="test_c_z1_piece_8cpp"/>
+      </node>
+      <node id="2021">
+        <label>/home/cj/workspace/Tetris/src/test/testCOPiece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_o_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="2019">
+        <label>/home/cj/workspace/Tetris/src/test/testCL2Piece.cpp</label>
+        <link refid="test_c_l2_piece_8cpp"/>
+      </node>
+      <node id="2010">
+        <label>/home/cj/workspace/Tetris/src/tetris/CTetrisGame.h</label>
+        <link refid="_c_tetris_game_8h"/>
+        <childnode refid="2011" relation="include">
+        </childnode>
+        <childnode refid="2014" relation="include">
+        </childnode>
+        <childnode refid="2017" relation="include">
+        </childnode>
+        <childnode refid="2020" relation="include">
+        </childnode>
+        <childnode refid="2023" relation="include">
+        </childnode>
+        <childnode refid="2026" relation="include">
+        </childnode>
+        <childnode refid="2029" relation="include">
+        </childnode>
+        <childnode refid="2032" relation="include">
+        </childnode>
+        <childnode refid="2035" relation="include">
+        </childnode>
+      </node>
+      <node id="2031">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ2Piece.cpp</label>
+        <link refid="test_c_z2_piece_8cpp"/>
+      </node>
+      <node id="2030">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ2Piece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_z2_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="2012">
+        <label>/home/cj/workspace/Tetris/src/test/testCIPiece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_i_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="2027">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ1Piece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_z1_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="2018">
+        <label>/home/cj/workspace/Tetris/src/test/testCL2Piece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_l2_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="2024">
+        <label>/home/cj/workspace/Tetris/src/test/testCTPiece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_t_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="2015">
+        <label>/home/cj/workspace/Tetris/src/test/testCL1Piece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_l1_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="2023">
+        <label>/home/cj/workspace/Tetris/src/test/testCTPiece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_t_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="2024" relation="include">
+        </childnode>
+        <childnode refid="2025" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_tetris_utils_8h_1a46d34b374b75fd6743e3651b796168f5" prot="public" static="no">
+        <name>__TETRIS_UTILS_H__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/TetrisUtils.h" line="2" bodyfile="/home/cj/workspace/Tetris/src/tetris/TetrisUtils.h" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_tetris_utils_8h_1a9df0cc58e9feb5f773d9664dcc978ea5" prot="public" static="no">
+        <name>WIDTH_BOARD</name>
+        <initializer>10</initializer>
+        <briefdescription>
+<para>largeur de la grille du jeu </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/TetrisUtils.h" line="5" bodyfile="/home/cj/workspace/Tetris/src/tetris/TetrisUtils.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_tetris_utils_8h_1acf0268c13877ff90d1f4ec3e5326c369" prot="public" static="no">
+        <name>HEIGHT_BOARD</name>
+        <initializer>20</initializer>
+        <briefdescription>
+<para>hauteur de la grille du jeu </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/TetrisUtils.h" line="6" bodyfile="/home/cj/workspace/Tetris/src/tetris/TetrisUtils.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_tetris_utils_8h_1a87d3da0dbc66a688633b8b54236cdaca" prot="public" static="no">
+        <name>POSX_BOARD</name>
+        <initializer>300</initializer>
+        <briefdescription>
+<para>position en X de la grille du jeu dans la fenêtre GLUT </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/TetrisUtils.h" line="7" bodyfile="/home/cj/workspace/Tetris/src/tetris/TetrisUtils.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_tetris_utils_8h_1a224b8c50f38cfc135c907bf36ad3a45a" prot="public" static="no">
+        <name>POSY_BOARD</name>
+        <initializer>100</initializer>
+        <briefdescription>
+<para>position en Y de la grille du jeu dans la fenêtre GLUT </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/TetrisUtils.h" line="8" bodyfile="/home/cj/workspace/Tetris/src/tetris/TetrisUtils.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_tetris_utils_8h_1ae1a59328c9b22cbb12ac88999ba0fcd3" prot="public" static="no">
+        <name>DIM_CASE</name>
+        <initializer>17.0</initializer>
+        <briefdescription>
+<para>taille d&apos;une case de la grille du jeu (carrée) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/TetrisUtils.h" line="9" bodyfile="/home/cj/workspace/Tetris/src/tetris/TetrisUtils.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8" prot="public" static="no">
+        <name>PieceAction</name>
+        <enumvalue id="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8a84380f7c056a1d381a3b1889a48109d9" prot="public">
+          <name>PA_RotateRight</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8a27ec28fc72ef8c4d4c17654dd902ff69" prot="public">
+          <name>PA_RotateLeft</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8adcec83af27ecc2ef0102fc7f50259e2c" prot="public">
+          <name>PA_MoveRight</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8a5e5493ef9fa9bf628f739f0c6b4f8d71" prot="public">
+          <name>PA_MoveLeft</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8adf2e2d247e618ea931d6e4ad7bed7464" prot="public">
+          <name>PA_MoveBottom</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8aa1205ee48206a302e6bfe972ce68927f" prot="public">
+          <name>PA_MoveBottom2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Actions possibles par l&apos;utilisateur. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/TetrisUtils.h" line="15" bodyfile="/home/cj/workspace/Tetris/src/tetris/TetrisUtils.h" bodystart="14" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="enum" id="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435df" prot="public" static="no">
+        <name>ActionResult</name>
+        <enumvalue id="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435dfaba20083622789a2ed8fe08664e5605c1" prot="public">
+          <name>AR_Ok</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435dfa1f42fecf7c4f8a62b84008002163f1a4" prot="public">
+          <name>AR_Collision</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435dfaa4933e0dea9d95e26410e76c1d9f7456" prot="public">
+          <name>AR_GameOver</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Etat du jeu après une action (update, modification de position ou orientation piece) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/TetrisUtils.h" line="28" bodyfile="/home/cj/workspace/Tetris/src/tetris/TetrisUtils.h" bodystart="27" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__TETRIS_UTILS_H__<sp/><sp/>//<sp/>routine<sp/>qui<sp/>sert<sp/>à<sp/>pas<sp/>inclure<sp/>2<sp/>fois<sp/>le<sp/>même<sp/>fichier</highlight></codeline>
+<codeline lineno="2" refid="_tetris_utils_8h_1a46d34b374b75fd6743e3651b796168f5" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__TETRIS_UTILS_H__<sp/><sp/>//</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="_tetris_utils_8h_1a9df0cc58e9feb5f773d9664dcc978ea5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WIDTH_BOARD<sp/><sp/>10<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="6" refid="_tetris_utils_8h_1acf0268c13877ff90d1f4ec3e5326c369" refkind="member"><highlight class="preprocessor">#define<sp/>HEIGHT_BOARD<sp/><sp/>20<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="7" refid="_tetris_utils_8h_1a87d3da0dbc66a688633b8b54236cdaca" refkind="member"><highlight class="preprocessor">#define<sp/>POSX_BOARD<sp/><sp/>300<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="8" refid="_tetris_utils_8h_1a224b8c50f38cfc135c907bf36ad3a45a" refkind="member"><highlight class="preprocessor">#define<sp/>POSY_BOARD<sp/><sp/>100<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="9" refid="_tetris_utils_8h_1ae1a59328c9b22cbb12ac88999ba0fcd3" refkind="member"><highlight class="preprocessor">#define<sp/>DIM_CASE<sp/><sp/>17.0<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="14" refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8" kindref="member" tooltip="Actions possibles par l&amp;#39;utilisateur.">PieceAction</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16" refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8a84380f7c056a1d381a3b1889a48109d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8a84380f7c056a1d381a3b1889a48109d9" kindref="member">PA_RotateRight</ref>,<sp/></highlight><highlight class="comment">//<sp/>rotation<sp/>horlogique</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8a27ec28fc72ef8c4d4c17654dd902ff69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8a27ec28fc72ef8c4d4c17654dd902ff69" kindref="member">PA_RotateLeft</ref>,<sp/><sp/></highlight><highlight class="comment">//<sp/>rotation<sp/>anti-horlogique</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8adcec83af27ecc2ef0102fc7f50259e2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8adcec83af27ecc2ef0102fc7f50259e2c" kindref="member">PA_MoveRight</ref>,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>déplacement<sp/>à<sp/>droite</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8a5e5493ef9fa9bf628f739f0c6b4f8d71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8a5e5493ef9fa9bf628f739f0c6b4f8d71" kindref="member">PA_MoveLeft</ref>,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>déplacement<sp/>à<sp/>gauche</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8adf2e2d247e618ea931d6e4ad7bed7464" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8adf2e2d247e618ea931d6e4ad7bed7464" kindref="member">PA_MoveBottom</ref>,<sp/><sp/></highlight><highlight class="comment">//<sp/>déplacement<sp/>vers<sp/>le<sp/>bas</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8aa1205ee48206a302e6bfe972ce68927f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8aa1205ee48206a302e6bfe972ce68927f" kindref="member">PA_MoveBottom2</ref><sp/><sp/></highlight><highlight class="comment">//<sp/>déplacement<sp/>rapide<sp/>vers<sp/>le<sp/>bas</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435df" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435df" kindref="member" tooltip="Etat du jeu après une action (update, modification de position ou orientation piece)">ActionResult</ref></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29" refid="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435dfaba20083622789a2ed8fe08664e5605c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435dfaba20083622789a2ed8fe08664e5605c1" kindref="member">AR_Ok</ref>,</highlight></codeline>
+<codeline lineno="30" refid="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435dfa1f42fecf7c4f8a62b84008002163f1a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435dfa1f42fecf7c4f8a62b84008002163f1a4" kindref="member">AR_Collision</ref>,</highlight></codeline>
+<codeline lineno="31" refid="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435dfaa4933e0dea9d95e26410e76c1d9f7456" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435dfaa4933e0dea9d95e26410e76c1d9f7456" kindref="member">AR_GameOver</ref></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__TETRIS_UTILS_H__<sp/>fin<sp/>de<sp/>la<sp/>routine</highlight></codeline>
+    </programlisting>
+    <location file="/home/cj/workspace/Tetris/src/tetris/TetrisUtils.h"/>
+  </compounddef>
+</doxygen>

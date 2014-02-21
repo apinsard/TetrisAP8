@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_33fdd4cdb1b96634eacc7402fd786645" kind="dir">
+    <compoundname>/home/cj/workspace/Tetris/src/tetris</compoundname>
+    <innerfile refid="_c_i_piece_8cpp">CIPiece.cpp</innerfile>
+    <innerfile refid="_c_i_piece_8h">CIPiece.h</innerfile>
+    <innerfile refid="_c_l1_piece_8cpp">CL1Piece.cpp</innerfile>
+    <innerfile refid="_c_l1_piece_8h">CL1Piece.h</innerfile>
+    <innerfile refid="_c_l2_piece_8cpp">CL2Piece.cpp</innerfile>
+    <innerfile refid="_c_l2_piece_8h">CL2Piece.h</innerfile>
+    <innerfile refid="_c_o_piece_8cpp">COPiece.cpp</innerfile>
+    <innerfile refid="_c_o_piece_8h">COPiece.h</innerfile>
+    <innerfile refid="_c_piece_abstract_8cpp">CPieceAbstract.cpp</innerfile>
+    <innerfile refid="_c_piece_abstract_8h">CPieceAbstract.h</innerfile>
+    <innerfile refid="_c_projet_tetris_8cpp">CProjetTetris.cpp</innerfile>
+    <innerfile refid="_c_projet_tetris_8h">CProjetTetris.h</innerfile>
+    <innerfile refid="_c_randomizer_8cpp">CRandomizer.cpp</innerfile>
+    <innerfile refid="_c_randomizer_8h">CRandomizer.h</innerfile>
+    <innerfile refid="_c_tetris_game_8cpp">CTetrisGame.cpp</innerfile>
+    <innerfile refid="_c_tetris_game_8h">CTetrisGame.h</innerfile>
+    <innerfile refid="_c_t_game_table_8cpp">CTGameTable.cpp</innerfile>
+    <innerfile refid="_c_t_game_table_8h">CTGameTable.h</innerfile>
+    <innerfile refid="_c_t_piece_8cpp">CTPiece.cpp</innerfile>
+    <innerfile refid="_c_t_piece_8h">CTPiece.h</innerfile>
+    <innerfile refid="_c_z1_piece_8cpp">CZ1Piece.cpp</innerfile>
+    <innerfile refid="_c_z1_piece_8h">CZ1Piece.h</innerfile>
+    <innerfile refid="_c_z2_piece_8cpp">CZ2Piece.cpp</innerfile>
+    <innerfile refid="_c_z2_piece_8h">CZ2Piece.h</innerfile>
+    <innerfile refid="_tetris_utils_8h">TetrisUtils.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/cj/workspace/Tetris/src/tetris/"/>
+  </compounddef>
+</doxygen>

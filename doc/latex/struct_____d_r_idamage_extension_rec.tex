@@ -1,0 +1,60 @@
+\hypertarget{struct_____d_r_idamage_extension_rec}{\section{Référence de la structure \-\_\-\-\_\-\-D\-R\-Idamage\-Extension\-Rec}
+\label{struct_____d_r_idamage_extension_rec}\index{\-\_\-\-\_\-\-D\-R\-Idamage\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Idamage\-Extension\-Rec}}
+}
+
+
+{\ttfamily \#include $<$dri\-\_\-interface.\-h$>$}
+
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\-\_\-\-\_\-\-D\-R\-Iextension} \hyperlink{struct_____d_r_idamage_extension_rec_a0c243c58e0f74a72a45e8397f78407fc}{base}
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void}($\ast$ \hyperlink{struct_____d_r_idamage_extension_rec_a2ca2f6a54c06f98dbaa1681d0d0e489f}{report\-Damage} )(\hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\-\_\-\-\_\-\-D\-R\-Idrawable} $\ast$draw, int \hyperlink{gl_8h_a0cdec8e97a75ee9458b23d152bf962d4}{x}, int \hyperlink{gl_8h_a74d80fd479c0f6d0153c709949a089ef}{y}, drm\-\_\-clip\-\_\-rect\-\_\-t $\ast$rects, int num\-\_\-rects, \hyperlink{gl_8h_aea1419aa8aec5854bd9807b45171029d}{G\-Lboolean} front\-\_\-buffer, \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} $\ast$loader\-Private)
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+
+
+Définition à la ligne 384 du fichier dri\-\_\-interface.\-h.
+
+
+
+\subsection{Documentation des données membres}
+\hypertarget{struct_____d_r_idamage_extension_rec_a0c243c58e0f74a72a45e8397f78407fc}{\index{\-\_\-\-\_\-\-D\-R\-Idamage\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Idamage\-Extension\-Rec}!base@{base}}
+\index{base@{base}!__DRIdamageExtensionRec@{\-\_\-\-\_\-\-D\-R\-Idamage\-Extension\-Rec}}
+\subsubsection[{base}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-\_\-\-\_\-\-D\-R\-Iextension} \-\_\-\-\_\-\-D\-R\-Idamage\-Extension\-Rec\-::base}}\label{struct_____d_r_idamage_extension_rec_a0c243c58e0f74a72a45e8397f78407fc}
+
+
+Définition à la ligne 385 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_idamage_extension_rec_a2ca2f6a54c06f98dbaa1681d0d0e489f}{\index{\-\_\-\-\_\-\-D\-R\-Idamage\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Idamage\-Extension\-Rec}!report\-Damage@{report\-Damage}}
+\index{report\-Damage@{report\-Damage}!__DRIdamageExtensionRec@{\-\_\-\-\_\-\-D\-R\-Idamage\-Extension\-Rec}}
+\subsubsection[{report\-Damage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void}($\ast$ \-\_\-\-\_\-\-D\-R\-Idamage\-Extension\-Rec\-::report\-Damage)({\bf \-\_\-\-\_\-\-D\-R\-Idrawable} $\ast$draw, int {\bf x}, int {\bf y}, drm\-\_\-clip\-\_\-rect\-\_\-t $\ast$rects, int num\-\_\-rects, {\bf G\-Lboolean} front\-\_\-buffer, {\bf void} $\ast$loader\-Private)}}\label{struct_____d_r_idamage_extension_rec_a2ca2f6a54c06f98dbaa1681d0d0e489f}
+Reports areas of the given drawable which have been modified by the driver.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em drawable} & which the drawing was done to. \\
+\hline
+{\em rects} & rectangles affected, with the drawable origin as the origin. \\
+\hline
+{\em x} & X offset of the drawable within the screen (used in the front\-\_\-buffer case) \\
+\hline
+{\em y} & Y offset of the drawable within the screen. \\
+\hline
+{\em front\-\_\-buffer} & boolean flag for whether the drawing to the drawable was actually done directly to the front buffer (instead of backing storage, for example) \\
+\hline
+{\em loader\-Private} & the data passed in at create\-New\-Drawable time \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 402 du fichier dri\-\_\-interface.\-h.
+
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+/home/cj/workspace/\-Tetris/src/glut/internal/\hyperlink{dri__interface_8h}{dri\-\_\-interface.\-h}\end{DoxyCompactItemize}

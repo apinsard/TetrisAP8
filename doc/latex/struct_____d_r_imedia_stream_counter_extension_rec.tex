@@ -1,0 +1,52 @@
+\hypertarget{struct_____d_r_imedia_stream_counter_extension_rec}{\section{Référence de la structure \-\_\-\-\_\-\-D\-R\-Imedia\-Stream\-Counter\-Extension\-Rec}
+\label{struct_____d_r_imedia_stream_counter_extension_rec}\index{\-\_\-\-\_\-\-D\-R\-Imedia\-Stream\-Counter\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Imedia\-Stream\-Counter\-Extension\-Rec}}
+}
+
+
+{\ttfamily \#include $<$dri\-\_\-interface.\-h$>$}
+
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\-\_\-\-\_\-\-D\-R\-Iextension} \hyperlink{struct_____d_r_imedia_stream_counter_extension_rec_a042c5ddf263000434a369b5da09efacc}{base}
+\item 
+int($\ast$ \hyperlink{struct_____d_r_imedia_stream_counter_extension_rec_aeda6d64b0682f087ddbac0b328678824}{wait\-For\-M\-S\-C} )(\hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\-\_\-\-\_\-\-D\-R\-Idrawable} $\ast$drawable, int64\-\_\-t target\-\_\-msc, int64\-\_\-t \hyperlink{glext_8h_a8663d897b5393d6facc1df40530f841d}{divisor}, int64\-\_\-t remainder, int64\-\_\-t $\ast$msc, int64\-\_\-t $\ast$sbc)
+\item 
+int($\ast$ \hyperlink{struct_____d_r_imedia_stream_counter_extension_rec_a937928e0af1fad374769623dfaf5e84b}{get\-Drawable\-M\-S\-C} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\-\_\-\-\_\-\-D\-R\-Iscreen} $\ast$screen, \hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\-\_\-\-\_\-\-D\-R\-Idrawable} $\ast$drawable, int64\-\_\-t $\ast$msc)
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+
+
+Définition à la ligne 183 du fichier dri\-\_\-interface.\-h.
+
+
+
+\subsection{Documentation des données membres}
+\hypertarget{struct_____d_r_imedia_stream_counter_extension_rec_a042c5ddf263000434a369b5da09efacc}{\index{\-\_\-\-\_\-\-D\-R\-Imedia\-Stream\-Counter\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Imedia\-Stream\-Counter\-Extension\-Rec}!base@{base}}
+\index{base@{base}!__DRImediaStreamCounterExtensionRec@{\-\_\-\-\_\-\-D\-R\-Imedia\-Stream\-Counter\-Extension\-Rec}}
+\subsubsection[{base}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-\_\-\-\_\-\-D\-R\-Iextension} \-\_\-\-\_\-\-D\-R\-Imedia\-Stream\-Counter\-Extension\-Rec\-::base}}\label{struct_____d_r_imedia_stream_counter_extension_rec_a042c5ddf263000434a369b5da09efacc}
+
+
+Définition à la ligne 184 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_imedia_stream_counter_extension_rec_a937928e0af1fad374769623dfaf5e84b}{\index{\-\_\-\-\_\-\-D\-R\-Imedia\-Stream\-Counter\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Imedia\-Stream\-Counter\-Extension\-Rec}!get\-Drawable\-M\-S\-C@{get\-Drawable\-M\-S\-C}}
+\index{get\-Drawable\-M\-S\-C@{get\-Drawable\-M\-S\-C}!__DRImediaStreamCounterExtensionRec@{\-\_\-\-\_\-\-D\-R\-Imedia\-Stream\-Counter\-Extension\-Rec}}
+\subsubsection[{get\-Drawable\-M\-S\-C}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ \-\_\-\-\_\-\-D\-R\-Imedia\-Stream\-Counter\-Extension\-Rec\-::get\-Drawable\-M\-S\-C)({\bf \-\_\-\-\_\-\-D\-R\-Iscreen} $\ast$screen, {\bf \-\_\-\-\_\-\-D\-R\-Idrawable} $\ast$drawable, int64\-\_\-t $\ast$msc)}}\label{struct_____d_r_imedia_stream_counter_extension_rec_a937928e0af1fad374769623dfaf5e84b}
+Get the number of vertical refreshes since some point in time before this function was first called (i.\-e., system start up). 
+
+Définition à la ligne 200 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_imedia_stream_counter_extension_rec_aeda6d64b0682f087ddbac0b328678824}{\index{\-\_\-\-\_\-\-D\-R\-Imedia\-Stream\-Counter\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Imedia\-Stream\-Counter\-Extension\-Rec}!wait\-For\-M\-S\-C@{wait\-For\-M\-S\-C}}
+\index{wait\-For\-M\-S\-C@{wait\-For\-M\-S\-C}!__DRImediaStreamCounterExtensionRec@{\-\_\-\-\_\-\-D\-R\-Imedia\-Stream\-Counter\-Extension\-Rec}}
+\subsubsection[{wait\-For\-M\-S\-C}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ \-\_\-\-\_\-\-D\-R\-Imedia\-Stream\-Counter\-Extension\-Rec\-::wait\-For\-M\-S\-C)({\bf \-\_\-\-\_\-\-D\-R\-Idrawable} $\ast$drawable, int64\-\_\-t target\-\_\-msc, int64\-\_\-t {\bf divisor}, int64\-\_\-t remainder, int64\-\_\-t $\ast$msc, int64\-\_\-t $\ast$sbc)}}\label{struct_____d_r_imedia_stream_counter_extension_rec_aeda6d64b0682f087ddbac0b328678824}
+Wait for the M\-S\-C to equal target\-\_\-msc, or, if that has already passed, the next time (M\-S\-C \% divisor) is equal to remainder. If divisor is zero, the function will return as soon as M\-S\-C is greater than or equal to target\-\_\-msc. 
+
+Définition à la ligne 192 du fichier dri\-\_\-interface.\-h.
+
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+/home/cj/workspace/\-Tetris/src/glut/internal/\hyperlink{dri__interface_8h}{dri\-\_\-interface.\-h}\end{DoxyCompactItemize}

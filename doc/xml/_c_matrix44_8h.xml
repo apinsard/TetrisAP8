@@ -1,0 +1,759 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_c_matrix44_8h" kind="file">
+    <compoundname>CMatrix44.h</compoundname>
+    <includes refid="_c_vector3_8h" local="yes">CVector3.h</includes>
+    <includes refid="_c_vector4_8h" local="yes">CVector4.h</includes>
+    <includes local="no">cstring</includes>
+    <includedby refid="_common_8h" local="yes">/home/cj/workspace/Tetris/src/appliBase/Common.h</includedby>
+    <includedby refid="_c_matrix44_8cpp" local="yes">/home/cj/workspace/Tetris/src/math/CMatrix44.cpp</includedby>
+    <incdepgraph>
+      <node id="340">
+        <label>limits</label>
+      </node>
+      <node id="342">
+        <label>cmath</label>
+      </node>
+      <node id="343">
+        <label>CVector4.h</label>
+        <link refid="_c_vector4_8h"/>
+        <childnode refid="340" relation="include">
+        </childnode>
+        <childnode refid="341" relation="include">
+        </childnode>
+        <childnode refid="339" relation="include">
+        </childnode>
+      </node>
+      <node id="338">
+        <label>/home/cj/workspace/Tetris/src/math/CMatrix44.h</label>
+        <link refid="CMatrix44.h"/>
+        <childnode refid="339" relation="include">
+        </childnode>
+        <childnode refid="343" relation="include">
+        </childnode>
+        <childnode refid="344" relation="include">
+        </childnode>
+      </node>
+      <node id="339">
+        <label>CVector3.h</label>
+        <link refid="_c_vector3_8h"/>
+        <childnode refid="340" relation="include">
+        </childnode>
+        <childnode refid="341" relation="include">
+        </childnode>
+        <childnode refid="342" relation="include">
+        </childnode>
+      </node>
+      <node id="341">
+        <label>iostream</label>
+      </node>
+      <node id="344">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="377">
+        <label>/home/cj/workspace/Tetris/src/tetris/CPieceAbstract.h</label>
+        <link refid="_c_piece_abstract_8h"/>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="380" relation="include">
+        </childnode>
+        <childnode refid="384" relation="include">
+        </childnode>
+        <childnode refid="386" relation="include">
+        </childnode>
+        <childnode refid="388" relation="include">
+        </childnode>
+        <childnode refid="390" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+        <childnode refid="391" relation="include">
+        </childnode>
+        <childnode refid="393" relation="include">
+        </childnode>
+        <childnode refid="395" relation="include">
+        </childnode>
+      </node>
+      <node id="350">
+        <label>/home/cj/workspace/Tetris/src/appliBase/CGuiGlut.cpp</label>
+        <link refid="_c_gui_glut_8cpp"/>
+      </node>
+      <node id="389">
+        <label>/home/cj/workspace/Tetris/src/tetris/COPiece.cpp</label>
+        <link refid="_c_o_piece_8cpp"/>
+      </node>
+      <node id="349">
+        <label>/home/cj/workspace/Tetris/src/appliBase/CGuiGlut.h</label>
+        <link refid="_c_gui_glut_8h"/>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+      </node>
+      <node id="379">
+        <label>/home/cj/workspace/Tetris/src/test/test.cpp</label>
+        <link refid="test_8cpp"/>
+      </node>
+      <node id="386">
+        <label>/home/cj/workspace/Tetris/src/tetris/CL2Piece.h</label>
+        <link refid="_c_l2_piece_8h"/>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="387" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+      </node>
+      <node id="383">
+        <label>/home/cj/workspace/Tetris/src/tetris/CTetrisGame.cpp</label>
+        <link refid="_c_tetris_game_8cpp"/>
+      </node>
+      <node id="365">
+        <label>/home/cj/workspace/Tetris/src/test/testCOPiece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_o_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+      </node>
+      <node id="384">
+        <label>/home/cj/workspace/Tetris/src/tetris/CL1Piece.h</label>
+        <link refid="_c_l1_piece_8h"/>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="385" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+      </node>
+      <node id="355">
+        <label>/home/cj/workspace/Tetris/src/test/testCOPiece.cpp</label>
+        <link refid="test_c_o_piece_8cpp"/>
+      </node>
+      <node id="356">
+        <label>/home/cj/workspace/Tetris/src/test/testCTPiece.cpp</label>
+        <link refid="test_c_t_piece_8cpp"/>
+      </node>
+      <node id="369">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ1Piece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_z1_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="370" relation="include">
+        </childnode>
+        <childnode refid="357" relation="include">
+        </childnode>
+      </node>
+      <node id="391">
+        <label>/home/cj/workspace/Tetris/src/tetris/CTPiece.h</label>
+        <link refid="_c_t_piece_8h"/>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+        <childnode refid="392" relation="include">
+        </childnode>
+      </node>
+      <node id="396">
+        <label>/home/cj/workspace/Tetris/src/tetris/CZ2Piece.cpp</label>
+        <link refid="_c_z2_piece_8cpp"/>
+      </node>
+      <node id="361">
+        <label>/home/cj/workspace/Tetris/src/test/testCL1Piece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_l1_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="362" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+      </node>
+      <node id="392">
+        <label>/home/cj/workspace/Tetris/src/tetris/CTPiece.cpp</label>
+        <link refid="_c_t_piece_8cpp"/>
+      </node>
+      <node id="394">
+        <label>/home/cj/workspace/Tetris/src/tetris/CZ1Piece.cpp</label>
+        <link refid="_c_z1_piece_8cpp"/>
+      </node>
+      <node id="388">
+        <label>/home/cj/workspace/Tetris/src/tetris/COPiece.h</label>
+        <link refid="_c_o_piece_8h"/>
+        <childnode refid="365" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+        <childnode refid="389" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+      </node>
+      <node id="381">
+        <label>/home/cj/workspace/Tetris/src/tetris/CIPiece.cpp</label>
+        <link refid="_c_i_piece_8cpp"/>
+      </node>
+      <node id="373">
+        <label>/home/cj/workspace/Tetris/src/tetris/CProjetTetris.h</label>
+        <link refid="_c_projet_tetris_8h"/>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="374" relation="include">
+        </childnode>
+      </node>
+      <node id="380">
+        <label>/home/cj/workspace/Tetris/src/tetris/CIPiece.h</label>
+        <link refid="_c_i_piece_8h"/>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="381" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+      </node>
+      <node id="395">
+        <label>/home/cj/workspace/Tetris/src/tetris/CZ2Piece.h</label>
+        <link refid="_c_z2_piece_8h"/>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+        <childnode refid="396" relation="include">
+        </childnode>
+      </node>
+      <node id="371">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ2Piece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_z2_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="372" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+      </node>
+      <node id="345">
+        <label>/home/cj/workspace/Tetris/src/math/CMatrix44.h</label>
+        <link refid="CMatrix44.h"/>
+        <childnode refid="346" relation="include">
+        </childnode>
+        <childnode refid="399" relation="include">
+        </childnode>
+      </node>
+      <node id="393">
+        <label>/home/cj/workspace/Tetris/src/tetris/CZ1Piece.h</label>
+        <link refid="_c_z1_piece_8h"/>
+        <childnode refid="369" relation="include">
+        </childnode>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+        <childnode refid="394" relation="include">
+        </childnode>
+      </node>
+      <node id="376">
+        <label>/home/cj/workspace/Tetris/src/appliBase/CRenderer.cpp</label>
+        <link refid="_c_renderer_8cpp"/>
+      </node>
+      <node id="351">
+        <label>/home/cj/workspace/Tetris/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="374">
+        <label>/home/cj/workspace/Tetris/src/tetris/CProjetTetris.cpp</label>
+        <link refid="_c_projet_tetris_8cpp"/>
+      </node>
+      <node id="359">
+        <label>/home/cj/workspace/Tetris/src/test/testCIPiece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_i_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="360" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+      </node>
+      <node id="363">
+        <label>/home/cj/workspace/Tetris/src/test/testCL2Piece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_l2_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+      </node>
+      <node id="397">
+        <label>/home/cj/workspace/Tetris/src/tetris/CTGameTable.h</label>
+        <link refid="_c_t_game_table_8h"/>
+        <childnode refid="382" relation="include">
+        </childnode>
+        <childnode refid="398" relation="include">
+        </childnode>
+      </node>
+      <node id="375">
+        <label>/home/cj/workspace/Tetris/src/appliBase/CRenderer.h</label>
+        <link refid="_c_renderer_8h"/>
+        <childnode refid="347" relation="include">
+        </childnode>
+        <childnode refid="376" relation="include">
+        </childnode>
+      </node>
+      <node id="352">
+        <label>/home/cj/workspace/Tetris/src/test/testCIPiece.cpp</label>
+        <link refid="test_c_i_piece_8cpp"/>
+      </node>
+      <node id="353">
+        <label>/home/cj/workspace/Tetris/src/test/testCL1Piece.cpp</label>
+        <link refid="test_c_l1_piece_8cpp"/>
+      </node>
+      <node id="390">
+        <label>/home/cj/workspace/Tetris/src/tetris/CPieceAbstract.cpp</label>
+        <link refid="_c_piece_abstract_8cpp"/>
+      </node>
+      <node id="348">
+        <label>/home/cj/workspace/Tetris/src/appliBase/CApplication.cpp</label>
+        <link refid="_c_application_8cpp"/>
+      </node>
+      <node id="357">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ1Piece.cpp</label>
+        <link refid="test_c_z1_piece_8cpp"/>
+      </node>
+      <node id="366">
+        <label>/home/cj/workspace/Tetris/src/test/testCOPiece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_o_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="346">
+        <label>/home/cj/workspace/Tetris/src/appliBase/Common.h</label>
+        <link refid="_common_8h"/>
+        <childnode refid="347" relation="include">
+        </childnode>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="349" relation="include">
+        </childnode>
+        <childnode refid="377" relation="include">
+        </childnode>
+        <childnode refid="397" relation="include">
+        </childnode>
+      </node>
+      <node id="354">
+        <label>/home/cj/workspace/Tetris/src/test/testCL2Piece.cpp</label>
+        <link refid="test_c_l2_piece_8cpp"/>
+      </node>
+      <node id="398">
+        <label>/home/cj/workspace/Tetris/src/tetris/CTGameTable.cpp</label>
+        <link refid="_c_t_game_table_8cpp"/>
+      </node>
+      <node id="378">
+        <label>/home/cj/workspace/Tetris/src/test/test.h</label>
+        <link refid="test_8h"/>
+        <childnode refid="379" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+      </node>
+      <node id="382">
+        <label>/home/cj/workspace/Tetris/src/tetris/CTetrisGame.h</label>
+        <link refid="_c_tetris_game_8h"/>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="369" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="373" relation="include">
+        </childnode>
+        <childnode refid="383" relation="include">
+        </childnode>
+      </node>
+      <node id="358">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ2Piece.cpp</label>
+        <link refid="test_c_z2_piece_8cpp"/>
+      </node>
+      <node id="347">
+        <label>/home/cj/workspace/Tetris/src/appliBase/CApplication.h</label>
+        <link refid="_c_application_8h"/>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="349" relation="include">
+        </childnode>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="369" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="373" relation="include">
+        </childnode>
+      </node>
+      <node id="372">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ2Piece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_z2_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="360">
+        <label>/home/cj/workspace/Tetris/src/test/testCIPiece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_i_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="387">
+        <label>/home/cj/workspace/Tetris/src/tetris/CL2Piece.cpp</label>
+        <link refid="_c_l2_piece_8cpp"/>
+      </node>
+      <node id="370">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ1Piece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_z1_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="385">
+        <label>/home/cj/workspace/Tetris/src/tetris/CL1Piece.cpp</label>
+        <link refid="_c_l1_piece_8cpp"/>
+      </node>
+      <node id="364">
+        <label>/home/cj/workspace/Tetris/src/test/testCL2Piece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_l2_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="399">
+        <label>/home/cj/workspace/Tetris/src/math/CMatrix44.cpp</label>
+        <link refid="_c_matrix44_8cpp"/>
+      </node>
+      <node id="368">
+        <label>/home/cj/workspace/Tetris/src/test/testCTPiece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_t_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="362">
+        <label>/home/cj/workspace/Tetris/src/test/testCL1Piece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_l1_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="367">
+        <label>/home/cj/workspace/Tetris/src/test/testCTPiece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_t_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_c_matrix44" prot="public">CMatrix44</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_c_matrix44_8h_1a1b161fa0394796a54b5fc2070bb4bdb0" prot="public" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float matrix44_ident[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>matrix44_ident</name>
+        <initializer>=
+{
+ 1.0f, 0.0f, 0.0f, 0.0f,
+ 0.0f, 1.0f, 0.0f, 0.0f,
+ 0.0f, 0.0f, 1.0f, 0.0f,
+ 0.0f, 0.0f, 0.0f, 1.0f
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="52" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_c_matrix44_8h_1a958f13c8f77b6d4892f40aa2ee382970" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;stream, const CMatrix44 &amp;mat)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_c_matrix44" kindref="compound">CMatrix44</ref> &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h" line="238" bodyfile="/home/cj/workspace/Tetris/src/math/CMatrix44.h" bodystart="237" bodyend="261"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Projet<sp/>C/C++</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2013-2014<sp/>Equipe<sp/>SEASIDE<sp/>(T.<sp/>LE<sp/>NAOUR,<sp/>J.F<sp/>KAMP)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IRISA<sp/>-<sp/>UBS<sp/><sp/>/<sp/>IUT<sp/>Informatique<sp/>Vannes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>___MATRIX44_H__</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>___MATRIX44_H__</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>fichier<sp/>a<sp/>merger<sp/>avec<sp/>la<sp/>lib<sp/>math<sp/>une<sp/>fois<sp/>la<sp/>fusion<sp/>des<sp/>lib<sp/>faite</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_vector3_8h" kindref="compound">CVector3.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_vector4_8h" kindref="compound">CVector4.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Col-major<sp/>!!!!!<sp/>ATTENTION:<sp/>l&apos;inverse<sp/>de<sp/>la<sp/>notation<sp/>mathématique</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>J&apos;ai<sp/>choisi<sp/>en<sp/>col-major<sp/>car<sp/>c&apos;est<sp/>le<sp/>type<sp/>de<sp/>matrice<sp/><sp/>que<sp/>prend<sp/>en<sp/>entrée<sp/>OPENGL<sp/>par<sp/>défaut<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>|<sp/>1<sp/>2<sp/>3<sp/>|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>|<sp/>4<sp/>5<sp/>6<sp/>|<sp/><sp/><sp/>=&gt;<sp/>1<sp/>4<sp/>2<sp/>5<sp/>3<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>b[0]<sp/>=<sp/>m[0][0]<sp/><sp/><sp/><sp/><sp/><sp/>b[4]<sp/>=<sp/>m[1][0]<sp/><sp/><sp/><sp/><sp/><sp/>b[8]<sp/><sp/>=<sp/>m[2][0]<sp/><sp/><sp/><sp/><sp/>b[12]<sp/>=<sp/>m[3][0]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>b[1]<sp/>=<sp/>m[0][1]<sp/><sp/><sp/><sp/><sp/><sp/>b[5]<sp/>=<sp/>m[1][1]<sp/><sp/><sp/><sp/><sp/><sp/>b[9]<sp/><sp/>=<sp/>m[2][1]<sp/><sp/><sp/><sp/><sp/>b[13]<sp/>=<sp/>m[3][1]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>b[2]<sp/>=<sp/>m[0][2]<sp/><sp/><sp/><sp/><sp/><sp/>b[6]<sp/>=<sp/>m[1][2]<sp/><sp/><sp/><sp/><sp/><sp/>b[10]<sp/>=<sp/>m[2][2]<sp/><sp/><sp/><sp/><sp/>b[14]<sp/>=<sp/>m[3][2]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>b[3]<sp/>=<sp/>m[0][3]<sp/><sp/><sp/><sp/><sp/><sp/>b[7]<sp/>=<sp/>m[1][3]<sp/><sp/><sp/><sp/><sp/><sp/>b[11]<sp/>=<sp/>m[2][3]<sp/><sp/><sp/><sp/><sp/>b[15]<sp/>=<sp/>m[3][3]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>notation<sp/>mathématique</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>a00<sp/>a01<sp/>a02<sp/>a03</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>a10<sp/>a11<sp/>a12<sp/>a13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>a20<sp/>a21<sp/>a22<sp/>a23</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>a30<sp/>a31<sp/>a32<sp/>a33</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>notation<sp/>col-major</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>a00<sp/>a10<sp/>a20<sp/>a30</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>a01<sp/>a11<sp/>a21<sp/>a31</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>a02<sp/>a12<sp/>a22<sp/>a32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>a03<sp/>a13<sp/>a23<sp/>a33</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>matrix44_ident[16]<sp/>=</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/>1.0f,<sp/>0.0f,<sp/>0.0f,<sp/>0.0f,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/>0.0f,<sp/>1.0f,<sp/>0.0f,<sp/>0.0f,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/>0.0f,<sp/>0.0f,<sp/>1.0f,<sp/>0.0f,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/>0.0f,<sp/>0.0f,<sp/>0.0f,<sp/>1.0f</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="class_c_matrix44" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_c_matrix44" kindref="compound" tooltip="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</ref></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62" refid="class_c_matrix44_1a0cdad394489ff192554c7f29ca5ae78a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1af593500c283bf1a787a6f947f503a5c2" kindref="member">m</ref>[4][4];</highlight></codeline>
+<codeline lineno="63" refid="class_c_matrix44_1a5977be8ee90c365cb2e14be49f749739" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a6eba317e3cf44d6d26c04a5a8f197dcb" kindref="member">b</ref>[16];</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//====================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CONSTRUCTORS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//====================================================</highlight></codeline>
+<codeline lineno="72" refid="class_c_matrix44_1a55dd2245b2ee3abecae6834c07daa739" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_matrix44_1a55dd2245b2ee3abecae6834c07daa739" kindref="member" tooltip="default constructor, init matrix to identity">CMatrix44</ref>()</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memcpy(&amp;(<ref refid="glext_8h_1af593500c283bf1a787a6f947f503a5c2" kindref="member">m</ref>[0][0]),<sp/>matrix44_ident,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(matrix44_ident));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_matrix44_1a55dd2245b2ee3abecae6834c07daa739" kindref="member" tooltip="default constructor, init matrix to identity">CMatrix44</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>buff);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_matrix44_1a55dd2245b2ee3abecae6834c07daa739" kindref="member" tooltip="default constructor, init matrix to identity">CMatrix44</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>&amp;<sp/><ref refid="gl_8h_1a0cdec8e97a75ee9458b23d152bf962d4" kindref="member">x</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>&amp;<sp/><ref refid="gl_8h_1a74d80fd479c0f6d0153c709949a089ef" kindref="member">y</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>&amp;<sp/><ref refid="glext_8h_1aee38b51639b577753f6a92029fb92000" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//====================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>METHODS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//====================================================</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44_1a7d0859d97ff67c23e7767445f7f6b759" kindref="member" tooltip="set translation">SetTranslation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>&amp;<sp/>vec);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44_1a7d0859d97ff67c23e7767445f7f6b759" kindref="member" tooltip="set translation">SetTranslation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector4" kindref="compound">CVector4</ref>&amp;<sp/>vec);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44_1a7fe9f37064ceb07e41f0d34f14340ba2" kindref="member" tooltip="Add translation.">Translate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>&amp;<sp/>vec);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44_1a7fe9f37064ceb07e41f0d34f14340ba2" kindref="member" tooltip="Add translation.">Translate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector4" kindref="compound">CVector4</ref>&amp;<sp/>vec);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref><sp/><ref refid="class_c_matrix44_1aa849d2b509dd5cc56ec6563822240c84" kindref="member" tooltip="get translation">GetTranslation</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref><sp/><ref refid="class_c_matrix44_1aae42214fe24fb05be617b27caac9d66b" kindref="member" tooltip="get scale">GetScale</ref>();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="class_c_matrix44_1a0b8ee58e05352544361280918f2ca235" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref><sp/><ref refid="class_c_matrix44_1a0b8ee58e05352544361280918f2ca235" kindref="member" tooltip="get axis x,y,z">GetXAxis</ref>()</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>(<ref refid="glext_8h_1af593500c283bf1a787a6f947f503a5c2" kindref="member">m</ref>[0][0],<sp/><ref refid="glext_8h_1af593500c283bf1a787a6f947f503a5c2" kindref="member">m</ref>[0][1],<sp/><ref refid="glext_8h_1af593500c283bf1a787a6f947f503a5c2" kindref="member">m</ref>[0][2]);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129" refid="class_c_matrix44_1abcb2267e652096e7d83ce98665f1de6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref><sp/><ref refid="class_c_matrix44_1abcb2267e652096e7d83ce98665f1de6a" kindref="member">GetYAxis</ref>()</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>(<ref refid="glext_8h_1af593500c283bf1a787a6f947f503a5c2" kindref="member">m</ref>[1][0],<sp/><ref refid="glext_8h_1af593500c283bf1a787a6f947f503a5c2" kindref="member">m</ref>[1][1],<sp/><ref refid="glext_8h_1af593500c283bf1a787a6f947f503a5c2" kindref="member">m</ref>[1][2]);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133" refid="class_c_matrix44_1a8d98f62457193075af83da52c6f8d884" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref><sp/><ref refid="class_c_matrix44_1a8d98f62457193075af83da52c6f8d884" kindref="member">GetZAxis</ref>()</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>(<ref refid="glext_8h_1af593500c283bf1a787a6f947f503a5c2" kindref="member">m</ref>[2][0],<sp/><ref refid="glext_8h_1af593500c283bf1a787a6f947f503a5c2" kindref="member">m</ref>[2][1],<sp/><ref refid="glext_8h_1af593500c283bf1a787a6f947f503a5c2" kindref="member">m</ref>[2][2]);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&amp;<sp/><ref refid="class_c_matrix44_1a895ba1d9a64183cee70eedddce95c8b8" kindref="member" tooltip="operator to get a value into matrix">operator()	</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col)<sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&amp;<sp/><ref refid="class_c_matrix44_1a895ba1d9a64183cee70eedddce95c8b8" kindref="member" tooltip="operator to get a value into matrix">operator()	</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44_1a8b7503251ee013f9b124bc9c7368e6c0" kindref="member" tooltip="get determinant of matrix">det</ref>();</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44_1abeff331b137cedd256d6758b1cb11c4f" kindref="member" tooltip="invert the matrix">invert</ref>();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44_1adfef3f6ae63043cd713e379bc7a1cfdd" kindref="member" tooltip="invert the matrix">transpose</ref>();</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_matrix44" kindref="compound" tooltip="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</ref><sp/><ref refid="class_c_matrix44_1a4ded0d0824852b2aff8af3a3132a31d2" kindref="member" tooltip="operator to multiply current matrix with other matrix">operator*</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44" kindref="compound" tooltip="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</ref><sp/>&amp;<ref refid="glext_8h_1af593500c283bf1a787a6f947f503a5c2" kindref="member">m</ref><sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_vector4" kindref="compound">CVector4</ref><sp/><ref refid="class_c_matrix44_1a4ded0d0824852b2aff8af3a3132a31d2" kindref="member" tooltip="operator to multiply current matrix with other matrix">operator*</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector4" kindref="compound">CVector4</ref><sp/>&amp;<ref refid="gl_8h_1a4568fc090febc136eed4577a600739ca" kindref="member">v</ref><sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref><sp/><ref refid="class_c_matrix44_1a4ded0d0824852b2aff8af3a3132a31d2" kindref="member" tooltip="operator to multiply current matrix with other matrix">operator*</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref><sp/>&amp;<ref refid="gl_8h_1a4568fc090febc136eed4577a600739ca" kindref="member">v</ref><sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44_1a7af596a54cb4e3163915ca1b66a3d0b5" kindref="member" tooltip="specifies a viewing frustum into the world coordinate system (http://www.opengl.org/sdk/docs/man/xhtm...">Perspective</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>fovy,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>aspect,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a12d99226e590bbaaf0be69169eeb4834" kindref="member">zNear</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a18a2583fe65967bceff8903e2769f8e2" kindref="member">zFar</ref>);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44" kindref="compound" tooltip="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</ref><sp/><ref refid="class_c_matrix44_1ade53879722c73f788672f122ce79384d" kindref="member">CreatePerspective</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>fovy,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>aspect,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a12d99226e590bbaaf0be69169eeb4834" kindref="member">zNear</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a18a2583fe65967bceff8903e2769f8e2" kindref="member">zFar</ref>);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44_1a4f3c80947a24bb83d74ad17c01bea491" kindref="member" tooltip="creates a viewing matrix derived from an eye point (http://www.opengl.org/sdk/docs/man/xhtml/gluLookA...">LookAt</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>&amp;<sp/>eye,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>&amp;<sp/>center,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>&amp;<sp/>up<sp/>);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44" kindref="compound" tooltip="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</ref><sp/><ref refid="class_c_matrix44_1acb0ca1cac92022effb2781b5e56c532a" kindref="member">CreateLookAt</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>&amp;<sp/>eye,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>&amp;<sp/>center,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>&amp;<sp/>up<sp/>);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44_1ae378f7ef8a3a121bd598329b23f271fb" kindref="member" tooltip="creates a Orthographic (http://www.opengl.org/sdk/docs/man/xhtml/glOrtho.xml)">Orthographic</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a85b8f6c07fbc1fb5d77c2ae090f21995" kindref="member">left</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a5ffadbbacc6b89cf6218bc43b384d3fe" kindref="member">right</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a95fc257e5ddf46f7db9d5e898cdf1991" kindref="member">bottom</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a5ab323daeacf8dfdb8f91132fecdca23" kindref="member">top</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>nearVal,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>farVal<sp/>);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44" kindref="compound" tooltip="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</ref><sp/><ref refid="class_c_matrix44_1a9300c08531de617b22d861687cfe0ea6" kindref="member">CreateOrthographic</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a85b8f6c07fbc1fb5d77c2ae090f21995" kindref="member">left</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a5ffadbbacc6b89cf6218bc43b384d3fe" kindref="member">right</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a95fc257e5ddf46f7db9d5e898cdf1991" kindref="member">bottom</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a5ab323daeacf8dfdb8f91132fecdca23" kindref="member">top</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>nearVal,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>farVal<sp/>);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="class_c_matrix44_1ae4d2eb3a41998637b2f1bd02e3b7b0cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44_1ae4d2eb3a41998637b2f1bd02e3b7b0cc" kindref="member">operator == </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44" kindref="compound" tooltip="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</ref>&amp;<sp/><ref refid="gl_8h_1a00140d6f5c548b26daf170bf16e86a6d" kindref="member">t</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="215"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;16;i++)</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(t.<ref refid="class_c_matrix44_1a5977be8ee90c365cb2e14be49f749739" kindref="member">b</ref>[i]<sp/>!=<sp/><ref refid="glext_8h_1a6eba317e3cf44d6d26c04a5a8f197dcb" kindref="member">b</ref>[i])</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="class_c_matrix44_1a7a652abf026c230ae3a03781070d5360" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44_1a7a652abf026c230ae3a03781070d5360" kindref="member">operator != </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44" kindref="compound" tooltip="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</ref>&amp;<sp/><ref refid="gl_8h_1a00140d6f5c548b26daf170bf16e86a6d" kindref="member">t</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="224"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/><ref refid="gl_8h_1a00140d6f5c548b26daf170bf16e86a6d" kindref="member">t</ref>);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228" refid="class_c_matrix44_1a18198dedeaf35ac255b368f5c54ceed0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44" kindref="compound" tooltip="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</ref><sp/><sp/><sp/><sp/><ref refid="class_c_matrix44_1a18198dedeaf35ac255b368f5c54ceed0" kindref="member" tooltip="identity transformation">Identity</ref><sp/><sp/><sp/><sp/>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="229"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="_c_matrix44_8h_1a958f13c8f77b6d4892f40aa2ee382970" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="_c_matrix44_8h_1a958f13c8f77b6d4892f40aa2ee382970" kindref="member">operator&lt;&lt; </ref>(std::ostream&amp;<sp/><ref refid="glext_8h_1a10d3bc96cdfc1d478f52c13d5ffd9316" kindref="member">stream</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44" kindref="compound" tooltip="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</ref>&amp;<sp/>mat)</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::string<sp/>mat<sp/>=</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//b[0]<sp/>+<sp/>&quot;<sp/>&quot;<sp/>+<sp/>b[4]<sp/>+<sp/>&quot;<sp/>&quot;<sp/>+<sp/>b[8]<sp/>+<sp/>&quot;<sp/>&quot;<sp/>+<sp/>b[12]<sp/>+<sp/>&quot;<sp/>\n&quot;<sp/>+</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//b[1]<sp/>+<sp/>&quot;<sp/>&quot;<sp/>+<sp/>b[5]<sp/>+<sp/>&quot;<sp/>&quot;<sp/>+<sp/>b[9]<sp/>+<sp/>&quot;<sp/>&quot;<sp/>+<sp/>b[13]<sp/>+<sp/>&quot;<sp/>\n&quot;<sp/>+</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//b[2]<sp/>+<sp/>&quot;<sp/>&quot;<sp/>+<sp/>b[6]<sp/>+<sp/>&quot;<sp/>&quot;<sp/>+<sp/>b[10]<sp/>+<sp/>&quot;<sp/>&quot;<sp/>+<sp/>b[14]<sp/>+<sp/>&quot;<sp/>\n&quot;<sp/>+</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//b[3]<sp/>+<sp/>&quot;<sp/>&quot;<sp/>+<sp/>b[7]<sp/>+<sp/>&quot;<sp/>&quot;<sp/>+<sp/>b[11]<sp/>+<sp/>&quot;<sp/>&quot;<sp/>+<sp/>b[15]<sp/>+<sp/>&quot;<sp/>\n\n&quot;<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//LOG(<sp/>mat<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FIXME<sp/>CA<sp/>DEVRAIT<sp/>ETRE<sp/>L<sp/>inverse</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//stream<sp/>&lt;&lt;<sp/>mat.b[0]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[1]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[2]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[3]<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//stream<sp/>&lt;&lt;<sp/>mat.b[4]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[5]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[6]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[7]<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//stream<sp/>&lt;&lt;<sp/>mat.b[8]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[9]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[10]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[11]<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//stream<sp/>&lt;&lt;<sp/>mat.b[12]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[13]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[14]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[15]<sp/>&lt;&lt;<sp/>std::endl<sp/>&lt;&lt;<sp/>std::endl;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//stream<sp/>&lt;&lt;<sp/>mat.b[0]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[4]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[8]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[12]<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//stream<sp/>&lt;&lt;<sp/>mat.b[1]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[5]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[9]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[13]<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//stream<sp/>&lt;&lt;<sp/>mat.b[2]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[6]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[10]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[14]<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//stream<sp/>&lt;&lt;<sp/>mat.b[3]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[7]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[11]<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>mat.b[15]<sp/>&lt;&lt;<sp/>std::endl<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/>mat.<ref refid="class_c_matrix44_1a0cdad394489ff192554c7f29ca5ae78a" kindref="member">m</ref>[0][0]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mat.<ref refid="class_c_matrix44_1a0cdad394489ff192554c7f29ca5ae78a" kindref="member">m</ref>[1][0]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mat.<ref refid="class_c_matrix44_1a0cdad394489ff192554c7f29ca5ae78a" kindref="member">m</ref>[2][0]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mat.<ref refid="class_c_matrix44_1a0cdad394489ff192554c7f29ca5ae78a" kindref="member">m</ref>[3][0]<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/>mat.<ref refid="class_c_matrix44_1a0cdad394489ff192554c7f29ca5ae78a" kindref="member">m</ref>[0][1]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mat.<ref refid="class_c_matrix44_1a0cdad394489ff192554c7f29ca5ae78a" kindref="member">m</ref>[1][1]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mat.<ref refid="class_c_matrix44_1a0cdad394489ff192554c7f29ca5ae78a" kindref="member">m</ref>[2][1]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mat.<ref refid="class_c_matrix44_1a0cdad394489ff192554c7f29ca5ae78a" kindref="member">m</ref>[3][1]<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/>mat.<ref refid="class_c_matrix44_1a0cdad394489ff192554c7f29ca5ae78a" kindref="member">m</ref>[0][2]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mat.<ref refid="class_c_matrix44_1a0cdad394489ff192554c7f29ca5ae78a" kindref="member">m</ref>[1][2]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mat.<ref refid="class_c_matrix44_1a0cdad394489ff192554c7f29ca5ae78a" kindref="member">m</ref>[2][2]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mat.<ref refid="class_c_matrix44_1a0cdad394489ff192554c7f29ca5ae78a" kindref="member">m</ref>[3][2]<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/>mat.<ref refid="class_c_matrix44_1a0cdad394489ff192554c7f29ca5ae78a" kindref="member">m</ref>[0][3]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mat.<ref refid="class_c_matrix44_1a0cdad394489ff192554c7f29ca5ae78a" kindref="member">m</ref>[1][3]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mat.<ref refid="class_c_matrix44_1a0cdad394489ff192554c7f29ca5ae78a" kindref="member">m</ref>[2][3]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mat.<ref refid="class_c_matrix44_1a0cdad394489ff192554c7f29ca5ae78a" kindref="member">m</ref>[3][3]<sp/>&lt;&lt;<sp/>std::endl<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a10d3bc96cdfc1d478f52c13d5ffd9316" kindref="member">stream</ref>;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="class_c_matrix44_1a7d0859d97ff67c23e7767445f7f6b759" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44_1a7d0859d97ff67c23e7767445f7f6b759" kindref="member" tooltip="set translation">CMatrix44::SetTranslation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>&amp;<sp/>vec)</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a6eba317e3cf44d6d26c04a5a8f197dcb" kindref="member">b</ref>[12]<sp/>=<sp/>(float)vec.<ref refid="class_c_vector3_1a06b092361b335f9971323be0ddf759b1" kindref="member" tooltip="Composante X.">x</ref>;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a6eba317e3cf44d6d26c04a5a8f197dcb" kindref="member">b</ref>[13]<sp/>=<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)vec.<ref refid="class_c_vector3_1a20d0b1099477995b22a4f1407e41a7a1" kindref="member" tooltip="Composante Y.">y</ref>;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a6eba317e3cf44d6d26c04a5a8f197dcb" kindref="member">b</ref>[14]<sp/>=<sp/>(float)vec.<ref refid="class_c_vector3_1a9dd3ce85f6aaa17ccc67bfe50a089b3a" kindref="member" tooltip="Composante Z.">z</ref>;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272" refid="class_c_matrix44_1a95eed7e918c9a0acac1615cc9059908e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44_1a7d0859d97ff67c23e7767445f7f6b759" kindref="member" tooltip="set translation">CMatrix44::SetTranslation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector4" kindref="compound">CVector4</ref>&amp;<sp/>vec)</highlight></codeline>
+<codeline lineno="273"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a6eba317e3cf44d6d26c04a5a8f197dcb" kindref="member">b</ref>[12]<sp/>=<sp/>(float)vec.<ref refid="class_c_vector4_1a598c4247754f6601f7c3d47d8f050af0" kindref="member" tooltip="Composante X.">x</ref>;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a6eba317e3cf44d6d26c04a5a8f197dcb" kindref="member">b</ref>[13]<sp/>=<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)vec.<ref refid="class_c_vector4_1aa45e3cb54bd202f878d61755ac2de91e" kindref="member" tooltip="Composante Y.">y</ref>;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a6eba317e3cf44d6d26c04a5a8f197dcb" kindref="member">b</ref>[14]<sp/>=<sp/>(float)vec.<ref refid="class_c_vector4_1aca03ecfdf87d21a98c903268c29c5ed7" kindref="member" tooltip="Composante Z.">z</ref>;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280" refid="class_c_matrix44_1a7fe9f37064ceb07e41f0d34f14340ba2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44_1a7fe9f37064ceb07e41f0d34f14340ba2" kindref="member" tooltip="Add translation.">CMatrix44::Translate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>&amp;<sp/>vec)</highlight></codeline>
+<codeline lineno="281"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a6eba317e3cf44d6d26c04a5a8f197dcb" kindref="member">b</ref>[12]<sp/>+=<sp/>(float)vec.<ref refid="class_c_vector3_1a06b092361b335f9971323be0ddf759b1" kindref="member" tooltip="Composante X.">x</ref>;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a6eba317e3cf44d6d26c04a5a8f197dcb" kindref="member">b</ref>[13]<sp/>+=<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)vec.<ref refid="class_c_vector3_1a20d0b1099477995b22a4f1407e41a7a1" kindref="member" tooltip="Composante Y.">y</ref>;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a6eba317e3cf44d6d26c04a5a8f197dcb" kindref="member">b</ref>[14]<sp/>+=<sp/>(float)vec.<ref refid="class_c_vector3_1a9dd3ce85f6aaa17ccc67bfe50a089b3a" kindref="member" tooltip="Composante Z.">z</ref>;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287" refid="class_c_matrix44_1a57162e8484192db5286f7cb03bd065a6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44_1a7fe9f37064ceb07e41f0d34f14340ba2" kindref="member" tooltip="Add translation.">CMatrix44::Translate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector4" kindref="compound">CVector4</ref>&amp;<sp/>vec)</highlight></codeline>
+<codeline lineno="288"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a6eba317e3cf44d6d26c04a5a8f197dcb" kindref="member">b</ref>[12]<sp/>+=<sp/>(float)vec.<ref refid="class_c_vector4_1a598c4247754f6601f7c3d47d8f050af0" kindref="member" tooltip="Composante X.">x</ref>;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a6eba317e3cf44d6d26c04a5a8f197dcb" kindref="member">b</ref>[13]<sp/>+=<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)vec.<ref refid="class_c_vector4_1aa45e3cb54bd202f878d61755ac2de91e" kindref="member" tooltip="Composante Y.">y</ref>;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a6eba317e3cf44d6d26c04a5a8f197dcb" kindref="member">b</ref>[14]<sp/>+=<sp/>(float)vec.<ref refid="class_c_vector4_1aca03ecfdf87d21a98c903268c29c5ed7" kindref="member" tooltip="Composante Z.">z</ref>;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295" refid="class_c_matrix44_1aa849d2b509dd5cc56ec6563822240c84" refkind="member"><highlight class="normal"><ref refid="class_c_vector3" kindref="compound">CVector3</ref><sp/><ref refid="class_c_matrix44_1aa849d2b509dd5cc56ec6563822240c84" kindref="member" tooltip="get translation">CMatrix44::GetTranslation</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="296"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>(<ref refid="glext_8h_1a6eba317e3cf44d6d26c04a5a8f197dcb" kindref="member">b</ref>[12],<ref refid="glext_8h_1a6eba317e3cf44d6d26c04a5a8f197dcb" kindref="member">b</ref>[13],<ref refid="glext_8h_1a6eba317e3cf44d6d26c04a5a8f197dcb" kindref="member">b</ref>[14]);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303" refid="class_c_matrix44_1a895ba1d9a64183cee70eedddce95c8b8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&amp;<sp/><ref refid="class_c_matrix44_1a895ba1d9a64183cee70eedddce95c8b8" kindref="member" tooltip="operator to get a value into matrix">CMatrix44::operator()	</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="304"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/><ref refid="glext_8h_1af593500c283bf1a787a6f947f503a5c2" kindref="member">m</ref>[col][<ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>];</highlight></codeline>
+<codeline lineno="306"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309" refid="class_c_matrix44_1a9c7447aea10dbe50b5d08fc14ee855ea" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&amp;<sp/><ref refid="class_c_matrix44_1a895ba1d9a64183cee70eedddce95c8b8" kindref="member" tooltip="operator to get a value into matrix">CMatrix44::operator()	</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col)</highlight></codeline>
+<codeline lineno="310"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/><ref refid="glext_8h_1af593500c283bf1a787a6f947f503a5c2" kindref="member">m</ref>[col][<ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>];</highlight></codeline>
+<codeline lineno="312"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__MATRIX44_H__</highlight></codeline>
+    </programlisting>
+    <location file="/home/cj/workspace/Tetris/src/math/CMatrix44.h"/>
+  </compounddef>
+</doxygen>

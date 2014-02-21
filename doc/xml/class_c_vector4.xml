@@ -1,0 +1,495 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="class_c_vector4" kind="class" prot="public">
+    <compoundname>CVector4</compoundname>
+    <includes refid="_c_vector4_8h" local="no">CVector4.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_c_vector4_1a598c4247754f6601f7c3d47d8f050af0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CVector4::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+<para>Composante X. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CVector4.h" line="81" bodyfile="/home/cj/workspace/Tetris/src/math/CVector4.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_vector4_1aa45e3cb54bd202f878d61755ac2de91e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CVector4::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+<para>Composante Y. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CVector4.h" line="82" bodyfile="/home/cj/workspace/Tetris/src/math/CVector4.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_vector4_1aca03ecfdf87d21a98c903268c29c5ed7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CVector4::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+<para>Composante Z. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CVector4.h" line="83" bodyfile="/home/cj/workspace/Tetris/src/math/CVector4.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_vector4_1a7512fc4c3ce6843060219ba4abc5ea51" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CVector4::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+<para>Composante W. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CVector4.h" line="84" bodyfile="/home/cj/workspace/Tetris/src/math/CVector4.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_vector4_1a236fe8016565dce87ddb8223021df0dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CVector4::CVector4</definition>
+        <argsstring>(float X=0, float Y=0, float Z=0, float W=0)</argsstring>
+        <name>CVector4</name>
+        <param>
+          <type>float</type>
+          <declname>X</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Y</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Z</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>W</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructeur par défaut</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>X</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Composante X du vecteur </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Composante Y du vecteur </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Composante Z du vecteur </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CVector4.h" line="24" bodyfile="/home/cj/workspace/Tetris/src/math/CVector4.h" bodystart="106" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_vector4_1a0ee36e3ebd1fae7de147c81c60656aa7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CVector4::CVector4</definition>
+        <argsstring>(const CVector3 &amp;vec, float W=0)</argsstring>
+        <name>CVector4</name>
+        <param>
+          <type>const <ref refid="class_c_vector3" kindref="compound">CVector3</ref> &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>W</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CVector4.h" line="25" bodyfile="/home/cj/workspace/Tetris/src/math/CVector4.h" bodystart="109" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_vector4_1a396c0e6f50c58da882ba0c28dbc9cac5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void CVector4::Set</definition>
+        <argsstring>(float X, float Y, float Z, float W)</argsstring>
+        <name>Set</name>
+        <param>
+          <type>float</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Z</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>W</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Réinitialise le vecteur</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>X</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Composante X du vecteur </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Composante Y du vecteur </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Composante Z du vecteur </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CVector4.h" line="30" bodyfile="/home/cj/workspace/Tetris/src/math/CVector4.h" bodystart="122" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_vector4_1a3e6002e72c8f06a63017d18c55efe37d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float CVector4::Length</definition>
+        <argsstring>() const </argsstring>
+        <name>Length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Renvoie la norme du vecteur</para><para><simplesect kind="return"><para>Valeur de la norme du vecteur sqrt(x² + y² + z²) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CVector4.h" line="35" bodyfile="/home/cj/workspace/Tetris/src/math/CVector4.h" bodystart="137" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_vector4_1ac4a7349170b4e1fab63cd729ad0c9ebc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float CVector4::LengthSq</definition>
+        <argsstring>() const </argsstring>
+        <name>LengthSq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Renvoie la norme au carré du vecteur</para><para><simplesect kind="return"><para>Carré de la norme du vecteur (x² + y² + z²) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CVector4.h" line="40" bodyfile="/home/cj/workspace/Tetris/src/math/CVector4.h" bodystart="149" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_vector4_1ab2cde28a4114f4cb8bc32070c1eb1919" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void CVector4::Normalize</definition>
+        <argsstring>()</argsstring>
+        <name>Normalize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Normalise le vecteur </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CVector4.h" line="45" bodyfile="/home/cj/workspace/Tetris/src/math/CVector4.h" bodystart="159" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_vector4_1abf9248218fcde2670f05702b3e455c11" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_vector4" kindref="compound">CVector4</ref></type>
+        <definition>CVector4 CVector4::operator+</definition>
+        <argsstring>() const </argsstring>
+        <name>operator+</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Opérateur unaire +</para><para><simplesect kind="return"><para>Résultat de l&apos;opération </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CVector4.h" line="50" bodyfile="/home/cj/workspace/Tetris/src/math/CVector4.h" bodystart="179" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_vector4_1a77217c90d67ad13be142dc5feb99919b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_vector4" kindref="compound">CVector4</ref></type>
+        <definition>CVector4 CVector4::operator-</definition>
+        <argsstring>() const </argsstring>
+        <name>operator-</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Opérateur unaire -</para><para><simplesect kind="return"><para>Résultat de l&apos;opération </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CVector4.h" line="51" bodyfile="/home/cj/workspace/Tetris/src/math/CVector4.h" bodystart="192" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_vector4_1a4f7c263e0b24b89fd72ea309406c1193" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_vector4" kindref="compound">CVector4</ref></type>
+        <definition>CVector4 CVector4::operator+</definition>
+        <argsstring>(const CVector4 &amp;v) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="class_c_vector4" kindref="compound">CVector4</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Opérateur binaire +</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Vecteur à additionner</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Résultat de l&apos;opération </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CVector4.h" line="56" bodyfile="/home/cj/workspace/Tetris/src/math/CVector4.h" bodystart="207" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_vector4_1ab4becd5f56b3c29a694e0b0e6919d22d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_vector4" kindref="compound">CVector4</ref></type>
+        <definition>CVector4 CVector4::operator-</definition>
+        <argsstring>(const CVector4 &amp;v) const </argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="class_c_vector4" kindref="compound">CVector4</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Opérateur binaire -</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Vecteur à soustraire</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Résultat de l&apos;opération </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CVector4.h" line="57" bodyfile="/home/cj/workspace/Tetris/src/math/CVector4.h" bodystart="222" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_vector4_1a39b66d70237b50b867dcaf8d4f16bc00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_c_vector4" kindref="compound">CVector4</ref> &amp;</type>
+        <definition>const CVector4 &amp; CVector4::operator+=</definition>
+        <argsstring>(const CVector4 &amp;v)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="class_c_vector4" kindref="compound">CVector4</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Opérateur +=</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Vecteur à additioner</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Résultat de l&apos;opération </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CVector4.h" line="62" bodyfile="/home/cj/workspace/Tetris/src/math/CVector4.h" bodystart="235" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_vector4_1a095a1ea2c124a3d2928238c787c2ac69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_c_vector4" kindref="compound">CVector4</ref> &amp;</type>
+        <definition>const CVector4 &amp; CVector4::operator-=</definition>
+        <argsstring>(const CVector4 &amp;v)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const <ref refid="class_c_vector4" kindref="compound">CVector4</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Opérateur -=</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Vecteur à soustraire</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Résultat de l&apos;opération </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CVector4.h" line="63" bodyfile="/home/cj/workspace/Tetris/src/math/CVector4.h" bodystart="254" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_vector4_1a695d4e0612c0cc3de4643a5f9c5a1e64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_c_vector4" kindref="compound">CVector4</ref> &amp;</type>
+        <definition>const CVector4 &amp; CVector4::operator*=</definition>
+        <argsstring>(float t)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Opérateur *= avec un scalaire</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Scalaire</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Résultat de l&apos;opération </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CVector4.h" line="68" bodyfile="/home/cj/workspace/Tetris/src/math/CVector4.h" bodystart="273" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_vector4_1a7ae9d0dd61aaf5f94267fa05f63abb01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_c_vector4" kindref="compound">CVector4</ref> &amp;</type>
+        <definition>const CVector4 &amp; CVector4::operator/=</definition>
+        <argsstring>(float t)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Opérateur /= avec un scalaire</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Scalaire</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Résultat de l&apos;opération </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CVector4.h" line="69" bodyfile="/home/cj/workspace/Tetris/src/math/CVector4.h" bodystart="292" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_vector4_1ade99ff60cad22dc8c50fbf65d3530cc0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CVector4::operator==</definition>
+        <argsstring>(const CVector4 &amp;v) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="class_c_vector4" kindref="compound">CVector4</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Opérateur de comparaison ==</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Vecteur à comparer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True si les deux vecteurs sont identiques </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CVector4.h" line="74" bodyfile="/home/cj/workspace/Tetris/src/math/CVector4.h" bodystart="311" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_vector4_1a804a579d02c26bf3584338e697250fb9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CVector4::operator!=</definition>
+        <argsstring>(const CVector4 &amp;v) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="class_c_vector4" kindref="compound">CVector4</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Opérateur de comparaison !=</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Vecteur à comparer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True si les deux vecteurs sont différents </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/math/CVector4.h" line="75" bodyfile="/home/cj/workspace/Tetris/src/math/CVector4.h" bodystart="328" bodyend="331"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/cj/workspace/Tetris/src/math/CVector4.h" line="18" bodyfile="/home/cj/workspace/Tetris/src/math/CVector4.h" bodystart="17" bodyend="85"/>
+    <listofallmembers>
+      <member refid="class_c_vector4_1a236fe8016565dce87ddb8223021df0dc" prot="public" virt="non-virtual"><scope>CVector4</scope><name>CVector4</name></member>
+      <member refid="class_c_vector4_1a0ee36e3ebd1fae7de147c81c60656aa7" prot="public" virt="non-virtual"><scope>CVector4</scope><name>CVector4</name></member>
+      <member refid="class_c_vector4_1a3e6002e72c8f06a63017d18c55efe37d" prot="public" virt="non-virtual"><scope>CVector4</scope><name>Length</name></member>
+      <member refid="class_c_vector4_1ac4a7349170b4e1fab63cd729ad0c9ebc" prot="public" virt="non-virtual"><scope>CVector4</scope><name>LengthSq</name></member>
+      <member refid="class_c_vector4_1ab2cde28a4114f4cb8bc32070c1eb1919" prot="public" virt="non-virtual"><scope>CVector4</scope><name>Normalize</name></member>
+      <member refid="class_c_vector4_1a804a579d02c26bf3584338e697250fb9" prot="public" virt="non-virtual"><scope>CVector4</scope><name>operator!=</name></member>
+      <member refid="class_c_vector4_1a695d4e0612c0cc3de4643a5f9c5a1e64" prot="public" virt="non-virtual"><scope>CVector4</scope><name>operator*=</name></member>
+      <member refid="class_c_vector4_1abf9248218fcde2670f05702b3e455c11" prot="public" virt="non-virtual"><scope>CVector4</scope><name>operator+</name></member>
+      <member refid="class_c_vector4_1a4f7c263e0b24b89fd72ea309406c1193" prot="public" virt="non-virtual"><scope>CVector4</scope><name>operator+</name></member>
+      <member refid="class_c_vector4_1a39b66d70237b50b867dcaf8d4f16bc00" prot="public" virt="non-virtual"><scope>CVector4</scope><name>operator+=</name></member>
+      <member refid="class_c_vector4_1a77217c90d67ad13be142dc5feb99919b" prot="public" virt="non-virtual"><scope>CVector4</scope><name>operator-</name></member>
+      <member refid="class_c_vector4_1ab4becd5f56b3c29a694e0b0e6919d22d" prot="public" virt="non-virtual"><scope>CVector4</scope><name>operator-</name></member>
+      <member refid="class_c_vector4_1a095a1ea2c124a3d2928238c787c2ac69" prot="public" virt="non-virtual"><scope>CVector4</scope><name>operator-=</name></member>
+      <member refid="class_c_vector4_1a7ae9d0dd61aaf5f94267fa05f63abb01" prot="public" virt="non-virtual"><scope>CVector4</scope><name>operator/=</name></member>
+      <member refid="class_c_vector4_1ade99ff60cad22dc8c50fbf65d3530cc0" prot="public" virt="non-virtual"><scope>CVector4</scope><name>operator==</name></member>
+      <member refid="class_c_vector4_1a396c0e6f50c58da882ba0c28dbc9cac5" prot="public" virt="non-virtual"><scope>CVector4</scope><name>Set</name></member>
+      <member refid="class_c_vector4_1a7512fc4c3ce6843060219ba4abc5ea51" prot="public" virt="non-virtual"><scope>CVector4</scope><name>w</name></member>
+      <member refid="class_c_vector4_1a598c4247754f6601f7c3d47d8f050af0" prot="public" virt="non-virtual"><scope>CVector4</scope><name>x</name></member>
+      <member refid="class_c_vector4_1aa45e3cb54bd202f878d61755ac2de91e" prot="public" virt="non-virtual"><scope>CVector4</scope><name>y</name></member>
+      <member refid="class_c_vector4_1aca03ecfdf87d21a98c903268c29c5ed7" prot="public" virt="non-virtual"><scope>CVector4</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

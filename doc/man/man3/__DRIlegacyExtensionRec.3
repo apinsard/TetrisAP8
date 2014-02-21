@@ -1,0 +1,51 @@
+.TH "__DRIlegacyExtensionRec" 3 "Vendredi Février 21 2014" "Version alpha" "Tetris" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+__DRIlegacyExtensionRec \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <dri_interface\&.h>\fP
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "\fB__DRIextension\fP \fBbase\fP"
+.br
+.ti -1c
+.RI "\fB__DRIscreen\fP *(* \fBcreateNewScreen\fP )(int screen, const \fB__DRIversion\fP *ddx_version, const \fB__DRIversion\fP *dri_version, const \fB__DRIversion\fP *drm_version, const \fB__DRIframebuffer\fP *frame_buffer, \fBvoid\fP *pSAREA, int fd, const \fB__DRIextension\fP **extensions, const \fB__DRIconfig\fP ***driver_configs, \fBvoid\fP *loaderPrivate)"
+.br
+.ti -1c
+.RI "\fB__DRIdrawable\fP *(* \fBcreateNewDrawable\fP )(\fB__DRIscreen\fP *screen, const \fB__DRIconfig\fP *config, drm_drawable_t hwDrawable, int renderType, const int *attrs, \fBvoid\fP *loaderPrivate)"
+.br
+.ti -1c
+.RI "\fB__DRIcontext\fP *(* \fBcreateNewContext\fP )(\fB__DRIscreen\fP *screen, const \fB__DRIconfig\fP *config, int render_type, \fB__DRIcontext\fP *shared, drm_context_t hwContext, \fBvoid\fP *loaderPrivate)"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+Définition à la ligne 649 du fichier dri_interface\&.h\&.
+.SH "Documentation des données membres"
+.PP 
+.SS "\fB__DRIextension\fP __DRIlegacyExtensionRec::base"
+
+.PP
+Définition à la ligne 650 du fichier dri_interface\&.h\&.
+.SS "\fB__DRIcontext\fP*(* __DRIlegacyExtensionRec::createNewContext)(\fB__DRIscreen\fP *screen, const \fB__DRIconfig\fP *config, int render_type, \fB__DRIcontext\fP *shared, drm_context_t hwContext, \fBvoid\fP *loaderPrivate)"
+
+.PP
+Définition à la ligne 668 du fichier dri_interface\&.h\&.
+.SS "\fB__DRIdrawable\fP*(* __DRIlegacyExtensionRec::createNewDrawable)(\fB__DRIscreen\fP *screen, const \fB__DRIconfig\fP *config, drm_drawable_t hwDrawable, int renderType, const int *attrs, \fBvoid\fP *loaderPrivate)"
+
+.PP
+Définition à la ligne 662 du fichier dri_interface\&.h\&.
+.SS "\fB__DRIscreen\fP*(* __DRIlegacyExtensionRec::createNewScreen)(int screen, const \fB__DRIversion\fP *ddx_version, const \fB__DRIversion\fP *dri_version, const \fB__DRIversion\fP *drm_version, const \fB__DRIframebuffer\fP *frame_buffer, \fBvoid\fP *pSAREA, int fd, const \fB__DRIextension\fP **extensions, const \fB__DRIconfig\fP ***driver_configs, \fBvoid\fP *loaderPrivate)"
+
+.PP
+Définition à la ligne 652 du fichier dri_interface\&.h\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Tetris à partir du code source\&.

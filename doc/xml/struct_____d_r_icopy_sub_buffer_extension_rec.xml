@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_____d_r_icopy_sub_buffer_extension_rec" kind="struct" prot="public">
+    <compoundname>__DRIcopySubBufferExtensionRec</compoundname>
+    <includes refid="dri__interface_8h" local="no">dri_interface.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_____d_r_icopy_sub_buffer_extension_rec_1af6b56a9cba33f5cc35a9a6c7a559213b" prot="public" static="no" mutable="no">
+        <type><ref refid="dri__interface_8h_1a4e0a61c8ece00d2b2c6792a9a1b55385" kindref="member">__DRIextension</ref></type>
+        <definition>__DRIextension __DRIcopySubBufferExtensionRec::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="136" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_r_icopy_sub_buffer_extension_rec_1a0be1cfdf2996b714472ffb0cb5422248" prot="public" static="no" mutable="no">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref>(*</type>
+        <definition>void(* __DRIcopySubBufferExtensionRec::copySubBuffer)(__DRIdrawable *drawable, int x, int y, int w, int h)</definition>
+        <argsstring>)(__DRIdrawable *drawable, int x, int y, int w, int h)</argsstring>
+        <name>copySubBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="137" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="12">
+        <label>__DRIcopySubBufferExtensionRec</label>
+        <link refid="struct_____d_r_icopy_sub_buffer_extension_rec"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>base</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>__DRIextensionRec</label>
+        <link refid="struct_____d_r_iextension_rec"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="135" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="135" bodyend="138"/>
+    <listofallmembers>
+      <member refid="struct_____d_r_icopy_sub_buffer_extension_rec_1af6b56a9cba33f5cc35a9a6c7a559213b" prot="public" virt="non-virtual"><scope>__DRIcopySubBufferExtensionRec</scope><name>base</name></member>
+      <member refid="struct_____d_r_icopy_sub_buffer_extension_rec_1a0be1cfdf2996b714472ffb0cb5422248" prot="public" virt="non-virtual"><scope>__DRIcopySubBufferExtensionRec</scope><name>copySubBuffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

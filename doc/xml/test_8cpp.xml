@@ -1,0 +1,421 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="test_8cpp" kind="file">
+    <compoundname>test.cpp</compoundname>
+    <includes refid="test_8h" local="yes">test.h</includes>
+    <incdepgraph>
+      <node id="526">
+        <label>CPieceAbstract.h</label>
+        <link refid="_c_piece_abstract_8h"/>
+        <childnode refid="527" relation="include">
+        </childnode>
+      </node>
+      <node id="536">
+        <label>limits</label>
+      </node>
+      <node id="522">
+        <label>/home/cj/workspace/Tetris/src/test/test.cpp</label>
+        <link refid="test.cpp"/>
+        <childnode refid="523" relation="include">
+        </childnode>
+      </node>
+      <node id="531">
+        <label>cmath</label>
+      </node>
+      <node id="525">
+        <label>string</label>
+      </node>
+      <node id="537">
+        <label>CVector4.h</label>
+        <link refid="_c_vector4_8h"/>
+        <childnode refid="536" relation="include">
+        </childnode>
+        <childnode refid="524" relation="include">
+        </childnode>
+        <childnode refid="535" relation="include">
+        </childnode>
+      </node>
+      <node id="538">
+        <label>CMatrix44.h</label>
+        <link refid="_c_matrix44_8h"/>
+        <childnode refid="535" relation="include">
+        </childnode>
+        <childnode refid="537" relation="include">
+        </childnode>
+        <childnode refid="532" relation="include">
+        </childnode>
+      </node>
+      <node id="534">
+        <label>ctime</label>
+      </node>
+      <node id="530">
+        <label>vector</label>
+      </node>
+      <node id="528">
+        <label>sstream</label>
+      </node>
+      <node id="535">
+        <label>CVector3.h</label>
+        <link refid="_c_vector3_8h"/>
+        <childnode refid="536" relation="include">
+        </childnode>
+        <childnode refid="524" relation="include">
+        </childnode>
+        <childnode refid="531" relation="include">
+        </childnode>
+      </node>
+      <node id="533">
+        <label>cstdlib</label>
+      </node>
+      <node id="524">
+        <label>iostream</label>
+      </node>
+      <node id="527">
+        <label>Common.h</label>
+        <link refid="_common_8h"/>
+        <childnode refid="525" relation="include">
+        </childnode>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="524" relation="include">
+        </childnode>
+        <childnode refid="529" relation="include">
+        </childnode>
+        <childnode refid="530" relation="include">
+        </childnode>
+        <childnode refid="531" relation="include">
+        </childnode>
+        <childnode refid="532" relation="include">
+        </childnode>
+        <childnode refid="533" relation="include">
+        </childnode>
+        <childnode refid="534" relation="include">
+        </childnode>
+        <childnode refid="535" relation="include">
+        </childnode>
+        <childnode refid="537" relation="include">
+        </childnode>
+        <childnode refid="538" relation="include">
+        </childnode>
+      </node>
+      <node id="523">
+        <label>test.h</label>
+        <link refid="test_8h"/>
+        <childnode refid="524" relation="include">
+        </childnode>
+        <childnode refid="525" relation="include">
+        </childnode>
+        <childnode refid="526" relation="include">
+        </childnode>
+      </node>
+      <node id="529">
+        <label>algorithm</label>
+      </node>
+      <node id="532">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="test_8cpp_1a8da3206e3bcfc0bcd87b8cee4381dba6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+        <definition>string fillLine</definition>
+        <argsstring>(string begin, string end)</argsstring>
+        <name>fillLine</name>
+        <param>
+          <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Remplit une ligne avec des points entre le début et la fin de manière à ce qu&apos;elle fasse exactement COL_WIDTH caractères. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/test/test.cpp" line="3" bodyfile="/home/cj/workspace/Tetris/src/test/test.cpp" bodystart="3" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="test_8cpp_1ac09ead110788fc64034d07038d30ebe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+        <definition>string fillLine</definition>
+        <argsstring>(string begin)</argsstring>
+        <name>fillLine</name>
+        <param>
+          <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+          <declname>begin</declname>
+        </param>
+        <briefdescription>
+<para>Remplit une ligne avec des points à la fin de manière à ce qu&apos;elle fasse exactement COL_WIDTH caractères. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/test/test.cpp" line="14" bodyfile="/home/cj/workspace/Tetris/src/test/test.cpp" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="test_8cpp_1a9de15fb09f30d48b79c5f407a2b62bf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+        <definition>string formatResult</definition>
+        <argsstring>(int depth, string label, bool success)</argsstring>
+        <name>formatResult</name>
+        <param>
+          <type>int</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>success</declname>
+        </param>
+        <briefdescription>
+<para>Formate un résultat (échec ou succès) avec la méthode fillLine. Si le résultat est un succès, on ajoute [PASS] en vert à la fin. Dans le cas contraire, on ajoute [FAIL] en vert à la fin. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>le niveau d&apos;indentation de la ligne </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>le libellé du test </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/test/test.cpp" line="18" bodyfile="/home/cj/workspace/Tetris/src/test/test.cpp" bodystart="18" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="test_8cpp_1adaeac9fbf3cc6edd27bc852e7ae12bdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void printTestResult</definition>
+        <argsstring>(string label, bool success)</argsstring>
+        <name>printTestResult</name>
+        <param>
+          <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>success</declname>
+        </param>
+        <briefdescription>
+<para>Affiche à l&apos;écran formatResult avec un niveau d&apos;indentation de 2 (cas le plus usuel). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/test/test.cpp" line="41" bodyfile="/home/cj/workspace/Tetris/src/test/test.cpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="test_8cpp_1a605e701470bfef1b96e36a04bc6ec049" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void testPieceCli</definition>
+        <argsstring>(string pieceT, string pieceR, string pieceB, string pieceL, CPieceAbstract piece)</argsstring>
+        <name>testPieceCli</name>
+        <param>
+          <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+          <declname>pieceT</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+          <declname>pieceR</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+          <declname>pieceB</declname>
+        </param>
+        <param>
+          <type><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref></type>
+          <declname>pieceL</declname>
+        </param>
+        <param>
+          <type><ref refid="class_c_piece_abstract" kindref="compound">CPieceAbstract</ref></type>
+          <declname>piece</declname>
+        </param>
+        <briefdescription>
+<para>Test une pièce du jeu en mode console. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pieceT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>la représentation sous forme de string de la pièce dans l&apos;état TOP. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pieceR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>la représentation de la pièce dans l&apos;état RIGHT </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pieceB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>la représentation de la pièce dans l&apos;état BOTTOM </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pieceL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>la représentation de la pièce dans l&apos;état LEFT </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>piece</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>la pièce a tester </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/test/test.cpp" line="47" bodyfile="/home/cj/workspace/Tetris/src/test/test.cpp" bodystart="45" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="test_8h" kindref="compound">test.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="test_8h_1a8da3206e3bcfc0bcd87b8cee4381dba6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="test_8cpp_1a8da3206e3bcfc0bcd87b8cee4381dba6" kindref="member" tooltip="Remplit une ligne avec des points entre le début et la fin de manière à ce qu&amp;#39;elle fasse exactement C...">fillLine</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>begin,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a432111147038972f06e049e18a837002" kindref="member">end</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbSupChars<sp/>=<sp/><ref refid="test_8h_1ad6780b305e9bea9dc8e2bfd25bd062bd" kindref="member">COL_WIDTH</ref><sp/>-<sp/>begin.length()<sp/>-<sp/>end.length();</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a321ff419cd5252e54cf95e64dc6687ee" kindref="member">result</ref><sp/>=<sp/>begin;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i<sp/>&lt;<sp/>nbSupChars;<sp/>i++)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>+=<sp/><ref refid="test_8h_1aff95b03d90aea646cc034a4bf274c0b3" kindref="member">FILL_CHAR</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/>result<sp/>+=<sp/><ref refid="gl_8h_1a432111147038972f06e049e18a837002" kindref="member">end</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a321ff419cd5252e54cf95e64dc6687ee" kindref="member">result</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="test_8h_1ac09ead110788fc64034d07038d30ebe3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="test_8cpp_1a8da3206e3bcfc0bcd87b8cee4381dba6" kindref="member" tooltip="Remplit une ligne avec des points entre le début et la fin de manière à ce qu&amp;#39;elle fasse exactement C...">fillLine</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>begin)<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="test_8cpp_1a8da3206e3bcfc0bcd87b8cee4381dba6" kindref="member" tooltip="Remplit une ligne avec des points entre le début et la fin de manière à ce qu&amp;#39;elle fasse exactement C...">fillLine</ref>(begin,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="test_8h_1a9de15fb09f30d48b79c5f407a2b62bf7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="test_8cpp_1a9de15fb09f30d48b79c5f407a2b62bf7" kindref="member" tooltip="Formate un résultat (échec ou succès) avec la méthode fillLine. Si le résultat est un succès...">formatResult</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a1d280defca3cdf21d6a3144bb2ab95ab" kindref="member">depth</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>label,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>success)<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>line;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a321ff419cd5252e54cf95e64dc6687ee" kindref="member">result</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a3ea846f998d64f079b86052b6c4193a8" kindref="member">color</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(success)<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>color<sp/>=<sp/><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref>(<ref refid="test_8h_1a61c6cdf74741d1145ecc13e5f6c37711" kindref="member">COLOR_PASS</ref>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;PASS&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>color<sp/>=<sp/><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref>(<ref refid="test_8h_1ac3c186ac6329d3533b0781fdeb95f70c" kindref="member">COLOR_FAIL</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;FAIL&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;depth*2;<sp/>i++)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>label<sp/>=<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal"><sp/>+<sp/>label;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>line<sp/>=<sp/><ref refid="test_8cpp_1a8da3206e3bcfc0bcd87b8cee4381dba6" kindref="member" tooltip="Remplit une ligne avec des points entre le début et la fin de manière à ce qu&amp;#39;elle fasse exactement C...">fillLine</ref>(label,<sp/></highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal">+result+</highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">).substr(0,<sp/><ref refid="test_8h_1ad6780b305e9bea9dc8e2bfd25bd062bd" kindref="member">COL_WIDTH</ref>-6);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>line<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal">+<sp/>color<sp/>+<sp/>result<sp/>+<sp/><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">string</ref>(<ref refid="test_8h_1a17f760256046df23dd0ab46602f04d02" kindref="member">COLOR_RESET</ref>)<sp/>+</highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>line;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="test_8h_1adaeac9fbf3cc6edd27bc852e7ae12bdf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="test_8cpp_1adaeac9fbf3cc6edd27bc852e7ae12bdf" kindref="member" tooltip="Affiche à l&amp;#39;écran formatResult avec un niveau d&amp;#39;indentation de 2 (cas le plus usuel).">printTestResult</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>label,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>success)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="test_8cpp_1a9de15fb09f30d48b79c5f407a2b62bf7" kindref="member" tooltip="Formate un résultat (échec ou succès) avec la méthode fillLine. Si le résultat est un succès...">formatResult</ref>(2,<sp/>label,<sp/>success)<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="test_8h_1a605e701470bfef1b96e36a04bc6ec049" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="test_8cpp_1a605e701470bfef1b96e36a04bc6ec049" kindref="member" tooltip="Test une pièce du jeu en mode console.">testPieceCli</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>pieceT,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>pieceR,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>pieceB,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>pieceL,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_piece_abstract" kindref="compound" tooltip="classe CPieceAbstract abstraite">CPieceAbstract</ref><sp/>piece)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>ostringstream<sp/>pout;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>success;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>pout<sp/>&lt;&lt;<sp/>piece;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>success<sp/>=<sp/>(pieceT<sp/>==<sp/>pout.str());</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><ref refid="test_8cpp_1adaeac9fbf3cc6edd27bc852e7ae12bdf" kindref="member" tooltip="Affiche à l&amp;#39;écran formatResult avec un niveau d&amp;#39;indentation de 2 (cas le plus usuel).">printTestResult</ref>(</highlight><highlight class="stringliteral">&quot;(0,<sp/>0,<sp/>CVector3(0,<sp/>0,<sp/>0))&quot;</highlight><highlight class="normal">,<sp/>success);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="test_8cpp_1a8da3206e3bcfc0bcd87b8cee4381dba6" kindref="member" tooltip="Remplit une ligne avec des points entre le début et la fin de manière à ce qu&amp;#39;elle fasse exactement C...">fillLine</ref>(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>TurnRight()&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>pout.str(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>pout.clear();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>piece.TurnRight();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>pout<sp/>&lt;&lt;<sp/>piece;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>success<sp/>=<sp/>(pieceR<sp/>==<sp/>pout.str());</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><ref refid="test_8cpp_1adaeac9fbf3cc6edd27bc852e7ae12bdf" kindref="member" tooltip="Affiche à l&amp;#39;écran formatResult avec un niveau d&amp;#39;indentation de 2 (cas le plus usuel).">printTestResult</ref>(</highlight><highlight class="stringliteral">&quot;from<sp/>state<sp/>Top&quot;</highlight><highlight class="normal">,<sp/>success);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>pout.str(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>pout.clear();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>piece.TurnRight();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>pout<sp/>&lt;&lt;<sp/>piece;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>success<sp/>=<sp/>(pieceB<sp/>==<sp/>pout.str());</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><ref refid="test_8cpp_1adaeac9fbf3cc6edd27bc852e7ae12bdf" kindref="member" tooltip="Affiche à l&amp;#39;écran formatResult avec un niveau d&amp;#39;indentation de 2 (cas le plus usuel).">printTestResult</ref>(</highlight><highlight class="stringliteral">&quot;from<sp/>state<sp/>Right&quot;</highlight><highlight class="normal">,<sp/>success);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>pout.str(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>pout.clear();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>piece.TurnRight();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>pout<sp/>&lt;&lt;<sp/>piece;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>success<sp/>=<sp/>(pieceL<sp/>==<sp/>pout.str());</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><ref refid="test_8cpp_1adaeac9fbf3cc6edd27bc852e7ae12bdf" kindref="member" tooltip="Affiche à l&amp;#39;écran formatResult avec un niveau d&amp;#39;indentation de 2 (cas le plus usuel).">printTestResult</ref>(</highlight><highlight class="stringliteral">&quot;from<sp/>state<sp/>Bottom&quot;</highlight><highlight class="normal">,<sp/>success);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>pout.str(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>pout.clear();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>piece.TurnRight();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>pout<sp/>&lt;&lt;<sp/>piece;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>success<sp/>=<sp/>(pieceT<sp/>==<sp/>pout.str());</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><ref refid="test_8cpp_1adaeac9fbf3cc6edd27bc852e7ae12bdf" kindref="member" tooltip="Affiche à l&amp;#39;écran formatResult avec un niveau d&amp;#39;indentation de 2 (cas le plus usuel).">printTestResult</ref>(</highlight><highlight class="stringliteral">&quot;from<sp/>state<sp/>Left&quot;</highlight><highlight class="normal">,<sp/>success);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="test_8cpp_1a8da3206e3bcfc0bcd87b8cee4381dba6" kindref="member" tooltip="Remplit une ligne avec des points entre le début et la fin de manière à ce qu&amp;#39;elle fasse exactement C...">fillLine</ref>(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>TurnLeft()&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>pout.str(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>pout.clear();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>piece.TurnLeft();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>pout<sp/>&lt;&lt;<sp/>piece;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>success<sp/>=<sp/>(pieceL<sp/>==<sp/>pout.str());</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><ref refid="test_8cpp_1adaeac9fbf3cc6edd27bc852e7ae12bdf" kindref="member" tooltip="Affiche à l&amp;#39;écran formatResult avec un niveau d&amp;#39;indentation de 2 (cas le plus usuel).">printTestResult</ref>(</highlight><highlight class="stringliteral">&quot;from<sp/>state<sp/>Top&quot;</highlight><highlight class="normal">,<sp/>success);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>pout.str(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>pout.clear();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>piece.TurnLeft();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>pout<sp/>&lt;&lt;<sp/>piece;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>success<sp/>=<sp/>(pieceB<sp/>==<sp/>pout.str());</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><ref refid="test_8cpp_1adaeac9fbf3cc6edd27bc852e7ae12bdf" kindref="member" tooltip="Affiche à l&amp;#39;écran formatResult avec un niveau d&amp;#39;indentation de 2 (cas le plus usuel).">printTestResult</ref>(</highlight><highlight class="stringliteral">&quot;from<sp/>state<sp/>Left&quot;</highlight><highlight class="normal">,<sp/>success);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>pout.str(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>pout.clear();</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>piece.TurnLeft();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>pout<sp/>&lt;&lt;<sp/>piece;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>success<sp/>=<sp/>(pieceR<sp/>==<sp/>pout.str());</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><ref refid="test_8cpp_1adaeac9fbf3cc6edd27bc852e7ae12bdf" kindref="member" tooltip="Affiche à l&amp;#39;écran formatResult avec un niveau d&amp;#39;indentation de 2 (cas le plus usuel).">printTestResult</ref>(</highlight><highlight class="stringliteral">&quot;from<sp/>state<sp/>Bottom&quot;</highlight><highlight class="normal">,<sp/>success);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>pout.str(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>pout.clear();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>piece.TurnLeft();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>pout<sp/>&lt;&lt;<sp/>piece;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>success<sp/>=<sp/>(pieceT<sp/>==<sp/>pout.str());</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><ref refid="test_8cpp_1adaeac9fbf3cc6edd27bc852e7ae12bdf" kindref="member" tooltip="Affiche à l&amp;#39;écran formatResult avec un niveau d&amp;#39;indentation de 2 (cas le plus usuel).">printTestResult</ref>(</highlight><highlight class="stringliteral">&quot;from<sp/>state<sp/>Right&quot;</highlight><highlight class="normal">,<sp/>success);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/cj/workspace/Tetris/src/test/test.cpp"/>
+  </compounddef>
+</doxygen>

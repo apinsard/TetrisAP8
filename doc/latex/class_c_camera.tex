@@ -1,0 +1,165 @@
+\hypertarget{class_c_camera}{\section{Référence de la classe C\-Camera}
+\label{class_c_camera}\index{C\-Camera@{C\-Camera}}
+}
+
+
+{\ttfamily \#include $<$C\-Renderer.\-h$>$}
+
+
+
+Dérivée par \hyperlink{class_c_camera_look_at}{C\-Camera\-Look\-At}.
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_camera_a2eb95595766a84cb745ec00783595190}{C\-Camera} ()
+\item 
+\hyperlink{class_c_camera_a0123231b9f52caebf8cc7e95baa1403e}{$\sim$\-C\-Camera} ()
+\item 
+virtual \hyperlink{class_c_matrix44}{C\-Matrix44} \& \hyperlink{class_c_camera_aaae931e9df3443887264780ea5e4add6}{Compute} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_user_events}{User\-Events} $\ast$ \hyperlink{class_c_camera_a8378bd672ab258ca762326ca50a241cc}{m\-\_\-\-User\-Events}
+\begin{DoxyCompactList}\small\item\em pointeur sur l'objet partag� mouse events mis � jour par le G\-U\-I \end{DoxyCompactList}\item 
+\hyperlink{class_c_matrix44}{C\-Matrix44} \hyperlink{class_c_camera_af84199bbddf1a37cdc9d5e82ec6018e9}{m\-\_\-view\-Matrix}
+\begin{DoxyCompactList}\small\item\em matrice de transformation de la vue \end{DoxyCompactList}\item 
+float \hyperlink{class_c_camera_af4692e9f23bf7f3e438a5abfcacc515e}{m\-\_\-\-X\-Offset}
+\item 
+float \hyperlink{class_c_camera_aa2cc5b4ddb3e2c590096fe9aecf581c2}{m\-\_\-\-Y\-Offset}
+\item 
+float \hyperlink{class_c_camera_af0fe5db70b4e35a5f147037fbee15246}{m\-\_\-\-Z\-Offset}
+\begin{DoxyCompactList}\small\item\em x,y rotate \end{DoxyCompactList}\item 
+float \hyperlink{class_c_camera_ab29a2c9d274ebc7a086486f26011901c}{m\-\_\-rotate\-X}
+\item 
+float \hyperlink{class_c_camera_a3c40e7ab1b5f00bdac413e0ea59251c7}{m\-\_\-rotate\-Y}
+\begin{DoxyCompactList}\small\item\em x,y,z offset \end{DoxyCompactList}\item 
+\hyperlink{class_c_vector4}{C\-Vector4} \hyperlink{class_c_camera_ab7cde03d56f26b36091c134197b73f0c}{m\-\_\-translate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+classe cam�ra\-: s'occupe de mettre � jour la position de la cam�ra dans la fonction glu\-Look\-At 
+
+Définition à la ligne 31 du fichier C\-Renderer.\-h.
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_c_camera_a2eb95595766a84cb745ec00783595190}{\index{C\-Camera@{C\-Camera}!C\-Camera@{C\-Camera}}
+\index{C\-Camera@{C\-Camera}!CCamera@{C\-Camera}}
+\subsubsection[{C\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}C\-Camera\-::\-C\-Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_camera_a2eb95595766a84cb745ec00783595190}
+
+
+Définition à la ligne 37 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_camera_a0123231b9f52caebf8cc7e95baa1403e}{\index{C\-Camera@{C\-Camera}!$\sim$\-C\-Camera@{$\sim$\-C\-Camera}}
+\index{$\sim$\-C\-Camera@{$\sim$\-C\-Camera}!CCamera@{C\-Camera}}
+\subsubsection[{$\sim$\-C\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}C\-Camera\-::$\sim$\-C\-Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_camera_a0123231b9f52caebf8cc7e95baa1403e}
+
+
+Définition à la ligne 43 du fichier C\-Renderer.\-h.
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_c_camera_aaae931e9df3443887264780ea5e4add6}{\index{C\-Camera@{C\-Camera}!Compute@{Compute}}
+\index{Compute@{Compute}!CCamera@{C\-Camera}}
+\subsubsection[{Compute}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf C\-Matrix44}\& C\-Camera\-::\-Compute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_c_camera_aaae931e9df3443887264780ea5e4add6}
+
+
+Implémenté dans \hyperlink{class_c_camera_look_at_a700fcf7befa6fa590b856c1d5e2e096c}{C\-Camera\-Look\-At}.
+
+
+
+\subsection{Documentation des données membres}
+\hypertarget{class_c_camera_ab29a2c9d274ebc7a086486f26011901c}{\index{C\-Camera@{C\-Camera}!m\-\_\-rotate\-X@{m\-\_\-rotate\-X}}
+\index{m\-\_\-rotate\-X@{m\-\_\-rotate\-X}!CCamera@{C\-Camera}}
+\subsubsection[{m\-\_\-rotate\-X}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Camera\-::m\-\_\-rotate\-X}}\label{class_c_camera_ab29a2c9d274ebc7a086486f26011901c}
+
+
+Définition à la ligne 59 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_camera_a3c40e7ab1b5f00bdac413e0ea59251c7}{\index{C\-Camera@{C\-Camera}!m\-\_\-rotate\-Y@{m\-\_\-rotate\-Y}}
+\index{m\-\_\-rotate\-Y@{m\-\_\-rotate\-Y}!CCamera@{C\-Camera}}
+\subsubsection[{m\-\_\-rotate\-Y}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Camera\-::m\-\_\-rotate\-Y}}\label{class_c_camera_a3c40e7ab1b5f00bdac413e0ea59251c7}
+
+
+x,y,z offset 
+
+
+
+Définition à la ligne 59 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_camera_ab7cde03d56f26b36091c134197b73f0c}{\index{C\-Camera@{C\-Camera}!m\-\_\-translate@{m\-\_\-translate}}
+\index{m\-\_\-translate@{m\-\_\-translate}!CCamera@{C\-Camera}}
+\subsubsection[{m\-\_\-translate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Vector4} C\-Camera\-::m\-\_\-translate}}\label{class_c_camera_ab7cde03d56f26b36091c134197b73f0c}
+
+
+Définition à la ligne 61 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_camera_a8378bd672ab258ca762326ca50a241cc}{\index{C\-Camera@{C\-Camera}!m\-\_\-\-User\-Events@{m\-\_\-\-User\-Events}}
+\index{m\-\_\-\-User\-Events@{m\-\_\-\-User\-Events}!CCamera@{C\-Camera}}
+\subsubsection[{m\-\_\-\-User\-Events}]{\setlength{\rightskip}{0pt plus 5cm}{\bf User\-Events}$\ast$ C\-Camera\-::m\-\_\-\-User\-Events}}\label{class_c_camera_a8378bd672ab258ca762326ca50a241cc}
+
+
+pointeur sur l'objet partag� mouse events mis � jour par le G\-U\-I 
+
+
+
+Définition à la ligne 57 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_camera_af84199bbddf1a37cdc9d5e82ec6018e9}{\index{C\-Camera@{C\-Camera}!m\-\_\-view\-Matrix@{m\-\_\-view\-Matrix}}
+\index{m\-\_\-view\-Matrix@{m\-\_\-view\-Matrix}!CCamera@{C\-Camera}}
+\subsubsection[{m\-\_\-view\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Matrix44} C\-Camera\-::m\-\_\-view\-Matrix}}\label{class_c_camera_af84199bbddf1a37cdc9d5e82ec6018e9}
+
+
+matrice de transformation de la vue 
+
+
+
+Définition à la ligne 58 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_camera_af4692e9f23bf7f3e438a5abfcacc515e}{\index{C\-Camera@{C\-Camera}!m\-\_\-\-X\-Offset@{m\-\_\-\-X\-Offset}}
+\index{m\-\_\-\-X\-Offset@{m\-\_\-\-X\-Offset}!CCamera@{C\-Camera}}
+\subsubsection[{m\-\_\-\-X\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Camera\-::m\-\_\-\-X\-Offset}}\label{class_c_camera_af4692e9f23bf7f3e438a5abfcacc515e}
+
+
+Définition à la ligne 59 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_camera_aa2cc5b4ddb3e2c590096fe9aecf581c2}{\index{C\-Camera@{C\-Camera}!m\-\_\-\-Y\-Offset@{m\-\_\-\-Y\-Offset}}
+\index{m\-\_\-\-Y\-Offset@{m\-\_\-\-Y\-Offset}!CCamera@{C\-Camera}}
+\subsubsection[{m\-\_\-\-Y\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Camera\-::m\-\_\-\-Y\-Offset}}\label{class_c_camera_aa2cc5b4ddb3e2c590096fe9aecf581c2}
+
+
+Définition à la ligne 59 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_camera_af0fe5db70b4e35a5f147037fbee15246}{\index{C\-Camera@{C\-Camera}!m\-\_\-\-Z\-Offset@{m\-\_\-\-Z\-Offset}}
+\index{m\-\_\-\-Z\-Offset@{m\-\_\-\-Z\-Offset}!CCamera@{C\-Camera}}
+\subsubsection[{m\-\_\-\-Z\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Camera\-::m\-\_\-\-Z\-Offset}}\label{class_c_camera_af0fe5db70b4e35a5f147037fbee15246}
+
+
+x,y rotate 
+
+
+
+Définition à la ligne 59 du fichier C\-Renderer.\-h.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+/home/cj/workspace/\-Tetris/src/appli\-Base/\hyperlink{_c_renderer_8h}{C\-Renderer.\-h}\end{DoxyCompactItemize}

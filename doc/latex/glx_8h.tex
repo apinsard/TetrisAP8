@@ -1,0 +1,2137 @@
+\hypertarget{glx_8h}{\section{Référence du fichier /home/cj/workspace/\-Tetris/src/glut/glx.h}
+\label{glx_8h}\index{/home/cj/workspace/\-Tetris/src/glut/glx.\-h@{/home/cj/workspace/\-Tetris/src/glut/glx.\-h}}
+}
+{\ttfamily \#include $<$X11/\-Xlib.\-h$>$}\\*
+{\ttfamily \#include $<$X11/\-Xutil.\-h$>$}\\*
+{\ttfamily \#include $<$G\-L/gl.\-h$>$}\\*
+{\ttfamily \#include $<$G\-L/glxext.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_g_l_x_pbuffer_clobber_event}{G\-L\-X\-Pbuffer\-Clobber\-Event}
+\item 
+struct \hyperlink{struct_g_l_x_buffer_swap_complete}{G\-L\-X\-Buffer\-Swap\-Complete}
+\item 
+union \hyperlink{union_____g_l_x_event}{\-\_\-\-\_\-\-G\-L\-X\-Event}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{glx_8h_ae7906b57aba77ab452bfcbdd49d4aad1}{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-1}~1
+\item 
+\#define \hyperlink{glx_8h_a32f398ad62037e638b6b2e6216f7c4b3}{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-2}~1
+\item 
+\#define \hyperlink{glx_8h_a60bbf06a30a6be4428fecd140ec50ced}{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-3}~1
+\item 
+\#define \hyperlink{glx_8h_a13af8478caf16ac74140dd83510d020e}{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-4}~1
+\item 
+\#define \hyperlink{glx_8h_af3145e45de7971f98af0ef2a4c04a698}{G\-L\-X\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N\-\_\-\-N\-A\-M\-E}~\char`\"{}G\-L\-X\char`\"{}
+\item 
+\#define \hyperlink{glx_8h_a4b04101e315c782306d9847dac4bd81e}{G\-L\-X\-\_\-\-U\-S\-E\-\_\-\-G\-L}~1
+\item 
+\#define \hyperlink{glx_8h_a3b6f1996a7ec5c0e4b474bd847f8cc01}{G\-L\-X\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E}~2
+\item 
+\#define \hyperlink{glx_8h_a22738f49c53260af4c09bf9a9f21de4b}{G\-L\-X\-\_\-\-L\-E\-V\-E\-L}~3
+\item 
+\#define \hyperlink{glx_8h_a99b65d5ae76a30533a0a6a9d6c91835e}{G\-L\-X\-\_\-\-R\-G\-B\-A}~4
+\item 
+\#define \hyperlink{glx_8h_a3bf7844b05aa4a7ae5c56924eac41c35}{G\-L\-X\-\_\-\-D\-O\-U\-B\-L\-E\-B\-U\-F\-F\-E\-R}~5
+\item 
+\#define \hyperlink{glx_8h_ad907898a759575e9fb3ba8bbb4bd70f2}{G\-L\-X\-\_\-\-S\-T\-E\-R\-E\-O}~6
+\item 
+\#define \hyperlink{glx_8h_a90405ce40d727d02a35ab7267c0d071c}{G\-L\-X\-\_\-\-A\-U\-X\-\_\-\-B\-U\-F\-F\-E\-R\-S}~7
+\item 
+\#define \hyperlink{glx_8h_a7fe726c0860e8ab1ca8aee4e041b4fd7}{G\-L\-X\-\_\-\-R\-E\-D\-\_\-\-S\-I\-Z\-E}~8
+\item 
+\#define \hyperlink{glx_8h_af4f4b564881ee8ef2f3ccd0a315e42b4}{G\-L\-X\-\_\-\-G\-R\-E\-E\-N\-\_\-\-S\-I\-Z\-E}~9
+\item 
+\#define \hyperlink{glx_8h_a6a628fdbdc83def58f76c4231cedad82}{G\-L\-X\-\_\-\-B\-L\-U\-E\-\_\-\-S\-I\-Z\-E}~10
+\item 
+\#define \hyperlink{glx_8h_aa08eb17ba68eb9f66b50667ff8768803}{G\-L\-X\-\_\-\-A\-L\-P\-H\-A\-\_\-\-S\-I\-Z\-E}~11
+\item 
+\#define \hyperlink{glx_8h_ab3bc9f4a23a2626f3d3c487e57af4cd3}{G\-L\-X\-\_\-\-D\-E\-P\-T\-H\-\_\-\-S\-I\-Z\-E}~12
+\item 
+\#define \hyperlink{glx_8h_adfcdddf7b66469af3a29e5f52d43054b}{G\-L\-X\-\_\-\-S\-T\-E\-N\-C\-I\-L\-\_\-\-S\-I\-Z\-E}~13
+\item 
+\#define \hyperlink{glx_8h_aebfea4047e9f5effb0bc9206d439031b}{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-R\-E\-D\-\_\-\-S\-I\-Z\-E}~14
+\item 
+\#define \hyperlink{glx_8h_abfc1f958ab3dc1094340ab97d4e7c11a}{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-G\-R\-E\-E\-N\-\_\-\-S\-I\-Z\-E}~15
+\item 
+\#define \hyperlink{glx_8h_a2d03116f2dcb3393a7fcab5c62300c56}{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-B\-L\-U\-E\-\_\-\-S\-I\-Z\-E}~16
+\item 
+\#define \hyperlink{glx_8h_a7d4321cb0900caeb61047d3d8619c0b4}{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-A\-L\-P\-H\-A\-\_\-\-S\-I\-Z\-E}~17
+\item 
+\#define \hyperlink{glx_8h_ad221a127f56672d5c5971debb45748a3}{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-S\-C\-R\-E\-E\-N}~1
+\item 
+\#define \hyperlink{glx_8h_a3b7c0632c81e87fa7baf16564c5148f4}{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-A\-T\-T\-R\-I\-B\-U\-T\-E}~2
+\item 
+\#define \hyperlink{glx_8h_a4e98ca2d441de1524b8482d777e7c8ad}{G\-L\-X\-\_\-\-N\-O\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N}~3
+\item 
+\#define \hyperlink{glx_8h_af4ae600ecb5878dff4c9a4efe7bdfcdb}{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-V\-I\-S\-U\-A\-L}~4
+\item 
+\#define \hyperlink{glx_8h_a2e4c4633e534d0360f6bbf5954aeac21}{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-C\-O\-N\-T\-E\-X\-T}~5
+\item 
+\#define \hyperlink{glx_8h_aed136f586d80922d80d203cf2ad6991c}{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-V\-A\-L\-U\-E}~6
+\item 
+\#define \hyperlink{glx_8h_a089318891f39aedabe0e901a97e1dbd8}{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-E\-N\-U\-M}~7
+\item 
+\#define \hyperlink{glx_8h_a1d58049e601eef392d3d582d14c60893}{G\-L\-X\-\_\-\-V\-E\-N\-D\-O\-R}~1
+\item 
+\#define \hyperlink{glx_8h_ac8fe8653c4826fb3a370b1f76678f181}{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N}~2
+\item 
+\#define \hyperlink{glx_8h_a5aaab2c7372549a54b856e8438215db8}{G\-L\-X\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N\-S}~3
+\item 
+\#define \hyperlink{glx_8h_a58d27359c7214348a8107d0550ba59fa}{G\-L\-X\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-\-C\-A\-V\-E\-A\-T}~0x20
+\item 
+\#define \hyperlink{glx_8h_a139db61d3057b17b2f058ba5d4f57606}{G\-L\-X\-\_\-\-D\-O\-N\-T\-\_\-\-C\-A\-R\-E}~0x\-F\-F\-F\-F\-F\-F\-F\-F
+\item 
+\#define \hyperlink{glx_8h_aef59bbc4fbbf455493d317bc7287c2e6}{G\-L\-X\-\_\-\-X\-\_\-\-V\-I\-S\-U\-A\-L\-\_\-\-T\-Y\-P\-E}~0x22
+\item 
+\#define \hyperlink{glx_8h_aee4d64e71ecaca236c8057292ac0851d}{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-T\-Y\-P\-E}~0x23
+\item 
+\#define \hyperlink{glx_8h_a44e3c21ff8fecdd57e66e727d1398662}{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-I\-N\-D\-E\-X\-\_\-\-V\-A\-L\-U\-E}~0x24
+\item 
+\#define \hyperlink{glx_8h_adfe1ceb7569af890e93a4714c2d192c5}{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-R\-E\-D\-\_\-\-V\-A\-L\-U\-E}~0x25
+\item 
+\#define \hyperlink{glx_8h_a02e636f028bdab6aca452102d422ea53}{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-G\-R\-E\-E\-N\-\_\-\-V\-A\-L\-U\-E}~0x26
+\item 
+\#define \hyperlink{glx_8h_a0e3231ad93d61956c258f92043ba5583}{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-B\-L\-U\-E\-\_\-\-V\-A\-L\-U\-E}~0x27
+\item 
+\#define \hyperlink{glx_8h_a174b5da54ffeddfb135207e122bd174d}{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-A\-L\-P\-H\-A\-\_\-\-V\-A\-L\-U\-E}~0x28
+\item 
+\#define \hyperlink{glx_8h_aea4137405780d52ab6a7af2839d8e41d}{G\-L\-X\-\_\-\-W\-I\-N\-D\-O\-W\-\_\-\-B\-I\-T}~0x00000001
+\item 
+\#define \hyperlink{glx_8h_a8b043ca42cf3151855f5bb1415fa8ab8}{G\-L\-X\-\_\-\-P\-I\-X\-M\-A\-P\-\_\-\-B\-I\-T}~0x00000002
+\item 
+\#define \hyperlink{glx_8h_a40747561b132c6268a17c152248ff1c3}{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}~0x00000004
+\item 
+\#define \hyperlink{glx_8h_a04f4c25fd706968488a0980d523cdf16}{G\-L\-X\-\_\-\-A\-U\-X\-\_\-\-B\-U\-F\-F\-E\-R\-S\-\_\-\-B\-I\-T}~0x00000010
+\item 
+\#define \hyperlink{glx_8h_a6b7cea42e7878a2992959e705444ba33}{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-L\-E\-F\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}~0x00000001
+\item 
+\#define \hyperlink{glx_8h_a9ff65cdb3d80ffe3414dfa39f4efcfe0}{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-R\-I\-G\-H\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}~0x00000002
+\item 
+\#define \hyperlink{glx_8h_a643d6da57a434132456af5413bc2a10b}{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-L\-E\-F\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}~0x00000004
+\item 
+\#define \hyperlink{glx_8h_ae3ad7b22e7d2aba779de5eca0d0792e1}{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-R\-I\-G\-H\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}~0x00000008
+\item 
+\#define \hyperlink{glx_8h_a7adcbb19f1bb44c0583f03ee60eb6011}{G\-L\-X\-\_\-\-D\-E\-P\-T\-H\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}~0x00000020
+\item 
+\#define \hyperlink{glx_8h_af6cf6b3886b2f2552e4f9b4191543e5d}{G\-L\-X\-\_\-\-S\-T\-E\-N\-C\-I\-L\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}~0x00000040
+\item 
+\#define \hyperlink{glx_8h_a5fd8727d1cea644d19e16466547b872c}{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}~0x00000080
+\item 
+\#define \hyperlink{glx_8h_a469be69ad75b8720ad5f00160bd671b7}{G\-L\-X\-\_\-\-N\-O\-N\-E}~0x8000
+\item 
+\#define \hyperlink{glx_8h_aeb1d4b6b85fb53f9958aaf63dfc697aa}{G\-L\-X\-\_\-\-S\-L\-O\-W\-\_\-\-C\-O\-N\-F\-I\-G}~0x8001
+\item 
+\#define \hyperlink{glx_8h_abe725d7d3c640b7c698114ef27b2b2df}{G\-L\-X\-\_\-\-T\-R\-U\-E\-\_\-\-C\-O\-L\-O\-R}~0x8002
+\item 
+\#define \hyperlink{glx_8h_adb3f2ceaa1fba3b0c97bb0880ff6cce2}{G\-L\-X\-\_\-\-D\-I\-R\-E\-C\-T\-\_\-\-C\-O\-L\-O\-R}~0x8003
+\item 
+\#define \hyperlink{glx_8h_a8fea3c0abfe2929ee257ecf1a137c259}{G\-L\-X\-\_\-\-P\-S\-E\-U\-D\-O\-\_\-\-C\-O\-L\-O\-R}~0x8004
+\item 
+\#define \hyperlink{glx_8h_a0b8e43514dcd363ad0c3ad8938c2b836}{G\-L\-X\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-C\-O\-L\-O\-R}~0x8005
+\item 
+\#define \hyperlink{glx_8h_a9928d6f51bedefef8538e2ce3a631fb0}{G\-L\-X\-\_\-\-G\-R\-A\-Y\-\_\-\-S\-C\-A\-L\-E}~0x8006
+\item 
+\#define \hyperlink{glx_8h_ac2755eb66996189e7554da1f380d98fa}{G\-L\-X\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-G\-R\-A\-Y}~0x8007
+\item 
+\#define \hyperlink{glx_8h_a752fccf1e81a8cb94773fc5192662623}{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-R\-G\-B}~0x8008
+\item 
+\#define \hyperlink{glx_8h_a71e88eac4edd6b4b55287b4467893075}{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-I\-N\-D\-E\-X}~0x8009
+\item 
+\#define \hyperlink{glx_8h_ac2aa66d52771f5cdfb6edd2f3d916788}{G\-L\-X\-\_\-\-V\-I\-S\-U\-A\-L\-\_\-\-I\-D}~0x800\-B
+\item 
+\#define \hyperlink{glx_8h_a62f7ac8950a947df31cba3d7d24f6c8c}{G\-L\-X\-\_\-\-S\-C\-R\-E\-E\-N}~0x800\-C
+\item 
+\#define \hyperlink{glx_8h_adadd435abcc247be896391d019ebfbea}{G\-L\-X\-\_\-\-N\-O\-N\-\_\-\-C\-O\-N\-F\-O\-R\-M\-A\-N\-T\-\_\-\-C\-O\-N\-F\-I\-G}~0x800\-D
+\item 
+\#define \hyperlink{glx_8h_a0eae3a00b9d4abf47ae7238e55e03905}{G\-L\-X\-\_\-\-D\-R\-A\-W\-A\-B\-L\-E\-\_\-\-T\-Y\-P\-E}~0x8010
+\item 
+\#define \hyperlink{glx_8h_a5f84122254df2d5a84aa6e44d074c24a}{G\-L\-X\-\_\-\-R\-E\-N\-D\-E\-R\-\_\-\-T\-Y\-P\-E}~0x8011
+\item 
+\#define \hyperlink{glx_8h_aab3c57256b851c4a790422dfbbbcff4a}{G\-L\-X\-\_\-\-X\-\_\-\-R\-E\-N\-D\-E\-R\-A\-B\-L\-E}~0x8012
+\item 
+\#define \hyperlink{glx_8h_ac27348d36dd5c4a0de9c3ca633caf33e}{G\-L\-X\-\_\-\-F\-B\-C\-O\-N\-F\-I\-G\-\_\-\-I\-D}~0x8013
+\item 
+\#define \hyperlink{glx_8h_a1853a9117176b461cc21583332f14734}{G\-L\-X\-\_\-\-R\-G\-B\-A\-\_\-\-T\-Y\-P\-E}~0x8014
+\item 
+\#define \hyperlink{glx_8h_a1aea3930b21fb0d6fa2925f02564a8f8}{G\-L\-X\-\_\-\-C\-O\-L\-O\-R\-\_\-\-I\-N\-D\-E\-X\-\_\-\-T\-Y\-P\-E}~0x8015
+\item 
+\#define \hyperlink{glx_8h_a0cc1956b35f17412802be44df902477c}{G\-L\-X\-\_\-\-M\-A\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-W\-I\-D\-T\-H}~0x8016
+\item 
+\#define \hyperlink{glx_8h_a6d670a2668878cb74fdda26a24755641}{G\-L\-X\-\_\-\-M\-A\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-H\-E\-I\-G\-H\-T}~0x8017
+\item 
+\#define \hyperlink{glx_8h_a147bd4363a3a75aab344112ba4896799}{G\-L\-X\-\_\-\-M\-A\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-P\-I\-X\-E\-L\-S}~0x8018
+\item 
+\#define \hyperlink{glx_8h_ae4a52076cdb82aa8bd12b1b55c6cd6e5}{G\-L\-X\-\_\-\-P\-R\-E\-S\-E\-R\-V\-E\-D\-\_\-\-C\-O\-N\-T\-E\-N\-T\-S}~0x801\-B
+\item 
+\#define \hyperlink{glx_8h_a336366e9afe258a080025fb27635b89f}{G\-L\-X\-\_\-\-L\-A\-R\-G\-E\-S\-T\-\_\-\-P\-B\-U\-F\-F\-E\-R}~0x801\-C
+\item 
+\#define \hyperlink{glx_8h_ad4f8fb4c08c6e2ff35845f4df250b1ab}{G\-L\-X\-\_\-\-W\-I\-D\-T\-H}~0x801\-D
+\item 
+\#define \hyperlink{glx_8h_a291203c744ad54765644ca1126d5ce06}{G\-L\-X\-\_\-\-H\-E\-I\-G\-H\-T}~0x801\-E
+\item 
+\#define \hyperlink{glx_8h_a841537cb352bb4b5da32abcae363c6b8}{G\-L\-X\-\_\-\-E\-V\-E\-N\-T\-\_\-\-M\-A\-S\-K}~0x801\-F
+\item 
+\#define \hyperlink{glx_8h_a1066c7c318a5bc0744bd891a31b3279f}{G\-L\-X\-\_\-\-D\-A\-M\-A\-G\-E\-D}~0x8020
+\item 
+\#define \hyperlink{glx_8h_a37765e3d603b11680f677f43f0d84a9f}{G\-L\-X\-\_\-\-S\-A\-V\-E\-D}~0x8021
+\item 
+\#define \hyperlink{glx_8h_a1a8b24e54162728da459297a6fc9ade4}{G\-L\-X\-\_\-\-W\-I\-N\-D\-O\-W}~0x8022
+\item 
+\#define \hyperlink{glx_8h_a522907a44d32ff8d315c67141775c6bb}{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R}~0x8023
+\item 
+\#define \hyperlink{glx_8h_aebe1451505d127574b016dffd195178c}{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-H\-E\-I\-G\-H\-T}~0x8040
+\item 
+\#define \hyperlink{glx_8h_a45bffd673ef79f2eaf92ac2e12f092af}{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-W\-I\-D\-T\-H}~0x8041
+\item 
+\#define \hyperlink{glx_8h_a6ac91c2ef1293de23e782773c065d309}{G\-L\-X\-\_\-\-R\-G\-B\-A\-\_\-\-B\-I\-T}~0x00000001
+\item 
+\#define \hyperlink{glx_8h_a1a7c1c861fa561e43cf9315c92fedc36}{G\-L\-X\-\_\-\-C\-O\-L\-O\-R\-\_\-\-I\-N\-D\-E\-X\-\_\-\-B\-I\-T}~0x00000002
+\item 
+\#define \hyperlink{glx_8h_a35b037dde69dd0405c1218f196bcf2cc}{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-C\-L\-O\-B\-B\-E\-R\-\_\-\-M\-A\-S\-K}~0x08000000
+\item 
+\#define \hyperlink{glx_8h_ad495f735c017f4e1a77206b56a5ae1a0}{G\-L\-X\-\_\-\-S\-A\-M\-P\-L\-E\-\_\-\-B\-U\-F\-F\-E\-R\-S}~0x186a0 /$\ast$100000$\ast$/
+\item 
+\#define \hyperlink{glx_8h_aa78c8894e8eab6c2d53b9cd945063d6e}{G\-L\-X\-\_\-\-S\-A\-M\-P\-L\-E\-S}~0x186a1 /$\ast$100001$\ast$/
+\item 
+\#define \hyperlink{glx_8h_aaec2667a1d317224543fe95c4df88300}{G\-L\-X\-\_\-\-Pbuffer\-Clobber}~0
+\item 
+\#define \hyperlink{glx_8h_a5d04e136b1bc759cebb7b18784a0e824}{G\-L\-X\-\_\-\-Buffer\-Swap\-Complete}~1
+\item 
+\#define \hyperlink{glx_8h_a6cffc7c4ef58d7e69c442c51d46a6806}{\-\_\-\-\_\-\-G\-L\-X\-\_\-\-N\-U\-M\-B\-E\-R\-\_\-\-E\-V\-E\-N\-T\-S}~17
+\item 
+\#define \hyperlink{glx_8h_ad57b0b6ddb16eba7ccf974e492bf8220}{G\-L\-X\-\_\-\-A\-R\-B\-\_\-get\-\_\-proc\-\_\-address}~1
+\item 
+\#define \hyperlink{glx_8h_aa752422f84e2a7eb601b7d9844bd2d76}{G\-L\-X\-\_\-\-N\-V\-\_\-vertex\-\_\-array\-\_\-range}
+\item 
+\#define \hyperlink{glx_8h_a7b72106b92d5b38fae376e3f938c5636}{G\-L\-X\-\_\-\-A\-R\-B\-\_\-render\-\_\-texture}~1
+\item 
+\#define \hyperlink{glx_8h_a5f82c0ca7c75147ea8518c504648b307}{G\-L\-X\-\_\-\-N\-V\-\_\-float\-\_\-buffer}~1
+\item 
+\#define \hyperlink{glx_8h_a652fec7ee490821b79e44f7e35a778d9}{G\-L\-X\-\_\-\-F\-L\-O\-A\-T\-\_\-\-C\-O\-M\-P\-O\-N\-E\-N\-T\-S\-\_\-\-N\-V}~0x20\-B0
+\item 
+\#define \hyperlink{glx_8h_aa9b1bd5c9df8f8af7e6501dcb85dea3c}{G\-L\-X\-\_\-\-M\-E\-S\-A\-\_\-swap\-\_\-frame\-\_\-usage}~1
+\item 
+\#define \hyperlink{glx_8h_a7f137c65e1d5ae73fffcf67a087de66e}{G\-L\-X\-\_\-\-M\-E\-S\-A\-\_\-swap\-\_\-control}~1
+\item 
+\#define \hyperlink{glx_8h_af298c73c003ebc4944fe537679f553a6}{G\-L\-X\-\_\-\-E\-X\-T\-\_\-texture\-\_\-from\-\_\-pixmap}~1
+\item 
+\#define \hyperlink{glx_8h_a06c1a1a7fa90cf0e27eeda2e74bfdca8}{G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-G\-B\-\_\-\-E\-X\-T}~0x20\-D0
+\item 
+\#define \hyperlink{glx_8h_a9adffe85376e091b1b54fd8b358f1018}{G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-G\-B\-A\-\_\-\-E\-X\-T}~0x20\-D1
+\item 
+\#define \hyperlink{glx_8h_abc4f5184b4db99c8d96c4cb3730581be}{G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-M\-I\-P\-M\-A\-P\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-E\-X\-T}~0x20\-D2
+\item 
+\#define \hyperlink{glx_8h_aa9ed7186e9c9a6b499416206fc12c4d2}{G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-T\-A\-R\-G\-E\-T\-S\-\_\-\-E\-X\-T}~0x20\-D3
+\item 
+\#define \hyperlink{glx_8h_a5da97b982e5ccafaab84235cb8738022}{G\-L\-X\-\_\-\-Y\-\_\-\-I\-N\-V\-E\-R\-T\-E\-D\-\_\-\-E\-X\-T}~0x20\-D4
+\item 
+\#define \hyperlink{glx_8h_a35adbd9e682633c71b4dcebf410dae57}{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-E\-X\-T}~0x20\-D5
+\item 
+\#define \hyperlink{glx_8h_a03fa266976102e1140b8418b0a55b203}{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-T\-A\-R\-G\-E\-T\-\_\-\-E\-X\-T}~0x20\-D6
+\item 
+\#define \hyperlink{glx_8h_add0d6c6d2ea8eba9881330bdb1ccef5f}{G\-L\-X\-\_\-\-M\-I\-P\-M\-A\-P\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-E\-X\-T}~0x20\-D7
+\item 
+\#define \hyperlink{glx_8h_a18d72873a80967d104346e649148d3c5}{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-N\-O\-N\-E\-\_\-\-E\-X\-T}~0x20\-D8
+\item 
+\#define \hyperlink{glx_8h_a38d1bff0d14c7dcba8beb050f2df0822}{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-G\-B\-\_\-\-E\-X\-T}~0x20\-D9
+\item 
+\#define \hyperlink{glx_8h_ada18a6bd621c8eb62069fda76b5126bd}{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-G\-B\-A\-\_\-\-E\-X\-T}~0x20\-D\-A
+\item 
+\#define \hyperlink{glx_8h_a871d7feebca00547af00864fbb398013}{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-1\-D\-\_\-\-B\-I\-T\-\_\-\-E\-X\-T}~0x00000001
+\item 
+\#define \hyperlink{glx_8h_ad00c49da5233261e8e384b88863020a2}{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-2\-D\-\_\-\-B\-I\-T\-\_\-\-E\-X\-T}~0x00000002
+\item 
+\#define \hyperlink{glx_8h_a0efa804082f8579292118e4e92f756cd}{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-E\-C\-T\-A\-N\-G\-L\-E\-\_\-\-B\-I\-T\-\_\-\-E\-X\-T}~0x00000004
+\item 
+\#define \hyperlink{glx_8h_aa167bc6e71106518f0aac9aef1536856}{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-1\-D\-\_\-\-E\-X\-T}~0x20\-D\-B
+\item 
+\#define \hyperlink{glx_8h_a188aa9fadf5b067106a1e36fea6556f7}{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-2\-D\-\_\-\-E\-X\-T}~0x20\-D\-C
+\item 
+\#define \hyperlink{glx_8h_aa615e70d6a1644369249d53dc17b3cc0}{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-E\-C\-T\-A\-N\-G\-L\-E\-\_\-\-E\-X\-T}~0x20\-D\-D
+\item 
+\#define \hyperlink{glx_8h_a07cddbabead9bf4f2f2e6e2eb02db1f4}{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-L\-E\-F\-T\-\_\-\-E\-X\-T}~0x20\-D\-E
+\item 
+\#define \hyperlink{glx_8h_a7e4579cc2597459fbd1cd5a04612b8cd}{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-R\-I\-G\-H\-T\-\_\-\-E\-X\-T}~0x20\-D\-F
+\item 
+\#define \hyperlink{glx_8h_a66e1dc7b5ab409282902a73045f42e00}{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-L\-E\-F\-T\-\_\-\-E\-X\-T}~0x20\-E0
+\item 
+\#define \hyperlink{glx_8h_ae1900a94d426c8e8f04410c72c7a7338}{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-R\-I\-G\-H\-T\-\_\-\-E\-X\-T}~0x20\-E1
+\item 
+\#define \hyperlink{glx_8h_a8532c79e818568481fe5c61a6238f6e3}{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-E\-X\-T}~\hyperlink{glxext_8h_a07cddbabead9bf4f2f2e6e2eb02db1f4}{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-L\-E\-F\-T\-\_\-\-E\-X\-T}
+\item 
+\#define \hyperlink{glx_8h_afff8e37dff54d975300fdeff261030a1}{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-E\-X\-T}~\hyperlink{glxext_8h_a66e1dc7b5ab409282902a73045f42e00}{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-L\-E\-F\-T\-\_\-\-E\-X\-T}
+\item 
+\#define \hyperlink{glx_8h_a17242237ff084b6204bfe11a5d59b329}{G\-L\-X\-\_\-\-A\-U\-X0\-\_\-\-E\-X\-T}~0x20\-E2
+\item 
+\#define \hyperlink{glx_8h_adcd619a8fa601645251cd62542ee1ab8}{G\-L\-X\-\_\-\-A\-U\-X1\-\_\-\-E\-X\-T}~0x20\-E3
+\item 
+\#define \hyperlink{glx_8h_a3328cb0020596921cf1c662658dc7c46}{G\-L\-X\-\_\-\-A\-U\-X2\-\_\-\-E\-X\-T}~0x20\-E4
+\item 
+\#define \hyperlink{glx_8h_a561759ef2e037e5c0fc690c1317199d0}{G\-L\-X\-\_\-\-A\-U\-X3\-\_\-\-E\-X\-T}~0x20\-E5
+\item 
+\#define \hyperlink{glx_8h_a4583b587413ecd8c2c8012665b06de0b}{G\-L\-X\-\_\-\-A\-U\-X4\-\_\-\-E\-X\-T}~0x20\-E6
+\item 
+\#define \hyperlink{glx_8h_ad7308243a764034c3c1f14737d3579ca}{G\-L\-X\-\_\-\-A\-U\-X5\-\_\-\-E\-X\-T}~0x20\-E7
+\item 
+\#define \hyperlink{glx_8h_aad31918c2bb62967550d54f34321b95c}{G\-L\-X\-\_\-\-A\-U\-X6\-\_\-\-E\-X\-T}~0x20\-E8
+\item 
+\#define \hyperlink{glx_8h_ad966e66657e22de7ce2d7cc12497b096}{G\-L\-X\-\_\-\-A\-U\-X7\-\_\-\-E\-X\-T}~0x20\-E9
+\item 
+\#define \hyperlink{glx_8h_a59f3b2cea25519fcb29e9afea37cbe59}{G\-L\-X\-\_\-\-A\-U\-X8\-\_\-\-E\-X\-T}~0x20\-E\-A
+\item 
+\#define \hyperlink{glx_8h_a8c38b7e38ab452a394657523081dcbbb}{G\-L\-X\-\_\-\-A\-U\-X9\-\_\-\-E\-X\-T}~0x20\-E\-B
+\end{DoxyCompactItemize}
+\subsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \-\_\-\-\_\-\-G\-L\-Xcontext\-Rec $\ast$ \hyperlink{glx_8h_ab14f757b495fc428b0564f1914be5838}{G\-L\-X\-Context}
+\item 
+typedef X\-I\-D \hyperlink{glx_8h_a6577d581069de43ebaac50c78dbccbd0}{G\-L\-X\-Pixmap}
+\item 
+typedef X\-I\-D \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable}
+\item 
+typedef struct \-\_\-\-\_\-\-G\-L\-X\-F\-B\-Config\-Rec $\ast$ \hyperlink{glx_8h_a0fd4b87f01422e347316867d18cdd91f}{G\-L\-X\-F\-B\-Config}
+\item 
+typedef X\-I\-D \hyperlink{glx_8h_a38e78acefebf732d1a0da441ad1de05f}{G\-L\-X\-F\-B\-Config\-I\-D}
+\item 
+typedef X\-I\-D \hyperlink{glx_8h_a17c7ca5b76cc448032df0b5352803005}{G\-L\-X\-Context\-I\-D}
+\item 
+typedef X\-I\-D \hyperlink{glx_8h_a7b7fbb726212feadef35c6c7c09b9541}{G\-L\-X\-Window}
+\item 
+typedef X\-I\-D \hyperlink{glx_8h_a0e12899d42d3570d659900a17247cb71}{G\-L\-X\-Pbuffer}
+\item 
+typedef \hyperlink{glx_8h_a0fd4b87f01422e347316867d18cdd91f}{G\-L\-X\-F\-B\-Config} $\ast$($\ast$ \hyperlink{glx_8h_abfa999e4eafef53683557aea451f14ef}{P\-F\-N\-G\-L\-X\-G\-E\-T\-F\-B\-C\-O\-N\-F\-I\-G\-S\-P\-R\-O\-C} )(Display $\ast$dpy, int screen, int $\ast$nelements)
+\item 
+typedef \hyperlink{glx_8h_a0fd4b87f01422e347316867d18cdd91f}{G\-L\-X\-F\-B\-Config} $\ast$($\ast$ \hyperlink{glx_8h_ac54944f5a19d0a447c5c938510d47200}{P\-F\-N\-G\-L\-X\-C\-H\-O\-O\-S\-E\-F\-B\-C\-O\-N\-F\-I\-G\-P\-R\-O\-C} )(Display $\ast$dpy, int screen, const int $\ast$attrib\-\_\-list, int $\ast$nelements)
+\item 
+typedef int($\ast$ \hyperlink{glx_8h_a1f2157d3d9a5b41a354eb113a43363e6}{P\-F\-N\-G\-L\-X\-G\-E\-T\-F\-B\-C\-O\-N\-F\-I\-G\-A\-T\-T\-R\-I\-B\-P\-R\-O\-C} )(Display $\ast$dpy, \hyperlink{glx_8h_a0fd4b87f01422e347316867d18cdd91f}{G\-L\-X\-F\-B\-Config} config, int attribute, int $\ast$\hyperlink{glext_8h_a79169be77d7e02a24f68a5bfe627dc29}{value})
+\item 
+typedef X\-Visual\-Info $\ast$($\ast$ \hyperlink{glx_8h_af5f9929c1c16fb5536f04532cbc2361f}{P\-F\-N\-G\-L\-X\-G\-E\-T\-V\-I\-S\-U\-A\-L\-F\-R\-O\-M\-F\-B\-C\-O\-N\-F\-I\-G\-P\-R\-O\-C} )(Display $\ast$dpy, \hyperlink{glx_8h_a0fd4b87f01422e347316867d18cdd91f}{G\-L\-X\-F\-B\-Config} config)
+\item 
+typedef \hyperlink{glx_8h_a7b7fbb726212feadef35c6c7c09b9541}{G\-L\-X\-Window}($\ast$ \hyperlink{glx_8h_a117fa982e422c3d1544fc69819d427bf}{P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-W\-I\-N\-D\-O\-W\-P\-R\-O\-C} )(Display $\ast$dpy, \hyperlink{glx_8h_a0fd4b87f01422e347316867d18cdd91f}{G\-L\-X\-F\-B\-Config} config, Window win, const int $\ast$attrib\-\_\-list)
+\item 
+typedef \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void}($\ast$ \hyperlink{glx_8h_a85896408e163370ceff7427243b89797}{P\-F\-N\-G\-L\-X\-D\-E\-S\-T\-R\-O\-Y\-W\-I\-N\-D\-O\-W\-P\-R\-O\-C} )(Display $\ast$dpy, \hyperlink{glx_8h_a7b7fbb726212feadef35c6c7c09b9541}{G\-L\-X\-Window} win)
+\item 
+typedef \hyperlink{glx_8h_a6577d581069de43ebaac50c78dbccbd0}{G\-L\-X\-Pixmap}($\ast$ \hyperlink{glx_8h_af0ec4fc20a22da1f1cb59a4d2395e56d}{P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-P\-I\-X\-M\-A\-P\-P\-R\-O\-C} )(Display $\ast$dpy, \hyperlink{glx_8h_a0fd4b87f01422e347316867d18cdd91f}{G\-L\-X\-F\-B\-Config} config, Pixmap pixmap, const int $\ast$attrib\-\_\-list)
+\item 
+typedef \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void}($\ast$ \hyperlink{glx_8h_a097dc785526e6bfc02940c71cac2b6d6}{P\-F\-N\-G\-L\-X\-D\-E\-S\-T\-R\-O\-Y\-P\-I\-X\-M\-A\-P\-P\-R\-O\-C} )(Display $\ast$dpy, \hyperlink{glx_8h_a6577d581069de43ebaac50c78dbccbd0}{G\-L\-X\-Pixmap} pixmap)
+\item 
+typedef \hyperlink{glx_8h_a0e12899d42d3570d659900a17247cb71}{G\-L\-X\-Pbuffer}($\ast$ \hyperlink{glx_8h_a057553b8f22e5771dc50bc3a5121d7e0}{P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-P\-B\-U\-F\-F\-E\-R\-P\-R\-O\-C} )(Display $\ast$dpy, \hyperlink{glx_8h_a0fd4b87f01422e347316867d18cdd91f}{G\-L\-X\-F\-B\-Config} config, const int $\ast$attrib\-\_\-list)
+\item 
+typedef \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void}($\ast$ \hyperlink{glx_8h_aa47c8cf58782d07b3b7c5618f2993ce0}{P\-F\-N\-G\-L\-X\-D\-E\-S\-T\-R\-O\-Y\-P\-B\-U\-F\-F\-E\-R\-P\-R\-O\-C} )(Display $\ast$dpy, \hyperlink{glx_8h_a0e12899d42d3570d659900a17247cb71}{G\-L\-X\-Pbuffer} pbuf)
+\item 
+typedef \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void}($\ast$ \hyperlink{glx_8h_a146a20fb549a37c2cef255bbbe2350e7}{P\-F\-N\-G\-L\-X\-Q\-U\-E\-R\-Y\-D\-R\-A\-W\-A\-B\-L\-E\-P\-R\-O\-C} )(Display $\ast$dpy, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} draw, int attribute, unsigned int $\ast$\hyperlink{glext_8h_a79169be77d7e02a24f68a5bfe627dc29}{value})
+\item 
+typedef \hyperlink{glx_8h_ab14f757b495fc428b0564f1914be5838}{G\-L\-X\-Context}($\ast$ \hyperlink{glx_8h_a0eef90b88ccaa90f560d6c9d4017cc29}{P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-N\-E\-W\-C\-O\-N\-T\-E\-X\-T\-P\-R\-O\-C} )(Display $\ast$dpy, \hyperlink{glx_8h_a0fd4b87f01422e347316867d18cdd91f}{G\-L\-X\-F\-B\-Config} config, int render\-\_\-type, \hyperlink{glx_8h_ab14f757b495fc428b0564f1914be5838}{G\-L\-X\-Context} share\-\_\-list, Bool direct)
+\item 
+typedef Bool($\ast$ \hyperlink{glx_8h_a21ffb6d2a46ff664c8da0f675655e680}{P\-F\-N\-G\-L\-X\-M\-A\-K\-E\-C\-O\-N\-T\-E\-X\-T\-C\-U\-R\-R\-E\-N\-T\-P\-R\-O\-C} )(Display $\ast$dpy, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} draw, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} read, \hyperlink{glx_8h_ab14f757b495fc428b0564f1914be5838}{G\-L\-X\-Context} ctx)
+\item 
+typedef \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable}($\ast$ \hyperlink{glx_8h_ae13b8971565bfa772e9fd3a387e16142}{P\-F\-N\-G\-L\-X\-G\-E\-T\-C\-U\-R\-R\-E\-N\-T\-R\-E\-A\-D\-D\-R\-A\-W\-A\-B\-L\-E\-P\-R\-O\-C} )(\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void})
+\item 
+typedef Display $\ast$($\ast$ \hyperlink{glx_8h_ace525039db7059c7481e9c0b03e7c52e}{P\-F\-N\-G\-L\-X\-G\-E\-T\-C\-U\-R\-R\-E\-N\-T\-D\-I\-S\-P\-L\-A\-Y\-P\-R\-O\-C} )(\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void})
+\item 
+typedef int($\ast$ \hyperlink{glx_8h_a7b78d171b4698186e690ebdd39387003}{P\-F\-N\-G\-L\-X\-Q\-U\-E\-R\-Y\-C\-O\-N\-T\-E\-X\-T\-P\-R\-O\-C} )(Display $\ast$dpy, \hyperlink{glx_8h_ab14f757b495fc428b0564f1914be5838}{G\-L\-X\-Context} ctx, int attribute, int $\ast$\hyperlink{glext_8h_a79169be77d7e02a24f68a5bfe627dc29}{value})
+\item 
+typedef \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void}($\ast$ \hyperlink{glx_8h_a3eb0d829af90de44f626500ae36962d1}{P\-F\-N\-G\-L\-X\-S\-E\-L\-E\-C\-T\-E\-V\-E\-N\-T\-P\-R\-O\-C} )(Display $\ast$dpy, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} draw, unsigned long event\-\_\-mask)
+\item 
+typedef \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void}($\ast$ \hyperlink{glx_8h_a184137050853408c1425aaedfe859a96}{P\-F\-N\-G\-L\-X\-G\-E\-T\-S\-E\-L\-E\-C\-T\-E\-D\-E\-V\-E\-N\-T\-P\-R\-O\-C} )(Display $\ast$dpy, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} draw, unsigned long $\ast$event\-\_\-mask)
+\item 
+typedef \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void}($\ast$ \hyperlink{glx_8h_ae259836c877f7a1d29289fa0eb4d85cc}{\-\_\-\-\_\-\-G\-L\-Xext\-Func\-Ptr} )(\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void})
+\item 
+typedef \hyperlink{glxext_8h_ae259836c877f7a1d29289fa0eb4d85cc}{\-\_\-\-\_\-\-G\-L\-Xext\-Func\-Ptr}($\ast$ \hyperlink{glx_8h_aee3a3cdb5dcca6681e965a3cd085522c}{P\-F\-N\-G\-L\-X\-G\-E\-T\-P\-R\-O\-C\-A\-D\-D\-R\-E\-S\-S\-P\-R\-O\-C} )(const \hyperlink{gl_8h_a0595908be03a8cff881a23cdc9170e7c}{G\-Lubyte} $\ast$proc\-Name)
+\item 
+typedef \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} $\ast$($\ast$ \hyperlink{glx_8h_ab31de0a1efce5dfa6dd4de98946c3f95}{P\-F\-N\-G\-L\-X\-A\-L\-L\-O\-C\-A\-T\-E\-M\-E\-M\-O\-R\-Y\-N\-V\-P\-R\-O\-C} )(\hyperlink{gl_8h_a9289d5b99dc1f27f01480360f2e18ae0}{G\-Lsizei} \hyperlink{glext_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}, \hyperlink{gl_8h_a31aeedaeef29442c9c015ab355c8f5ab}{G\-Lfloat} readfreq, \hyperlink{gl_8h_a31aeedaeef29442c9c015ab355c8f5ab}{G\-Lfloat} writefreq, \hyperlink{gl_8h_a31aeedaeef29442c9c015ab355c8f5ab}{G\-Lfloat} priority)
+\item 
+typedef \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void}($\ast$ \hyperlink{glx_8h_af219c6022ebfb1e559c73a46cf27b90d}{P\-F\-N\-G\-L\-X\-F\-R\-E\-E\-M\-E\-M\-O\-R\-Y\-N\-V\-P\-R\-O\-C} )(\hyperlink{gl_8h_a1e5eb1ac5e47603cc80ab58338b92393}{G\-Lvoid} $\ast$\hyperlink{glext_8h_a5229d099e9ac4bec02ec527c371b2d50}{pointer})
+\item 
+typedef int($\ast$ \hyperlink{glx_8h_a1f959e3a55b5979788e072517f12087a}{P\-F\-N\-G\-L\-X\-G\-E\-T\-F\-R\-A\-M\-E\-U\-S\-A\-G\-E\-M\-E\-S\-A\-P\-R\-O\-C} )(Display $\ast$dpy, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} drawable, float $\ast$\hyperlink{glext_8h_ae759ed0394ed5353d8bef2fb755305da}{usage})
+\item 
+typedef int($\ast$ \hyperlink{glx_8h_aa5ce750865f070ed652631407b646572}{P\-F\-N\-G\-L\-X\-B\-E\-G\-I\-N\-F\-R\-A\-M\-E\-T\-R\-A\-C\-K\-I\-N\-G\-M\-E\-S\-A\-P\-R\-O\-C} )(Display $\ast$dpy, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} drawable)
+\item 
+typedef int($\ast$ \hyperlink{glx_8h_a48397a78341b4ca55c43047d18c7f7d7}{P\-F\-N\-G\-L\-X\-E\-N\-D\-F\-R\-A\-M\-E\-T\-R\-A\-C\-K\-I\-N\-G\-M\-E\-S\-A\-P\-R\-O\-C} )(Display $\ast$dpy, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} drawable)
+\item 
+typedef int($\ast$ \hyperlink{glx_8h_acbda35262995eef60e4fadf1b5e25ebc}{P\-F\-N\-G\-L\-X\-Q\-U\-E\-R\-Y\-F\-R\-A\-M\-E\-T\-R\-A\-C\-K\-I\-N\-G\-M\-E\-S\-A\-P\-R\-O\-C} )(Display $\ast$dpy, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} drawable, int64\-\_\-t $\ast$swap\-Count, int64\-\_\-t $\ast$missed\-Frames, float $\ast$last\-Missed\-Usage)
+\item 
+typedef int($\ast$ \hyperlink{glx_8h_a42d4255e659dea03fc066c207b3b4a8d}{P\-F\-N\-G\-L\-X\-S\-W\-A\-P\-I\-N\-T\-E\-R\-V\-A\-L\-M\-E\-S\-A\-P\-R\-O\-C} )(unsigned int interval)
+\item 
+typedef int($\ast$ \hyperlink{glx_8h_a314e32ddf15165b7d2df9bd039be9a0a}{P\-F\-N\-G\-L\-X\-G\-E\-T\-S\-W\-A\-P\-I\-N\-T\-E\-R\-V\-A\-L\-M\-E\-S\-A\-P\-R\-O\-C} )(\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void})
+\item 
+typedef union \hyperlink{union_____g_l_x_event}{\-\_\-\-\_\-\-G\-L\-X\-Event} \hyperlink{glx_8h_a251904312933c2d12ad95d0633c42d72}{G\-L\-X\-Event}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+X\-Visual\-Info $\ast$ \hyperlink{glx_8h_a0089c188de2611b3474340af31e19355}{gl\-X\-Choose\-Visual} (Display $\ast$dpy, int screen, int $\ast$attrib\-List)
+\item 
+\hyperlink{glx_8h_ab14f757b495fc428b0564f1914be5838}{G\-L\-X\-Context} \hyperlink{glx_8h_a194b7e7f5b8a5d167f3166b2b696631a}{gl\-X\-Create\-Context} (Display $\ast$dpy, X\-Visual\-Info $\ast$vis, \hyperlink{glx_8h_ab14f757b495fc428b0564f1914be5838}{G\-L\-X\-Context} share\-List, Bool direct)
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{glx_8h_a84f8530e3fa01fba10d715eeca3bd5d2}{gl\-X\-Destroy\-Context} (Display $\ast$dpy, \hyperlink{glx_8h_ab14f757b495fc428b0564f1914be5838}{G\-L\-X\-Context} ctx)
+\item 
+Bool \hyperlink{glx_8h_a48fc247a5c42d06cda6664d2a36b470b}{gl\-X\-Make\-Current} (Display $\ast$dpy, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} drawable, \hyperlink{glx_8h_ab14f757b495fc428b0564f1914be5838}{G\-L\-X\-Context} ctx)
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{glx_8h_a40c06766e415899e3cdad22a05c1c96d}{gl\-X\-Copy\-Context} (Display $\ast$dpy, \hyperlink{glx_8h_ab14f757b495fc428b0564f1914be5838}{G\-L\-X\-Context} \hyperlink{glext_8h_a2a98ddb6f79ec1048ff9e15cdd2422ba}{src}, \hyperlink{glx_8h_ab14f757b495fc428b0564f1914be5838}{G\-L\-X\-Context} \hyperlink{glext_8h_a85e59cd56e10d0a7f49ab199f277d486}{dst}, unsigned long \hyperlink{glext_8h_abb269dedb7ad104274cc9f5c0c7285bc}{mask})
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{glx_8h_adf5758fe90cccf8daa9f0b9753ea1085}{gl\-X\-Swap\-Buffers} (Display $\ast$dpy, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} drawable)
+\item 
+\hyperlink{glx_8h_a6577d581069de43ebaac50c78dbccbd0}{G\-L\-X\-Pixmap} \hyperlink{glx_8h_affdde1f13a245b0c8aea47b01570111c}{gl\-X\-Create\-G\-L\-X\-Pixmap} (Display $\ast$dpy, X\-Visual\-Info $\ast$visual, Pixmap pixmap)
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{glx_8h_a2cc0e12986659a3ef87381dff975b545}{gl\-X\-Destroy\-G\-L\-X\-Pixmap} (Display $\ast$dpy, \hyperlink{glx_8h_a6577d581069de43ebaac50c78dbccbd0}{G\-L\-X\-Pixmap} pixmap)
+\item 
+Bool \hyperlink{glx_8h_abbde7965d03c54f125b7dde59e10525d}{gl\-X\-Query\-Extension} (Display $\ast$dpy, int $\ast$errorb, int $\ast$\hyperlink{glext_8h_a03b04a5a978bad576866339075de01f6}{event})
+\item 
+Bool \hyperlink{glx_8h_a18983befd026d18393335018df47d051}{gl\-X\-Query\-Version} (Display $\ast$dpy, int $\ast$maj, int $\ast$min)
+\item 
+Bool \hyperlink{glx_8h_a644a3ec7778c2a841e8ed84005ac4f0e}{gl\-X\-Is\-Direct} (Display $\ast$dpy, \hyperlink{glx_8h_ab14f757b495fc428b0564f1914be5838}{G\-L\-X\-Context} ctx)
+\item 
+int \hyperlink{glx_8h_a313719aade5063ed80938fcb93436f5c}{gl\-X\-Get\-Config} (Display $\ast$dpy, X\-Visual\-Info $\ast$visual, int attrib, int $\ast$\hyperlink{glext_8h_a79169be77d7e02a24f68a5bfe627dc29}{value})
+\item 
+\hyperlink{glx_8h_ab14f757b495fc428b0564f1914be5838}{G\-L\-X\-Context} \hyperlink{glx_8h_a3124873668dd8c0aa2aeba23499eef7d}{gl\-X\-Get\-Current\-Context} (\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void})
+\item 
+\hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} \hyperlink{glx_8h_a16ac5b0ed109285666ccceabc36c30a7}{gl\-X\-Get\-Current\-Drawable} (\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void})
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{glx_8h_a260017b9f7cac2a3e1aa21dfa5dde3c0}{gl\-X\-Wait\-G\-L} (\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void})
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{glx_8h_ae37efe4bfc21adda1d4ef1606d5c53c1}{gl\-X\-Wait\-X} (\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void})
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{glx_8h_a87583a6cb9f6b0836995465c53adcdba}{gl\-X\-Use\-X\-Font} (Font font, int \hyperlink{glext_8h_a970a385f6f880f2b620451db4ca4299a}{first}, int \hyperlink{gl_8h_a4e867eee5910f6b2df6123b47ab70dae}{count}, int list)
+\item 
+const char $\ast$ \hyperlink{glx_8h_ac14041089580801572ad2bbf414c8991}{gl\-X\-Query\-Extensions\-String} (Display $\ast$dpy, int screen)
+\item 
+const char $\ast$ \hyperlink{glx_8h_ad2db35f9ffedda7c927921e661fba969}{gl\-X\-Query\-Server\-String} (Display $\ast$dpy, int screen, int \hyperlink{glext_8h_aaced7cfc21e7d37775d6921bb8177239}{name})
+\item 
+const char $\ast$ \hyperlink{glx_8h_ae3fde424d32aa1e0014eff8aeba288e3}{gl\-X\-Get\-Client\-String} (Display $\ast$dpy, int \hyperlink{glext_8h_aaced7cfc21e7d37775d6921bb8177239}{name})
+\item 
+Display $\ast$ \hyperlink{glx_8h_a8670b8f6c4e73e54558ed355820d2829}{gl\-X\-Get\-Current\-Display} (\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void})
+\item 
+\hyperlink{glx_8h_a0fd4b87f01422e347316867d18cdd91f}{G\-L\-X\-F\-B\-Config} $\ast$ \hyperlink{glx_8h_a2c20665f2821d8357ee190cd4b6ddb33}{gl\-X\-Choose\-F\-B\-Config} (Display $\ast$dpy, int screen, const int $\ast$attrib\-List, int $\ast$nitems)
+\item 
+int \hyperlink{glx_8h_a263c3e96e5e4e585cabb515408862e69}{gl\-X\-Get\-F\-B\-Config\-Attrib} (Display $\ast$dpy, \hyperlink{glx_8h_a0fd4b87f01422e347316867d18cdd91f}{G\-L\-X\-F\-B\-Config} config, int attribute, int $\ast$\hyperlink{glext_8h_a79169be77d7e02a24f68a5bfe627dc29}{value})
+\item 
+\hyperlink{glx_8h_a0fd4b87f01422e347316867d18cdd91f}{G\-L\-X\-F\-B\-Config} $\ast$ \hyperlink{glx_8h_a710ee30d9b09b8e3d8dda01e5f9ade78}{gl\-X\-Get\-F\-B\-Configs} (Display $\ast$dpy, int screen, int $\ast$nelements)
+\item 
+X\-Visual\-Info $\ast$ \hyperlink{glx_8h_a2982fe6f4588817ec0f2232661bcadc6}{gl\-X\-Get\-Visual\-From\-F\-B\-Config} (Display $\ast$dpy, \hyperlink{glx_8h_a0fd4b87f01422e347316867d18cdd91f}{G\-L\-X\-F\-B\-Config} config)
+\item 
+\hyperlink{glx_8h_a7b7fbb726212feadef35c6c7c09b9541}{G\-L\-X\-Window} \hyperlink{glx_8h_a4199557b808bbfbeabaa5f9194ba7c51}{gl\-X\-Create\-Window} (Display $\ast$dpy, \hyperlink{glx_8h_a0fd4b87f01422e347316867d18cdd91f}{G\-L\-X\-F\-B\-Config} config, Window win, const int $\ast$attrib\-List)
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{glx_8h_af9db46f6e148ea9591db26a94b408bfb}{gl\-X\-Destroy\-Window} (Display $\ast$dpy, \hyperlink{glx_8h_a7b7fbb726212feadef35c6c7c09b9541}{G\-L\-X\-Window} window)
+\item 
+\hyperlink{glx_8h_a6577d581069de43ebaac50c78dbccbd0}{G\-L\-X\-Pixmap} \hyperlink{glx_8h_a2b9a2477d7393273b32f8b106290b378}{gl\-X\-Create\-Pixmap} (Display $\ast$dpy, \hyperlink{glx_8h_a0fd4b87f01422e347316867d18cdd91f}{G\-L\-X\-F\-B\-Config} config, Pixmap pixmap, const int $\ast$attrib\-List)
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{glx_8h_a4263bdc38ad3e6e4096a701f66314ffc}{gl\-X\-Destroy\-Pixmap} (Display $\ast$dpy, \hyperlink{glx_8h_a6577d581069de43ebaac50c78dbccbd0}{G\-L\-X\-Pixmap} pixmap)
+\item 
+\hyperlink{glx_8h_a0e12899d42d3570d659900a17247cb71}{G\-L\-X\-Pbuffer} \hyperlink{glx_8h_a9d287f97c11a2df0084db23d27c714c8}{gl\-X\-Create\-Pbuffer} (Display $\ast$dpy, \hyperlink{glx_8h_a0fd4b87f01422e347316867d18cdd91f}{G\-L\-X\-F\-B\-Config} config, const int $\ast$attrib\-List)
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{glx_8h_a5f444df39105dba6825363e0e60cf2d7}{gl\-X\-Destroy\-Pbuffer} (Display $\ast$dpy, \hyperlink{glx_8h_a0e12899d42d3570d659900a17247cb71}{G\-L\-X\-Pbuffer} pbuf)
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{glx_8h_a3edef6748002d483a0da2bcdf8311733}{gl\-X\-Query\-Drawable} (Display $\ast$dpy, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} draw, int attribute, unsigned int $\ast$\hyperlink{glext_8h_a79169be77d7e02a24f68a5bfe627dc29}{value})
+\item 
+\hyperlink{glx_8h_ab14f757b495fc428b0564f1914be5838}{G\-L\-X\-Context} \hyperlink{glx_8h_a0352d9bab91ded6b220b44516fef91e1}{gl\-X\-Create\-New\-Context} (Display $\ast$dpy, \hyperlink{glx_8h_a0fd4b87f01422e347316867d18cdd91f}{G\-L\-X\-F\-B\-Config} config, int render\-Type, \hyperlink{glx_8h_ab14f757b495fc428b0564f1914be5838}{G\-L\-X\-Context} share\-List, Bool direct)
+\item 
+Bool \hyperlink{glx_8h_a24282fd86b5d444ed2fa121e7adfdd4d}{gl\-X\-Make\-Context\-Current} (Display $\ast$dpy, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} draw, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} read, \hyperlink{glx_8h_ab14f757b495fc428b0564f1914be5838}{G\-L\-X\-Context} ctx)
+\item 
+\hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} \hyperlink{glx_8h_af0effa7087068ee46cb386c8a320cccf}{gl\-X\-Get\-Current\-Read\-Drawable} (\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void})
+\item 
+int \hyperlink{glx_8h_aa3cfa9bd0634bcbea4518b61553dfb2e}{gl\-X\-Query\-Context} (Display $\ast$dpy, \hyperlink{glx_8h_ab14f757b495fc428b0564f1914be5838}{G\-L\-X\-Context} ctx, int attribute, int $\ast$\hyperlink{glext_8h_a79169be77d7e02a24f68a5bfe627dc29}{value})
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{glx_8h_a41234f642e241bea4c9b2f327f4ec79f}{gl\-X\-Select\-Event} (Display $\ast$dpy, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} drawable, unsigned long \hyperlink{glext_8h_abb269dedb7ad104274cc9f5c0c7285bc}{mask})
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{glx_8h_ab3999910d6f765839d8edc6454a7fb06}{gl\-X\-Get\-Selected\-Event} (Display $\ast$dpy, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} drawable, unsigned long $\ast$\hyperlink{glext_8h_abb269dedb7ad104274cc9f5c0c7285bc}{mask})
+\item 
+\hyperlink{glxext_8h_ae259836c877f7a1d29289fa0eb4d85cc}{\-\_\-\-\_\-\-G\-L\-Xext\-Func\-Ptr} \hyperlink{glx_8h_a2f63c8d6b30a8f9a80c8b437459dc44c}{gl\-X\-Get\-Proc\-Address\-A\-R\-B} (const \hyperlink{gl_8h_a0595908be03a8cff881a23cdc9170e7c}{G\-Lubyte} $\ast$)
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} $\ast$ \hyperlink{glx_8h_ab45da49488032822648144fead357075}{gl\-X\-Allocate\-Memory\-N\-V} (\hyperlink{gl_8h_a9289d5b99dc1f27f01480360f2e18ae0}{G\-Lsizei} \hyperlink{glext_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}, \hyperlink{gl_8h_a31aeedaeef29442c9c015ab355c8f5ab}{G\-Lfloat} readfreq, \hyperlink{gl_8h_a31aeedaeef29442c9c015ab355c8f5ab}{G\-Lfloat} writefreq, \hyperlink{gl_8h_a31aeedaeef29442c9c015ab355c8f5ab}{G\-Lfloat} priority)
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{glx_8h_a5b685d70dec2111d236797d99e1865ab}{gl\-X\-Free\-Memory\-N\-V} (\hyperlink{gl_8h_a1e5eb1ac5e47603cc80ab58338b92393}{G\-Lvoid} $\ast$\hyperlink{glext_8h_a5229d099e9ac4bec02ec527c371b2d50}{pointer})
+\item 
+Bool \hyperlink{glx_8h_a2d6f2aa3eba9d9ba0de1b2d9a8ef0b87}{gl\-X\-Bind\-Tex\-Image\-A\-R\-B} (Display $\ast$dpy, \hyperlink{glx_8h_a0e12899d42d3570d659900a17247cb71}{G\-L\-X\-Pbuffer} pbuffer, int \hyperlink{glext_8h_a3667f558219c90437106b544a3ca00b8}{buffer})
+\item 
+Bool \hyperlink{glx_8h_a75e4b39efc645c76043c621492a3803c}{gl\-X\-Release\-Tex\-Image\-A\-R\-B} (Display $\ast$dpy, \hyperlink{glx_8h_a0e12899d42d3570d659900a17247cb71}{G\-L\-X\-Pbuffer} pbuffer, int \hyperlink{glext_8h_a3667f558219c90437106b544a3ca00b8}{buffer})
+\item 
+Bool \hyperlink{glx_8h_a13d25744058c8f16e54a7c34780a8e76}{gl\-X\-Drawable\-Attrib\-A\-R\-B} (Display $\ast$dpy, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} draw, const int $\ast$attrib\-List)
+\item 
+int \hyperlink{glx_8h_a282bafdaea8320a6e9b0deefeb562994}{gl\-X\-Get\-Frame\-Usage\-M\-E\-S\-A} (Display $\ast$dpy, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} drawable, float $\ast$\hyperlink{glext_8h_ae759ed0394ed5353d8bef2fb755305da}{usage})
+\item 
+int \hyperlink{glx_8h_af3f5f30357effc126bab083eb086077f}{gl\-X\-Begin\-Frame\-Tracking\-M\-E\-S\-A} (Display $\ast$dpy, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} drawable)
+\item 
+int \hyperlink{glx_8h_a17b3a30faca14ef6a0fc0e3a9bceacdd}{gl\-X\-End\-Frame\-Tracking\-M\-E\-S\-A} (Display $\ast$dpy, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} drawable)
+\item 
+int \hyperlink{glx_8h_ad5f59d431423b1bcaea65a9ebf5f8e06}{gl\-X\-Query\-Frame\-Tracking\-M\-E\-S\-A} (Display $\ast$dpy, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} drawable, int64\-\_\-t $\ast$swap\-Count, int64\-\_\-t $\ast$missed\-Frames, float $\ast$last\-Missed\-Usage)
+\item 
+int \hyperlink{glx_8h_ab1e8a4c6ce33d5ce5cf7d2d077094d09}{gl\-X\-Swap\-Interval\-M\-E\-S\-A} (unsigned int interval)
+\item 
+int \hyperlink{glx_8h_ac168664fb99e3192563f385bab8a76fd}{gl\-X\-Get\-Swap\-Interval\-M\-E\-S\-A} (\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void})
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{glx_8h_a5027321b9ec003c16987cdcf2acc40bd}{gl\-X\-Bind\-Tex\-Image\-E\-X\-T} (Display $\ast$dpy, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} drawable, int \hyperlink{glext_8h_a3667f558219c90437106b544a3ca00b8}{buffer}, const int $\ast$attrib\-\_\-list)
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{glx_8h_a0d8c92ac7eef421209958c331a8d0a10}{gl\-X\-Release\-Tex\-Image\-E\-X\-T} (Display $\ast$dpy, \hyperlink{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{G\-L\-X\-Drawable} drawable, int \hyperlink{glext_8h_a3667f558219c90437106b544a3ca00b8}{buffer})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void}($\ast$)(\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void}) \hyperlink{glx_8h_a7a444113352f699e0bca0ddbe39238ae}{gl\-X\-Get\-Proc\-Address} (const \hyperlink{gl_8h_a0595908be03a8cff881a23cdc9170e7c}{G\-Lubyte} $\ast$procname)
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des macros}
+\hypertarget{glx_8h_a6cffc7c4ef58d7e69c442c51d46a6806}{\index{glx.\-h@{glx.\-h}!\-\_\-\-\_\-\-G\-L\-X\-\_\-\-N\-U\-M\-B\-E\-R\-\_\-\-E\-V\-E\-N\-T\-S@{\-\_\-\-\_\-\-G\-L\-X\-\_\-\-N\-U\-M\-B\-E\-R\-\_\-\-E\-V\-E\-N\-T\-S}}
+\index{\-\_\-\-\_\-\-G\-L\-X\-\_\-\-N\-U\-M\-B\-E\-R\-\_\-\-E\-V\-E\-N\-T\-S@{\-\_\-\-\_\-\-G\-L\-X\-\_\-\-N\-U\-M\-B\-E\-R\-\_\-\-E\-V\-E\-N\-T\-S}!glx.h@{glx.\-h}}
+\subsubsection[{\-\_\-\-\_\-\-G\-L\-X\-\_\-\-N\-U\-M\-B\-E\-R\-\_\-\-E\-V\-E\-N\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-\-\_\-\-G\-L\-X\-\_\-\-N\-U\-M\-B\-E\-R\-\_\-\-E\-V\-E\-N\-T\-S~17}}\label{glx_8h_a6cffc7c4ef58d7e69c442c51d46a6806}
+
+
+Définition à la ligne 198 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a7d4321cb0900caeb61047d3d8619c0b4}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-A\-L\-P\-H\-A\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-A\-L\-P\-H\-A\-\_\-\-S\-I\-Z\-E}}
+\index{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-A\-L\-P\-H\-A\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-A\-L\-P\-H\-A\-\_\-\-S\-I\-Z\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-A\-L\-P\-H\-A\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-A\-L\-P\-H\-A\-\_\-\-S\-I\-Z\-E~17}}\label{glx_8h_a7d4321cb0900caeb61047d3d8619c0b4}
+
+
+Définition à la ligne 86 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a2d03116f2dcb3393a7fcab5c62300c56}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-B\-L\-U\-E\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-B\-L\-U\-E\-\_\-\-S\-I\-Z\-E}}
+\index{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-B\-L\-U\-E\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-B\-L\-U\-E\-\_\-\-S\-I\-Z\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-B\-L\-U\-E\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-B\-L\-U\-E\-\_\-\-S\-I\-Z\-E~16}}\label{glx_8h_a2d03116f2dcb3393a7fcab5c62300c56}
+
+
+Définition à la ligne 85 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a5fd8727d1cea644d19e16466547b872c}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}}
+\index{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T~0x00000080}}\label{glx_8h_a5fd8727d1cea644d19e16466547b872c}
+
+
+Définition à la ligne 131 du fichier glx.\-h.
+
+\hypertarget{glx_8h_abfc1f958ab3dc1094340ab97d4e7c11a}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-G\-R\-E\-E\-N\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-G\-R\-E\-E\-N\-\_\-\-S\-I\-Z\-E}}
+\index{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-G\-R\-E\-E\-N\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-G\-R\-E\-E\-N\-\_\-\-S\-I\-Z\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-G\-R\-E\-E\-N\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-G\-R\-E\-E\-N\-\_\-\-S\-I\-Z\-E~15}}\label{glx_8h_abfc1f958ab3dc1094340ab97d4e7c11a}
+
+
+Définition à la ligne 84 du fichier glx.\-h.
+
+\hypertarget{glx_8h_aebfea4047e9f5effb0bc9206d439031b}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-R\-E\-D\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-R\-E\-D\-\_\-\-S\-I\-Z\-E}}
+\index{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-R\-E\-D\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-R\-E\-D\-\_\-\-S\-I\-Z\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-R\-E\-D\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-A\-C\-C\-U\-M\-\_\-\-R\-E\-D\-\_\-\-S\-I\-Z\-E~14}}\label{glx_8h_aebfea4047e9f5effb0bc9206d439031b}
+
+
+Définition à la ligne 83 du fichier glx.\-h.
+
+\hypertarget{glx_8h_aa08eb17ba68eb9f66b50667ff8768803}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-A\-L\-P\-H\-A\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-A\-L\-P\-H\-A\-\_\-\-S\-I\-Z\-E}}
+\index{G\-L\-X\-\_\-\-A\-L\-P\-H\-A\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-A\-L\-P\-H\-A\-\_\-\-S\-I\-Z\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-A\-L\-P\-H\-A\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-A\-L\-P\-H\-A\-\_\-\-S\-I\-Z\-E~11}}\label{glx_8h_aa08eb17ba68eb9f66b50667ff8768803}
+
+
+Définition à la ligne 80 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ad57b0b6ddb16eba7ccf974e492bf8220}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-A\-R\-B\-\_\-get\-\_\-proc\-\_\-address@{G\-L\-X\-\_\-\-A\-R\-B\-\_\-get\-\_\-proc\-\_\-address}}
+\index{G\-L\-X\-\_\-\-A\-R\-B\-\_\-get\-\_\-proc\-\_\-address@{G\-L\-X\-\_\-\-A\-R\-B\-\_\-get\-\_\-proc\-\_\-address}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-A\-R\-B\-\_\-get\-\_\-proc\-\_\-address}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-A\-R\-B\-\_\-get\-\_\-proc\-\_\-address~1}}\label{glx_8h_ad57b0b6ddb16eba7ccf974e492bf8220}
+
+
+Définition à la ligne 328 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a7b72106b92d5b38fae376e3f938c5636}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-A\-R\-B\-\_\-render\-\_\-texture@{G\-L\-X\-\_\-\-A\-R\-B\-\_\-render\-\_\-texture}}
+\index{G\-L\-X\-\_\-\-A\-R\-B\-\_\-render\-\_\-texture@{G\-L\-X\-\_\-\-A\-R\-B\-\_\-render\-\_\-texture}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-A\-R\-B\-\_\-render\-\_\-texture}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-A\-R\-B\-\_\-render\-\_\-texture~1}}\label{glx_8h_a7b72106b92d5b38fae376e3f938c5636}
+
+
+Définition à la ligne 375 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a17242237ff084b6204bfe11a5d59b329}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-A\-U\-X0\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-A\-U\-X0\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-A\-U\-X0\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-A\-U\-X0\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-A\-U\-X0\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-A\-U\-X0\-\_\-\-E\-X\-T~0x20\-E2}}\label{glx_8h_a17242237ff084b6204bfe11a5d59b329}
+
+
+Définition à la ligne 467 du fichier glx.\-h.
+
+\hypertarget{glx_8h_adcd619a8fa601645251cd62542ee1ab8}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-A\-U\-X1\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-A\-U\-X1\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-A\-U\-X1\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-A\-U\-X1\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-A\-U\-X1\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-A\-U\-X1\-\_\-\-E\-X\-T~0x20\-E3}}\label{glx_8h_adcd619a8fa601645251cd62542ee1ab8}
+
+
+Définition à la ligne 468 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a3328cb0020596921cf1c662658dc7c46}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-A\-U\-X2\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-A\-U\-X2\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-A\-U\-X2\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-A\-U\-X2\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-A\-U\-X2\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-A\-U\-X2\-\_\-\-E\-X\-T~0x20\-E4}}\label{glx_8h_a3328cb0020596921cf1c662658dc7c46}
+
+
+Définition à la ligne 469 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a561759ef2e037e5c0fc690c1317199d0}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-A\-U\-X3\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-A\-U\-X3\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-A\-U\-X3\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-A\-U\-X3\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-A\-U\-X3\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-A\-U\-X3\-\_\-\-E\-X\-T~0x20\-E5}}\label{glx_8h_a561759ef2e037e5c0fc690c1317199d0}
+
+
+Définition à la ligne 470 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a4583b587413ecd8c2c8012665b06de0b}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-A\-U\-X4\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-A\-U\-X4\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-A\-U\-X4\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-A\-U\-X4\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-A\-U\-X4\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-A\-U\-X4\-\_\-\-E\-X\-T~0x20\-E6}}\label{glx_8h_a4583b587413ecd8c2c8012665b06de0b}
+
+
+Définition à la ligne 471 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ad7308243a764034c3c1f14737d3579ca}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-A\-U\-X5\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-A\-U\-X5\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-A\-U\-X5\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-A\-U\-X5\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-A\-U\-X5\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-A\-U\-X5\-\_\-\-E\-X\-T~0x20\-E7}}\label{glx_8h_ad7308243a764034c3c1f14737d3579ca}
+
+
+Définition à la ligne 472 du fichier glx.\-h.
+
+\hypertarget{glx_8h_aad31918c2bb62967550d54f34321b95c}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-A\-U\-X6\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-A\-U\-X6\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-A\-U\-X6\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-A\-U\-X6\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-A\-U\-X6\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-A\-U\-X6\-\_\-\-E\-X\-T~0x20\-E8}}\label{glx_8h_aad31918c2bb62967550d54f34321b95c}
+
+
+Définition à la ligne 473 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ad966e66657e22de7ce2d7cc12497b096}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-A\-U\-X7\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-A\-U\-X7\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-A\-U\-X7\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-A\-U\-X7\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-A\-U\-X7\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-A\-U\-X7\-\_\-\-E\-X\-T~0x20\-E9}}\label{glx_8h_ad966e66657e22de7ce2d7cc12497b096}
+
+
+Définition à la ligne 474 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a59f3b2cea25519fcb29e9afea37cbe59}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-A\-U\-X8\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-A\-U\-X8\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-A\-U\-X8\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-A\-U\-X8\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-A\-U\-X8\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-A\-U\-X8\-\_\-\-E\-X\-T~0x20\-E\-A}}\label{glx_8h_a59f3b2cea25519fcb29e9afea37cbe59}
+
+
+Définition à la ligne 475 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a8c38b7e38ab452a394657523081dcbbb}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-A\-U\-X9\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-A\-U\-X9\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-A\-U\-X9\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-A\-U\-X9\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-A\-U\-X9\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-A\-U\-X9\-\_\-\-E\-X\-T~0x20\-E\-B}}\label{glx_8h_a8c38b7e38ab452a394657523081dcbbb}
+
+
+Définition à la ligne 476 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a90405ce40d727d02a35ab7267c0d071c}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-A\-U\-X\-\_\-\-B\-U\-F\-F\-E\-R\-S@{G\-L\-X\-\_\-\-A\-U\-X\-\_\-\-B\-U\-F\-F\-E\-R\-S}}
+\index{G\-L\-X\-\_\-\-A\-U\-X\-\_\-\-B\-U\-F\-F\-E\-R\-S@{G\-L\-X\-\_\-\-A\-U\-X\-\_\-\-B\-U\-F\-F\-E\-R\-S}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-A\-U\-X\-\_\-\-B\-U\-F\-F\-E\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-A\-U\-X\-\_\-\-B\-U\-F\-F\-E\-R\-S~7}}\label{glx_8h_a90405ce40d727d02a35ab7267c0d071c}
+
+
+Définition à la ligne 76 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a04f4c25fd706968488a0980d523cdf16}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-A\-U\-X\-\_\-\-B\-U\-F\-F\-E\-R\-S\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-A\-U\-X\-\_\-\-B\-U\-F\-F\-E\-R\-S\-\_\-\-B\-I\-T}}
+\index{G\-L\-X\-\_\-\-A\-U\-X\-\_\-\-B\-U\-F\-F\-E\-R\-S\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-A\-U\-X\-\_\-\-B\-U\-F\-F\-E\-R\-S\-\_\-\-B\-I\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-A\-U\-X\-\_\-\-B\-U\-F\-F\-E\-R\-S\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-A\-U\-X\-\_\-\-B\-U\-F\-F\-E\-R\-S\-\_\-\-B\-I\-T~0x00000010}}\label{glx_8h_a04f4c25fd706968488a0980d523cdf16}
+
+
+Définition à la ligne 124 du fichier glx.\-h.
+
+\hypertarget{glx_8h_afff8e37dff54d975300fdeff261030a1}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-E\-X\-T~{\bf G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-L\-E\-F\-T\-\_\-\-E\-X\-T}}}\label{glx_8h_afff8e37dff54d975300fdeff261030a1}
+
+
+Définition à la ligne 466 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a643d6da57a434132456af5413bc2a10b}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-L\-E\-F\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-L\-E\-F\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}}
+\index{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-L\-E\-F\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-L\-E\-F\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-L\-E\-F\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-L\-E\-F\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T~0x00000004}}\label{glx_8h_a643d6da57a434132456af5413bc2a10b}
+
+
+Définition à la ligne 127 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a66e1dc7b5ab409282902a73045f42e00}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-L\-E\-F\-T\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-L\-E\-F\-T\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-L\-E\-F\-T\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-L\-E\-F\-T\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-L\-E\-F\-T\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-L\-E\-F\-T\-\_\-\-E\-X\-T~0x20\-E0}}\label{glx_8h_a66e1dc7b5ab409282902a73045f42e00}
+
+
+Définition à la ligne 463 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ae3ad7b22e7d2aba779de5eca0d0792e1}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-R\-I\-G\-H\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-R\-I\-G\-H\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}}
+\index{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-R\-I\-G\-H\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-R\-I\-G\-H\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-R\-I\-G\-H\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-R\-I\-G\-H\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T~0x00000008}}\label{glx_8h_ae3ad7b22e7d2aba779de5eca0d0792e1}
+
+
+Définition à la ligne 128 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ae1900a94d426c8e8f04410c72c7a7338}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-R\-I\-G\-H\-T\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-R\-I\-G\-H\-T\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-R\-I\-G\-H\-T\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-R\-I\-G\-H\-T\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-R\-I\-G\-H\-T\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-B\-A\-C\-K\-\_\-\-R\-I\-G\-H\-T\-\_\-\-E\-X\-T~0x20\-E1}}\label{glx_8h_ae1900a94d426c8e8f04410c72c7a7338}
+
+
+Définition à la ligne 464 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a3b7c0632c81e87fa7baf16564c5148f4}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-A\-T\-T\-R\-I\-B\-U\-T\-E@{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-A\-T\-T\-R\-I\-B\-U\-T\-E}}
+\index{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-A\-T\-T\-R\-I\-B\-U\-T\-E@{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-A\-T\-T\-R\-I\-B\-U\-T\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-A\-T\-T\-R\-I\-B\-U\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-A\-T\-T\-R\-I\-B\-U\-T\-E~2}}\label{glx_8h_a3b7c0632c81e87fa7baf16564c5148f4}
+
+
+Définition à la ligne 93 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a2e4c4633e534d0360f6bbf5954aeac21}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-C\-O\-N\-T\-E\-X\-T@{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-C\-O\-N\-T\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-C\-O\-N\-T\-E\-X\-T@{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-C\-O\-N\-T\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-C\-O\-N\-T\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-C\-O\-N\-T\-E\-X\-T~5}}\label{glx_8h_a2e4c4633e534d0360f6bbf5954aeac21}
+
+
+Définition à la ligne 96 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a089318891f39aedabe0e901a97e1dbd8}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-E\-N\-U\-M@{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-E\-N\-U\-M}}
+\index{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-E\-N\-U\-M@{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-E\-N\-U\-M}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-E\-N\-U\-M}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-E\-N\-U\-M~7}}\label{glx_8h_a089318891f39aedabe0e901a97e1dbd8}
+
+
+Définition à la ligne 98 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ad221a127f56672d5c5971debb45748a3}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-S\-C\-R\-E\-E\-N@{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-S\-C\-R\-E\-E\-N}}
+\index{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-S\-C\-R\-E\-E\-N@{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-S\-C\-R\-E\-E\-N}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-S\-C\-R\-E\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-S\-C\-R\-E\-E\-N~1}}\label{glx_8h_ad221a127f56672d5c5971debb45748a3}
+
+
+Définition à la ligne 92 du fichier glx.\-h.
+
+\hypertarget{glx_8h_aed136f586d80922d80d203cf2ad6991c}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-V\-A\-L\-U\-E@{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-V\-A\-L\-U\-E}}
+\index{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-V\-A\-L\-U\-E@{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-V\-A\-L\-U\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-V\-A\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-V\-A\-L\-U\-E~6}}\label{glx_8h_aed136f586d80922d80d203cf2ad6991c}
+
+
+Définition à la ligne 97 du fichier glx.\-h.
+
+\hypertarget{glx_8h_af4ae600ecb5878dff4c9a4efe7bdfcdb}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-V\-I\-S\-U\-A\-L@{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-V\-I\-S\-U\-A\-L}}
+\index{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-V\-I\-S\-U\-A\-L@{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-V\-I\-S\-U\-A\-L}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-V\-I\-S\-U\-A\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-B\-A\-D\-\_\-\-V\-I\-S\-U\-A\-L~4}}\label{glx_8h_af4ae600ecb5878dff4c9a4efe7bdfcdb}
+
+
+Définition à la ligne 95 du fichier glx.\-h.
+
+\hypertarget{glx_8h_abc4f5184b4db99c8d96c4cb3730581be}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-M\-I\-P\-M\-A\-P\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-M\-I\-P\-M\-A\-P\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-M\-I\-P\-M\-A\-P\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-M\-I\-P\-M\-A\-P\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-M\-I\-P\-M\-A\-P\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-M\-I\-P\-M\-A\-P\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-E\-X\-T~0x20\-D2}}\label{glx_8h_abc4f5184b4db99c8d96c4cb3730581be}
+
+
+Définition à la ligne 441 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a06c1a1a7fa90cf0e27eeda2e74bfdca8}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-G\-B\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-G\-B\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-G\-B\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-G\-B\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-G\-B\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-G\-B\-\_\-\-E\-X\-T~0x20\-D0}}\label{glx_8h_a06c1a1a7fa90cf0e27eeda2e74bfdca8}
+
+
+Définition à la ligne 439 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a9adffe85376e091b1b54fd8b358f1018}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-G\-B\-A\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-G\-B\-A\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-G\-B\-A\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-G\-B\-A\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-G\-B\-A\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-G\-B\-A\-\_\-\-E\-X\-T~0x20\-D1}}\label{glx_8h_a9adffe85376e091b1b54fd8b358f1018}
+
+
+Définition à la ligne 440 du fichier glx.\-h.
+
+\hypertarget{glx_8h_aa9ed7186e9c9a6b499416206fc12c4d2}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-T\-A\-R\-G\-E\-T\-S\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-T\-A\-R\-G\-E\-T\-S\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-T\-A\-R\-G\-E\-T\-S\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-T\-A\-R\-G\-E\-T\-S\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-T\-A\-R\-G\-E\-T\-S\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-B\-I\-N\-D\-\_\-\-T\-O\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-T\-A\-R\-G\-E\-T\-S\-\_\-\-E\-X\-T~0x20\-D3}}\label{glx_8h_aa9ed7186e9c9a6b499416206fc12c4d2}
+
+
+Définition à la ligne 442 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a6a628fdbdc83def58f76c4231cedad82}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-B\-L\-U\-E\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-B\-L\-U\-E\-\_\-\-S\-I\-Z\-E}}
+\index{G\-L\-X\-\_\-\-B\-L\-U\-E\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-B\-L\-U\-E\-\_\-\-S\-I\-Z\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-B\-L\-U\-E\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-B\-L\-U\-E\-\_\-\-S\-I\-Z\-E~10}}\label{glx_8h_a6a628fdbdc83def58f76c4231cedad82}
+
+
+Définition à la ligne 79 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a3b6f1996a7ec5c0e4b474bd847f8cc01}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E}}
+\index{G\-L\-X\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E~2}}\label{glx_8h_a3b6f1996a7ec5c0e4b474bd847f8cc01}
+
+
+Définition à la ligne 71 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a5d04e136b1bc759cebb7b18784a0e824}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-Buffer\-Swap\-Complete@{G\-L\-X\-\_\-\-Buffer\-Swap\-Complete}}
+\index{G\-L\-X\-\_\-\-Buffer\-Swap\-Complete@{G\-L\-X\-\_\-\-Buffer\-Swap\-Complete}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-Buffer\-Swap\-Complete}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-Buffer\-Swap\-Complete~1}}\label{glx_8h_a5d04e136b1bc759cebb7b18784a0e824}
+
+
+Définition à la ligne 196 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a1a7c1c861fa561e43cf9315c92fedc36}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-C\-O\-L\-O\-R\-\_\-\-I\-N\-D\-E\-X\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-C\-O\-L\-O\-R\-\_\-\-I\-N\-D\-E\-X\-\_\-\-B\-I\-T}}
+\index{G\-L\-X\-\_\-\-C\-O\-L\-O\-R\-\_\-\-I\-N\-D\-E\-X\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-C\-O\-L\-O\-R\-\_\-\-I\-N\-D\-E\-X\-\_\-\-B\-I\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-C\-O\-L\-O\-R\-\_\-\-I\-N\-D\-E\-X\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-C\-O\-L\-O\-R\-\_\-\-I\-N\-D\-E\-X\-\_\-\-B\-I\-T~0x00000002}}\label{glx_8h_a1a7c1c861fa561e43cf9315c92fedc36}
+
+
+Définition à la ligne 166 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a1aea3930b21fb0d6fa2925f02564a8f8}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-C\-O\-L\-O\-R\-\_\-\-I\-N\-D\-E\-X\-\_\-\-T\-Y\-P\-E@{G\-L\-X\-\_\-\-C\-O\-L\-O\-R\-\_\-\-I\-N\-D\-E\-X\-\_\-\-T\-Y\-P\-E}}
+\index{G\-L\-X\-\_\-\-C\-O\-L\-O\-R\-\_\-\-I\-N\-D\-E\-X\-\_\-\-T\-Y\-P\-E@{G\-L\-X\-\_\-\-C\-O\-L\-O\-R\-\_\-\-I\-N\-D\-E\-X\-\_\-\-T\-Y\-P\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-C\-O\-L\-O\-R\-\_\-\-I\-N\-D\-E\-X\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-C\-O\-L\-O\-R\-\_\-\-I\-N\-D\-E\-X\-\_\-\-T\-Y\-P\-E~0x8015}}\label{glx_8h_a1aea3930b21fb0d6fa2925f02564a8f8}
+
+
+Définition à la ligne 150 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a58d27359c7214348a8107d0550ba59fa}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-\-C\-A\-V\-E\-A\-T@{G\-L\-X\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-\-C\-A\-V\-E\-A\-T}}
+\index{G\-L\-X\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-\-C\-A\-V\-E\-A\-T@{G\-L\-X\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-\-C\-A\-V\-E\-A\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-\-C\-A\-V\-E\-A\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-C\-O\-N\-F\-I\-G\-\_\-\-C\-A\-V\-E\-A\-T~0x20}}\label{glx_8h_a58d27359c7214348a8107d0550ba59fa}
+
+
+Définition à la ligne 112 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a1066c7c318a5bc0744bd891a31b3279f}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-D\-A\-M\-A\-G\-E\-D@{G\-L\-X\-\_\-\-D\-A\-M\-A\-G\-E\-D}}
+\index{G\-L\-X\-\_\-\-D\-A\-M\-A\-G\-E\-D@{G\-L\-X\-\_\-\-D\-A\-M\-A\-G\-E\-D}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-D\-A\-M\-A\-G\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-D\-A\-M\-A\-G\-E\-D~0x8020}}\label{glx_8h_a1066c7c318a5bc0744bd891a31b3279f}
+
+
+Définition à la ligne 159 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a7adcbb19f1bb44c0583f03ee60eb6011}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-D\-E\-P\-T\-H\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-D\-E\-P\-T\-H\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}}
+\index{G\-L\-X\-\_\-\-D\-E\-P\-T\-H\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-D\-E\-P\-T\-H\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-D\-E\-P\-T\-H\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-D\-E\-P\-T\-H\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T~0x00000020}}\label{glx_8h_a7adcbb19f1bb44c0583f03ee60eb6011}
+
+
+Définition à la ligne 129 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ab3bc9f4a23a2626f3d3c487e57af4cd3}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-D\-E\-P\-T\-H\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-D\-E\-P\-T\-H\-\_\-\-S\-I\-Z\-E}}
+\index{G\-L\-X\-\_\-\-D\-E\-P\-T\-H\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-D\-E\-P\-T\-H\-\_\-\-S\-I\-Z\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-D\-E\-P\-T\-H\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-D\-E\-P\-T\-H\-\_\-\-S\-I\-Z\-E~12}}\label{glx_8h_ab3bc9f4a23a2626f3d3c487e57af4cd3}
+
+
+Définition à la ligne 81 du fichier glx.\-h.
+
+\hypertarget{glx_8h_adb3f2ceaa1fba3b0c97bb0880ff6cce2}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-D\-I\-R\-E\-C\-T\-\_\-\-C\-O\-L\-O\-R@{G\-L\-X\-\_\-\-D\-I\-R\-E\-C\-T\-\_\-\-C\-O\-L\-O\-R}}
+\index{G\-L\-X\-\_\-\-D\-I\-R\-E\-C\-T\-\_\-\-C\-O\-L\-O\-R@{G\-L\-X\-\_\-\-D\-I\-R\-E\-C\-T\-\_\-\-C\-O\-L\-O\-R}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-D\-I\-R\-E\-C\-T\-\_\-\-C\-O\-L\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-D\-I\-R\-E\-C\-T\-\_\-\-C\-O\-L\-O\-R~0x8003}}\label{glx_8h_adb3f2ceaa1fba3b0c97bb0880ff6cce2}
+
+
+Définition à la ligne 135 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a139db61d3057b17b2f058ba5d4f57606}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-D\-O\-N\-T\-\_\-\-C\-A\-R\-E@{G\-L\-X\-\_\-\-D\-O\-N\-T\-\_\-\-C\-A\-R\-E}}
+\index{G\-L\-X\-\_\-\-D\-O\-N\-T\-\_\-\-C\-A\-R\-E@{G\-L\-X\-\_\-\-D\-O\-N\-T\-\_\-\-C\-A\-R\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-D\-O\-N\-T\-\_\-\-C\-A\-R\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-D\-O\-N\-T\-\_\-\-C\-A\-R\-E~0x\-F\-F\-F\-F\-F\-F\-F\-F}}\label{glx_8h_a139db61d3057b17b2f058ba5d4f57606}
+
+
+Définition à la ligne 113 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a3bf7844b05aa4a7ae5c56924eac41c35}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-D\-O\-U\-B\-L\-E\-B\-U\-F\-F\-E\-R@{G\-L\-X\-\_\-\-D\-O\-U\-B\-L\-E\-B\-U\-F\-F\-E\-R}}
+\index{G\-L\-X\-\_\-\-D\-O\-U\-B\-L\-E\-B\-U\-F\-F\-E\-R@{G\-L\-X\-\_\-\-D\-O\-U\-B\-L\-E\-B\-U\-F\-F\-E\-R}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-D\-O\-U\-B\-L\-E\-B\-U\-F\-F\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-D\-O\-U\-B\-L\-E\-B\-U\-F\-F\-E\-R~5}}\label{glx_8h_a3bf7844b05aa4a7ae5c56924eac41c35}
+
+
+Définition à la ligne 74 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a0eae3a00b9d4abf47ae7238e55e03905}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-D\-R\-A\-W\-A\-B\-L\-E\-\_\-\-T\-Y\-P\-E@{G\-L\-X\-\_\-\-D\-R\-A\-W\-A\-B\-L\-E\-\_\-\-T\-Y\-P\-E}}
+\index{G\-L\-X\-\_\-\-D\-R\-A\-W\-A\-B\-L\-E\-\_\-\-T\-Y\-P\-E@{G\-L\-X\-\_\-\-D\-R\-A\-W\-A\-B\-L\-E\-\_\-\-T\-Y\-P\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-D\-R\-A\-W\-A\-B\-L\-E\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-D\-R\-A\-W\-A\-B\-L\-E\-\_\-\-T\-Y\-P\-E~0x8010}}\label{glx_8h_a0eae3a00b9d4abf47ae7238e55e03905}
+
+
+Définition à la ligne 145 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a841537cb352bb4b5da32abcae363c6b8}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-E\-V\-E\-N\-T\-\_\-\-M\-A\-S\-K@{G\-L\-X\-\_\-\-E\-V\-E\-N\-T\-\_\-\-M\-A\-S\-K}}
+\index{G\-L\-X\-\_\-\-E\-V\-E\-N\-T\-\_\-\-M\-A\-S\-K@{G\-L\-X\-\_\-\-E\-V\-E\-N\-T\-\_\-\-M\-A\-S\-K}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-E\-V\-E\-N\-T\-\_\-\-M\-A\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-E\-V\-E\-N\-T\-\_\-\-M\-A\-S\-K~0x801\-F}}\label{glx_8h_a841537cb352bb4b5da32abcae363c6b8}
+
+
+Définition à la ligne 158 du fichier glx.\-h.
+
+\hypertarget{glx_8h_af298c73c003ebc4944fe537679f553a6}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-E\-X\-T\-\_\-texture\-\_\-from\-\_\-pixmap@{G\-L\-X\-\_\-\-E\-X\-T\-\_\-texture\-\_\-from\-\_\-pixmap}}
+\index{G\-L\-X\-\_\-\-E\-X\-T\-\_\-texture\-\_\-from\-\_\-pixmap@{G\-L\-X\-\_\-\-E\-X\-T\-\_\-texture\-\_\-from\-\_\-pixmap}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-E\-X\-T\-\_\-texture\-\_\-from\-\_\-pixmap}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-E\-X\-T\-\_\-texture\-\_\-from\-\_\-pixmap~1}}\label{glx_8h_af298c73c003ebc4944fe537679f553a6}
+
+
+Définition à la ligne 437 du fichier glx.\-h.
+
+\hypertarget{glx_8h_af3145e45de7971f98af0ef2a4c04a698}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N\-\_\-\-N\-A\-M\-E@{G\-L\-X\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N\-\_\-\-N\-A\-M\-E}}
+\index{G\-L\-X\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N\-\_\-\-N\-A\-M\-E@{G\-L\-X\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N\-\_\-\-N\-A\-M\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N\-\_\-\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N\-\_\-\-N\-A\-M\-E~\char`\"{}G\-L\-X\char`\"{}}}\label{glx_8h_af3145e45de7971f98af0ef2a4c04a698}
+
+
+Définition à la ligne 63 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a5aaab2c7372549a54b856e8438215db8}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N\-S@{G\-L\-X\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N\-S}}
+\index{G\-L\-X\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N\-S@{G\-L\-X\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N\-S}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N\-S~3}}\label{glx_8h_a5aaab2c7372549a54b856e8438215db8}
+
+
+Définition à la ligne 106 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ac27348d36dd5c4a0de9c3ca633caf33e}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-F\-B\-C\-O\-N\-F\-I\-G\-\_\-\-I\-D@{G\-L\-X\-\_\-\-F\-B\-C\-O\-N\-F\-I\-G\-\_\-\-I\-D}}
+\index{G\-L\-X\-\_\-\-F\-B\-C\-O\-N\-F\-I\-G\-\_\-\-I\-D@{G\-L\-X\-\_\-\-F\-B\-C\-O\-N\-F\-I\-G\-\_\-\-I\-D}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-F\-B\-C\-O\-N\-F\-I\-G\-\_\-\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-F\-B\-C\-O\-N\-F\-I\-G\-\_\-\-I\-D~0x8013}}\label{glx_8h_ac27348d36dd5c4a0de9c3ca633caf33e}
+
+
+Définition à la ligne 148 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a652fec7ee490821b79e44f7e35a778d9}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-F\-L\-O\-A\-T\-\_\-\-C\-O\-M\-P\-O\-N\-E\-N\-T\-S\-\_\-\-N\-V@{G\-L\-X\-\_\-\-F\-L\-O\-A\-T\-\_\-\-C\-O\-M\-P\-O\-N\-E\-N\-T\-S\-\_\-\-N\-V}}
+\index{G\-L\-X\-\_\-\-F\-L\-O\-A\-T\-\_\-\-C\-O\-M\-P\-O\-N\-E\-N\-T\-S\-\_\-\-N\-V@{G\-L\-X\-\_\-\-F\-L\-O\-A\-T\-\_\-\-C\-O\-M\-P\-O\-N\-E\-N\-T\-S\-\_\-\-N\-V}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-F\-L\-O\-A\-T\-\_\-\-C\-O\-M\-P\-O\-N\-E\-N\-T\-S\-\_\-\-N\-V}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-F\-L\-O\-A\-T\-\_\-\-C\-O\-M\-P\-O\-N\-E\-N\-T\-S\-\_\-\-N\-V~0x20\-B0}}\label{glx_8h_a652fec7ee490821b79e44f7e35a778d9}
+
+
+Définition à la ligne 390 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a8532c79e818568481fe5c61a6238f6e3}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-E\-X\-T~{\bf G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-L\-E\-F\-T\-\_\-\-E\-X\-T}}}\label{glx_8h_a8532c79e818568481fe5c61a6238f6e3}
+
+
+Définition à la ligne 465 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a6b7cea42e7878a2992959e705444ba33}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-L\-E\-F\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-L\-E\-F\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}}
+\index{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-L\-E\-F\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-L\-E\-F\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-L\-E\-F\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-L\-E\-F\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T~0x00000001}}\label{glx_8h_a6b7cea42e7878a2992959e705444ba33}
+
+
+Définition à la ligne 125 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a07cddbabead9bf4f2f2e6e2eb02db1f4}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-L\-E\-F\-T\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-L\-E\-F\-T\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-L\-E\-F\-T\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-L\-E\-F\-T\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-L\-E\-F\-T\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-L\-E\-F\-T\-\_\-\-E\-X\-T~0x20\-D\-E}}\label{glx_8h_a07cddbabead9bf4f2f2e6e2eb02db1f4}
+
+
+Définition à la ligne 461 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a9ff65cdb3d80ffe3414dfa39f4efcfe0}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-R\-I\-G\-H\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-R\-I\-G\-H\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}}
+\index{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-R\-I\-G\-H\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-R\-I\-G\-H\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-R\-I\-G\-H\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-R\-I\-G\-H\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T~0x00000002}}\label{glx_8h_a9ff65cdb3d80ffe3414dfa39f4efcfe0}
+
+
+Définition à la ligne 126 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a7e4579cc2597459fbd1cd5a04612b8cd}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-R\-I\-G\-H\-T\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-R\-I\-G\-H\-T\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-R\-I\-G\-H\-T\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-R\-I\-G\-H\-T\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-R\-I\-G\-H\-T\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-F\-R\-O\-N\-T\-\_\-\-R\-I\-G\-H\-T\-\_\-\-E\-X\-T~0x20\-D\-F}}\label{glx_8h_a7e4579cc2597459fbd1cd5a04612b8cd}
+
+
+Définition à la ligne 462 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a9928d6f51bedefef8538e2ce3a631fb0}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-G\-R\-A\-Y\-\_\-\-S\-C\-A\-L\-E@{G\-L\-X\-\_\-\-G\-R\-A\-Y\-\_\-\-S\-C\-A\-L\-E}}
+\index{G\-L\-X\-\_\-\-G\-R\-A\-Y\-\_\-\-S\-C\-A\-L\-E@{G\-L\-X\-\_\-\-G\-R\-A\-Y\-\_\-\-S\-C\-A\-L\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-G\-R\-A\-Y\-\_\-\-S\-C\-A\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-G\-R\-A\-Y\-\_\-\-S\-C\-A\-L\-E~0x8006}}\label{glx_8h_a9928d6f51bedefef8538e2ce3a631fb0}
+
+
+Définition à la ligne 138 du fichier glx.\-h.
+
+\hypertarget{glx_8h_af4f4b564881ee8ef2f3ccd0a315e42b4}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-G\-R\-E\-E\-N\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-G\-R\-E\-E\-N\-\_\-\-S\-I\-Z\-E}}
+\index{G\-L\-X\-\_\-\-G\-R\-E\-E\-N\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-G\-R\-E\-E\-N\-\_\-\-S\-I\-Z\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-G\-R\-E\-E\-N\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-G\-R\-E\-E\-N\-\_\-\-S\-I\-Z\-E~9}}\label{glx_8h_af4f4b564881ee8ef2f3ccd0a315e42b4}
+
+
+Définition à la ligne 78 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a291203c744ad54765644ca1126d5ce06}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-H\-E\-I\-G\-H\-T@{G\-L\-X\-\_\-\-H\-E\-I\-G\-H\-T}}
+\index{G\-L\-X\-\_\-\-H\-E\-I\-G\-H\-T@{G\-L\-X\-\_\-\-H\-E\-I\-G\-H\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-H\-E\-I\-G\-H\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-H\-E\-I\-G\-H\-T~0x801\-E}}\label{glx_8h_a291203c744ad54765644ca1126d5ce06}
+
+
+Définition à la ligne 157 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a336366e9afe258a080025fb27635b89f}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-L\-A\-R\-G\-E\-S\-T\-\_\-\-P\-B\-U\-F\-F\-E\-R@{G\-L\-X\-\_\-\-L\-A\-R\-G\-E\-S\-T\-\_\-\-P\-B\-U\-F\-F\-E\-R}}
+\index{G\-L\-X\-\_\-\-L\-A\-R\-G\-E\-S\-T\-\_\-\-P\-B\-U\-F\-F\-E\-R@{G\-L\-X\-\_\-\-L\-A\-R\-G\-E\-S\-T\-\_\-\-P\-B\-U\-F\-F\-E\-R}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-L\-A\-R\-G\-E\-S\-T\-\_\-\-P\-B\-U\-F\-F\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-L\-A\-R\-G\-E\-S\-T\-\_\-\-P\-B\-U\-F\-F\-E\-R~0x801\-C}}\label{glx_8h_a336366e9afe258a080025fb27635b89f}
+
+
+Définition à la ligne 155 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a22738f49c53260af4c09bf9a9f21de4b}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-L\-E\-V\-E\-L@{G\-L\-X\-\_\-\-L\-E\-V\-E\-L}}
+\index{G\-L\-X\-\_\-\-L\-E\-V\-E\-L@{G\-L\-X\-\_\-\-L\-E\-V\-E\-L}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-L\-E\-V\-E\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-L\-E\-V\-E\-L~3}}\label{glx_8h_a22738f49c53260af4c09bf9a9f21de4b}
+
+
+Définition à la ligne 72 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a6d670a2668878cb74fdda26a24755641}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-M\-A\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-H\-E\-I\-G\-H\-T@{G\-L\-X\-\_\-\-M\-A\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-H\-E\-I\-G\-H\-T}}
+\index{G\-L\-X\-\_\-\-M\-A\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-H\-E\-I\-G\-H\-T@{G\-L\-X\-\_\-\-M\-A\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-H\-E\-I\-G\-H\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-M\-A\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-H\-E\-I\-G\-H\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-M\-A\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-H\-E\-I\-G\-H\-T~0x8017}}\label{glx_8h_a6d670a2668878cb74fdda26a24755641}
+
+
+Définition à la ligne 152 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a147bd4363a3a75aab344112ba4896799}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-M\-A\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-P\-I\-X\-E\-L\-S@{G\-L\-X\-\_\-\-M\-A\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-P\-I\-X\-E\-L\-S}}
+\index{G\-L\-X\-\_\-\-M\-A\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-P\-I\-X\-E\-L\-S@{G\-L\-X\-\_\-\-M\-A\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-P\-I\-X\-E\-L\-S}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-M\-A\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-P\-I\-X\-E\-L\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-M\-A\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-P\-I\-X\-E\-L\-S~0x8018}}\label{glx_8h_a147bd4363a3a75aab344112ba4896799}
+
+
+Définition à la ligne 153 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a0cc1956b35f17412802be44df902477c}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-M\-A\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-W\-I\-D\-T\-H@{G\-L\-X\-\_\-\-M\-A\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-W\-I\-D\-T\-H}}
+\index{G\-L\-X\-\_\-\-M\-A\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-W\-I\-D\-T\-H@{G\-L\-X\-\_\-\-M\-A\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-W\-I\-D\-T\-H}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-M\-A\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-W\-I\-D\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-M\-A\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-W\-I\-D\-T\-H~0x8016}}\label{glx_8h_a0cc1956b35f17412802be44df902477c}
+
+
+Définition à la ligne 151 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a7f137c65e1d5ae73fffcf67a087de66e}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-M\-E\-S\-A\-\_\-swap\-\_\-control@{G\-L\-X\-\_\-\-M\-E\-S\-A\-\_\-swap\-\_\-control}}
+\index{G\-L\-X\-\_\-\-M\-E\-S\-A\-\_\-swap\-\_\-control@{G\-L\-X\-\_\-\-M\-E\-S\-A\-\_\-swap\-\_\-control}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-M\-E\-S\-A\-\_\-swap\-\_\-control}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-M\-E\-S\-A\-\_\-swap\-\_\-control~1}}\label{glx_8h_a7f137c65e1d5ae73fffcf67a087de66e}
+
+
+Définition à la ligne 420 du fichier glx.\-h.
+
+\hypertarget{glx_8h_aa9b1bd5c9df8f8af7e6501dcb85dea3c}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-M\-E\-S\-A\-\_\-swap\-\_\-frame\-\_\-usage@{G\-L\-X\-\_\-\-M\-E\-S\-A\-\_\-swap\-\_\-frame\-\_\-usage}}
+\index{G\-L\-X\-\_\-\-M\-E\-S\-A\-\_\-swap\-\_\-frame\-\_\-usage@{G\-L\-X\-\_\-\-M\-E\-S\-A\-\_\-swap\-\_\-frame\-\_\-usage}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-M\-E\-S\-A\-\_\-swap\-\_\-frame\-\_\-usage}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-M\-E\-S\-A\-\_\-swap\-\_\-frame\-\_\-usage~1}}\label{glx_8h_aa9b1bd5c9df8f8af7e6501dcb85dea3c}
+
+
+Définition à la ligne 400 du fichier glx.\-h.
+
+\hypertarget{glx_8h_add0d6c6d2ea8eba9881330bdb1ccef5f}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-M\-I\-P\-M\-A\-P\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-M\-I\-P\-M\-A\-P\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-M\-I\-P\-M\-A\-P\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-M\-I\-P\-M\-A\-P\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-M\-I\-P\-M\-A\-P\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-M\-I\-P\-M\-A\-P\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-E\-X\-T~0x20\-D7}}\label{glx_8h_add0d6c6d2ea8eba9881330bdb1ccef5f}
+
+
+Définition à la ligne 447 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a4e98ca2d441de1524b8482d777e7c8ad}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-N\-O\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N@{G\-L\-X\-\_\-\-N\-O\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N}}
+\index{G\-L\-X\-\_\-\-N\-O\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N@{G\-L\-X\-\_\-\-N\-O\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-N\-O\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-N\-O\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N~3}}\label{glx_8h_a4e98ca2d441de1524b8482d777e7c8ad}
+
+
+Définition à la ligne 94 du fichier glx.\-h.
+
+\hypertarget{glx_8h_adadd435abcc247be896391d019ebfbea}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-N\-O\-N\-\_\-\-C\-O\-N\-F\-O\-R\-M\-A\-N\-T\-\_\-\-C\-O\-N\-F\-I\-G@{G\-L\-X\-\_\-\-N\-O\-N\-\_\-\-C\-O\-N\-F\-O\-R\-M\-A\-N\-T\-\_\-\-C\-O\-N\-F\-I\-G}}
+\index{G\-L\-X\-\_\-\-N\-O\-N\-\_\-\-C\-O\-N\-F\-O\-R\-M\-A\-N\-T\-\_\-\-C\-O\-N\-F\-I\-G@{G\-L\-X\-\_\-\-N\-O\-N\-\_\-\-C\-O\-N\-F\-O\-R\-M\-A\-N\-T\-\_\-\-C\-O\-N\-F\-I\-G}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-N\-O\-N\-\_\-\-C\-O\-N\-F\-O\-R\-M\-A\-N\-T\-\_\-\-C\-O\-N\-F\-I\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-N\-O\-N\-\_\-\-C\-O\-N\-F\-O\-R\-M\-A\-N\-T\-\_\-\-C\-O\-N\-F\-I\-G~0x800\-D}}\label{glx_8h_adadd435abcc247be896391d019ebfbea}
+
+
+Définition à la ligne 144 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a469be69ad75b8720ad5f00160bd671b7}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-N\-O\-N\-E@{G\-L\-X\-\_\-\-N\-O\-N\-E}}
+\index{G\-L\-X\-\_\-\-N\-O\-N\-E@{G\-L\-X\-\_\-\-N\-O\-N\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-N\-O\-N\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-N\-O\-N\-E~0x8000}}\label{glx_8h_a469be69ad75b8720ad5f00160bd671b7}
+
+
+Définition à la ligne 132 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a5f82c0ca7c75147ea8518c504648b307}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-N\-V\-\_\-float\-\_\-buffer@{G\-L\-X\-\_\-\-N\-V\-\_\-float\-\_\-buffer}}
+\index{G\-L\-X\-\_\-\-N\-V\-\_\-float\-\_\-buffer@{G\-L\-X\-\_\-\-N\-V\-\_\-float\-\_\-buffer}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-N\-V\-\_\-float\-\_\-buffer}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-N\-V\-\_\-float\-\_\-buffer~1}}\label{glx_8h_a5f82c0ca7c75147ea8518c504648b307}
+
+
+Définition à la ligne 388 du fichier glx.\-h.
+
+\hypertarget{glx_8h_aa752422f84e2a7eb601b7d9844bd2d76}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-N\-V\-\_\-vertex\-\_\-array\-\_\-range@{G\-L\-X\-\_\-\-N\-V\-\_\-vertex\-\_\-array\-\_\-range}}
+\index{G\-L\-X\-\_\-\-N\-V\-\_\-vertex\-\_\-array\-\_\-range@{G\-L\-X\-\_\-\-N\-V\-\_\-vertex\-\_\-array\-\_\-range}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-N\-V\-\_\-vertex\-\_\-array\-\_\-range}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-N\-V\-\_\-vertex\-\_\-array\-\_\-range}}\label{glx_8h_aa752422f84e2a7eb601b7d9844bd2d76}
+The following aren't in glxext.\-h yet. 
+
+Définition à la ligne 360 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a522907a44d32ff8d315c67141775c6bb}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R@{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R}}
+\index{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R@{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R~0x8023}}\label{glx_8h_a522907a44d32ff8d315c67141775c6bb}
+
+
+Définition à la ligne 162 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a40747561b132c6268a17c152248ff1c3}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}}
+\index{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T~0x00000004}}\label{glx_8h_a40747561b132c6268a17c152248ff1c3}
+
+
+Définition à la ligne 123 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a35b037dde69dd0405c1218f196bcf2cc}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-C\-L\-O\-B\-B\-E\-R\-\_\-\-M\-A\-S\-K@{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-C\-L\-O\-B\-B\-E\-R\-\_\-\-M\-A\-S\-K}}
+\index{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-C\-L\-O\-B\-B\-E\-R\-\_\-\-M\-A\-S\-K@{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-C\-L\-O\-B\-B\-E\-R\-\_\-\-M\-A\-S\-K}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-C\-L\-O\-B\-B\-E\-R\-\_\-\-M\-A\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-C\-L\-O\-B\-B\-E\-R\-\_\-\-M\-A\-S\-K~0x08000000}}\label{glx_8h_a35b037dde69dd0405c1218f196bcf2cc}
+
+
+Définition à la ligne 167 du fichier glx.\-h.
+
+\hypertarget{glx_8h_aebe1451505d127574b016dffd195178c}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-H\-E\-I\-G\-H\-T@{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-H\-E\-I\-G\-H\-T}}
+\index{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-H\-E\-I\-G\-H\-T@{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-H\-E\-I\-G\-H\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-H\-E\-I\-G\-H\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-H\-E\-I\-G\-H\-T~0x8040}}\label{glx_8h_aebe1451505d127574b016dffd195178c}
+
+
+Définition à la ligne 163 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a45bffd673ef79f2eaf92ac2e12f092af}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-W\-I\-D\-T\-H@{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-W\-I\-D\-T\-H}}
+\index{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-W\-I\-D\-T\-H@{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-W\-I\-D\-T\-H}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-W\-I\-D\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-P\-B\-U\-F\-F\-E\-R\-\_\-\-W\-I\-D\-T\-H~0x8041}}\label{glx_8h_a45bffd673ef79f2eaf92ac2e12f092af}
+
+
+Définition à la ligne 164 du fichier glx.\-h.
+
+\hypertarget{glx_8h_aaec2667a1d317224543fe95c4df88300}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-Pbuffer\-Clobber@{G\-L\-X\-\_\-\-Pbuffer\-Clobber}}
+\index{G\-L\-X\-\_\-\-Pbuffer\-Clobber@{G\-L\-X\-\_\-\-Pbuffer\-Clobber}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-Pbuffer\-Clobber}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-Pbuffer\-Clobber~0}}\label{glx_8h_aaec2667a1d317224543fe95c4df88300}
+
+
+Définition à la ligne 195 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a8b043ca42cf3151855f5bb1415fa8ab8}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-P\-I\-X\-M\-A\-P\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-P\-I\-X\-M\-A\-P\-\_\-\-B\-I\-T}}
+\index{G\-L\-X\-\_\-\-P\-I\-X\-M\-A\-P\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-P\-I\-X\-M\-A\-P\-\_\-\-B\-I\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-P\-I\-X\-M\-A\-P\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-P\-I\-X\-M\-A\-P\-\_\-\-B\-I\-T~0x00000002}}\label{glx_8h_a8b043ca42cf3151855f5bb1415fa8ab8}
+
+
+Définition à la ligne 122 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ae4a52076cdb82aa8bd12b1b55c6cd6e5}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-P\-R\-E\-S\-E\-R\-V\-E\-D\-\_\-\-C\-O\-N\-T\-E\-N\-T\-S@{G\-L\-X\-\_\-\-P\-R\-E\-S\-E\-R\-V\-E\-D\-\_\-\-C\-O\-N\-T\-E\-N\-T\-S}}
+\index{G\-L\-X\-\_\-\-P\-R\-E\-S\-E\-R\-V\-E\-D\-\_\-\-C\-O\-N\-T\-E\-N\-T\-S@{G\-L\-X\-\_\-\-P\-R\-E\-S\-E\-R\-V\-E\-D\-\_\-\-C\-O\-N\-T\-E\-N\-T\-S}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-P\-R\-E\-S\-E\-R\-V\-E\-D\-\_\-\-C\-O\-N\-T\-E\-N\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-P\-R\-E\-S\-E\-R\-V\-E\-D\-\_\-\-C\-O\-N\-T\-E\-N\-T\-S~0x801\-B}}\label{glx_8h_ae4a52076cdb82aa8bd12b1b55c6cd6e5}
+
+
+Définition à la ligne 154 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a8fea3c0abfe2929ee257ecf1a137c259}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-P\-S\-E\-U\-D\-O\-\_\-\-C\-O\-L\-O\-R@{G\-L\-X\-\_\-\-P\-S\-E\-U\-D\-O\-\_\-\-C\-O\-L\-O\-R}}
+\index{G\-L\-X\-\_\-\-P\-S\-E\-U\-D\-O\-\_\-\-C\-O\-L\-O\-R@{G\-L\-X\-\_\-\-P\-S\-E\-U\-D\-O\-\_\-\-C\-O\-L\-O\-R}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-P\-S\-E\-U\-D\-O\-\_\-\-C\-O\-L\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-P\-S\-E\-U\-D\-O\-\_\-\-C\-O\-L\-O\-R~0x8004}}\label{glx_8h_a8fea3c0abfe2929ee257ecf1a137c259}
+
+
+Définition à la ligne 136 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a7fe726c0860e8ab1ca8aee4e041b4fd7}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-R\-E\-D\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-R\-E\-D\-\_\-\-S\-I\-Z\-E}}
+\index{G\-L\-X\-\_\-\-R\-E\-D\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-R\-E\-D\-\_\-\-S\-I\-Z\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-R\-E\-D\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-R\-E\-D\-\_\-\-S\-I\-Z\-E~8}}\label{glx_8h_a7fe726c0860e8ab1ca8aee4e041b4fd7}
+
+
+Définition à la ligne 77 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a5f84122254df2d5a84aa6e44d074c24a}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-R\-E\-N\-D\-E\-R\-\_\-\-T\-Y\-P\-E@{G\-L\-X\-\_\-\-R\-E\-N\-D\-E\-R\-\_\-\-T\-Y\-P\-E}}
+\index{G\-L\-X\-\_\-\-R\-E\-N\-D\-E\-R\-\_\-\-T\-Y\-P\-E@{G\-L\-X\-\_\-\-R\-E\-N\-D\-E\-R\-\_\-\-T\-Y\-P\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-R\-E\-N\-D\-E\-R\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-R\-E\-N\-D\-E\-R\-\_\-\-T\-Y\-P\-E~0x8011}}\label{glx_8h_a5f84122254df2d5a84aa6e44d074c24a}
+
+
+Définition à la ligne 146 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a99b65d5ae76a30533a0a6a9d6c91835e}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-R\-G\-B\-A@{G\-L\-X\-\_\-\-R\-G\-B\-A}}
+\index{G\-L\-X\-\_\-\-R\-G\-B\-A@{G\-L\-X\-\_\-\-R\-G\-B\-A}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-R\-G\-B\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-R\-G\-B\-A~4}}\label{glx_8h_a99b65d5ae76a30533a0a6a9d6c91835e}
+
+
+Définition à la ligne 73 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a6ac91c2ef1293de23e782773c065d309}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-R\-G\-B\-A\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-R\-G\-B\-A\-\_\-\-B\-I\-T}}
+\index{G\-L\-X\-\_\-\-R\-G\-B\-A\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-R\-G\-B\-A\-\_\-\-B\-I\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-R\-G\-B\-A\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-R\-G\-B\-A\-\_\-\-B\-I\-T~0x00000001}}\label{glx_8h_a6ac91c2ef1293de23e782773c065d309}
+
+
+Définition à la ligne 165 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a1853a9117176b461cc21583332f14734}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-R\-G\-B\-A\-\_\-\-T\-Y\-P\-E@{G\-L\-X\-\_\-\-R\-G\-B\-A\-\_\-\-T\-Y\-P\-E}}
+\index{G\-L\-X\-\_\-\-R\-G\-B\-A\-\_\-\-T\-Y\-P\-E@{G\-L\-X\-\_\-\-R\-G\-B\-A\-\_\-\-T\-Y\-P\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-R\-G\-B\-A\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-R\-G\-B\-A\-\_\-\-T\-Y\-P\-E~0x8014}}\label{glx_8h_a1853a9117176b461cc21583332f14734}
+
+
+Définition à la ligne 149 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ad495f735c017f4e1a77206b56a5ae1a0}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-S\-A\-M\-P\-L\-E\-\_\-\-B\-U\-F\-F\-E\-R\-S@{G\-L\-X\-\_\-\-S\-A\-M\-P\-L\-E\-\_\-\-B\-U\-F\-F\-E\-R\-S}}
+\index{G\-L\-X\-\_\-\-S\-A\-M\-P\-L\-E\-\_\-\-B\-U\-F\-F\-E\-R\-S@{G\-L\-X\-\_\-\-S\-A\-M\-P\-L\-E\-\_\-\-B\-U\-F\-F\-E\-R\-S}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-S\-A\-M\-P\-L\-E\-\_\-\-B\-U\-F\-F\-E\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-S\-A\-M\-P\-L\-E\-\_\-\-B\-U\-F\-F\-E\-R\-S~0x186a0 /$\ast$100000$\ast$/}}\label{glx_8h_ad495f735c017f4e1a77206b56a5ae1a0}
+
+
+Définition à la ligne 173 du fichier glx.\-h.
+
+\hypertarget{glx_8h_aa78c8894e8eab6c2d53b9cd945063d6e}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-S\-A\-M\-P\-L\-E\-S@{G\-L\-X\-\_\-\-S\-A\-M\-P\-L\-E\-S}}
+\index{G\-L\-X\-\_\-\-S\-A\-M\-P\-L\-E\-S@{G\-L\-X\-\_\-\-S\-A\-M\-P\-L\-E\-S}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-S\-A\-M\-P\-L\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-S\-A\-M\-P\-L\-E\-S~0x186a1 /$\ast$100001$\ast$/}}\label{glx_8h_aa78c8894e8eab6c2d53b9cd945063d6e}
+
+
+Définition à la ligne 174 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a37765e3d603b11680f677f43f0d84a9f}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-S\-A\-V\-E\-D@{G\-L\-X\-\_\-\-S\-A\-V\-E\-D}}
+\index{G\-L\-X\-\_\-\-S\-A\-V\-E\-D@{G\-L\-X\-\_\-\-S\-A\-V\-E\-D}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-S\-A\-V\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-S\-A\-V\-E\-D~0x8021}}\label{glx_8h_a37765e3d603b11680f677f43f0d84a9f}
+
+
+Définition à la ligne 160 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a62f7ac8950a947df31cba3d7d24f6c8c}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-S\-C\-R\-E\-E\-N@{G\-L\-X\-\_\-\-S\-C\-R\-E\-E\-N}}
+\index{G\-L\-X\-\_\-\-S\-C\-R\-E\-E\-N@{G\-L\-X\-\_\-\-S\-C\-R\-E\-E\-N}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-S\-C\-R\-E\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-S\-C\-R\-E\-E\-N~0x800\-C}}\label{glx_8h_a62f7ac8950a947df31cba3d7d24f6c8c}
+
+
+Définition à la ligne 143 du fichier glx.\-h.
+
+\hypertarget{glx_8h_aeb1d4b6b85fb53f9958aaf63dfc697aa}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-S\-L\-O\-W\-\_\-\-C\-O\-N\-F\-I\-G@{G\-L\-X\-\_\-\-S\-L\-O\-W\-\_\-\-C\-O\-N\-F\-I\-G}}
+\index{G\-L\-X\-\_\-\-S\-L\-O\-W\-\_\-\-C\-O\-N\-F\-I\-G@{G\-L\-X\-\_\-\-S\-L\-O\-W\-\_\-\-C\-O\-N\-F\-I\-G}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-S\-L\-O\-W\-\_\-\-C\-O\-N\-F\-I\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-S\-L\-O\-W\-\_\-\-C\-O\-N\-F\-I\-G~0x8001}}\label{glx_8h_aeb1d4b6b85fb53f9958aaf63dfc697aa}
+
+
+Définition à la ligne 133 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a0b8e43514dcd363ad0c3ad8938c2b836}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-C\-O\-L\-O\-R@{G\-L\-X\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-C\-O\-L\-O\-R}}
+\index{G\-L\-X\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-C\-O\-L\-O\-R@{G\-L\-X\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-C\-O\-L\-O\-R}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-C\-O\-L\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-C\-O\-L\-O\-R~0x8005}}\label{glx_8h_a0b8e43514dcd363ad0c3ad8938c2b836}
+
+
+Définition à la ligne 137 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ac2755eb66996189e7554da1f380d98fa}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-G\-R\-A\-Y@{G\-L\-X\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-G\-R\-A\-Y}}
+\index{G\-L\-X\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-G\-R\-A\-Y@{G\-L\-X\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-G\-R\-A\-Y}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-G\-R\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-S\-T\-A\-T\-I\-C\-\_\-\-G\-R\-A\-Y~0x8007}}\label{glx_8h_ac2755eb66996189e7554da1f380d98fa}
+
+
+Définition à la ligne 139 du fichier glx.\-h.
+
+\hypertarget{glx_8h_af6cf6b3886b2f2552e4f9b4191543e5d}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-S\-T\-E\-N\-C\-I\-L\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-S\-T\-E\-N\-C\-I\-L\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}}
+\index{G\-L\-X\-\_\-\-S\-T\-E\-N\-C\-I\-L\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-S\-T\-E\-N\-C\-I\-L\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-S\-T\-E\-N\-C\-I\-L\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-S\-T\-E\-N\-C\-I\-L\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-B\-I\-T~0x00000040}}\label{glx_8h_af6cf6b3886b2f2552e4f9b4191543e5d}
+
+
+Définition à la ligne 130 du fichier glx.\-h.
+
+\hypertarget{glx_8h_adfcdddf7b66469af3a29e5f52d43054b}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-S\-T\-E\-N\-C\-I\-L\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-S\-T\-E\-N\-C\-I\-L\-\_\-\-S\-I\-Z\-E}}
+\index{G\-L\-X\-\_\-\-S\-T\-E\-N\-C\-I\-L\-\_\-\-S\-I\-Z\-E@{G\-L\-X\-\_\-\-S\-T\-E\-N\-C\-I\-L\-\_\-\-S\-I\-Z\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-S\-T\-E\-N\-C\-I\-L\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-S\-T\-E\-N\-C\-I\-L\-\_\-\-S\-I\-Z\-E~13}}\label{glx_8h_adfcdddf7b66469af3a29e5f52d43054b}
+
+
+Définition à la ligne 82 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ad907898a759575e9fb3ba8bbb4bd70f2}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-S\-T\-E\-R\-E\-O@{G\-L\-X\-\_\-\-S\-T\-E\-R\-E\-O}}
+\index{G\-L\-X\-\_\-\-S\-T\-E\-R\-E\-O@{G\-L\-X\-\_\-\-S\-T\-E\-R\-E\-O}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-S\-T\-E\-R\-E\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-S\-T\-E\-R\-E\-O~6}}\label{glx_8h_ad907898a759575e9fb3ba8bbb4bd70f2}
+
+
+Définition à la ligne 75 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a871d7feebca00547af00864fbb398013}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-1\-D\-\_\-\-B\-I\-T\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-1\-D\-\_\-\-B\-I\-T\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-1\-D\-\_\-\-B\-I\-T\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-1\-D\-\_\-\-B\-I\-T\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-1\-D\-\_\-\-B\-I\-T\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-1\-D\-\_\-\-B\-I\-T\-\_\-\-E\-X\-T~0x00000001}}\label{glx_8h_a871d7feebca00547af00864fbb398013}
+
+
+Définition à la ligne 453 du fichier glx.\-h.
+
+\hypertarget{glx_8h_aa167bc6e71106518f0aac9aef1536856}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-1\-D\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-1\-D\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-1\-D\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-1\-D\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-1\-D\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-1\-D\-\_\-\-E\-X\-T~0x20\-D\-B}}\label{glx_8h_aa167bc6e71106518f0aac9aef1536856}
+
+
+Définition à la ligne 457 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ad00c49da5233261e8e384b88863020a2}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-2\-D\-\_\-\-B\-I\-T\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-2\-D\-\_\-\-B\-I\-T\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-2\-D\-\_\-\-B\-I\-T\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-2\-D\-\_\-\-B\-I\-T\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-2\-D\-\_\-\-B\-I\-T\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-2\-D\-\_\-\-B\-I\-T\-\_\-\-E\-X\-T~0x00000002}}\label{glx_8h_ad00c49da5233261e8e384b88863020a2}
+
+
+Définition à la ligne 454 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a188aa9fadf5b067106a1e36fea6556f7}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-2\-D\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-2\-D\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-2\-D\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-2\-D\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-2\-D\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-2\-D\-\_\-\-E\-X\-T~0x20\-D\-C}}\label{glx_8h_a188aa9fadf5b067106a1e36fea6556f7}
+
+
+Définition à la ligne 458 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a35adbd9e682633c71b4dcebf410dae57}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-E\-X\-T~0x20\-D5}}\label{glx_8h_a35adbd9e682633c71b4dcebf410dae57}
+
+
+Définition à la ligne 445 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a18d72873a80967d104346e649148d3c5}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-N\-O\-N\-E\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-N\-O\-N\-E\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-N\-O\-N\-E\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-N\-O\-N\-E\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-N\-O\-N\-E\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-N\-O\-N\-E\-\_\-\-E\-X\-T~0x20\-D8}}\label{glx_8h_a18d72873a80967d104346e649148d3c5}
+
+
+Définition à la ligne 449 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a38d1bff0d14c7dcba8beb050f2df0822}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-G\-B\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-G\-B\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-G\-B\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-G\-B\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-G\-B\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-G\-B\-\_\-\-E\-X\-T~0x20\-D9}}\label{glx_8h_a38d1bff0d14c7dcba8beb050f2df0822}
+
+
+Définition à la ligne 450 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ada18a6bd621c8eb62069fda76b5126bd}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-G\-B\-A\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-G\-B\-A\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-G\-B\-A\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-G\-B\-A\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-G\-B\-A\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-G\-B\-A\-\_\-\-E\-X\-T~0x20\-D\-A}}\label{glx_8h_ada18a6bd621c8eb62069fda76b5126bd}
+
+
+Définition à la ligne 451 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a0efa804082f8579292118e4e92f756cd}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-E\-C\-T\-A\-N\-G\-L\-E\-\_\-\-B\-I\-T\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-E\-C\-T\-A\-N\-G\-L\-E\-\_\-\-B\-I\-T\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-E\-C\-T\-A\-N\-G\-L\-E\-\_\-\-B\-I\-T\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-E\-C\-T\-A\-N\-G\-L\-E\-\_\-\-B\-I\-T\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-E\-C\-T\-A\-N\-G\-L\-E\-\_\-\-B\-I\-T\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-E\-C\-T\-A\-N\-G\-L\-E\-\_\-\-B\-I\-T\-\_\-\-E\-X\-T~0x00000004}}\label{glx_8h_a0efa804082f8579292118e4e92f756cd}
+
+
+Définition à la ligne 455 du fichier glx.\-h.
+
+\hypertarget{glx_8h_aa615e70d6a1644369249d53dc17b3cc0}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-E\-C\-T\-A\-N\-G\-L\-E\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-E\-C\-T\-A\-N\-G\-L\-E\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-E\-C\-T\-A\-N\-G\-L\-E\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-E\-C\-T\-A\-N\-G\-L\-E\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-E\-C\-T\-A\-N\-G\-L\-E\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-R\-E\-C\-T\-A\-N\-G\-L\-E\-\_\-\-E\-X\-T~0x20\-D\-D}}\label{glx_8h_aa615e70d6a1644369249d53dc17b3cc0}
+
+
+Définition à la ligne 459 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a03fa266976102e1140b8418b0a55b203}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-T\-A\-R\-G\-E\-T\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-T\-A\-R\-G\-E\-T\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-T\-A\-R\-G\-E\-T\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-T\-A\-R\-G\-E\-T\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-T\-A\-R\-G\-E\-T\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-T\-E\-X\-T\-U\-R\-E\-\_\-\-T\-A\-R\-G\-E\-T\-\_\-\-E\-X\-T~0x20\-D6}}\label{glx_8h_a03fa266976102e1140b8418b0a55b203}
+
+
+Définition à la ligne 446 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a174b5da54ffeddfb135207e122bd174d}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-A\-L\-P\-H\-A\-\_\-\-V\-A\-L\-U\-E@{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-A\-L\-P\-H\-A\-\_\-\-V\-A\-L\-U\-E}}
+\index{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-A\-L\-P\-H\-A\-\_\-\-V\-A\-L\-U\-E@{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-A\-L\-P\-H\-A\-\_\-\-V\-A\-L\-U\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-A\-L\-P\-H\-A\-\_\-\-V\-A\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-A\-L\-P\-H\-A\-\_\-\-V\-A\-L\-U\-E~0x28}}\label{glx_8h_a174b5da54ffeddfb135207e122bd174d}
+
+
+Définition à la ligne 120 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a0e3231ad93d61956c258f92043ba5583}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-B\-L\-U\-E\-\_\-\-V\-A\-L\-U\-E@{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-B\-L\-U\-E\-\_\-\-V\-A\-L\-U\-E}}
+\index{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-B\-L\-U\-E\-\_\-\-V\-A\-L\-U\-E@{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-B\-L\-U\-E\-\_\-\-V\-A\-L\-U\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-B\-L\-U\-E\-\_\-\-V\-A\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-B\-L\-U\-E\-\_\-\-V\-A\-L\-U\-E~0x27}}\label{glx_8h_a0e3231ad93d61956c258f92043ba5583}
+
+
+Définition à la ligne 119 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a02e636f028bdab6aca452102d422ea53}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-G\-R\-E\-E\-N\-\_\-\-V\-A\-L\-U\-E@{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-G\-R\-E\-E\-N\-\_\-\-V\-A\-L\-U\-E}}
+\index{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-G\-R\-E\-E\-N\-\_\-\-V\-A\-L\-U\-E@{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-G\-R\-E\-E\-N\-\_\-\-V\-A\-L\-U\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-G\-R\-E\-E\-N\-\_\-\-V\-A\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-G\-R\-E\-E\-N\-\_\-\-V\-A\-L\-U\-E~0x26}}\label{glx_8h_a02e636f028bdab6aca452102d422ea53}
+
+
+Définition à la ligne 118 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a71e88eac4edd6b4b55287b4467893075}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-I\-N\-D\-E\-X@{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-I\-N\-D\-E\-X}}
+\index{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-I\-N\-D\-E\-X@{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-I\-N\-D\-E\-X}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-I\-N\-D\-E\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-I\-N\-D\-E\-X~0x8009}}\label{glx_8h_a71e88eac4edd6b4b55287b4467893075}
+
+
+Définition à la ligne 141 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a44e3c21ff8fecdd57e66e727d1398662}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-I\-N\-D\-E\-X\-\_\-\-V\-A\-L\-U\-E@{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-I\-N\-D\-E\-X\-\_\-\-V\-A\-L\-U\-E}}
+\index{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-I\-N\-D\-E\-X\-\_\-\-V\-A\-L\-U\-E@{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-I\-N\-D\-E\-X\-\_\-\-V\-A\-L\-U\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-I\-N\-D\-E\-X\-\_\-\-V\-A\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-I\-N\-D\-E\-X\-\_\-\-V\-A\-L\-U\-E~0x24}}\label{glx_8h_a44e3c21ff8fecdd57e66e727d1398662}
+
+
+Définition à la ligne 116 du fichier glx.\-h.
+
+\hypertarget{glx_8h_adfe1ceb7569af890e93a4714c2d192c5}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-R\-E\-D\-\_\-\-V\-A\-L\-U\-E@{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-R\-E\-D\-\_\-\-V\-A\-L\-U\-E}}
+\index{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-R\-E\-D\-\_\-\-V\-A\-L\-U\-E@{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-R\-E\-D\-\_\-\-V\-A\-L\-U\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-R\-E\-D\-\_\-\-V\-A\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-R\-E\-D\-\_\-\-V\-A\-L\-U\-E~0x25}}\label{glx_8h_adfe1ceb7569af890e93a4714c2d192c5}
+
+
+Définition à la ligne 117 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a752fccf1e81a8cb94773fc5192662623}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-R\-G\-B@{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-R\-G\-B}}
+\index{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-R\-G\-B@{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-R\-G\-B}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-R\-G\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-R\-G\-B~0x8008}}\label{glx_8h_a752fccf1e81a8cb94773fc5192662623}
+
+
+Définition à la ligne 140 du fichier glx.\-h.
+
+\hypertarget{glx_8h_aee4d64e71ecaca236c8057292ac0851d}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-T\-Y\-P\-E@{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-T\-Y\-P\-E}}
+\index{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-T\-Y\-P\-E@{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-T\-Y\-P\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-T\-R\-A\-N\-S\-P\-A\-R\-E\-N\-T\-\_\-\-T\-Y\-P\-E~0x23}}\label{glx_8h_aee4d64e71ecaca236c8057292ac0851d}
+
+
+Définition à la ligne 115 du fichier glx.\-h.
+
+\hypertarget{glx_8h_abe725d7d3c640b7c698114ef27b2b2df}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-T\-R\-U\-E\-\_\-\-C\-O\-L\-O\-R@{G\-L\-X\-\_\-\-T\-R\-U\-E\-\_\-\-C\-O\-L\-O\-R}}
+\index{G\-L\-X\-\_\-\-T\-R\-U\-E\-\_\-\-C\-O\-L\-O\-R@{G\-L\-X\-\_\-\-T\-R\-U\-E\-\_\-\-C\-O\-L\-O\-R}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-T\-R\-U\-E\-\_\-\-C\-O\-L\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-T\-R\-U\-E\-\_\-\-C\-O\-L\-O\-R~0x8002}}\label{glx_8h_abe725d7d3c640b7c698114ef27b2b2df}
+
+
+Définition à la ligne 134 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a4b04101e315c782306d9847dac4bd81e}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-U\-S\-E\-\_\-\-G\-L@{G\-L\-X\-\_\-\-U\-S\-E\-\_\-\-G\-L}}
+\index{G\-L\-X\-\_\-\-U\-S\-E\-\_\-\-G\-L@{G\-L\-X\-\_\-\-U\-S\-E\-\_\-\-G\-L}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-U\-S\-E\-\_\-\-G\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-U\-S\-E\-\_\-\-G\-L~1}}\label{glx_8h_a4b04101e315c782306d9847dac4bd81e}
+
+
+Définition à la ligne 70 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a1d58049e601eef392d3d582d14c60893}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-V\-E\-N\-D\-O\-R@{G\-L\-X\-\_\-\-V\-E\-N\-D\-O\-R}}
+\index{G\-L\-X\-\_\-\-V\-E\-N\-D\-O\-R@{G\-L\-X\-\_\-\-V\-E\-N\-D\-O\-R}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-V\-E\-N\-D\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-V\-E\-N\-D\-O\-R~1}}\label{glx_8h_a1d58049e601eef392d3d582d14c60893}
+
+
+Définition à la ligne 104 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ac8fe8653c4826fb3a370b1f76678f181}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N@{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N}}
+\index{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N@{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N~2}}\label{glx_8h_ac8fe8653c4826fb3a370b1f76678f181}
+
+
+Définition à la ligne 105 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ae7906b57aba77ab452bfcbdd49d4aad1}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-1@{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-1}}
+\index{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-1@{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-1}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-1~1}}\label{glx_8h_ae7906b57aba77ab452bfcbdd49d4aad1}
+
+
+Définition à la ligne 58 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a32f398ad62037e638b6b2e6216f7c4b3}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-2@{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-2}}
+\index{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-2@{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-2}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-2~1}}\label{glx_8h_a32f398ad62037e638b6b2e6216f7c4b3}
+
+
+Définition à la ligne 59 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a60bbf06a30a6be4428fecd140ec50ced}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-3@{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-3}}
+\index{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-3@{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-3}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-3}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-3~1}}\label{glx_8h_a60bbf06a30a6be4428fecd140ec50ced}
+
+
+Définition à la ligne 60 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a13af8478caf16ac74140dd83510d020e}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-4@{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-4}}
+\index{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-4@{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-4}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-4}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-4~1}}\label{glx_8h_a13af8478caf16ac74140dd83510d020e}
+
+
+Définition à la ligne 61 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ac2aa66d52771f5cdfb6edd2f3d916788}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-V\-I\-S\-U\-A\-L\-\_\-\-I\-D@{G\-L\-X\-\_\-\-V\-I\-S\-U\-A\-L\-\_\-\-I\-D}}
+\index{G\-L\-X\-\_\-\-V\-I\-S\-U\-A\-L\-\_\-\-I\-D@{G\-L\-X\-\_\-\-V\-I\-S\-U\-A\-L\-\_\-\-I\-D}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-V\-I\-S\-U\-A\-L\-\_\-\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-V\-I\-S\-U\-A\-L\-\_\-\-I\-D~0x800\-B}}\label{glx_8h_ac2aa66d52771f5cdfb6edd2f3d916788}
+
+
+Définition à la ligne 142 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ad4f8fb4c08c6e2ff35845f4df250b1ab}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-W\-I\-D\-T\-H@{G\-L\-X\-\_\-\-W\-I\-D\-T\-H}}
+\index{G\-L\-X\-\_\-\-W\-I\-D\-T\-H@{G\-L\-X\-\_\-\-W\-I\-D\-T\-H}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-W\-I\-D\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-W\-I\-D\-T\-H~0x801\-D}}\label{glx_8h_ad4f8fb4c08c6e2ff35845f4df250b1ab}
+
+
+Définition à la ligne 156 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a1a8b24e54162728da459297a6fc9ade4}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-W\-I\-N\-D\-O\-W@{G\-L\-X\-\_\-\-W\-I\-N\-D\-O\-W}}
+\index{G\-L\-X\-\_\-\-W\-I\-N\-D\-O\-W@{G\-L\-X\-\_\-\-W\-I\-N\-D\-O\-W}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-W\-I\-N\-D\-O\-W}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-W\-I\-N\-D\-O\-W~0x8022}}\label{glx_8h_a1a8b24e54162728da459297a6fc9ade4}
+
+
+Définition à la ligne 161 du fichier glx.\-h.
+
+\hypertarget{glx_8h_aea4137405780d52ab6a7af2839d8e41d}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-W\-I\-N\-D\-O\-W\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-W\-I\-N\-D\-O\-W\-\_\-\-B\-I\-T}}
+\index{G\-L\-X\-\_\-\-W\-I\-N\-D\-O\-W\-\_\-\-B\-I\-T@{G\-L\-X\-\_\-\-W\-I\-N\-D\-O\-W\-\_\-\-B\-I\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-W\-I\-N\-D\-O\-W\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-W\-I\-N\-D\-O\-W\-\_\-\-B\-I\-T~0x00000001}}\label{glx_8h_aea4137405780d52ab6a7af2839d8e41d}
+
+
+Définition à la ligne 121 du fichier glx.\-h.
+
+\hypertarget{glx_8h_aab3c57256b851c4a790422dfbbbcff4a}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-X\-\_\-\-R\-E\-N\-D\-E\-R\-A\-B\-L\-E@{G\-L\-X\-\_\-\-X\-\_\-\-R\-E\-N\-D\-E\-R\-A\-B\-L\-E}}
+\index{G\-L\-X\-\_\-\-X\-\_\-\-R\-E\-N\-D\-E\-R\-A\-B\-L\-E@{G\-L\-X\-\_\-\-X\-\_\-\-R\-E\-N\-D\-E\-R\-A\-B\-L\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-X\-\_\-\-R\-E\-N\-D\-E\-R\-A\-B\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-X\-\_\-\-R\-E\-N\-D\-E\-R\-A\-B\-L\-E~0x8012}}\label{glx_8h_aab3c57256b851c4a790422dfbbbcff4a}
+
+
+Définition à la ligne 147 du fichier glx.\-h.
+
+\hypertarget{glx_8h_aef59bbc4fbbf455493d317bc7287c2e6}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-X\-\_\-\-V\-I\-S\-U\-A\-L\-\_\-\-T\-Y\-P\-E@{G\-L\-X\-\_\-\-X\-\_\-\-V\-I\-S\-U\-A\-L\-\_\-\-T\-Y\-P\-E}}
+\index{G\-L\-X\-\_\-\-X\-\_\-\-V\-I\-S\-U\-A\-L\-\_\-\-T\-Y\-P\-E@{G\-L\-X\-\_\-\-X\-\_\-\-V\-I\-S\-U\-A\-L\-\_\-\-T\-Y\-P\-E}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-X\-\_\-\-V\-I\-S\-U\-A\-L\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-X\-\_\-\-V\-I\-S\-U\-A\-L\-\_\-\-T\-Y\-P\-E~0x22}}\label{glx_8h_aef59bbc4fbbf455493d317bc7287c2e6}
+
+
+Définition à la ligne 114 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a5da97b982e5ccafaab84235cb8738022}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-\_\-\-Y\-\_\-\-I\-N\-V\-E\-R\-T\-E\-D\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-Y\-\_\-\-I\-N\-V\-E\-R\-T\-E\-D\-\_\-\-E\-X\-T}}
+\index{G\-L\-X\-\_\-\-Y\-\_\-\-I\-N\-V\-E\-R\-T\-E\-D\-\_\-\-E\-X\-T@{G\-L\-X\-\_\-\-Y\-\_\-\-I\-N\-V\-E\-R\-T\-E\-D\-\_\-\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-\_\-\-Y\-\_\-\-I\-N\-V\-E\-R\-T\-E\-D\-\_\-\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-L\-X\-\_\-\-Y\-\_\-\-I\-N\-V\-E\-R\-T\-E\-D\-\_\-\-E\-X\-T~0x20\-D4}}\label{glx_8h_a5da97b982e5ccafaab84235cb8738022}
+
+
+Définition à la ligne 443 du fichier glx.\-h.
+
+
+
+\subsection{Documentation des définitions de type}
+\hypertarget{glx_8h_ae259836c877f7a1d29289fa0eb4d85cc}{\index{glx.\-h@{glx.\-h}!\-\_\-\-\_\-\-G\-L\-Xext\-Func\-Ptr@{\-\_\-\-\_\-\-G\-L\-Xext\-Func\-Ptr}}
+\index{\-\_\-\-\_\-\-G\-L\-Xext\-Func\-Ptr@{\-\_\-\-\_\-\-G\-L\-Xext\-Func\-Ptr}!glx.h@{glx.\-h}}
+\subsubsection[{\-\_\-\-\_\-\-G\-L\-Xext\-Func\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ \-\_\-\-\_\-\-G\-L\-Xext\-Func\-Ptr)({\bf void})}}\label{glx_8h_ae259836c877f7a1d29289fa0eb4d85cc}
+
+
+Définition à la ligne 330 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ab14f757b495fc428b0564f1914be5838}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-Context@{G\-L\-X\-Context}}
+\index{G\-L\-X\-Context@{G\-L\-X\-Context}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-Context}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct \-\_\-\-\_\-\-G\-L\-Xcontext\-Rec$\ast$ {\bf G\-L\-X\-Context}}}\label{glx_8h_ab14f757b495fc428b0564f1914be5838}
+
+
+Définition à la ligne 178 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a17c7ca5b76cc448032df0b5352803005}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-Context\-I\-D@{G\-L\-X\-Context\-I\-D}}
+\index{G\-L\-X\-Context\-I\-D@{G\-L\-X\-Context\-I\-D}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-Context\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}typedef X\-I\-D {\bf G\-L\-X\-Context\-I\-D}}}\label{glx_8h_a17c7ca5b76cc448032df0b5352803005}
+
+
+Définition à la ligne 184 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-Drawable@{G\-L\-X\-Drawable}}
+\index{G\-L\-X\-Drawable@{G\-L\-X\-Drawable}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-Drawable}]{\setlength{\rightskip}{0pt plus 5cm}typedef X\-I\-D {\bf G\-L\-X\-Drawable}}}\label{glx_8h_a826f51745d9d6c81bdbac47ae2b80cf7}
+
+
+Définition à la ligne 180 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a251904312933c2d12ad95d0633c42d72}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-Event@{G\-L\-X\-Event}}
+\index{G\-L\-X\-Event@{G\-L\-X\-Event}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-Event}]{\setlength{\rightskip}{0pt plus 5cm}typedef union {\bf \-\_\-\-\_\-\-G\-L\-X\-Event}  {\bf G\-L\-X\-Event}}}\label{glx_8h_a251904312933c2d12ad95d0633c42d72}
+\hypertarget{glx_8h_a0fd4b87f01422e347316867d18cdd91f}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-F\-B\-Config@{G\-L\-X\-F\-B\-Config}}
+\index{G\-L\-X\-F\-B\-Config@{G\-L\-X\-F\-B\-Config}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-F\-B\-Config}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct \-\_\-\-\_\-\-G\-L\-X\-F\-B\-Config\-Rec$\ast$ {\bf G\-L\-X\-F\-B\-Config}}}\label{glx_8h_a0fd4b87f01422e347316867d18cdd91f}
+
+
+Définition à la ligne 182 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a38e78acefebf732d1a0da441ad1de05f}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-F\-B\-Config\-I\-D@{G\-L\-X\-F\-B\-Config\-I\-D}}
+\index{G\-L\-X\-F\-B\-Config\-I\-D@{G\-L\-X\-F\-B\-Config\-I\-D}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-F\-B\-Config\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}typedef X\-I\-D {\bf G\-L\-X\-F\-B\-Config\-I\-D}}}\label{glx_8h_a38e78acefebf732d1a0da441ad1de05f}
+
+
+Définition à la ligne 183 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a0e12899d42d3570d659900a17247cb71}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-Pbuffer@{G\-L\-X\-Pbuffer}}
+\index{G\-L\-X\-Pbuffer@{G\-L\-X\-Pbuffer}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-Pbuffer}]{\setlength{\rightskip}{0pt plus 5cm}typedef X\-I\-D {\bf G\-L\-X\-Pbuffer}}}\label{glx_8h_a0e12899d42d3570d659900a17247cb71}
+
+
+Définition à la ligne 186 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a6577d581069de43ebaac50c78dbccbd0}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-Pixmap@{G\-L\-X\-Pixmap}}
+\index{G\-L\-X\-Pixmap@{G\-L\-X\-Pixmap}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-Pixmap}]{\setlength{\rightskip}{0pt plus 5cm}typedef X\-I\-D {\bf G\-L\-X\-Pixmap}}}\label{glx_8h_a6577d581069de43ebaac50c78dbccbd0}
+
+
+Définition à la ligne 179 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a7b7fbb726212feadef35c6c7c09b9541}{\index{glx.\-h@{glx.\-h}!G\-L\-X\-Window@{G\-L\-X\-Window}}
+\index{G\-L\-X\-Window@{G\-L\-X\-Window}!glx.h@{glx.\-h}}
+\subsubsection[{G\-L\-X\-Window}]{\setlength{\rightskip}{0pt plus 5cm}typedef X\-I\-D {\bf G\-L\-X\-Window}}}\label{glx_8h_a7b7fbb726212feadef35c6c7c09b9541}
+
+
+Définition à la ligne 185 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ab31de0a1efce5dfa6dd4de98946c3f95}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-A\-L\-L\-O\-C\-A\-T\-E\-M\-E\-M\-O\-R\-Y\-N\-V\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-A\-L\-L\-O\-C\-A\-T\-E\-M\-E\-M\-O\-R\-Y\-N\-V\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-A\-L\-L\-O\-C\-A\-T\-E\-M\-E\-M\-O\-R\-Y\-N\-V\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-A\-L\-L\-O\-C\-A\-T\-E\-M\-E\-M\-O\-R\-Y\-N\-V\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-A\-L\-L\-O\-C\-A\-T\-E\-M\-E\-M\-O\-R\-Y\-N\-V\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}$\ast$( $\ast$  P\-F\-N\-G\-L\-X\-A\-L\-L\-O\-C\-A\-T\-E\-M\-E\-M\-O\-R\-Y\-N\-V\-P\-R\-O\-C)({\bf G\-Lsizei} {\bf size}, {\bf G\-Lfloat} readfreq, {\bf G\-Lfloat} writefreq, {\bf G\-Lfloat} priority)}}\label{glx_8h_ab31de0a1efce5dfa6dd4de98946c3f95}
+
+
+Définition à la ligne 364 du fichier glx.\-h.
+
+\hypertarget{glx_8h_aa5ce750865f070ed652631407b646572}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-B\-E\-G\-I\-N\-F\-R\-A\-M\-E\-T\-R\-A\-C\-K\-I\-N\-G\-M\-E\-S\-A\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-B\-E\-G\-I\-N\-F\-R\-A\-M\-E\-T\-R\-A\-C\-K\-I\-N\-G\-M\-E\-S\-A\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-B\-E\-G\-I\-N\-F\-R\-A\-M\-E\-T\-R\-A\-C\-K\-I\-N\-G\-M\-E\-S\-A\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-B\-E\-G\-I\-N\-F\-R\-A\-M\-E\-T\-R\-A\-C\-K\-I\-N\-G\-M\-E\-S\-A\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-B\-E\-G\-I\-N\-F\-R\-A\-M\-E\-T\-R\-A\-C\-K\-I\-N\-G\-M\-E\-S\-A\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$ P\-F\-N\-G\-L\-X\-B\-E\-G\-I\-N\-F\-R\-A\-M\-E\-T\-R\-A\-C\-K\-I\-N\-G\-M\-E\-S\-A\-P\-R\-O\-C)(Display $\ast$dpy, {\bf G\-L\-X\-Drawable} drawable)}}\label{glx_8h_aa5ce750865f070ed652631407b646572}
+
+
+Définition à la ligne 408 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ac54944f5a19d0a447c5c938510d47200}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-C\-H\-O\-O\-S\-E\-F\-B\-C\-O\-N\-F\-I\-G\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-C\-H\-O\-O\-S\-E\-F\-B\-C\-O\-N\-F\-I\-G\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-C\-H\-O\-O\-S\-E\-F\-B\-C\-O\-N\-F\-I\-G\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-C\-H\-O\-O\-S\-E\-F\-B\-C\-O\-N\-F\-I\-G\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-C\-H\-O\-O\-S\-E\-F\-B\-C\-O\-N\-F\-I\-G\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf G\-L\-X\-F\-B\-Config}$\ast$($\ast$  P\-F\-N\-G\-L\-X\-C\-H\-O\-O\-S\-E\-F\-B\-C\-O\-N\-F\-I\-G\-P\-R\-O\-C)(Display $\ast$dpy, int screen, const int $\ast$attrib\-\_\-list, int $\ast$nelements)}}\label{glx_8h_ac54944f5a19d0a447c5c938510d47200}
+
+
+Définition à la ligne 305 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a0eef90b88ccaa90f560d6c9d4017cc29}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-N\-E\-W\-C\-O\-N\-T\-E\-X\-T\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-N\-E\-W\-C\-O\-N\-T\-E\-X\-T\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-N\-E\-W\-C\-O\-N\-T\-E\-X\-T\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-N\-E\-W\-C\-O\-N\-T\-E\-X\-T\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-N\-E\-W\-C\-O\-N\-T\-E\-X\-T\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf G\-L\-X\-Context}($\ast$  P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-N\-E\-W\-C\-O\-N\-T\-E\-X\-T\-P\-R\-O\-C)(Display $\ast$dpy, {\bf G\-L\-X\-F\-B\-Config} config, int render\-\_\-type, {\bf G\-L\-X\-Context} share\-\_\-list, Bool direct)}}\label{glx_8h_a0eef90b88ccaa90f560d6c9d4017cc29}
+
+
+Définition à la ligne 315 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a057553b8f22e5771dc50bc3a5121d7e0}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-P\-B\-U\-F\-F\-E\-R\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-P\-B\-U\-F\-F\-E\-R\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-P\-B\-U\-F\-F\-E\-R\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-P\-B\-U\-F\-F\-E\-R\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-P\-B\-U\-F\-F\-E\-R\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf G\-L\-X\-Pbuffer}($\ast$  P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-P\-B\-U\-F\-F\-E\-R\-P\-R\-O\-C)(Display $\ast$dpy, {\bf G\-L\-X\-F\-B\-Config} config, const int $\ast$attrib\-\_\-list)}}\label{glx_8h_a057553b8f22e5771dc50bc3a5121d7e0}
+
+
+Définition à la ligne 312 du fichier glx.\-h.
+
+\hypertarget{glx_8h_af0ec4fc20a22da1f1cb59a4d2395e56d}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-P\-I\-X\-M\-A\-P\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-P\-I\-X\-M\-A\-P\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-P\-I\-X\-M\-A\-P\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-P\-I\-X\-M\-A\-P\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-P\-I\-X\-M\-A\-P\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf G\-L\-X\-Pixmap}($\ast$  P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-P\-I\-X\-M\-A\-P\-P\-R\-O\-C)(Display $\ast$dpy, {\bf G\-L\-X\-F\-B\-Config} config, Pixmap pixmap, const int $\ast$attrib\-\_\-list)}}\label{glx_8h_af0ec4fc20a22da1f1cb59a4d2395e56d}
+
+
+Définition à la ligne 310 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a117fa982e422c3d1544fc69819d427bf}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-W\-I\-N\-D\-O\-W\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-W\-I\-N\-D\-O\-W\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-W\-I\-N\-D\-O\-W\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-W\-I\-N\-D\-O\-W\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-W\-I\-N\-D\-O\-W\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf G\-L\-X\-Window}($\ast$  P\-F\-N\-G\-L\-X\-C\-R\-E\-A\-T\-E\-W\-I\-N\-D\-O\-W\-P\-R\-O\-C)(Display $\ast$dpy, {\bf G\-L\-X\-F\-B\-Config} config, Window win, const int $\ast$attrib\-\_\-list)}}\label{glx_8h_a117fa982e422c3d1544fc69819d427bf}
+
+
+Définition à la ligne 308 du fichier glx.\-h.
+
+\hypertarget{glx_8h_aa47c8cf58782d07b3b7c5618f2993ce0}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-D\-E\-S\-T\-R\-O\-Y\-P\-B\-U\-F\-F\-E\-R\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-D\-E\-S\-T\-R\-O\-Y\-P\-B\-U\-F\-F\-E\-R\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-D\-E\-S\-T\-R\-O\-Y\-P\-B\-U\-F\-F\-E\-R\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-D\-E\-S\-T\-R\-O\-Y\-P\-B\-U\-F\-F\-E\-R\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-D\-E\-S\-T\-R\-O\-Y\-P\-B\-U\-F\-F\-E\-R\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$  P\-F\-N\-G\-L\-X\-D\-E\-S\-T\-R\-O\-Y\-P\-B\-U\-F\-F\-E\-R\-P\-R\-O\-C)(Display $\ast$dpy, {\bf G\-L\-X\-Pbuffer} pbuf)}}\label{glx_8h_aa47c8cf58782d07b3b7c5618f2993ce0}
+
+
+Définition à la ligne 313 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a097dc785526e6bfc02940c71cac2b6d6}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-D\-E\-S\-T\-R\-O\-Y\-P\-I\-X\-M\-A\-P\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-D\-E\-S\-T\-R\-O\-Y\-P\-I\-X\-M\-A\-P\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-D\-E\-S\-T\-R\-O\-Y\-P\-I\-X\-M\-A\-P\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-D\-E\-S\-T\-R\-O\-Y\-P\-I\-X\-M\-A\-P\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-D\-E\-S\-T\-R\-O\-Y\-P\-I\-X\-M\-A\-P\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$  P\-F\-N\-G\-L\-X\-D\-E\-S\-T\-R\-O\-Y\-P\-I\-X\-M\-A\-P\-P\-R\-O\-C)(Display $\ast$dpy, {\bf G\-L\-X\-Pixmap} pixmap)}}\label{glx_8h_a097dc785526e6bfc02940c71cac2b6d6}
+
+
+Définition à la ligne 311 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a85896408e163370ceff7427243b89797}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-D\-E\-S\-T\-R\-O\-Y\-W\-I\-N\-D\-O\-W\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-D\-E\-S\-T\-R\-O\-Y\-W\-I\-N\-D\-O\-W\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-D\-E\-S\-T\-R\-O\-Y\-W\-I\-N\-D\-O\-W\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-D\-E\-S\-T\-R\-O\-Y\-W\-I\-N\-D\-O\-W\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-D\-E\-S\-T\-R\-O\-Y\-W\-I\-N\-D\-O\-W\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$  P\-F\-N\-G\-L\-X\-D\-E\-S\-T\-R\-O\-Y\-W\-I\-N\-D\-O\-W\-P\-R\-O\-C)(Display $\ast$dpy, {\bf G\-L\-X\-Window} win)}}\label{glx_8h_a85896408e163370ceff7427243b89797}
+
+
+Définition à la ligne 309 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a48397a78341b4ca55c43047d18c7f7d7}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-E\-N\-D\-F\-R\-A\-M\-E\-T\-R\-A\-C\-K\-I\-N\-G\-M\-E\-S\-A\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-E\-N\-D\-F\-R\-A\-M\-E\-T\-R\-A\-C\-K\-I\-N\-G\-M\-E\-S\-A\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-E\-N\-D\-F\-R\-A\-M\-E\-T\-R\-A\-C\-K\-I\-N\-G\-M\-E\-S\-A\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-E\-N\-D\-F\-R\-A\-M\-E\-T\-R\-A\-C\-K\-I\-N\-G\-M\-E\-S\-A\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-E\-N\-D\-F\-R\-A\-M\-E\-T\-R\-A\-C\-K\-I\-N\-G\-M\-E\-S\-A\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$ P\-F\-N\-G\-L\-X\-E\-N\-D\-F\-R\-A\-M\-E\-T\-R\-A\-C\-K\-I\-N\-G\-M\-E\-S\-A\-P\-R\-O\-C)(Display $\ast$dpy, {\bf G\-L\-X\-Drawable} drawable)}}\label{glx_8h_a48397a78341b4ca55c43047d18c7f7d7}
+
+
+Définition à la ligne 409 du fichier glx.\-h.
+
+\hypertarget{glx_8h_af219c6022ebfb1e559c73a46cf27b90d}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-F\-R\-E\-E\-M\-E\-M\-O\-R\-Y\-N\-V\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-F\-R\-E\-E\-M\-E\-M\-O\-R\-Y\-N\-V\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-F\-R\-E\-E\-M\-E\-M\-O\-R\-Y\-N\-V\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-F\-R\-E\-E\-M\-E\-M\-O\-R\-Y\-N\-V\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-F\-R\-E\-E\-M\-E\-M\-O\-R\-Y\-N\-V\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}( $\ast$  P\-F\-N\-G\-L\-X\-F\-R\-E\-E\-M\-E\-M\-O\-R\-Y\-N\-V\-P\-R\-O\-C)({\bf G\-Lvoid} $\ast${\bf pointer})}}\label{glx_8h_af219c6022ebfb1e559c73a46cf27b90d}
+
+
+Définition à la ligne 365 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ace525039db7059c7481e9c0b03e7c52e}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-G\-E\-T\-C\-U\-R\-R\-E\-N\-T\-D\-I\-S\-P\-L\-A\-Y\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-G\-E\-T\-C\-U\-R\-R\-E\-N\-T\-D\-I\-S\-P\-L\-A\-Y\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-G\-E\-T\-C\-U\-R\-R\-E\-N\-T\-D\-I\-S\-P\-L\-A\-Y\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-G\-E\-T\-C\-U\-R\-R\-E\-N\-T\-D\-I\-S\-P\-L\-A\-Y\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-G\-E\-T\-C\-U\-R\-R\-E\-N\-T\-D\-I\-S\-P\-L\-A\-Y\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef Display$\ast$($\ast$  P\-F\-N\-G\-L\-X\-G\-E\-T\-C\-U\-R\-R\-E\-N\-T\-D\-I\-S\-P\-L\-A\-Y\-P\-R\-O\-C)({\bf void})}}\label{glx_8h_ace525039db7059c7481e9c0b03e7c52e}
+
+
+Définition à la ligne 318 du fichier glx.\-h.
+
+\hypertarget{glx_8h_ae13b8971565bfa772e9fd3a387e16142}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-G\-E\-T\-C\-U\-R\-R\-E\-N\-T\-R\-E\-A\-D\-D\-R\-A\-W\-A\-B\-L\-E\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-G\-E\-T\-C\-U\-R\-R\-E\-N\-T\-R\-E\-A\-D\-D\-R\-A\-W\-A\-B\-L\-E\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-G\-E\-T\-C\-U\-R\-R\-E\-N\-T\-R\-E\-A\-D\-D\-R\-A\-W\-A\-B\-L\-E\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-G\-E\-T\-C\-U\-R\-R\-E\-N\-T\-R\-E\-A\-D\-D\-R\-A\-W\-A\-B\-L\-E\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-G\-E\-T\-C\-U\-R\-R\-E\-N\-T\-R\-E\-A\-D\-D\-R\-A\-W\-A\-B\-L\-E\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf G\-L\-X\-Drawable}($\ast$  P\-F\-N\-G\-L\-X\-G\-E\-T\-C\-U\-R\-R\-E\-N\-T\-R\-E\-A\-D\-D\-R\-A\-W\-A\-B\-L\-E\-P\-R\-O\-C)({\bf void})}}\label{glx_8h_ae13b8971565bfa772e9fd3a387e16142}
+
+
+Définition à la ligne 317 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a1f2157d3d9a5b41a354eb113a43363e6}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-G\-E\-T\-F\-B\-C\-O\-N\-F\-I\-G\-A\-T\-T\-R\-I\-B\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-G\-E\-T\-F\-B\-C\-O\-N\-F\-I\-G\-A\-T\-T\-R\-I\-B\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-G\-E\-T\-F\-B\-C\-O\-N\-F\-I\-G\-A\-T\-T\-R\-I\-B\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-G\-E\-T\-F\-B\-C\-O\-N\-F\-I\-G\-A\-T\-T\-R\-I\-B\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-G\-E\-T\-F\-B\-C\-O\-N\-F\-I\-G\-A\-T\-T\-R\-I\-B\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$  P\-F\-N\-G\-L\-X\-G\-E\-T\-F\-B\-C\-O\-N\-F\-I\-G\-A\-T\-T\-R\-I\-B\-P\-R\-O\-C)(Display $\ast$dpy, {\bf G\-L\-X\-F\-B\-Config} config, int attribute, int $\ast${\bf value})}}\label{glx_8h_a1f2157d3d9a5b41a354eb113a43363e6}
+
+
+Définition à la ligne 306 du fichier glx.\-h.
+
+\hypertarget{glx_8h_abfa999e4eafef53683557aea451f14ef}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-G\-E\-T\-F\-B\-C\-O\-N\-F\-I\-G\-S\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-G\-E\-T\-F\-B\-C\-O\-N\-F\-I\-G\-S\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-G\-E\-T\-F\-B\-C\-O\-N\-F\-I\-G\-S\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-G\-E\-T\-F\-B\-C\-O\-N\-F\-I\-G\-S\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-G\-E\-T\-F\-B\-C\-O\-N\-F\-I\-G\-S\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf G\-L\-X\-F\-B\-Config}$\ast$($\ast$  P\-F\-N\-G\-L\-X\-G\-E\-T\-F\-B\-C\-O\-N\-F\-I\-G\-S\-P\-R\-O\-C)(Display $\ast$dpy, int screen, int $\ast$nelements)}}\label{glx_8h_abfa999e4eafef53683557aea451f14ef}
+
+
+Définition à la ligne 304 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a1f959e3a55b5979788e072517f12087a}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-G\-E\-T\-F\-R\-A\-M\-E\-U\-S\-A\-G\-E\-M\-E\-S\-A\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-G\-E\-T\-F\-R\-A\-M\-E\-U\-S\-A\-G\-E\-M\-E\-S\-A\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-G\-E\-T\-F\-R\-A\-M\-E\-U\-S\-A\-G\-E\-M\-E\-S\-A\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-G\-E\-T\-F\-R\-A\-M\-E\-U\-S\-A\-G\-E\-M\-E\-S\-A\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-G\-E\-T\-F\-R\-A\-M\-E\-U\-S\-A\-G\-E\-M\-E\-S\-A\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$ P\-F\-N\-G\-L\-X\-G\-E\-T\-F\-R\-A\-M\-E\-U\-S\-A\-G\-E\-M\-E\-S\-A\-P\-R\-O\-C)(Display $\ast$dpy, {\bf G\-L\-X\-Drawable} drawable, float $\ast${\bf usage})}}\label{glx_8h_a1f959e3a55b5979788e072517f12087a}
+
+
+Définition à la ligne 407 du fichier glx.\-h.
+
+\hypertarget{glx_8h_aee3a3cdb5dcca6681e965a3cd085522c}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-G\-E\-T\-P\-R\-O\-C\-A\-D\-D\-R\-E\-S\-S\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-G\-E\-T\-P\-R\-O\-C\-A\-D\-D\-R\-E\-S\-S\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-G\-E\-T\-P\-R\-O\-C\-A\-D\-D\-R\-E\-S\-S\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-G\-E\-T\-P\-R\-O\-C\-A\-D\-D\-R\-E\-S\-S\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-G\-E\-T\-P\-R\-O\-C\-A\-D\-D\-R\-E\-S\-S\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf \-\_\-\-\_\-\-G\-L\-Xext\-Func\-Ptr}($\ast$  P\-F\-N\-G\-L\-X\-G\-E\-T\-P\-R\-O\-C\-A\-D\-D\-R\-E\-S\-S\-P\-R\-O\-C)(const {\bf G\-Lubyte} $\ast$proc\-Name)}}\label{glx_8h_aee3a3cdb5dcca6681e965a3cd085522c}
+
+
+Définition à la ligne 341 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a184137050853408c1425aaedfe859a96}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-G\-E\-T\-S\-E\-L\-E\-C\-T\-E\-D\-E\-V\-E\-N\-T\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-G\-E\-T\-S\-E\-L\-E\-C\-T\-E\-D\-E\-V\-E\-N\-T\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-G\-E\-T\-S\-E\-L\-E\-C\-T\-E\-D\-E\-V\-E\-N\-T\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-G\-E\-T\-S\-E\-L\-E\-C\-T\-E\-D\-E\-V\-E\-N\-T\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-G\-E\-T\-S\-E\-L\-E\-C\-T\-E\-D\-E\-V\-E\-N\-T\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$  P\-F\-N\-G\-L\-X\-G\-E\-T\-S\-E\-L\-E\-C\-T\-E\-D\-E\-V\-E\-N\-T\-P\-R\-O\-C)(Display $\ast$dpy, {\bf G\-L\-X\-Drawable} draw, unsigned long $\ast$event\-\_\-mask)}}\label{glx_8h_a184137050853408c1425aaedfe859a96}
+
+
+Définition à la ligne 321 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a314e32ddf15165b7d2df9bd039be9a0a}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-G\-E\-T\-S\-W\-A\-P\-I\-N\-T\-E\-R\-V\-A\-L\-M\-E\-S\-A\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-G\-E\-T\-S\-W\-A\-P\-I\-N\-T\-E\-R\-V\-A\-L\-M\-E\-S\-A\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-G\-E\-T\-S\-W\-A\-P\-I\-N\-T\-E\-R\-V\-A\-L\-M\-E\-S\-A\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-G\-E\-T\-S\-W\-A\-P\-I\-N\-T\-E\-R\-V\-A\-L\-M\-E\-S\-A\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-G\-E\-T\-S\-W\-A\-P\-I\-N\-T\-E\-R\-V\-A\-L\-M\-E\-S\-A\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$ P\-F\-N\-G\-L\-X\-G\-E\-T\-S\-W\-A\-P\-I\-N\-T\-E\-R\-V\-A\-L\-M\-E\-S\-A\-P\-R\-O\-C)({\bf void})}}\label{glx_8h_a314e32ddf15165b7d2df9bd039be9a0a}
+
+
+Définition à la ligne 426 du fichier glx.\-h.
+
+\hypertarget{glx_8h_af5f9929c1c16fb5536f04532cbc2361f}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-G\-E\-T\-V\-I\-S\-U\-A\-L\-F\-R\-O\-M\-F\-B\-C\-O\-N\-F\-I\-G\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-G\-E\-T\-V\-I\-S\-U\-A\-L\-F\-R\-O\-M\-F\-B\-C\-O\-N\-F\-I\-G\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-G\-E\-T\-V\-I\-S\-U\-A\-L\-F\-R\-O\-M\-F\-B\-C\-O\-N\-F\-I\-G\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-G\-E\-T\-V\-I\-S\-U\-A\-L\-F\-R\-O\-M\-F\-B\-C\-O\-N\-F\-I\-G\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-G\-E\-T\-V\-I\-S\-U\-A\-L\-F\-R\-O\-M\-F\-B\-C\-O\-N\-F\-I\-G\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef X\-Visual\-Info$\ast$($\ast$  P\-F\-N\-G\-L\-X\-G\-E\-T\-V\-I\-S\-U\-A\-L\-F\-R\-O\-M\-F\-B\-C\-O\-N\-F\-I\-G\-P\-R\-O\-C)(Display $\ast$dpy, {\bf G\-L\-X\-F\-B\-Config} config)}}\label{glx_8h_af5f9929c1c16fb5536f04532cbc2361f}
+
+
+Définition à la ligne 307 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a21ffb6d2a46ff664c8da0f675655e680}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-M\-A\-K\-E\-C\-O\-N\-T\-E\-X\-T\-C\-U\-R\-R\-E\-N\-T\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-M\-A\-K\-E\-C\-O\-N\-T\-E\-X\-T\-C\-U\-R\-R\-E\-N\-T\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-M\-A\-K\-E\-C\-O\-N\-T\-E\-X\-T\-C\-U\-R\-R\-E\-N\-T\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-M\-A\-K\-E\-C\-O\-N\-T\-E\-X\-T\-C\-U\-R\-R\-E\-N\-T\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-M\-A\-K\-E\-C\-O\-N\-T\-E\-X\-T\-C\-U\-R\-R\-E\-N\-T\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef Bool($\ast$  P\-F\-N\-G\-L\-X\-M\-A\-K\-E\-C\-O\-N\-T\-E\-X\-T\-C\-U\-R\-R\-E\-N\-T\-P\-R\-O\-C)(Display $\ast$dpy, {\bf G\-L\-X\-Drawable} draw, {\bf G\-L\-X\-Drawable} read, {\bf G\-L\-X\-Context} ctx)}}\label{glx_8h_a21ffb6d2a46ff664c8da0f675655e680}
+
+
+Définition à la ligne 316 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a7b78d171b4698186e690ebdd39387003}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-Q\-U\-E\-R\-Y\-C\-O\-N\-T\-E\-X\-T\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-Q\-U\-E\-R\-Y\-C\-O\-N\-T\-E\-X\-T\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-Q\-U\-E\-R\-Y\-C\-O\-N\-T\-E\-X\-T\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-Q\-U\-E\-R\-Y\-C\-O\-N\-T\-E\-X\-T\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-Q\-U\-E\-R\-Y\-C\-O\-N\-T\-E\-X\-T\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$  P\-F\-N\-G\-L\-X\-Q\-U\-E\-R\-Y\-C\-O\-N\-T\-E\-X\-T\-P\-R\-O\-C)(Display $\ast$dpy, {\bf G\-L\-X\-Context} ctx, int attribute, int $\ast${\bf value})}}\label{glx_8h_a7b78d171b4698186e690ebdd39387003}
+
+
+Définition à la ligne 319 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a146a20fb549a37c2cef255bbbe2350e7}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-Q\-U\-E\-R\-Y\-D\-R\-A\-W\-A\-B\-L\-E\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-Q\-U\-E\-R\-Y\-D\-R\-A\-W\-A\-B\-L\-E\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-Q\-U\-E\-R\-Y\-D\-R\-A\-W\-A\-B\-L\-E\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-Q\-U\-E\-R\-Y\-D\-R\-A\-W\-A\-B\-L\-E\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-Q\-U\-E\-R\-Y\-D\-R\-A\-W\-A\-B\-L\-E\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$  P\-F\-N\-G\-L\-X\-Q\-U\-E\-R\-Y\-D\-R\-A\-W\-A\-B\-L\-E\-P\-R\-O\-C)(Display $\ast$dpy, {\bf G\-L\-X\-Drawable} draw, int attribute, unsigned int $\ast${\bf value})}}\label{glx_8h_a146a20fb549a37c2cef255bbbe2350e7}
+
+
+Définition à la ligne 314 du fichier glx.\-h.
+
+\hypertarget{glx_8h_acbda35262995eef60e4fadf1b5e25ebc}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-Q\-U\-E\-R\-Y\-F\-R\-A\-M\-E\-T\-R\-A\-C\-K\-I\-N\-G\-M\-E\-S\-A\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-Q\-U\-E\-R\-Y\-F\-R\-A\-M\-E\-T\-R\-A\-C\-K\-I\-N\-G\-M\-E\-S\-A\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-Q\-U\-E\-R\-Y\-F\-R\-A\-M\-E\-T\-R\-A\-C\-K\-I\-N\-G\-M\-E\-S\-A\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-Q\-U\-E\-R\-Y\-F\-R\-A\-M\-E\-T\-R\-A\-C\-K\-I\-N\-G\-M\-E\-S\-A\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-Q\-U\-E\-R\-Y\-F\-R\-A\-M\-E\-T\-R\-A\-C\-K\-I\-N\-G\-M\-E\-S\-A\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$ P\-F\-N\-G\-L\-X\-Q\-U\-E\-R\-Y\-F\-R\-A\-M\-E\-T\-R\-A\-C\-K\-I\-N\-G\-M\-E\-S\-A\-P\-R\-O\-C)(Display $\ast$dpy, {\bf G\-L\-X\-Drawable} drawable, int64\-\_\-t $\ast$swap\-Count, int64\-\_\-t $\ast$missed\-Frames, float $\ast$last\-Missed\-Usage)}}\label{glx_8h_acbda35262995eef60e4fadf1b5e25ebc}
+
+
+Définition à la ligne 410 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a3eb0d829af90de44f626500ae36962d1}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-S\-E\-L\-E\-C\-T\-E\-V\-E\-N\-T\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-S\-E\-L\-E\-C\-T\-E\-V\-E\-N\-T\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-S\-E\-L\-E\-C\-T\-E\-V\-E\-N\-T\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-S\-E\-L\-E\-C\-T\-E\-V\-E\-N\-T\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-S\-E\-L\-E\-C\-T\-E\-V\-E\-N\-T\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$  P\-F\-N\-G\-L\-X\-S\-E\-L\-E\-C\-T\-E\-V\-E\-N\-T\-P\-R\-O\-C)(Display $\ast$dpy, {\bf G\-L\-X\-Drawable} draw, unsigned long event\-\_\-mask)}}\label{glx_8h_a3eb0d829af90de44f626500ae36962d1}
+
+
+Définition à la ligne 320 du fichier glx.\-h.
+
+\hypertarget{glx_8h_a42d4255e659dea03fc066c207b3b4a8d}{\index{glx.\-h@{glx.\-h}!P\-F\-N\-G\-L\-X\-S\-W\-A\-P\-I\-N\-T\-E\-R\-V\-A\-L\-M\-E\-S\-A\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-S\-W\-A\-P\-I\-N\-T\-E\-R\-V\-A\-L\-M\-E\-S\-A\-P\-R\-O\-C}}
+\index{P\-F\-N\-G\-L\-X\-S\-W\-A\-P\-I\-N\-T\-E\-R\-V\-A\-L\-M\-E\-S\-A\-P\-R\-O\-C@{P\-F\-N\-G\-L\-X\-S\-W\-A\-P\-I\-N\-T\-E\-R\-V\-A\-L\-M\-E\-S\-A\-P\-R\-O\-C}!glx.h@{glx.\-h}}
+\subsubsection[{P\-F\-N\-G\-L\-X\-S\-W\-A\-P\-I\-N\-T\-E\-R\-V\-A\-L\-M\-E\-S\-A\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$ P\-F\-N\-G\-L\-X\-S\-W\-A\-P\-I\-N\-T\-E\-R\-V\-A\-L\-M\-E\-S\-A\-P\-R\-O\-C)(unsigned int interval)}}\label{glx_8h_a42d4255e659dea03fc066c207b3b4a8d}
+
+
+Définition à la ligne 425 du fichier glx.\-h.
+
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{glx_8h_ab45da49488032822648144fead357075}{\index{glx.\-h@{glx.\-h}!gl\-X\-Allocate\-Memory\-N\-V@{gl\-X\-Allocate\-Memory\-N\-V}}
+\index{gl\-X\-Allocate\-Memory\-N\-V@{gl\-X\-Allocate\-Memory\-N\-V}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Allocate\-Memory\-N\-V}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void}$\ast$ gl\-X\-Allocate\-Memory\-N\-V (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-Lsizei}}]{size, }
+\item[{{\bf G\-Lfloat}}]{readfreq, }
+\item[{{\bf G\-Lfloat}}]{writefreq, }
+\item[{{\bf G\-Lfloat}}]{priority}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_ab45da49488032822648144fead357075}
+\hypertarget{glx_8h_af3f5f30357effc126bab083eb086077f}{\index{glx.\-h@{glx.\-h}!gl\-X\-Begin\-Frame\-Tracking\-M\-E\-S\-A@{gl\-X\-Begin\-Frame\-Tracking\-M\-E\-S\-A}}
+\index{gl\-X\-Begin\-Frame\-Tracking\-M\-E\-S\-A@{gl\-X\-Begin\-Frame\-Tracking\-M\-E\-S\-A}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Begin\-Frame\-Tracking\-M\-E\-S\-A}]{\setlength{\rightskip}{0pt plus 5cm}int gl\-X\-Begin\-Frame\-Tracking\-M\-E\-S\-A (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Drawable}}]{drawable}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_af3f5f30357effc126bab083eb086077f}
+\hypertarget{glx_8h_a2d6f2aa3eba9d9ba0de1b2d9a8ef0b87}{\index{glx.\-h@{glx.\-h}!gl\-X\-Bind\-Tex\-Image\-A\-R\-B@{gl\-X\-Bind\-Tex\-Image\-A\-R\-B}}
+\index{gl\-X\-Bind\-Tex\-Image\-A\-R\-B@{gl\-X\-Bind\-Tex\-Image\-A\-R\-B}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Bind\-Tex\-Image\-A\-R\-B}]{\setlength{\rightskip}{0pt plus 5cm}Bool gl\-X\-Bind\-Tex\-Image\-A\-R\-B (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Pbuffer}}]{pbuffer, }
+\item[{int}]{buffer}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a2d6f2aa3eba9d9ba0de1b2d9a8ef0b87}
+\hypertarget{glx_8h_a5027321b9ec003c16987cdcf2acc40bd}{\index{glx.\-h@{glx.\-h}!gl\-X\-Bind\-Tex\-Image\-E\-X\-T@{gl\-X\-Bind\-Tex\-Image\-E\-X\-T}}
+\index{gl\-X\-Bind\-Tex\-Image\-E\-X\-T@{gl\-X\-Bind\-Tex\-Image\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Bind\-Tex\-Image\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\-X\-Bind\-Tex\-Image\-E\-X\-T (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Drawable}}]{drawable, }
+\item[{int}]{buffer, }
+\item[{const int $\ast$}]{attrib\-\_\-list}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a5027321b9ec003c16987cdcf2acc40bd}
+\hypertarget{glx_8h_a2c20665f2821d8357ee190cd4b6ddb33}{\index{glx.\-h@{glx.\-h}!gl\-X\-Choose\-F\-B\-Config@{gl\-X\-Choose\-F\-B\-Config}}
+\index{gl\-X\-Choose\-F\-B\-Config@{gl\-X\-Choose\-F\-B\-Config}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Choose\-F\-B\-Config}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-X\-F\-B\-Config}$\ast$ gl\-X\-Choose\-F\-B\-Config (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{int}]{screen, }
+\item[{const int $\ast$}]{attrib\-List, }
+\item[{int $\ast$}]{nitems}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a2c20665f2821d8357ee190cd4b6ddb33}
+\hypertarget{glx_8h_a0089c188de2611b3474340af31e19355}{\index{glx.\-h@{glx.\-h}!gl\-X\-Choose\-Visual@{gl\-X\-Choose\-Visual}}
+\index{gl\-X\-Choose\-Visual@{gl\-X\-Choose\-Visual}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Choose\-Visual}]{\setlength{\rightskip}{0pt plus 5cm}X\-Visual\-Info$\ast$ gl\-X\-Choose\-Visual (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{int}]{screen, }
+\item[{int $\ast$}]{attrib\-List}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a0089c188de2611b3474340af31e19355}
+\hypertarget{glx_8h_a40c06766e415899e3cdad22a05c1c96d}{\index{glx.\-h@{glx.\-h}!gl\-X\-Copy\-Context@{gl\-X\-Copy\-Context}}
+\index{gl\-X\-Copy\-Context@{gl\-X\-Copy\-Context}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Copy\-Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\-X\-Copy\-Context (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Context}}]{src, }
+\item[{{\bf G\-L\-X\-Context}}]{dst, }
+\item[{unsigned long}]{mask}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a40c06766e415899e3cdad22a05c1c96d}
+\hypertarget{glx_8h_a194b7e7f5b8a5d167f3166b2b696631a}{\index{glx.\-h@{glx.\-h}!gl\-X\-Create\-Context@{gl\-X\-Create\-Context}}
+\index{gl\-X\-Create\-Context@{gl\-X\-Create\-Context}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Create\-Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-X\-Context} gl\-X\-Create\-Context (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{X\-Visual\-Info $\ast$}]{vis, }
+\item[{{\bf G\-L\-X\-Context}}]{share\-List, }
+\item[{Bool}]{direct}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a194b7e7f5b8a5d167f3166b2b696631a}
+\hypertarget{glx_8h_affdde1f13a245b0c8aea47b01570111c}{\index{glx.\-h@{glx.\-h}!gl\-X\-Create\-G\-L\-X\-Pixmap@{gl\-X\-Create\-G\-L\-X\-Pixmap}}
+\index{gl\-X\-Create\-G\-L\-X\-Pixmap@{gl\-X\-Create\-G\-L\-X\-Pixmap}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Create\-G\-L\-X\-Pixmap}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-X\-Pixmap} gl\-X\-Create\-G\-L\-X\-Pixmap (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{X\-Visual\-Info $\ast$}]{visual, }
+\item[{Pixmap}]{pixmap}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_affdde1f13a245b0c8aea47b01570111c}
+\hypertarget{glx_8h_a0352d9bab91ded6b220b44516fef91e1}{\index{glx.\-h@{glx.\-h}!gl\-X\-Create\-New\-Context@{gl\-X\-Create\-New\-Context}}
+\index{gl\-X\-Create\-New\-Context@{gl\-X\-Create\-New\-Context}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Create\-New\-Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-X\-Context} gl\-X\-Create\-New\-Context (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-F\-B\-Config}}]{config, }
+\item[{int}]{render\-Type, }
+\item[{{\bf G\-L\-X\-Context}}]{share\-List, }
+\item[{Bool}]{direct}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a0352d9bab91ded6b220b44516fef91e1}
+\hypertarget{glx_8h_a9d287f97c11a2df0084db23d27c714c8}{\index{glx.\-h@{glx.\-h}!gl\-X\-Create\-Pbuffer@{gl\-X\-Create\-Pbuffer}}
+\index{gl\-X\-Create\-Pbuffer@{gl\-X\-Create\-Pbuffer}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Create\-Pbuffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-X\-Pbuffer} gl\-X\-Create\-Pbuffer (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-F\-B\-Config}}]{config, }
+\item[{const int $\ast$}]{attrib\-List}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a9d287f97c11a2df0084db23d27c714c8}
+\hypertarget{glx_8h_a2b9a2477d7393273b32f8b106290b378}{\index{glx.\-h@{glx.\-h}!gl\-X\-Create\-Pixmap@{gl\-X\-Create\-Pixmap}}
+\index{gl\-X\-Create\-Pixmap@{gl\-X\-Create\-Pixmap}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Create\-Pixmap}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-X\-Pixmap} gl\-X\-Create\-Pixmap (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-F\-B\-Config}}]{config, }
+\item[{Pixmap}]{pixmap, }
+\item[{const int $\ast$}]{attrib\-List}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a2b9a2477d7393273b32f8b106290b378}
+\hypertarget{glx_8h_a4199557b808bbfbeabaa5f9194ba7c51}{\index{glx.\-h@{glx.\-h}!gl\-X\-Create\-Window@{gl\-X\-Create\-Window}}
+\index{gl\-X\-Create\-Window@{gl\-X\-Create\-Window}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Create\-Window}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-X\-Window} gl\-X\-Create\-Window (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-F\-B\-Config}}]{config, }
+\item[{Window}]{win, }
+\item[{const int $\ast$}]{attrib\-List}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a4199557b808bbfbeabaa5f9194ba7c51}
+\hypertarget{glx_8h_a84f8530e3fa01fba10d715eeca3bd5d2}{\index{glx.\-h@{glx.\-h}!gl\-X\-Destroy\-Context@{gl\-X\-Destroy\-Context}}
+\index{gl\-X\-Destroy\-Context@{gl\-X\-Destroy\-Context}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Destroy\-Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\-X\-Destroy\-Context (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Context}}]{ctx}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a84f8530e3fa01fba10d715eeca3bd5d2}
+\hypertarget{glx_8h_a2cc0e12986659a3ef87381dff975b545}{\index{glx.\-h@{glx.\-h}!gl\-X\-Destroy\-G\-L\-X\-Pixmap@{gl\-X\-Destroy\-G\-L\-X\-Pixmap}}
+\index{gl\-X\-Destroy\-G\-L\-X\-Pixmap@{gl\-X\-Destroy\-G\-L\-X\-Pixmap}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Destroy\-G\-L\-X\-Pixmap}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\-X\-Destroy\-G\-L\-X\-Pixmap (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Pixmap}}]{pixmap}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a2cc0e12986659a3ef87381dff975b545}
+\hypertarget{glx_8h_a5f444df39105dba6825363e0e60cf2d7}{\index{glx.\-h@{glx.\-h}!gl\-X\-Destroy\-Pbuffer@{gl\-X\-Destroy\-Pbuffer}}
+\index{gl\-X\-Destroy\-Pbuffer@{gl\-X\-Destroy\-Pbuffer}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Destroy\-Pbuffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\-X\-Destroy\-Pbuffer (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Pbuffer}}]{pbuf}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a5f444df39105dba6825363e0e60cf2d7}
+\hypertarget{glx_8h_a4263bdc38ad3e6e4096a701f66314ffc}{\index{glx.\-h@{glx.\-h}!gl\-X\-Destroy\-Pixmap@{gl\-X\-Destroy\-Pixmap}}
+\index{gl\-X\-Destroy\-Pixmap@{gl\-X\-Destroy\-Pixmap}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Destroy\-Pixmap}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\-X\-Destroy\-Pixmap (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Pixmap}}]{pixmap}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a4263bdc38ad3e6e4096a701f66314ffc}
+\hypertarget{glx_8h_af9db46f6e148ea9591db26a94b408bfb}{\index{glx.\-h@{glx.\-h}!gl\-X\-Destroy\-Window@{gl\-X\-Destroy\-Window}}
+\index{gl\-X\-Destroy\-Window@{gl\-X\-Destroy\-Window}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Destroy\-Window}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\-X\-Destroy\-Window (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Window}}]{window}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_af9db46f6e148ea9591db26a94b408bfb}
+\hypertarget{glx_8h_a13d25744058c8f16e54a7c34780a8e76}{\index{glx.\-h@{glx.\-h}!gl\-X\-Drawable\-Attrib\-A\-R\-B@{gl\-X\-Drawable\-Attrib\-A\-R\-B}}
+\index{gl\-X\-Drawable\-Attrib\-A\-R\-B@{gl\-X\-Drawable\-Attrib\-A\-R\-B}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Drawable\-Attrib\-A\-R\-B}]{\setlength{\rightskip}{0pt plus 5cm}Bool gl\-X\-Drawable\-Attrib\-A\-R\-B (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Drawable}}]{draw, }
+\item[{const int $\ast$}]{attrib\-List}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a13d25744058c8f16e54a7c34780a8e76}
+\hypertarget{glx_8h_a17b3a30faca14ef6a0fc0e3a9bceacdd}{\index{glx.\-h@{glx.\-h}!gl\-X\-End\-Frame\-Tracking\-M\-E\-S\-A@{gl\-X\-End\-Frame\-Tracking\-M\-E\-S\-A}}
+\index{gl\-X\-End\-Frame\-Tracking\-M\-E\-S\-A@{gl\-X\-End\-Frame\-Tracking\-M\-E\-S\-A}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-End\-Frame\-Tracking\-M\-E\-S\-A}]{\setlength{\rightskip}{0pt plus 5cm}int gl\-X\-End\-Frame\-Tracking\-M\-E\-S\-A (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Drawable}}]{drawable}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a17b3a30faca14ef6a0fc0e3a9bceacdd}
+\hypertarget{glx_8h_a5b685d70dec2111d236797d99e1865ab}{\index{glx.\-h@{glx.\-h}!gl\-X\-Free\-Memory\-N\-V@{gl\-X\-Free\-Memory\-N\-V}}
+\index{gl\-X\-Free\-Memory\-N\-V@{gl\-X\-Free\-Memory\-N\-V}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Free\-Memory\-N\-V}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\-X\-Free\-Memory\-N\-V (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-Lvoid} $\ast$}]{pointer}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a5b685d70dec2111d236797d99e1865ab}
+\hypertarget{glx_8h_ae3fde424d32aa1e0014eff8aeba288e3}{\index{glx.\-h@{glx.\-h}!gl\-X\-Get\-Client\-String@{gl\-X\-Get\-Client\-String}}
+\index{gl\-X\-Get\-Client\-String@{gl\-X\-Get\-Client\-String}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Get\-Client\-String}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ gl\-X\-Get\-Client\-String (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{int}]{name}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_ae3fde424d32aa1e0014eff8aeba288e3}
+\hypertarget{glx_8h_a313719aade5063ed80938fcb93436f5c}{\index{glx.\-h@{glx.\-h}!gl\-X\-Get\-Config@{gl\-X\-Get\-Config}}
+\index{gl\-X\-Get\-Config@{gl\-X\-Get\-Config}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Get\-Config}]{\setlength{\rightskip}{0pt plus 5cm}int gl\-X\-Get\-Config (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{X\-Visual\-Info $\ast$}]{visual, }
+\item[{int}]{attrib, }
+\item[{int $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a313719aade5063ed80938fcb93436f5c}
+\hypertarget{glx_8h_a3124873668dd8c0aa2aeba23499eef7d}{\index{glx.\-h@{glx.\-h}!gl\-X\-Get\-Current\-Context@{gl\-X\-Get\-Current\-Context}}
+\index{gl\-X\-Get\-Current\-Context@{gl\-X\-Get\-Current\-Context}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Get\-Current\-Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-X\-Context} gl\-X\-Get\-Current\-Context (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a3124873668dd8c0aa2aeba23499eef7d}
+\hypertarget{glx_8h_a8670b8f6c4e73e54558ed355820d2829}{\index{glx.\-h@{glx.\-h}!gl\-X\-Get\-Current\-Display@{gl\-X\-Get\-Current\-Display}}
+\index{gl\-X\-Get\-Current\-Display@{gl\-X\-Get\-Current\-Display}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Get\-Current\-Display}]{\setlength{\rightskip}{0pt plus 5cm}Display$\ast$ gl\-X\-Get\-Current\-Display (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a8670b8f6c4e73e54558ed355820d2829}
+\hypertarget{glx_8h_a16ac5b0ed109285666ccceabc36c30a7}{\index{glx.\-h@{glx.\-h}!gl\-X\-Get\-Current\-Drawable@{gl\-X\-Get\-Current\-Drawable}}
+\index{gl\-X\-Get\-Current\-Drawable@{gl\-X\-Get\-Current\-Drawable}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Get\-Current\-Drawable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-X\-Drawable} gl\-X\-Get\-Current\-Drawable (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a16ac5b0ed109285666ccceabc36c30a7}
+\hypertarget{glx_8h_af0effa7087068ee46cb386c8a320cccf}{\index{glx.\-h@{glx.\-h}!gl\-X\-Get\-Current\-Read\-Drawable@{gl\-X\-Get\-Current\-Read\-Drawable}}
+\index{gl\-X\-Get\-Current\-Read\-Drawable@{gl\-X\-Get\-Current\-Read\-Drawable}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Get\-Current\-Read\-Drawable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-X\-Drawable} gl\-X\-Get\-Current\-Read\-Drawable (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_af0effa7087068ee46cb386c8a320cccf}
+\hypertarget{glx_8h_a263c3e96e5e4e585cabb515408862e69}{\index{glx.\-h@{glx.\-h}!gl\-X\-Get\-F\-B\-Config\-Attrib@{gl\-X\-Get\-F\-B\-Config\-Attrib}}
+\index{gl\-X\-Get\-F\-B\-Config\-Attrib@{gl\-X\-Get\-F\-B\-Config\-Attrib}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Get\-F\-B\-Config\-Attrib}]{\setlength{\rightskip}{0pt plus 5cm}int gl\-X\-Get\-F\-B\-Config\-Attrib (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-F\-B\-Config}}]{config, }
+\item[{int}]{attribute, }
+\item[{int $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a263c3e96e5e4e585cabb515408862e69}
+\hypertarget{glx_8h_a710ee30d9b09b8e3d8dda01e5f9ade78}{\index{glx.\-h@{glx.\-h}!gl\-X\-Get\-F\-B\-Configs@{gl\-X\-Get\-F\-B\-Configs}}
+\index{gl\-X\-Get\-F\-B\-Configs@{gl\-X\-Get\-F\-B\-Configs}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Get\-F\-B\-Configs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-L\-X\-F\-B\-Config}$\ast$ gl\-X\-Get\-F\-B\-Configs (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{int}]{screen, }
+\item[{int $\ast$}]{nelements}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a710ee30d9b09b8e3d8dda01e5f9ade78}
+\hypertarget{glx_8h_a282bafdaea8320a6e9b0deefeb562994}{\index{glx.\-h@{glx.\-h}!gl\-X\-Get\-Frame\-Usage\-M\-E\-S\-A@{gl\-X\-Get\-Frame\-Usage\-M\-E\-S\-A}}
+\index{gl\-X\-Get\-Frame\-Usage\-M\-E\-S\-A@{gl\-X\-Get\-Frame\-Usage\-M\-E\-S\-A}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Get\-Frame\-Usage\-M\-E\-S\-A}]{\setlength{\rightskip}{0pt plus 5cm}int gl\-X\-Get\-Frame\-Usage\-M\-E\-S\-A (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Drawable}}]{drawable, }
+\item[{float $\ast$}]{usage}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a282bafdaea8320a6e9b0deefeb562994}
+\hypertarget{glx_8h_a2f63c8d6b30a8f9a80c8b437459dc44c}{\index{glx.\-h@{glx.\-h}!gl\-X\-Get\-Proc\-Address\-A\-R\-B@{gl\-X\-Get\-Proc\-Address\-A\-R\-B}}
+\index{gl\-X\-Get\-Proc\-Address\-A\-R\-B@{gl\-X\-Get\-Proc\-Address\-A\-R\-B}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Get\-Proc\-Address\-A\-R\-B}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-\_\-\-\_\-\-G\-L\-Xext\-Func\-Ptr} gl\-X\-Get\-Proc\-Address\-A\-R\-B (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\-Lubyte} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a2f63c8d6b30a8f9a80c8b437459dc44c}
+\hypertarget{glx_8h_ab3999910d6f765839d8edc6454a7fb06}{\index{glx.\-h@{glx.\-h}!gl\-X\-Get\-Selected\-Event@{gl\-X\-Get\-Selected\-Event}}
+\index{gl\-X\-Get\-Selected\-Event@{gl\-X\-Get\-Selected\-Event}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Get\-Selected\-Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\-X\-Get\-Selected\-Event (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Drawable}}]{drawable, }
+\item[{unsigned long $\ast$}]{mask}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_ab3999910d6f765839d8edc6454a7fb06}
+\hypertarget{glx_8h_ac168664fb99e3192563f385bab8a76fd}{\index{glx.\-h@{glx.\-h}!gl\-X\-Get\-Swap\-Interval\-M\-E\-S\-A@{gl\-X\-Get\-Swap\-Interval\-M\-E\-S\-A}}
+\index{gl\-X\-Get\-Swap\-Interval\-M\-E\-S\-A@{gl\-X\-Get\-Swap\-Interval\-M\-E\-S\-A}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Get\-Swap\-Interval\-M\-E\-S\-A}]{\setlength{\rightskip}{0pt plus 5cm}int gl\-X\-Get\-Swap\-Interval\-M\-E\-S\-A (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_ac168664fb99e3192563f385bab8a76fd}
+\hypertarget{glx_8h_a2982fe6f4588817ec0f2232661bcadc6}{\index{glx.\-h@{glx.\-h}!gl\-X\-Get\-Visual\-From\-F\-B\-Config@{gl\-X\-Get\-Visual\-From\-F\-B\-Config}}
+\index{gl\-X\-Get\-Visual\-From\-F\-B\-Config@{gl\-X\-Get\-Visual\-From\-F\-B\-Config}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Get\-Visual\-From\-F\-B\-Config}]{\setlength{\rightskip}{0pt plus 5cm}X\-Visual\-Info$\ast$ gl\-X\-Get\-Visual\-From\-F\-B\-Config (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-F\-B\-Config}}]{config}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a2982fe6f4588817ec0f2232661bcadc6}
+\hypertarget{glx_8h_a644a3ec7778c2a841e8ed84005ac4f0e}{\index{glx.\-h@{glx.\-h}!gl\-X\-Is\-Direct@{gl\-X\-Is\-Direct}}
+\index{gl\-X\-Is\-Direct@{gl\-X\-Is\-Direct}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Is\-Direct}]{\setlength{\rightskip}{0pt plus 5cm}Bool gl\-X\-Is\-Direct (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Context}}]{ctx}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a644a3ec7778c2a841e8ed84005ac4f0e}
+\hypertarget{glx_8h_a24282fd86b5d444ed2fa121e7adfdd4d}{\index{glx.\-h@{glx.\-h}!gl\-X\-Make\-Context\-Current@{gl\-X\-Make\-Context\-Current}}
+\index{gl\-X\-Make\-Context\-Current@{gl\-X\-Make\-Context\-Current}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Make\-Context\-Current}]{\setlength{\rightskip}{0pt plus 5cm}Bool gl\-X\-Make\-Context\-Current (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Drawable}}]{draw, }
+\item[{{\bf G\-L\-X\-Drawable}}]{read, }
+\item[{{\bf G\-L\-X\-Context}}]{ctx}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a24282fd86b5d444ed2fa121e7adfdd4d}
+\hypertarget{glx_8h_a48fc247a5c42d06cda6664d2a36b470b}{\index{glx.\-h@{glx.\-h}!gl\-X\-Make\-Current@{gl\-X\-Make\-Current}}
+\index{gl\-X\-Make\-Current@{gl\-X\-Make\-Current}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Make\-Current}]{\setlength{\rightskip}{0pt plus 5cm}Bool gl\-X\-Make\-Current (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Drawable}}]{drawable, }
+\item[{{\bf G\-L\-X\-Context}}]{ctx}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a48fc247a5c42d06cda6664d2a36b470b}
+\hypertarget{glx_8h_aa3cfa9bd0634bcbea4518b61553dfb2e}{\index{glx.\-h@{glx.\-h}!gl\-X\-Query\-Context@{gl\-X\-Query\-Context}}
+\index{gl\-X\-Query\-Context@{gl\-X\-Query\-Context}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Query\-Context}]{\setlength{\rightskip}{0pt plus 5cm}int gl\-X\-Query\-Context (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Context}}]{ctx, }
+\item[{int}]{attribute, }
+\item[{int $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_aa3cfa9bd0634bcbea4518b61553dfb2e}
+\hypertarget{glx_8h_a3edef6748002d483a0da2bcdf8311733}{\index{glx.\-h@{glx.\-h}!gl\-X\-Query\-Drawable@{gl\-X\-Query\-Drawable}}
+\index{gl\-X\-Query\-Drawable@{gl\-X\-Query\-Drawable}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Query\-Drawable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\-X\-Query\-Drawable (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Drawable}}]{draw, }
+\item[{int}]{attribute, }
+\item[{unsigned int $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a3edef6748002d483a0da2bcdf8311733}
+\hypertarget{glx_8h_abbde7965d03c54f125b7dde59e10525d}{\index{glx.\-h@{glx.\-h}!gl\-X\-Query\-Extension@{gl\-X\-Query\-Extension}}
+\index{gl\-X\-Query\-Extension@{gl\-X\-Query\-Extension}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Query\-Extension}]{\setlength{\rightskip}{0pt plus 5cm}Bool gl\-X\-Query\-Extension (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{int $\ast$}]{errorb, }
+\item[{int $\ast$}]{event}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_abbde7965d03c54f125b7dde59e10525d}
+\hypertarget{glx_8h_ac14041089580801572ad2bbf414c8991}{\index{glx.\-h@{glx.\-h}!gl\-X\-Query\-Extensions\-String@{gl\-X\-Query\-Extensions\-String}}
+\index{gl\-X\-Query\-Extensions\-String@{gl\-X\-Query\-Extensions\-String}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Query\-Extensions\-String}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ gl\-X\-Query\-Extensions\-String (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{int}]{screen}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_ac14041089580801572ad2bbf414c8991}
+\hypertarget{glx_8h_ad5f59d431423b1bcaea65a9ebf5f8e06}{\index{glx.\-h@{glx.\-h}!gl\-X\-Query\-Frame\-Tracking\-M\-E\-S\-A@{gl\-X\-Query\-Frame\-Tracking\-M\-E\-S\-A}}
+\index{gl\-X\-Query\-Frame\-Tracking\-M\-E\-S\-A@{gl\-X\-Query\-Frame\-Tracking\-M\-E\-S\-A}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Query\-Frame\-Tracking\-M\-E\-S\-A}]{\setlength{\rightskip}{0pt plus 5cm}int gl\-X\-Query\-Frame\-Tracking\-M\-E\-S\-A (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Drawable}}]{drawable, }
+\item[{int64\-\_\-t $\ast$}]{swap\-Count, }
+\item[{int64\-\_\-t $\ast$}]{missed\-Frames, }
+\item[{float $\ast$}]{last\-Missed\-Usage}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_ad5f59d431423b1bcaea65a9ebf5f8e06}
+\hypertarget{glx_8h_ad2db35f9ffedda7c927921e661fba969}{\index{glx.\-h@{glx.\-h}!gl\-X\-Query\-Server\-String@{gl\-X\-Query\-Server\-String}}
+\index{gl\-X\-Query\-Server\-String@{gl\-X\-Query\-Server\-String}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Query\-Server\-String}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ gl\-X\-Query\-Server\-String (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{int}]{screen, }
+\item[{int}]{name}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_ad2db35f9ffedda7c927921e661fba969}
+\hypertarget{glx_8h_a18983befd026d18393335018df47d051}{\index{glx.\-h@{glx.\-h}!gl\-X\-Query\-Version@{gl\-X\-Query\-Version}}
+\index{gl\-X\-Query\-Version@{gl\-X\-Query\-Version}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Query\-Version}]{\setlength{\rightskip}{0pt plus 5cm}Bool gl\-X\-Query\-Version (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{int $\ast$}]{maj, }
+\item[{int $\ast$}]{min}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a18983befd026d18393335018df47d051}
+\hypertarget{glx_8h_a75e4b39efc645c76043c621492a3803c}{\index{glx.\-h@{glx.\-h}!gl\-X\-Release\-Tex\-Image\-A\-R\-B@{gl\-X\-Release\-Tex\-Image\-A\-R\-B}}
+\index{gl\-X\-Release\-Tex\-Image\-A\-R\-B@{gl\-X\-Release\-Tex\-Image\-A\-R\-B}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Release\-Tex\-Image\-A\-R\-B}]{\setlength{\rightskip}{0pt plus 5cm}Bool gl\-X\-Release\-Tex\-Image\-A\-R\-B (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Pbuffer}}]{pbuffer, }
+\item[{int}]{buffer}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a75e4b39efc645c76043c621492a3803c}
+\hypertarget{glx_8h_a0d8c92ac7eef421209958c331a8d0a10}{\index{glx.\-h@{glx.\-h}!gl\-X\-Release\-Tex\-Image\-E\-X\-T@{gl\-X\-Release\-Tex\-Image\-E\-X\-T}}
+\index{gl\-X\-Release\-Tex\-Image\-E\-X\-T@{gl\-X\-Release\-Tex\-Image\-E\-X\-T}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Release\-Tex\-Image\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\-X\-Release\-Tex\-Image\-E\-X\-T (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Drawable}}]{drawable, }
+\item[{int}]{buffer}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a0d8c92ac7eef421209958c331a8d0a10}
+\hypertarget{glx_8h_a41234f642e241bea4c9b2f327f4ec79f}{\index{glx.\-h@{glx.\-h}!gl\-X\-Select\-Event@{gl\-X\-Select\-Event}}
+\index{gl\-X\-Select\-Event@{gl\-X\-Select\-Event}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Select\-Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\-X\-Select\-Event (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Drawable}}]{drawable, }
+\item[{unsigned long}]{mask}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a41234f642e241bea4c9b2f327f4ec79f}
+\hypertarget{glx_8h_adf5758fe90cccf8daa9f0b9753ea1085}{\index{glx.\-h@{glx.\-h}!gl\-X\-Swap\-Buffers@{gl\-X\-Swap\-Buffers}}
+\index{gl\-X\-Swap\-Buffers@{gl\-X\-Swap\-Buffers}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Swap\-Buffers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\-X\-Swap\-Buffers (
+\begin{DoxyParamCaption}
+\item[{Display $\ast$}]{dpy, }
+\item[{{\bf G\-L\-X\-Drawable}}]{drawable}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_adf5758fe90cccf8daa9f0b9753ea1085}
+\hypertarget{glx_8h_ab1e8a4c6ce33d5ce5cf7d2d077094d09}{\index{glx.\-h@{glx.\-h}!gl\-X\-Swap\-Interval\-M\-E\-S\-A@{gl\-X\-Swap\-Interval\-M\-E\-S\-A}}
+\index{gl\-X\-Swap\-Interval\-M\-E\-S\-A@{gl\-X\-Swap\-Interval\-M\-E\-S\-A}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Swap\-Interval\-M\-E\-S\-A}]{\setlength{\rightskip}{0pt plus 5cm}int gl\-X\-Swap\-Interval\-M\-E\-S\-A (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{interval}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_ab1e8a4c6ce33d5ce5cf7d2d077094d09}
+\hypertarget{glx_8h_a87583a6cb9f6b0836995465c53adcdba}{\index{glx.\-h@{glx.\-h}!gl\-X\-Use\-X\-Font@{gl\-X\-Use\-X\-Font}}
+\index{gl\-X\-Use\-X\-Font@{gl\-X\-Use\-X\-Font}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Use\-X\-Font}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\-X\-Use\-X\-Font (
+\begin{DoxyParamCaption}
+\item[{Font}]{font, }
+\item[{int}]{first, }
+\item[{int}]{count, }
+\item[{int}]{list}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a87583a6cb9f6b0836995465c53adcdba}
+\hypertarget{glx_8h_a260017b9f7cac2a3e1aa21dfa5dde3c0}{\index{glx.\-h@{glx.\-h}!gl\-X\-Wait\-G\-L@{gl\-X\-Wait\-G\-L}}
+\index{gl\-X\-Wait\-G\-L@{gl\-X\-Wait\-G\-L}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Wait\-G\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\-X\-Wait\-G\-L (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_a260017b9f7cac2a3e1aa21dfa5dde3c0}
+\hypertarget{glx_8h_ae37efe4bfc21adda1d4ef1606d5c53c1}{\index{glx.\-h@{glx.\-h}!gl\-X\-Wait\-X@{gl\-X\-Wait\-X}}
+\index{gl\-X\-Wait\-X@{gl\-X\-Wait\-X}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Wait\-X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} gl\-X\-Wait\-X (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{glx_8h_ae37efe4bfc21adda1d4ef1606d5c53c1}
+
+
+\subsection{Documentation des variables}
+\hypertarget{glx_8h_a7a444113352f699e0bca0ddbe39238ae}{\index{glx.\-h@{glx.\-h}!gl\-X\-Get\-Proc\-Address@{gl\-X\-Get\-Proc\-Address}}
+\index{gl\-X\-Get\-Proc\-Address@{gl\-X\-Get\-Proc\-Address}!glx.h@{glx.\-h}}
+\subsubsection[{gl\-X\-Get\-Proc\-Address}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void}($\ast$)( {\bf void} ) gl\-X\-Get\-Proc\-Address(const {\bf G\-Lubyte} $\ast$procname)}}\label{glx_8h_a7a444113352f699e0bca0ddbe39238ae}

@@ -1,0 +1,174 @@
+\hypertarget{_c_matrix44_8cpp}{\section{Référence du fichier /home/cj/workspace/\-Tetris/src/math/\-C\-Matrix44.cpp}
+\label{_c_matrix44_8cpp}\index{/home/cj/workspace/\-Tetris/src/math/\-C\-Matrix44.\-cpp@{/home/cj/workspace/\-Tetris/src/math/\-C\-Matrix44.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}C\-Matrix44.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_c_matrix44_8cpp_a8ddaf552fec4b9cd1f344b8656163fce}{N\-\_\-\-M\-A\-T\-R\-I\-X\-D\-E\-F\-S\-\_\-\-H}
+\item 
+\#define \hyperlink{_c_matrix44_8cpp_a13fce9ff65e80a6f0067e5bd2da1c691}{M00}~\hyperlink{glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}\mbox{[}0\mbox{]}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{_c_matrix44_8cpp_aa513422d436bf29ddfbdc643c74f6d21}{M01}~\hyperlink{glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}\mbox{[}1\mbox{]}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{_c_matrix44_8cpp_a9dde9712a919ed057ef8444335d83e0e}{M02}~\hyperlink{glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}\mbox{[}2\mbox{]}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{_c_matrix44_8cpp_a2af4e6d06b6dbf8191fa94d28811db10}{M03}~\hyperlink{glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}\mbox{[}3\mbox{]}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{_c_matrix44_8cpp_a41e82513c3788074d8b003bedf120153}{M10}~\hyperlink{glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}\mbox{[}0\mbox{]}\mbox{[}1\mbox{]}
+\item 
+\#define \hyperlink{_c_matrix44_8cpp_a8cb24086c1f9c78cc72c7d0240f85e99}{M11}~\hyperlink{glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}\mbox{[}1\mbox{]}\mbox{[}1\mbox{]}
+\item 
+\#define \hyperlink{_c_matrix44_8cpp_ac6035e4b41faf9c44a9d50d41b4daebb}{M12}~\hyperlink{glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}\mbox{[}2\mbox{]}\mbox{[}1\mbox{]}
+\item 
+\#define \hyperlink{_c_matrix44_8cpp_a553011594ded4577d65ee86d3973f47a}{M13}~\hyperlink{glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}\mbox{[}3\mbox{]}\mbox{[}1\mbox{]}
+\item 
+\#define \hyperlink{_c_matrix44_8cpp_a4acac22ad4432f1d9db721ad678d4d40}{M20}~\hyperlink{glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}\mbox{[}0\mbox{]}\mbox{[}2\mbox{]}
+\item 
+\#define \hyperlink{_c_matrix44_8cpp_aa3d003b4c8db9ca06fc57b7b968f6836}{M21}~\hyperlink{glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}\mbox{[}1\mbox{]}\mbox{[}2\mbox{]}
+\item 
+\#define \hyperlink{_c_matrix44_8cpp_acb1fd6faba34fa4426d210e674b44a03}{M22}~\hyperlink{glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}\mbox{[}2\mbox{]}\mbox{[}2\mbox{]}
+\item 
+\#define \hyperlink{_c_matrix44_8cpp_a7e17321f80574476c3a2de76e17712b4}{M23}~\hyperlink{glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}\mbox{[}3\mbox{]}\mbox{[}2\mbox{]}
+\item 
+\#define \hyperlink{_c_matrix44_8cpp_ae5a5c8c471386d7e7f10bd9bc483e767}{M30}~\hyperlink{glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}\mbox{[}0\mbox{]}\mbox{[}3\mbox{]}
+\item 
+\#define \hyperlink{_c_matrix44_8cpp_a9af2bf42585fbeec3b60ed062c9623c4}{M31}~\hyperlink{glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}\mbox{[}1\mbox{]}\mbox{[}3\mbox{]}
+\item 
+\#define \hyperlink{_c_matrix44_8cpp_afb80ca8fe61f626d2ef9e4e2c7dbe94c}{M32}~\hyperlink{glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}
+\item 
+\#define \hyperlink{_c_matrix44_8cpp_a635c008eae566041370df3b92d537be3}{M33}~\hyperlink{glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}\mbox{[}3\mbox{]}\mbox{[}3\mbox{]}
+\item 
+\#define \hyperlink{_c_matrix44_8cpp_a369180e5e0a23addbc2a6a9e24fee590}{swap}(\hyperlink{gl_8h_a0cdec8e97a75ee9458b23d152bf962d4}{x}, \hyperlink{gl_8h_a74d80fd479c0f6d0153c709949a089ef}{y})~\{ float \hyperlink{gl_8h_a00140d6f5c548b26daf170bf16e86a6d}{t}=\hyperlink{gl_8h_a0cdec8e97a75ee9458b23d152bf962d4}{x}; \hyperlink{gl_8h_a0cdec8e97a75ee9458b23d152bf962d4}{x}=\hyperlink{gl_8h_a74d80fd479c0f6d0153c709949a089ef}{y}; \hyperlink{gl_8h_a74d80fd479c0f6d0153c709949a089ef}{y}=\hyperlink{gl_8h_a00140d6f5c548b26daf170bf16e86a6d}{t}; \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des macros}
+\hypertarget{_c_matrix44_8cpp_a13fce9ff65e80a6f0067e5bd2da1c691}{\index{C\-Matrix44.\-cpp@{C\-Matrix44.\-cpp}!M00@{M00}}
+\index{M00@{M00}!CMatrix44.cpp@{C\-Matrix44.\-cpp}}
+\subsubsection[{M00}]{\setlength{\rightskip}{0pt plus 5cm}\#define M00~{\bf m}\mbox{[}0\mbox{]}\mbox{[}0\mbox{]}}}\label{_c_matrix44_8cpp_a13fce9ff65e80a6f0067e5bd2da1c691}
+
+
+Définition à la ligne 154 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{_c_matrix44_8cpp_aa513422d436bf29ddfbdc643c74f6d21}{\index{C\-Matrix44.\-cpp@{C\-Matrix44.\-cpp}!M01@{M01}}
+\index{M01@{M01}!CMatrix44.cpp@{C\-Matrix44.\-cpp}}
+\subsubsection[{M01}]{\setlength{\rightskip}{0pt plus 5cm}\#define M01~{\bf m}\mbox{[}1\mbox{]}\mbox{[}0\mbox{]}}}\label{_c_matrix44_8cpp_aa513422d436bf29ddfbdc643c74f6d21}
+
+
+Définition à la ligne 155 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{_c_matrix44_8cpp_a9dde9712a919ed057ef8444335d83e0e}{\index{C\-Matrix44.\-cpp@{C\-Matrix44.\-cpp}!M02@{M02}}
+\index{M02@{M02}!CMatrix44.cpp@{C\-Matrix44.\-cpp}}
+\subsubsection[{M02}]{\setlength{\rightskip}{0pt plus 5cm}\#define M02~{\bf m}\mbox{[}2\mbox{]}\mbox{[}0\mbox{]}}}\label{_c_matrix44_8cpp_a9dde9712a919ed057ef8444335d83e0e}
+
+
+Définition à la ligne 156 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{_c_matrix44_8cpp_a2af4e6d06b6dbf8191fa94d28811db10}{\index{C\-Matrix44.\-cpp@{C\-Matrix44.\-cpp}!M03@{M03}}
+\index{M03@{M03}!CMatrix44.cpp@{C\-Matrix44.\-cpp}}
+\subsubsection[{M03}]{\setlength{\rightskip}{0pt plus 5cm}\#define M03~{\bf m}\mbox{[}3\mbox{]}\mbox{[}0\mbox{]}}}\label{_c_matrix44_8cpp_a2af4e6d06b6dbf8191fa94d28811db10}
+
+
+Définition à la ligne 157 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{_c_matrix44_8cpp_a41e82513c3788074d8b003bedf120153}{\index{C\-Matrix44.\-cpp@{C\-Matrix44.\-cpp}!M10@{M10}}
+\index{M10@{M10}!CMatrix44.cpp@{C\-Matrix44.\-cpp}}
+\subsubsection[{M10}]{\setlength{\rightskip}{0pt plus 5cm}\#define M10~{\bf m}\mbox{[}0\mbox{]}\mbox{[}1\mbox{]}}}\label{_c_matrix44_8cpp_a41e82513c3788074d8b003bedf120153}
+
+
+Définition à la ligne 158 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{_c_matrix44_8cpp_a8cb24086c1f9c78cc72c7d0240f85e99}{\index{C\-Matrix44.\-cpp@{C\-Matrix44.\-cpp}!M11@{M11}}
+\index{M11@{M11}!CMatrix44.cpp@{C\-Matrix44.\-cpp}}
+\subsubsection[{M11}]{\setlength{\rightskip}{0pt plus 5cm}\#define M11~{\bf m}\mbox{[}1\mbox{]}\mbox{[}1\mbox{]}}}\label{_c_matrix44_8cpp_a8cb24086c1f9c78cc72c7d0240f85e99}
+
+
+Définition à la ligne 159 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{_c_matrix44_8cpp_ac6035e4b41faf9c44a9d50d41b4daebb}{\index{C\-Matrix44.\-cpp@{C\-Matrix44.\-cpp}!M12@{M12}}
+\index{M12@{M12}!CMatrix44.cpp@{C\-Matrix44.\-cpp}}
+\subsubsection[{M12}]{\setlength{\rightskip}{0pt plus 5cm}\#define M12~{\bf m}\mbox{[}2\mbox{]}\mbox{[}1\mbox{]}}}\label{_c_matrix44_8cpp_ac6035e4b41faf9c44a9d50d41b4daebb}
+
+
+Définition à la ligne 160 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{_c_matrix44_8cpp_a553011594ded4577d65ee86d3973f47a}{\index{C\-Matrix44.\-cpp@{C\-Matrix44.\-cpp}!M13@{M13}}
+\index{M13@{M13}!CMatrix44.cpp@{C\-Matrix44.\-cpp}}
+\subsubsection[{M13}]{\setlength{\rightskip}{0pt plus 5cm}\#define M13~{\bf m}\mbox{[}3\mbox{]}\mbox{[}1\mbox{]}}}\label{_c_matrix44_8cpp_a553011594ded4577d65ee86d3973f47a}
+
+
+Définition à la ligne 161 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{_c_matrix44_8cpp_a4acac22ad4432f1d9db721ad678d4d40}{\index{C\-Matrix44.\-cpp@{C\-Matrix44.\-cpp}!M20@{M20}}
+\index{M20@{M20}!CMatrix44.cpp@{C\-Matrix44.\-cpp}}
+\subsubsection[{M20}]{\setlength{\rightskip}{0pt plus 5cm}\#define M20~{\bf m}\mbox{[}0\mbox{]}\mbox{[}2\mbox{]}}}\label{_c_matrix44_8cpp_a4acac22ad4432f1d9db721ad678d4d40}
+
+
+Définition à la ligne 162 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{_c_matrix44_8cpp_aa3d003b4c8db9ca06fc57b7b968f6836}{\index{C\-Matrix44.\-cpp@{C\-Matrix44.\-cpp}!M21@{M21}}
+\index{M21@{M21}!CMatrix44.cpp@{C\-Matrix44.\-cpp}}
+\subsubsection[{M21}]{\setlength{\rightskip}{0pt plus 5cm}\#define M21~{\bf m}\mbox{[}1\mbox{]}\mbox{[}2\mbox{]}}}\label{_c_matrix44_8cpp_aa3d003b4c8db9ca06fc57b7b968f6836}
+
+
+Définition à la ligne 163 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{_c_matrix44_8cpp_acb1fd6faba34fa4426d210e674b44a03}{\index{C\-Matrix44.\-cpp@{C\-Matrix44.\-cpp}!M22@{M22}}
+\index{M22@{M22}!CMatrix44.cpp@{C\-Matrix44.\-cpp}}
+\subsubsection[{M22}]{\setlength{\rightskip}{0pt plus 5cm}\#define M22~{\bf m}\mbox{[}2\mbox{]}\mbox{[}2\mbox{]}}}\label{_c_matrix44_8cpp_acb1fd6faba34fa4426d210e674b44a03}
+
+
+Définition à la ligne 164 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{_c_matrix44_8cpp_a7e17321f80574476c3a2de76e17712b4}{\index{C\-Matrix44.\-cpp@{C\-Matrix44.\-cpp}!M23@{M23}}
+\index{M23@{M23}!CMatrix44.cpp@{C\-Matrix44.\-cpp}}
+\subsubsection[{M23}]{\setlength{\rightskip}{0pt plus 5cm}\#define M23~{\bf m}\mbox{[}3\mbox{]}\mbox{[}2\mbox{]}}}\label{_c_matrix44_8cpp_a7e17321f80574476c3a2de76e17712b4}
+
+
+Définition à la ligne 165 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{_c_matrix44_8cpp_ae5a5c8c471386d7e7f10bd9bc483e767}{\index{C\-Matrix44.\-cpp@{C\-Matrix44.\-cpp}!M30@{M30}}
+\index{M30@{M30}!CMatrix44.cpp@{C\-Matrix44.\-cpp}}
+\subsubsection[{M30}]{\setlength{\rightskip}{0pt plus 5cm}\#define M30~{\bf m}\mbox{[}0\mbox{]}\mbox{[}3\mbox{]}}}\label{_c_matrix44_8cpp_ae5a5c8c471386d7e7f10bd9bc483e767}
+
+
+Définition à la ligne 166 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{_c_matrix44_8cpp_a9af2bf42585fbeec3b60ed062c9623c4}{\index{C\-Matrix44.\-cpp@{C\-Matrix44.\-cpp}!M31@{M31}}
+\index{M31@{M31}!CMatrix44.cpp@{C\-Matrix44.\-cpp}}
+\subsubsection[{M31}]{\setlength{\rightskip}{0pt plus 5cm}\#define M31~{\bf m}\mbox{[}1\mbox{]}\mbox{[}3\mbox{]}}}\label{_c_matrix44_8cpp_a9af2bf42585fbeec3b60ed062c9623c4}
+
+
+Définition à la ligne 167 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{_c_matrix44_8cpp_afb80ca8fe61f626d2ef9e4e2c7dbe94c}{\index{C\-Matrix44.\-cpp@{C\-Matrix44.\-cpp}!M32@{M32}}
+\index{M32@{M32}!CMatrix44.cpp@{C\-Matrix44.\-cpp}}
+\subsubsection[{M32}]{\setlength{\rightskip}{0pt plus 5cm}\#define M32~{\bf m}\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}}}\label{_c_matrix44_8cpp_afb80ca8fe61f626d2ef9e4e2c7dbe94c}
+
+
+Définition à la ligne 168 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{_c_matrix44_8cpp_a635c008eae566041370df3b92d537be3}{\index{C\-Matrix44.\-cpp@{C\-Matrix44.\-cpp}!M33@{M33}}
+\index{M33@{M33}!CMatrix44.cpp@{C\-Matrix44.\-cpp}}
+\subsubsection[{M33}]{\setlength{\rightskip}{0pt plus 5cm}\#define M33~{\bf m}\mbox{[}3\mbox{]}\mbox{[}3\mbox{]}}}\label{_c_matrix44_8cpp_a635c008eae566041370df3b92d537be3}
+
+
+Définition à la ligne 169 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{_c_matrix44_8cpp_a8ddaf552fec4b9cd1f344b8656163fce}{\index{C\-Matrix44.\-cpp@{C\-Matrix44.\-cpp}!N\-\_\-\-M\-A\-T\-R\-I\-X\-D\-E\-F\-S\-\_\-\-H@{N\-\_\-\-M\-A\-T\-R\-I\-X\-D\-E\-F\-S\-\_\-\-H}}
+\index{N\-\_\-\-M\-A\-T\-R\-I\-X\-D\-E\-F\-S\-\_\-\-H@{N\-\_\-\-M\-A\-T\-R\-I\-X\-D\-E\-F\-S\-\_\-\-H}!CMatrix44.cpp@{C\-Matrix44.\-cpp}}
+\subsubsection[{N\-\_\-\-M\-A\-T\-R\-I\-X\-D\-E\-F\-S\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\-\_\-\-M\-A\-T\-R\-I\-X\-D\-E\-F\-S\-\_\-\-H}}\label{_c_matrix44_8cpp_a8ddaf552fec4b9cd1f344b8656163fce}
+
+
+Définition à la ligne 152 du fichier C\-Matrix44.\-cpp.
+
+\hypertarget{_c_matrix44_8cpp_a369180e5e0a23addbc2a6a9e24fee590}{\index{C\-Matrix44.\-cpp@{C\-Matrix44.\-cpp}!swap@{swap}}
+\index{swap@{swap}!CMatrix44.cpp@{C\-Matrix44.\-cpp}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}\#define swap(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf x}, }
+\item[{}]{{\bf y}}
+\end{DoxyParamCaption}
+)~\{ float {\bf t}={\bf x}; {\bf x}={\bf y}; {\bf y}={\bf t}; \}}}\label{_c_matrix44_8cpp_a369180e5e0a23addbc2a6a9e24fee590}

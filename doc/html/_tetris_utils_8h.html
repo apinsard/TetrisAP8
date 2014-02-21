@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>Tetris: Référence du fichier /home/cj/workspace/Tetris/src/tetris/TetrisUtils.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Les-Stages-a-l-IUT-Informatique-de-Vannes-en-2006_img_200.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Tetris
+   &#160;<span id="projectnumber">alpha</span>
+   </div>
+   <div id="projectbrief">Juan revival</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_tetris_utils_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Énumérations</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier TetrisUtils.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="_tetris_utils_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a46d34b374b75fd6743e3651b796168f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tetris_utils_8h.html#a46d34b374b75fd6743e3651b796168f5">__TETRIS_UTILS_H__</a></td></tr>
+<tr class="separator:a46d34b374b75fd6743e3651b796168f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9df0cc58e9feb5f773d9664dcc978ea5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tetris_utils_8h.html#a9df0cc58e9feb5f773d9664dcc978ea5">WIDTH_BOARD</a>&#160;&#160;&#160;10</td></tr>
+<tr class="memdesc:a9df0cc58e9feb5f773d9664dcc978ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">largeur de la grille du jeu  <a href="#a9df0cc58e9feb5f773d9664dcc978ea5">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a9df0cc58e9feb5f773d9664dcc978ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf0268c13877ff90d1f4ec3e5326c369"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tetris_utils_8h.html#acf0268c13877ff90d1f4ec3e5326c369">HEIGHT_BOARD</a>&#160;&#160;&#160;20</td></tr>
+<tr class="memdesc:acf0268c13877ff90d1f4ec3e5326c369"><td class="mdescLeft">&#160;</td><td class="mdescRight">hauteur de la grille du jeu  <a href="#acf0268c13877ff90d1f4ec3e5326c369">Plus de détails...</a><br/></td></tr>
+<tr class="separator:acf0268c13877ff90d1f4ec3e5326c369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d3da0dbc66a688633b8b54236cdaca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tetris_utils_8h.html#a87d3da0dbc66a688633b8b54236cdaca">POSX_BOARD</a>&#160;&#160;&#160;300</td></tr>
+<tr class="memdesc:a87d3da0dbc66a688633b8b54236cdaca"><td class="mdescLeft">&#160;</td><td class="mdescRight">position en X de la grille du jeu dans la fen�tre GLUT  <a href="#a87d3da0dbc66a688633b8b54236cdaca">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a87d3da0dbc66a688633b8b54236cdaca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a224b8c50f38cfc135c907bf36ad3a45a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tetris_utils_8h.html#a224b8c50f38cfc135c907bf36ad3a45a">POSY_BOARD</a>&#160;&#160;&#160;100</td></tr>
+<tr class="memdesc:a224b8c50f38cfc135c907bf36ad3a45a"><td class="mdescLeft">&#160;</td><td class="mdescRight">position en Y de la grille du jeu dans la fen�tre GLUT  <a href="#a224b8c50f38cfc135c907bf36ad3a45a">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a224b8c50f38cfc135c907bf36ad3a45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a59328c9b22cbb12ac88999ba0fcd3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tetris_utils_8h.html#ae1a59328c9b22cbb12ac88999ba0fcd3">DIM_CASE</a>&#160;&#160;&#160;17.0</td></tr>
+<tr class="memdesc:ae1a59328c9b22cbb12ac88999ba0fcd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">taille d'une case de la grille du jeu (carr�e)  <a href="#ae1a59328c9b22cbb12ac88999ba0fcd3">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ae1a59328c9b22cbb12ac88999ba0fcd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:a85e4ec079d684f89238ec06b40d024a8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8">PieceAction</a> { <br/>
+&#160;&#160;<a class="el" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8a84380f7c056a1d381a3b1889a48109d9">PA_RotateRight</a>, 
+<a class="el" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8a27ec28fc72ef8c4d4c17654dd902ff69">PA_RotateLeft</a>, 
+<a class="el" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8adcec83af27ecc2ef0102fc7f50259e2c">PA_MoveRight</a>, 
+<a class="el" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8a5e5493ef9fa9bf628f739f0c6b4f8d71">PA_MoveLeft</a>, 
+<br/>
+&#160;&#160;<a class="el" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8adf2e2d247e618ea931d6e4ad7bed7464">PA_MoveBottom</a>, 
+<a class="el" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8aa1205ee48206a302e6bfe972ce68927f">PA_MoveBottom2</a>
+<br/>
+ }</td></tr>
+<tr class="memdesc:a85e4ec079d684f89238ec06b40d024a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actions possibles par l'utilisateur.  <a href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a85e4ec079d684f89238ec06b40d024a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee2205359d0b7e255e34eef4d76435df"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tetris_utils_8h.html#aee2205359d0b7e255e34eef4d76435df">ActionResult</a> { <a class="el" href="_tetris_utils_8h.html#aee2205359d0b7e255e34eef4d76435dfaba20083622789a2ed8fe08664e5605c1">AR_Ok</a>, 
+<a class="el" href="_tetris_utils_8h.html#aee2205359d0b7e255e34eef4d76435dfa1f42fecf7c4f8a62b84008002163f1a4">AR_Collision</a>, 
+<a class="el" href="_tetris_utils_8h.html#aee2205359d0b7e255e34eef4d76435dfaa4933e0dea9d95e26410e76c1d9f7456">AR_GameOver</a>
+ }</td></tr>
+<tr class="memdesc:aee2205359d0b7e255e34eef4d76435df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Etat du jeu apr�s une action (update, modification de position ou orientation piece)  <a href="_tetris_utils_8h.html#aee2205359d0b7e255e34eef4d76435df">Plus de détails...</a><br/></td></tr>
+<tr class="separator:aee2205359d0b7e255e34eef4d76435df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des macros</h2>
+<a class="anchor" id="a46d34b374b75fd6743e3651b796168f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __TETRIS_UTILS_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_tetris_utils_8h_source.html#l00002">2</a> du fichier <a class="el" href="_tetris_utils_8h_source.html">TetrisUtils.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae1a59328c9b22cbb12ac88999ba0fcd3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DIM_CASE&#160;&#160;&#160;17.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>taille d'une case de la grille du jeu (carr�e) </p>
+
+<p>Définition à la ligne <a class="el" href="_tetris_utils_8h_source.html#l00009">9</a> du fichier <a class="el" href="_tetris_utils_8h_source.html">TetrisUtils.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acf0268c13877ff90d1f4ec3e5326c369"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HEIGHT_BOARD&#160;&#160;&#160;20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>hauteur de la grille du jeu </p>
+
+<p>Définition à la ligne <a class="el" href="_tetris_utils_8h_source.html#l00006">6</a> du fichier <a class="el" href="_tetris_utils_8h_source.html">TetrisUtils.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a87d3da0dbc66a688633b8b54236cdaca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define POSX_BOARD&#160;&#160;&#160;300</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>position en X de la grille du jeu dans la fen�tre GLUT </p>
+
+<p>Définition à la ligne <a class="el" href="_tetris_utils_8h_source.html#l00007">7</a> du fichier <a class="el" href="_tetris_utils_8h_source.html">TetrisUtils.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a224b8c50f38cfc135c907bf36ad3a45a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define POSY_BOARD&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>position en Y de la grille du jeu dans la fen�tre GLUT </p>
+
+<p>Définition à la ligne <a class="el" href="_tetris_utils_8h_source.html#l00008">8</a> du fichier <a class="el" href="_tetris_utils_8h_source.html">TetrisUtils.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9df0cc58e9feb5f773d9664dcc978ea5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WIDTH_BOARD&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>largeur de la grille du jeu </p>
+
+<p>Définition à la ligne <a class="el" href="_tetris_utils_8h_source.html#l00005">5</a> du fichier <a class="el" href="_tetris_utils_8h_source.html">TetrisUtils.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a class="anchor" id="aee2205359d0b7e255e34eef4d76435df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_tetris_utils_8h.html#aee2205359d0b7e255e34eef4d76435df">ActionResult</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Etat du jeu apr�s une action (update, modification de position ou orientation piece) </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><em><a class="anchor" id="aee2205359d0b7e255e34eef4d76435dfaba20083622789a2ed8fe08664e5605c1"></a>AR_Ok</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="aee2205359d0b7e255e34eef4d76435dfa1f42fecf7c4f8a62b84008002163f1a4"></a>AR_Collision</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="aee2205359d0b7e255e34eef4d76435dfaa4933e0dea9d95e26410e76c1d9f7456"></a>AR_GameOver</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Définition à la ligne <a class="el" href="_tetris_utils_8h_source.html#l00027">27</a> du fichier <a class="el" href="_tetris_utils_8h_source.html">TetrisUtils.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a85e4ec079d684f89238ec06b40d024a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8">PieceAction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Actions possibles par l'utilisateur. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a85e4ec079d684f89238ec06b40d024a8a84380f7c056a1d381a3b1889a48109d9"></a>PA_RotateRight</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a85e4ec079d684f89238ec06b40d024a8a27ec28fc72ef8c4d4c17654dd902ff69"></a>PA_RotateLeft</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a85e4ec079d684f89238ec06b40d024a8adcec83af27ecc2ef0102fc7f50259e2c"></a>PA_MoveRight</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a85e4ec079d684f89238ec06b40d024a8a5e5493ef9fa9bf628f739f0c6b4f8d71"></a>PA_MoveLeft</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a85e4ec079d684f89238ec06b40d024a8adf2e2d247e618ea931d6e4ad7bed7464"></a>PA_MoveBottom</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a85e4ec079d684f89238ec06b40d024a8aa1205ee48206a302e6bfe972ce68927f"></a>PA_MoveBottom2</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Définition à la ligne <a class="el" href="_tetris_utils_8h_source.html#l00014">14</a> du fichier <a class="el" href="_tetris_utils_8h_source.html">TetrisUtils.h</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_33fdd4cdb1b96634eacc7402fd786645.html">tetris</a></li><li class="navelem"><a class="el" href="_tetris_utils_8h.html">TetrisUtils.h</a></li>
+    <li class="footer">Généré le Vendredi Février 21 2014 22:34:27 pour Tetris par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
+  </ul>
+</div>
+</body>
+</html>

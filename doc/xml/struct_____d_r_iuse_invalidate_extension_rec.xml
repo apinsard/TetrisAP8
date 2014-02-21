@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_____d_r_iuse_invalidate_extension_rec" kind="struct" prot="public">
+    <compoundname>__DRIuseInvalidateExtensionRec</compoundname>
+    <includes refid="dri__interface_8h" local="no">dri_interface.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_____d_r_iuse_invalidate_extension_rec_1a1d27faf34ceb9d07a7dac9eeff50f209" prot="public" static="no" mutable="no">
+        <type><ref refid="dri__interface_8h_1a4e0a61c8ece00d2b2c6792a9a1b55385" kindref="member">__DRIextension</ref></type>
+        <definition>__DRIextension __DRIuseInvalidateExtensionRec::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="460" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="69">
+        <label>__DRIuseInvalidateExtensionRec</label>
+        <link refid="struct_____d_r_iuse_invalidate_extension_rec"/>
+        <childnode refid="70" relation="usage">
+          <edgelabel>base</edgelabel>
+        </childnode>
+      </node>
+      <node id="70">
+        <label>__DRIextensionRec</label>
+        <link refid="struct_____d_r_iextension_rec"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="459" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="459" bodyend="461"/>
+    <listofallmembers>
+      <member refid="struct_____d_r_iuse_invalidate_extension_rec_1a1d27faf34ceb9d07a7dac9eeff50f209" prot="public" virt="non-virtual"><scope>__DRIuseInvalidateExtensionRec</scope><name>base</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

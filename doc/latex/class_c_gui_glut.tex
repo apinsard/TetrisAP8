@@ -1,0 +1,228 @@
+\hypertarget{class_c_gui_glut}{\section{Référence de la classe C\-Gui\-Glut}
+\label{class_c_gui_glut}\index{C\-Gui\-Glut@{C\-Gui\-Glut}}
+}
+
+
+{\ttfamily \#include $<$C\-Gui\-Glut.\-h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_gui_glut_a574d62a27525fba7eee3fadcc0079665}{C\-Gui\-Glut} ()
+\item 
+virtual \hyperlink{class_c_gui_glut_aa218520a7f4a2d2a6fee447226b33fdf}{$\sim$\-C\-Gui\-Glut} ()
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_gui_glut_a593668780f9c164e730872a2a5e9633a}{Initialize\-Graphics} (int argc, char $\ast$$\ast$argv, \hyperlink{class_c_application}{C\-Application} $\ast$application)
+\item 
+static \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_gui_glut_a3137ce1e74cc56d756b2656933769e2f}{Run\-Graphics} (\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void})
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_gui_glut_adb22d019a77d1aad91540f68357588d3}{Init\-G\-L} (\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void})
+\item 
+static \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_gui_glut_a4eca507ba68303bf022cf403d8e399ed}{Reshape\-Func} (int \hyperlink{gl_8h_a30a197eaed803ac3cd1b444d4c972354}{width}, int \hyperlink{gl_8h_aab021b2df174b06135ca6744356dcf34}{height})
+\item 
+static \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_gui_glut_a8fe1811c9e5893602d07c31093e6aba2}{Display\-Func} (\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void})
+\item 
+static \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_gui_glut_a51ac7b3fa2a2ebff359678451ae92332}{Keyboard\-Func} (unsigned char key, int, int)
+\item 
+static \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_gui_glut_a841c450eb681af1c986dd68004bbb7fe}{Special\-Func} (int key, int, int)
+\end{DoxyCompactItemize}
+\subsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_c_application}{C\-Application} $\ast$ \hyperlink{class_c_gui_glut_af1cfef33678aad68798ac49e595dcb4a}{m\-\_\-application} = 0
+\item 
+static int \hyperlink{class_c_gui_glut_a4878717c11f5a307853512a09de37310}{window\-I\-D} = 0
+\item 
+static \hyperlink{glext_8h_a06b88fc81ad0b30d1512e9609e3d7c82}{std\-::string} \hyperlink{class_c_gui_glut_a12e31814a513a7a045f822caa350327e}{app\-Version\-Name} = \char`\"{}Tetris 0.\-0.\-1\char`\"{}
+\item 
+static bool \hyperlink{class_c_gui_glut_a7ef01c153415d9a8b45cd1a50bf852f2}{g\-Mouse\-Adjusting\-Camera\-Angle} = false
+\item 
+static bool \hyperlink{class_c_gui_glut_a8d68818a05092a8b55e0ba7003485e3f}{g\-Mouse\-Adjusting\-Camera\-Radius} = false
+\item 
+static int \hyperlink{class_c_gui_glut_ae55158d240b75d6bceee346e0155de84}{g\-Mouse\-Adjusting\-Camera\-Last\-X} = 0
+\item 
+static int \hyperlink{class_c_gui_glut_a24c5393cda1ad9cb013ba13f43fc4a25}{g\-Mouse\-Adjusting\-Camera\-Last\-Y} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+
+
+Définition à la ligne 44 du fichier C\-Gui\-Glut.\-h.
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_c_gui_glut_a574d62a27525fba7eee3fadcc0079665}{\index{C\-Gui\-Glut@{C\-Gui\-Glut}!C\-Gui\-Glut@{C\-Gui\-Glut}}
+\index{C\-Gui\-Glut@{C\-Gui\-Glut}!CGuiGlut@{C\-Gui\-Glut}}
+\subsubsection[{C\-Gui\-Glut}]{\setlength{\rightskip}{0pt plus 5cm}C\-Gui\-Glut\-::\-C\-Gui\-Glut (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_gui_glut_a574d62a27525fba7eee3fadcc0079665}
+
+
+Définition à la ligne 51 du fichier C\-Gui\-Glut.\-h.
+
+\hypertarget{class_c_gui_glut_aa218520a7f4a2d2a6fee447226b33fdf}{\index{C\-Gui\-Glut@{C\-Gui\-Glut}!$\sim$\-C\-Gui\-Glut@{$\sim$\-C\-Gui\-Glut}}
+\index{$\sim$\-C\-Gui\-Glut@{$\sim$\-C\-Gui\-Glut}!CGuiGlut@{C\-Gui\-Glut}}
+\subsubsection[{$\sim$\-C\-Gui\-Glut}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Gui\-Glut\-::$\sim$\-C\-Gui\-Glut (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_c_gui_glut_aa218520a7f4a2d2a6fee447226b33fdf}
+
+
+Définition à la ligne 56 du fichier C\-Gui\-Glut.\-h.
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_c_gui_glut_a8fe1811c9e5893602d07c31093e6aba2}{\index{C\-Gui\-Glut@{C\-Gui\-Glut}!Display\-Func@{Display\-Func}}
+\index{Display\-Func@{Display\-Func}!CGuiGlut@{C\-Gui\-Glut}}
+\subsubsection[{Display\-Func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Gui\-Glut\-::\-Display\-Func (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_c_gui_glut_a8fe1811c9e5893602d07c31093e6aba2}
+
+
+Définition à la ligne 139 du fichier C\-Gui\-Glut.\-cpp.
+
+\hypertarget{class_c_gui_glut_adb22d019a77d1aad91540f68357588d3}{\index{C\-Gui\-Glut@{C\-Gui\-Glut}!Init\-G\-L@{Init\-G\-L}}
+\index{Init\-G\-L@{Init\-G\-L}!CGuiGlut@{C\-Gui\-Glut}}
+\subsubsection[{Init\-G\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Gui\-Glut\-::\-Init\-G\-L (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_c_gui_glut_adb22d019a77d1aad91540f68357588d3}
+
+
+Définition à la ligne 80 du fichier C\-Gui\-Glut.\-cpp.
+
+\hypertarget{class_c_gui_glut_a593668780f9c164e730872a2a5e9633a}{\index{C\-Gui\-Glut@{C\-Gui\-Glut}!Initialize\-Graphics@{Initialize\-Graphics}}
+\index{Initialize\-Graphics@{Initialize\-Graphics}!CGuiGlut@{C\-Gui\-Glut}}
+\subsubsection[{Initialize\-Graphics}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Gui\-Glut\-::\-Initialize\-Graphics (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv, }
+\item[{{\bf C\-Application} $\ast$}]{application}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_gui_glut_a593668780f9c164e730872a2a5e9633a}
+
+
+Définition à la ligne 29 du fichier C\-Gui\-Glut.\-cpp.
+
+\hypertarget{class_c_gui_glut_a51ac7b3fa2a2ebff359678451ae92332}{\index{C\-Gui\-Glut@{C\-Gui\-Glut}!Keyboard\-Func@{Keyboard\-Func}}
+\index{Keyboard\-Func@{Keyboard\-Func}!CGuiGlut@{C\-Gui\-Glut}}
+\subsubsection[{Keyboard\-Func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Gui\-Glut\-::\-Keyboard\-Func (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{key, }
+\item[{int}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_c_gui_glut_a51ac7b3fa2a2ebff359678451ae92332}
+
+
+Définition à la ligne 164 du fichier C\-Gui\-Glut.\-cpp.
+
+\hypertarget{class_c_gui_glut_a4eca507ba68303bf022cf403d8e399ed}{\index{C\-Gui\-Glut@{C\-Gui\-Glut}!Reshape\-Func@{Reshape\-Func}}
+\index{Reshape\-Func@{Reshape\-Func}!CGuiGlut@{C\-Gui\-Glut}}
+\subsubsection[{Reshape\-Func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Gui\-Glut\-::\-Reshape\-Func (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_c_gui_glut_a4eca507ba68303bf022cf403d8e399ed}
+
+
+Définition à la ligne 119 du fichier C\-Gui\-Glut.\-cpp.
+
+\hypertarget{class_c_gui_glut_a3137ce1e74cc56d756b2656933769e2f}{\index{C\-Gui\-Glut@{C\-Gui\-Glut}!Run\-Graphics@{Run\-Graphics}}
+\index{Run\-Graphics@{Run\-Graphics}!CGuiGlut@{C\-Gui\-Glut}}
+\subsubsection[{Run\-Graphics}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Gui\-Glut\-::\-Run\-Graphics (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_c_gui_glut_a3137ce1e74cc56d756b2656933769e2f}
+
+
+Définition à la ligne 256 du fichier C\-Gui\-Glut.\-cpp.
+
+\hypertarget{class_c_gui_glut_a841c450eb681af1c986dd68004bbb7fe}{\index{C\-Gui\-Glut@{C\-Gui\-Glut}!Special\-Func@{Special\-Func}}
+\index{Special\-Func@{Special\-Func}!CGuiGlut@{C\-Gui\-Glut}}
+\subsubsection[{Special\-Func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Gui\-Glut\-::\-Special\-Func (
+\begin{DoxyParamCaption}
+\item[{int}]{key, }
+\item[{int}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_c_gui_glut_a841c450eb681af1c986dd68004bbb7fe}
+
+
+Définition à la ligne 208 du fichier C\-Gui\-Glut.\-cpp.
+
+
+
+\subsection{Documentation des données membres}
+\hypertarget{class_c_gui_glut_a12e31814a513a7a045f822caa350327e}{\index{C\-Gui\-Glut@{C\-Gui\-Glut}!app\-Version\-Name@{app\-Version\-Name}}
+\index{app\-Version\-Name@{app\-Version\-Name}!CGuiGlut@{C\-Gui\-Glut}}
+\subsubsection[{app\-Version\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\-::string} C\-Gui\-Glut\-::app\-Version\-Name = \char`\"{}Tetris 0.\-0.\-1\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_c_gui_glut_a12e31814a513a7a045f822caa350327e}
+
+
+Définition à la ligne 81 du fichier C\-Gui\-Glut.\-h.
+
+\hypertarget{class_c_gui_glut_a7ef01c153415d9a8b45cd1a50bf852f2}{\index{C\-Gui\-Glut@{C\-Gui\-Glut}!g\-Mouse\-Adjusting\-Camera\-Angle@{g\-Mouse\-Adjusting\-Camera\-Angle}}
+\index{g\-Mouse\-Adjusting\-Camera\-Angle@{g\-Mouse\-Adjusting\-Camera\-Angle}!CGuiGlut@{C\-Gui\-Glut}}
+\subsubsection[{g\-Mouse\-Adjusting\-Camera\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-Gui\-Glut\-::g\-Mouse\-Adjusting\-Camera\-Angle = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_c_gui_glut_a7ef01c153415d9a8b45cd1a50bf852f2}
+
+
+Définition à la ligne 82 du fichier C\-Gui\-Glut.\-h.
+
+\hypertarget{class_c_gui_glut_ae55158d240b75d6bceee346e0155de84}{\index{C\-Gui\-Glut@{C\-Gui\-Glut}!g\-Mouse\-Adjusting\-Camera\-Last\-X@{g\-Mouse\-Adjusting\-Camera\-Last\-X}}
+\index{g\-Mouse\-Adjusting\-Camera\-Last\-X@{g\-Mouse\-Adjusting\-Camera\-Last\-X}!CGuiGlut@{C\-Gui\-Glut}}
+\subsubsection[{g\-Mouse\-Adjusting\-Camera\-Last\-X}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Gui\-Glut\-::g\-Mouse\-Adjusting\-Camera\-Last\-X = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_c_gui_glut_ae55158d240b75d6bceee346e0155de84}
+
+
+Définition à la ligne 84 du fichier C\-Gui\-Glut.\-h.
+
+\hypertarget{class_c_gui_glut_a24c5393cda1ad9cb013ba13f43fc4a25}{\index{C\-Gui\-Glut@{C\-Gui\-Glut}!g\-Mouse\-Adjusting\-Camera\-Last\-Y@{g\-Mouse\-Adjusting\-Camera\-Last\-Y}}
+\index{g\-Mouse\-Adjusting\-Camera\-Last\-Y@{g\-Mouse\-Adjusting\-Camera\-Last\-Y}!CGuiGlut@{C\-Gui\-Glut}}
+\subsubsection[{g\-Mouse\-Adjusting\-Camera\-Last\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Gui\-Glut\-::g\-Mouse\-Adjusting\-Camera\-Last\-Y = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_c_gui_glut_a24c5393cda1ad9cb013ba13f43fc4a25}
+
+
+Définition à la ligne 85 du fichier C\-Gui\-Glut.\-h.
+
+\hypertarget{class_c_gui_glut_a8d68818a05092a8b55e0ba7003485e3f}{\index{C\-Gui\-Glut@{C\-Gui\-Glut}!g\-Mouse\-Adjusting\-Camera\-Radius@{g\-Mouse\-Adjusting\-Camera\-Radius}}
+\index{g\-Mouse\-Adjusting\-Camera\-Radius@{g\-Mouse\-Adjusting\-Camera\-Radius}!CGuiGlut@{C\-Gui\-Glut}}
+\subsubsection[{g\-Mouse\-Adjusting\-Camera\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-Gui\-Glut\-::g\-Mouse\-Adjusting\-Camera\-Radius = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_c_gui_glut_a8d68818a05092a8b55e0ba7003485e3f}
+
+
+Définition à la ligne 83 du fichier C\-Gui\-Glut.\-h.
+
+\hypertarget{class_c_gui_glut_af1cfef33678aad68798ac49e595dcb4a}{\index{C\-Gui\-Glut@{C\-Gui\-Glut}!m\-\_\-application@{m\-\_\-application}}
+\index{m\-\_\-application@{m\-\_\-application}!CGuiGlut@{C\-Gui\-Glut}}
+\subsubsection[{m\-\_\-application}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Application} $\ast$ C\-Gui\-Glut\-::m\-\_\-application = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_c_gui_glut_af1cfef33678aad68798ac49e595dcb4a}
+
+
+Définition à la ligne 77 du fichier C\-Gui\-Glut.\-h.
+
+\hypertarget{class_c_gui_glut_a4878717c11f5a307853512a09de37310}{\index{C\-Gui\-Glut@{C\-Gui\-Glut}!window\-I\-D@{window\-I\-D}}
+\index{window\-I\-D@{window\-I\-D}!CGuiGlut@{C\-Gui\-Glut}}
+\subsubsection[{window\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Gui\-Glut\-::window\-I\-D = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_c_gui_glut_a4878717c11f5a307853512a09de37310}
+
+
+Définition à la ligne 80 du fichier C\-Gui\-Glut.\-h.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+/home/cj/workspace/\-Tetris/src/appli\-Base/\hyperlink{_c_gui_glut_8h}{C\-Gui\-Glut.\-h}\item 
+/home/cj/workspace/\-Tetris/src/appli\-Base/\hyperlink{_c_gui_glut_8cpp}{C\-Gui\-Glut.\-cpp}\end{DoxyCompactItemize}

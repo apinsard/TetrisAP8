@@ -1,0 +1,14 @@
+digraph "/home/cj/workspace/Tetris/src" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_68267d1309a1af8e8297ef4c3efbcdba {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_68267d1309a1af8e8297ef4c3efbcdba.html"];
+    dir_68267d1309a1af8e8297ef4c3efbcdba [shape=plaintext label="src"];
+    dir_9124c449f6ad3e74f678d7ea8bacc325 [shape=box label="appliBase" color="black" fillcolor="white" style="filled" URL="dir_9124c449f6ad3e74f678d7ea8bacc325.html"];
+    dir_d42c36af4e5a44b915c5f0bba615cbce [shape=box label="glut" color="red" fillcolor="white" style="filled" URL="dir_d42c36af4e5a44b915c5f0bba615cbce.html"];
+    dir_ae9a93452e2a84339148a16bcf2eb561 [shape=box label="math" color="black" fillcolor="white" style="filled" URL="dir_ae9a93452e2a84339148a16bcf2eb561.html"];
+    dir_120ed4da3e3217b1e7fc0b4f48568e79 [shape=box label="test" color="red" fillcolor="white" style="filled" URL="dir_120ed4da3e3217b1e7fc0b4f48568e79.html"];
+    dir_33fdd4cdb1b96634eacc7402fd786645 [shape=box label="tetris" color="black" fillcolor="white" style="filled" URL="dir_33fdd4cdb1b96634eacc7402fd786645.html"];
+  }
+}

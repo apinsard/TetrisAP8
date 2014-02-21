@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_____d_r_idri2_extension_rec" kind="struct" prot="public">
+    <compoundname>__DRIdri2ExtensionRec</compoundname>
+    <includes refid="dri__interface_8h" local="no">dri_interface.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_____d_r_idri2_extension_rec_1a71675244c4518f1cd35041acd4836135" prot="public" static="no" mutable="no">
+        <type><ref refid="dri__interface_8h_1a4e0a61c8ece00d2b2c6792a9a1b55385" kindref="member">__DRIextension</ref></type>
+        <definition>__DRIextension __DRIdri2ExtensionRec::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="841" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="841" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_r_idri2_extension_rec_1a5a8c3013e807ff95b7f1b356a0ede411" prot="public" static="no" mutable="no">
+        <type><ref refid="dri__interface_8h_1a9961b01d421ee1fd6ed3c05acc9ca561" kindref="member">__DRIscreen</ref> *(*</type>
+        <definition>__DRIscreen*(* __DRIdri2ExtensionRec::createNewScreen)(int screen, int fd, const __DRIextension **extensions, const __DRIconfig ***driver_configs, void *loaderPrivate)</definition>
+        <argsstring>)(int screen, int fd, const __DRIextension **extensions, const __DRIconfig ***driver_configs, void *loaderPrivate)</argsstring>
+        <name>createNewScreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="846" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="843" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_r_idri2_extension_rec_1ad8dee7e9945357051c9fe893d34f06fe" prot="public" static="no" mutable="no">
+        <type><ref refid="dri__interface_8h_1a5bfb832a0a08208d95b3bbef439d2262" kindref="member">__DRIdrawable</ref> *(*</type>
+        <definition>__DRIdrawable*(* __DRIdri2ExtensionRec::createNewDrawable)(__DRIscreen *screen, const __DRIconfig *config, void *loaderPrivate)</definition>
+        <argsstring>)(__DRIscreen *screen, const __DRIconfig *config, void *loaderPrivate)</argsstring>
+        <name>createNewDrawable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="850" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="848" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_r_idri2_extension_rec_1a1c53d4e7d5aa4e7e757173bf52494878" prot="public" static="no" mutable="no">
+        <type><ref refid="dri__interface_8h_1a3fd295cba82b5a3d79f1ee7e12bfb908" kindref="member">__DRIcontext</ref> *(*</type>
+        <definition>__DRIcontext*(* __DRIdri2ExtensionRec::createNewContext)(__DRIscreen *screen, const __DRIconfig *config, __DRIcontext *shared, void *loaderPrivate)</definition>
+        <argsstring>)(__DRIscreen *screen, const __DRIconfig *config, __DRIcontext *shared, void *loaderPrivate)</argsstring>
+        <name>createNewContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="855" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="852" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_r_idri2_extension_rec_1a8d612e6a484c6fea44c5db910aaf79ce" prot="public" static="no" mutable="no">
+        <type>unsigned int(*</type>
+        <definition>unsigned int(* __DRIdri2ExtensionRec::getAPIMask)(__DRIscreen *screen)</definition>
+        <argsstring>)(__DRIscreen *screen)</argsstring>
+        <name>getAPIMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="858" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="858" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_r_idri2_extension_rec_1a9221266c6e877cbd5c4dc2be1eff1989" prot="public" static="no" mutable="no">
+        <type><ref refid="dri__interface_8h_1a3fd295cba82b5a3d79f1ee7e12bfb908" kindref="member">__DRIcontext</ref> *(*</type>
+        <definition>__DRIcontext*(* __DRIdri2ExtensionRec::createNewContextForAPI)(__DRIscreen *screen, int api, const __DRIconfig *config, __DRIcontext *shared, void *data)</definition>
+        <argsstring>)(__DRIscreen *screen, int api, const __DRIconfig *config, __DRIcontext *shared, void *data)</argsstring>
+        <name>createNewContextForAPI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="864" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="860" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_r_idri2_extension_rec_1ac6bb7197eae12575037f5797b0012cd9" prot="public" static="no" mutable="no">
+        <type><ref refid="dri__interface_8h_1a99ccb036a4865817ec4d06d153ba2446" kindref="member">__DRIbuffer</ref> *(*</type>
+        <definition>__DRIbuffer*(* __DRIdri2ExtensionRec::allocateBuffer)(__DRIscreen *screen, unsigned int attachment, unsigned int format, int width, int height)</definition>
+        <argsstring>)(__DRIscreen *screen, unsigned int attachment, unsigned int format, int width, int height)</argsstring>
+        <name>allocateBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="870" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="866" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_r_idri2_extension_rec_1a9650064568e324079bd79a01ea76bb2b" prot="public" static="no" mutable="no">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref>(*</type>
+        <definition>void(* __DRIdri2ExtensionRec::releaseBuffer)(__DRIscreen *screen, __DRIbuffer *buffer)</definition>
+        <argsstring>)(__DRIscreen *screen, __DRIbuffer *buffer)</argsstring>
+        <name>releaseBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="872" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="871" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_r_idri2_extension_rec_1a40cbd226d9bc5c4fcf380c751c449890" prot="public" static="no" mutable="no">
+        <type><ref refid="dri__interface_8h_1a3fd295cba82b5a3d79f1ee7e12bfb908" kindref="member">__DRIcontext</ref> *(*</type>
+        <definition>__DRIcontext*(* __DRIdri2ExtensionRec::createContextAttribs)(__DRIscreen *screen, int api, const __DRIconfig *config, __DRIcontext *shared, unsigned num_attribs, const uint32_t *attribs, unsigned *error, void *loaderPrivate)</definition>
+        <argsstring>)(__DRIscreen *screen, int api, const __DRIconfig *config, __DRIcontext *shared, unsigned num_attribs, const uint32_t *attribs, unsigned *error, void *loaderPrivate)</argsstring>
+        <name>createContextAttribs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a context for a particular API with a set of attributes</para><para><simplesect kind="since"><para>version 3</para></simplesect>
+<simplesect kind="see"><para><ref refid="struct_____d_r_iswrast_extension_rec_1a7c9ee2aa3822403e5944b0ae3222e621" kindref="member">__DRIswrastExtensionRec::createContextAttribs</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="888" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="881" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="22">
+        <label>__DRIbufferRec</label>
+        <link refid="struct_____d_r_ibuffer_rec"/>
+      </node>
+      <node id="23">
+        <label>__DRIextensionRec</label>
+        <link refid="struct_____d_r_iextension_rec"/>
+      </node>
+      <node id="21">
+        <label>__DRIdri2ExtensionRec</label>
+        <link refid="struct_____d_r_idri2_extension_rec"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>allocateBuffer</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>base</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="840" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="840" bodyend="889"/>
+    <listofallmembers>
+      <member refid="struct_____d_r_idri2_extension_rec_1ac6bb7197eae12575037f5797b0012cd9" prot="public" virt="non-virtual"><scope>__DRIdri2ExtensionRec</scope><name>allocateBuffer</name></member>
+      <member refid="struct_____d_r_idri2_extension_rec_1a71675244c4518f1cd35041acd4836135" prot="public" virt="non-virtual"><scope>__DRIdri2ExtensionRec</scope><name>base</name></member>
+      <member refid="struct_____d_r_idri2_extension_rec_1a40cbd226d9bc5c4fcf380c751c449890" prot="public" virt="non-virtual"><scope>__DRIdri2ExtensionRec</scope><name>createContextAttribs</name></member>
+      <member refid="struct_____d_r_idri2_extension_rec_1a1c53d4e7d5aa4e7e757173bf52494878" prot="public" virt="non-virtual"><scope>__DRIdri2ExtensionRec</scope><name>createNewContext</name></member>
+      <member refid="struct_____d_r_idri2_extension_rec_1a9221266c6e877cbd5c4dc2be1eff1989" prot="public" virt="non-virtual"><scope>__DRIdri2ExtensionRec</scope><name>createNewContextForAPI</name></member>
+      <member refid="struct_____d_r_idri2_extension_rec_1ad8dee7e9945357051c9fe893d34f06fe" prot="public" virt="non-virtual"><scope>__DRIdri2ExtensionRec</scope><name>createNewDrawable</name></member>
+      <member refid="struct_____d_r_idri2_extension_rec_1a5a8c3013e807ff95b7f1b356a0ede411" prot="public" virt="non-virtual"><scope>__DRIdri2ExtensionRec</scope><name>createNewScreen</name></member>
+      <member refid="struct_____d_r_idri2_extension_rec_1a8d612e6a484c6fea44c5db910aaf79ce" prot="public" virt="non-virtual"><scope>__DRIdri2ExtensionRec</scope><name>getAPIMask</name></member>
+      <member refid="struct_____d_r_idri2_extension_rec_1a9650064568e324079bd79a01ea76bb2b" prot="public" virt="non-virtual"><scope>__DRIdri2ExtensionRec</scope><name>releaseBuffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

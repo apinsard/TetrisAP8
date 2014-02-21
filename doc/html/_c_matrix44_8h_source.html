@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>Tetris:  Fichier source de /home/cj/workspace/Tetris/src/math/CMatrix44.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Les-Stages-a-l-IUT-Informatique-de-Vannes-en-2006_img_200.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Tetris
+   &#160;<span id="projectnumber">alpha</span>
+   </div>
+   <div id="projectbrief">Juan revival</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_c_matrix44_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">CMatrix44.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_c_matrix44_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//========================================================================</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Projet C/C++</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Copyright (c) 2013-2014 Equipe SEASIDE (T. LE NAOUR, J.F KAMP)</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// IRISA - UBS  / IUT Informatique Vannes</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//========================================================================</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef ___MATRIX44_H__</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ___MATRIX44_H__</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// fichier a merger avec la lib math une fois la fusion des lib faite</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_c_vector3_8h.html">CVector3.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_c_vector4_8h.html">CVector4.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// Col-major !!!!! ATTENTION: l&#39;inverse de la notation math�matique</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// J&#39;ai choisi en col-major car c&#39;est le type de matrice  que prend en entr�e OPENGL par d�faut ...</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//  | 1 2 3 |</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//  | 4 5 6 |   =&gt; 1 4 2 5 3 6</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">//  b[0] = m[0][0]      b[4] = m[1][0]      b[8]  = m[2][0]     b[12] = m[3][0]</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">//  b[1] = m[0][1]      b[5] = m[1][1]      b[9]  = m[2][1]     b[13] = m[3][1]</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//  b[2] = m[0][2]      b[6] = m[1][2]      b[10] = m[2][2]     b[14] = m[3][2]</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//  b[3] = m[0][3]      b[7] = m[1][3]      b[11] = m[2][3]     b[15] = m[3][3]</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">//  notation math�matique</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">//  a00 a01 a02 a03</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">//  a10 a11 a12 a13</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">//  a20 a21 a22 a23</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">//  a30 a31 a32 a33</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">//  notation col-major</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">//  a00 a10 a20 a30</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">//  a01 a11 a21 a31</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//  a02 a12 a22 a32</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">//  a03 a13 a23 a33</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"></span><span class="keyword">static</span> <span class="keywordtype">float</span> matrix44_ident[16] =</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; 1.0f, 0.0f, 0.0f, 0.0f,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; 0.0f, 1.0f, 0.0f, 0.0f,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; 0.0f, 0.0f, 1.0f, 0.0f,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; 0.0f, 0.0f, 0.0f, 1.0f</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="class_c_matrix44.html">   56</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_matrix44.html" title="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</a></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">union</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="class_c_matrix44.html#a0cdad394489ff192554c7f29ca5ae78a">   62</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="glext_8h.html#af593500c283bf1a787a6f947f503a5c2">m</a>[4][4];</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="class_c_matrix44.html#a5977be8ee90c365cb2e14be49f749739">   63</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="glext_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>[16];</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    };</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">//====================================================</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// CONSTRUCTORS</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//====================================================</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="class_c_matrix44.html#a55dd2245b2ee3abecae6834c07daa739">   72</a></span>&#160;<span class="comment"></span>    <a class="code" href="class_c_matrix44.html#a55dd2245b2ee3abecae6834c07daa739" title="default constructor, init matrix to identity">CMatrix44</a>()</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        memcpy(&amp;(<a class="code" href="glext_8h.html#af593500c283bf1a787a6f947f503a5c2">m</a>[0][0]), matrix44_ident, <span class="keyword">sizeof</span>(matrix44_ident));</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="class_c_matrix44.html#a55dd2245b2ee3abecae6834c07daa739" title="default constructor, init matrix to identity">CMatrix44</a>(<span class="keywordtype">float</span>* buff);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="class_c_matrix44.html#a55dd2245b2ee3abecae6834c07daa739" title="default constructor, init matrix to identity">CMatrix44</a>(<span class="keyword">const</span> <a class="code" href="class_c_vector3.html">CVector3</a>&amp; <a class="code" href="gl_8h.html#a0cdec8e97a75ee9458b23d152bf962d4">x</a>, <span class="keyword">const</span> <a class="code" href="class_c_vector3.html">CVector3</a>&amp; <a class="code" href="gl_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a>, <span class="keyword">const</span> <a class="code" href="class_c_vector3.html">CVector3</a>&amp; <a class="code" href="glext_8h.html#aee38b51639b577753f6a92029fb92000">z</a>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">//====================================================</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// METHODS</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">//====================================================</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="class_c_matrix44.html#a7d0859d97ff67c23e7767445f7f6b759" title="set translation">SetTranslation</a>(<span class="keyword">const</span> <a class="code" href="class_c_vector3.html">CVector3</a>&amp; vec);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_matrix44.html#a7d0859d97ff67c23e7767445f7f6b759" title="set translation">SetTranslation</a>(<span class="keyword">const</span> <a class="code" href="class_c_vector4.html">CVector4</a>&amp; vec);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_matrix44.html#a7fe9f37064ceb07e41f0d34f14340ba2" title="Add translation.">Translate</a>(<span class="keyword">const</span> <a class="code" href="class_c_vector3.html">CVector3</a>&amp; vec);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_matrix44.html#a7fe9f37064ceb07e41f0d34f14340ba2" title="Add translation.">Translate</a>(<span class="keyword">const</span> <a class="code" href="class_c_vector4.html">CVector4</a>&amp; vec);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="class_c_vector3.html">CVector3</a> <a class="code" href="class_c_matrix44.html#aa849d2b509dd5cc56ec6563822240c84" title="get translation">GetTranslation</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="class_c_vector3.html">CVector3</a> <a class="code" href="class_c_matrix44.html#aae42214fe24fb05be617b27caac9d66b" title="get scale">GetScale</a>();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="code" href="class_c_matrix44.html#a0b8ee58e05352544361280918f2ca235">  125</a></span>&#160;    <a class="code" href="class_c_vector3.html">CVector3</a> <a class="code" href="class_c_matrix44.html#a0b8ee58e05352544361280918f2ca235" title="get axis x,y,z">GetXAxis</a>()</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_c_vector3.html">CVector3</a>(<a class="code" href="glext_8h.html#af593500c283bf1a787a6f947f503a5c2">m</a>[0][0], <a class="code" href="glext_8h.html#af593500c283bf1a787a6f947f503a5c2">m</a>[0][1], <a class="code" href="glext_8h.html#af593500c283bf1a787a6f947f503a5c2">m</a>[0][2]);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="code" href="class_c_matrix44.html#abcb2267e652096e7d83ce98665f1de6a">  129</a></span>&#160;    <a class="code" href="class_c_vector3.html">CVector3</a> <a class="code" href="class_c_matrix44.html#abcb2267e652096e7d83ce98665f1de6a">GetYAxis</a>()</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_c_vector3.html">CVector3</a>(<a class="code" href="glext_8h.html#af593500c283bf1a787a6f947f503a5c2">m</a>[1][0], <a class="code" href="glext_8h.html#af593500c283bf1a787a6f947f503a5c2">m</a>[1][1], <a class="code" href="glext_8h.html#af593500c283bf1a787a6f947f503a5c2">m</a>[1][2]);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="code" href="class_c_matrix44.html#a8d98f62457193075af83da52c6f8d884">  133</a></span>&#160;    <a class="code" href="class_c_vector3.html">CVector3</a> <a class="code" href="class_c_matrix44.html#a8d98f62457193075af83da52c6f8d884">GetZAxis</a>()</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_c_vector3.html">CVector3</a>(<a class="code" href="glext_8h.html#af593500c283bf1a787a6f947f503a5c2">m</a>[2][0], <a class="code" href="glext_8h.html#af593500c283bf1a787a6f947f503a5c2">m</a>[2][1], <a class="code" href="glext_8h.html#af593500c283bf1a787a6f947f503a5c2">m</a>[2][2]);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keyword">const</span>   <span class="keywordtype">float</span>&amp; <a class="code" href="class_c_matrix44.html#a895ba1d9a64183cee70eedddce95c8b8" title="operator to get a value into matrix">operator()	</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="glext_8h.html#a11b277b422822f784ee248b43eee3e1e">row</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> col)  <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keywordtype">float</span>&amp; <a class="code" href="class_c_matrix44.html#a895ba1d9a64183cee70eedddce95c8b8" title="operator to get a value into matrix">operator()	</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="glext_8h.html#a11b277b422822f784ee248b43eee3e1e">row</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> col);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_matrix44.html#a8b7503251ee013f9b124bc9c7368e6c0" title="get determinant of matrix">det</a>();</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_matrix44.html#abeff331b137cedd256d6758b1cb11c4f" title="invert the matrix">invert</a>();</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_matrix44.html#adfef3f6ae63043cd713e379bc7a1cfdd" title="invert the matrix">transpose</a>();</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="code" href="class_c_matrix44.html" title="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</a> <a class="code" href="class_c_matrix44.html#a4ded0d0824852b2aff8af3a3132a31d2" title="operator to multiply current matrix with other matrix">operator*</a>( <span class="keyword">const</span> <a class="code" href="class_c_matrix44.html" title="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</a> &amp;<a class="code" href="glext_8h.html#af593500c283bf1a787a6f947f503a5c2">m</a> ) <span class="keyword">const</span> ;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <a class="code" href="class_c_vector4.html">CVector4</a> <a class="code" href="class_c_matrix44.html#a4ded0d0824852b2aff8af3a3132a31d2" title="operator to multiply current matrix with other matrix">operator*</a>( <span class="keyword">const</span> <a class="code" href="class_c_vector4.html">CVector4</a> &amp;<a class="code" href="gl_8h.html#a4568fc090febc136eed4577a600739ca">v</a> ) <span class="keyword">const</span> ;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <a class="code" href="class_c_vector3.html">CVector3</a> <a class="code" href="class_c_matrix44.html#a4ded0d0824852b2aff8af3a3132a31d2" title="operator to multiply current matrix with other matrix">operator*</a>( <span class="keyword">const</span> <a class="code" href="class_c_vector3.html">CVector3</a> &amp;<a class="code" href="gl_8h.html#a4568fc090febc136eed4577a600739ca">v</a> ) <span class="keyword">const</span> ;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_matrix44.html#a7af596a54cb4e3163915ca1b66a3d0b5" title="specifies a viewing frustum into the world coordinate system (http://www.opengl.org/sdk/docs/man/xhtm...">Perspective</a>( <span class="keywordtype">float</span> fovy, <span class="keywordtype">float</span> aspect, <span class="keywordtype">float</span> <a class="code" href="glext_8h.html#a12d99226e590bbaaf0be69169eeb4834">zNear</a>, <span class="keywordtype">float</span> <a class="code" href="glext_8h.html#a18a2583fe65967bceff8903e2769f8e2">zFar</a>);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_c_matrix44.html" title="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</a> <a class="code" href="class_c_matrix44.html#ade53879722c73f788672f122ce79384d">CreatePerspective</a>( <span class="keywordtype">float</span> fovy, <span class="keywordtype">float</span> aspect, <span class="keywordtype">float</span> <a class="code" href="glext_8h.html#a12d99226e590bbaaf0be69169eeb4834">zNear</a>, <span class="keywordtype">float</span> <a class="code" href="glext_8h.html#a18a2583fe65967bceff8903e2769f8e2">zFar</a>);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_matrix44.html#a4f3c80947a24bb83d74ad17c01bea491" title="creates a viewing matrix derived from an eye point (http://www.opengl.org/sdk/docs/man/xhtml/gluLookA...">LookAt</a>( <span class="keyword">const</span> <a class="code" href="class_c_vector3.html">CVector3</a>&amp; eye, <span class="keyword">const</span> <a class="code" href="class_c_vector3.html">CVector3</a>&amp; center, <span class="keyword">const</span> <a class="code" href="class_c_vector3.html">CVector3</a>&amp; up );</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_c_matrix44.html" title="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</a> <a class="code" href="class_c_matrix44.html#acb0ca1cac92022effb2781b5e56c532a">CreateLookAt</a>( <span class="keyword">const</span> <a class="code" href="class_c_vector3.html">CVector3</a>&amp; eye, <span class="keyword">const</span> <a class="code" href="class_c_vector3.html">CVector3</a>&amp; center, <span class="keyword">const</span> <a class="code" href="class_c_vector3.html">CVector3</a>&amp; up );</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_matrix44.html#ae378f7ef8a3a121bd598329b23f271fb" title="creates a Orthographic (http://www.opengl.org/sdk/docs/man/xhtml/glOrtho.xml)">Orthographic</a>( <span class="keywordtype">float</span> <a class="code" href="glext_8h.html#a85b8f6c07fbc1fb5d77c2ae090f21995">left</a>, <span class="keywordtype">float</span> <a class="code" href="glext_8h.html#a5ffadbbacc6b89cf6218bc43b384d3fe">right</a>, <span class="keywordtype">float</span> <a class="code" href="glext_8h.html#a95fc257e5ddf46f7db9d5e898cdf1991">bottom</a>, <span class="keywordtype">float</span> <a class="code" href="glext_8h.html#a5ab323daeacf8dfdb8f91132fecdca23">top</a>, <span class="keywordtype">float</span> nearVal, <span class="keywordtype">float</span> farVal );</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_c_matrix44.html" title="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</a> <a class="code" href="class_c_matrix44.html#a9300c08531de617b22d861687cfe0ea6">CreateOrthographic</a>( <span class="keywordtype">float</span> <a class="code" href="glext_8h.html#a85b8f6c07fbc1fb5d77c2ae090f21995">left</a>, <span class="keywordtype">float</span> <a class="code" href="glext_8h.html#a5ffadbbacc6b89cf6218bc43b384d3fe">right</a>, <span class="keywordtype">float</span> <a class="code" href="glext_8h.html#a95fc257e5ddf46f7db9d5e898cdf1991">bottom</a>, <span class="keywordtype">float</span> <a class="code" href="glext_8h.html#a5ab323daeacf8dfdb8f91132fecdca23">top</a>, <span class="keywordtype">float</span> nearVal, <span class="keywordtype">float</span> farVal );</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno"><a class="code" href="class_c_matrix44.html#ae4d2eb3a41998637b2f1bd02e3b7b0cc">  214</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_matrix44.html#ae4d2eb3a41998637b2f1bd02e3b7b0cc">operator == </a>(<span class="keyword">const</span> <a class="code" href="class_c_matrix44.html" title="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</a>&amp; <a class="code" href="gl_8h.html#a00140d6f5c548b26daf170bf16e86a6d">t</a>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordflow">for</span>(i=0;i&lt;16;i++)</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            <span class="keywordflow">if</span>(t.<a class="code" href="class_c_matrix44.html#a5977be8ee90c365cb2e14be49f749739">b</a>[i] != <a class="code" href="glext_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>[i])</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    }</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="code" href="class_c_matrix44.html#a7a652abf026c230ae3a03781070d5360">  223</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_matrix44.html#a7a652abf026c230ae3a03781070d5360">operator != </a>(<span class="keyword">const</span> <a class="code" href="class_c_matrix44.html" title="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</a>&amp; <a class="code" href="gl_8h.html#a00140d6f5c548b26daf170bf16e86a6d">t</a>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == <a class="code" href="gl_8h.html#a00140d6f5c548b26daf170bf16e86a6d">t</a>);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno"><a class="code" href="class_c_matrix44.html#a18198dedeaf35ac255b368f5c54ceed0">  228</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_c_matrix44.html" title="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</a>    <a class="code" href="class_c_matrix44.html#a18198dedeaf35ac255b368f5c54ceed0" title="identity transformation">Identity</a>    ;   </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;};</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="keyword">inline</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="code" href="_c_matrix44_8h.html#a958f13c8f77b6d4892f40aa2ee382970">  237</a></span>&#160;std::ostream&amp; <a class="code" href="_c_matrix44_8h.html#a958f13c8f77b6d4892f40aa2ee382970">operator&lt;&lt; </a>(std::ostream&amp; <a class="code" href="glext_8h.html#a10d3bc96cdfc1d478f52c13d5ffd9316">stream</a>, <span class="keyword">const</span> <a class="code" href="class_c_matrix44.html" title="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</a>&amp; mat)</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;{</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="comment">//std::string mat =</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="comment">//b[0] + &quot; &quot; + b[4] + &quot; &quot; + b[8] + &quot; &quot; + b[12] + &quot; \n&quot; +</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="comment">//b[1] + &quot; &quot; + b[5] + &quot; &quot; + b[9] + &quot; &quot; + b[13] + &quot; \n&quot; +</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="comment">//b[2] + &quot; &quot; + b[6] + &quot; &quot; + b[10] + &quot; &quot; + b[14] + &quot; \n&quot; +</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="comment">//b[3] + &quot; &quot; + b[7] + &quot; &quot; + b[11] + &quot; &quot; + b[15] + &quot; \n\n&quot; ;</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="comment">//LOG( mat );</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="comment">// FIXME CA DEVRAIT ETRE L inverse</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="comment">//stream &lt;&lt; mat.b[0] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[1] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[2] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[3] &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="comment">//stream &lt;&lt; mat.b[4] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[5] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[6] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[7] &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="comment">//stream &lt;&lt; mat.b[8] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[9] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[10] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[11] &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="comment">//stream &lt;&lt; mat.b[12] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[13] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[14] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[15] &lt;&lt; std::endl &lt;&lt; std::endl;;</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="comment">//stream &lt;&lt; mat.b[0] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[4] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[8] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[12] &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="comment">//stream &lt;&lt; mat.b[1] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[5] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[9] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[13] &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="comment">//stream &lt;&lt; mat.b[2] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[6] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[10] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[14] &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="comment">//stream &lt;&lt; mat.b[3] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[7] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[11] &lt;&lt; &quot; &quot; &lt;&lt; mat.b[15] &lt;&lt; std::endl &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    stream &lt;&lt; mat.<a class="code" href="class_c_matrix44.html#a0cdad394489ff192554c7f29ca5ae78a">m</a>[0][0] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; mat.<a class="code" href="class_c_matrix44.html#a0cdad394489ff192554c7f29ca5ae78a">m</a>[1][0] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; mat.<a class="code" href="class_c_matrix44.html#a0cdad394489ff192554c7f29ca5ae78a">m</a>[2][0] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; mat.<a class="code" href="class_c_matrix44.html#a0cdad394489ff192554c7f29ca5ae78a">m</a>[3][0] &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    stream &lt;&lt; mat.<a class="code" href="class_c_matrix44.html#a0cdad394489ff192554c7f29ca5ae78a">m</a>[0][1] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; mat.<a class="code" href="class_c_matrix44.html#a0cdad394489ff192554c7f29ca5ae78a">m</a>[1][1] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; mat.<a class="code" href="class_c_matrix44.html#a0cdad394489ff192554c7f29ca5ae78a">m</a>[2][1] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; mat.<a class="code" href="class_c_matrix44.html#a0cdad394489ff192554c7f29ca5ae78a">m</a>[3][1] &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    stream &lt;&lt; mat.<a class="code" href="class_c_matrix44.html#a0cdad394489ff192554c7f29ca5ae78a">m</a>[0][2] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; mat.<a class="code" href="class_c_matrix44.html#a0cdad394489ff192554c7f29ca5ae78a">m</a>[1][2] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; mat.<a class="code" href="class_c_matrix44.html#a0cdad394489ff192554c7f29ca5ae78a">m</a>[2][2] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; mat.<a class="code" href="class_c_matrix44.html#a0cdad394489ff192554c7f29ca5ae78a">m</a>[3][2] &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    stream &lt;&lt; mat.<a class="code" href="class_c_matrix44.html#a0cdad394489ff192554c7f29ca5ae78a">m</a>[0][3] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; mat.<a class="code" href="class_c_matrix44.html#a0cdad394489ff192554c7f29ca5ae78a">m</a>[1][3] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; mat.<a class="code" href="class_c_matrix44.html#a0cdad394489ff192554c7f29ca5ae78a">m</a>[2][3] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; mat.<a class="code" href="class_c_matrix44.html#a0cdad394489ff192554c7f29ca5ae78a">m</a>[3][3] &lt;&lt; std::endl &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="glext_8h.html#a10d3bc96cdfc1d478f52c13d5ffd9316">stream</a>;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;}</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="keyword">inline</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno"><a class="code" href="class_c_matrix44.html#a7d0859d97ff67c23e7767445f7f6b759">  265</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_c_matrix44.html#a7d0859d97ff67c23e7767445f7f6b759" title="set translation">CMatrix44::SetTranslation</a>(<span class="keyword">const</span> <a class="code" href="class_c_vector3.html">CVector3</a>&amp; vec)</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;{</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <a class="code" href="glext_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>[12] = (float)vec.<a class="code" href="class_c_vector3.html#a06b092361b335f9971323be0ddf759b1" title="Composante X.">x</a>;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <a class="code" href="glext_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>[13] = (<span class="keywordtype">float</span>)vec.<a class="code" href="class_c_vector3.html#a20d0b1099477995b22a4f1407e41a7a1" title="Composante Y.">y</a>;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <a class="code" href="glext_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>[14] = (float)vec.<a class="code" href="class_c_vector3.html#a9dd3ce85f6aaa17ccc67bfe50a089b3a" title="Composante Z.">z</a>;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;}</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keyword">inline</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno"><a class="code" href="class_c_matrix44.html#a95eed7e918c9a0acac1615cc9059908e">  272</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_c_matrix44.html#a7d0859d97ff67c23e7767445f7f6b759" title="set translation">CMatrix44::SetTranslation</a>(<span class="keyword">const</span> <a class="code" href="class_c_vector4.html">CVector4</a>&amp; vec)</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;{</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <a class="code" href="glext_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>[12] = (float)vec.<a class="code" href="class_c_vector4.html#a598c4247754f6601f7c3d47d8f050af0" title="Composante X.">x</a>;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <a class="code" href="glext_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>[13] = (<span class="keywordtype">float</span>)vec.<a class="code" href="class_c_vector4.html#aa45e3cb54bd202f878d61755ac2de91e" title="Composante Y.">y</a>;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <a class="code" href="glext_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>[14] = (float)vec.<a class="code" href="class_c_vector4.html#aca03ecfdf87d21a98c903268c29c5ed7" title="Composante Z.">z</a>;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;}</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="keyword">inline</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno"><a class="code" href="class_c_matrix44.html#a7fe9f37064ceb07e41f0d34f14340ba2">  280</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_c_matrix44.html#a7fe9f37064ceb07e41f0d34f14340ba2" title="Add translation.">CMatrix44::Translate</a>(<span class="keyword">const</span> <a class="code" href="class_c_vector3.html">CVector3</a>&amp; vec)</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;{</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <a class="code" href="glext_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>[12] += (float)vec.<a class="code" href="class_c_vector3.html#a06b092361b335f9971323be0ddf759b1" title="Composante X.">x</a>;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <a class="code" href="glext_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>[13] += (<span class="keywordtype">float</span>)vec.<a class="code" href="class_c_vector3.html#a20d0b1099477995b22a4f1407e41a7a1" title="Composante Y.">y</a>;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <a class="code" href="glext_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>[14] += (float)vec.<a class="code" href="class_c_vector3.html#a9dd3ce85f6aaa17ccc67bfe50a089b3a" title="Composante Z.">z</a>;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;}</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="keyword">inline</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno"><a class="code" href="class_c_matrix44.html#a57162e8484192db5286f7cb03bd065a6">  287</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_c_matrix44.html#a7fe9f37064ceb07e41f0d34f14340ba2" title="Add translation.">CMatrix44::Translate</a>(<span class="keyword">const</span> <a class="code" href="class_c_vector4.html">CVector4</a>&amp; vec)</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;{</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <a class="code" href="glext_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>[12] += (float)vec.<a class="code" href="class_c_vector4.html#a598c4247754f6601f7c3d47d8f050af0" title="Composante X.">x</a>;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <a class="code" href="glext_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>[13] += (<span class="keywordtype">float</span>)vec.<a class="code" href="class_c_vector4.html#aa45e3cb54bd202f878d61755ac2de91e" title="Composante Y.">y</a>;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <a class="code" href="glext_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>[14] += (float)vec.<a class="code" href="class_c_vector4.html#aca03ecfdf87d21a98c903268c29c5ed7" title="Composante Z.">z</a>;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;}</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="keyword">inline</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno"><a class="code" href="class_c_matrix44.html#aa849d2b509dd5cc56ec6563822240c84">  295</a></span>&#160;<a class="code" href="class_c_vector3.html">CVector3</a> <a class="code" href="class_c_matrix44.html#aa849d2b509dd5cc56ec6563822240c84" title="get translation">CMatrix44::GetTranslation</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_c_vector3.html">CVector3</a>(<a class="code" href="glext_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>[12],<a class="code" href="glext_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>[13],<a class="code" href="glext_8h.html#a6eba317e3cf44d6d26c04a5a8f197dcb">b</a>[14]);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;}</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="keyword">inline</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno"><a class="code" href="class_c_matrix44.html#a895ba1d9a64183cee70eedddce95c8b8">  303</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; <a class="code" href="class_c_matrix44.html#a895ba1d9a64183cee70eedddce95c8b8" title="operator to get a value into matrix">CMatrix44::operator()	</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="glext_8h.html#a11b277b422822f784ee248b43eee3e1e">row</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> col)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordflow">return</span>  <a class="code" href="glext_8h.html#af593500c283bf1a787a6f947f503a5c2">m</a>[col][<a class="code" href="glext_8h.html#a11b277b422822f784ee248b43eee3e1e">row</a>];</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;}</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="keyword">inline</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno"><a class="code" href="class_c_matrix44.html#a9c7447aea10dbe50b5d08fc14ee855ea">  309</a></span>&#160;<span class="keywordtype">float</span>&amp; <a class="code" href="class_c_matrix44.html#a895ba1d9a64183cee70eedddce95c8b8" title="operator to get a value into matrix">CMatrix44::operator()	</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="glext_8h.html#a11b277b422822f784ee248b43eee3e1e">row</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> col)</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;{</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordflow">return</span>  <a class="code" href="glext_8h.html#af593500c283bf1a787a6f947f503a5c2">m</a>[col][<a class="code" href="glext_8h.html#a11b277b422822f784ee248b43eee3e1e">row</a>];</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;}</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="preprocessor">#endif // __MATRIX44_H__</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ae9a93452e2a84339148a16bcf2eb561.html">math</a></li><li class="navelem"><a class="el" href="_c_matrix44_8h.html">CMatrix44.h</a></li>
+    <li class="footer">Généré le Vendredi Février 21 2014 22:34:25 pour Tetris par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
+  </ul>
+</div>
+</body>
+</html>

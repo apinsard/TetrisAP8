@@ -1,0 +1,553 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_c_piece_abstract_8h" kind="file">
+    <compoundname>CPieceAbstract.h</compoundname>
+    <includes refid="_common_8h" local="yes">Common.h</includes>
+    <includedby refid="test_8h" local="yes">/home/cj/workspace/Tetris/src/test/test.h</includedby>
+    <includedby refid="_c_i_piece_8h" local="yes">/home/cj/workspace/Tetris/src/tetris/CIPiece.h</includedby>
+    <includedby refid="_c_l1_piece_8h" local="yes">/home/cj/workspace/Tetris/src/tetris/CL1Piece.h</includedby>
+    <includedby refid="_c_l2_piece_8h" local="yes">/home/cj/workspace/Tetris/src/tetris/CL2Piece.h</includedby>
+    <includedby refid="_c_o_piece_8h" local="yes">/home/cj/workspace/Tetris/src/tetris/COPiece.h</includedby>
+    <includedby refid="_c_piece_abstract_8cpp" local="yes">/home/cj/workspace/Tetris/src/tetris/CPieceAbstract.cpp</includedby>
+    <includedby refid="_c_tetris_game_8h" local="yes">/home/cj/workspace/Tetris/src/tetris/CTetrisGame.h</includedby>
+    <includedby refid="_c_t_piece_8h" local="yes">/home/cj/workspace/Tetris/src/tetris/CTPiece.h</includedby>
+    <includedby refid="_c_z1_piece_8h" local="yes">/home/cj/workspace/Tetris/src/tetris/CZ1Piece.h</includedby>
+    <includedby refid="_c_z2_piece_8h" local="yes">/home/cj/workspace/Tetris/src/tetris/CZ2Piece.h</includedby>
+    <incdepgraph>
+      <node id="1523">
+        <label>/home/cj/workspace/Tetris/src/tetris/CPieceAbstract.h</label>
+        <link refid="CPieceAbstract.h"/>
+        <childnode refid="1524" relation="include">
+        </childnode>
+      </node>
+      <node id="1535">
+        <label>limits</label>
+      </node>
+      <node id="1530">
+        <label>cmath</label>
+      </node>
+      <node id="1525">
+        <label>string</label>
+      </node>
+      <node id="1536">
+        <label>CVector4.h</label>
+        <link refid="_c_vector4_8h"/>
+        <childnode refid="1535" relation="include">
+        </childnode>
+        <childnode refid="1527" relation="include">
+        </childnode>
+        <childnode refid="1534" relation="include">
+        </childnode>
+      </node>
+      <node id="1537">
+        <label>CMatrix44.h</label>
+        <link refid="_c_matrix44_8h"/>
+        <childnode refid="1534" relation="include">
+        </childnode>
+        <childnode refid="1536" relation="include">
+        </childnode>
+        <childnode refid="1531" relation="include">
+        </childnode>
+      </node>
+      <node id="1533">
+        <label>ctime</label>
+      </node>
+      <node id="1529">
+        <label>vector</label>
+      </node>
+      <node id="1526">
+        <label>sstream</label>
+      </node>
+      <node id="1534">
+        <label>CVector3.h</label>
+        <link refid="_c_vector3_8h"/>
+        <childnode refid="1535" relation="include">
+        </childnode>
+        <childnode refid="1527" relation="include">
+        </childnode>
+        <childnode refid="1530" relation="include">
+        </childnode>
+      </node>
+      <node id="1532">
+        <label>cstdlib</label>
+      </node>
+      <node id="1527">
+        <label>iostream</label>
+      </node>
+      <node id="1524">
+        <label>Common.h</label>
+        <link refid="_common_8h"/>
+        <childnode refid="1525" relation="include">
+        </childnode>
+        <childnode refid="1526" relation="include">
+        </childnode>
+        <childnode refid="1527" relation="include">
+        </childnode>
+        <childnode refid="1528" relation="include">
+        </childnode>
+        <childnode refid="1529" relation="include">
+        </childnode>
+        <childnode refid="1530" relation="include">
+        </childnode>
+        <childnode refid="1531" relation="include">
+        </childnode>
+        <childnode refid="1532" relation="include">
+        </childnode>
+        <childnode refid="1533" relation="include">
+        </childnode>
+        <childnode refid="1534" relation="include">
+        </childnode>
+        <childnode refid="1536" relation="include">
+        </childnode>
+        <childnode refid="1537" relation="include">
+        </childnode>
+      </node>
+      <node id="1528">
+        <label>algorithm</label>
+      </node>
+      <node id="1531">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1538">
+        <label>/home/cj/workspace/Tetris/src/tetris/CPieceAbstract.h</label>
+        <link refid="CPieceAbstract.h"/>
+        <childnode refid="1539" relation="include">
+        </childnode>
+        <childnode refid="1548" relation="include">
+        </childnode>
+        <childnode refid="1569" relation="include">
+        </childnode>
+        <childnode refid="1571" relation="include">
+        </childnode>
+        <childnode refid="1573" relation="include">
+        </childnode>
+        <childnode refid="1575" relation="include">
+        </childnode>
+        <childnode refid="1552" relation="include">
+        </childnode>
+        <childnode refid="1576" relation="include">
+        </childnode>
+        <childnode refid="1578" relation="include">
+        </childnode>
+        <childnode refid="1580" relation="include">
+        </childnode>
+      </node>
+      <node id="1574">
+        <label>/home/cj/workspace/Tetris/src/tetris/COPiece.cpp</label>
+        <link refid="_c_o_piece_8cpp"/>
+      </node>
+      <node id="1540">
+        <label>/home/cj/workspace/Tetris/src/test/test.cpp</label>
+        <link refid="test_8cpp"/>
+      </node>
+      <node id="1571">
+        <label>/home/cj/workspace/Tetris/src/tetris/CL2Piece.h</label>
+        <link refid="_c_l2_piece_8h"/>
+        <childnode refid="1555" relation="include">
+        </childnode>
+        <childnode refid="1543" relation="include">
+        </childnode>
+        <childnode refid="1572" relation="include">
+        </childnode>
+        <childnode refid="1552" relation="include">
+        </childnode>
+      </node>
+      <node id="1568">
+        <label>/home/cj/workspace/Tetris/src/tetris/CTetrisGame.cpp</label>
+        <link refid="_c_tetris_game_8cpp"/>
+      </node>
+      <node id="1557">
+        <label>/home/cj/workspace/Tetris/src/test/testCOPiece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_o_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="1558" relation="include">
+        </childnode>
+        <childnode refid="1544" relation="include">
+        </childnode>
+      </node>
+      <node id="1569">
+        <label>/home/cj/workspace/Tetris/src/tetris/CL1Piece.h</label>
+        <link refid="_c_l1_piece_8h"/>
+        <childnode refid="1553" relation="include">
+        </childnode>
+        <childnode refid="1542" relation="include">
+        </childnode>
+        <childnode refid="1570" relation="include">
+        </childnode>
+        <childnode refid="1552" relation="include">
+        </childnode>
+      </node>
+      <node id="1544">
+        <label>/home/cj/workspace/Tetris/src/test/testCOPiece.cpp</label>
+        <link refid="test_c_o_piece_8cpp"/>
+      </node>
+      <node id="1545">
+        <label>/home/cj/workspace/Tetris/src/test/testCTPiece.cpp</label>
+        <link refid="test_c_t_piece_8cpp"/>
+      </node>
+      <node id="1561">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ1Piece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_z1_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="1562" relation="include">
+        </childnode>
+        <childnode refid="1546" relation="include">
+        </childnode>
+      </node>
+      <node id="1576">
+        <label>/home/cj/workspace/Tetris/src/tetris/CTPiece.h</label>
+        <link refid="_c_t_piece_8h"/>
+        <childnode refid="1559" relation="include">
+        </childnode>
+        <childnode refid="1545" relation="include">
+        </childnode>
+        <childnode refid="1552" relation="include">
+        </childnode>
+        <childnode refid="1577" relation="include">
+        </childnode>
+      </node>
+      <node id="1581">
+        <label>/home/cj/workspace/Tetris/src/tetris/CZ2Piece.cpp</label>
+        <link refid="_c_z2_piece_8cpp"/>
+      </node>
+      <node id="1553">
+        <label>/home/cj/workspace/Tetris/src/test/testCL1Piece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_l1_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="1554" relation="include">
+        </childnode>
+        <childnode refid="1542" relation="include">
+        </childnode>
+      </node>
+      <node id="1577">
+        <label>/home/cj/workspace/Tetris/src/tetris/CTPiece.cpp</label>
+        <link refid="_c_t_piece_8cpp"/>
+      </node>
+      <node id="1579">
+        <label>/home/cj/workspace/Tetris/src/tetris/CZ1Piece.cpp</label>
+        <link refid="_c_z1_piece_8cpp"/>
+      </node>
+      <node id="1573">
+        <label>/home/cj/workspace/Tetris/src/tetris/COPiece.h</label>
+        <link refid="_c_o_piece_8h"/>
+        <childnode refid="1557" relation="include">
+        </childnode>
+        <childnode refid="1544" relation="include">
+        </childnode>
+        <childnode refid="1574" relation="include">
+        </childnode>
+        <childnode refid="1552" relation="include">
+        </childnode>
+      </node>
+      <node id="1551">
+        <label>/home/cj/workspace/Tetris/src/tetris/CIPiece.cpp</label>
+        <link refid="_c_i_piece_8cpp"/>
+      </node>
+      <node id="1565">
+        <label>/home/cj/workspace/Tetris/src/tetris/CProjetTetris.h</label>
+        <link refid="_c_projet_tetris_8h"/>
+        <childnode refid="1566" relation="include">
+        </childnode>
+        <childnode refid="1567" relation="include">
+        </childnode>
+      </node>
+      <node id="1548">
+        <label>/home/cj/workspace/Tetris/src/tetris/CIPiece.h</label>
+        <link refid="_c_i_piece_8h"/>
+        <childnode refid="1549" relation="include">
+        </childnode>
+        <childnode refid="1541" relation="include">
+        </childnode>
+        <childnode refid="1551" relation="include">
+        </childnode>
+        <childnode refid="1552" relation="include">
+        </childnode>
+      </node>
+      <node id="1580">
+        <label>/home/cj/workspace/Tetris/src/tetris/CZ2Piece.h</label>
+        <link refid="_c_z2_piece_8h"/>
+        <childnode refid="1563" relation="include">
+        </childnode>
+        <childnode refid="1547" relation="include">
+        </childnode>
+        <childnode refid="1552" relation="include">
+        </childnode>
+        <childnode refid="1581" relation="include">
+        </childnode>
+      </node>
+      <node id="1563">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ2Piece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_z2_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="1564" relation="include">
+        </childnode>
+        <childnode refid="1547" relation="include">
+        </childnode>
+      </node>
+      <node id="1578">
+        <label>/home/cj/workspace/Tetris/src/tetris/CZ1Piece.h</label>
+        <link refid="_c_z1_piece_8h"/>
+        <childnode refid="1561" relation="include">
+        </childnode>
+        <childnode refid="1546" relation="include">
+        </childnode>
+        <childnode refid="1552" relation="include">
+        </childnode>
+        <childnode refid="1579" relation="include">
+        </childnode>
+      </node>
+      <node id="1566">
+        <label>/home/cj/workspace/Tetris/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="1567">
+        <label>/home/cj/workspace/Tetris/src/tetris/CProjetTetris.cpp</label>
+        <link refid="_c_projet_tetris_8cpp"/>
+      </node>
+      <node id="1549">
+        <label>/home/cj/workspace/Tetris/src/test/testCIPiece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_i_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="1550" relation="include">
+        </childnode>
+        <childnode refid="1541" relation="include">
+        </childnode>
+      </node>
+      <node id="1555">
+        <label>/home/cj/workspace/Tetris/src/test/testCL2Piece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_l2_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="1556" relation="include">
+        </childnode>
+        <childnode refid="1543" relation="include">
+        </childnode>
+      </node>
+      <node id="1541">
+        <label>/home/cj/workspace/Tetris/src/test/testCIPiece.cpp</label>
+        <link refid="test_c_i_piece_8cpp"/>
+      </node>
+      <node id="1542">
+        <label>/home/cj/workspace/Tetris/src/test/testCL1Piece.cpp</label>
+        <link refid="test_c_l1_piece_8cpp"/>
+      </node>
+      <node id="1575">
+        <label>/home/cj/workspace/Tetris/src/tetris/CPieceAbstract.cpp</label>
+        <link refid="_c_piece_abstract_8cpp"/>
+      </node>
+      <node id="1546">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ1Piece.cpp</label>
+        <link refid="test_c_z1_piece_8cpp"/>
+      </node>
+      <node id="1558">
+        <label>/home/cj/workspace/Tetris/src/test/testCOPiece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_o_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="1543">
+        <label>/home/cj/workspace/Tetris/src/test/testCL2Piece.cpp</label>
+        <link refid="test_c_l2_piece_8cpp"/>
+      </node>
+      <node id="1539">
+        <label>/home/cj/workspace/Tetris/src/test/test.h</label>
+        <link refid="test_8h"/>
+        <childnode refid="1540" relation="include">
+        </childnode>
+        <childnode refid="1541" relation="include">
+        </childnode>
+        <childnode refid="1542" relation="include">
+        </childnode>
+        <childnode refid="1543" relation="include">
+        </childnode>
+        <childnode refid="1544" relation="include">
+        </childnode>
+        <childnode refid="1545" relation="include">
+        </childnode>
+        <childnode refid="1546" relation="include">
+        </childnode>
+        <childnode refid="1547" relation="include">
+        </childnode>
+      </node>
+      <node id="1552">
+        <label>/home/cj/workspace/Tetris/src/tetris/CTetrisGame.h</label>
+        <link refid="_c_tetris_game_8h"/>
+        <childnode refid="1549" relation="include">
+        </childnode>
+        <childnode refid="1553" relation="include">
+        </childnode>
+        <childnode refid="1555" relation="include">
+        </childnode>
+        <childnode refid="1557" relation="include">
+        </childnode>
+        <childnode refid="1559" relation="include">
+        </childnode>
+        <childnode refid="1561" relation="include">
+        </childnode>
+        <childnode refid="1563" relation="include">
+        </childnode>
+        <childnode refid="1565" relation="include">
+        </childnode>
+        <childnode refid="1568" relation="include">
+        </childnode>
+      </node>
+      <node id="1547">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ2Piece.cpp</label>
+        <link refid="test_c_z2_piece_8cpp"/>
+      </node>
+      <node id="1564">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ2Piece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_z2_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="1550">
+        <label>/home/cj/workspace/Tetris/src/test/testCIPiece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_i_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="1572">
+        <label>/home/cj/workspace/Tetris/src/tetris/CL2Piece.cpp</label>
+        <link refid="_c_l2_piece_8cpp"/>
+      </node>
+      <node id="1562">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ1Piece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_z1_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="1570">
+        <label>/home/cj/workspace/Tetris/src/tetris/CL1Piece.cpp</label>
+        <link refid="_c_l1_piece_8cpp"/>
+      </node>
+      <node id="1556">
+        <label>/home/cj/workspace/Tetris/src/test/testCL2Piece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_l2_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="1560">
+        <label>/home/cj/workspace/Tetris/src/test/testCTPiece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_t_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="1554">
+        <label>/home/cj/workspace/Tetris/src/test/testCL1Piece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_l1_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="1559">
+        <label>/home/cj/workspace/Tetris/src/test/testCTPiece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_t_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="1560" relation="include">
+        </childnode>
+        <childnode refid="1545" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_c_piece_abstract" prot="public">CPieceAbstract</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_c_piece_abstract_8h_1a8e72c785588cdd5c58585a3d43eafea8" prot="public" static="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>typedef vector&lt;int&gt; TPieceRow</definition>
+        <argsstring></argsstring>
+        <name>TPieceRow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/CPieceAbstract.h" line="14" bodyfile="/home/cj/workspace/Tetris/src/tetris/CPieceAbstract.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_c_piece_abstract_8h_1a6ab852d6c8c848ae9a2b5c0e82ca1fdb" prot="public" static="no">
+        <type>vector&lt; <ref refid="_c_piece_abstract_8h_1a8e72c785588cdd5c58585a3d43eafea8" kindref="member">TPieceRow</ref> &gt;</type>
+        <definition>typedef vector&lt;TPieceRow&gt; TPieceTable</definition>
+        <argsstring></argsstring>
+        <name>TPieceTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/CPieceAbstract.h" line="15" bodyfile="/home/cj/workspace/Tetris/src/tetris/CPieceAbstract.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Projet<sp/>C/C++</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2013-2014<sp/>Equipe<sp/>SEASIDE<sp/>(T.<sp/>LE<sp/>NAOUR,<sp/>J.F<sp/>KAMP)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IRISA<sp/>-<sp/>UBS<sp/><sp/>/<sp/>IUT<sp/>Informatique<sp/>Vannes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__CPIECE_ABSTRACT_H__</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__CPIECE_ABSTRACT_H__</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_common_8h" kindref="compound">Common.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="_c_piece_abstract_8h_1a8e72c785588cdd5c58585a3d43eafea8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vector&lt;int&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_c_piece_abstract_8h_1a8e72c785588cdd5c58585a3d43eafea8" kindref="member">TPieceRow</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>1<sp/>=<sp/>case<sp/>coloriée,<sp/>0<sp/>=<sp/>case<sp/>vide</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="_c_piece_abstract_8h_1a6ab852d6c8c848ae9a2b5c0e82ca1fdb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vector&lt;TPieceRow&gt;<sp/><ref refid="_c_piece_abstract_8h_1a6ab852d6c8c848ae9a2b5c0e82ca1fdb" kindref="member">TPieceTable</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//-------------------------------------------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight><highlight class="comment">//-------------------------------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_c_piece_abstract" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_c_piece_abstract" kindref="compound" tooltip="classe CPieceAbstract abstraite">CPieceAbstract</ref><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_c_piece_abstract_1ad16f516708789b9e64ae738220d4d7cd" kindref="member">~CPieceAbstract</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_piece_abstract_1a059a706ab5504a7390e63230d89dcbf5" kindref="member" tooltip="rotation de la piece vers la droite">TurnRight</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_piece_abstract_1a440affcbdf9cbae4989e9828cc1b5d6d" kindref="member" tooltip="rotation de la piece vers la gauche">TurnLeft</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>virtual<sp/>void<sp/>Turn()<sp/>=<sp/>0;<sp/>///&lt;<sp/>Non<sp/>utilisé</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_piece_abstract_8h_1a6ab852d6c8c848ae9a2b5c0e82ca1fdb" kindref="member">TPieceTable</ref>&amp;<sp/><ref refid="class_c_piece_abstract_1a4ea785d6771cde3f1bc302214259f059" kindref="member" tooltip="rotation de la piece en fonction de l&amp;#39;état courant (à redéfinir dans les classes filles)">GetTable</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_piece_abstract_1ab32c265408d3f4251e757a5b769fa5c6" kindref="member" tooltip="modifie la matrice d&amp;#39;état de la piece">SetTable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_c_piece_abstract_8h_1a6ab852d6c8c848ae9a2b5c0e82ca1fdb" kindref="member">TPieceTable</ref>&amp;<sp/><ref refid="glext_8h_1a65df8075f44f790953a8a10f65eba61f" kindref="member">table</ref>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_c_piece_abstract_1a23475b762834cd871101dd838564e0af" kindref="member" tooltip="index en abcisse de la piece dans le tetrix">GetColIndex</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_c_piece_abstract_1a8769db975fc272bcaf735c98f14fd419" kindref="member" tooltip="index en ordonnée de la piece dans le tetrix">GetRowIndex</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_piece_abstract_1a88061bcd953015f183d77b9fdcd37e88" kindref="member" tooltip="incrémentation ou décrémentation de l&amp;#39;index de ligne (ordonnée)">SetIncDecRowIndex</ref><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a9f7dd2b9d60b1323394c63267ac42ce1" kindref="member">val</ref><sp/>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_piece_abstract_1a9c39807ad0cfab6eaad33df42a3f1be8" kindref="member" tooltip="incrémentation ou décrémentation de l&amp;#39;index de colonne (abscisse)">SetIncDecColIndex</ref><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val<sp/>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_piece_abstract_1ac819011df0e42c55eee8385281873072" kindref="member" tooltip="permet de modifier l&amp;#39;index en abcisse de la piece dans le tetrix">SetColIndex</ref><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>newColIndex<sp/>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_piece_abstract_1a7403cba8c95f9d6898c37bb2b01b6616" kindref="member" tooltip="permet de modifier l&amp;#39;index en ordonnée de la piece dans le tetrix">SetRowIndex</ref><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>newRowIndex<sp/>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_c_piece_abstract_1aabf812ae9a7462f3724ad71c7bd687cf" kindref="member">GetDim</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>&amp;<sp/><ref refid="class_c_piece_abstract_1a85eb0b4bb71d4058229ff61f711803e4" kindref="member" tooltip="renvoit la couleur de la piece">GetColor</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>ostream&amp;<sp/><ref refid="class_c_piece_abstract_1af102e7f9ac8d0946c0529e108e87e839" kindref="member">operator&lt;&lt; </ref>(<sp/>ostream&amp;<sp/>flux,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_piece_abstract" kindref="compound" tooltip="classe CPieceAbstract abstraite">CPieceAbstract</ref>&amp;<sp/><ref refid="glext_8h_1aa5367c14d90f462230c2611b81b41d23" kindref="member">p</ref><sp/>);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_piece_abstract_1aa041b39e2f0d7914ff31def19062768f" kindref="member">CPieceAbstract</ref><sp/>(<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iY,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>&amp;<sp/><ref refid="glext_8h_1a3ea846f998d64f079b86052b6c4193a8" kindref="member">color</ref><sp/>);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Eventuellement<sp/>à<sp/>cause<sp/>de<sp/>l&apos;héritage<sp/>=&gt;<sp/>appel<sp/>par<sp/>la<sp/>sous-classe<sp/>du</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructeur<sp/>vide</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="class_c_piece_abstract_1aa041b39e2f0d7914ff31def19062768f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_piece_abstract_1aa041b39e2f0d7914ff31def19062768f" kindref="member">CPieceAbstract</ref>()<sp/>{;}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enumération<sp/>de<sp/>l&apos;état/posture<sp/>de<sp/>la<sp/>piece</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>dans<sp/>le<sp/>sens<sp/>horlogique</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="class_c_piece_abstract_1a26cf88535ccf18d447db48ef92ac5452" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="class_c_piece_abstract_1a26cf88535ccf18d447db48ef92ac5452" kindref="member">State</ref><sp/>{</highlight></codeline>
+<codeline lineno="129" refid="class_c_piece_abstract_1a26cf88535ccf18d447db48ef92ac5452ac7946185608ed01260c03cc170d74421" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_piece_abstract_1a26cf88535ccf18d447db48ef92ac5452ac7946185608ed01260c03cc170d74421" kindref="member">S_Top</ref>,</highlight></codeline>
+<codeline lineno="130" refid="class_c_piece_abstract_1a26cf88535ccf18d447db48ef92ac5452a02e063c865417b081e0f234dfe52a442" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_piece_abstract_1a26cf88535ccf18d447db48ef92ac5452a02e063c865417b081e0f234dfe52a442" kindref="member">S_Right</ref>,</highlight></codeline>
+<codeline lineno="131" refid="class_c_piece_abstract_1a26cf88535ccf18d447db48ef92ac5452a2709db6bc83f8f6d368c0715c55e8b7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_piece_abstract_1a26cf88535ccf18d447db48ef92ac5452a2709db6bc83f8f6d368c0715c55e8b7d" kindref="member">S_Bottom</ref>,</highlight></codeline>
+<codeline lineno="132" refid="class_c_piece_abstract_1a26cf88535ccf18d447db48ef92ac5452afd22cba46c5bd75b4bf84938919bdde7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_piece_abstract_1a26cf88535ccf18d447db48ef92ac5452afd22cba46c5bd75b4bf84938919bdde7" kindref="member">S_Left</ref></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Données<sp/>membres</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="class_c_piece_abstract_1a5b572bea63dc23e5b0dee2ecb0297d0d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_c_piece_abstract_1a5b572bea63dc23e5b0dee2ecb0297d0d" kindref="member" tooltip="dimension de la piece">m_dim</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="139" refid="class_c_piece_abstract_1add153cf74a7e17a41e867a9f4f671971" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_piece_abstract_8h_1a6ab852d6c8c848ae9a2b5c0e82ca1fdb" kindref="member">TPieceTable</ref><sp/><sp/><ref refid="class_c_piece_abstract_1add153cf74a7e17a41e867a9f4f671971" kindref="member" tooltip="matrice d&amp;#39;état de la piece">m_table</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140" refid="class_c_piece_abstract_1a8bb8a977cbaf0d5c02d3a6f20a5e9bc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_piece_abstract_1a26cf88535ccf18d447db48ef92ac5452" kindref="member">State</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_piece_abstract_1a8bb8a977cbaf0d5c02d3a6f20a5e9bc6" kindref="member" tooltip="posture de la pièce">m_state</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141" refid="class_c_piece_abstract_1ae7bd8b881cfe7906a437e45d07503db1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_piece_abstract_1ae7bd8b881cfe7906a437e45d07503db1" kindref="member" tooltip="index en abcisse de la pièce dans le tetrix">m_colIndex</ref>;<sp/></highlight></codeline>
+<codeline lineno="142" refid="class_c_piece_abstract_1a56ace921199f8d7cd7ed0b67cbf3f44b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_piece_abstract_1a56ace921199f8d7cd7ed0b67cbf3f44b" kindref="member" tooltip="index en ordonnée de la pièce dans le tetrix">m_rowIndex</ref>;<sp/></highlight></codeline>
+<codeline lineno="143" refid="class_c_piece_abstract_1a7bbd378ef0f9d55345658adf16ffc7ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_piece_abstract_1a7bbd378ef0f9d55345658adf16ffc7ed" kindref="member" tooltip="la couleur de la piece">m_color</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/cj/workspace/Tetris/src/tetris/CPieceAbstract.h"/>
+  </compounddef>
+</doxygen>

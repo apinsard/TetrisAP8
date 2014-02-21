@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['r',['r',['../gl_8h.html#abe08814c2f72843fde4d8df41440d5a0',1,'r():&#160;gl.h'],['../glext_8h.html#abe08814c2f72843fde4d8df41440d5a0',1,'r():&#160;glext.h']]],
+  ['rand',['rand',['../mainpage_8dox.html#a5ef751308c5d8fbf734a72bb790e807c',1,'mainpage.dox']]],
+  ['range',['range',['../glext_8h.html#a7b8ad0b27a927682837f95528fa454f5',1,'glext.h']]],
+  ['readoffset',['readOffset',['../glext_8h.html#a2d6559779f2cdb4d7d405c0c83c4d650',1,'glext.h']]],
+  ['ref',['ref',['../glext_8h.html#a083de4c8e32ad3d9059245f26be721de',1,'glext.h']]],
+  ['release',['Release',['../class_c_application.html#a2f12f6a6db597d7ee071f197ee06a28f',1,'CApplication']]],
+  ['releasebuffer',['releaseBuffer',['../struct_____d_r_idri2_extension_rec.html#a9650064568e324079bd79a01ea76bb2b',1,'__DRIdri2ExtensionRec']]],
+  ['releasetexbuffer',['releaseTexBuffer',['../struct_____d_r_itex_buffer_extension_rec.html#a85e0f071a5f3befdc831bfda50e7abcb',1,'__DRItexBufferExtensionRec']]],
+  ['render',['Render',['../class_c_application.html#adc82a249014512699d88e75c3df74cc3',1,'CApplication']]],
+  ['renderbuffer',['renderbuffer',['../glext_8h.html#a2de59ce19521dddd661a02a95abc2764',1,'glext.h']]],
+  ['renderbuffers',['renderbuffers',['../glext_8h.html#aa17b802a0d8dde64cb30f5d887be5a22',1,'glext.h']]],
+  ['renderbuffertarget',['renderbuffertarget',['../glext_8h.html#ad4ca76f1378b4a8be4243761c8df68e6',1,'glext.h']]],
+  ['renderersetup',['RendererSetup',['../struct_renderer_setup.html',1,'RendererSetup'],['../struct_renderer_setup.html#a4e2a5c1eeb7179db2c93d6e9665ef96c',1,'RendererSetup::RendererSetup()']]],
+  ['reportdamage',['reportDamage',['../struct_____d_r_idamage_extension_rec.html#a2ca2f6a54c06f98dbaa1681d0d0e489f',1,'__DRIdamageExtensionRec']]],
+  ['res',['res',['../glext_8h.html#a1dbb21208b9047cc8031ca9c840d3c2f',1,'glext.h']]],
+  ['reset',['reset',['../glext_8h.html#a11158672fb6a3f09183a338ecff59e41',1,'glext.h']]],
+  ['reshapefunc',['ReshapeFunc',['../class_c_gui_glut.html#a4eca507ba68303bf022cf403d8e399ed',1,'CGuiGlut']]],
+  ['residences',['residences',['../glext_8h.html#a1b73b6faf5e03196654860a3c89c8265',1,'glext.h']]],
+  ['result',['result',['../glext_8h.html#a321ff419cd5252e54cf95e64dc6687ee',1,'glext.h']]],
+  ['right',['right',['../glext_8h.html#a5ffadbbacc6b89cf6218bc43b384d3fe',1,'glext.h']]],
+  ['row',['row',['../glext_8h.html#a11b277b422822f784ee248b43eee3e1e',1,'glext.h']]],
+  ['rowbufsize',['rowBufSize',['../glext_8h.html#a649a72094f1fdb9a553000e09e80d8c9',1,'glext.h']]],
+  ['rungraphics',['RunGraphics',['../class_c_gui_glut.html#a3137ce1e74cc56d756b2656933769e2f',1,'CGuiGlut']]]
+];

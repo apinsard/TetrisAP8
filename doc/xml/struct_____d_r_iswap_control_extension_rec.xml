@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_____d_r_iswap_control_extension_rec" kind="struct" prot="public">
+    <compoundname>__DRIswapControlExtensionRec</compoundname>
+    <includes refid="dri__interface_8h" local="no">dri_interface.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_____d_r_iswap_control_extension_rec_1a63e0317da77ea34096da910ec41c8291" prot="public" static="no" mutable="no">
+        <type><ref refid="dri__interface_8h_1a4e0a61c8ece00d2b2c6792a9a1b55385" kindref="member">__DRIextension</ref></type>
+        <definition>__DRIextension __DRIswapControlExtensionRec::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="147" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_r_iswap_control_extension_rec_1a31f1e571fcbb13be8720ad03645ecaa0" prot="public" static="no" mutable="no">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref>(*</type>
+        <definition>void(* __DRIswapControlExtensionRec::setSwapInterval)(__DRIdrawable *drawable, unsigned int inteval)</definition>
+        <argsstring>)(__DRIdrawable *drawable, unsigned int inteval)</argsstring>
+        <name>setSwapInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="148" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_r_iswap_control_extension_rec_1a10c8d65ba5f6416c2f5b015d5cedd143" prot="public" static="no" mutable="no">
+        <type>unsigned int(*</type>
+        <definition>unsigned int(* __DRIswapControlExtensionRec::getSwapInterval)(__DRIdrawable *drawable)</definition>
+        <argsstring>)(__DRIdrawable *drawable)</argsstring>
+        <name>getSwapInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="149" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="51">
+        <label>__DRIswapControlExtensionRec</label>
+        <link refid="struct_____d_r_iswap_control_extension_rec"/>
+        <childnode refid="52" relation="usage">
+          <edgelabel>base</edgelabel>
+        </childnode>
+      </node>
+      <node id="52">
+        <label>__DRIextensionRec</label>
+        <link refid="struct_____d_r_iextension_rec"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="146" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="146" bodyend="150"/>
+    <listofallmembers>
+      <member refid="struct_____d_r_iswap_control_extension_rec_1a63e0317da77ea34096da910ec41c8291" prot="public" virt="non-virtual"><scope>__DRIswapControlExtensionRec</scope><name>base</name></member>
+      <member refid="struct_____d_r_iswap_control_extension_rec_1a10c8d65ba5f6416c2f5b015d5cedd143" prot="public" virt="non-virtual"><scope>__DRIswapControlExtensionRec</scope><name>getSwapInterval</name></member>
+      <member refid="struct_____d_r_iswap_control_extension_rec_1a31f1e571fcbb13be8720ad03645ecaa0" prot="public" virt="non-virtual"><scope>__DRIswapControlExtensionRec</scope><name>setSwapInterval</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

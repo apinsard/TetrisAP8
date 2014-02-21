@@ -1,0 +1,592 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="glx__mangle_8h" kind="file">
+    <compoundname>glx_mangle.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="glx__mangle_8h_1ae37815594444d2e066de10726ee66e97" prot="public" static="no">
+        <name>glXChooseVisual</name>
+        <initializer>mglXChooseVisual</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="29" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1a1c2727ca70c1c37da2deb6d1b6d616ff" prot="public" static="no">
+        <name>glXCreateContext</name>
+        <initializer>mglXCreateContext</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="30" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1af8622c2d72d25e0bbd90c21e9cec9d0f" prot="public" static="no">
+        <name>glXDestroyContext</name>
+        <initializer>mglXDestroyContext</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="31" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1ad096243cbff124274549a71f73e1ff4a" prot="public" static="no">
+        <name>glXMakeCurrent</name>
+        <initializer>mglXMakeCurrent</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="32" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1aafdbe0e8f3e6b58e3539fb4ee95ed310" prot="public" static="no">
+        <name>glXCopyContext</name>
+        <initializer>mglXCopyContext</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="33" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1af4651d9edbd302e0394dd22f466708a0" prot="public" static="no">
+        <name>glXSwapBuffers</name>
+        <initializer>mglXSwapBuffers</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="34" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1aba53727f17e5ec89dbe7de886b95c954" prot="public" static="no">
+        <name>glXCreateGLXPixmap</name>
+        <initializer>mglXCreateGLXPixmap</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="35" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1a0bc87554d5fe0843b835b31bf23ca17f" prot="public" static="no">
+        <name>glXDestroyGLXPixmap</name>
+        <initializer>mglXDestroyGLXPixmap</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="36" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1a74528d45cb17f3d3c18c68406dfc4576" prot="public" static="no">
+        <name>glXQueryExtension</name>
+        <initializer>mglXQueryExtension</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="37" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1ae1222a8ebd022f3d764216a872b90f10" prot="public" static="no">
+        <name>glXQueryVersion</name>
+        <initializer>mglXQueryVersion</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="38" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1aa97bc6e0707eae2aa2f91348bd70cebe" prot="public" static="no">
+        <name>glXIsDirect</name>
+        <initializer>mglXIsDirect</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="39" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1ad8738c9b772d4f6705765b48378a62ad" prot="public" static="no">
+        <name>glXGetConfig</name>
+        <initializer>mglXGetConfig</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="40" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1a3fb5625b7e5a484c3a84e5b0c1d29bff" prot="public" static="no">
+        <name>glXGetCurrentContext</name>
+        <initializer>mglXGetCurrentContext</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="41" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1a399eae5a9664919e2900512ff9f2d10e" prot="public" static="no">
+        <name>glXGetCurrentDrawable</name>
+        <initializer>mglXGetCurrentDrawable</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="42" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1aad423af49ed86d250afb23b872a04bd0" prot="public" static="no">
+        <name>glXWaitGL</name>
+        <initializer>mglXWaitGL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="43" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1ae814dd5977ca139831c75dd0c1f87efe" prot="public" static="no">
+        <name>glXWaitX</name>
+        <initializer>mglXWaitX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="44" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1ab87b3aca07168d320e6868dd538f0a61" prot="public" static="no">
+        <name>glXUseXFont</name>
+        <initializer>mglXUseXFont</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="45" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1ad1d6f34f49d7e11a80fd3a6fb280080f" prot="public" static="no">
+        <name>glXQueryExtensionsString</name>
+        <initializer>mglXQueryExtensionsString</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="46" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1a1a82695ce1eb01f10e3164c3b2be7ea3" prot="public" static="no">
+        <name>glXQueryServerString</name>
+        <initializer>mglXQueryServerString</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="47" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1a15056b618675fb25ea40015049810248" prot="public" static="no">
+        <name>glXGetClientString</name>
+        <initializer>mglXGetClientString</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="48" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1af8f14d809b9c7d612c58c1fc3d009de6" prot="public" static="no">
+        <name>glXCreateGLXPixmapMESA</name>
+        <initializer>mglXCreateGLXPixmapMESA</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="49" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1ae4c8589eb57011098d2ec7a9a86c0211" prot="public" static="no">
+        <name>glXReleaseBuffersMESA</name>
+        <initializer>mglXReleaseBuffersMESA</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="50" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1a676e708edc08fcfebe1af5671fd4c4e0" prot="public" static="no">
+        <name>glXCopySubBufferMESA</name>
+        <initializer>mglXCopySubBufferMESA</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="51" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1a194a598fab5e3118e50e7dbf7909f28d" prot="public" static="no">
+        <name>glXGetVideoSyncSGI</name>
+        <initializer>mglXGetVideoSyncSGI</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="52" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1a00091ad4585c8aba70c4e6acc61026b0" prot="public" static="no">
+        <name>glXWaitVideoSyncSGI</name>
+        <initializer>mglXWaitVideoSyncSGI</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="53" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1a5b202b4cfd077e706f5772cb38df9048" prot="public" static="no">
+        <name>glXGetCurrentDisplay</name>
+        <initializer>mglXGetCurrentDisplay</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="56" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1a53bea768c8f19fd587e2284c9fbd8df4" prot="public" static="no">
+        <name>glXChooseFBConfig</name>
+        <initializer>mglXChooseFBConfig</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="59" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1af2743a7cf1822e5374a1d66c381ae2c9" prot="public" static="no">
+        <name>glXGetFBConfigAttrib</name>
+        <initializer>mglXGetFBConfigAttrib</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="60" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1aaf8ac97f39b34a9c07b942afe85727e3" prot="public" static="no">
+        <name>glXGetFBConfigs</name>
+        <initializer>mglXGetFBConfigs</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="61" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1a88941f4492eacfc24b886eea8afb413f" prot="public" static="no">
+        <name>glXGetVisualFromFBConfig</name>
+        <initializer>mglXGetVisualFromFBConfig</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="62" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1af69090351b578fddce1a2938c214d40d" prot="public" static="no">
+        <name>glXCreateWindow</name>
+        <initializer>mglXCreateWindow</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="63" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1ae2406b2df908b37a3e60d940a6632723" prot="public" static="no">
+        <name>glXDestroyWindow</name>
+        <initializer>mglXDestroyWindow</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="64" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1a32c0ab25e4b3e902aee1b110f113cd86" prot="public" static="no">
+        <name>glXCreatePixmap</name>
+        <initializer>mglXCreatePixmap</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="65" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1a5d1338ca5d8841d585b208472b5eb601" prot="public" static="no">
+        <name>glXDestroyPixmap</name>
+        <initializer>mglXDestroyPixmap</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="66" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1a5797b03118c9779f1b0706e614a3e345" prot="public" static="no">
+        <name>glXCreatePbuffer</name>
+        <initializer>mglXCreatePbuffer</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="67" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1a5ede232d85000c2f59572ff29a9f1780" prot="public" static="no">
+        <name>glXDestroyPbuffer</name>
+        <initializer>mglXDestroyPbuffer</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="68" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1ac13260a5a2a9b5d0ec3cf107c2684aab" prot="public" static="no">
+        <name>glXQueryDrawable</name>
+        <initializer>mglXQueryDrawable</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="69" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1aae1648b02e83a3d02b5db6bf488f21d2" prot="public" static="no">
+        <name>glXCreateNewContext</name>
+        <initializer>mglXCreateNewContext</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="70" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1abbe37dd553fdef5210871c5d25b3233f" prot="public" static="no">
+        <name>glXMakeContextCurrent</name>
+        <initializer>mglXMakeContextCurrent</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="71" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1a0d53c59bd1a71d7312cfb4d8a67ab480" prot="public" static="no">
+        <name>glXGetCurrentReadDrawable</name>
+        <initializer>mglXGetCurrentReadDrawable</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="72" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1ac265a1c7421d748026b4e8e62a8868de" prot="public" static="no">
+        <name>glXQueryContext</name>
+        <initializer>mglXQueryContext</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="73" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1ae48a8b59c2f59eca403f596fc436d2e8" prot="public" static="no">
+        <name>glXSelectEvent</name>
+        <initializer>mglXSelectEvent</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="74" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1aefcf2e90314d8b2fd701f96aa56883a4" prot="public" static="no">
+        <name>glXGetSelectedEvent</name>
+        <initializer>mglXGetSelectedEvent</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="75" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1a2cb834cfc7a1c3991eb8cb5af047eb69" prot="public" static="no">
+        <name>glXGetProcAddress</name>
+        <initializer>mglXGetProcAddress</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="78" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="glx__mangle_8h_1a42eb159d4ca4773abdf215f31917b1a1" prot="public" static="no">
+        <name>glXGetProcAddressARB</name>
+        <initializer>mglXGetProcAddressARB</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" line="79" bodyfile="/home/cj/workspace/Tetris/src/glut/glx_mangle.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Mesa<sp/>3-D<sp/>graphics<sp/>library</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Version:<sp/><sp/>6.5</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>1999-2006<sp/><sp/>Brian<sp/>Paul<sp/><sp/><sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/><sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>BRIAN<sp/>PAUL<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GLX_MANGLE_H</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GLX_MANGLE_H</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="glx__mangle_8h_1ae37815594444d2e066de10726ee66e97" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>glXChooseVisual<sp/>mglXChooseVisual</highlight></codeline>
+<codeline lineno="30" refid="glx__mangle_8h_1a1c2727ca70c1c37da2deb6d1b6d616ff" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXCreateContext<sp/>mglXCreateContext</highlight></codeline>
+<codeline lineno="31" refid="glx__mangle_8h_1af8622c2d72d25e0bbd90c21e9cec9d0f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXDestroyContext<sp/>mglXDestroyContext</highlight></codeline>
+<codeline lineno="32" refid="glx__mangle_8h_1ad096243cbff124274549a71f73e1ff4a" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXMakeCurrent<sp/>mglXMakeCurrent</highlight></codeline>
+<codeline lineno="33" refid="glx__mangle_8h_1aafdbe0e8f3e6b58e3539fb4ee95ed310" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXCopyContext<sp/>mglXCopyContext</highlight></codeline>
+<codeline lineno="34" refid="glx__mangle_8h_1af4651d9edbd302e0394dd22f466708a0" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXSwapBuffers<sp/>mglXSwapBuffers</highlight></codeline>
+<codeline lineno="35" refid="glx__mangle_8h_1aba53727f17e5ec89dbe7de886b95c954" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXCreateGLXPixmap<sp/>mglXCreateGLXPixmap</highlight></codeline>
+<codeline lineno="36" refid="glx__mangle_8h_1a0bc87554d5fe0843b835b31bf23ca17f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXDestroyGLXPixmap<sp/>mglXDestroyGLXPixmap</highlight></codeline>
+<codeline lineno="37" refid="glx__mangle_8h_1a74528d45cb17f3d3c18c68406dfc4576" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXQueryExtension<sp/>mglXQueryExtension</highlight></codeline>
+<codeline lineno="38" refid="glx__mangle_8h_1ae1222a8ebd022f3d764216a872b90f10" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXQueryVersion<sp/>mglXQueryVersion</highlight></codeline>
+<codeline lineno="39" refid="glx__mangle_8h_1aa97bc6e0707eae2aa2f91348bd70cebe" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXIsDirect<sp/>mglXIsDirect</highlight></codeline>
+<codeline lineno="40" refid="glx__mangle_8h_1ad8738c9b772d4f6705765b48378a62ad" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXGetConfig<sp/>mglXGetConfig</highlight></codeline>
+<codeline lineno="41" refid="glx__mangle_8h_1a3fb5625b7e5a484c3a84e5b0c1d29bff" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXGetCurrentContext<sp/>mglXGetCurrentContext</highlight></codeline>
+<codeline lineno="42" refid="glx__mangle_8h_1a399eae5a9664919e2900512ff9f2d10e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXGetCurrentDrawable<sp/>mglXGetCurrentDrawable</highlight></codeline>
+<codeline lineno="43" refid="glx__mangle_8h_1aad423af49ed86d250afb23b872a04bd0" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXWaitGL<sp/>mglXWaitGL</highlight></codeline>
+<codeline lineno="44" refid="glx__mangle_8h_1ae814dd5977ca139831c75dd0c1f87efe" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXWaitX<sp/>mglXWaitX</highlight></codeline>
+<codeline lineno="45" refid="glx__mangle_8h_1ab87b3aca07168d320e6868dd538f0a61" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXUseXFont<sp/>mglXUseXFont</highlight></codeline>
+<codeline lineno="46" refid="glx__mangle_8h_1ad1d6f34f49d7e11a80fd3a6fb280080f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXQueryExtensionsString<sp/>mglXQueryExtensionsString</highlight></codeline>
+<codeline lineno="47" refid="glx__mangle_8h_1a1a82695ce1eb01f10e3164c3b2be7ea3" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXQueryServerString<sp/>mglXQueryServerString</highlight></codeline>
+<codeline lineno="48" refid="glx__mangle_8h_1a15056b618675fb25ea40015049810248" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXGetClientString<sp/>mglXGetClientString</highlight></codeline>
+<codeline lineno="49" refid="glx__mangle_8h_1af8f14d809b9c7d612c58c1fc3d009de6" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXCreateGLXPixmapMESA<sp/>mglXCreateGLXPixmapMESA</highlight></codeline>
+<codeline lineno="50" refid="glx__mangle_8h_1ae4c8589eb57011098d2ec7a9a86c0211" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXReleaseBuffersMESA<sp/>mglXReleaseBuffersMESA</highlight></codeline>
+<codeline lineno="51" refid="glx__mangle_8h_1a676e708edc08fcfebe1af5671fd4c4e0" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXCopySubBufferMESA<sp/>mglXCopySubBufferMESA</highlight></codeline>
+<codeline lineno="52" refid="glx__mangle_8h_1a194a598fab5e3118e50e7dbf7909f28d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXGetVideoSyncSGI<sp/>mglXGetVideoSyncSGI</highlight></codeline>
+<codeline lineno="53" refid="glx__mangle_8h_1a00091ad4585c8aba70c4e6acc61026b0" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXWaitVideoSyncSGI<sp/>mglXWaitVideoSyncSGI</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>GLX<sp/>1.2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="glx__mangle_8h_1a5b202b4cfd077e706f5772cb38df9048" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>glXGetCurrentDisplay<sp/>mglXGetCurrentDisplay</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>GLX<sp/>1.3<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="glx__mangle_8h_1a53bea768c8f19fd587e2284c9fbd8df4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>glXChooseFBConfig<sp/>mglXChooseFBConfig</highlight></codeline>
+<codeline lineno="60" refid="glx__mangle_8h_1af2743a7cf1822e5374a1d66c381ae2c9" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXGetFBConfigAttrib<sp/>mglXGetFBConfigAttrib</highlight></codeline>
+<codeline lineno="61" refid="glx__mangle_8h_1aaf8ac97f39b34a9c07b942afe85727e3" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXGetFBConfigs<sp/>mglXGetFBConfigs</highlight></codeline>
+<codeline lineno="62" refid="glx__mangle_8h_1a88941f4492eacfc24b886eea8afb413f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXGetVisualFromFBConfig<sp/>mglXGetVisualFromFBConfig</highlight></codeline>
+<codeline lineno="63" refid="glx__mangle_8h_1af69090351b578fddce1a2938c214d40d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXCreateWindow<sp/>mglXCreateWindow</highlight></codeline>
+<codeline lineno="64" refid="glx__mangle_8h_1ae2406b2df908b37a3e60d940a6632723" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXDestroyWindow<sp/>mglXDestroyWindow</highlight></codeline>
+<codeline lineno="65" refid="glx__mangle_8h_1a32c0ab25e4b3e902aee1b110f113cd86" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXCreatePixmap<sp/>mglXCreatePixmap</highlight></codeline>
+<codeline lineno="66" refid="glx__mangle_8h_1a5d1338ca5d8841d585b208472b5eb601" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXDestroyPixmap<sp/>mglXDestroyPixmap</highlight></codeline>
+<codeline lineno="67" refid="glx__mangle_8h_1a5797b03118c9779f1b0706e614a3e345" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXCreatePbuffer<sp/>mglXCreatePbuffer</highlight></codeline>
+<codeline lineno="68" refid="glx__mangle_8h_1a5ede232d85000c2f59572ff29a9f1780" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXDestroyPbuffer<sp/>mglXDestroyPbuffer</highlight></codeline>
+<codeline lineno="69" refid="glx__mangle_8h_1ac13260a5a2a9b5d0ec3cf107c2684aab" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXQueryDrawable<sp/>mglXQueryDrawable</highlight></codeline>
+<codeline lineno="70" refid="glx__mangle_8h_1aae1648b02e83a3d02b5db6bf488f21d2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXCreateNewContext<sp/>mglXCreateNewContext</highlight></codeline>
+<codeline lineno="71" refid="glx__mangle_8h_1abbe37dd553fdef5210871c5d25b3233f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXMakeContextCurrent<sp/>mglXMakeContextCurrent</highlight></codeline>
+<codeline lineno="72" refid="glx__mangle_8h_1a0d53c59bd1a71d7312cfb4d8a67ab480" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXGetCurrentReadDrawable<sp/>mglXGetCurrentReadDrawable</highlight></codeline>
+<codeline lineno="73" refid="glx__mangle_8h_1ac265a1c7421d748026b4e8e62a8868de" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXQueryContext<sp/>mglXQueryContext</highlight></codeline>
+<codeline lineno="74" refid="glx__mangle_8h_1ae48a8b59c2f59eca403f596fc436d2e8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXSelectEvent<sp/>mglXSelectEvent</highlight></codeline>
+<codeline lineno="75" refid="glx__mangle_8h_1aefcf2e90314d8b2fd701f96aa56883a4" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXGetSelectedEvent<sp/>mglXGetSelectedEvent</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>GLX<sp/>1.4<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="glx__mangle_8h_1a2cb834cfc7a1c3991eb8cb5af047eb69" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>glXGetProcAddress<sp/>mglXGetProcAddress</highlight></codeline>
+<codeline lineno="79" refid="glx__mangle_8h_1a42eb159d4ca4773abdf215f31917b1a1" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>glXGetProcAddressARB<sp/>mglXGetProcAddressARB</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/cj/workspace/Tetris/src/glut/glx_mangle.h"/>
+  </compounddef>
+</doxygen>

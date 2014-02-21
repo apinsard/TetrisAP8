@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_9124c449f6ad3e74f678d7ea8bacc325" kind="dir">
+    <compoundname>/home/cj/workspace/Tetris/src/appliBase</compoundname>
+    <innerfile refid="_c_application_8cpp">CApplication.cpp</innerfile>
+    <innerfile refid="_c_application_8h">CApplication.h</innerfile>
+    <innerfile refid="_c_gui_glut_8cpp">CGuiGlut.cpp</innerfile>
+    <innerfile refid="_c_gui_glut_8h">CGuiGlut.h</innerfile>
+    <innerfile refid="_common_8h">Common.h</innerfile>
+    <innerfile refid="_c_renderer_8cpp">CRenderer.cpp</innerfile>
+    <innerfile refid="_c_renderer_8h">CRenderer.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/cj/workspace/Tetris/src/appliBase/"/>
+  </compounddef>
+</doxygen>

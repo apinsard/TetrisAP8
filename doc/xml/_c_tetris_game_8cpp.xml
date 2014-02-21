@@ -1,0 +1,494 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_c_tetris_game_8cpp" kind="file">
+    <compoundname>CTetrisGame.cpp</compoundname>
+    <includes refid="_c_tetris_game_8h" local="yes">CTetrisGame.h</includes>
+    <incdepgraph>
+      <node id="1684">
+        <label>CPieceAbstract.h</label>
+        <link refid="_c_piece_abstract_8h"/>
+        <childnode refid="1685" relation="include">
+        </childnode>
+      </node>
+      <node id="1696">
+        <label>limits</label>
+      </node>
+      <node id="1703">
+        <label>CL2Piece.h</label>
+        <link refid="_c_l2_piece_8h"/>
+        <childnode refid="1684" relation="include">
+        </childnode>
+      </node>
+      <node id="1682">
+        <label>/home/cj/workspace/Tetris/src/tetris/CTetrisGame.cpp</label>
+        <link refid="CTetrisGame.cpp"/>
+        <childnode refid="1683" relation="include">
+        </childnode>
+      </node>
+      <node id="1702">
+        <label>CL1Piece.h</label>
+        <link refid="_c_l1_piece_8h"/>
+        <childnode refid="1684" relation="include">
+        </childnode>
+      </node>
+      <node id="1708">
+        <label>TetrisUtils.h</label>
+        <link refid="_tetris_utils_8h"/>
+      </node>
+      <node id="1691">
+        <label>cmath</label>
+      </node>
+      <node id="1700">
+        <label>CTPiece.h</label>
+        <link refid="_c_t_piece_8h"/>
+        <childnode refid="1684" relation="include">
+        </childnode>
+      </node>
+      <node id="1686">
+        <label>string</label>
+      </node>
+      <node id="1701">
+        <label>COPiece.h</label>
+        <link refid="_c_o_piece_8h"/>
+        <childnode refid="1684" relation="include">
+        </childnode>
+      </node>
+      <node id="1697">
+        <label>CVector4.h</label>
+        <link refid="_c_vector4_8h"/>
+        <childnode refid="1696" relation="include">
+        </childnode>
+        <childnode refid="1688" relation="include">
+        </childnode>
+        <childnode refid="1695" relation="include">
+        </childnode>
+      </node>
+      <node id="1699">
+        <label>CIPiece.h</label>
+        <link refid="_c_i_piece_8h"/>
+        <childnode refid="1684" relation="include">
+        </childnode>
+      </node>
+      <node id="1705">
+        <label>CZ2Piece.h</label>
+        <link refid="_c_z2_piece_8h"/>
+        <childnode refid="1684" relation="include">
+        </childnode>
+      </node>
+      <node id="1698">
+        <label>CMatrix44.h</label>
+        <link refid="_c_matrix44_8h"/>
+        <childnode refid="1695" relation="include">
+        </childnode>
+        <childnode refid="1697" relation="include">
+        </childnode>
+        <childnode refid="1692" relation="include">
+        </childnode>
+      </node>
+      <node id="1704">
+        <label>CZ1Piece.h</label>
+        <link refid="_c_z1_piece_8h"/>
+        <childnode refid="1684" relation="include">
+        </childnode>
+      </node>
+      <node id="1694">
+        <label>ctime</label>
+      </node>
+      <node id="1706">
+        <label>CTGameTable.h</label>
+        <link refid="_c_t_game_table_8h"/>
+        <childnode refid="1685" relation="include">
+        </childnode>
+      </node>
+      <node id="1690">
+        <label>vector</label>
+      </node>
+      <node id="1687">
+        <label>sstream</label>
+      </node>
+      <node id="1707">
+        <label>CRandomizer.h</label>
+        <link refid="_c_randomizer_8h"/>
+        <childnode refid="1690" relation="include">
+        </childnode>
+      </node>
+      <node id="1695">
+        <label>CVector3.h</label>
+        <link refid="_c_vector3_8h"/>
+        <childnode refid="1696" relation="include">
+        </childnode>
+        <childnode refid="1688" relation="include">
+        </childnode>
+        <childnode refid="1691" relation="include">
+        </childnode>
+      </node>
+      <node id="1693">
+        <label>cstdlib</label>
+      </node>
+      <node id="1688">
+        <label>iostream</label>
+      </node>
+      <node id="1685">
+        <label>Common.h</label>
+        <link refid="_common_8h"/>
+        <childnode refid="1686" relation="include">
+        </childnode>
+        <childnode refid="1687" relation="include">
+        </childnode>
+        <childnode refid="1688" relation="include">
+        </childnode>
+        <childnode refid="1689" relation="include">
+        </childnode>
+        <childnode refid="1690" relation="include">
+        </childnode>
+        <childnode refid="1691" relation="include">
+        </childnode>
+        <childnode refid="1692" relation="include">
+        </childnode>
+        <childnode refid="1693" relation="include">
+        </childnode>
+        <childnode refid="1694" relation="include">
+        </childnode>
+        <childnode refid="1695" relation="include">
+        </childnode>
+        <childnode refid="1697" relation="include">
+        </childnode>
+        <childnode refid="1698" relation="include">
+        </childnode>
+      </node>
+      <node id="1683">
+        <label>CTetrisGame.h</label>
+        <link refid="_c_tetris_game_8h"/>
+        <childnode refid="1684" relation="include">
+        </childnode>
+        <childnode refid="1699" relation="include">
+        </childnode>
+        <childnode refid="1700" relation="include">
+        </childnode>
+        <childnode refid="1701" relation="include">
+        </childnode>
+        <childnode refid="1702" relation="include">
+        </childnode>
+        <childnode refid="1703" relation="include">
+        </childnode>
+        <childnode refid="1704" relation="include">
+        </childnode>
+        <childnode refid="1705" relation="include">
+        </childnode>
+        <childnode refid="1706" relation="include">
+        </childnode>
+        <childnode refid="1707" relation="include">
+        </childnode>
+        <childnode refid="1708" relation="include">
+        </childnode>
+      </node>
+      <node id="1689">
+        <label>algorithm</label>
+      </node>
+      <node id="1692">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Projet<sp/>C/C++</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2013-2014<sp/>Equipe<sp/>SEASIDE<sp/>(T.<sp/>LE<sp/>NAOUR,<sp/>J.F<sp/>KAMP)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IRISA<sp/>-<sp/>UBS<sp/><sp/>/<sp/>IUT<sp/>Informatique<sp/>Vannes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_tetris_game_8h" kindref="compound">CTetrisGame.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/****************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_c_tetris_game_1a349807d252d13104379650f9642d597a" refkind="member"><highlight class="normal"><ref refid="class_c_tetris_game_1ac4ffeac09f4218644d39fbf54dfc57b9" kindref="member" tooltip="constructeur par dÈfaut de la piece">CTetrisGame::CTetrisGame</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gamePosX,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gamePosY,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>boardWidth,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>boardHeight,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dimCase)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/>m_board<sp/>=<sp/><ref refid="class_c_t_game_table" kindref="compound">CTGameTable</ref>(boardWidth,<sp/>boardHeight);<sp/><sp/></highlight><highlight class="comment">//appel<sp/>de<sp/>CTGameTable(int<sp/>width,<sp/>int<sp/>height)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/>m_xPos<sp/><sp/><sp/><sp/><sp/>=<sp/>gamePosX;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>m_yPos<sp/><sp/><sp/><sp/><sp/>=<sp/>gamePosY;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>m_caseDim<sp/><sp/>=<sp/>dimCase;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>m_score<sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>m_pPiece<sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>m_gameOver<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/****************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_c_tetris_game_1a4493ebe53948ec8a60cf8e81c3d8cebc" refkind="member"><highlight class="normal"><ref refid="class_c_tetris_game_1a4493ebe53948ec8a60cf8e81c3d8cebc" kindref="member" tooltip="destructeur de CTetrisGame">CTetrisGame::~CTetrisGame</ref>(){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(m_pPiece)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>m_pPiece;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/****************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CTetrisGame::AddPiece()<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>srand(time(NULL));</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>red<sp/><sp/><sp/>=<sp/>(<ref refid="mainpage_8dox_1a5ef751308c5d8fbf734a72bb790e807c" kindref="member">rand</ref>()%256)/255.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a352356e93752ca9cb4ebf1bc7f523ace" kindref="member">green</ref><sp/>=<sp/>(<ref refid="mainpage_8dox_1a5ef751308c5d8fbf734a72bb790e807c" kindref="member">rand</ref>()%256)/255.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1ac110d82faadbc5c8d20a94ee4f756059" kindref="member">blue</ref><sp/><sp/>=<sp/>(<ref refid="mainpage_8dox_1a5ef751308c5d8fbf734a72bb790e807c" kindref="member">rand</ref>()%256)/255.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref><sp/><ref refid="glext_8h_1a3ea846f998d64f079b86052b6c4193a8" kindref="member">color</ref><sp/>=<sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>(red,<sp/>green,<sp/>blue);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posX<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posY<sp/>=<sp/>19;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="mainpage_8dox_1a5ef751308c5d8fbf734a72bb790e807c" kindref="member">rand</ref>()<sp/>%<sp/>7)<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_pPiece<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_t_piece" kindref="compound">CTPiece</ref>(posX,<sp/>posY,<sp/>color);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_pPiece<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_i_piece" kindref="compound">CIPiece</ref>(posX,<sp/>posY,<sp/>color);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_pPiece<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_o_piece" kindref="compound">COPiece</ref>(posX,<sp/>posY,<sp/>color);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_pPiece<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_z1_piece" kindref="compound">CZ1Piece</ref>(posX,<sp/>posY,<sp/>color);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>4:</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_pPiece<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_z2_piece" kindref="compound">CZ2Piece</ref>(posX,<sp/>posY,<sp/>color);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>5:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_pPiece<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_l1_piece" kindref="compound">CL1Piece</ref>(posX,<sp/>posY,<sp/>color);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>6:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_pPiece<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_c_l2_piece" kindref="compound">CL2Piece</ref>(posX,<sp/>posY,<sp/>color);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CTetrisGame::GetFullRow()<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i<sp/>&lt;<sp/>m_board.<ref refid="class_c_t_game_table_1a1ae234b52213c9ffad0dc129a5279719" kindref="member">GetGameTable</ref>().size();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isFull<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;<sp/>j<sp/>&lt;<sp/>m_board.<ref refid="class_c_t_game_table_1a1ae234b52213c9ffad0dc129a5279719" kindref="member">GetGameTable</ref>()[i].size();<sp/>j++)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!m_board.<ref refid="class_c_t_game_table_1a1ae234b52213c9ffad0dc129a5279719" kindref="member">GetGameTable</ref>()[i][j].m_used)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isFull<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isFull)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CTetrisGame::DeleteRow(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rowIndex)<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>vector&lt;TGameRow&gt;<sp/>&amp;gameTable<sp/>=<sp/>this-&gt;m_board.<ref refid="class_c_t_game_table_1a1ae234b52213c9ffad0dc129a5279719" kindref="member">GetGameTable</ref>();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>&lt;=<sp/>rowIndex<sp/>&amp;&amp;<sp/>rowIndex<sp/>&lt;<sp/>gameTable.size())<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>descend<sp/>toutes<sp/>les<sp/>lignes<sp/>au<sp/>dessus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=rowIndex;<sp/>i+1<sp/>&lt;<sp/>gameTable.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>gameTable[i]<sp/>=<sp/>gameTable[i+1];</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Et<sp/>on<sp/>vide<sp/>la<sp/>ligne<sp/>du<sp/>haut</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;gameTable[gameTable.size()-1].size();<sp/>i++)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>gameTable[gameTable.size()-1][i].m_used<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>m_score<sp/>+=<sp/>42;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CTetrisGame::IsGameOver()<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>topIndex<sp/>=</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a8769db975fc272bcaf735c98f14fd419" kindref="member" tooltip="index en ordonnÈe de la piece dans le tetrix">GetRowIndex</ref>()+this-&gt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1aabf812ae9a7462f3724ad71c7bd687cf" kindref="member">GetDim</ref>()-1;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>m_gameOver<sp/>=<sp/>(topIndex<sp/>&gt;=<sp/>this-&gt;m_board.<ref refid="class_c_t_game_table_1a1ae234b52213c9ffad0dc129a5279719" kindref="member">GetGameTable</ref>().size());</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_gameOver;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="class_c_tetris_game_1a39c3fb5b3b114f99d9a20248c0bddc07" refkind="member"><highlight class="normal"><ref refid="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435df" kindref="member" tooltip="Etat du jeu aprËs une action (update, modification de position ou orientation piece)">ActionResult</ref><sp/><ref refid="class_c_tetris_game_1a39c3fb5b3b114f99d9a20248c0bddc07" kindref="member" tooltip="modifie la position et l&amp;#39;orientation de la piece courante">CTetrisGame::MovePiece</ref>(<ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8" kindref="member" tooltip="Actions possibles par l&amp;#39;utilisateur.">PieceAction</ref><sp/>action)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(m_gameOver)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435dfaba20083622789a2ed8fe08664e5605c1" kindref="member">AR_Ok</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(action)<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8a84380f7c056a1d381a3b1889a48109d9" kindref="member">PA_RotateRight</ref>:</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a059a706ab5504a7390e63230d89dcbf5" kindref="member" tooltip="rotation de la piece vers la droite">TurnRight</ref>();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8a27ec28fc72ef8c4d4c17654dd902ff69" kindref="member">PA_RotateLeft</ref>:</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a440affcbdf9cbae4989e9828cc1b5d6d" kindref="member" tooltip="rotation de la piece vers la gauche">TurnLeft</ref>();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8adcec83af27ecc2ef0102fc7f50259e2c" kindref="member">PA_MoveRight</ref>:</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a9c39807ad0cfab6eaad33df42a3f1be8" kindref="member" tooltip="incrÈmentation ou dÈcrÈmentation de l&amp;#39;index de colonne (abscisse)">SetIncDecColIndex</ref>(1);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8a5e5493ef9fa9bf628f739f0c6b4f8d71" kindref="member">PA_MoveLeft</ref>:</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a9c39807ad0cfab6eaad33df42a3f1be8" kindref="member" tooltip="incrÈmentation ou dÈcrÈmentation de l&amp;#39;index de colonne (abscisse)">SetIncDecColIndex</ref>(-1);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8aa1205ee48206a302e6bfe972ce68927f" kindref="member">PA_MoveBottom2</ref>:</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="class_c_tetris_game_1a39c3fb5b3b114f99d9a20248c0bddc07" kindref="member" tooltip="modifie la position et l&amp;#39;orientation de la piece courante">MovePiece</ref>(<ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8adf2e2d247e618ea931d6e4ad7bed7464" kindref="member">PA_MoveBottom</ref>)<sp/>==<sp/><ref refid="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435dfaba20083622789a2ed8fe08664e5605c1" kindref="member">AR_Ok</ref>);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_c_tetris_game_1a39c3fb5b3b114f99d9a20248c0bddc07" kindref="member" tooltip="modifie la position et l&amp;#39;orientation de la piece courante">MovePiece</ref>(<ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8adf2e2d247e618ea931d6e4ad7bed7464" kindref="member">PA_MoveBottom</ref>);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8adf2e2d247e618ea931d6e4ad7bed7464" kindref="member">PA_MoveBottom</ref>:</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a88061bcd953015f183d77b9fdcd37e88" kindref="member" tooltip="incrÈmentation ou dÈcrÈmentation de l&amp;#39;index de ligne (ordonnÈe)">SetIncDecRowIndex</ref>(-1);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>this-&gt;CheckBorderCollision();</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;CheckCollision())<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(action)<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8a84380f7c056a1d381a3b1889a48109d9" kindref="member">PA_RotateRight</ref>:</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a440affcbdf9cbae4989e9828cc1b5d6d" kindref="member" tooltip="rotation de la piece vers la gauche">TurnLeft</ref>();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8a27ec28fc72ef8c4d4c17654dd902ff69" kindref="member">PA_RotateLeft</ref>:</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a059a706ab5504a7390e63230d89dcbf5" kindref="member" tooltip="rotation de la piece vers la droite">TurnRight</ref>();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8adcec83af27ecc2ef0102fc7f50259e2c" kindref="member">PA_MoveRight</ref>:</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a9c39807ad0cfab6eaad33df42a3f1be8" kindref="member" tooltip="incrÈmentation ou dÈcrÈmentation de l&amp;#39;index de colonne (abscisse)">SetIncDecColIndex</ref>(-1);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8a5e5493ef9fa9bf628f739f0c6b4f8d71" kindref="member">PA_MoveLeft</ref>:</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a9c39807ad0cfab6eaad33df42a3f1be8" kindref="member" tooltip="incrÈmentation ou dÈcrÈmentation de l&amp;#39;index de colonne (abscisse)">SetIncDecColIndex</ref>(1);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8adf2e2d247e618ea931d6e4ad7bed7464" kindref="member">PA_MoveBottom</ref>:</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a88061bcd953015f183d77b9fdcd37e88" kindref="member" tooltip="incrÈmentation ou dÈcrÈmentation de l&amp;#39;index de ligne (ordonnÈe)">SetIncDecRowIndex</ref>(1);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;IsGameOver())<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435dfaa4933e0dea9d95e26410e76c1d9f7456" kindref="member">AR_GameOver</ref>;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435dfa1f42fecf7c4f8a62b84008002163f1a4" kindref="member">AR_Collision</ref>;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435dfaba20083622789a2ed8fe08664e5605c1" kindref="member">AR_Ok</ref>;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="class_c_tetris_game_1a865fe41b3de2f99a1675cf8f799823bb" refkind="member"><highlight class="normal"><ref refid="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435df" kindref="member" tooltip="Etat du jeu aprËs une action (update, modification de position ou orientation piece)">ActionResult</ref><sp/><ref refid="class_c_tetris_game_1a865fe41b3de2f99a1675cf8f799823bb" kindref="member" tooltip="met ‡ jour le tetris en fonction du temps passÈ (le nombre de fois que la boucle de rendu est appelÈe) la m...">CTetrisGame::Update</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>step)<sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(step<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435dfaba20083622789a2ed8fe08664e5605c1" kindref="member">AR_Ok</ref>;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(m_gameOver)</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435dfaa4933e0dea9d95e26410e76c1d9f7456" kindref="member">AR_GameOver</ref>;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!this-&gt;m_pPiece)<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;AddPiece();</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435dfaba20083622789a2ed8fe08664e5605c1" kindref="member">AR_Ok</ref>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><ref refid="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435df" kindref="member" tooltip="Etat du jeu aprËs une action (update, modification de position ou orientation piece)">ActionResult</ref><sp/>ar<sp/>=<sp/>this-&gt;<ref refid="class_c_tetris_game_1a39c3fb5b3b114f99d9a20248c0bddc07" kindref="member" tooltip="modifie la position et l&amp;#39;orientation de la piece courante">MovePiece</ref>(<ref refid="_tetris_utils_8h_1a85e4ec079d684f89238ec06b40d024a8adf2e2d247e618ea931d6e4ad7bed7464" kindref="member">PA_MoveBottom</ref>);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ar<sp/>==<sp/><ref refid="_tetris_utils_8h_1aee2205359d0b7e255e34eef4d76435dfa1f42fecf7c4f8a62b84008002163f1a4" kindref="member">AR_Collision</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;InsertPiece();</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(this-&gt;GetFullRow()<sp/>!=<sp/>-1<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;DeleteRow(this-&gt;GetFullRow());</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;AddPiece();</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ar;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CTetrisGame::InsertPiece()<sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;this-&gt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1aabf812ae9a7462f3724ad71c7bd687cf" kindref="member">GetDim</ref>();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;<sp/>j&lt;this-&gt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1aabf812ae9a7462f3724ad71c7bd687cf" kindref="member">GetDim</ref>();<sp/>j++)<sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a4ea785d6771cde3f1bc302214259f059" kindref="member" tooltip="rotation de la piece en fonction de l&amp;#39;Ètat courant (‡ redÈfinir dans les classes filles)">GetTable</ref>()[i][j]<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_case" kindref="compound">Case</ref><sp/>pieceCase<sp/><sp/><sp/><sp/>=<sp/><ref refid="struct_case" kindref="compound">Case</ref>();</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pieceCase.<ref refid="struct_case_1ab36a7bb1d1f4da76aedde0cd2db71f88" kindref="member">m_used</ref><sp/><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pieceCase.<ref refid="struct_case_1a2edf0eece87b9b67e7cd6b97e1f63622" kindref="member">m_color</ref><sp/>=<sp/>this-&gt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a85eb0b4bb71d4058229ff61f711803e4" kindref="member" tooltip="renvoit la couleur de la piece">GetColor</ref>();</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;m_board.<ref refid="class_c_t_game_table_1a93e226e7dfc8ea98582bcbc861504d85" kindref="member">setCase</ref>(this-&gt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a8769db975fc272bcaf735c98f14fd419" kindref="member" tooltip="index en ordonnÈe de la piece dans le tetrix">GetRowIndex</ref>()+i,<sp/>this-&gt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a23475b762834cd871101dd838564e0af" kindref="member" tooltip="index en abcisse de la piece dans le tetrix">GetColIndex</ref>()+j,<sp/>pieceCase);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>this-&gt;m_pPiece;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/>this-&gt;m_pPiece<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CTetrisGame::CheckBorderCollision()<sp/>{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>leftIndex<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col=0;<sp/>col&lt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1aabf812ae9a7462f3724ad71c7bd687cf" kindref="member">GetDim</ref>();<sp/>col++)<sp/>{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>=0;<sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>&lt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1aabf812ae9a7462f3724ad71c7bd687cf" kindref="member">GetDim</ref>();<sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a4ea785d6771cde3f1bc302214259f059" kindref="member" tooltip="rotation de la piece en fonction de l&amp;#39;Ètat courant (‡ redÈfinir dans les classes filles)">GetTable</ref>()[<ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>][col]<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>L&apos;index<sp/>est<sp/>la<sp/>colonne<sp/>la<sp/>plus<sp/>√†<sp/>gauche<sp/>comportant<sp/>au<sp/>moins<sp/>un<sp/>1.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leftIndex<sp/>=<sp/>col;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Et<sp/>on<sp/>quitte<sp/>les<sp/>boucles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>col<sp/>=<sp/>m_pPiece-&gt;<ref refid="class_c_piece_abstract_1aabf812ae9a7462f3724ad71c7bd687cf" kindref="member">GetDim</ref>();</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/>leftIndex<sp/>+=<sp/>m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a23475b762834cd871101dd838564e0af" kindref="member" tooltip="index en abcisse de la piece dans le tetrix">GetColIndex</ref>();</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(leftIndex<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>D√©bordement<sp/>par<sp/>la<sp/>gauche</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a9c39807ad0cfab6eaad33df42a3f1be8" kindref="member" tooltip="incrÈmentation ou dÈcrÈmentation de l&amp;#39;index de colonne (abscisse)">SetIncDecColIndex</ref>(-1*leftIndex);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a30a197eaed803ac3cd1b444d4c972354" kindref="member">width</ref><sp/>=<sp/>this-&gt;m_board.<ref refid="class_c_t_game_table_1a1ae234b52213c9ffad0dc129a5279719" kindref="member">GetGameTable</ref>()[0].size();</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rightIndex<sp/>=<sp/>this-&gt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1aabf812ae9a7462f3724ad71c7bd687cf" kindref="member">GetDim</ref>()<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col=m_pPiece-&gt;<ref refid="class_c_piece_abstract_1aabf812ae9a7462f3724ad71c7bd687cf" kindref="member">GetDim</ref>();<sp/>col&gt;0;<sp/>col--)<sp/>{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>=0;<sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>&lt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1aabf812ae9a7462f3724ad71c7bd687cf" kindref="member">GetDim</ref>();<sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a4ea785d6771cde3f1bc302214259f059" kindref="member" tooltip="rotation de la piece en fonction de l&amp;#39;Ètat courant (‡ redÈfinir dans les classes filles)">GetTable</ref>()[<ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>][col-1]<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>L&apos;index<sp/>est<sp/>la<sp/>colonne<sp/>la<sp/>plus<sp/>√†<sp/>droite<sp/>comportant<sp/>au<sp/>moins<sp/>un<sp/>1.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rightIndex<sp/>=<sp/>col-1;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Et<sp/>on<sp/>quitte<sp/>les<sp/>boucles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>col<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/>rightIndex<sp/>+=<sp/>m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a23475b762834cd871101dd838564e0af" kindref="member" tooltip="index en abcisse de la piece dans le tetrix">GetColIndex</ref>();</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rightIndex<sp/>&gt;=<sp/>width)<sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>D√©bordement<sp/>par<sp/>la<sp/>droite</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a9c39807ad0cfab6eaad33df42a3f1be8" kindref="member" tooltip="incrÈmentation ou dÈcrÈmentation de l&amp;#39;index de colonne (abscisse)">SetIncDecColIndex</ref>(width-rightIndex-1);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CTetrisGame::CheckCollision()<sp/>{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>v√©rifie<sp/>la<sp/>collision<sp/>avec<sp/>le<sp/>bord<sp/>inf√©rieur</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bottomIndex<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>=0;<sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>&lt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1aabf812ae9a7462f3724ad71c7bd687cf" kindref="member">GetDim</ref>();<sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col=0;<sp/>col&lt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1aabf812ae9a7462f3724ad71c7bd687cf" kindref="member">GetDim</ref>();<sp/>col++)<sp/>{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a4ea785d6771cde3f1bc302214259f059" kindref="member" tooltip="rotation de la piece en fonction de l&amp;#39;Ètat courant (‡ redÈfinir dans les classes filles)">GetTable</ref>()[<ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>][col]<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>L&apos;index<sp/>est<sp/>la<sp/>ligne<sp/>la<sp/>plus<sp/>basse<sp/>comportant<sp/>au<sp/>moins<sp/>un<sp/>1.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bottomIndex<sp/>=<sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Et<sp/>on<sp/>quitte<sp/>les<sp/>boucles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref><sp/>=<sp/>m_pPiece-&gt;<ref refid="class_c_piece_abstract_1aabf812ae9a7462f3724ad71c7bd687cf" kindref="member">GetDim</ref>();</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/>bottomIndex<sp/>+=<sp/>m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a8769db975fc272bcaf735c98f14fd419" kindref="member" tooltip="index en ordonnÈe de la piece dans le tetrix">GetRowIndex</ref>();</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bottomIndex<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>La<sp/>pi√®ce<sp/>a<sp/>atteint<sp/>le<sp/>bord<sp/>inf√©rieur</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>v√©rifie<sp/>la<sp/>collision<sp/>avec<sp/>les<sp/>autres<sp/>pi√®ces.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1aabf812ae9a7462f3724ad71c7bd687cf" kindref="member">GetDim</ref>();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;<sp/>j&lt;m_pPiece-&gt;<ref refid="class_c_piece_abstract_1aabf812ae9a7462f3724ad71c7bd687cf" kindref="member">GetDim</ref>();<sp/>j++)<sp/>{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a4ea785d6771cde3f1bc302214259f059" kindref="member" tooltip="rotation de la piece en fonction de l&amp;#39;Ètat courant (‡ redÈfinir dans les classes filles)">GetTable</ref>()[i][j]<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a0cdec8e97a75ee9458b23d152bf962d4" kindref="member">x</ref><sp/>=<sp/>m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a23475b762834cd871101dd838564e0af" kindref="member" tooltip="index en abcisse de la piece dans le tetrix">GetColIndex</ref>()+j;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a74d80fd479c0f6d0153c709949a089ef" kindref="member">y</ref><sp/>=<sp/>m_pPiece-&gt;<ref refid="class_c_piece_abstract_1a8769db975fc272bcaf735c98f14fd419" kindref="member" tooltip="index en ordonnÈe de la piece dans le tetrix">GetRowIndex</ref>()+i;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(y<sp/>&lt;<sp/>m_board.<ref refid="class_c_t_game_table_1a1ae234b52213c9ffad0dc129a5279719" kindref="member">GetGameTable</ref>().size()</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>x<sp/>&lt;<sp/>m_board.<ref refid="class_c_t_game_table_1a1ae234b52213c9ffad0dc129a5279719" kindref="member">GetGameTable</ref>()[0].size()</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>m_board.<ref refid="class_c_t_game_table_1a1ae234b52213c9ffad0dc129a5279719" kindref="member">GetGameTable</ref>()[<ref refid="gl_8h_1a74d80fd479c0f6d0153c709949a089ef" kindref="member">y</ref>][<ref refid="gl_8h_1a0cdec8e97a75ee9458b23d152bf962d4" kindref="member">x</ref>].m_used)</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="comment">/****************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288" refid="class_c_tetris_game_1a2349ec74b3f03c09a3e58603a965526d" refkind="member"><highlight class="normal"><ref refid="class_c_t_game_table" kindref="compound">CTGameTable</ref>&amp;<sp/><sp/><sp/><sp/><ref refid="class_c_tetris_game_1a2349ec74b3f03c09a3e58603a965526d" kindref="member" tooltip="renvoit le tableau du jeu avec les cases occupÈes et leur couleur">CTetrisGame::GetBoard</ref>()<sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_board;<sp/>}</highlight></codeline>
+<codeline lineno="289" refid="class_c_tetris_game_1a4778a2c417381872d053a036eaed1c67" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_tetris_game_1a4778a2c417381872d053a036eaed1c67" kindref="member" tooltip="renvoit position du jeu dans la fenËtre openGL">CTetrisGame::GetXPos</ref>()<sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_xPos;<sp/>}</highlight></codeline>
+<codeline lineno="290" refid="class_c_tetris_game_1ad51b2248159ecb93c3d677a9fd09e984" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_tetris_game_1ad51b2248159ecb93c3d677a9fd09e984" kindref="member" tooltip="renvoit position du jeu dans la fenËtre openGL">CTetrisGame::GetYPos</ref>()<sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_yPos;<sp/>}</highlight></codeline>
+<codeline lineno="291" refid="class_c_tetris_game_1a8cd74a8fffb5355326915564cd82425e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_tetris_game_1a8cd74a8fffb5355326915564cd82425e" kindref="member" tooltip="renvoit la taille d&amp;#39;une case du tetris">CTetrisGame::GetCaseDim</ref>()<sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_caseDim;<sp/>}</highlight></codeline>
+<codeline lineno="292" refid="class_c_tetris_game_1a1eb1b3e8b0443fe6665f4233035d394f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_tetris_game_1a1eb1b3e8b0443fe6665f4233035d394f" kindref="member" tooltip="renvoit le score courant">CTetrisGame::GetScore</ref>()<sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_score;<sp/>}</highlight></codeline>
+<codeline lineno="293" refid="class_c_tetris_game_1ab27572baf8ecf5e40de3438329fa1238" refkind="member"><highlight class="normal"><ref refid="class_c_piece_abstract" kindref="compound" tooltip="classe CPieceAbstract abstraite">CPieceAbstract</ref>*<sp/><ref refid="class_c_tetris_game_1ab27572baf8ecf5e40de3438329fa1238" kindref="member" tooltip="renvoit un pointeur sur la piËce courante">CTetrisGame::GetPiece</ref>()<sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_pPiece;<sp/>}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/cj/workspace/Tetris/src/tetris/CTetrisGame.cpp"/>
+  </compounddef>
+</doxygen>

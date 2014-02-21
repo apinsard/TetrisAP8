@@ -1,0 +1,552 @@
+.TH "/home/cj/workspace/Tetris/src/appliBase/Common.h" 3 "Vendredi Février 21 2014" "Version alpha" "Tetris" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/cj/workspace/Tetris/src/appliBase/Common.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <string>\fP
+.br
+\fC#include <sstream>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <algorithm>\fP
+.br
+\fC#include <vector>\fP
+.br
+\fC#include <cmath>\fP
+.br
+\fC#include <cstring>\fP
+.br
+\fC#include <cstdlib>\fP
+.br
+\fC#include <ctime>\fP
+.br
+\fC#include 'CVector3\&.h'\fP
+.br
+\fC#include 'CVector4\&.h'\fP
+.br
+\fC#include 'CMatrix44\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBWindowSetup\fP"
+.br
+.ti -1c
+.RI "struct \fBRendererSetup\fP"
+.br
+.ti -1c
+.RI "struct \fBSTLDelete\fP"
+.br
+.ti -1c
+.RI "struct \fBHelpers\fP"
+.br
+.ti -1c
+.RI "struct \fBUserEvents\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB__COMMON_H__\fP"
+.br
+.in -1c
+.SS "Énumérations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBKey\fP { \fBKey_UNKNOWN\fP = 0, \fBKey_FIRST\fP = 0, \fBKey_BACKSPACE\fP = 8, \fBKey_TAB\fP = 9, \fBKey_CLEAR\fP = 12, \fBKey_RETURN\fP = 13, \fBKey_PAUSE\fP = 19, \fBKey_ESCAPE\fP = 27, \fBKey_SPACE\fP = 32, \fBKey_EXCLAIM\fP = 33, \fBKey_QUOTEDBL\fP = 34, \fBKey_HASH\fP = 35, \fBKey_DOLLAR\fP = 36, \fBKey_AMPERSAND\fP = 38, \fBKey_QUOTE\fP = 39, \fBKey_LEFTPAREN\fP = 40, \fBKey_RIGHTPAREN\fP = 41, \fBKey_ASTERISK\fP = 42, \fBKey_PLUS\fP = 43, \fBKey_COMMA\fP = 44, \fBKey_MINUS\fP = 45, \fBKey_PERIOD\fP = 46, \fBKey_SLASH\fP = 47, \fBKey_0\fP = 48, \fBKey_1\fP = 49, \fBKey_2\fP = 50, \fBKey_3\fP = 51, \fBKey_4\fP = 52, \fBKey_5\fP = 53, \fBKey_6\fP = 54, \fBKey_7\fP = 55, \fBKey_8\fP = 56, \fBKey_9\fP = 57, \fBKey_COLON\fP = 58, \fBKey_SEMICOLON\fP = 59, \fBKey_LESS\fP = 60, \fBKey_EQUALS\fP = 61, \fBKey_GREATER\fP = 62, \fBKey_QUESTION\fP = 63, \fBKey_AT\fP = 64, \fBKey_LEFTBRACKET\fP = 91, \fBKey_BACKSLASH\fP = 92, \fBKey_RIGHTBRACKET\fP = 93, \fBKey_CARET\fP = 94, \fBKey_UNDERSCORE\fP = 95, \fBKey_BACKQUOTE\fP = 96, \fBKey_a\fP = 97, \fBKey_b\fP = 98, \fBKey_c\fP = 99, \fBKey_d\fP = 100, \fBKey_e\fP = 101, \fBKey_f\fP = 102, \fBKey_g\fP = 103, \fBKey_h\fP = 104, \fBKey_i\fP = 105, \fBKey_j\fP = 106, \fBKey_k\fP = 107, \fBKey_l\fP = 108, \fBKey_m\fP = 109, \fBKey_n\fP = 110, \fBKey_o\fP = 111, \fBKey_p\fP = 112, \fBKey_q\fP = 113, \fBKey_r\fP = 114, \fBKey_s\fP = 115, \fBKey_t\fP = 116, \fBKey_u\fP = 117, \fBKey_v\fP = 118, \fBKey_w\fP = 119, \fBKey_x\fP = 120, \fBKey_y\fP = 121, \fBKey_z\fP = 122, \fBKey_DELETE\fP = 127, \fBKey_WORLD_0\fP = 160, \fBKey_WORLD_1\fP = 161, \fBKey_WORLD_2\fP = 162, \fBKey_WORLD_3\fP = 163, \fBKey_WORLD_4\fP = 164, \fBKey_WORLD_5\fP = 165, \fBKey_WORLD_6\fP = 166, \fBKey_WORLD_7\fP = 167, \fBKey_WORLD_8\fP = 168, \fBKey_WORLD_9\fP = 169, \fBKey_WORLD_10\fP = 170, \fBKey_WORLD_11\fP = 171, \fBKey_WORLD_12\fP = 172, \fBKey_WORLD_13\fP = 173, \fBKey_WORLD_14\fP = 174, \fBKey_WORLD_15\fP = 175, \fBKey_WORLD_16\fP = 176, \fBKey_WORLD_17\fP = 177, \fBKey_WORLD_18\fP = 178, \fBKey_WORLD_19\fP = 179, \fBKey_WORLD_20\fP = 180, \fBKey_WORLD_21\fP = 181, \fBKey_WORLD_22\fP = 182, \fBKey_WORLD_23\fP = 183, \fBKey_WORLD_24\fP = 184, \fBKey_WORLD_25\fP = 185, \fBKey_WORLD_26\fP = 186, \fBKey_WORLD_27\fP = 187, \fBKey_WORLD_28\fP = 188, \fBKey_WORLD_29\fP = 189, \fBKey_WORLD_30\fP = 190, \fBKey_WORLD_31\fP = 191, \fBKey_WORLD_32\fP = 192, \fBKey_WORLD_33\fP = 193, \fBKey_WORLD_34\fP = 194, \fBKey_WORLD_35\fP = 195, \fBKey_WORLD_36\fP = 196, \fBKey_WORLD_37\fP = 197, \fBKey_WORLD_38\fP = 198, \fBKey_WORLD_39\fP = 199, \fBKey_WORLD_40\fP = 200, \fBKey_WORLD_41\fP = 201, \fBKey_WORLD_42\fP = 202, \fBKey_WORLD_43\fP = 203, \fBKey_WORLD_44\fP = 204, \fBKey_WORLD_45\fP = 205, \fBKey_WORLD_46\fP = 206, \fBKey_WORLD_47\fP = 207, \fBKey_WORLD_48\fP = 208, \fBKey_WORLD_49\fP = 209, \fBKey_WORLD_50\fP = 210, \fBKey_WORLD_51\fP = 211, \fBKey_WORLD_52\fP = 212, \fBKey_WORLD_53\fP = 213, \fBKey_WORLD_54\fP = 214, \fBKey_WORLD_55\fP = 215, \fBKey_WORLD_56\fP = 216, \fBKey_WORLD_57\fP = 217, \fBKey_WORLD_58\fP = 218, \fBKey_WORLD_59\fP = 219, \fBKey_WORLD_60\fP = 220, \fBKey_WORLD_61\fP = 221, \fBKey_WORLD_62\fP = 222, \fBKey_WORLD_63\fP = 223, \fBKey_WORLD_64\fP = 224, \fBKey_WORLD_65\fP = 225, \fBKey_WORLD_66\fP = 226, \fBKey_WORLD_67\fP = 227, \fBKey_WORLD_68\fP = 228, \fBKey_WORLD_69\fP = 229, \fBKey_WORLD_70\fP = 230, \fBKey_WORLD_71\fP = 231, \fBKey_WORLD_72\fP = 232, \fBKey_WORLD_73\fP = 233, \fBKey_WORLD_74\fP = 234, \fBKey_WORLD_75\fP = 235, \fBKey_WORLD_76\fP = 236, \fBKey_WORLD_77\fP = 237, \fBKey_WORLD_78\fP = 238, \fBKey_WORLD_79\fP = 239, \fBKey_WORLD_80\fP = 240, \fBKey_WORLD_81\fP = 241, \fBKey_WORLD_82\fP = 242, \fBKey_WORLD_83\fP = 243, \fBKey_WORLD_84\fP = 244, \fBKey_WORLD_85\fP = 245, \fBKey_WORLD_86\fP = 246, \fBKey_WORLD_87\fP = 247, \fBKey_WORLD_88\fP = 248, \fBKey_WORLD_89\fP = 249, \fBKey_WORLD_90\fP = 250, \fBKey_WORLD_91\fP = 251, \fBKey_WORLD_92\fP = 252, \fBKey_WORLD_93\fP = 253, \fBKey_WORLD_94\fP = 254, \fBKey_WORLD_95\fP = 255, \fBKey_KP0\fP = 256, \fBKey_KP1\fP = 257, \fBKey_KP2\fP = 258, \fBKey_KP3\fP = 259, \fBKey_KP4\fP = 260, \fBKey_KP5\fP = 261, \fBKey_KP6\fP = 262, \fBKey_KP7\fP = 263, \fBKey_KP8\fP = 264, \fBKey_KP9\fP = 265, \fBKey_KP_PERIOD\fP = 266, \fBKey_KP_DIVIDE\fP = 267, \fBKey_KP_MULTIPLY\fP = 268, \fBKey_KP_MINUS\fP = 269, \fBKey_KP_PLUS\fP = 270, \fBKey_KP_ENTER\fP = 271, \fBKey_KP_EQUALS\fP = 272, \fBKey_UP\fP = 273, \fBKey_DOWN\fP = 274, \fBKey_RIGHT\fP = 275, \fBKey_LEFT\fP = 276, \fBKey_INSERT\fP = 277, \fBKey_HOME\fP = 278, \fBKey_END\fP = 279, \fBKey_PAGEUP\fP = 280, \fBKey_PAGEDOWN\fP = 281, \fBKey_F1\fP = 282, \fBKey_F2\fP = 283, \fBKey_F3\fP = 284, \fBKey_F4\fP = 285, \fBKey_F5\fP = 286, \fBKey_F6\fP = 287, \fBKey_F7\fP = 288, \fBKey_F8\fP = 289, \fBKey_F9\fP = 290, \fBKey_F10\fP = 291, \fBKey_F11\fP = 292, \fBKey_F12\fP = 293, \fBKey_F13\fP = 294, \fBKey_F14\fP = 295, \fBKey_F15\fP = 296, \fBKey_NUMLOCK\fP = 300, \fBKey_CAPSLOCK\fP = 301, \fBKey_SCROLLOCK\fP = 302, \fBKey_RSHIFT\fP = 303, \fBKey_LSHIFT\fP = 304, \fBKey_RCTRL\fP = 305, \fBKey_LCTRL\fP = 306, \fBKey_RALT\fP = 307, \fBKey_LALT\fP = 308, \fBKey_RMETA\fP = 309, \fBKey_LMETA\fP = 310, \fBKey_LSUPER\fP = 311, \fBKey_RSUPER\fP = 312, \fBKey_MODE\fP = 313, \fBKey_COMPOSE\fP = 314, \fBKey_HELP\fP = 315, \fBKey_PRINT\fP = 316, \fBKey_SYSREQ\fP = 317, \fBKey_BREAK\fP = 318, \fBKey_MENU\fP = 319, \fBKey_POWER\fP = 320, \fBKey_EURO\fP = 321, \fBKey_UNDO\fP = 322, \fBKey_LAST\fP }"
+.br
+.in -1c
+.SH "Documentation des macros"
+.PP 
+.SS "#define __COMMON_H__"
+
+.PP
+Définition à la ligne 18 du fichier Common\&.h\&.
+.SH "Documentation du type de l'énumération"
+.PP 
+.SS "enum \fBKey\fP"
+
+.PP
+\fBValeurs énumérées\fP
+.in +1c
+.TP
+\fB\fIKey_UNKNOWN \fP\fP
+.TP
+\fB\fIKey_FIRST \fP\fP
+.TP
+\fB\fIKey_BACKSPACE \fP\fP
+.TP
+\fB\fIKey_TAB \fP\fP
+.TP
+\fB\fIKey_CLEAR \fP\fP
+.TP
+\fB\fIKey_RETURN \fP\fP
+.TP
+\fB\fIKey_PAUSE \fP\fP
+.TP
+\fB\fIKey_ESCAPE \fP\fP
+.TP
+\fB\fIKey_SPACE \fP\fP
+.TP
+\fB\fIKey_EXCLAIM \fP\fP
+.TP
+\fB\fIKey_QUOTEDBL \fP\fP
+.TP
+\fB\fIKey_HASH \fP\fP
+.TP
+\fB\fIKey_DOLLAR \fP\fP
+.TP
+\fB\fIKey_AMPERSAND \fP\fP
+.TP
+\fB\fIKey_QUOTE \fP\fP
+.TP
+\fB\fIKey_LEFTPAREN \fP\fP
+.TP
+\fB\fIKey_RIGHTPAREN \fP\fP
+.TP
+\fB\fIKey_ASTERISK \fP\fP
+.TP
+\fB\fIKey_PLUS \fP\fP
+.TP
+\fB\fIKey_COMMA \fP\fP
+.TP
+\fB\fIKey_MINUS \fP\fP
+.TP
+\fB\fIKey_PERIOD \fP\fP
+.TP
+\fB\fIKey_SLASH \fP\fP
+.TP
+\fB\fIKey_0 \fP\fP
+.TP
+\fB\fIKey_1 \fP\fP
+.TP
+\fB\fIKey_2 \fP\fP
+.TP
+\fB\fIKey_3 \fP\fP
+.TP
+\fB\fIKey_4 \fP\fP
+.TP
+\fB\fIKey_5 \fP\fP
+.TP
+\fB\fIKey_6 \fP\fP
+.TP
+\fB\fIKey_7 \fP\fP
+.TP
+\fB\fIKey_8 \fP\fP
+.TP
+\fB\fIKey_9 \fP\fP
+.TP
+\fB\fIKey_COLON \fP\fP
+.TP
+\fB\fIKey_SEMICOLON \fP\fP
+.TP
+\fB\fIKey_LESS \fP\fP
+.TP
+\fB\fIKey_EQUALS \fP\fP
+.TP
+\fB\fIKey_GREATER \fP\fP
+.TP
+\fB\fIKey_QUESTION \fP\fP
+.TP
+\fB\fIKey_AT \fP\fP
+.TP
+\fB\fIKey_LEFTBRACKET \fP\fP
+.TP
+\fB\fIKey_BACKSLASH \fP\fP
+.TP
+\fB\fIKey_RIGHTBRACKET \fP\fP
+.TP
+\fB\fIKey_CARET \fP\fP
+.TP
+\fB\fIKey_UNDERSCORE \fP\fP
+.TP
+\fB\fIKey_BACKQUOTE \fP\fP
+.TP
+\fB\fIKey_a \fP\fP
+.TP
+\fB\fIKey_b \fP\fP
+.TP
+\fB\fIKey_c \fP\fP
+.TP
+\fB\fIKey_d \fP\fP
+.TP
+\fB\fIKey_e \fP\fP
+.TP
+\fB\fIKey_f \fP\fP
+.TP
+\fB\fIKey_g \fP\fP
+.TP
+\fB\fIKey_h \fP\fP
+.TP
+\fB\fIKey_i \fP\fP
+.TP
+\fB\fIKey_j \fP\fP
+.TP
+\fB\fIKey_k \fP\fP
+.TP
+\fB\fIKey_l \fP\fP
+.TP
+\fB\fIKey_m \fP\fP
+.TP
+\fB\fIKey_n \fP\fP
+.TP
+\fB\fIKey_o \fP\fP
+.TP
+\fB\fIKey_p \fP\fP
+.TP
+\fB\fIKey_q \fP\fP
+.TP
+\fB\fIKey_r \fP\fP
+.TP
+\fB\fIKey_s \fP\fP
+.TP
+\fB\fIKey_t \fP\fP
+.TP
+\fB\fIKey_u \fP\fP
+.TP
+\fB\fIKey_v \fP\fP
+.TP
+\fB\fIKey_w \fP\fP
+.TP
+\fB\fIKey_x \fP\fP
+.TP
+\fB\fIKey_y \fP\fP
+.TP
+\fB\fIKey_z \fP\fP
+.TP
+\fB\fIKey_DELETE \fP\fP
+.TP
+\fB\fIKey_WORLD_0 \fP\fP
+.TP
+\fB\fIKey_WORLD_1 \fP\fP
+.TP
+\fB\fIKey_WORLD_2 \fP\fP
+.TP
+\fB\fIKey_WORLD_3 \fP\fP
+.TP
+\fB\fIKey_WORLD_4 \fP\fP
+.TP
+\fB\fIKey_WORLD_5 \fP\fP
+.TP
+\fB\fIKey_WORLD_6 \fP\fP
+.TP
+\fB\fIKey_WORLD_7 \fP\fP
+.TP
+\fB\fIKey_WORLD_8 \fP\fP
+.TP
+\fB\fIKey_WORLD_9 \fP\fP
+.TP
+\fB\fIKey_WORLD_10 \fP\fP
+.TP
+\fB\fIKey_WORLD_11 \fP\fP
+.TP
+\fB\fIKey_WORLD_12 \fP\fP
+.TP
+\fB\fIKey_WORLD_13 \fP\fP
+.TP
+\fB\fIKey_WORLD_14 \fP\fP
+.TP
+\fB\fIKey_WORLD_15 \fP\fP
+.TP
+\fB\fIKey_WORLD_16 \fP\fP
+.TP
+\fB\fIKey_WORLD_17 \fP\fP
+.TP
+\fB\fIKey_WORLD_18 \fP\fP
+.TP
+\fB\fIKey_WORLD_19 \fP\fP
+.TP
+\fB\fIKey_WORLD_20 \fP\fP
+.TP
+\fB\fIKey_WORLD_21 \fP\fP
+.TP
+\fB\fIKey_WORLD_22 \fP\fP
+.TP
+\fB\fIKey_WORLD_23 \fP\fP
+.TP
+\fB\fIKey_WORLD_24 \fP\fP
+.TP
+\fB\fIKey_WORLD_25 \fP\fP
+.TP
+\fB\fIKey_WORLD_26 \fP\fP
+.TP
+\fB\fIKey_WORLD_27 \fP\fP
+.TP
+\fB\fIKey_WORLD_28 \fP\fP
+.TP
+\fB\fIKey_WORLD_29 \fP\fP
+.TP
+\fB\fIKey_WORLD_30 \fP\fP
+.TP
+\fB\fIKey_WORLD_31 \fP\fP
+.TP
+\fB\fIKey_WORLD_32 \fP\fP
+.TP
+\fB\fIKey_WORLD_33 \fP\fP
+.TP
+\fB\fIKey_WORLD_34 \fP\fP
+.TP
+\fB\fIKey_WORLD_35 \fP\fP
+.TP
+\fB\fIKey_WORLD_36 \fP\fP
+.TP
+\fB\fIKey_WORLD_37 \fP\fP
+.TP
+\fB\fIKey_WORLD_38 \fP\fP
+.TP
+\fB\fIKey_WORLD_39 \fP\fP
+.TP
+\fB\fIKey_WORLD_40 \fP\fP
+.TP
+\fB\fIKey_WORLD_41 \fP\fP
+.TP
+\fB\fIKey_WORLD_42 \fP\fP
+.TP
+\fB\fIKey_WORLD_43 \fP\fP
+.TP
+\fB\fIKey_WORLD_44 \fP\fP
+.TP
+\fB\fIKey_WORLD_45 \fP\fP
+.TP
+\fB\fIKey_WORLD_46 \fP\fP
+.TP
+\fB\fIKey_WORLD_47 \fP\fP
+.TP
+\fB\fIKey_WORLD_48 \fP\fP
+.TP
+\fB\fIKey_WORLD_49 \fP\fP
+.TP
+\fB\fIKey_WORLD_50 \fP\fP
+.TP
+\fB\fIKey_WORLD_51 \fP\fP
+.TP
+\fB\fIKey_WORLD_52 \fP\fP
+.TP
+\fB\fIKey_WORLD_53 \fP\fP
+.TP
+\fB\fIKey_WORLD_54 \fP\fP
+.TP
+\fB\fIKey_WORLD_55 \fP\fP
+.TP
+\fB\fIKey_WORLD_56 \fP\fP
+.TP
+\fB\fIKey_WORLD_57 \fP\fP
+.TP
+\fB\fIKey_WORLD_58 \fP\fP
+.TP
+\fB\fIKey_WORLD_59 \fP\fP
+.TP
+\fB\fIKey_WORLD_60 \fP\fP
+.TP
+\fB\fIKey_WORLD_61 \fP\fP
+.TP
+\fB\fIKey_WORLD_62 \fP\fP
+.TP
+\fB\fIKey_WORLD_63 \fP\fP
+.TP
+\fB\fIKey_WORLD_64 \fP\fP
+.TP
+\fB\fIKey_WORLD_65 \fP\fP
+.TP
+\fB\fIKey_WORLD_66 \fP\fP
+.TP
+\fB\fIKey_WORLD_67 \fP\fP
+.TP
+\fB\fIKey_WORLD_68 \fP\fP
+.TP
+\fB\fIKey_WORLD_69 \fP\fP
+.TP
+\fB\fIKey_WORLD_70 \fP\fP
+.TP
+\fB\fIKey_WORLD_71 \fP\fP
+.TP
+\fB\fIKey_WORLD_72 \fP\fP
+.TP
+\fB\fIKey_WORLD_73 \fP\fP
+.TP
+\fB\fIKey_WORLD_74 \fP\fP
+.TP
+\fB\fIKey_WORLD_75 \fP\fP
+.TP
+\fB\fIKey_WORLD_76 \fP\fP
+.TP
+\fB\fIKey_WORLD_77 \fP\fP
+.TP
+\fB\fIKey_WORLD_78 \fP\fP
+.TP
+\fB\fIKey_WORLD_79 \fP\fP
+.TP
+\fB\fIKey_WORLD_80 \fP\fP
+.TP
+\fB\fIKey_WORLD_81 \fP\fP
+.TP
+\fB\fIKey_WORLD_82 \fP\fP
+.TP
+\fB\fIKey_WORLD_83 \fP\fP
+.TP
+\fB\fIKey_WORLD_84 \fP\fP
+.TP
+\fB\fIKey_WORLD_85 \fP\fP
+.TP
+\fB\fIKey_WORLD_86 \fP\fP
+.TP
+\fB\fIKey_WORLD_87 \fP\fP
+.TP
+\fB\fIKey_WORLD_88 \fP\fP
+.TP
+\fB\fIKey_WORLD_89 \fP\fP
+.TP
+\fB\fIKey_WORLD_90 \fP\fP
+.TP
+\fB\fIKey_WORLD_91 \fP\fP
+.TP
+\fB\fIKey_WORLD_92 \fP\fP
+.TP
+\fB\fIKey_WORLD_93 \fP\fP
+.TP
+\fB\fIKey_WORLD_94 \fP\fP
+.TP
+\fB\fIKey_WORLD_95 \fP\fP
+.TP
+\fB\fIKey_KP0 \fP\fP
+.TP
+\fB\fIKey_KP1 \fP\fP
+.TP
+\fB\fIKey_KP2 \fP\fP
+.TP
+\fB\fIKey_KP3 \fP\fP
+.TP
+\fB\fIKey_KP4 \fP\fP
+.TP
+\fB\fIKey_KP5 \fP\fP
+.TP
+\fB\fIKey_KP6 \fP\fP
+.TP
+\fB\fIKey_KP7 \fP\fP
+.TP
+\fB\fIKey_KP8 \fP\fP
+.TP
+\fB\fIKey_KP9 \fP\fP
+.TP
+\fB\fIKey_KP_PERIOD \fP\fP
+.TP
+\fB\fIKey_KP_DIVIDE \fP\fP
+.TP
+\fB\fIKey_KP_MULTIPLY \fP\fP
+.TP
+\fB\fIKey_KP_MINUS \fP\fP
+.TP
+\fB\fIKey_KP_PLUS \fP\fP
+.TP
+\fB\fIKey_KP_ENTER \fP\fP
+.TP
+\fB\fIKey_KP_EQUALS \fP\fP
+.TP
+\fB\fIKey_UP \fP\fP
+.TP
+\fB\fIKey_DOWN \fP\fP
+.TP
+\fB\fIKey_RIGHT \fP\fP
+.TP
+\fB\fIKey_LEFT \fP\fP
+.TP
+\fB\fIKey_INSERT \fP\fP
+.TP
+\fB\fIKey_HOME \fP\fP
+.TP
+\fB\fIKey_END \fP\fP
+.TP
+\fB\fIKey_PAGEUP \fP\fP
+.TP
+\fB\fIKey_PAGEDOWN \fP\fP
+.TP
+\fB\fIKey_F1 \fP\fP
+.TP
+\fB\fIKey_F2 \fP\fP
+.TP
+\fB\fIKey_F3 \fP\fP
+.TP
+\fB\fIKey_F4 \fP\fP
+.TP
+\fB\fIKey_F5 \fP\fP
+.TP
+\fB\fIKey_F6 \fP\fP
+.TP
+\fB\fIKey_F7 \fP\fP
+.TP
+\fB\fIKey_F8 \fP\fP
+.TP
+\fB\fIKey_F9 \fP\fP
+.TP
+\fB\fIKey_F10 \fP\fP
+.TP
+\fB\fIKey_F11 \fP\fP
+.TP
+\fB\fIKey_F12 \fP\fP
+.TP
+\fB\fIKey_F13 \fP\fP
+.TP
+\fB\fIKey_F14 \fP\fP
+.TP
+\fB\fIKey_F15 \fP\fP
+.TP
+\fB\fIKey_NUMLOCK \fP\fP
+.TP
+\fB\fIKey_CAPSLOCK \fP\fP
+.TP
+\fB\fIKey_SCROLLOCK \fP\fP
+.TP
+\fB\fIKey_RSHIFT \fP\fP
+.TP
+\fB\fIKey_LSHIFT \fP\fP
+.TP
+\fB\fIKey_RCTRL \fP\fP
+.TP
+\fB\fIKey_LCTRL \fP\fP
+.TP
+\fB\fIKey_RALT \fP\fP
+.TP
+\fB\fIKey_LALT \fP\fP
+.TP
+\fB\fIKey_RMETA \fP\fP
+.TP
+\fB\fIKey_LMETA \fP\fP
+.TP
+\fB\fIKey_LSUPER \fP\fP
+.TP
+\fB\fIKey_RSUPER \fP\fP
+.TP
+\fB\fIKey_MODE \fP\fP
+.TP
+\fB\fIKey_COMPOSE \fP\fP
+.TP
+\fB\fIKey_HELP \fP\fP
+.TP
+\fB\fIKey_PRINT \fP\fP
+.TP
+\fB\fIKey_SYSREQ \fP\fP
+.TP
+\fB\fIKey_BREAK \fP\fP
+.TP
+\fB\fIKey_MENU \fP\fP
+.TP
+\fB\fIKey_POWER \fP\fP
+.TP
+\fB\fIKey_EURO \fP\fP
+.TP
+\fB\fIKey_UNDO \fP\fP
+.TP
+\fB\fIKey_LAST \fP\fP
+.PP
+Définition à la ligne 161 du fichier Common\&.h\&.
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Tetris à partir du code source\&.

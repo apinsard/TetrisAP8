@@ -1,0 +1,712 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>Tetris: Référence de la classe CRenderer</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Les-Stages-a-l-IUT-Informatique-de-Vannes-en-2006_img_200.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Tetris
+   &#160;<span id="projectnumber">alpha</span>
+   </div>
+   <div id="projectbrief">Juan revival</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="hierarchy.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_c_renderer.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Types publics</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pro-methods">Fonctions membres protégées</a> &#124;
+<a href="#pro-attribs">Attributs protégés</a> &#124;
+<a href="class_c_renderer-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe CRenderer</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_c_renderer_8h_source.html">CRenderer.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Types publics</h2></td></tr>
+<tr class="memitem:ae92b4f96fd8512b28a3800cd673c73e6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_renderer.html#ae92b4f96fd8512b28a3800cd673c73e6">TextSize</a> { <a class="el" href="class_c_renderer.html#ae92b4f96fd8512b28a3800cd673c73e6af4f0a0fc69b0084780bcfe9e489ef96f">TS_10</a>, 
+<a class="el" href="class_c_renderer.html#ae92b4f96fd8512b28a3800cd673c73e6ab44fb4c932da34b5f1649a02ac7738e0">TS_12</a>, 
+<a class="el" href="class_c_renderer.html#ae92b4f96fd8512b28a3800cd673c73e6a4bc17bab5c43df73339d80f85ea9e3ee">TS_18</a>
+ }</td></tr>
+<tr class="separator:ae92b4f96fd8512b28a3800cd673c73e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a0405b4e5059dcda9c5072d5fd7e7d6fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_renderer.html#a0405b4e5059dcda9c5072d5fd7e7d6fc">CRenderer</a> ()</td></tr>
+<tr class="separator:a0405b4e5059dcda9c5072d5fd7e7d6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfcaab7ed83b6d8bed61b0f9e2ed3e75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_renderer.html#abfcaab7ed83b6d8bed61b0f9e2ed3e75">CRenderer</a> (<a class="el" href="struct_window_setup.html">WindowSetup</a> *windowSetup, <a class="el" href="struct_user_events.html">UserEvents</a> *<a class="el" href="struct_user_events.html">UserEvents</a>, <a class="el" href="class_c_camera.html">CCamera</a> *camera)</td></tr>
+<tr class="separator:abfcaab7ed83b6d8bed61b0f9e2ed3e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce1242671a1005ff04e67a1cd35b538"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glu_8h.html#a4292190e3f1f6b373a760c7d9316ad3c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_renderer.html#a7ce1242671a1005ff04e67a1cd35b538">Create</a> (<a class="el" href="struct_window_setup.html">WindowSetup</a> *windowSetup, <a class="el" href="struct_user_events.html">UserEvents</a> *<a class="el" href="struct_user_events.html">UserEvents</a>, <a class="el" href="class_c_camera.html">CCamera</a> *camera)</td></tr>
+<tr class="separator:a7ce1242671a1005ff04e67a1cd35b538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb0a66a0d9205fe5f24cec41f0e0b249"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_renderer.html#acb0a66a0d9205fe5f24cec41f0e0b249">~CRenderer</a> ()</td></tr>
+<tr class="separator:acb0a66a0d9205fe5f24cec41f0e0b249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4253c2477ff48b0a50b2d6e256aeee78"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_renderer.html#a4253c2477ff48b0a50b2d6e256aeee78">Init</a> ()</td></tr>
+<tr class="separator:a4253c2477ff48b0a50b2d6e256aeee78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2fb4f50b7bd87f667d0f27640d6f97e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glu_8h.html#a4292190e3f1f6b373a760c7d9316ad3c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_renderer.html#ac2fb4f50b7bd87f667d0f27640d6f97e">StartRender</a> ()</td></tr>
+<tr class="separator:ac2fb4f50b7bd87f667d0f27640d6f97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade810b90f573f4e63c2c76b89778dfa0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_renderer_setup.html">RendererSetup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_renderer.html#ade810b90f573f4e63c2c76b89778dfa0">SetUpRenderer</a> ()</td></tr>
+<tr class="separator:ade810b90f573f4e63c2c76b89778dfa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02dc846e2a724aec1a5955868c1cea4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glu_8h.html#a4292190e3f1f6b373a760c7d9316ad3c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_renderer.html#a02dc846e2a724aec1a5955868c1cea4d">LoadProjectionMatrix</a> (<a class="el" href="class_c_matrix44.html">CMatrix44</a> &amp;projection)</td></tr>
+<tr class="separator:a02dc846e2a724aec1a5955868c1cea4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c935b45be28e843a16f9c0d06545351"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glu_8h.html#a4292190e3f1f6b373a760c7d9316ad3c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_renderer.html#a7c935b45be28e843a16f9c0d06545351">LoadViewMatrix</a> (const <a class="el" href="class_c_matrix44.html">CMatrix44</a> &amp;view)</td></tr>
+<tr class="separator:a7c935b45be28e843a16f9c0d06545351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a304c6e86e556ebaf250e46342b99a95e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glu_8h.html#a4292190e3f1f6b373a760c7d9316ad3c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_renderer.html#a304c6e86e556ebaf250e46342b99a95e">Start2DRender</a> ()</td></tr>
+<tr class="separator:a304c6e86e556ebaf250e46342b99a95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a180311e3b15212752710a0ad66cedcb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glu_8h.html#a4292190e3f1f6b373a760c7d9316ad3c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_renderer.html#a180311e3b15212752710a0ad66cedcb6">End2DRender</a> ()</td></tr>
+<tr class="separator:a180311e3b15212752710a0ad66cedcb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a967c742c349b52eac2551fa8b1567814"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glu_8h.html#a4292190e3f1f6b373a760c7d9316ad3c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_renderer.html#a967c742c349b52eac2551fa8b1567814">DrawText</a> (const <a class="el" href="glext_8h.html#a06b88fc81ad0b30d1512e9609e3d7c82">std::string</a> &amp;text, int <a class="el" href="gl_8h.html#a0cdec8e97a75ee9458b23d152bf962d4">x</a>, int <a class="el" href="gl_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a>, <a class="el" href="class_c_renderer.html#ae92b4f96fd8512b28a3800cd673c73e6">TextSize</a> <a class="el" href="gl_8h.html#ad585a1393cfa368fa9dc3d8ebff640d5">s</a>=<a class="el" href="class_c_renderer.html#ae92b4f96fd8512b28a3800cd673c73e6ab44fb4c932da34b5f1649a02ac7738e0">TS_12</a>, <a class="el" href="class_c_vector3.html">CVector3</a> <a class="el" href="glext_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a>=<a class="el" href="class_c_vector3.html">CVector3</a>(1.0f, 0.0f, 0.0f))</td></tr>
+<tr class="separator:a967c742c349b52eac2551fa8b1567814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Fonctions membres protégées</h2></td></tr>
+<tr class="memitem:a21d9ea20232f017980f6ad52b643ccf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glu_8h.html#a4292190e3f1f6b373a760c7d9316ad3c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_renderer.html#a21d9ea20232f017980f6ad52b643ccf1">DrawGround</a> (float _size)</td></tr>
+<tr class="separator:a21d9ea20232f017980f6ad52b643ccf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5655eabae23e53c7a871a90c7774cb7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glu_8h.html#a4292190e3f1f6b373a760c7d9316ad3c">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_renderer.html#a5655eabae23e53c7a871a90c7774cb7c">DrawText</a> (const <a class="el" href="glext_8h.html#a06b88fc81ad0b30d1512e9609e3d7c82">std::string</a> &amp;text, int <a class="el" href="gl_8h.html#a0cdec8e97a75ee9458b23d152bf962d4">x</a>, int <a class="el" href="gl_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a>, <a class="el" href="glu_8h.html#a4292190e3f1f6b373a760c7d9316ad3c">void</a> *police)</td></tr>
+<tr class="separator:a5655eabae23e53c7a871a90c7774cb7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Attributs protégés</h2></td></tr>
+<tr class="memitem:adabcf6d79f19667e8ed9a9fd0fb2484b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_window_setup.html">WindowSetup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_renderer.html#adabcf6d79f19667e8ed9a9fd0fb2484b">m_windowSetup</a></td></tr>
+<tr class="separator:adabcf6d79f19667e8ed9a9fd0fb2484b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc712a89cf23200f0f18a4411b77416"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_camera.html">CCamera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_renderer.html#aecc712a89cf23200f0f18a4411b77416">m_camera</a></td></tr>
+<tr class="separator:aecc712a89cf23200f0f18a4411b77416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83fe85f084b151b323e6a15f1f6aa325"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_renderer_setup.html">RendererSetup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_renderer.html#a83fe85f084b151b323e6a15f1f6aa325">m_rendererSetup</a></td></tr>
+<tr class="separator:a83fe85f084b151b323e6a15f1f6aa325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock">
+<p>Définition à la ligne <a class="el" href="_c_renderer_8h_source.html#l00141">141</a> du fichier <a class="el" href="_c_renderer_8h_source.html">CRenderer.h</a>.</p>
+</div><h2 class="groupheader">Documentation des énumérations membres</h2>
+<a class="anchor" id="ae92b4f96fd8512b28a3800cd673c73e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_c_renderer.html#ae92b4f96fd8512b28a3800cd673c73e6">CRenderer::TextSize</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ae92b4f96fd8512b28a3800cd673c73e6af4f0a0fc69b0084780bcfe9e489ef96f"></a>TS_10</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ae92b4f96fd8512b28a3800cd673c73e6ab44fb4c932da34b5f1649a02ac7738e0"></a>TS_12</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ae92b4f96fd8512b28a3800cd673c73e6a4bc17bab5c43df73339d80f85ea9e3ee"></a>TS_18</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Définition à la ligne <a class="el" href="_c_renderer_8h_source.html#l00216">216</a> du fichier <a class="el" href="_c_renderer_8h_source.html">CRenderer.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a0405b4e5059dcda9c5072d5fd7e7d6fc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CRenderer::CRenderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_c_renderer_8h_source.html#l00246">246</a> du fichier <a class="el" href="_c_renderer_8h_source.html">CRenderer.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abfcaab7ed83b6d8bed61b0f9e2ed3e75"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CRenderer::CRenderer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_window_setup.html">WindowSetup</a> *&#160;</td>
+          <td class="paramname"><em>windowSetup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_user_events.html">UserEvents</a> *&#160;</td>
+          <td class="paramname"><em>UserEvents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_camera.html">CCamera</a> *&#160;</td>
+          <td class="paramname"><em>camera</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_c_renderer_8h_source.html#l00248">248</a> du fichier <a class="el" href="_c_renderer_8h_source.html">CRenderer.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acb0a66a0d9205fe5f24cec41f0e0b249"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CRenderer::~CRenderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_c_renderer_8h_source.html#l00247">247</a> du fichier <a class="el" href="_c_renderer_8h_source.html">CRenderer.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="a7ce1242671a1005ff04e67a1cd35b538"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="glu_8h.html#a4292190e3f1f6b373a760c7d9316ad3c">void</a> CRenderer::Create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_window_setup.html">WindowSetup</a> *&#160;</td>
+          <td class="paramname"><em>windowSetup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_user_events.html">UserEvents</a> *&#160;</td>
+          <td class="paramname"><em>UserEvents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_camera.html">CCamera</a> *&#160;</td>
+          <td class="paramname"><em>camera</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_c_renderer_8h_source.html#l00254">254</a> du fichier <a class="el" href="_c_renderer_8h_source.html">CRenderer.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a21d9ea20232f017980f6ad52b643ccf1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="glu_8h.html#a4292190e3f1f6b373a760c7d9316ad3c">void</a> CRenderer::DrawGround </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>_size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>dessine un sol</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_size</td><td>: Taille d'un carreau </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="_c_renderer_8cpp_source.html#l00228">228</a> du fichier <a class="el" href="_c_renderer_8cpp_source.html">CRenderer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a967c742c349b52eac2551fa8b1567814"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="glu_8h.html#a4292190e3f1f6b373a760c7d9316ad3c">void</a> CRenderer::DrawText </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="glext_8h.html#a06b88fc81ad0b30d1512e9609e3d7c82">std::string</a> &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_renderer.html#ae92b4f96fd8512b28a3800cd673c73e6">TextSize</a>&#160;</td>
+          <td class="paramname"><em>s</em> = <code><a class="el" href="class_c_renderer.html#ae92b4f96fd8512b28a3800cd673c73e6ab44fb4c932da34b5f1649a02ac7738e0">TS_12</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_vector3.html">CVector3</a>&#160;</td>
+          <td class="paramname"><em>color</em> = <code><a class="el" href="class_c_vector3.html">CVector3</a>(1.0f,&#160;0.0f,&#160;0.0f)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Affichage d'un texte</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>: le texte </td></tr>
+    <tr><td class="paramname">int</td><td>: position en x </td></tr>
+    <tr><td class="paramname">int</td><td>: position en y </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="_c_renderer_8cpp_source.html#l00187">187</a> du fichier <a class="el" href="_c_renderer_8cpp_source.html">CRenderer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5655eabae23e53c7a871a90c7774cb7c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="glu_8h.html#a4292190e3f1f6b373a760c7d9316ad3c">void</a> CRenderer::DrawText </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="glext_8h.html#a06b88fc81ad0b30d1512e9609e3d7c82">std::string</a> &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="glu_8h.html#a4292190e3f1f6b373a760c7d9316ad3c">void</a> *&#160;</td>
+          <td class="paramname"><em>police</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Affichage d'un texte</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>: le texte </td></tr>
+    <tr><td class="paramname">int</td><td>: position en x </td></tr>
+    <tr><td class="paramname">int</td><td>: position en y </td></tr>
+    <tr><td class="paramname">void</td><td>: police GLUT </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="_c_renderer_8cpp_source.html#l00209">209</a> du fichier <a class="el" href="_c_renderer_8cpp_source.html">CRenderer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a180311e3b15212752710a0ad66cedcb6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="glu_8h.html#a4292190e3f1f6b373a760c7d9316ad3c">void</a> CRenderer::End2DRender </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>fin d'affichage 2D ( A appeler �ventuellement dans OnRender() </p>
+
+<p>Définition à la ligne <a class="el" href="_c_renderer_8cpp_source.html#l00166">166</a> du fichier <a class="el" href="_c_renderer_8cpp_source.html">CRenderer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4253c2477ff48b0a50b2d6e256aeee78"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CRenderer::Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialise le renderer</p>
+<dl class="section return"><dt>Renvoie</dt><dd>code d'erreur </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="_c_renderer_8cpp_source.html#l00026">26</a> du fichier <a class="el" href="_c_renderer_8cpp_source.html">CRenderer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a02dc846e2a724aec1a5955868c1cea4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="glu_8h.html#a4292190e3f1f6b373a760c7d9316ad3c">void</a> CRenderer::LoadProjectionMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_matrix44.html">CMatrix44</a> &amp;&#160;</td>
+          <td class="paramname"><em>projection</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>charge la matrice de projection</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrice</td><td>de projection </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="_c_renderer_8cpp_source.html#l00091">91</a> du fichier <a class="el" href="_c_renderer_8cpp_source.html">CRenderer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7c935b45be28e843a16f9c0d06545351"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="glu_8h.html#a4292190e3f1f6b373a760c7d9316ad3c">void</a> CRenderer::LoadViewMatrix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_matrix44.html">CMatrix44</a> &amp;&#160;</td>
+          <td class="paramname"><em>view</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>charge la matrice de vue</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrice</td><td>de vue </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="_c_renderer_8cpp_source.html#l00115">115</a> du fichier <a class="el" href="_c_renderer_8cpp_source.html">CRenderer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ade810b90f573f4e63c2c76b89778dfa0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_renderer_setup.html">RendererSetup</a> * CRenderer::SetUpRenderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_c_renderer_8h_source.html#l00260">260</a> du fichier <a class="el" href="_c_renderer_8h_source.html">CRenderer.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a304c6e86e556ebaf250e46342b99a95e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="glu_8h.html#a4292190e3f1f6b373a760c7d9316ad3c">void</a> CRenderer::Start2DRender </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>lancement d'une phase d'affichage 2D ( A appeler �ventuellement dans OnRender() </p>
+
+<p>Définition à la ligne <a class="el" href="_c_renderer_8cpp_source.html#l00149">149</a> du fichier <a class="el" href="_c_renderer_8cpp_source.html">CRenderer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac2fb4f50b7bd87f667d0f27640d6f97e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="glu_8h.html#a4292190e3f1f6b373a760c7d9316ad3c">void</a> CRenderer::StartRender </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>lance les m�thodes communes � chaque frame </p>
+
+<p>Définition à la ligne <a class="el" href="_c_renderer_8cpp_source.html#l00072">72</a> du fichier <a class="el" href="_c_renderer_8cpp_source.html">CRenderer.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="aecc712a89cf23200f0f18a4411b77416"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_camera.html">CCamera</a>* CRenderer::m_camera</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_c_renderer_8h_source.html#l00227">227</a> du fichier <a class="el" href="_c_renderer_8h_source.html">CRenderer.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a83fe85f084b151b323e6a15f1f6aa325"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_renderer_setup.html">RendererSetup</a> CRenderer::m_rendererSetup</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_c_renderer_8h_source.html#l00228">228</a> du fichier <a class="el" href="_c_renderer_8h_source.html">CRenderer.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adabcf6d79f19667e8ed9a9fd0fb2484b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_window_setup.html">WindowSetup</a>* CRenderer::m_windowSetup</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_c_renderer_8h_source.html#l00226">226</a> du fichier <a class="el" href="_c_renderer_8h_source.html">CRenderer.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li>/home/cj/workspace/Tetris/src/appliBase/<a class="el" href="_c_renderer_8h_source.html">CRenderer.h</a></li>
+<li>/home/cj/workspace/Tetris/src/appliBase/<a class="el" href="_c_renderer_8cpp_source.html">CRenderer.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_c_renderer.html">CRenderer</a></li>
+    <li class="footer">Généré le Vendredi Février 21 2014 22:34:27 pour Tetris par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
+  </ul>
+</div>
+</body>
+</html>

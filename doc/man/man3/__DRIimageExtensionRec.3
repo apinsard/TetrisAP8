@@ -1,0 +1,72 @@
+.TH "__DRIimageExtensionRec" 3 "Vendredi Février 21 2014" "Version alpha" "Tetris" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+__DRIimageExtensionRec \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <dri_interface\&.h>\fP
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "\fB__DRIextension\fP \fBbase\fP"
+.br
+.ti -1c
+.RI "\fB__DRIimage\fP *(* \fBcreateImageFromName\fP )(\fB__DRIscreen\fP *screen, int \fBwidth\fP, int \fBheight\fP, int \fBformat\fP, int \fBname\fP, int pitch, \fBvoid\fP *loaderPrivate)"
+.br
+.ti -1c
+.RI "\fB__DRIimage\fP *(* \fBcreateImageFromRenderbuffer\fP )(\fB__DRIcontext\fP *context, int \fBrenderbuffer\fP, \fBvoid\fP *loaderPrivate)"
+.br
+.ti -1c
+.RI "\fBvoid\fP(* \fBdestroyImage\fP )(\fB__DRIimage\fP *\fBimage\fP)"
+.br
+.ti -1c
+.RI "\fB__DRIimage\fP *(* \fBcreateImage\fP )(\fB__DRIscreen\fP *screen, int \fBwidth\fP, int \fBheight\fP, int \fBformat\fP, unsigned int use, \fBvoid\fP *loaderPrivate)"
+.br
+.ti -1c
+.RI "\fBGLboolean\fP(* \fBqueryImage\fP )(\fB__DRIimage\fP *\fBimage\fP, int attrib, int *\fBvalue\fP)"
+.br
+.ti -1c
+.RI "\fB__DRIimage\fP *(* \fBdupImage\fP )(\fB__DRIimage\fP *\fBimage\fP, \fBvoid\fP *loaderPrivate)"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+Définition à la ligne 924 du fichier dri_interface\&.h\&.
+.SH "Documentation des données membres"
+.PP 
+.SS "\fB__DRIextension\fP __DRIimageExtensionRec::base"
+
+.PP
+Définition à la ligne 925 du fichier dri_interface\&.h\&.
+.SS "\fB__DRIimage\fP*(* __DRIimageExtensionRec::createImage)(\fB__DRIscreen\fP *screen, int \fBwidth\fP, int \fBheight\fP, int \fBformat\fP, unsigned int use, \fBvoid\fP *loaderPrivate)"
+
+.PP
+Définition à la ligne 938 du fichier dri_interface\&.h\&.
+.SS "\fB__DRIimage\fP*(* __DRIimageExtensionRec::createImageFromName)(\fB__DRIscreen\fP *screen, int \fBwidth\fP, int \fBheight\fP, int \fBformat\fP, int \fBname\fP, int pitch, \fBvoid\fP *loaderPrivate)"
+
+.PP
+Définition à la ligne 927 du fichier dri_interface\&.h\&.
+.SS "\fB__DRIimage\fP*(* __DRIimageExtensionRec::createImageFromRenderbuffer)(\fB__DRIcontext\fP *context, int \fBrenderbuffer\fP, \fBvoid\fP *loaderPrivate)"
+
+.PP
+Définition à la ligne 932 du fichier dri_interface\&.h\&.
+.SS "\fBvoid\fP(* __DRIimageExtensionRec::destroyImage)(\fB__DRIimage\fP *\fBimage\fP)"
+
+.PP
+Définition à la ligne 936 du fichier dri_interface\&.h\&.
+.SS "\fB__DRIimage\fP*(* __DRIimageExtensionRec::dupImage)(\fB__DRIimage\fP *\fBimage\fP, \fBvoid\fP *loaderPrivate)"
+The new __DRIimage will share the content with the old one, see dup(2)\&. 
+.PP
+Définition à la ligne 948 du fichier dri_interface\&.h\&.
+.SS "\fBGLboolean\fP(* __DRIimageExtensionRec::queryImage)(\fB__DRIimage\fP *\fBimage\fP, int attrib, int *\fBvalue\fP)"
+
+.PP
+Définition à la ligne 943 du fichier dri_interface\&.h\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Tetris à partir du code source\&.

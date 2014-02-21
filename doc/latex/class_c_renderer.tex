@@ -1,0 +1,337 @@
+\hypertarget{class_c_renderer}{\section{Référence de la classe C\-Renderer}
+\label{class_c_renderer}\index{C\-Renderer@{C\-Renderer}}
+}
+
+
+{\ttfamily \#include $<$C\-Renderer.\-h$>$}
+
+\subsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_c_renderer_ae92b4f96fd8512b28a3800cd673c73e6}{Text\-Size} \{ \hyperlink{class_c_renderer_ae92b4f96fd8512b28a3800cd673c73e6af4f0a0fc69b0084780bcfe9e489ef96f}{T\-S\-\_\-10}, 
+\hyperlink{class_c_renderer_ae92b4f96fd8512b28a3800cd673c73e6ab44fb4c932da34b5f1649a02ac7738e0}{T\-S\-\_\-12}, 
+\hyperlink{class_c_renderer_ae92b4f96fd8512b28a3800cd673c73e6a4bc17bab5c43df73339d80f85ea9e3ee}{T\-S\-\_\-18}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_renderer_a0405b4e5059dcda9c5072d5fd7e7d6fc}{C\-Renderer} ()
+\item 
+\hyperlink{class_c_renderer_abfcaab7ed83b6d8bed61b0f9e2ed3e75}{C\-Renderer} (\hyperlink{struct_window_setup}{Window\-Setup} $\ast$window\-Setup, \hyperlink{struct_user_events}{User\-Events} $\ast$\hyperlink{struct_user_events}{User\-Events}, \hyperlink{class_c_camera}{C\-Camera} $\ast$camera)
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_renderer_a7ce1242671a1005ff04e67a1cd35b538}{Create} (\hyperlink{struct_window_setup}{Window\-Setup} $\ast$window\-Setup, \hyperlink{struct_user_events}{User\-Events} $\ast$\hyperlink{struct_user_events}{User\-Events}, \hyperlink{class_c_camera}{C\-Camera} $\ast$camera)
+\item 
+\hyperlink{class_c_renderer_acb0a66a0d9205fe5f24cec41f0e0b249}{$\sim$\-C\-Renderer} ()
+\item 
+bool \hyperlink{class_c_renderer_a4253c2477ff48b0a50b2d6e256aeee78}{Init} ()
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_renderer_ac2fb4f50b7bd87f667d0f27640d6f97e}{Start\-Render} ()
+\item 
+\hyperlink{struct_renderer_setup}{Renderer\-Setup} $\ast$ \hyperlink{class_c_renderer_ade810b90f573f4e63c2c76b89778dfa0}{Set\-Up\-Renderer} ()
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_renderer_a02dc846e2a724aec1a5955868c1cea4d}{Load\-Projection\-Matrix} (\hyperlink{class_c_matrix44}{C\-Matrix44} \&projection)
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_renderer_a7c935b45be28e843a16f9c0d06545351}{Load\-View\-Matrix} (const \hyperlink{class_c_matrix44}{C\-Matrix44} \&view)
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_renderer_a304c6e86e556ebaf250e46342b99a95e}{Start2\-D\-Render} ()
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_renderer_a180311e3b15212752710a0ad66cedcb6}{End2\-D\-Render} ()
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_renderer_a967c742c349b52eac2551fa8b1567814}{Draw\-Text} (const \hyperlink{glext_8h_a06b88fc81ad0b30d1512e9609e3d7c82}{std\-::string} \&text, int \hyperlink{gl_8h_a0cdec8e97a75ee9458b23d152bf962d4}{x}, int \hyperlink{gl_8h_a74d80fd479c0f6d0153c709949a089ef}{y}, \hyperlink{class_c_renderer_ae92b4f96fd8512b28a3800cd673c73e6}{Text\-Size} \hyperlink{gl_8h_ad585a1393cfa368fa9dc3d8ebff640d5}{s}=\hyperlink{class_c_renderer_ae92b4f96fd8512b28a3800cd673c73e6ab44fb4c932da34b5f1649a02ac7738e0}{T\-S\-\_\-12}, \hyperlink{class_c_vector3}{C\-Vector3} \hyperlink{glext_8h_a3ea846f998d64f079b86052b6c4193a8}{color}=\hyperlink{class_c_vector3}{C\-Vector3}(1.\-0f, 0.\-0f, 0.\-0f))
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_renderer_a21d9ea20232f017980f6ad52b643ccf1}{Draw\-Ground} (float \-\_\-size)
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_renderer_a5655eabae23e53c7a871a90c7774cb7c}{Draw\-Text} (const \hyperlink{glext_8h_a06b88fc81ad0b30d1512e9609e3d7c82}{std\-::string} \&text, int \hyperlink{gl_8h_a0cdec8e97a75ee9458b23d152bf962d4}{x}, int \hyperlink{gl_8h_a74d80fd479c0f6d0153c709949a089ef}{y}, \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} $\ast$police)
+\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_window_setup}{Window\-Setup} $\ast$ \hyperlink{class_c_renderer_adabcf6d79f19667e8ed9a9fd0fb2484b}{m\-\_\-window\-Setup}
+\item 
+\hyperlink{class_c_camera}{C\-Camera} $\ast$ \hyperlink{class_c_renderer_aecc712a89cf23200f0f18a4411b77416}{m\-\_\-camera}
+\item 
+\hyperlink{struct_renderer_setup}{Renderer\-Setup} \hyperlink{class_c_renderer_a83fe85f084b151b323e6a15f1f6aa325}{m\-\_\-renderer\-Setup}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+
+
+Définition à la ligne 141 du fichier C\-Renderer.\-h.
+
+
+
+\subsection{Documentation des énumérations membres}
+\hypertarget{class_c_renderer_ae92b4f96fd8512b28a3800cd673c73e6}{\index{C\-Renderer@{C\-Renderer}!Text\-Size@{Text\-Size}}
+\index{Text\-Size@{Text\-Size}!CRenderer@{C\-Renderer}}
+\subsubsection[{Text\-Size}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-Renderer\-::\-Text\-Size}}}\label{class_c_renderer_ae92b4f96fd8512b28a3800cd673c73e6}
+\begin{Desc}
+\item[Valeurs énumérées]\par
+\begin{description}
+\index{T\-S\-\_\-10@{T\-S\-\_\-10}!C\-Renderer@{C\-Renderer}}\index{C\-Renderer@{C\-Renderer}!T\-S\-\_\-10@{T\-S\-\_\-10}}\item[{\em 
+\hypertarget{class_c_renderer_ae92b4f96fd8512b28a3800cd673c73e6af4f0a0fc69b0084780bcfe9e489ef96f}{T\-S\-\_\-10}\label{class_c_renderer_ae92b4f96fd8512b28a3800cd673c73e6af4f0a0fc69b0084780bcfe9e489ef96f}
+}]\index{T\-S\-\_\-12@{T\-S\-\_\-12}!C\-Renderer@{C\-Renderer}}\index{C\-Renderer@{C\-Renderer}!T\-S\-\_\-12@{T\-S\-\_\-12}}\item[{\em 
+\hypertarget{class_c_renderer_ae92b4f96fd8512b28a3800cd673c73e6ab44fb4c932da34b5f1649a02ac7738e0}{T\-S\-\_\-12}\label{class_c_renderer_ae92b4f96fd8512b28a3800cd673c73e6ab44fb4c932da34b5f1649a02ac7738e0}
+}]\index{T\-S\-\_\-18@{T\-S\-\_\-18}!C\-Renderer@{C\-Renderer}}\index{C\-Renderer@{C\-Renderer}!T\-S\-\_\-18@{T\-S\-\_\-18}}\item[{\em 
+\hypertarget{class_c_renderer_ae92b4f96fd8512b28a3800cd673c73e6a4bc17bab5c43df73339d80f85ea9e3ee}{T\-S\-\_\-18}\label{class_c_renderer_ae92b4f96fd8512b28a3800cd673c73e6a4bc17bab5c43df73339d80f85ea9e3ee}
+}]\end{description}
+\end{Desc}
+
+
+Définition à la ligne 216 du fichier C\-Renderer.\-h.
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_c_renderer_a0405b4e5059dcda9c5072d5fd7e7d6fc}{\index{C\-Renderer@{C\-Renderer}!C\-Renderer@{C\-Renderer}}
+\index{C\-Renderer@{C\-Renderer}!CRenderer@{C\-Renderer}}
+\subsubsection[{C\-Renderer}]{\setlength{\rightskip}{0pt plus 5cm}C\-Renderer\-::\-C\-Renderer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_renderer_a0405b4e5059dcda9c5072d5fd7e7d6fc}
+
+
+Définition à la ligne 246 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_renderer_abfcaab7ed83b6d8bed61b0f9e2ed3e75}{\index{C\-Renderer@{C\-Renderer}!C\-Renderer@{C\-Renderer}}
+\index{C\-Renderer@{C\-Renderer}!CRenderer@{C\-Renderer}}
+\subsubsection[{C\-Renderer}]{\setlength{\rightskip}{0pt plus 5cm}C\-Renderer\-::\-C\-Renderer (
+\begin{DoxyParamCaption}
+\item[{{\bf Window\-Setup} $\ast$}]{window\-Setup, }
+\item[{{\bf User\-Events} $\ast$}]{User\-Events, }
+\item[{{\bf C\-Camera} $\ast$}]{camera}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_renderer_abfcaab7ed83b6d8bed61b0f9e2ed3e75}
+
+
+Définition à la ligne 248 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_renderer_acb0a66a0d9205fe5f24cec41f0e0b249}{\index{C\-Renderer@{C\-Renderer}!$\sim$\-C\-Renderer@{$\sim$\-C\-Renderer}}
+\index{$\sim$\-C\-Renderer@{$\sim$\-C\-Renderer}!CRenderer@{C\-Renderer}}
+\subsubsection[{$\sim$\-C\-Renderer}]{\setlength{\rightskip}{0pt plus 5cm}C\-Renderer\-::$\sim$\-C\-Renderer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_renderer_acb0a66a0d9205fe5f24cec41f0e0b249}
+
+
+Définition à la ligne 247 du fichier C\-Renderer.\-h.
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_c_renderer_a7ce1242671a1005ff04e67a1cd35b538}{\index{C\-Renderer@{C\-Renderer}!Create@{Create}}
+\index{Create@{Create}!CRenderer@{C\-Renderer}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Renderer\-::\-Create (
+\begin{DoxyParamCaption}
+\item[{{\bf Window\-Setup} $\ast$}]{window\-Setup, }
+\item[{{\bf User\-Events} $\ast$}]{User\-Events, }
+\item[{{\bf C\-Camera} $\ast$}]{camera}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_renderer_a7ce1242671a1005ff04e67a1cd35b538}
+
+
+Définition à la ligne 254 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_renderer_a21d9ea20232f017980f6ad52b643ccf1}{\index{C\-Renderer@{C\-Renderer}!Draw\-Ground@{Draw\-Ground}}
+\index{Draw\-Ground@{Draw\-Ground}!CRenderer@{C\-Renderer}}
+\subsubsection[{Draw\-Ground}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Renderer\-::\-Draw\-Ground (
+\begin{DoxyParamCaption}
+\item[{float}]{\-\_\-size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_renderer_a21d9ea20232f017980f6ad52b643ccf1}
+dessine un sol
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \-\_\-size} & \-: Taille d'un carreau \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 228 du fichier C\-Renderer.\-cpp.
+
+\hypertarget{class_c_renderer_a967c742c349b52eac2551fa8b1567814}{\index{C\-Renderer@{C\-Renderer}!Draw\-Text@{Draw\-Text}}
+\index{Draw\-Text@{Draw\-Text}!CRenderer@{C\-Renderer}}
+\subsubsection[{Draw\-Text}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Renderer\-::\-Draw\-Text (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{text, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{{\bf Text\-Size}}]{s = {\ttfamily {\bf T\-S\-\_\-12}}, }
+\item[{{\bf C\-Vector3}}]{color = {\ttfamily {\bf C\-Vector3}(1.0f,~0.0f,~0.0f)}}
+\end{DoxyParamCaption}
+)}}\label{class_c_renderer_a967c742c349b52eac2551fa8b1567814}
+Affichage d'un texte
+
+
+\begin{DoxyParams}{Paramètres}
+{\em string} & \-: le texte \\
+\hline
+{\em int} & \-: position en x \\
+\hline
+{\em int} & \-: position en y \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 187 du fichier C\-Renderer.\-cpp.
+
+\hypertarget{class_c_renderer_a5655eabae23e53c7a871a90c7774cb7c}{\index{C\-Renderer@{C\-Renderer}!Draw\-Text@{Draw\-Text}}
+\index{Draw\-Text@{Draw\-Text}!CRenderer@{C\-Renderer}}
+\subsubsection[{Draw\-Text}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Renderer\-::\-Draw\-Text (
+\begin{DoxyParamCaption}
+\item[{const {\bf std\-::string} \&}]{text, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{{\bf void} $\ast$}]{police}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_renderer_a5655eabae23e53c7a871a90c7774cb7c}
+Affichage d'un texte
+
+
+\begin{DoxyParams}{Paramètres}
+{\em string} & \-: le texte \\
+\hline
+{\em int} & \-: position en x \\
+\hline
+{\em int} & \-: position en y \\
+\hline
+{\em void} & \-: police G\-L\-U\-T \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 209 du fichier C\-Renderer.\-cpp.
+
+\hypertarget{class_c_renderer_a180311e3b15212752710a0ad66cedcb6}{\index{C\-Renderer@{C\-Renderer}!End2\-D\-Render@{End2\-D\-Render}}
+\index{End2\-D\-Render@{End2\-D\-Render}!CRenderer@{C\-Renderer}}
+\subsubsection[{End2\-D\-Render}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Renderer\-::\-End2\-D\-Render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_renderer_a180311e3b15212752710a0ad66cedcb6}
+fin d'affichage 2\-D ( A appeler �ventuellement dans On\-Render() 
+
+Définition à la ligne 166 du fichier C\-Renderer.\-cpp.
+
+\hypertarget{class_c_renderer_a4253c2477ff48b0a50b2d6e256aeee78}{\index{C\-Renderer@{C\-Renderer}!Init@{Init}}
+\index{Init@{Init}!CRenderer@{C\-Renderer}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-Renderer\-::\-Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_renderer_a4253c2477ff48b0a50b2d6e256aeee78}
+Initialise le renderer
+
+\begin{DoxyReturn}{Renvoie}
+code d'erreur 
+\end{DoxyReturn}
+
+
+Définition à la ligne 26 du fichier C\-Renderer.\-cpp.
+
+\hypertarget{class_c_renderer_a02dc846e2a724aec1a5955868c1cea4d}{\index{C\-Renderer@{C\-Renderer}!Load\-Projection\-Matrix@{Load\-Projection\-Matrix}}
+\index{Load\-Projection\-Matrix@{Load\-Projection\-Matrix}!CRenderer@{C\-Renderer}}
+\subsubsection[{Load\-Projection\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Renderer\-::\-Load\-Projection\-Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Matrix44} \&}]{projection}
+\end{DoxyParamCaption}
+)}}\label{class_c_renderer_a02dc846e2a724aec1a5955868c1cea4d}
+charge la matrice de projection
+
+
+\begin{DoxyParams}{Paramètres}
+{\em matrice} & de projection \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 91 du fichier C\-Renderer.\-cpp.
+
+\hypertarget{class_c_renderer_a7c935b45be28e843a16f9c0d06545351}{\index{C\-Renderer@{C\-Renderer}!Load\-View\-Matrix@{Load\-View\-Matrix}}
+\index{Load\-View\-Matrix@{Load\-View\-Matrix}!CRenderer@{C\-Renderer}}
+\subsubsection[{Load\-View\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Renderer\-::\-Load\-View\-Matrix (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Matrix44} \&}]{view}
+\end{DoxyParamCaption}
+)}}\label{class_c_renderer_a7c935b45be28e843a16f9c0d06545351}
+charge la matrice de vue
+
+
+\begin{DoxyParams}{Paramètres}
+{\em matrice} & de vue \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 115 du fichier C\-Renderer.\-cpp.
+
+\hypertarget{class_c_renderer_ade810b90f573f4e63c2c76b89778dfa0}{\index{C\-Renderer@{C\-Renderer}!Set\-Up\-Renderer@{Set\-Up\-Renderer}}
+\index{Set\-Up\-Renderer@{Set\-Up\-Renderer}!CRenderer@{C\-Renderer}}
+\subsubsection[{Set\-Up\-Renderer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Renderer\-Setup} $\ast$ C\-Renderer\-::\-Set\-Up\-Renderer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_renderer_ade810b90f573f4e63c2c76b89778dfa0}
+
+
+Définition à la ligne 260 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_renderer_a304c6e86e556ebaf250e46342b99a95e}{\index{C\-Renderer@{C\-Renderer}!Start2\-D\-Render@{Start2\-D\-Render}}
+\index{Start2\-D\-Render@{Start2\-D\-Render}!CRenderer@{C\-Renderer}}
+\subsubsection[{Start2\-D\-Render}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Renderer\-::\-Start2\-D\-Render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_renderer_a304c6e86e556ebaf250e46342b99a95e}
+lancement d'une phase d'affichage 2\-D ( A appeler �ventuellement dans On\-Render() 
+
+Définition à la ligne 149 du fichier C\-Renderer.\-cpp.
+
+\hypertarget{class_c_renderer_ac2fb4f50b7bd87f667d0f27640d6f97e}{\index{C\-Renderer@{C\-Renderer}!Start\-Render@{Start\-Render}}
+\index{Start\-Render@{Start\-Render}!CRenderer@{C\-Renderer}}
+\subsubsection[{Start\-Render}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Renderer\-::\-Start\-Render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_renderer_ac2fb4f50b7bd87f667d0f27640d6f97e}
+lance les m�thodes communes � chaque frame 
+
+Définition à la ligne 72 du fichier C\-Renderer.\-cpp.
+
+
+
+\subsection{Documentation des données membres}
+\hypertarget{class_c_renderer_aecc712a89cf23200f0f18a4411b77416}{\index{C\-Renderer@{C\-Renderer}!m\-\_\-camera@{m\-\_\-camera}}
+\index{m\-\_\-camera@{m\-\_\-camera}!CRenderer@{C\-Renderer}}
+\subsubsection[{m\-\_\-camera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Camera}$\ast$ C\-Renderer\-::m\-\_\-camera\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_renderer_aecc712a89cf23200f0f18a4411b77416}
+
+
+Définition à la ligne 227 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_renderer_a83fe85f084b151b323e6a15f1f6aa325}{\index{C\-Renderer@{C\-Renderer}!m\-\_\-renderer\-Setup@{m\-\_\-renderer\-Setup}}
+\index{m\-\_\-renderer\-Setup@{m\-\_\-renderer\-Setup}!CRenderer@{C\-Renderer}}
+\subsubsection[{m\-\_\-renderer\-Setup}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Renderer\-Setup} C\-Renderer\-::m\-\_\-renderer\-Setup\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_renderer_a83fe85f084b151b323e6a15f1f6aa325}
+
+
+Définition à la ligne 228 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_renderer_adabcf6d79f19667e8ed9a9fd0fb2484b}{\index{C\-Renderer@{C\-Renderer}!m\-\_\-window\-Setup@{m\-\_\-window\-Setup}}
+\index{m\-\_\-window\-Setup@{m\-\_\-window\-Setup}!CRenderer@{C\-Renderer}}
+\subsubsection[{m\-\_\-window\-Setup}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Window\-Setup}$\ast$ C\-Renderer\-::m\-\_\-window\-Setup\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_renderer_adabcf6d79f19667e8ed9a9fd0fb2484b}
+
+
+Définition à la ligne 226 du fichier C\-Renderer.\-h.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+/home/cj/workspace/\-Tetris/src/appli\-Base/\hyperlink{_c_renderer_8h}{C\-Renderer.\-h}\item 
+/home/cj/workspace/\-Tetris/src/appli\-Base/\hyperlink{_c_renderer_8cpp}{C\-Renderer.\-cpp}\end{DoxyCompactItemize}

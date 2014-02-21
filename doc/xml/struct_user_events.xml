@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_user_events" kind="struct" prot="public">
+    <compoundname>UserEvents</compoundname>
+    <includes refid="_common_8h" local="no">Common.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_user_events_1a1d974059ccf68a4640fa703063fc7cd8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UserEvents::mousex</definition>
+        <argsstring></argsstring>
+        <name>mousex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/Common.h" line="426" bodyfile="/home/cj/workspace/Tetris/src/appliBase/Common.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_user_events_1a5e19f7d7787b60f3376bfe63f841f1f7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UserEvents::mousey</definition>
+        <argsstring></argsstring>
+        <name>mousey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/Common.h" line="426" bodyfile="/home/cj/workspace/Tetris/src/appliBase/Common.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_user_events_1a35b9f6ad1684725ab2d9dcdbbc715b73" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UserEvents::mousexrel</definition>
+        <argsstring></argsstring>
+        <name>mousexrel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/Common.h" line="427" bodyfile="/home/cj/workspace/Tetris/src/appliBase/Common.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_user_events_1afea18ec7d92eb4348d1f122fbac368aa" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UserEvents::mouseyrel</definition>
+        <argsstring></argsstring>
+        <name>mouseyrel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/Common.h" line="427" bodyfile="/home/cj/workspace/Tetris/src/appliBase/Common.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_user_events_1a0f1c058c9fdcdb7af88128178661f8ec" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UserEvents::mousebuttons[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>mousebuttons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/Common.h" line="428" bodyfile="/home/cj/workspace/Tetris/src/appliBase/Common.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_user_events_1ae9e99946331657426862610d57e58c3e" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; bool &gt;</type>
+        <definition>std::vector&lt;bool&gt; UserEvents::m_keyBoardEvents</definition>
+        <argsstring></argsstring>
+        <name>m_keyBoardEvents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/Common.h" line="451" bodyfile="/home/cj/workspace/Tetris/src/appliBase/Common.h" bodystart="451" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_user_events_1a1341f041d246d683bb47a94bc84fe014" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UserEvents::UserEvents</definition>
+        <argsstring>()</argsstring>
+        <name>UserEvents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/Common.h" line="431" bodyfile="/home/cj/workspace/Tetris/src/appliBase/Common.h" bodystart="430" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_user_events_1af6c25d500210883f4fcbca933f3e43bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void UserEvents::ClearKeyBardEvents</definition>
+        <argsstring>()</argsstring>
+        <name>ClearKeyBardEvents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/Common.h" line="440" bodyfile="/home/cj/workspace/Tetris/src/appliBase/Common.h" bodystart="439" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_user_events_1afb4f5da25004d167889ec30d13f866c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UserEvents::IsPressed</definition>
+        <argsstring>(Key key)</argsstring>
+        <name>IsPressed</name>
+        <param>
+          <type><ref refid="_common_8h_1ab3c7af4820830f9166ede9e5623c4e73" kindref="member">Key</ref></type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/Common.h" line="447" bodyfile="/home/cj/workspace/Tetris/src/appliBase/Common.h" bodystart="446" bodyend="449"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/cj/workspace/Tetris/src/appliBase/Common.h" line="424" bodyfile="/home/cj/workspace/Tetris/src/appliBase/Common.h" bodystart="424" bodyend="452"/>
+    <listofallmembers>
+      <member refid="struct_user_events_1af6c25d500210883f4fcbca933f3e43bd" prot="public" virt="non-virtual"><scope>UserEvents</scope><name>ClearKeyBardEvents</name></member>
+      <member refid="struct_user_events_1afb4f5da25004d167889ec30d13f866c4" prot="public" virt="non-virtual"><scope>UserEvents</scope><name>IsPressed</name></member>
+      <member refid="struct_user_events_1ae9e99946331657426862610d57e58c3e" prot="public" virt="non-virtual"><scope>UserEvents</scope><name>m_keyBoardEvents</name></member>
+      <member refid="struct_user_events_1a0f1c058c9fdcdb7af88128178661f8ec" prot="public" virt="non-virtual"><scope>UserEvents</scope><name>mousebuttons</name></member>
+      <member refid="struct_user_events_1a1d974059ccf68a4640fa703063fc7cd8" prot="public" virt="non-virtual"><scope>UserEvents</scope><name>mousex</name></member>
+      <member refid="struct_user_events_1a35b9f6ad1684725ab2d9dcdbbc715b73" prot="public" virt="non-virtual"><scope>UserEvents</scope><name>mousexrel</name></member>
+      <member refid="struct_user_events_1a5e19f7d7787b60f3376bfe63f841f1f7" prot="public" virt="non-virtual"><scope>UserEvents</scope><name>mousey</name></member>
+      <member refid="struct_user_events_1afea18ec7d92eb4348d1f122fbac368aa" prot="public" virt="non-virtual"><scope>UserEvents</scope><name>mouseyrel</name></member>
+      <member refid="struct_user_events_1a1341f041d246d683bb47a94bc84fe014" prot="public" virt="non-virtual"><scope>UserEvents</scope><name>UserEvents</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_c_i_piece_8h" kind="file">
+    <compoundname>CIPiece.h</compoundname>
+    <includes refid="_c_piece_abstract_8h" local="yes">CPieceAbstract.h</includes>
+    <includedby refid="test_c_i_piece_2_c_projet_tetris_piece_8h" local="yes">/home/cj/workspace/Tetris/src/test/testCIPiece/CProjetTetrisPiece.h</includedby>
+    <includedby refid="test_c_i_piece_8cpp" local="yes">/home/cj/workspace/Tetris/src/test/testCIPiece.cpp</includedby>
+    <includedby refid="_c_i_piece_8cpp" local="yes">/home/cj/workspace/Tetris/src/tetris/CIPiece.cpp</includedby>
+    <includedby refid="_c_tetris_game_8h" local="yes">/home/cj/workspace/Tetris/src/tetris/CTetrisGame.h</includedby>
+    <incdepgraph>
+      <node id="1277">
+        <label>CPieceAbstract.h</label>
+        <link refid="_c_piece_abstract_8h"/>
+        <childnode refid="1278" relation="include">
+        </childnode>
+      </node>
+      <node id="1289">
+        <label>limits</label>
+      </node>
+      <node id="1284">
+        <label>cmath</label>
+      </node>
+      <node id="1279">
+        <label>string</label>
+      </node>
+      <node id="1290">
+        <label>CVector4.h</label>
+        <link refid="_c_vector4_8h"/>
+        <childnode refid="1289" relation="include">
+        </childnode>
+        <childnode refid="1281" relation="include">
+        </childnode>
+        <childnode refid="1288" relation="include">
+        </childnode>
+      </node>
+      <node id="1276">
+        <label>/home/cj/workspace/Tetris/src/tetris/CIPiece.h</label>
+        <link refid="CIPiece.h"/>
+        <childnode refid="1277" relation="include">
+        </childnode>
+      </node>
+      <node id="1291">
+        <label>CMatrix44.h</label>
+        <link refid="_c_matrix44_8h"/>
+        <childnode refid="1288" relation="include">
+        </childnode>
+        <childnode refid="1290" relation="include">
+        </childnode>
+        <childnode refid="1285" relation="include">
+        </childnode>
+      </node>
+      <node id="1287">
+        <label>ctime</label>
+      </node>
+      <node id="1283">
+        <label>vector</label>
+      </node>
+      <node id="1280">
+        <label>sstream</label>
+      </node>
+      <node id="1288">
+        <label>CVector3.h</label>
+        <link refid="_c_vector3_8h"/>
+        <childnode refid="1289" relation="include">
+        </childnode>
+        <childnode refid="1281" relation="include">
+        </childnode>
+        <childnode refid="1284" relation="include">
+        </childnode>
+      </node>
+      <node id="1286">
+        <label>cstdlib</label>
+      </node>
+      <node id="1281">
+        <label>iostream</label>
+      </node>
+      <node id="1278">
+        <label>Common.h</label>
+        <link refid="_common_8h"/>
+        <childnode refid="1279" relation="include">
+        </childnode>
+        <childnode refid="1280" relation="include">
+        </childnode>
+        <childnode refid="1281" relation="include">
+        </childnode>
+        <childnode refid="1282" relation="include">
+        </childnode>
+        <childnode refid="1283" relation="include">
+        </childnode>
+        <childnode refid="1284" relation="include">
+        </childnode>
+        <childnode refid="1285" relation="include">
+        </childnode>
+        <childnode refid="1286" relation="include">
+        </childnode>
+        <childnode refid="1287" relation="include">
+        </childnode>
+        <childnode refid="1288" relation="include">
+        </childnode>
+        <childnode refid="1290" relation="include">
+        </childnode>
+        <childnode refid="1291" relation="include">
+        </childnode>
+      </node>
+      <node id="1282">
+        <label>algorithm</label>
+      </node>
+      <node id="1285">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1319">
+        <label>/home/cj/workspace/Tetris/src/tetris/CTetrisGame.cpp</label>
+        <link refid="_c_tetris_game_8cpp"/>
+      </node>
+      <node id="1304">
+        <label>/home/cj/workspace/Tetris/src/test/testCOPiece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_o_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="1305" relation="include">
+        </childnode>
+        <childnode refid="1306" relation="include">
+        </childnode>
+      </node>
+      <node id="1306">
+        <label>/home/cj/workspace/Tetris/src/test/testCOPiece.cpp</label>
+        <link refid="test_c_o_piece_8cpp"/>
+      </node>
+      <node id="1309">
+        <label>/home/cj/workspace/Tetris/src/test/testCTPiece.cpp</label>
+        <link refid="test_c_t_piece_8cpp"/>
+      </node>
+      <node id="1310">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ1Piece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_z1_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="1311" relation="include">
+        </childnode>
+        <childnode refid="1312" relation="include">
+        </childnode>
+      </node>
+      <node id="1298">
+        <label>/home/cj/workspace/Tetris/src/test/testCL1Piece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_l1_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="1299" relation="include">
+        </childnode>
+        <childnode refid="1300" relation="include">
+        </childnode>
+      </node>
+      <node id="1296">
+        <label>/home/cj/workspace/Tetris/src/tetris/CIPiece.cpp</label>
+        <link refid="_c_i_piece_8cpp"/>
+      </node>
+      <node id="1316">
+        <label>/home/cj/workspace/Tetris/src/tetris/CProjetTetris.h</label>
+        <link refid="_c_projet_tetris_8h"/>
+        <childnode refid="1317" relation="include">
+        </childnode>
+        <childnode refid="1318" relation="include">
+        </childnode>
+      </node>
+      <node id="1292">
+        <label>/home/cj/workspace/Tetris/src/tetris/CIPiece.h</label>
+        <link refid="CIPiece.h"/>
+        <childnode refid="1293" relation="include">
+        </childnode>
+        <childnode refid="1295" relation="include">
+        </childnode>
+        <childnode refid="1296" relation="include">
+        </childnode>
+        <childnode refid="1297" relation="include">
+        </childnode>
+      </node>
+      <node id="1313">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ2Piece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_z2_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="1314" relation="include">
+        </childnode>
+        <childnode refid="1315" relation="include">
+        </childnode>
+      </node>
+      <node id="1317">
+        <label>/home/cj/workspace/Tetris/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="1318">
+        <label>/home/cj/workspace/Tetris/src/tetris/CProjetTetris.cpp</label>
+        <link refid="_c_projet_tetris_8cpp"/>
+      </node>
+      <node id="1293">
+        <label>/home/cj/workspace/Tetris/src/test/testCIPiece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_i_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="1294" relation="include">
+        </childnode>
+        <childnode refid="1295" relation="include">
+        </childnode>
+      </node>
+      <node id="1301">
+        <label>/home/cj/workspace/Tetris/src/test/testCL2Piece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_l2_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="1302" relation="include">
+        </childnode>
+        <childnode refid="1303" relation="include">
+        </childnode>
+      </node>
+      <node id="1295">
+        <label>/home/cj/workspace/Tetris/src/test/testCIPiece.cpp</label>
+        <link refid="test_c_i_piece_8cpp"/>
+      </node>
+      <node id="1300">
+        <label>/home/cj/workspace/Tetris/src/test/testCL1Piece.cpp</label>
+        <link refid="test_c_l1_piece_8cpp"/>
+      </node>
+      <node id="1312">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ1Piece.cpp</label>
+        <link refid="test_c_z1_piece_8cpp"/>
+      </node>
+      <node id="1305">
+        <label>/home/cj/workspace/Tetris/src/test/testCOPiece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_o_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="1303">
+        <label>/home/cj/workspace/Tetris/src/test/testCL2Piece.cpp</label>
+        <link refid="test_c_l2_piece_8cpp"/>
+      </node>
+      <node id="1297">
+        <label>/home/cj/workspace/Tetris/src/tetris/CTetrisGame.h</label>
+        <link refid="_c_tetris_game_8h"/>
+        <childnode refid="1293" relation="include">
+        </childnode>
+        <childnode refid="1298" relation="include">
+        </childnode>
+        <childnode refid="1301" relation="include">
+        </childnode>
+        <childnode refid="1304" relation="include">
+        </childnode>
+        <childnode refid="1307" relation="include">
+        </childnode>
+        <childnode refid="1310" relation="include">
+        </childnode>
+        <childnode refid="1313" relation="include">
+        </childnode>
+        <childnode refid="1316" relation="include">
+        </childnode>
+        <childnode refid="1319" relation="include">
+        </childnode>
+      </node>
+      <node id="1315">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ2Piece.cpp</label>
+        <link refid="test_c_z2_piece_8cpp"/>
+      </node>
+      <node id="1314">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ2Piece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_z2_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="1294">
+        <label>/home/cj/workspace/Tetris/src/test/testCIPiece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_i_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="1311">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ1Piece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_z1_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="1302">
+        <label>/home/cj/workspace/Tetris/src/test/testCL2Piece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_l2_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="1308">
+        <label>/home/cj/workspace/Tetris/src/test/testCTPiece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_t_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="1299">
+        <label>/home/cj/workspace/Tetris/src/test/testCL1Piece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_l1_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="1307">
+        <label>/home/cj/workspace/Tetris/src/test/testCTPiece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_t_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="1308" relation="include">
+        </childnode>
+        <childnode refid="1309" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_c_i_piece" prot="public">CIPiece</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__CIPIECE_H__</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__CIPIECE_H__</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_piece_abstract_8h" kindref="compound">CPieceAbstract.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_c_i_piece" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_c_i_piece" kindref="compound">CIPiece</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_c_piece_abstract" kindref="compound" tooltip="classe CPieceAbstract abstraite">CPieceAbstract</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_i_piece_1a50a5efe272b2a1f2d75908acec027d92" kindref="member">CIPiece</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iY,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>&amp;<sp/><ref refid="glext_8h_1a3ea846f998d64f079b86052b6c4193a8" kindref="member">color</ref>);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_i_piece_1aa12d81b1311c8835029b03df6f41b219" kindref="member">Turn</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/cj/workspace/Tetris/src/tetris/CIPiece.h"/>
+  </compounddef>
+</doxygen>

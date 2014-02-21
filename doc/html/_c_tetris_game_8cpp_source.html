@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>Tetris:  Fichier source de /home/cj/workspace/Tetris/src/tetris/CTetrisGame.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Les-Stages-a-l-IUT-Informatique-de-Vannes-en-2006_img_200.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Tetris
+   &#160;<span id="projectnumber">alpha</span>
+   </div>
+   <div id="projectbrief">Juan revival</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- G√©n√©r√© par Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associ√©es</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_c_tetris_game_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>D√©finitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>√ânum√©rations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs √©num√©r√©es</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">CTetrisGame.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_c_tetris_game_8cpp.html">Aller √† la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//========================================================================</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Projet C/C++</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Copyright (c) 2013-2014 Equipe SEASIDE (T. LE NAOUR, J.F KAMP)</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// IRISA - UBS  / IUT Informatique Vannes</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//========================================================================</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_c_tetris_game_8h.html">CTetrisGame.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/****************************************/</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="class_c_tetris_game.html#a349807d252d13104379650f9642d597a">   12</a></span>&#160;<a class="code" href="class_c_tetris_game.html#ac4ffeac09f4218644d39fbf54dfc57b9" title="constructeur par dÈfaut de la piece">CTetrisGame::CTetrisGame</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> gamePosX, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> gamePosY,</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> boardWidth, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> boardHeight, <span class="keywordtype">float</span> dimCase)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  m_board = <a class="code" href="class_c_t_game_table.html">CTGameTable</a>(boardWidth, boardHeight);  <span class="comment">//appel de CTGameTable(int width, int height)</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  m_xPos     = gamePosX;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  m_yPos     = gamePosY;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  m_caseDim  = dimCase;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  m_score    = 0;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  m_pPiece   = NULL;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  m_gameOver = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">/****************************************/</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="class_c_tetris_game.html#a4493ebe53948ec8a60cf8e81c3d8cebc">   27</a></span>&#160;<a class="code" href="class_c_tetris_game.html#a4493ebe53948ec8a60cf8e81c3d8cebc" title="destructeur de CTetrisGame">CTetrisGame::~CTetrisGame</a>(){</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordflow">if</span>(m_pPiece)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">delete</span> m_pPiece;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">/****************************************/</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> CTetrisGame::AddPiece() {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  srand(time(NULL));</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">float</span> red   = (<a class="code" href="mainpage_8dox.html#a5ef751308c5d8fbf734a72bb790e807c">rand</a>()%256)/255.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="gl_8h.html#a352356e93752ca9cb4ebf1bc7f523ace">green</a> = (<a class="code" href="mainpage_8dox.html#a5ef751308c5d8fbf734a72bb790e807c">rand</a>()%256)/255.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="gl_8h.html#ac110d82faadbc5c8d20a94ee4f756059">blue</a>  = (<a class="code" href="mainpage_8dox.html#a5ef751308c5d8fbf734a72bb790e807c">rand</a>()%256)/255.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="class_c_vector3.html">CVector3</a> <a class="code" href="glext_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a> = <a class="code" href="class_c_vector3.html">CVector3</a>(red, green, blue);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> posX = 3;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> posY = 19;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordflow">switch</span> (<a class="code" href="mainpage_8dox.html#a5ef751308c5d8fbf734a72bb790e807c">rand</a>() % 7) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      this-&gt;m_pPiece = <span class="keyword">new</span> <a class="code" href="class_c_t_piece.html">CTPiece</a>(posX, posY, color);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      this-&gt;m_pPiece = <span class="keyword">new</span> <a class="code" href="class_c_i_piece.html">CIPiece</a>(posX, posY, color);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      this-&gt;m_pPiece = <span class="keyword">new</span> <a class="code" href="class_c_o_piece.html">COPiece</a>(posX, posY, color);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">case</span> 3:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      this-&gt;m_pPiece = <span class="keyword">new</span> <a class="code" href="class_c_z1_piece.html">CZ1Piece</a>(posX, posY, color);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">case</span> 4:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      this-&gt;m_pPiece = <span class="keyword">new</span> <a class="code" href="class_c_z2_piece.html">CZ2Piece</a>(posX, posY, color);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">case</span> 5:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      this-&gt;m_pPiece = <span class="keyword">new</span> <a class="code" href="class_c_l1_piece.html">CL1Piece</a>(posX, posY, color);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">case</span> 6:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      this-&gt;m_pPiece = <span class="keyword">new</span> <a class="code" href="class_c_l2_piece.html">CL2Piece</a>(posX, posY, color);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">int</span> CTetrisGame::GetFullRow() {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0; i &lt; m_board.<a class="code" href="class_c_t_game_table.html#a1ae234b52213c9ffad0dc129a5279719">GetGameTable</a>().size(); i++) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">bool</span> isFull = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j=0; j &lt; m_board.<a class="code" href="class_c_t_game_table.html#a1ae234b52213c9ffad0dc129a5279719">GetGameTable</a>()[i].size(); j++) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">if</span> (!m_board.<a class="code" href="class_c_t_game_table.html#a1ae234b52213c9ffad0dc129a5279719">GetGameTable</a>()[i][j].m_used) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        isFull = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span> (isFull)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">void</span> CTetrisGame::DeleteRow(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> rowIndex) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  vector&lt;TGameRow&gt; &amp;gameTable = this-&gt;m_board.<a class="code" href="class_c_t_game_table.html#a1ae234b52213c9ffad0dc129a5279719">GetGameTable</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordflow">if</span> (0 &lt;= rowIndex &amp;&amp; rowIndex &lt; gameTable.size()) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// On descend toutes les lignes au dessus</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=rowIndex; i+1 &lt; gameTable.size(); i++)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      gameTable[i] = gameTable[i+1];</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// Et on vide la ligne du haut</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0; i&lt;gameTable[gameTable.size()-1].size(); i++)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      gameTable[gameTable.size()-1][i].m_used = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    m_score += 42;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordtype">bool</span> CTetrisGame::IsGameOver() {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> topIndex =</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    this-&gt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a8769db975fc272bcaf735c98f14fd419" title="index en ordonnÈe de la piece dans le tetrix">GetRowIndex</a>()+this-&gt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#aabf812ae9a7462f3724ad71c7bd687cf">GetDim</a>()-1;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    m_gameOver = (topIndex &gt;= this-&gt;m_board.<a class="code" href="class_c_t_game_table.html#a1ae234b52213c9ffad0dc129a5279719">GetGameTable</a>().size());</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordflow">return</span> m_gameOver;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="code" href="class_c_tetris_game.html#a39c3fb5b3b114f99d9a20248c0bddc07">  109</a></span>&#160;<a class="code" href="_tetris_utils_8h.html#aee2205359d0b7e255e34eef4d76435df" title="Etat du jeu aprËs une action (update, modification de position ou orientation piece)">ActionResult</a> <a class="code" href="class_c_tetris_game.html#a39c3fb5b3b114f99d9a20248c0bddc07" title="modifie la position et l&#39;orientation de la piece courante">CTetrisGame::MovePiece</a>(<a class="code" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8" title="Actions possibles par l&#39;utilisateur.">PieceAction</a> action) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordflow">if</span>(m_gameOver)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_tetris_utils_8h.html#aee2205359d0b7e255e34eef4d76435dfaba20083622789a2ed8fe08664e5605c1">AR_Ok</a>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordflow">switch</span> (action) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8a84380f7c056a1d381a3b1889a48109d9">PA_RotateRight</a>:</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      this-&gt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a059a706ab5504a7390e63230d89dcbf5" title="rotation de la piece vers la droite">TurnRight</a>();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8a27ec28fc72ef8c4d4c17654dd902ff69">PA_RotateLeft</a>:</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      this-&gt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a440affcbdf9cbae4989e9828cc1b5d6d" title="rotation de la piece vers la gauche">TurnLeft</a>();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8adcec83af27ecc2ef0102fc7f50259e2c">PA_MoveRight</a>:</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      this-&gt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a9c39807ad0cfab6eaad33df42a3f1be8" title="incrÈmentation ou dÈcrÈmentation de l&#39;index de colonne (abscisse)">SetIncDecColIndex</a>(1);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8a5e5493ef9fa9bf628f739f0c6b4f8d71">PA_MoveLeft</a>:</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      this-&gt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a9c39807ad0cfab6eaad33df42a3f1be8" title="incrÈmentation ou dÈcrÈmentation de l&#39;index de colonne (abscisse)">SetIncDecColIndex</a>(-1);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8aa1205ee48206a302e6bfe972ce68927f">PA_MoveBottom2</a>:</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      <span class="keywordflow">while</span> (<a class="code" href="class_c_tetris_game.html#a39c3fb5b3b114f99d9a20248c0bddc07" title="modifie la position et l&#39;orientation de la piece courante">MovePiece</a>(<a class="code" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8adf2e2d247e618ea931d6e4ad7bed7464">PA_MoveBottom</a>) == <a class="code" href="_tetris_utils_8h.html#aee2205359d0b7e255e34eef4d76435dfaba20083622789a2ed8fe08664e5605c1">AR_Ok</a>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="class_c_tetris_game.html#a39c3fb5b3b114f99d9a20248c0bddc07" title="modifie la position et l&#39;orientation de la piece courante">MovePiece</a>(<a class="code" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8adf2e2d247e618ea931d6e4ad7bed7464">PA_MoveBottom</a>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8adf2e2d247e618ea931d6e4ad7bed7464">PA_MoveBottom</a>:</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      this-&gt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a88061bcd953015f183d77b9fdcd37e88" title="incrÈmentation ou dÈcrÈmentation de l&#39;index de ligne (ordonnÈe)">SetIncDecRowIndex</a>(-1);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  this-&gt;CheckBorderCollision();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordflow">if</span> (this-&gt;CheckCollision()) {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">switch</span>(action) {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8a84380f7c056a1d381a3b1889a48109d9">PA_RotateRight</a>:</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        this-&gt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a440affcbdf9cbae4989e9828cc1b5d6d" title="rotation de la piece vers la gauche">TurnLeft</a>();</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8a27ec28fc72ef8c4d4c17654dd902ff69">PA_RotateLeft</a>:</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        this-&gt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a059a706ab5504a7390e63230d89dcbf5" title="rotation de la piece vers la droite">TurnRight</a>();</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8adcec83af27ecc2ef0102fc7f50259e2c">PA_MoveRight</a>:</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        this-&gt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a9c39807ad0cfab6eaad33df42a3f1be8" title="incrÈmentation ou dÈcrÈmentation de l&#39;index de colonne (abscisse)">SetIncDecColIndex</a>(-1);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8a5e5493ef9fa9bf628f739f0c6b4f8d71">PA_MoveLeft</a>:</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        this-&gt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a9c39807ad0cfab6eaad33df42a3f1be8" title="incrÈmentation ou dÈcrÈmentation de l&#39;index de colonne (abscisse)">SetIncDecColIndex</a>(1);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8adf2e2d247e618ea931d6e4ad7bed7464">PA_MoveBottom</a>:</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        this-&gt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a88061bcd953015f183d77b9fdcd37e88" title="incrÈmentation ou dÈcrÈmentation de l&#39;index de ligne (ordonnÈe)">SetIncDecRowIndex</a>(1);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">if</span> (this-&gt;IsGameOver()) {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;          <span class="keywordflow">return</span> <a class="code" href="_tetris_utils_8h.html#aee2205359d0b7e255e34eef4d76435dfaa4933e0dea9d95e26410e76c1d9f7456">AR_GameOver</a>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_tetris_utils_8h.html#aee2205359d0b7e255e34eef4d76435dfa1f42fecf7c4f8a62b84008002163f1a4">AR_Collision</a>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="_tetris_utils_8h.html#aee2205359d0b7e255e34eef4d76435dfaba20083622789a2ed8fe08664e5605c1">AR_Ok</a>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="code" href="class_c_tetris_game.html#a865fe41b3de2f99a1675cf8f799823bb">  163</a></span>&#160;<a class="code" href="_tetris_utils_8h.html#aee2205359d0b7e255e34eef4d76435df" title="Etat du jeu aprËs une action (update, modification de position ou orientation piece)">ActionResult</a> <a class="code" href="class_c_tetris_game.html#a865fe41b3de2f99a1675cf8f799823bb" title="met ‡ jour le tetris en fonction du temps passÈ (le nombre de fois que la boucle de rendu est appelÈe) la m...">CTetrisGame::Update</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> step) {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordflow">if</span> (step != 0)</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_tetris_utils_8h.html#aee2205359d0b7e255e34eef4d76435dfaba20083622789a2ed8fe08664e5605c1">AR_Ok</a>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordflow">if</span>(m_gameOver)</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_tetris_utils_8h.html#aee2205359d0b7e255e34eef4d76435dfaa4933e0dea9d95e26410e76c1d9f7456">AR_GameOver</a>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordflow">if</span> (!this-&gt;m_pPiece) {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    this-&gt;AddPiece();</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_tetris_utils_8h.html#aee2205359d0b7e255e34eef4d76435dfaba20083622789a2ed8fe08664e5605c1">AR_Ok</a>;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <a class="code" href="_tetris_utils_8h.html#aee2205359d0b7e255e34eef4d76435df" title="Etat du jeu aprËs une action (update, modification de position ou orientation piece)">ActionResult</a> ar = this-&gt;<a class="code" href="class_c_tetris_game.html#a39c3fb5b3b114f99d9a20248c0bddc07" title="modifie la position et l&#39;orientation de la piece courante">MovePiece</a>(<a class="code" href="_tetris_utils_8h.html#a85e4ec079d684f89238ec06b40d024a8adf2e2d247e618ea931d6e4ad7bed7464">PA_MoveBottom</a>);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordflow">if</span> (ar == <a class="code" href="_tetris_utils_8h.html#aee2205359d0b7e255e34eef4d76435dfa1f42fecf7c4f8a62b84008002163f1a4">AR_Collision</a>) {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    this-&gt;InsertPiece();</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">while</span> (this-&gt;GetFullRow() != -1 ) {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      this-&gt;DeleteRow(this-&gt;GetFullRow());</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    this-&gt;AddPiece();</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keywordflow">return</span> ar;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="keywordtype">void</span> CTetrisGame::InsertPiece() {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0; i&lt;this-&gt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#aabf812ae9a7462f3724ad71c7bd687cf">GetDim</a>(); i++) {</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j=0; j&lt;this-&gt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#aabf812ae9a7462f3724ad71c7bd687cf">GetDim</a>(); j++) {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      <span class="keywordflow">if</span> (this-&gt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a4ea785d6771cde3f1bc302214259f059" title="rotation de la piece en fonction de l&#39;Ètat courant (‡ redÈfinir dans les classes filles)">GetTable</a>()[i][j] == 1) {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <a class="code" href="struct_case.html">Case</a> pieceCase    = <a class="code" href="struct_case.html">Case</a>();</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        pieceCase.<a class="code" href="struct_case.html#ab36a7bb1d1f4da76aedde0cd2db71f88">m_used</a>  = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        pieceCase.<a class="code" href="struct_case.html#a2edf0eece87b9b67e7cd6b97e1f63622">m_color</a> = this-&gt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a85eb0b4bb71d4058229ff61f711803e4" title="renvoit la couleur de la piece">GetColor</a>();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        this-&gt;m_board.<a class="code" href="class_c_t_game_table.html#a93e226e7dfc8ea98582bcbc861504d85">setCase</a>(this-&gt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a8769db975fc272bcaf735c98f14fd419" title="index en ordonnÈe de la piece dans le tetrix">GetRowIndex</a>()+i, this-&gt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a23475b762834cd871101dd838564e0af" title="index en abcisse de la piece dans le tetrix">GetColIndex</a>()+j, pieceCase);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      }</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    }</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keyword">delete</span> this-&gt;m_pPiece;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  this-&gt;m_pPiece = NULL;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keywordtype">bool</span> CTetrisGame::CheckBorderCollision() {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keywordtype">int</span> leftIndex = 0;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> col=0; col&lt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#aabf812ae9a7462f3724ad71c7bd687cf">GetDim</a>(); col++) {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="glext_8h.html#a11b277b422822f784ee248b43eee3e1e">row</a>=0; <a class="code" href="glext_8h.html#a11b277b422822f784ee248b43eee3e1e">row</a>&lt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#aabf812ae9a7462f3724ad71c7bd687cf">GetDim</a>(); <a class="code" href="glext_8h.html#a11b277b422822f784ee248b43eee3e1e">row</a>++) {</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      <span class="keywordflow">if</span> (m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a4ea785d6771cde3f1bc302214259f059" title="rotation de la piece en fonction de l&#39;Ètat courant (‡ redÈfinir dans les classes filles)">GetTable</a>()[<a class="code" href="glext_8h.html#a11b277b422822f784ee248b43eee3e1e">row</a>][col] == 1) {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="comment">// L&#39;index est la colonne la plus √† gauche comportant au moins un 1.</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        leftIndex = col;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="comment">// Et on quitte les boucles</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        col = m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#aabf812ae9a7462f3724ad71c7bd687cf">GetDim</a>();</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;      }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    }</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  leftIndex += m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a23475b762834cd871101dd838564e0af" title="index en abcisse de la piece dans le tetrix">GetColIndex</a>();</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keywordflow">if</span> (leftIndex &lt; 0) {</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="comment">// D√©bordement par la gauche</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    this-&gt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a9c39807ad0cfab6eaad33df42a3f1be8" title="incrÈmentation ou dÈcrÈmentation de l&#39;index de colonne (abscisse)">SetIncDecColIndex</a>(-1*leftIndex);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  }</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="gl_8h.html#a30a197eaed803ac3cd1b444d4c972354">width</a> = this-&gt;m_board.<a class="code" href="class_c_t_game_table.html#a1ae234b52213c9ffad0dc129a5279719">GetGameTable</a>()[0].size();</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> rightIndex = this-&gt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#aabf812ae9a7462f3724ad71c7bd687cf">GetDim</a>() - 1;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> col=m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#aabf812ae9a7462f3724ad71c7bd687cf">GetDim</a>(); col&gt;0; col--) {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="glext_8h.html#a11b277b422822f784ee248b43eee3e1e">row</a>=0; <a class="code" href="glext_8h.html#a11b277b422822f784ee248b43eee3e1e">row</a>&lt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#aabf812ae9a7462f3724ad71c7bd687cf">GetDim</a>(); <a class="code" href="glext_8h.html#a11b277b422822f784ee248b43eee3e1e">row</a>++) {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;      <span class="keywordflow">if</span> (m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a4ea785d6771cde3f1bc302214259f059" title="rotation de la piece en fonction de l&#39;Ètat courant (‡ redÈfinir dans les classes filles)">GetTable</a>()[<a class="code" href="glext_8h.html#a11b277b422822f784ee248b43eee3e1e">row</a>][col-1] == 1) {</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="comment">// L&#39;index est la colonne la plus √† droite comportant au moins un 1.</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        rightIndex = col-1;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="comment">// Et on quitte les boucles</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        col = 1;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      }</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    }</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  rightIndex += m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a23475b762834cd871101dd838564e0af" title="index en abcisse de la piece dans le tetrix">GetColIndex</a>();</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keywordflow">if</span> (rightIndex &gt;= width) {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="comment">// D√©bordement par la droite</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    this-&gt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a9c39807ad0cfab6eaad33df42a3f1be8" title="incrÈmentation ou dÈcrÈmentation de l&#39;index de colonne (abscisse)">SetIncDecColIndex</a>(width-rightIndex-1);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  }</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;}</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="keywordtype">bool</span> CTetrisGame::CheckCollision() {</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="comment">// On v√©rifie la collision avec le bord inf√©rieur</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <span class="keywordtype">int</span> bottomIndex = 0;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="glext_8h.html#a11b277b422822f784ee248b43eee3e1e">row</a>=0; <a class="code" href="glext_8h.html#a11b277b422822f784ee248b43eee3e1e">row</a>&lt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#aabf812ae9a7462f3724ad71c7bd687cf">GetDim</a>(); <a class="code" href="glext_8h.html#a11b277b422822f784ee248b43eee3e1e">row</a>++) {</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> col=0; col&lt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#aabf812ae9a7462f3724ad71c7bd687cf">GetDim</a>(); col++) {</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      <span class="keywordflow">if</span> (m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a4ea785d6771cde3f1bc302214259f059" title="rotation de la piece en fonction de l&#39;Ètat courant (‡ redÈfinir dans les classes filles)">GetTable</a>()[<a class="code" href="glext_8h.html#a11b277b422822f784ee248b43eee3e1e">row</a>][col] == 1) {</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="comment">// L&#39;index est la ligne la plus basse comportant au moins un 1.</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        bottomIndex = <a class="code" href="glext_8h.html#a11b277b422822f784ee248b43eee3e1e">row</a>;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="comment">// Et on quitte les boucles</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <a class="code" href="glext_8h.html#a11b277b422822f784ee248b43eee3e1e">row</a> = m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#aabf812ae9a7462f3724ad71c7bd687cf">GetDim</a>();</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  bottomIndex += m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a8769db975fc272bcaf735c98f14fd419" title="index en ordonnÈe de la piece dans le tetrix">GetRowIndex</a>();</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="keywordflow">if</span> (bottomIndex &lt; 0)</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>; <span class="comment">// La pi√®ce a atteint le bord inf√©rieur</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="comment">// On v√©rifie la collision avec les autres pi√®ces.</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0; i&lt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#aabf812ae9a7462f3724ad71c7bd687cf">GetDim</a>(); i++) {</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j=0; j&lt;m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#aabf812ae9a7462f3724ad71c7bd687cf">GetDim</a>(); j++) {</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;      <span class="keywordflow">if</span> (m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a4ea785d6771cde3f1bc302214259f059" title="rotation de la piece en fonction de l&#39;Ètat courant (‡ redÈfinir dans les classes filles)">GetTable</a>()[i][j] == 1) {</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="gl_8h.html#a0cdec8e97a75ee9458b23d152bf962d4">x</a> = m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a23475b762834cd871101dd838564e0af" title="index en abcisse de la piece dans le tetrix">GetColIndex</a>()+j;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="gl_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a> = m_pPiece-&gt;<a class="code" href="class_c_piece_abstract.html#a8769db975fc272bcaf735c98f14fd419" title="index en ordonnÈe de la piece dans le tetrix">GetRowIndex</a>()+i;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keywordflow">if</span> (y &lt; m_board.<a class="code" href="class_c_t_game_table.html#a1ae234b52213c9ffad0dc129a5279719">GetGameTable</a>().size()</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            &amp;&amp; x &lt; m_board.<a class="code" href="class_c_t_game_table.html#a1ae234b52213c9ffad0dc129a5279719">GetGameTable</a>()[0].size()</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            &amp;&amp; m_board.<a class="code" href="class_c_t_game_table.html#a1ae234b52213c9ffad0dc129a5279719">GetGameTable</a>()[<a class="code" href="gl_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a>][<a class="code" href="gl_8h.html#a0cdec8e97a75ee9458b23d152bf962d4">x</a>].m_used)</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        {</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        }</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      }</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    }</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  }</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;}</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment">/****************************************/</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno"><a class="code" href="class_c_tetris_game.html#a2349ec74b3f03c09a3e58603a965526d">  288</a></span>&#160;<a class="code" href="class_c_t_game_table.html">CTGameTable</a>&amp;    <a class="code" href="class_c_tetris_game.html#a2349ec74b3f03c09a3e58603a965526d" title="renvoit le tableau du jeu avec les cases occupÈes et leur couleur">CTetrisGame::GetBoard</a>()    { <span class="keywordflow">return</span> m_board; }</div>
+<div class="line"><a name="l00289"></a><span class="lineno"><a class="code" href="class_c_tetris_game.html#a4778a2c417381872d053a036eaed1c67">  289</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>    <a class="code" href="class_c_tetris_game.html#a4778a2c417381872d053a036eaed1c67" title="renvoit position du jeu dans la fenËtre openGL">CTetrisGame::GetXPos</a>()     { <span class="keywordflow">return</span> m_xPos; }</div>
+<div class="line"><a name="l00290"></a><span class="lineno"><a class="code" href="class_c_tetris_game.html#ad51b2248159ecb93c3d677a9fd09e984">  290</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>    <a class="code" href="class_c_tetris_game.html#ad51b2248159ecb93c3d677a9fd09e984" title="renvoit position du jeu dans la fenËtre openGL">CTetrisGame::GetYPos</a>()     { <span class="keywordflow">return</span> m_yPos; }</div>
+<div class="line"><a name="l00291"></a><span class="lineno"><a class="code" href="class_c_tetris_game.html#a8cd74a8fffb5355326915564cd82425e">  291</a></span>&#160;<span class="keywordtype">float</span>&amp;          <a class="code" href="class_c_tetris_game.html#a8cd74a8fffb5355326915564cd82425e" title="renvoit la taille d&#39;une case du tetris">CTetrisGame::GetCaseDim</a>()  { <span class="keywordflow">return</span> m_caseDim; }</div>
+<div class="line"><a name="l00292"></a><span class="lineno"><a class="code" href="class_c_tetris_game.html#a1eb1b3e8b0443fe6665f4233035d394f">  292</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>    <a class="code" href="class_c_tetris_game.html#a1eb1b3e8b0443fe6665f4233035d394f" title="renvoit le score courant">CTetrisGame::GetScore</a>()    { <span class="keywordflow">return</span> m_score; }</div>
+<div class="line"><a name="l00293"></a><span class="lineno"><a class="code" href="class_c_tetris_game.html#ab27572baf8ecf5e40de3438329fa1238">  293</a></span>&#160;<a class="code" href="class_c_piece_abstract.html" title="classe CPieceAbstract abstraite">CPieceAbstract</a>* <a class="code" href="class_c_tetris_game.html#ab27572baf8ecf5e40de3438329fa1238" title="renvoit un pointeur sur la piËce courante">CTetrisGame::GetPiece</a>()    { <span class="keywordflow">return</span> m_pPiece; }</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_33fdd4cdb1b96634eacc7402fd786645.html">tetris</a></li><li class="navelem"><a class="el" href="_c_tetris_game_8cpp.html">CTetrisGame.cpp</a></li>
+    <li class="footer">G√©n√©r√© le Vendredi F√©vrier 21 2014 22:34:25 pour Tetris par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
+  </ul>
+</div>
+</body>
+</html>

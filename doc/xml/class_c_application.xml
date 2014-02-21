@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="class_c_application" kind="class" prot="public" abstract="yes">
+    <compoundname>CApplication</compoundname>
+    <derivedcompoundref refid="class_c_projet_tetris" prot="public" virt="non-virtual">CProjetTetris</derivedcompoundref>
+    <derivedcompoundref refid="class_c_projet_tetris_piece" prot="public" virt="non-virtual">CProjetTetrisPiece</derivedcompoundref>
+    <derivedcompoundref refid="class_c_projet_tetris_piece" prot="public" virt="non-virtual">CProjetTetrisPiece</derivedcompoundref>
+    <derivedcompoundref refid="class_c_projet_tetris_piece" prot="public" virt="non-virtual">CProjetTetrisPiece</derivedcompoundref>
+    <derivedcompoundref refid="class_c_projet_tetris_piece" prot="public" virt="non-virtual">CProjetTetrisPiece</derivedcompoundref>
+    <derivedcompoundref refid="class_c_projet_tetris_piece" prot="public" virt="non-virtual">CProjetTetrisPiece</derivedcompoundref>
+    <derivedcompoundref refid="class_c_projet_tetris_piece" prot="public" virt="non-virtual">CProjetTetrisPiece</derivedcompoundref>
+    <derivedcompoundref refid="class_c_projet_tetris_piece" prot="public" virt="non-virtual">CProjetTetrisPiece</derivedcompoundref>
+    <includes refid="_c_application_8h" local="no">CApplication.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_c_application_1a0898c5b55383910f6c6af14d56434d4e" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_window_setup" kindref="compound">WindowSetup</ref> *</type>
+        <definition>WindowSetup* CApplication::m_windowSetUp</definition>
+        <argsstring></argsstring>
+        <name>m_windowSetUp</name>
+        <briefdescription>
+<para>infos liées à la fenêtre (pointeur car paratagé par deux objets) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" line="98" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_application_1a175c63828573c70b8383d0a7d06ca5c7" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_c_renderer" kindref="compound">CRenderer</ref></type>
+        <definition>CRenderer CApplication::m_renderer</definition>
+        <argsstring></argsstring>
+        <name>m_renderer</name>
+        <briefdescription>
+<para>Déclaration du renderer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" line="99" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_application_1af9cb02fda32ea439bcae6c3c9802e004" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_user_events" kindref="compound">UserEvents</ref> *</type>
+        <definition>UserEvents* CApplication::m_UserEvents</definition>
+        <argsstring></argsstring>
+        <name>m_UserEvents</name>
+        <briefdescription>
+<para>infos liées à la souris/caméra (pointeur car paratagé par deux objets) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" line="100" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_application_1a665fa9502db461f2fa7770c03449b32e" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_c_camera" kindref="compound">CCamera</ref> *</type>
+        <definition>CCamera* CApplication::m_camera</definition>
+        <argsstring></argsstring>
+        <name>m_camera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" line="101" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_application_1ad102d285eeedbf21d0c8b1c435c912fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CApplication::CApplication</definition>
+        <argsstring>()</argsstring>
+        <name>CApplication</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" line="40" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" bodystart="39" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_application_1a439d55233550e3973583a71fb8f2f149" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual CApplication::~CApplication</definition>
+        <argsstring>()</argsstring>
+        <name>~CApplication</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" line="45" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_application_1a78a287240ca36378ecf6df88547e87ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void CApplication::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialise le GUI (Graphic user interface), le renderer et l&apos;application enfant</para><para><simplesect kind="return"><para>code d&apos;erreur </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" line="50" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CApplication.cpp" bodystart="22" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_application_1adc82a249014512699d88e75c3df74cc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void CApplication::Render</definition>
+        <argsstring>()</argsstring>
+        <name>Render</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>lance la boucle d&apos;affichage, gère les évenements système et le rendu de la scène </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" line="55" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CApplication.cpp" bodystart="43" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_application_1a2f12f6a6db597d7ee071f197ee06a28f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void CApplication::Release</definition>
+        <argsstring>()</argsstring>
+        <name>Release</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fini l&apos;application: détruit les objets plus utilisés </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" line="61" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CApplication.cpp" bodystart="53" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_application_1a8e460269b5c90882cca831a8138b7346" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_user_events" kindref="compound">UserEvents</ref> *</type>
+        <definition>UserEvents * CApplication::GetUserEvents</definition>
+        <argsstring>()</argsstring>
+        <name>GetUserEvents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" line="67" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_application_1aa2a759eb0487530b412cd20faf00fa04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_window_setup" kindref="compound">WindowSetup</ref> *</type>
+        <definition>WindowSetup * CApplication::GetWindowInfo</definition>
+        <argsstring>()</argsstring>
+        <name>GetWindowInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" line="72" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" bodystart="104" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_c_application_1ad371542b040d86ff8a07a4df8f5d4ea4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool CApplication::OnInit</definition>
+        <argsstring>()=0</argsstring>
+        <name>OnInit</name>
+        <reimplementedby refid="class_c_projet_tetris_1ad64be3a4f7af30e896ee8a7c609d6931">OnInit</reimplementedby>
+        <reimplementedby refid="class_c_projet_tetris_piece_1a47cd605eda1c1cda40448f77e92efcad">OnInit</reimplementedby>
+        <reimplementedby refid="class_c_projet_tetris_piece_1a47cd605eda1c1cda40448f77e92efcad">OnInit</reimplementedby>
+        <reimplementedby refid="class_c_projet_tetris_piece_1a47cd605eda1c1cda40448f77e92efcad">OnInit</reimplementedby>
+        <reimplementedby refid="class_c_projet_tetris_piece_1a47cd605eda1c1cda40448f77e92efcad">OnInit</reimplementedby>
+        <reimplementedby refid="class_c_projet_tetris_piece_1a47cd605eda1c1cda40448f77e92efcad">OnInit</reimplementedby>
+        <reimplementedby refid="class_c_projet_tetris_piece_1a47cd605eda1c1cda40448f77e92efcad">OnInit</reimplementedby>
+        <reimplementedby refid="class_c_projet_tetris_piece_1a47cd605eda1c1cda40448f77e92efcad">OnInit</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_application_1a731c5cea9ea63bd0d60d45c534e6c9ea" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>virtual void CApplication::OnRender</definition>
+        <argsstring>()=0</argsstring>
+        <name>OnRender</name>
+        <reimplementedby refid="class_c_projet_tetris_1a339f4345e18b94f4305f0fc054a942f8">OnRender</reimplementedby>
+        <reimplementedby refid="class_c_projet_tetris_piece_1a40e5090362124e1fa2a715d682bebda6">OnRender</reimplementedby>
+        <reimplementedby refid="class_c_projet_tetris_piece_1a40e5090362124e1fa2a715d682bebda6">OnRender</reimplementedby>
+        <reimplementedby refid="class_c_projet_tetris_piece_1a40e5090362124e1fa2a715d682bebda6">OnRender</reimplementedby>
+        <reimplementedby refid="class_c_projet_tetris_piece_1a40e5090362124e1fa2a715d682bebda6">OnRender</reimplementedby>
+        <reimplementedby refid="class_c_projet_tetris_piece_1a40e5090362124e1fa2a715d682bebda6">OnRender</reimplementedby>
+        <reimplementedby refid="class_c_projet_tetris_piece_1a40e5090362124e1fa2a715d682bebda6">OnRender</reimplementedby>
+        <reimplementedby refid="class_c_projet_tetris_piece_1a40e5090362124e1fa2a715d682bebda6">OnRender</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_application_1a73fbe0652a7be90bee7acfd02c10c67d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>virtual void CApplication::OnRelease</definition>
+        <argsstring>()=0</argsstring>
+        <name>OnRelease</name>
+        <reimplementedby refid="class_c_projet_tetris_1a1124dfbd1be9deb52a83b1a4eae34306">OnRelease</reimplementedby>
+        <reimplementedby refid="class_c_projet_tetris_piece_1ae885c3e40072a0346b9746106e3960d2">OnRelease</reimplementedby>
+        <reimplementedby refid="class_c_projet_tetris_piece_1ae885c3e40072a0346b9746106e3960d2">OnRelease</reimplementedby>
+        <reimplementedby refid="class_c_projet_tetris_piece_1ae885c3e40072a0346b9746106e3960d2">OnRelease</reimplementedby>
+        <reimplementedby refid="class_c_projet_tetris_piece_1ae885c3e40072a0346b9746106e3960d2">OnRelease</reimplementedby>
+        <reimplementedby refid="class_c_projet_tetris_piece_1ae885c3e40072a0346b9746106e3960d2">OnRelease</reimplementedby>
+        <reimplementedby refid="class_c_projet_tetris_piece_1ae885c3e40072a0346b9746106e3960d2">OnRelease</reimplementedby>
+        <reimplementedby refid="class_c_projet_tetris_piece_1ae885c3e40072a0346b9746106e3960d2">OnRelease</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" line="92"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>classe <ref refid="class_c_application" kindref="compound">CApplication</ref>: elle encapsule l&apos;ensemble de l&apos;application à savoir l&apos;utilisation du GUI et du renderer L&apos;objectif étant qu&apos;elle sert de classe commune à ttes applications qui se serviront des fonctions suivantes </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="79">
+        <label>CProjetTetrisPiece</label>
+        <link refid="class_c_projet_tetris_piece"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>CProjetTetris</label>
+        <link refid="class_c_projet_tetris"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>CApplication</label>
+        <link refid="class_c_application"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="83">
+        <label>CCamera</label>
+        <link refid="class_c_camera"/>
+        <childnode refid="82" relation="usage">
+          <edgelabel>m_UserEvents</edgelabel>
+        </childnode>
+        <childnode refid="84" relation="usage">
+          <edgelabel>m_viewMatrix</edgelabel>
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>m_translate</edgelabel>
+        </childnode>
+      </node>
+      <node id="85">
+        <label>CVector4</label>
+        <link refid="class_c_vector4"/>
+      </node>
+      <node id="87">
+        <label>RendererSetup</label>
+        <link refid="struct_renderer_setup"/>
+      </node>
+      <node id="82">
+        <label>UserEvents</label>
+        <link refid="struct_user_events"/>
+      </node>
+      <node id="80">
+        <label>CApplication</label>
+        <link refid="class_c_application"/>
+        <childnode refid="81" relation="usage">
+          <edgelabel>m_windowSetUp</edgelabel>
+        </childnode>
+        <childnode refid="82" relation="usage">
+          <edgelabel>m_UserEvents</edgelabel>
+        </childnode>
+        <childnode refid="83" relation="usage">
+          <edgelabel>m_camera</edgelabel>
+        </childnode>
+        <childnode refid="86" relation="usage">
+          <edgelabel>m_renderer</edgelabel>
+        </childnode>
+      </node>
+      <node id="84">
+        <label>CMatrix44</label>
+        <link refid="class_c_matrix44"/>
+        <childnode refid="84" relation="usage">
+          <edgelabel>Identity</edgelabel>
+        </childnode>
+      </node>
+      <node id="81">
+        <label>WindowSetup</label>
+        <link refid="struct_window_setup"/>
+      </node>
+      <node id="86">
+        <label>CRenderer</label>
+        <link refid="class_c_renderer"/>
+        <childnode refid="81" relation="usage">
+          <edgelabel>m_windowSetup</edgelabel>
+        </childnode>
+        <childnode refid="83" relation="usage">
+          <edgelabel>m_camera</edgelabel>
+        </childnode>
+        <childnode refid="87" relation="usage">
+          <edgelabel>m_rendererSetup</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" line="33" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CApplication.h" bodystart="33" bodyend="102"/>
+    <listofallmembers>
+      <member refid="class_c_application_1ad102d285eeedbf21d0c8b1c435c912fb" prot="public" virt="non-virtual"><scope>CApplication</scope><name>CApplication</name></member>
+      <member refid="class_c_application_1a8e460269b5c90882cca831a8138b7346" prot="public" virt="non-virtual"><scope>CApplication</scope><name>GetUserEvents</name></member>
+      <member refid="class_c_application_1aa2a759eb0487530b412cd20faf00fa04" prot="public" virt="non-virtual"><scope>CApplication</scope><name>GetWindowInfo</name></member>
+      <member refid="class_c_application_1a78a287240ca36378ecf6df88547e87ae" prot="public" virt="non-virtual"><scope>CApplication</scope><name>Init</name></member>
+      <member refid="class_c_application_1a665fa9502db461f2fa7770c03449b32e" prot="protected" virt="non-virtual"><scope>CApplication</scope><name>m_camera</name></member>
+      <member refid="class_c_application_1a175c63828573c70b8383d0a7d06ca5c7" prot="protected" virt="non-virtual"><scope>CApplication</scope><name>m_renderer</name></member>
+      <member refid="class_c_application_1af9cb02fda32ea439bcae6c3c9802e004" prot="protected" virt="non-virtual"><scope>CApplication</scope><name>m_UserEvents</name></member>
+      <member refid="class_c_application_1a0898c5b55383910f6c6af14d56434d4e" prot="protected" virt="non-virtual"><scope>CApplication</scope><name>m_windowSetUp</name></member>
+      <member refid="class_c_application_1ad371542b040d86ff8a07a4df8f5d4ea4" prot="protected" virt="pure-virtual"><scope>CApplication</scope><name>OnInit</name></member>
+      <member refid="class_c_application_1a73fbe0652a7be90bee7acfd02c10c67d" prot="protected" virt="pure-virtual"><scope>CApplication</scope><name>OnRelease</name></member>
+      <member refid="class_c_application_1a731c5cea9ea63bd0d60d45c534e6c9ea" prot="protected" virt="pure-virtual"><scope>CApplication</scope><name>OnRender</name></member>
+      <member refid="class_c_application_1a2f12f6a6db597d7ee071f197ee06a28f" prot="public" virt="non-virtual"><scope>CApplication</scope><name>Release</name></member>
+      <member refid="class_c_application_1adc82a249014512699d88e75c3df74cc3" prot="public" virt="non-virtual"><scope>CApplication</scope><name>Render</name></member>
+      <member refid="class_c_application_1a439d55233550e3973583a71fb8f2f149" prot="public" virt="virtual"><scope>CApplication</scope><name>~CApplication</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

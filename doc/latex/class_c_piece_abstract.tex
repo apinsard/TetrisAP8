@@ -1,0 +1,470 @@
+\hypertarget{class_c_piece_abstract}{\section{RÃ©fÃ©rence de la classe C\-Piece\-Abstract}
+\label{class_c_piece_abstract}\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}}
+}
+
+
+classe \hyperlink{class_c_piece_abstract}{C\-Piece\-Abstract} abstraite  
+
+
+
+
+{\ttfamily \#include $<$C\-Piece\-Abstract.\-h$>$}
+
+
+
+DÃ©rivÃ©e par \hyperlink{class_c_i_piece}{C\-I\-Piece}, \hyperlink{class_c_l1_piece}{C\-L1\-Piece}, \hyperlink{class_c_l2_piece}{C\-L2\-Piece}, \hyperlink{class_c_o_piece}{C\-O\-Piece}, \hyperlink{class_c_t_piece}{C\-T\-Piece}, \hyperlink{class_c_z1_piece}{C\-Z1\-Piece}, et \hyperlink{class_c_z2_piece}{C\-Z2\-Piece}.
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_c_piece_abstract_ad16f516708789b9e64ae738220d4d7cd}{$\sim$\-C\-Piece\-Abstract} ()
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_piece_abstract_a059a706ab5504a7390e63230d89dcbf5}{Turn\-Right} ()
+\begin{DoxyCompactList}\small\item\em rotation de la piece vers la droite \end{DoxyCompactList}\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_piece_abstract_a440affcbdf9cbae4989e9828cc1b5d6d}{Turn\-Left} ()
+\begin{DoxyCompactList}\small\item\em rotation de la piece vers la gauche \end{DoxyCompactList}\item 
+\hyperlink{_c_piece_abstract_8h_a6ab852d6c8c848ae9a2b5c0e82ca1fdb}{T\-Piece\-Table} \& \hyperlink{class_c_piece_abstract_a4ea785d6771cde3f1bc302214259f059}{Get\-Table} ()
+\begin{DoxyCompactList}\small\item\em rotation de la piece en fonction de l'état courant (à redéfinir dans les classes filles) \end{DoxyCompactList}\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_piece_abstract_ab32c265408d3f4251e757a5b769fa5c6}{Set\-Table} (const \hyperlink{_c_piece_abstract_8h_a6ab852d6c8c848ae9a2b5c0e82ca1fdb}{T\-Piece\-Table} \&\hyperlink{glext_8h_a65df8075f44f790953a8a10f65eba61f}{table})
+\begin{DoxyCompactList}\small\item\em modifie la matrice d'état de la piece \end{DoxyCompactList}\item 
+int \hyperlink{class_c_piece_abstract_a23475b762834cd871101dd838564e0af}{Get\-Col\-Index} ()
+\begin{DoxyCompactList}\small\item\em index en abcisse de la piece dans le tetrix \end{DoxyCompactList}\item 
+int \hyperlink{class_c_piece_abstract_a8769db975fc272bcaf735c98f14fd419}{Get\-Row\-Index} ()
+\begin{DoxyCompactList}\small\item\em index en ordonnée de la piece dans le tetrix \end{DoxyCompactList}\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_piece_abstract_a88061bcd953015f183d77b9fdcd37e88}{Set\-Inc\-Dec\-Row\-Index} (int \hyperlink{glext_8h_a9f7dd2b9d60b1323394c63267ac42ce1}{val})
+\begin{DoxyCompactList}\small\item\em incrémentation ou décrémentation de l'index de ligne (ordonnée) \end{DoxyCompactList}\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_piece_abstract_a9c39807ad0cfab6eaad33df42a3f1be8}{Set\-Inc\-Dec\-Col\-Index} (int \hyperlink{glext_8h_a9f7dd2b9d60b1323394c63267ac42ce1}{val})
+\begin{DoxyCompactList}\small\item\em incrémentation ou décrémentation de l'index de colonne (abscisse) \end{DoxyCompactList}\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_piece_abstract_ac819011df0e42c55eee8385281873072}{Set\-Col\-Index} (int new\-Col\-Index)
+\begin{DoxyCompactList}\small\item\em permet de modifier l'index en abcisse de la piece dans le tetrix \end{DoxyCompactList}\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_piece_abstract_a7403cba8c95f9d6898c37bb2b01b6616}{Set\-Row\-Index} (int new\-Row\-Index)
+\begin{DoxyCompactList}\small\item\em permet de modifier l'index en ordonnée de la piece dans le tetrix \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_c_piece_abstract_aabf812ae9a7462f3724ad71c7bd687cf}{Get\-Dim} ()
+\item 
+const \hyperlink{class_c_vector3}{C\-Vector3} \& \hyperlink{class_c_piece_abstract_a85eb0b4bb71d4058229ff61f711803e4}{Get\-Color} ()
+\begin{DoxyCompactList}\small\item\em renvoit la couleur de la piece \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Types protÃ©gÃ©s}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_c_piece_abstract_a26cf88535ccf18d447db48ef92ac5452}{State} \{ \hyperlink{class_c_piece_abstract_a26cf88535ccf18d447db48ef92ac5452ac7946185608ed01260c03cc170d74421}{S\-\_\-\-Top}, 
+\hyperlink{class_c_piece_abstract_a26cf88535ccf18d447db48ef92ac5452a02e063c865417b081e0f234dfe52a442}{S\-\_\-\-Right}, 
+\hyperlink{class_c_piece_abstract_a26cf88535ccf18d447db48ef92ac5452a2709db6bc83f8f6d368c0715c55e8b7d}{S\-\_\-\-Bottom}, 
+\hyperlink{class_c_piece_abstract_a26cf88535ccf18d447db48ef92ac5452afd22cba46c5bd75b4bf84938919bdde7}{S\-\_\-\-Left}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protÃ©gÃ©es}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_piece_abstract_a240ad2fabd11a2b758f6be4d99d082f9}{C\-Piece\-Abstract} (unsigned int dim, int i\-X, int i\-Y, const \hyperlink{class_c_vector3}{C\-Vector3} \&\hyperlink{glext_8h_a3ea846f998d64f079b86052b6c4193a8}{color})
+\begin{DoxyCompactList}\small\item\em constructeur de piece \end{DoxyCompactList}\item 
+\hyperlink{class_c_piece_abstract_aa041b39e2f0d7914ff31def19062768f}{C\-Piece\-Abstract} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs protÃ©gÃ©s}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{class_c_piece_abstract_a5b572bea63dc23e5b0dee2ecb0297d0d}{m\-\_\-dim}
+\begin{DoxyCompactList}\small\item\em dimension de la piece \end{DoxyCompactList}\item 
+\hyperlink{_c_piece_abstract_8h_a6ab852d6c8c848ae9a2b5c0e82ca1fdb}{T\-Piece\-Table} \hyperlink{class_c_piece_abstract_add153cf74a7e17a41e867a9f4f671971}{m\-\_\-table}
+\begin{DoxyCompactList}\small\item\em matrice d'état de la piece \end{DoxyCompactList}\item 
+\hyperlink{class_c_piece_abstract_a26cf88535ccf18d447db48ef92ac5452}{State} \hyperlink{class_c_piece_abstract_a8bb8a977cbaf0d5c02d3a6f20a5e9bc6}{m\-\_\-state}
+\begin{DoxyCompactList}\small\item\em posture de la pièce \end{DoxyCompactList}\item 
+int \hyperlink{class_c_piece_abstract_ae7bd8b881cfe7906a437e45d07503db1}{m\-\_\-col\-Index}
+\begin{DoxyCompactList}\small\item\em index en abcisse de la pièce dans le tetrix \end{DoxyCompactList}\item 
+int \hyperlink{class_c_piece_abstract_a56ace921199f8d7cd7ed0b67cbf3f44b}{m\-\_\-row\-Index}
+\begin{DoxyCompactList}\small\item\em index en ordonnée de la pièce dans le tetrix \end{DoxyCompactList}\item 
+\hyperlink{class_c_vector3}{C\-Vector3} \hyperlink{class_c_piece_abstract_a7bbd378ef0f9d55345658adf16ffc7ed}{m\-\_\-color}
+\begin{DoxyCompactList}\small\item\em la couleur de la piece \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_c_piece_abstract_af102e7f9ac8d0946c0529e108e87e839}{operator$<$$<$} (ostream \&flux, const \hyperlink{class_c_piece_abstract}{C\-Piece\-Abstract} \&\hyperlink{glext_8h_aa5367c14d90f462230c2611b81b41d23}{p})
+\end{DoxyCompactItemize}
+
+
+\subsection{Description dÃ©taillÃ©e}
+classe \hyperlink{class_c_piece_abstract}{C\-Piece\-Abstract} abstraite 
+
+DÃ©finition Ã  la ligne 22 du fichier C\-Piece\-Abstract.\-h.
+
+
+
+\subsection{Documentation des Ã©numÃ©rations membres}
+\hypertarget{class_c_piece_abstract_a26cf88535ccf18d447db48ef92ac5452}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!State@{State}}
+\index{State@{State}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{State}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-Piece\-Abstract\-::\-State}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_piece_abstract_a26cf88535ccf18d447db48ef92ac5452}
+\begin{Desc}
+\item[Valeurs Ã©numÃ©rÃ©es]\par
+\begin{description}
+\index{S\-\_\-\-Top@{S\-\_\-\-Top}!C\-Piece\-Abstract@{C\-Piece\-Abstract}}\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!S\-\_\-\-Top@{S\-\_\-\-Top}}\item[{\em 
+\hypertarget{class_c_piece_abstract_a26cf88535ccf18d447db48ef92ac5452ac7946185608ed01260c03cc170d74421}{S\-\_\-\-Top}\label{class_c_piece_abstract_a26cf88535ccf18d447db48ef92ac5452ac7946185608ed01260c03cc170d74421}
+}]\index{S\-\_\-\-Right@{S\-\_\-\-Right}!C\-Piece\-Abstract@{C\-Piece\-Abstract}}\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!S\-\_\-\-Right@{S\-\_\-\-Right}}\item[{\em 
+\hypertarget{class_c_piece_abstract_a26cf88535ccf18d447db48ef92ac5452a02e063c865417b081e0f234dfe52a442}{S\-\_\-\-Right}\label{class_c_piece_abstract_a26cf88535ccf18d447db48ef92ac5452a02e063c865417b081e0f234dfe52a442}
+}]\index{S\-\_\-\-Bottom@{S\-\_\-\-Bottom}!C\-Piece\-Abstract@{C\-Piece\-Abstract}}\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!S\-\_\-\-Bottom@{S\-\_\-\-Bottom}}\item[{\em 
+\hypertarget{class_c_piece_abstract_a26cf88535ccf18d447db48ef92ac5452a2709db6bc83f8f6d368c0715c55e8b7d}{S\-\_\-\-Bottom}\label{class_c_piece_abstract_a26cf88535ccf18d447db48ef92ac5452a2709db6bc83f8f6d368c0715c55e8b7d}
+}]\index{S\-\_\-\-Left@{S\-\_\-\-Left}!C\-Piece\-Abstract@{C\-Piece\-Abstract}}\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!S\-\_\-\-Left@{S\-\_\-\-Left}}\item[{\em 
+\hypertarget{class_c_piece_abstract_a26cf88535ccf18d447db48ef92ac5452afd22cba46c5bd75b4bf84938919bdde7}{S\-\_\-\-Left}\label{class_c_piece_abstract_a26cf88535ccf18d447db48ef92ac5452afd22cba46c5bd75b4bf84938919bdde7}
+}]\end{description}
+\end{Desc}
+
+
+DÃ©finition Ã  la ligne 128 du fichier C\-Piece\-Abstract.\-h.
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_c_piece_abstract_ad16f516708789b9e64ae738220d4d7cd}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!$\sim$\-C\-Piece\-Abstract@{$\sim$\-C\-Piece\-Abstract}}
+\index{$\sim$\-C\-Piece\-Abstract@{$\sim$\-C\-Piece\-Abstract}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{$\sim$\-C\-Piece\-Abstract}]{\setlength{\rightskip}{0pt plus 5cm}C\-Piece\-Abstract\-::$\sim$\-C\-Piece\-Abstract (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_piece_abstract_ad16f516708789b9e64ae738220d4d7cd}
+
+
+DÃ©finition Ã  la ligne 30 du fichier C\-Piece\-Abstract.\-cpp.
+
+\hypertarget{class_c_piece_abstract_a240ad2fabd11a2b758f6be4d99d082f9}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!C\-Piece\-Abstract@{C\-Piece\-Abstract}}
+\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{C\-Piece\-Abstract}]{\setlength{\rightskip}{0pt plus 5cm}C\-Piece\-Abstract\-::\-C\-Piece\-Abstract (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{dim, }
+\item[{int}]{i\-X, }
+\item[{int}]{i\-Y, }
+\item[{const {\bf C\-Vector3} \&}]{color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_piece_abstract_a240ad2fabd11a2b758f6be4d99d082f9}
+
+
+constructeur de piece 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em dim,\-:} & obligé pour initialiser le tableau (la matrice) \\
+\hline
+{\em entier} & de l'index en abcisse de la piece dans le tetrix \\
+\hline
+{\em entier} & de l'index en ordonnée de la piece dans le tetrix \\
+\hline
+{\em vecteur} & 3 sur la couleur rgb de la piece  initialisation d'un état par défaut, du tableau \\
+\hline
+\end{DoxyParams}
+
+
+DÃ©finition Ã  la ligne 17 du fichier C\-Piece\-Abstract.\-cpp.
+
+\hypertarget{class_c_piece_abstract_aa041b39e2f0d7914ff31def19062768f}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!C\-Piece\-Abstract@{C\-Piece\-Abstract}}
+\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{C\-Piece\-Abstract}]{\setlength{\rightskip}{0pt plus 5cm}C\-Piece\-Abstract\-::\-C\-Piece\-Abstract (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_c_piece_abstract_aa041b39e2f0d7914ff31def19062768f}
+
+
+DÃ©finition Ã  la ligne 121 du fichier C\-Piece\-Abstract.\-h.
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_c_piece_abstract_a23475b762834cd871101dd838564e0af}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!Get\-Col\-Index@{Get\-Col\-Index}}
+\index{Get\-Col\-Index@{Get\-Col\-Index}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{Get\-Col\-Index}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Piece\-Abstract\-::\-Get\-Col\-Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_piece_abstract_a23475b762834cd871101dd838564e0af}
+
+
+index en abcisse de la piece dans le tetrix 
+
+\begin{DoxyReturn}{Renvoie}
+entier de l'index en abcisse de la piece dans le tetrix 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 64 du fichier C\-Piece\-Abstract.\-cpp.
+
+\hypertarget{class_c_piece_abstract_a85eb0b4bb71d4058229ff61f711803e4}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!Get\-Color@{Get\-Color}}
+\index{Get\-Color@{Get\-Color}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{Get\-Color}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\-Vector3} \& C\-Piece\-Abstract\-::\-Get\-Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_piece_abstract_a85eb0b4bb71d4058229ff61f711803e4}
+
+
+renvoit la couleur de la piece 
+
+\begin{DoxyReturn}{Renvoie}
+vecteur 3 sur la couleur rgb de la piece 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 92 du fichier C\-Piece\-Abstract.\-cpp.
+
+\hypertarget{class_c_piece_abstract_aabf812ae9a7462f3724ad71c7bd687cf}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!Get\-Dim@{Get\-Dim}}
+\index{Get\-Dim@{Get\-Dim}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{Get\-Dim}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-Piece\-Abstract\-::\-Get\-Dim (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_piece_abstract_aabf812ae9a7462f3724ad71c7bd687cf}
+\begin{DoxyReturn}{Renvoie}
+la dimension de la pièce 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 88 du fichier C\-Piece\-Abstract.\-cpp.
+
+\hypertarget{class_c_piece_abstract_a8769db975fc272bcaf735c98f14fd419}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!Get\-Row\-Index@{Get\-Row\-Index}}
+\index{Get\-Row\-Index@{Get\-Row\-Index}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{Get\-Row\-Index}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Piece\-Abstract\-::\-Get\-Row\-Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_piece_abstract_a8769db975fc272bcaf735c98f14fd419}
+
+
+index en ordonnée de la piece dans le tetrix 
+
+\begin{DoxyReturn}{Renvoie}
+entier de l'index en ordonnée de la piece dans le tetrix 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 68 du fichier C\-Piece\-Abstract.\-cpp.
+
+\hypertarget{class_c_piece_abstract_a4ea785d6771cde3f1bc302214259f059}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!Get\-Table@{Get\-Table}}
+\index{Get\-Table@{Get\-Table}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{Get\-Table}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Piece\-Table} \& C\-Piece\-Abstract\-::\-Get\-Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_piece_abstract_a4ea785d6771cde3f1bc302214259f059}
+
+
+rotation de la piece en fonction de l'état courant (à redéfinir dans les classes filles) 
+
+renvoit la matrice d'état courante \begin{DoxyReturn}{Renvoie}
+la matrice de la piece 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 56 du fichier C\-Piece\-Abstract.\-cpp.
+
+\hypertarget{class_c_piece_abstract_ac819011df0e42c55eee8385281873072}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!Set\-Col\-Index@{Set\-Col\-Index}}
+\index{Set\-Col\-Index@{Set\-Col\-Index}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{Set\-Col\-Index}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Piece\-Abstract\-::\-Set\-Col\-Index (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-Col\-Index}
+\end{DoxyParamCaption}
+)}}\label{class_c_piece_abstract_ac819011df0e42c55eee8385281873072}
+
+
+permet de modifier l'index en abcisse de la piece dans le tetrix 
+
+\begin{DoxyReturn}{Renvoie}
+entier de l'index en abcisse de la piece dans le tetrix 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 80 du fichier C\-Piece\-Abstract.\-cpp.
+
+\hypertarget{class_c_piece_abstract_a9c39807ad0cfab6eaad33df42a3f1be8}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!Set\-Inc\-Dec\-Col\-Index@{Set\-Inc\-Dec\-Col\-Index}}
+\index{Set\-Inc\-Dec\-Col\-Index@{Set\-Inc\-Dec\-Col\-Index}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{Set\-Inc\-Dec\-Col\-Index}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Piece\-Abstract\-::\-Set\-Inc\-Dec\-Col\-Index (
+\begin{DoxyParamCaption}
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)}}\label{class_c_piece_abstract_a9c39807ad0cfab6eaad33df42a3f1be8}
+
+
+incrémentation ou décrémentation de l'index de colonne (abscisse) 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em la} & valeur de l'incrémentation ($>$0) ou décrémentation ($<$0) \\
+\hline
+\end{DoxyParams}
+
+
+DÃ©finition Ã  la ligne 76 du fichier C\-Piece\-Abstract.\-cpp.
+
+\hypertarget{class_c_piece_abstract_a88061bcd953015f183d77b9fdcd37e88}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!Set\-Inc\-Dec\-Row\-Index@{Set\-Inc\-Dec\-Row\-Index}}
+\index{Set\-Inc\-Dec\-Row\-Index@{Set\-Inc\-Dec\-Row\-Index}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{Set\-Inc\-Dec\-Row\-Index}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Piece\-Abstract\-::\-Set\-Inc\-Dec\-Row\-Index (
+\begin{DoxyParamCaption}
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)}}\label{class_c_piece_abstract_a88061bcd953015f183d77b9fdcd37e88}
+
+
+incrémentation ou décrémentation de l'index de ligne (ordonnée) 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em la} & valeur de l'incrémentation ($>$0) ou décrémentation ($<$0) \\
+\hline
+\end{DoxyParams}
+
+
+DÃ©finition Ã  la ligne 72 du fichier C\-Piece\-Abstract.\-cpp.
+
+\hypertarget{class_c_piece_abstract_a7403cba8c95f9d6898c37bb2b01b6616}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!Set\-Row\-Index@{Set\-Row\-Index}}
+\index{Set\-Row\-Index@{Set\-Row\-Index}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{Set\-Row\-Index}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Piece\-Abstract\-::\-Set\-Row\-Index (
+\begin{DoxyParamCaption}
+\item[{int}]{new\-Row\-Index}
+\end{DoxyParamCaption}
+)}}\label{class_c_piece_abstract_a7403cba8c95f9d6898c37bb2b01b6616}
+
+
+permet de modifier l'index en ordonnée de la piece dans le tetrix 
+
+\begin{DoxyReturn}{Renvoie}
+entier de l'index en abcisse de la piece dans le tetrix 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 84 du fichier C\-Piece\-Abstract.\-cpp.
+
+\hypertarget{class_c_piece_abstract_ab32c265408d3f4251e757a5b769fa5c6}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!Set\-Table@{Set\-Table}}
+\index{Set\-Table@{Set\-Table}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{Set\-Table}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Piece\-Abstract\-::\-Set\-Table (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\-Piece\-Table} \&}]{table}
+\end{DoxyParamCaption}
+)}}\label{class_c_piece_abstract_ab32c265408d3f4251e757a5b769fa5c6}
+
+
+modifie la matrice d'état de la piece 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em la} & matrice de la piece \\
+\hline
+\end{DoxyParams}
+
+
+DÃ©finition Ã  la ligne 60 du fichier C\-Piece\-Abstract.\-cpp.
+
+\hypertarget{class_c_piece_abstract_a440affcbdf9cbae4989e9828cc1b5d6d}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!Turn\-Left@{Turn\-Left}}
+\index{Turn\-Left@{Turn\-Left}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{Turn\-Left}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Piece\-Abstract\-::\-Turn\-Left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_piece_abstract_a440affcbdf9cbae4989e9828cc1b5d6d}
+
+
+rotation de la piece vers la gauche 
+
+
+
+DÃ©finition Ã  la ligne 45 du fichier C\-Piece\-Abstract.\-cpp.
+
+\hypertarget{class_c_piece_abstract_a059a706ab5504a7390e63230d89dcbf5}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!Turn\-Right@{Turn\-Right}}
+\index{Turn\-Right@{Turn\-Right}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{Turn\-Right}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Piece\-Abstract\-::\-Turn\-Right (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_piece_abstract_a059a706ab5504a7390e63230d89dcbf5}
+
+
+rotation de la piece vers la droite 
+
+
+
+DÃ©finition Ã  la ligne 34 du fichier C\-Piece\-Abstract.\-cpp.
+
+
+
+\subsection{Documentation des fonctions amies et associÃ©es}
+\hypertarget{class_c_piece_abstract_af102e7f9ac8d0946c0529e108e87e839}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{flux, }
+\item[{const {\bf C\-Piece\-Abstract} \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_c_piece_abstract_af102e7f9ac8d0946c0529e108e87e839}
+affiche le contenu de la matrice T\-Piece\-Table à l'écran 
+
+DÃ©finition Ã  la ligne 96 du fichier C\-Piece\-Abstract.\-cpp.
+
+
+
+\subsection{Documentation des donnÃ©es membres}
+\hypertarget{class_c_piece_abstract_ae7bd8b881cfe7906a437e45d07503db1}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!m\-\_\-col\-Index@{m\-\_\-col\-Index}}
+\index{m\-\_\-col\-Index@{m\-\_\-col\-Index}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{m\-\_\-col\-Index}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Piece\-Abstract\-::m\-\_\-col\-Index\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_piece_abstract_ae7bd8b881cfe7906a437e45d07503db1}
+
+
+index en abcisse de la pièce dans le tetrix 
+
+
+
+DÃ©finition Ã  la ligne 141 du fichier C\-Piece\-Abstract.\-h.
+
+\hypertarget{class_c_piece_abstract_a7bbd378ef0f9d55345658adf16ffc7ed}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!m\-\_\-color@{m\-\_\-color}}
+\index{m\-\_\-color@{m\-\_\-color}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{m\-\_\-color}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Vector3} C\-Piece\-Abstract\-::m\-\_\-color\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_piece_abstract_a7bbd378ef0f9d55345658adf16ffc7ed}
+
+
+la couleur de la piece 
+
+
+
+DÃ©finition Ã  la ligne 143 du fichier C\-Piece\-Abstract.\-h.
+
+\hypertarget{class_c_piece_abstract_a5b572bea63dc23e5b0dee2ecb0297d0d}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!m\-\_\-dim@{m\-\_\-dim}}
+\index{m\-\_\-dim@{m\-\_\-dim}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{m\-\_\-dim}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\-Piece\-Abstract\-::m\-\_\-dim\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_piece_abstract_a5b572bea63dc23e5b0dee2ecb0297d0d}
+
+
+dimension de la piece 
+
+
+
+DÃ©finition Ã  la ligne 138 du fichier C\-Piece\-Abstract.\-h.
+
+\hypertarget{class_c_piece_abstract_a56ace921199f8d7cd7ed0b67cbf3f44b}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!m\-\_\-row\-Index@{m\-\_\-row\-Index}}
+\index{m\-\_\-row\-Index@{m\-\_\-row\-Index}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{m\-\_\-row\-Index}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Piece\-Abstract\-::m\-\_\-row\-Index\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_piece_abstract_a56ace921199f8d7cd7ed0b67cbf3f44b}
+
+
+index en ordonnée de la pièce dans le tetrix 
+
+
+
+DÃ©finition Ã  la ligne 142 du fichier C\-Piece\-Abstract.\-h.
+
+\hypertarget{class_c_piece_abstract_a8bb8a977cbaf0d5c02d3a6f20a5e9bc6}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!m\-\_\-state@{m\-\_\-state}}
+\index{m\-\_\-state@{m\-\_\-state}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{m\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf State} C\-Piece\-Abstract\-::m\-\_\-state\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_piece_abstract_a8bb8a977cbaf0d5c02d3a6f20a5e9bc6}
+
+
+posture de la pièce 
+
+
+
+DÃ©finition Ã  la ligne 140 du fichier C\-Piece\-Abstract.\-h.
+
+\hypertarget{class_c_piece_abstract_add153cf74a7e17a41e867a9f4f671971}{\index{C\-Piece\-Abstract@{C\-Piece\-Abstract}!m\-\_\-table@{m\-\_\-table}}
+\index{m\-\_\-table@{m\-\_\-table}!CPieceAbstract@{C\-Piece\-Abstract}}
+\subsubsection[{m\-\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-Piece\-Table} C\-Piece\-Abstract\-::m\-\_\-table\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_piece_abstract_add153cf74a7e17a41e867a9f4f671971}
+
+
+matrice d'état de la piece 
+
+
+
+DÃ©finition Ã  la ligne 139 du fichier C\-Piece\-Abstract.\-h.
+
+
+
+La documentation de cette classe a Ã©tÃ© gÃ©nÃ©rÃ©e Ã  partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+/home/cj/workspace/\-Tetris/src/tetris/\hyperlink{_c_piece_abstract_8h}{C\-Piece\-Abstract.\-h}\item 
+/home/cj/workspace/\-Tetris/src/tetris/\hyperlink{_c_piece_abstract_8cpp}{C\-Piece\-Abstract.\-cpp}\end{DoxyCompactItemize}

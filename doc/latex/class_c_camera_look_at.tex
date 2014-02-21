@@ -1,0 +1,175 @@
+\hypertarget{class_c_camera_look_at}{\section{Référence de la classe C\-Camera\-Look\-At}
+\label{class_c_camera_look_at}\index{C\-Camera\-Look\-At@{C\-Camera\-Look\-At}}
+}
+
+
+{\ttfamily \#include $<$C\-Renderer.\-h$>$}
+
+
+
+Est dérivée de \hyperlink{class_c_camera}{C\-Camera}.
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_camera_look_at_a9919d1d649785596c5948a14b45425bf}{C\-Camera\-Look\-At} ()
+\item 
+\hyperlink{class_c_camera_look_at_a887d07ee683d794ebd9acc35fb2c01c2}{$\sim$\-C\-Camera\-Look\-At} ()
+\item 
+\hyperlink{class_c_matrix44}{C\-Matrix44} \& \hyperlink{class_c_camera_look_at_a700fcf7befa6fa590b856c1d5e2e096c}{Compute} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_c_camera_look_at_a989e33c7633c9698b8f2bde9e4cda725}{m\-\_\-pos\-X}
+\item 
+float \hyperlink{class_c_camera_look_at_ab2e0d297fed9a6ed790373c3241ba7f4}{m\-\_\-pos\-Y}
+\item 
+float \hyperlink{class_c_camera_look_at_aade107961266e4d08c1b2d1e15c81176}{m\-\_\-pos\-Z}
+\begin{DoxyCompactList}\small\item\em look at variables (pos) \end{DoxyCompactList}\item 
+float \hyperlink{class_c_camera_look_at_a7d426fe87c65c00cdca44989abc34c6a}{m\-\_\-view\-X}
+\item 
+float \hyperlink{class_c_camera_look_at_ac194ff8295143f3313c22a1a24ac4b3b}{m\-\_\-view\-Y}
+\item 
+float \hyperlink{class_c_camera_look_at_a8654306ba0b31ba6ea5abea14b2c9028}{m\-\_\-view\-Z}
+\begin{DoxyCompactList}\small\item\em look at variables (view) \end{DoxyCompactList}\item 
+float \hyperlink{class_c_camera_look_at_ac7ba83f089c502f9c7e0cc761d1c331f}{m\-\_\-up\-X}
+\item 
+float \hyperlink{class_c_camera_look_at_aa93ea2b698cd033799e071db1af5061a}{m\-\_\-up\-Y}
+\item 
+float \hyperlink{class_c_camera_look_at_abbb8f744dd0751cf624ea90c818a4ee8}{m\-\_\-up\-Z}
+\begin{DoxyCompactList}\small\item\em look at variables (up) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+
+
+Définition à la ligne 65 du fichier C\-Renderer.\-h.
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_c_camera_look_at_a9919d1d649785596c5948a14b45425bf}{\index{C\-Camera\-Look\-At@{C\-Camera\-Look\-At}!C\-Camera\-Look\-At@{C\-Camera\-Look\-At}}
+\index{C\-Camera\-Look\-At@{C\-Camera\-Look\-At}!CCameraLookAt@{C\-Camera\-Look\-At}}
+\subsubsection[{C\-Camera\-Look\-At}]{\setlength{\rightskip}{0pt plus 5cm}C\-Camera\-Look\-At\-::\-C\-Camera\-Look\-At (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_camera_look_at_a9919d1d649785596c5948a14b45425bf}
+
+
+Définition à la ligne 71 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_camera_look_at_a887d07ee683d794ebd9acc35fb2c01c2}{\index{C\-Camera\-Look\-At@{C\-Camera\-Look\-At}!$\sim$\-C\-Camera\-Look\-At@{$\sim$\-C\-Camera\-Look\-At}}
+\index{$\sim$\-C\-Camera\-Look\-At@{$\sim$\-C\-Camera\-Look\-At}!CCameraLookAt@{C\-Camera\-Look\-At}}
+\subsubsection[{$\sim$\-C\-Camera\-Look\-At}]{\setlength{\rightskip}{0pt plus 5cm}C\-Camera\-Look\-At\-::$\sim$\-C\-Camera\-Look\-At (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_camera_look_at_a887d07ee683d794ebd9acc35fb2c01c2}
+
+
+Définition à la ligne 79 du fichier C\-Renderer.\-h.
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_c_camera_look_at_a700fcf7befa6fa590b856c1d5e2e096c}{\index{C\-Camera\-Look\-At@{C\-Camera\-Look\-At}!Compute@{Compute}}
+\index{Compute@{Compute}!CCameraLookAt@{C\-Camera\-Look\-At}}
+\subsubsection[{Compute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Matrix44} \& C\-Camera\-Look\-At\-::\-Compute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_c_camera_look_at_a700fcf7befa6fa590b856c1d5e2e096c}
+mets � jour les attributs de la cam�ra en fonction des �venements souris 
+
+Implémente \hyperlink{class_c_camera_aaae931e9df3443887264780ea5e4add6}{C\-Camera}.
+
+
+
+Définition à la ligne 285 du fichier C\-Renderer.\-cpp.
+
+
+
+\subsection{Documentation des données membres}
+\hypertarget{class_c_camera_look_at_a989e33c7633c9698b8f2bde9e4cda725}{\index{C\-Camera\-Look\-At@{C\-Camera\-Look\-At}!m\-\_\-pos\-X@{m\-\_\-pos\-X}}
+\index{m\-\_\-pos\-X@{m\-\_\-pos\-X}!CCameraLookAt@{C\-Camera\-Look\-At}}
+\subsubsection[{m\-\_\-pos\-X}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Camera\-Look\-At\-::m\-\_\-pos\-X}}\label{class_c_camera_look_at_a989e33c7633c9698b8f2bde9e4cda725}
+
+
+Définition à la ligne 90 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_camera_look_at_ab2e0d297fed9a6ed790373c3241ba7f4}{\index{C\-Camera\-Look\-At@{C\-Camera\-Look\-At}!m\-\_\-pos\-Y@{m\-\_\-pos\-Y}}
+\index{m\-\_\-pos\-Y@{m\-\_\-pos\-Y}!CCameraLookAt@{C\-Camera\-Look\-At}}
+\subsubsection[{m\-\_\-pos\-Y}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Camera\-Look\-At\-::m\-\_\-pos\-Y}}\label{class_c_camera_look_at_ab2e0d297fed9a6ed790373c3241ba7f4}
+
+
+Définition à la ligne 90 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_camera_look_at_aade107961266e4d08c1b2d1e15c81176}{\index{C\-Camera\-Look\-At@{C\-Camera\-Look\-At}!m\-\_\-pos\-Z@{m\-\_\-pos\-Z}}
+\index{m\-\_\-pos\-Z@{m\-\_\-pos\-Z}!CCameraLookAt@{C\-Camera\-Look\-At}}
+\subsubsection[{m\-\_\-pos\-Z}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Camera\-Look\-At\-::m\-\_\-pos\-Z}}\label{class_c_camera_look_at_aade107961266e4d08c1b2d1e15c81176}
+
+
+look at variables (pos) 
+
+
+
+Définition à la ligne 90 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_camera_look_at_ac7ba83f089c502f9c7e0cc761d1c331f}{\index{C\-Camera\-Look\-At@{C\-Camera\-Look\-At}!m\-\_\-up\-X@{m\-\_\-up\-X}}
+\index{m\-\_\-up\-X@{m\-\_\-up\-X}!CCameraLookAt@{C\-Camera\-Look\-At}}
+\subsubsection[{m\-\_\-up\-X}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Camera\-Look\-At\-::m\-\_\-up\-X}}\label{class_c_camera_look_at_ac7ba83f089c502f9c7e0cc761d1c331f}
+
+
+Définition à la ligne 92 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_camera_look_at_aa93ea2b698cd033799e071db1af5061a}{\index{C\-Camera\-Look\-At@{C\-Camera\-Look\-At}!m\-\_\-up\-Y@{m\-\_\-up\-Y}}
+\index{m\-\_\-up\-Y@{m\-\_\-up\-Y}!CCameraLookAt@{C\-Camera\-Look\-At}}
+\subsubsection[{m\-\_\-up\-Y}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Camera\-Look\-At\-::m\-\_\-up\-Y}}\label{class_c_camera_look_at_aa93ea2b698cd033799e071db1af5061a}
+
+
+Définition à la ligne 92 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_camera_look_at_abbb8f744dd0751cf624ea90c818a4ee8}{\index{C\-Camera\-Look\-At@{C\-Camera\-Look\-At}!m\-\_\-up\-Z@{m\-\_\-up\-Z}}
+\index{m\-\_\-up\-Z@{m\-\_\-up\-Z}!CCameraLookAt@{C\-Camera\-Look\-At}}
+\subsubsection[{m\-\_\-up\-Z}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Camera\-Look\-At\-::m\-\_\-up\-Z}}\label{class_c_camera_look_at_abbb8f744dd0751cf624ea90c818a4ee8}
+
+
+look at variables (up) 
+
+
+
+Définition à la ligne 92 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_camera_look_at_a7d426fe87c65c00cdca44989abc34c6a}{\index{C\-Camera\-Look\-At@{C\-Camera\-Look\-At}!m\-\_\-view\-X@{m\-\_\-view\-X}}
+\index{m\-\_\-view\-X@{m\-\_\-view\-X}!CCameraLookAt@{C\-Camera\-Look\-At}}
+\subsubsection[{m\-\_\-view\-X}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Camera\-Look\-At\-::m\-\_\-view\-X}}\label{class_c_camera_look_at_a7d426fe87c65c00cdca44989abc34c6a}
+
+
+Définition à la ligne 91 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_camera_look_at_ac194ff8295143f3313c22a1a24ac4b3b}{\index{C\-Camera\-Look\-At@{C\-Camera\-Look\-At}!m\-\_\-view\-Y@{m\-\_\-view\-Y}}
+\index{m\-\_\-view\-Y@{m\-\_\-view\-Y}!CCameraLookAt@{C\-Camera\-Look\-At}}
+\subsubsection[{m\-\_\-view\-Y}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Camera\-Look\-At\-::m\-\_\-view\-Y}}\label{class_c_camera_look_at_ac194ff8295143f3313c22a1a24ac4b3b}
+
+
+Définition à la ligne 91 du fichier C\-Renderer.\-h.
+
+\hypertarget{class_c_camera_look_at_a8654306ba0b31ba6ea5abea14b2c9028}{\index{C\-Camera\-Look\-At@{C\-Camera\-Look\-At}!m\-\_\-view\-Z@{m\-\_\-view\-Z}}
+\index{m\-\_\-view\-Z@{m\-\_\-view\-Z}!CCameraLookAt@{C\-Camera\-Look\-At}}
+\subsubsection[{m\-\_\-view\-Z}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Camera\-Look\-At\-::m\-\_\-view\-Z}}\label{class_c_camera_look_at_a8654306ba0b31ba6ea5abea14b2c9028}
+
+
+look at variables (view) 
+
+
+
+Définition à la ligne 91 du fichier C\-Renderer.\-h.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+/home/cj/workspace/\-Tetris/src/appli\-Base/\hyperlink{_c_renderer_8h}{C\-Renderer.\-h}\item 
+/home/cj/workspace/\-Tetris/src/appli\-Base/\hyperlink{_c_renderer_8cpp}{C\-Renderer.\-cpp}\end{DoxyCompactItemize}

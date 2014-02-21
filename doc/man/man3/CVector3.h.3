@@ -1,0 +1,178 @@
+.TH "/home/cj/workspace/Tetris/src/math/CVector3.h" 3 "Vendredi FÃ©vrier 21 2014" "Version alpha" "Tetris" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/cj/workspace/Tetris/src/math/CVector3.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <limits>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <cmath>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBCVector3\fP"
+.br
+.in -1c
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "\fBCVector3\fP \fBoperator*\fP (const \fBCVector3\fP &\fBv\fP, float \fBt\fP)"
+.br
+.ti -1c
+.RI "\fBCVector3\fP \fBoperator/\fP (const \fBCVector3\fP &\fBv\fP, float \fBt\fP)"
+.br
+.ti -1c
+.RI "\fBCVector3\fP \fBoperator*\fP (float \fBt\fP, const \fBCVector3\fP &\fBv\fP)"
+.br
+.ti -1c
+.RI "float \fBDot\fP (const \fBCVector3\fP &\fBv1\fP, const \fBCVector3\fP &\fBv2\fP)"
+.br
+.ti -1c
+.RI "\fBCVector3\fP \fBCross\fP (const \fBCVector3\fP &\fBv1\fP, const \fBCVector3\fP &\fBv2\fP)"
+.br
+.ti -1c
+.RI "std::istream & \fBoperator>>\fP (std::istream &Stream, \fBCVector3\fP &Vector)"
+.br
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &Stream, const \fBCVector3\fP &Vector)"
+.br
+.in -1c
+.SH "Documentation des fonctions"
+.PP 
+.SS "\fBCVector3\fP Cross (const \fBCVector3\fP &v1, const \fBCVector3\fP &v2)\fC [inline]\fP"
+Effectue le produit vectoriel entre deux vecteurs
+.PP
+\fBParamÃ¨tres:\fP
+.RS 4
+\fIv1\fP : Vecteur 1 
+.br
+\fIv2\fP : Vecteur 2
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Résultat du produit vectoriel 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 409 du fichier CVector3\&.h\&.
+.SS "float Dot (const \fBCVector3\fP &v1, const \fBCVector3\fP &v2)\fC [inline]\fP"
+Effectue le produit scalaire entre deux vecteurs
+.PP
+\fBParamÃ¨tres:\fP
+.RS 4
+\fIv1\fP : Vecteur 1 
+.br
+\fIv2\fP : Vecteur 2
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Résultat du produit scalaire 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 394 du fichier CVector3\&.h\&.
+.SS "\fBCVector3\fP operator* (const \fBCVector3\fP &v, floatt)\fC [inline]\fP"
+Opérateurs de multiplication avec un scalaire
+.PP
+\fBParamÃ¨tres:\fP
+.RS 4
+\fIv\fP : Vecteur 
+.br
+\fIt\fP : Scalaire
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Résultat de l'opération 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 349 du fichier CVector3\&.h\&.
+.SS "\fBCVector3\fP operator* (floatt, const \fBCVector3\fP &v)\fC [inline]\fP"
+Opérateurs de multiplication avec un scalaire
+.PP
+\fBParamÃ¨tres:\fP
+.RS 4
+\fIt\fP : Scalaire 
+.br
+\fIv\fP : Vecteur
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Résultat de l'opération 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 379 du fichier CVector3\&.h\&.
+.SS "\fBCVector3\fP operator/ (const \fBCVector3\fP &v, floatt)\fC [inline]\fP"
+Opérateurs de division par un scalaire
+.PP
+\fBParamÃ¨tres:\fP
+.RS 4
+\fIv\fP : Vecteur 
+.br
+\fIt\fP : Scalaire
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Résultat de l'opération 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 364 du fichier CVector3\&.h\&.
+.SS "std::ostream & operator<< (std::ostream &Stream, const \fBCVector3\fP &Vector)\fC [inline]\fP"
+Surcharge de l'opérateur << entre un flux et un vecteur
+.PP
+\fBParamÃ¨tres:\fP
+.RS 4
+\fIStream\fP : Flux de sortie 
+.br
+\fIVector\fP : Vecteur
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Référence sur le flux de sortie 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 441 du fichier CVector3\&.h\&.
+.SS "std::istream & operator>> (std::istream &Stream, \fBCVector3\fP &Vector)\fC [inline]\fP"
+Surcharge de l'opérateur >> entre un flux et un vecteur
+.PP
+\fBParamÃ¨tres:\fP
+.RS 4
+\fIStream\fP : Flux d'entrée 
+.br
+\fIVector\fP : Vecteur
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Référence sur le flux d'entrée 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 425 du fichier CVector3\&.h\&.
+.SH "Auteur"
+.PP 
+GÃ©nÃ©rÃ© automatiquement par Doxygen pour Tetris Ã  partir du code source\&.

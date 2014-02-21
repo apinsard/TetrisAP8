@@ -1,0 +1,124 @@
+.TH "CCamera" 3 "Vendredi Février 21 2014" "Version alpha" "Tetris" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CCamera \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CRenderer\&.h>\fP
+.PP
+Dérivée par \fBCCameraLookAt\fP\&.
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBCCamera\fP ()"
+.br
+.ti -1c
+.RI "\fB~CCamera\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBCMatrix44\fP & \fBCompute\fP ()=0"
+.br
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "\fBUserEvents\fP * \fBm_UserEvents\fP"
+.br
+.RI "\fIpointeur sur l'objet partag� mouse events mis � jour par le GUI \fP"
+.ti -1c
+.RI "\fBCMatrix44\fP \fBm_viewMatrix\fP"
+.br
+.RI "\fImatrice de transformation de la vue \fP"
+.ti -1c
+.RI "float \fBm_XOffset\fP"
+.br
+.ti -1c
+.RI "float \fBm_YOffset\fP"
+.br
+.ti -1c
+.RI "float \fBm_ZOffset\fP"
+.br
+.RI "\fIx,y rotate \fP"
+.ti -1c
+.RI "float \fBm_rotateX\fP"
+.br
+.ti -1c
+.RI "float \fBm_rotateY\fP"
+.br
+.RI "\fIx,y,z offset \fP"
+.ti -1c
+.RI "\fBCVector4\fP \fBm_translate\fP"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+classe cam�ra: s'occupe de mettre � jour la position de la cam�ra dans la fonction gluLookAt 
+.PP
+Définition à la ligne 31 du fichier CRenderer\&.h\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "CCamera::CCamera ()\fC [inline]\fP"
+
+.PP
+Définition à la ligne 37 du fichier CRenderer\&.h\&.
+.SS "CCamera::~CCamera ()\fC [inline]\fP"
+
+.PP
+Définition à la ligne 43 du fichier CRenderer\&.h\&.
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "virtual \fBCMatrix44\fP& CCamera::Compute ()\fC [pure virtual]\fP"
+
+.PP
+Implémenté dans \fBCCameraLookAt\fP\&.
+.SH "Documentation des données membres"
+.PP 
+.SS "float CCamera::m_rotateX"
+
+.PP
+Définition à la ligne 59 du fichier CRenderer\&.h\&.
+.SS "float CCamera::m_rotateY"
+
+.PP
+x,y,z offset 
+.PP
+Définition à la ligne 59 du fichier CRenderer\&.h\&.
+.SS "\fBCVector4\fP CCamera::m_translate"
+
+.PP
+Définition à la ligne 61 du fichier CRenderer\&.h\&.
+.SS "\fBUserEvents\fP* CCamera::m_UserEvents"
+
+.PP
+pointeur sur l'objet partag� mouse events mis � jour par le GUI 
+.PP
+Définition à la ligne 57 du fichier CRenderer\&.h\&.
+.SS "\fBCMatrix44\fP CCamera::m_viewMatrix"
+
+.PP
+matrice de transformation de la vue 
+.PP
+Définition à la ligne 58 du fichier CRenderer\&.h\&.
+.SS "float CCamera::m_XOffset"
+
+.PP
+Définition à la ligne 59 du fichier CRenderer\&.h\&.
+.SS "float CCamera::m_YOffset"
+
+.PP
+Définition à la ligne 59 du fichier CRenderer\&.h\&.
+.SS "float CCamera::m_ZOffset"
+
+.PP
+x,y rotate 
+.PP
+Définition à la ligne 59 du fichier CRenderer\&.h\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Tetris à partir du code source\&.

@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="class_c_t_game_table" kind="class" prot="public">
+    <compoundname>CTGameTable</compoundname>
+    <includes refid="_c_t_game_table_8h" local="no">CTGameTable.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_t_game_table_1ae29dfd56458df6062df03cc347e42f21" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="_c_t_game_table_8h_1a2170512a04991cf2b86082f2ca5992a6" kindref="member">TGameRow</ref> &gt;</type>
+        <definition>vector&lt;TGameRow&gt; CTGameTable::m_GameTable</definition>
+        <argsstring></argsstring>
+        <name>m_GameTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/CTGameTable.h" line="24" bodyfile="/home/cj/workspace/Tetris/src/tetris/CTGameTable.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_t_game_table_1a432c463fb469454b0923c3ab868650cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CTGameTable::CTGameTable</definition>
+        <argsstring>(int width, int height)</argsstring>
+        <name>CTGameTable</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/CTGameTable.h" line="27" bodyfile="/home/cj/workspace/Tetris/src/tetris/CTGameTable.cpp" bodystart="3" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_t_game_table_1a4a52b184a392cb914cd9fd92234be744" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CTGameTable::CTGameTable</definition>
+        <argsstring>()</argsstring>
+        <name>CTGameTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/CTGameTable.h" line="28" bodyfile="/home/cj/workspace/Tetris/src/tetris/CTGameTable.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_t_game_table_1a93e226e7dfc8ea98582bcbc861504d85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="glu_8h_1a4292190e3f1f6b373a760c7d9316ad3c" kindref="member">void</ref></type>
+        <definition>void CTGameTable::setCase</definition>
+        <argsstring>(unsigned int x, unsigned int y, Case newCase)</argsstring>
+        <name>setCase</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_case" kindref="compound">Case</ref></type>
+          <declname>newCase</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/CTGameTable.h" line="32" bodyfile="/home/cj/workspace/Tetris/src/tetris/CTGameTable.cpp" bodystart="26" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_t_game_table_1a1ae234b52213c9ffad0dc129a5279719" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="_c_t_game_table_8h_1a2170512a04991cf2b86082f2ca5992a6" kindref="member">TGameRow</ref> &gt; &amp;</type>
+        <definition>vector&lt; TGameRow &gt; &amp; CTGameTable::GetGameTable</definition>
+        <argsstring>()</argsstring>
+        <name>GetGameTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/CTGameTable.h" line="35" bodyfile="/home/cj/workspace/Tetris/src/tetris/CTGameTable.cpp" bodystart="35" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_c_t_game_table_1a51fe5bffaa61c49ca73f2a4326c275f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;out, const CTGameTable &amp;obj)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_c_t_game_table" kindref="compound">CTGameTable</ref> &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/CTGameTable.h" line="30" bodyfile="/home/cj/workspace/Tetris/src/tetris/CTGameTable.cpp" bodystart="12" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/cj/workspace/Tetris/src/tetris/CTGameTable.h" line="22" bodyfile="/home/cj/workspace/Tetris/src/tetris/CTGameTable.h" bodystart="22" bodyend="36"/>
+    <listofallmembers>
+      <member refid="class_c_t_game_table_1a432c463fb469454b0923c3ab868650cc" prot="public" virt="non-virtual"><scope>CTGameTable</scope><name>CTGameTable</name></member>
+      <member refid="class_c_t_game_table_1a4a52b184a392cb914cd9fd92234be744" prot="public" virt="non-virtual"><scope>CTGameTable</scope><name>CTGameTable</name></member>
+      <member refid="class_c_t_game_table_1a1ae234b52213c9ffad0dc129a5279719" prot="public" virt="non-virtual"><scope>CTGameTable</scope><name>GetGameTable</name></member>
+      <member refid="class_c_t_game_table_1ae29dfd56458df6062df03cc347e42f21" prot="private" virt="non-virtual"><scope>CTGameTable</scope><name>m_GameTable</name></member>
+      <member refid="class_c_t_game_table_1a51fe5bffaa61c49ca73f2a4326c275f0" prot="public" virt="non-virtual"><scope>CTGameTable</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_c_t_game_table_1a93e226e7dfc8ea98582bcbc861504d85" prot="public" virt="non-virtual"><scope>CTGameTable</scope><name>setCase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

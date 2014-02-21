@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_c_t_piece_8cpp" kind="file">
+    <compoundname>CTPiece.cpp</compoundname>
+    <includes refid="_c_t_piece_8h" local="yes">CTPiece.h</includes>
+    <incdepgraph>
+      <node id="1824">
+        <label>CPieceAbstract.h</label>
+        <link refid="_c_piece_abstract_8h"/>
+        <childnode refid="1825" relation="include">
+        </childnode>
+      </node>
+      <node id="1836">
+        <label>limits</label>
+      </node>
+      <node id="1831">
+        <label>cmath</label>
+      </node>
+      <node id="1823">
+        <label>CTPiece.h</label>
+        <link refid="_c_t_piece_8h"/>
+        <childnode refid="1824" relation="include">
+        </childnode>
+      </node>
+      <node id="1826">
+        <label>string</label>
+      </node>
+      <node id="1822">
+        <label>/home/cj/workspace/Tetris/src/tetris/CTPiece.cpp</label>
+        <link refid="CTPiece.cpp"/>
+        <childnode refid="1823" relation="include">
+        </childnode>
+      </node>
+      <node id="1837">
+        <label>CVector4.h</label>
+        <link refid="_c_vector4_8h"/>
+        <childnode refid="1836" relation="include">
+        </childnode>
+        <childnode refid="1828" relation="include">
+        </childnode>
+        <childnode refid="1835" relation="include">
+        </childnode>
+      </node>
+      <node id="1838">
+        <label>CMatrix44.h</label>
+        <link refid="_c_matrix44_8h"/>
+        <childnode refid="1835" relation="include">
+        </childnode>
+        <childnode refid="1837" relation="include">
+        </childnode>
+        <childnode refid="1832" relation="include">
+        </childnode>
+      </node>
+      <node id="1834">
+        <label>ctime</label>
+      </node>
+      <node id="1830">
+        <label>vector</label>
+      </node>
+      <node id="1827">
+        <label>sstream</label>
+      </node>
+      <node id="1835">
+        <label>CVector3.h</label>
+        <link refid="_c_vector3_8h"/>
+        <childnode refid="1836" relation="include">
+        </childnode>
+        <childnode refid="1828" relation="include">
+        </childnode>
+        <childnode refid="1831" relation="include">
+        </childnode>
+      </node>
+      <node id="1833">
+        <label>cstdlib</label>
+      </node>
+      <node id="1828">
+        <label>iostream</label>
+      </node>
+      <node id="1825">
+        <label>Common.h</label>
+        <link refid="_common_8h"/>
+        <childnode refid="1826" relation="include">
+        </childnode>
+        <childnode refid="1827" relation="include">
+        </childnode>
+        <childnode refid="1828" relation="include">
+        </childnode>
+        <childnode refid="1829" relation="include">
+        </childnode>
+        <childnode refid="1830" relation="include">
+        </childnode>
+        <childnode refid="1831" relation="include">
+        </childnode>
+        <childnode refid="1832" relation="include">
+        </childnode>
+        <childnode refid="1833" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
+        <childnode refid="1835" relation="include">
+        </childnode>
+        <childnode refid="1837" relation="include">
+        </childnode>
+        <childnode refid="1838" relation="include">
+        </childnode>
+      </node>
+      <node id="1829">
+        <label>algorithm</label>
+      </node>
+      <node id="1832">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_t_piece_8h" kindref="compound">CTPiece.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_c_t_piece_1a3673e88f6f82fc15589e06cde3effdd4" refkind="member"><highlight class="normal"><ref refid="class_c_t_piece_1a3673e88f6f82fc15589e06cde3effdd4" kindref="member">CTPiece::CTPiece</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iY,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>&amp;<sp/><ref refid="glext_8h_1a3ea846f998d64f079b86052b6c4193a8" kindref="member">color</ref>)<sp/>:</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_piece_abstract" kindref="compound" tooltip="classe CPieceAbstract abstraite">CPieceAbstract</ref>(3,<sp/>iX,<sp/>iY,<sp/>color)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><ref refid="_c_piece_abstract_8h_1a8e72c785588cdd5c58585a3d43eafea8" kindref="member">TPieceRow</ref><sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref><sp/>=<sp/><ref refid="_c_piece_abstract_8h_1a8e72c785588cdd5c58585a3d43eafea8" kindref="member">TPieceRow</ref>(3,<sp/>0);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/>row[0]<sp/>=<sp/>1;<sp/>row[1]<sp/>=<sp/>1;<sp/>row[2]<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/>this-&gt;<ref refid="class_c_piece_abstract_1add153cf74a7e17a41e867a9f4f671971" kindref="member" tooltip="matrice d&amp;#39;état de la piece">m_table</ref>[2]<sp/>=<sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/>row[0]<sp/>=<sp/>0;<sp/>row[1]<sp/>=<sp/>1;<sp/>row[2]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/>this-&gt;<ref refid="class_c_piece_abstract_1add153cf74a7e17a41e867a9f4f671971" kindref="member" tooltip="matrice d&amp;#39;état de la piece">m_table</ref>[1]<sp/>=<sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/>row[0]<sp/>=<sp/>0;<sp/>row[1]<sp/>=<sp/>0;<sp/>row[2]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/>this-&gt;<ref refid="class_c_piece_abstract_1add153cf74a7e17a41e867a9f4f671971" kindref="member" tooltip="matrice d&amp;#39;état de la piece">m_table</ref>[0]<sp/>=<sp/><ref refid="glext_8h_1a11b277b422822f784ee248b43eee3e1e" kindref="member">row</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_c_t_piece_1a9fc54e0b1109f69c3f0c69bf2b96b90a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_t_piece_1a9fc54e0b1109f69c3f0c69bf2b96b90a" kindref="member">CTPiece::Turn</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>this-&gt;<ref refid="class_c_piece_abstract_1a059a706ab5504a7390e63230d89dcbf5" kindref="member" tooltip="rotation de la piece vers la droite">TurnRight</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/cj/workspace/Tetris/src/tetris/CTPiece.cpp"/>
+  </compounddef>
+</doxygen>

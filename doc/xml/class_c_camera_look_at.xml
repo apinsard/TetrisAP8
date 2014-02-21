@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="class_c_camera_look_at" kind="class" prot="public">
+    <compoundname>CCameraLookAt</compoundname>
+    <basecompoundref refid="class_c_camera" prot="public" virt="non-virtual">CCamera</basecompoundref>
+    <includes refid="_c_renderer_8h" local="no">CRenderer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_c_camera_look_at_1a989e33c7633c9698b8f2bde9e4cda725" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CCameraLookAt::m_posX</definition>
+        <argsstring></argsstring>
+        <name>m_posX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" line="90" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_camera_look_at_1ab2e0d297fed9a6ed790373c3241ba7f4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CCameraLookAt::m_posY</definition>
+        <argsstring></argsstring>
+        <name>m_posY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" line="90" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_camera_look_at_1aade107961266e4d08c1b2d1e15c81176" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CCameraLookAt::m_posZ</definition>
+        <argsstring></argsstring>
+        <name>m_posZ</name>
+        <briefdescription>
+<para>look at variables (pos) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" line="90" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_camera_look_at_1a7d426fe87c65c00cdca44989abc34c6a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CCameraLookAt::m_viewX</definition>
+        <argsstring></argsstring>
+        <name>m_viewX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" line="91" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_camera_look_at_1ac194ff8295143f3313c22a1a24ac4b3b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CCameraLookAt::m_viewY</definition>
+        <argsstring></argsstring>
+        <name>m_viewY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" line="91" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_camera_look_at_1a8654306ba0b31ba6ea5abea14b2c9028" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CCameraLookAt::m_viewZ</definition>
+        <argsstring></argsstring>
+        <name>m_viewZ</name>
+        <briefdescription>
+<para>look at variables (view) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" line="91" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_camera_look_at_1ac7ba83f089c502f9c7e0cc761d1c331f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CCameraLookAt::m_upX</definition>
+        <argsstring></argsstring>
+        <name>m_upX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" line="92" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_camera_look_at_1aa93ea2b698cd033799e071db1af5061a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CCameraLookAt::m_upY</definition>
+        <argsstring></argsstring>
+        <name>m_upY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" line="92" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_camera_look_at_1abbb8f744dd0751cf624ea90c818a4ee8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CCameraLookAt::m_upZ</definition>
+        <argsstring></argsstring>
+        <name>m_upZ</name>
+        <briefdescription>
+<para>look at variables (up) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" line="92" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_camera_look_at_1a9919d1d649785596c5948a14b45425bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CCameraLookAt::CCameraLookAt</definition>
+        <argsstring>()</argsstring>
+        <name>CCameraLookAt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" line="74" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_camera_look_at_1a887d07ee683d794ebd9acc35fb2c01c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CCameraLookAt::~CCameraLookAt</definition>
+        <argsstring>()</argsstring>
+        <name>~CCameraLookAt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" line="79" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_camera_look_at_1a700fcf7befa6fa590b856c1d5e2e096c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_c_matrix44" kindref="compound">CMatrix44</ref> &amp;</type>
+        <definition>CMatrix44 &amp; CCameraLookAt::Compute</definition>
+        <argsstring>()</argsstring>
+        <name>Compute</name>
+        <reimplements refid="class_c_camera_1aaae931e9df3443887264780ea5e4add6">Compute</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>mets à jour les attributs de la caméra en fonction des évenements souris </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" line="84" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CRenderer.cpp" bodystart="285" bodyend="311"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="98">
+        <label>CCamera</label>
+        <link refid="class_c_camera"/>
+      </node>
+      <node id="97">
+        <label>CCameraLookAt</label>
+        <link refid="class_c_camera_look_at"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="100">
+        <label>CCamera</label>
+        <link refid="class_c_camera"/>
+        <childnode refid="101" relation="usage">
+          <edgelabel>m_UserEvents</edgelabel>
+        </childnode>
+        <childnode refid="102" relation="usage">
+          <edgelabel>m_viewMatrix</edgelabel>
+        </childnode>
+        <childnode refid="103" relation="usage">
+          <edgelabel>m_translate</edgelabel>
+        </childnode>
+      </node>
+      <node id="103">
+        <label>CVector4</label>
+        <link refid="class_c_vector4"/>
+      </node>
+      <node id="101">
+        <label>UserEvents</label>
+        <link refid="struct_user_events"/>
+      </node>
+      <node id="102">
+        <label>CMatrix44</label>
+        <link refid="class_c_matrix44"/>
+        <childnode refid="102" relation="usage">
+          <edgelabel>Identity</edgelabel>
+        </childnode>
+      </node>
+      <node id="99">
+        <label>CCameraLookAt</label>
+        <link refid="class_c_camera_look_at"/>
+        <childnode refid="100" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" line="66" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" bodystart="65" bodyend="93"/>
+    <listofallmembers>
+      <member refid="class_c_camera_1a2eb95595766a84cb745ec00783595190" prot="public" virt="non-virtual"><scope>CCameraLookAt</scope><name>CCamera</name></member>
+      <member refid="class_c_camera_look_at_1a9919d1d649785596c5948a14b45425bf" prot="public" virt="non-virtual"><scope>CCameraLookAt</scope><name>CCameraLookAt</name></member>
+      <member refid="class_c_camera_look_at_1a700fcf7befa6fa590b856c1d5e2e096c" prot="public" virt="virtual"><scope>CCameraLookAt</scope><name>Compute</name></member>
+      <member refid="class_c_camera_look_at_1a989e33c7633c9698b8f2bde9e4cda725" prot="public" virt="non-virtual"><scope>CCameraLookAt</scope><name>m_posX</name></member>
+      <member refid="class_c_camera_look_at_1ab2e0d297fed9a6ed790373c3241ba7f4" prot="public" virt="non-virtual"><scope>CCameraLookAt</scope><name>m_posY</name></member>
+      <member refid="class_c_camera_look_at_1aade107961266e4d08c1b2d1e15c81176" prot="public" virt="non-virtual"><scope>CCameraLookAt</scope><name>m_posZ</name></member>
+      <member refid="class_c_camera_1ab29a2c9d274ebc7a086486f26011901c" prot="public" virt="non-virtual"><scope>CCameraLookAt</scope><name>m_rotateX</name></member>
+      <member refid="class_c_camera_1a3c40e7ab1b5f00bdac413e0ea59251c7" prot="public" virt="non-virtual"><scope>CCameraLookAt</scope><name>m_rotateY</name></member>
+      <member refid="class_c_camera_1ab7cde03d56f26b36091c134197b73f0c" prot="public" virt="non-virtual"><scope>CCameraLookAt</scope><name>m_translate</name></member>
+      <member refid="class_c_camera_look_at_1ac7ba83f089c502f9c7e0cc761d1c331f" prot="public" virt="non-virtual"><scope>CCameraLookAt</scope><name>m_upX</name></member>
+      <member refid="class_c_camera_look_at_1aa93ea2b698cd033799e071db1af5061a" prot="public" virt="non-virtual"><scope>CCameraLookAt</scope><name>m_upY</name></member>
+      <member refid="class_c_camera_look_at_1abbb8f744dd0751cf624ea90c818a4ee8" prot="public" virt="non-virtual"><scope>CCameraLookAt</scope><name>m_upZ</name></member>
+      <member refid="class_c_camera_1a8378bd672ab258ca762326ca50a241cc" prot="public" virt="non-virtual"><scope>CCameraLookAt</scope><name>m_UserEvents</name></member>
+      <member refid="class_c_camera_1af84199bbddf1a37cdc9d5e82ec6018e9" prot="public" virt="non-virtual"><scope>CCameraLookAt</scope><name>m_viewMatrix</name></member>
+      <member refid="class_c_camera_look_at_1a7d426fe87c65c00cdca44989abc34c6a" prot="public" virt="non-virtual"><scope>CCameraLookAt</scope><name>m_viewX</name></member>
+      <member refid="class_c_camera_look_at_1ac194ff8295143f3313c22a1a24ac4b3b" prot="public" virt="non-virtual"><scope>CCameraLookAt</scope><name>m_viewY</name></member>
+      <member refid="class_c_camera_look_at_1a8654306ba0b31ba6ea5abea14b2c9028" prot="public" virt="non-virtual"><scope>CCameraLookAt</scope><name>m_viewZ</name></member>
+      <member refid="class_c_camera_1af4692e9f23bf7f3e438a5abfcacc515e" prot="public" virt="non-virtual"><scope>CCameraLookAt</scope><name>m_XOffset</name></member>
+      <member refid="class_c_camera_1aa2cc5b4ddb3e2c590096fe9aecf581c2" prot="public" virt="non-virtual"><scope>CCameraLookAt</scope><name>m_YOffset</name></member>
+      <member refid="class_c_camera_1af0fe5db70b4e35a5f147037fbee15246" prot="public" virt="non-virtual"><scope>CCameraLookAt</scope><name>m_ZOffset</name></member>
+      <member refid="class_c_camera_1a0123231b9f52caebf8cc7e95baa1403e" prot="public" virt="non-virtual"><scope>CCameraLookAt</scope><name>~CCamera</name></member>
+      <member refid="class_c_camera_look_at_1a887d07ee683d794ebd9acc35fb2c01c2" prot="public" virt="non-virtual"><scope>CCameraLookAt</scope><name>~CCameraLookAt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

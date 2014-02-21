@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_g_l_x_hyperpipe_network_s_g_i_x" kind="struct" prot="public">
+    <compoundname>GLXHyperpipeNetworkSGIX</compoundname>
+    <includes refid="glxext_8h" local="no">glxext.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_g_l_x_hyperpipe_network_s_g_i_x_1a6338b9717fa895aec16b932f2ef693ed" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char GLXHyperpipeNetworkSGIX::pipeName[GLX_HYPERPIPE_PIPE_NAME_LENGTH_SGIX]</definition>
+        <argsstring>[GLX_HYPERPIPE_PIPE_NAME_LENGTH_SGIX]</argsstring>
+        <name>pipeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glxext.h" line="833" bodyfile="/home/cj/workspace/Tetris/src/glut/glxext.h" bodystart="833" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_g_l_x_hyperpipe_network_s_g_i_x_1a81393053988b32fadb0b21615024add1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GLXHyperpipeNetworkSGIX::networkId</definition>
+        <argsstring></argsstring>
+        <name>networkId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/glxext.h" line="834" bodyfile="/home/cj/workspace/Tetris/src/glut/glxext.h" bodystart="834" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/cj/workspace/Tetris/src/glut/glxext.h" line="832" bodyfile="/home/cj/workspace/Tetris/src/glut/glxext.h" bodystart="832" bodyend="835"/>
+    <listofallmembers>
+      <member refid="struct_g_l_x_hyperpipe_network_s_g_i_x_1a81393053988b32fadb0b21615024add1" prot="public" virt="non-virtual"><scope>GLXHyperpipeNetworkSGIX</scope><name>networkId</name></member>
+      <member refid="struct_g_l_x_hyperpipe_network_s_g_i_x_1a6338b9717fa895aec16b932f2ef693ed" prot="public" virt="non-virtual"><scope>GLXHyperpipeNetworkSGIX</scope><name>pipeName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

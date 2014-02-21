@@ -1,0 +1,606 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_c_renderer_8h" kind="file">
+    <compoundname>CRenderer.h</compoundname>
+    <includes refid="_common_8h" local="yes">Common.h</includes>
+    <includes local="yes">GL/glut.h</includes>
+    <includedby refid="_c_application_8h" local="yes">/home/cj/workspace/Tetris/src/appliBase/CApplication.h</includedby>
+    <includedby refid="_c_renderer_8cpp" local="yes">/home/cj/workspace/Tetris/src/appliBase/CRenderer.cpp</includedby>
+    <incdepgraph>
+      <node id="212">
+        <label>GL/glut.h</label>
+      </node>
+      <node id="209">
+        <label>limits</label>
+      </node>
+      <node id="204">
+        <label>cmath</label>
+      </node>
+      <node id="199">
+        <label>string</label>
+      </node>
+      <node id="210">
+        <label>CVector4.h</label>
+        <link refid="_c_vector4_8h"/>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+      </node>
+      <node id="211">
+        <label>CMatrix44.h</label>
+        <link refid="_c_matrix44_8h"/>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+      </node>
+      <node id="207">
+        <label>ctime</label>
+      </node>
+      <node id="197">
+        <label>/home/cj/workspace/Tetris/src/appliBase/CRenderer.h</label>
+        <link refid="CRenderer.h"/>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+      </node>
+      <node id="203">
+        <label>vector</label>
+      </node>
+      <node id="200">
+        <label>sstream</label>
+      </node>
+      <node id="208">
+        <label>CVector3.h</label>
+        <link refid="_c_vector3_8h"/>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+      </node>
+      <node id="206">
+        <label>cstdlib</label>
+      </node>
+      <node id="201">
+        <label>iostream</label>
+      </node>
+      <node id="198">
+        <label>Common.h</label>
+        <link refid="_common_8h"/>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>algorithm</label>
+      </node>
+      <node id="205">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="217">
+        <label>/home/cj/workspace/Tetris/src/appliBase/CGuiGlut.cpp</label>
+        <link refid="_c_gui_glut_8cpp"/>
+      </node>
+      <node id="216">
+        <label>/home/cj/workspace/Tetris/src/appliBase/CGuiGlut.h</label>
+        <link refid="_c_gui_glut_8h"/>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+      </node>
+      <node id="232">
+        <label>/home/cj/workspace/Tetris/src/test/testCOPiece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_o_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+      </node>
+      <node id="222">
+        <label>/home/cj/workspace/Tetris/src/test/testCOPiece.cpp</label>
+        <link refid="test_c_o_piece_8cpp"/>
+      </node>
+      <node id="223">
+        <label>/home/cj/workspace/Tetris/src/test/testCTPiece.cpp</label>
+        <link refid="test_c_t_piece_8cpp"/>
+      </node>
+      <node id="236">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ1Piece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_z1_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+      </node>
+      <node id="228">
+        <label>/home/cj/workspace/Tetris/src/test/testCL1Piece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_l1_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+      </node>
+      <node id="240">
+        <label>/home/cj/workspace/Tetris/src/tetris/CProjetTetris.h</label>
+        <link refid="_c_projet_tetris_8h"/>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+      </node>
+      <node id="238">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ2Piece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_z2_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+      </node>
+      <node id="242">
+        <label>/home/cj/workspace/Tetris/src/appliBase/CRenderer.cpp</label>
+        <link refid="_c_renderer_8cpp"/>
+      </node>
+      <node id="218">
+        <label>/home/cj/workspace/Tetris/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="241">
+        <label>/home/cj/workspace/Tetris/src/tetris/CProjetTetris.cpp</label>
+        <link refid="_c_projet_tetris_8cpp"/>
+      </node>
+      <node id="226">
+        <label>/home/cj/workspace/Tetris/src/test/testCIPiece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_i_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+      </node>
+      <node id="230">
+        <label>/home/cj/workspace/Tetris/src/test/testCL2Piece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_l2_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+      </node>
+      <node id="213">
+        <label>/home/cj/workspace/Tetris/src/appliBase/CRenderer.h</label>
+        <link refid="CRenderer.h"/>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="242" relation="include">
+        </childnode>
+      </node>
+      <node id="219">
+        <label>/home/cj/workspace/Tetris/src/test/testCIPiece.cpp</label>
+        <link refid="test_c_i_piece_8cpp"/>
+      </node>
+      <node id="220">
+        <label>/home/cj/workspace/Tetris/src/test/testCL1Piece.cpp</label>
+        <link refid="test_c_l1_piece_8cpp"/>
+      </node>
+      <node id="215">
+        <label>/home/cj/workspace/Tetris/src/appliBase/CApplication.cpp</label>
+        <link refid="_c_application_8cpp"/>
+      </node>
+      <node id="224">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ1Piece.cpp</label>
+        <link refid="test_c_z1_piece_8cpp"/>
+      </node>
+      <node id="233">
+        <label>/home/cj/workspace/Tetris/src/test/testCOPiece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_o_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="221">
+        <label>/home/cj/workspace/Tetris/src/test/testCL2Piece.cpp</label>
+        <link refid="test_c_l2_piece_8cpp"/>
+      </node>
+      <node id="225">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ2Piece.cpp</label>
+        <link refid="test_c_z2_piece_8cpp"/>
+      </node>
+      <node id="214">
+        <label>/home/cj/workspace/Tetris/src/appliBase/CApplication.h</label>
+        <link refid="_c_application_8h"/>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+      </node>
+      <node id="239">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ2Piece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_z2_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="227">
+        <label>/home/cj/workspace/Tetris/src/test/testCIPiece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_i_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="237">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ1Piece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_z1_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="231">
+        <label>/home/cj/workspace/Tetris/src/test/testCL2Piece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_l2_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="235">
+        <label>/home/cj/workspace/Tetris/src/test/testCTPiece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_t_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="229">
+        <label>/home/cj/workspace/Tetris/src/test/testCL1Piece/CProjetTetrisPiece.cpp</label>
+        <link refid="test_c_l1_piece_2_c_projet_tetris_piece_8cpp"/>
+      </node>
+      <node id="234">
+        <label>/home/cj/workspace/Tetris/src/test/testCTPiece/CProjetTetrisPiece.h</label>
+        <link refid="test_c_t_piece_2_c_projet_tetris_piece_8h"/>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_c_camera" prot="public">CCamera</innerclass>
+    <innerclass refid="class_c_camera_look_at" prot="public">CCameraLookAt</innerclass>
+    <innerclass refid="struct_c_graphic_cylinder" prot="public">CGraphicCylinder</innerclass>
+    <innerclass refid="struct_c_graphic_sphere" prot="public">CGraphicSphere</innerclass>
+    <innerclass refid="class_c_renderer" prot="public">CRenderer</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_c_renderer_8h_1adaf2e88873b28de8f5bca6db4f48dc53" prot="public" static="no">
+        <name>__RENDERER_H__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" line="17" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_c_renderer_8h_1a240c1924416689e5700ff0d9f30539d9" prot="public" static="no">
+        <name>PrimitiveType</name>
+        <enumvalue id="_c_renderer_8h_1a240c1924416689e5700ff0d9f30539d9a915f906f584da40cd4c601bcb312087d" prot="public">
+          <name>PT_Face</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_renderer_8h_1a240c1924416689e5700ff0d9f30539d9a5bac2363bf071c0a3452b8f8dcbe9421" prot="public">
+          <name>PT_Edge</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_c_renderer_8h_1a240c1924416689e5700ff0d9f30539d9abc120163d92d76b97883802227e87742" prot="public">
+          <name>PT_Vertex</name>
+          <initializer>= 100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tutorial sympa pour commencer : <ulink url="http://www-evasion.imag.fr/Membres/Antoine.Bouthors/teaching/opengl/">http://www-evasion.imag.fr/Membres/Antoine.Bouthors/teaching/opengl/</ulink></para><para>le renderer est notre classe qui va<itemizedlist>
+<listitem><para>intialiser notre matrice de transformation de l&apos;espace caméra à l&apos;espace de projection</para></listitem><listitem><para>initialiser notre matrice de transformation de l&apos;espace monde à l&apos;espace caméra</para></listitem><listitem><para>intialiser notre scene dans l&apos;espace monde</para></listitem><listitem><para>dessiner des objets 3D, des gémométries </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" line="135" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h" bodystart="134" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Projet<sp/>C/C++</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2013-2014<sp/>Equipe<sp/>SEASIDE<sp/>(T.<sp/>LE<sp/>NAOUR,<sp/>J.F<sp/>KAMP)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IRISA<sp/>-<sp/>UBS<sp/><sp/>/<sp/>IUT<sp/>Informatique<sp/>Vannes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//=====================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>classe<sp/>CRenderer,<sp/>s&apos;occupe<sp/>de<sp/>gérer<sp/>l&apos;affichage<sp/>de<sp/>la<sp/>scene</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//=====================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Ici<sp/>fichier<sp/>des<sp/>déclarations<sp/>des<sp/>fonctions.<sp/>Une<sp/>fonction<sp/>ne<sp/>peut<sp/>être<sp/>déclarée<sp/>qu&apos;une<sp/>seule<sp/>fois<sp/>par<sp/>le<sp/>fichier<sp/>principal<sp/>(main.cpp)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>d&apos;ou<sp/>l&apos;ajout<sp/>d&apos;une<sp/>routine<sp/>qui<sp/>dit<sp/>que<sp/>si<sp/>votre<sp/>fichier<sp/>à<sp/>déjà<sp/>été<sp/>inclu<sp/>avant<sp/>pas<sp/>la<sp/>peine<sp/>de<sp/>le<sp/>re-inclure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__RENDERER_H__<sp/><sp/>//<sp/>routine<sp/>qui<sp/>sert<sp/>à<sp/>pas<sp/>inclure<sp/>2<sp/>fois<sp/>le<sp/>même<sp/>fichier</highlight></codeline>
+<codeline lineno="17" refid="_c_renderer_8h_1adaf2e88873b28de8f5bca6db4f48dc53" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__RENDERER_H__<sp/><sp/>//</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>On<sp/>inclu<sp/>les<sp/>fichiers<sp/>.h<sp/>qui<sp/>contiennent<sp/>les<sp/>déclarations<sp/>des<sp/>fonctions<sp/>dont<sp/>a<sp/>besion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>On<sp/>a<sp/>besoin<sp/>ici<sp/>de<sp/>la<sp/>structure<sp/>UserEvents<sp/>contenant<sp/>les<sp/>déplacement<sp/>de<sp/>la<sp/>souris<sp/>à<sp/>chaque<sp/>frame</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_common_8h" kindref="compound">Common.h</ref>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>données<sp/>liées<sp/>à<sp/>la<sp/>souris</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;GL/glut.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="class_c_camera" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_c_camera" kindref="compound">CCamera</ref></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructeur<sp/>de<sp/>l&apos;objet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_c_camera_1a2eb95595766a84cb745ec00783595190" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_camera_1a2eb95595766a84cb745ec00783595190" kindref="member">CCamera</ref>()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<ref refid="class_c_camera_1a8378bd672ab258ca762326ca50a241cc" kindref="member" tooltip="pointeur sur l&amp;#39;objet partagé mouse events mis à jour par le GUI">m_UserEvents</ref>(0),<sp/><ref refid="class_c_camera_1af4692e9f23bf7f3e438a5abfcacc515e" kindref="member">m_XOffset</ref>(0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>),<sp/><ref refid="class_c_camera_1aa2cc5b4ddb3e2c590096fe9aecf581c2" kindref="member">m_YOffset</ref>(0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>),<sp/><ref refid="class_c_camera_1af0fe5db70b4e35a5f147037fbee15246" kindref="member" tooltip="x,y rotate">m_ZOffset</ref>(100.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>),<sp/><ref refid="class_c_camera_1ab29a2c9d274ebc7a086486f26011901c" kindref="member">m_rotateX</ref>(0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>),<sp/><ref refid="class_c_camera_1a3c40e7ab1b5f00bdac413e0ea59251c7" kindref="member" tooltip="x,y,z offset">m_rotateY</ref>(45.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>){}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Destructeur<sp/>de<sp/>l&apos;objet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="class_c_camera_1a0123231b9f52caebf8cc7e95baa1403e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_camera_1a0123231b9f52caebf8cc7e95baa1403e" kindref="member">~CCamera</ref>()</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_camera_1a8378bd672ab258ca762326ca50a241cc" kindref="member" tooltip="pointeur sur l&amp;#39;objet partagé mouse events mis à jour par le GUI">m_UserEvents</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>compute<sp/>met<sp/>à<sp/>jour<sp/>les<sp/>coordonnées<sp/>de<sp/>poistion<sp/>de<sp/>la<sp/>caméra</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44" kindref="compound" tooltip="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</ref>&amp;<sp/><ref refid="class_c_camera_1aaae931e9df3443887264780ea5e4add6" kindref="member">Compute</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Données<sp/>membres</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="class_c_camera_1a8378bd672ab258ca762326ca50a241cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_user_events" kindref="compound">UserEvents</ref>*<sp/><sp/><sp/><sp/><sp/><ref refid="class_c_camera_1a8378bd672ab258ca762326ca50a241cc" kindref="member" tooltip="pointeur sur l&amp;#39;objet partagé mouse events mis à jour par le GUI">m_UserEvents</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58" refid="class_c_camera_1af84199bbddf1a37cdc9d5e82ec6018e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_matrix44" kindref="compound" tooltip="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_camera_1af84199bbddf1a37cdc9d5e82ec6018e9" kindref="member" tooltip="matrice de transformation de la vue">m_viewMatrix</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="class_c_camera_1af0fe5db70b4e35a5f147037fbee15246" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_camera_1af4692e9f23bf7f3e438a5abfcacc515e" kindref="member">m_XOffset</ref>,<sp/><ref refid="class_c_camera_1aa2cc5b4ddb3e2c590096fe9aecf581c2" kindref="member">m_YOffset</ref>,<sp/><ref refid="class_c_camera_1af0fe5db70b4e35a5f147037fbee15246" kindref="member" tooltip="x,y rotate">m_ZOffset</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_camera_1ab29a2c9d274ebc7a086486f26011901c" kindref="member">m_rotateX</ref>,<sp/><ref refid="class_c_camera_1a3c40e7ab1b5f00bdac413e0ea59251c7" kindref="member" tooltip="x,y,z offset">m_rotateY</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="class_c_camera_1ab7cde03d56f26b36091c134197b73f0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_vector4" kindref="compound">CVector4</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_camera_1ab7cde03d56f26b36091c134197b73f0c" kindref="member">m_translate</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="class_c_camera_look_at" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_c_camera_look_at" kindref="compound">CCameraLookAt</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_c_camera" kindref="compound">CCamera</ref></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructeur<sp/>de<sp/>l&apos;objet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="class_c_camera_look_at_1a9919d1d649785596c5948a14b45425bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_camera_look_at_1a9919d1d649785596c5948a14b45425bf" kindref="member">CCameraLookAt</ref>()</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<ref refid="class_c_camera_look_at_1a989e33c7633c9698b8f2bde9e4cda725" kindref="member">m_posX</ref>(50.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>),<sp/><ref refid="class_c_camera_look_at_1ab2e0d297fed9a6ed790373c3241ba7f4" kindref="member">m_posY</ref>(50.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>),<sp/><ref refid="class_c_camera_look_at_1aade107961266e4d08c1b2d1e15c81176" kindref="member" tooltip="look at variables (pos)">m_posZ</ref>(50.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>),</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_camera_look_at_1a7d426fe87c65c00cdca44989abc34c6a" kindref="member">m_viewX</ref>(0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>),<sp/><ref refid="class_c_camera_look_at_1ac194ff8295143f3313c22a1a24ac4b3b" kindref="member">m_viewY</ref>(0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>),<sp/><ref refid="class_c_camera_look_at_1a8654306ba0b31ba6ea5abea14b2c9028" kindref="member" tooltip="look at variables (view)">m_viewZ</ref>(0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>),</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_camera_look_at_1ac7ba83f089c502f9c7e0cc761d1c331f" kindref="member">m_upX</ref>(0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>),<sp/><ref refid="class_c_camera_look_at_1aa93ea2b698cd033799e071db1af5061a" kindref="member">m_upY</ref>(1.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>),<sp/><ref refid="class_c_camera_look_at_1abbb8f744dd0751cf624ea90c818a4ee8" kindref="member" tooltip="look at variables (up)">m_upZ</ref>(0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>){}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Destructeur<sp/>de<sp/>l&apos;objet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="class_c_camera_look_at_1a887d07ee683d794ebd9acc35fb2c01c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_camera_look_at_1a887d07ee683d794ebd9acc35fb2c01c2" kindref="member">~CCameraLookAt</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>compute<sp/>met<sp/>à<sp/>jour<sp/>les<sp/>coordonnées<sp/>de<sp/>poistion<sp/>de<sp/>la<sp/>caméra</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_matrix44" kindref="compound" tooltip="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</ref>&amp;<sp/><ref refid="class_c_camera_look_at_1a700fcf7befa6fa590b856c1d5e2e096c" kindref="member">Compute</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Données<sp/>membres</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="class_c_camera_look_at_1aade107961266e4d08c1b2d1e15c81176" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_c_camera_look_at_1a989e33c7633c9698b8f2bde9e4cda725" kindref="member">m_posX</ref>,<sp/><sp/><sp/><ref refid="class_c_camera_look_at_1ab2e0d297fed9a6ed790373c3241ba7f4" kindref="member">m_posY</ref>,<sp/><sp/><ref refid="class_c_camera_look_at_1aade107961266e4d08c1b2d1e15c81176" kindref="member" tooltip="look at variables (pos)">m_posZ</ref><sp/>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="class_c_camera_look_at_1a8654306ba0b31ba6ea5abea14b2c9028" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_c_camera_look_at_1a7d426fe87c65c00cdca44989abc34c6a" kindref="member">m_viewX</ref>,<sp/><sp/><ref refid="class_c_camera_look_at_1ac194ff8295143f3313c22a1a24ac4b3b" kindref="member">m_viewY</ref>,<sp/><ref refid="class_c_camera_look_at_1a8654306ba0b31ba6ea5abea14b2c9028" kindref="member" tooltip="look at variables (view)">m_viewZ</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92" refid="class_c_camera_look_at_1abbb8f744dd0751cf624ea90c818a4ee8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_c_camera_look_at_1ac7ba83f089c502f9c7e0cc761d1c331f" kindref="member">m_upX</ref>,<sp/><sp/><sp/><sp/><ref refid="class_c_camera_look_at_1aa93ea2b698cd033799e071db1af5061a" kindref="member">m_upY</ref>,<sp/><sp/><sp/><ref refid="class_c_camera_look_at_1abbb8f744dd0751cf624ea90c818a4ee8" kindref="member" tooltip="look at variables (up)">m_upZ</ref><sp/><sp/>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="comment">//<sp/>opengl<sp/>helper</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"></highlight></codeline>
+<codeline lineno="104" refid="struct_c_graphic_cylinder" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_c_graphic_cylinder" kindref="compound" tooltip="Noeud graphique représentant un cylindre. Le cylindre est décrit par les rayons de lsa base et de son som...">CGraphicCylinder</ref></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_c_graphic_cylinder_1a60dcaa2b9850bda875b00ab2661587bb" kindref="member">Draw</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a0cdec8e97a75ee9458b23d152bf962d4" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a74d80fd479c0f6d0153c709949a089ef" kindref="member">y</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1aee38b51639b577753f6a92029fb92000" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}<sp/>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="struct_c_graphic_sphere" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_c_graphic_sphere" kindref="compound" tooltip="Noeud de géométrie représentant une sphère.">CGraphicSphere</ref></highlight></codeline>
+<codeline lineno="117"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_c_graphic_sphere_1a31e5ad66feb6cd8988acafc917848a0f" kindref="member" tooltip="Gestion de l&amp;#39;affichage OpenGL.">Draw</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius,<sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref><sp/><ref refid="glext_8h_1a3ea846f998d64f079b86052b6c4193a8" kindref="member">color</ref><sp/>=<sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>(1.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>));</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="_c_renderer_8h_1a240c1924416689e5700ff0d9f30539d9" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_c_renderer_8h_1a240c1924416689e5700ff0d9f30539d9" kindref="member">PrimitiveType</ref></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="136" refid="_c_renderer_8h_1a240c1924416689e5700ff0d9f30539d9a915f906f584da40cd4c601bcb312087d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_renderer_8h_1a240c1924416689e5700ff0d9f30539d9a915f906f584da40cd4c601bcb312087d" kindref="member">PT_Face</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="137" refid="_c_renderer_8h_1a240c1924416689e5700ff0d9f30539d9a5bac2363bf071c0a3452b8f8dcbe9421" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_renderer_8h_1a240c1924416689e5700ff0d9f30539d9a5bac2363bf071c0a3452b8f8dcbe9421" kindref="member">PT_Edge</ref><sp/>=<sp/>10,</highlight></codeline>
+<codeline lineno="138" refid="_c_renderer_8h_1a240c1924416689e5700ff0d9f30539d9abc120163d92d76b97883802227e87742" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_c_renderer_8h_1a240c1924416689e5700ff0d9f30539d9abc120163d92d76b97883802227e87742" kindref="member">PT_Vertex</ref><sp/>=<sp/>100</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="class_c_renderer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_c_renderer" kindref="compound">CRenderer</ref></highlight></codeline>
+<codeline lineno="142"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>les<sp/>fonctions<sp/>suivantes<sp/>peuvent<sp/>être<sp/>appelées<sp/>par<sp/>d&apos;autres<sp/>classes<sp/>/<sp/>programmes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructeur<sp/>par<sp/>défaut<sp/>de<sp/>l&apos;objet<sp/>(appeler<sp/>automatiquement<sp/>à<sp/>la<sp/>déclaration<sp/>(si<sp/>l&apos;objet<sp/>n&apos;est<sp/>pas<sp/>un<sp/>pointeur))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>rien<sp/>à<sp/>mettre<sp/>dedans<sp/>pour<sp/>le<sp/>moment,<sp/>notre<sp/>programme<sp/>n&apos;a<sp/>pas<sp/>besoin<sp/>d&apos;objets<sp/>temporaires</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_renderer_1a0405b4e5059dcda9c5072d5fd7e7d6fc" kindref="member">CRenderer</ref>();</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructeur<sp/>de<sp/>l&apos;objet<sp/>(appelée<sp/>uniquement<sp/>par<sp/>la<sp/>classe<sp/>CApplication<sp/>!!!!!!)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_renderer_1a0405b4e5059dcda9c5072d5fd7e7d6fc" kindref="member">CRenderer</ref>(<ref refid="struct_window_setup" kindref="compound">WindowSetup</ref>*<sp/>windowSetup,<sp/><ref refid="struct_user_events" kindref="compound">UserEvents</ref>*<sp/><ref refid="struct_user_events" kindref="compound">UserEvents</ref>,<sp/><ref refid="class_c_camera" kindref="compound">CCamera</ref>*<sp/>camera);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Autre<sp/>façon<sp/>de<sp/>créer<sp/>le<sp/>renderer<sp/>(appelée<sp/>uniquement<sp/>par<sp/>la<sp/>classe<sp/>CApplication<sp/>!!!!!!)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_renderer_1a7ce1242671a1005ff04e67a1cd35b538" kindref="member">Create</ref>(<ref refid="struct_window_setup" kindref="compound">WindowSetup</ref>*<sp/>windowSetup,<sp/>UserEvents*<sp/>UserEvents,<sp/><ref refid="class_c_camera" kindref="compound">CCamera</ref>*<sp/>camera);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Destructeur<sp/>de<sp/>l&apos;objet<sp/>appeler<sp/>automatiquement<sp/>à<sp/>la<sp/>fin<sp/>de<sp/>la<sp/>fonction<sp/>main<sp/>(si<sp/>l&apos;objet<sp/>n&apos;est<sp/>pas<sp/>un<sp/>pointeur))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>rien<sp/>à<sp/>mettre<sp/>dedans<sp/>pour<sp/>le<sp/>moment,<sp/>notre<sp/>programme<sp/>n&apos;a<sp/>pas<sp/>besoin<sp/>d&apos;objets<sp/>temporaires</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_renderer_1acb0a66a0d9205fe5f24cec41f0e0b249" kindref="member">~CRenderer</ref>();</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fonction<sp/>d&apos;initialisation,<sp/>initialie<sp/>OPENGL<sp/><sp/>(appelée<sp/>uniquement<sp/>par<sp/>la<sp/>classe<sp/>CApplication<sp/>!!!!!!)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_c_renderer_1a4253c2477ff48b0a50b2d6e256aeee78" kindref="member">Init</ref>();</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fonction<sp/>d&apos;affichage<sp/>appelé<sp/>à<sp/>chaque<sp/>bouche<sp/>de<sp/>rendu<sp/>(appelée<sp/>uniquement<sp/>par<sp/>la<sp/>classe<sp/>CApplication<sp/>!!!!!!)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_renderer_1ac2fb4f50b7bd87f667d0f27640d6f97e" kindref="member">StartRender</ref>();</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fonction<sp/>qui<sp/>permet<sp/>de<sp/>configurer<sp/>les<sp/>options<sp/>propres<sp/>au<sp/>renderer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_renderer_setup" kindref="compound">RendererSetup</ref>*<sp/><sp/><ref refid="class_c_renderer_1ade810b90f573f4e63c2c76b89778dfa0" kindref="member">SetUpRenderer</ref>();</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fonction<sp/>d&apos;initialisation<sp/>de<sp/>la<sp/>transformation<sp/>de<sp/>projection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_renderer_1a02dc846e2a724aec1a5955868c1cea4d" kindref="member">LoadProjectionMatrix</ref>(<ref refid="class_c_matrix44" kindref="compound" tooltip="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</ref>&amp;<sp/>projection);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fonction<sp/>dde<sp/>mise<sp/>à<sp/>jour<sp/>de<sp/>la<sp/>transformation<sp/>de<sp/>vue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_renderer_1a7c935b45be28e843a16f9c0d06545351" kindref="member">LoadViewMatrix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_matrix44" kindref="compound" tooltip="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</ref>&amp;<sp/>view);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>lancement<sp/>d&apos;une<sp/>phase<sp/>d&apos;affichage<sp/>2D<sp/>(A<sp/>appeler<sp/>éventuellement<sp/>dans<sp/>OnRender()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_renderer_1a304c6e86e556ebaf250e46342b99a95e" kindref="member">Start2DRender</ref>();</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fin<sp/>d&apos;affichage<sp/>2D<sp/>(A<sp/>appeler<sp/>éventuellement<sp/>dans<sp/>OnRender()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_renderer_1a180311e3b15212752710a0ad66cedcb6" kindref="member">End2DRender</ref>();</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Affichage<sp/>d&apos;un<sp/>texte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>\param<sp/>string<sp/>:<sp/>le<sp/>texte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>\param<sp/>int<sp/>:<sp/>position<sp/>en<sp/>x</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>\param<sp/>int<sp/>:<sp/>position<sp/>en<sp/>y</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>\param<sp/>TextSize<sp/>:<sp/>taille<sp/>du<sp/>texte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>\param<sp/>CVector3<sp/>:<sp/>couleur<sp/>du<sp/>texte<sp/>RGB,<sp/>r,g,v<sp/>\in<sp/>[0,1]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216" refid="class_c_renderer_1ae92b4f96fd8512b28a3800cd673c73e6a4bc17bab5c43df73339d80f85ea9e3ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="class_c_renderer_1ae92b4f96fd8512b28a3800cd673c73e6" kindref="member">TextSize</ref>{<ref refid="class_c_renderer_1ae92b4f96fd8512b28a3800cd673c73e6af4f0a0fc69b0084780bcfe9e489ef96f" kindref="member">TS_10</ref>,<sp/><ref refid="class_c_renderer_1ae92b4f96fd8512b28a3800cd673c73e6ab44fb4c932da34b5f1649a02ac7738e0" kindref="member">TS_12</ref>,<sp/><ref refid="class_c_renderer_1ae92b4f96fd8512b28a3800cd673c73e6a4bc17bab5c43df73339d80f85ea9e3ee" kindref="member">TS_18</ref>};</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_renderer_1a967c742c349b52eac2551fa8b1567814" kindref="member">DrawText</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">std::string</ref>&amp;<sp/>text,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a0cdec8e97a75ee9458b23d152bf962d4" kindref="member">x</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a74d80fd479c0f6d0153c709949a089ef" kindref="member">y</ref>,<sp/><ref refid="class_c_renderer_1ae92b4f96fd8512b28a3800cd673c73e6" kindref="member">TextSize</ref><sp/><ref refid="gl_8h_1ad585a1393cfa368fa9dc3d8ebff640d5" kindref="member">s</ref><sp/>=<sp/><ref refid="class_c_renderer_1ae92b4f96fd8512b28a3800cd673c73e6ab44fb4c932da34b5f1649a02ac7738e0" kindref="member">TS_12</ref>,<sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref><sp/><ref refid="glext_8h_1a3ea846f998d64f079b86052b6c4193a8" kindref="member">color</ref><sp/>=<sp/><ref refid="class_c_vector3" kindref="compound">CVector3</ref>(1.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>,<sp/>0.0<ref refid="glext_8h_1aba8ad56949f59242bc167b073dae3715" kindref="member">f</ref>));</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/><sp/></highlight><highlight class="comment">//<sp/>les<sp/>fonctions<sp/>suivantes<sp/>peuvent<sp/>être<sp/>appelées<sp/>seulement<sp/>pas<sp/>cettte<sp/>même<sp/>classe<sp/>et<sp/>les<sp/>classes<sp/>filles<sp/>de<sp/>cette<sp/>classe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Données<sp/>membres</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226" refid="class_c_renderer_1adabcf6d79f19667e8ed9a9fd0fb2484b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_window_setup" kindref="compound">WindowSetup</ref>*<sp/><sp/><sp/><sp/><ref refid="class_c_renderer_1adabcf6d79f19667e8ed9a9fd0fb2484b" kindref="member">m_windowSetup</ref><sp/><sp/><sp/>;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>config<sp/>et<sp/>evenement<sp/>liés<sp/>à<sp/>la<sp/>fenêtre</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="class_c_renderer_1aecc712a89cf23200f0f18a4411b77416" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_camera" kindref="compound">CCamera</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_renderer_1aecc712a89cf23200f0f18a4411b77416" kindref="member">m_camera</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>la<sp/>camera</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228" refid="class_c_renderer_1a83fe85f084b151b323e6a15f1f6aa325" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_renderer_setup" kindref="compound">RendererSetup</ref><sp/><sp/><sp/><ref refid="class_c_renderer_1a83fe85f084b151b323e6a15f1f6aa325" kindref="member">m_rendererSetup</ref><sp/>;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>config<sp/>et<sp/>evenement<sp/>du<sp/>renderer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fonction<sp/>qui<sp/>affiche<sp/>un<sp/>plan<sp/>dans<sp/>l&apos;espace<sp/>3d</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_renderer_1a21d9ea20232f017980f6ad52b643ccf1" kindref="member">DrawGround</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_size);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Affichage<sp/>d&apos;un<sp/>texte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_renderer_1a967c742c349b52eac2551fa8b1567814" kindref="member">DrawText</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">std::string</ref>&amp;<sp/>text,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*police);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="comment">//<sp/>les<sp/>fonctions<sp/>inline<sp/>permette<sp/>une<sp/>optimisation<sp/>du<sp/>code.<sp/>Brievement,<sp/>le<sp/>corps<sp/>des<sp/>fonctions<sp/>suivantes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="comment">//<sp/>remplace<sp/>les<sp/>valeurs<sp/>appelés<sp/>dans<sp/>le<sp/>code<sp/>par<sp/>ces<sp/>mêmes<sp/>fonctions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246" refid="class_c_renderer_1a0405b4e5059dcda9c5072d5fd7e7d6fc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><sp/><ref refid="class_c_renderer_1a0405b4e5059dcda9c5072d5fd7e7d6fc" kindref="member">CRenderer::CRenderer</ref>()<sp/>:m_camera()<sp/>{}</highlight></codeline>
+<codeline lineno="247" refid="class_c_renderer_1acb0a66a0d9205fe5f24cec41f0e0b249" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><sp/><ref refid="class_c_renderer_1acb0a66a0d9205fe5f24cec41f0e0b249" kindref="member">CRenderer::~CRenderer</ref>(){<ref refid="class_c_renderer_1adabcf6d79f19667e8ed9a9fd0fb2484b" kindref="member">m_windowSetup</ref><sp/>=<sp/>0;}</highlight></codeline>
+<codeline lineno="248" refid="class_c_renderer_1abfcaab7ed83b6d8bed61b0f9e2ed3e75" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><sp/><ref refid="class_c_renderer_1a0405b4e5059dcda9c5072d5fd7e7d6fc" kindref="member">CRenderer::CRenderer</ref>(<ref refid="struct_window_setup" kindref="compound">WindowSetup</ref>*<sp/>windowSetup,<sp/>UserEvents*<sp/>UserEvents,<sp/><sp/><ref refid="class_c_camera" kindref="compound">CCamera</ref>*<sp/>camera)</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>:m_windowSetup(windowSetup),<sp/>m_camera(camera)</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_renderer_1aecc712a89cf23200f0f18a4411b77416" kindref="member">m_camera</ref>-&gt;<ref refid="class_c_camera_1a8378bd672ab258ca762326ca50a241cc" kindref="member" tooltip="pointeur sur l&amp;#39;objet partagé mouse events mis à jour par le GUI">m_UserEvents</ref><sp/>=<sp/>UserEvents;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254" refid="class_c_renderer_1a7ce1242671a1005ff04e67a1cd35b538" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_renderer_1a7ce1242671a1005ff04e67a1cd35b538" kindref="member">CRenderer::Create</ref>(<ref refid="struct_window_setup" kindref="compound">WindowSetup</ref>*<sp/>windowSetup,<sp/>UserEvents*<sp/>UserEvents,<sp/><ref refid="class_c_camera" kindref="compound">CCamera</ref>*<sp/>camera)</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_renderer_1adabcf6d79f19667e8ed9a9fd0fb2484b" kindref="member">m_windowSetup</ref><sp/>=<sp/>windowSetup;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_renderer_1aecc712a89cf23200f0f18a4411b77416" kindref="member">m_camera</ref><sp/>=<sp/>camera;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_renderer_1aecc712a89cf23200f0f18a4411b77416" kindref="member">m_camera</ref>-&gt;<ref refid="class_c_camera_1a8378bd672ab258ca762326ca50a241cc" kindref="member" tooltip="pointeur sur l&amp;#39;objet partagé mouse events mis à jour par le GUI">m_UserEvents</ref><sp/>=<sp/>UserEvents;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="260" refid="class_c_renderer_1ade810b90f573f4e63c2c76b89778dfa0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="struct_renderer_setup" kindref="compound">RendererSetup</ref>*<sp/><sp/><sp/><ref refid="class_c_renderer_1ade810b90f573f4e63c2c76b89778dfa0" kindref="member">CRenderer::SetUpRenderer</ref>()<sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="class_c_renderer_1a83fe85f084b151b323e6a15f1f6aa325" kindref="member">m_rendererSetup</ref>;}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__RENDERER_H__<sp/>fin<sp/>de<sp/>la<sp/>routine</highlight></codeline>
+    </programlisting>
+    <location file="/home/cj/workspace/Tetris/src/appliBase/CRenderer.h"/>
+  </compounddef>
+</doxygen>

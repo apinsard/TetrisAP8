@@ -1,0 +1,423 @@
+\hypertarget{class_c_vector4}{\section{RÃ©fÃ©rence de la classe C\-Vector4}
+\label{class_c_vector4}\index{C\-Vector4@{C\-Vector4}}
+}
+
+
+{\ttfamily \#include $<$C\-Vector4.\-h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_vector4_a236fe8016565dce87ddb8223021df0dc}{C\-Vector4} (float X=0, float Y=0, float Z=0, float W=0)
+\item 
+\hyperlink{class_c_vector4_a0ee36e3ebd1fae7de147c81c60656aa7}{C\-Vector4} (const \hyperlink{class_c_vector3}{C\-Vector3} \&vec, float W=0)
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_vector4_a396c0e6f50c58da882ba0c28dbc9cac5}{Set} (float X, float Y, float Z, float W)
+\item 
+float \hyperlink{class_c_vector4_a3e6002e72c8f06a63017d18c55efe37d}{Length} () const 
+\item 
+float \hyperlink{class_c_vector4_ac4a7349170b4e1fab63cd729ad0c9ebc}{Length\-Sq} () const 
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} \hyperlink{class_c_vector4_ab2cde28a4114f4cb8bc32070c1eb1919}{Normalize} ()
+\item 
+\hyperlink{class_c_vector4}{C\-Vector4} \hyperlink{class_c_vector4_abf9248218fcde2670f05702b3e455c11}{operator+} () const 
+\item 
+\hyperlink{class_c_vector4}{C\-Vector4} \hyperlink{class_c_vector4_a77217c90d67ad13be142dc5feb99919b}{operator-\/} () const 
+\item 
+\hyperlink{class_c_vector4}{C\-Vector4} \hyperlink{class_c_vector4_a4f7c263e0b24b89fd72ea309406c1193}{operator+} (const \hyperlink{class_c_vector4}{C\-Vector4} \&\hyperlink{gl_8h_a4568fc090febc136eed4577a600739ca}{v}) const 
+\item 
+\hyperlink{class_c_vector4}{C\-Vector4} \hyperlink{class_c_vector4_ab4becd5f56b3c29a694e0b0e6919d22d}{operator-\/} (const \hyperlink{class_c_vector4}{C\-Vector4} \&\hyperlink{gl_8h_a4568fc090febc136eed4577a600739ca}{v}) const 
+\item 
+const \hyperlink{class_c_vector4}{C\-Vector4} \& \hyperlink{class_c_vector4_a39b66d70237b50b867dcaf8d4f16bc00}{operator+=} (const \hyperlink{class_c_vector4}{C\-Vector4} \&\hyperlink{gl_8h_a4568fc090febc136eed4577a600739ca}{v})
+\item 
+const \hyperlink{class_c_vector4}{C\-Vector4} \& \hyperlink{class_c_vector4_a095a1ea2c124a3d2928238c787c2ac69}{operator-\/=} (const \hyperlink{class_c_vector4}{C\-Vector4} \&\hyperlink{gl_8h_a4568fc090febc136eed4577a600739ca}{v})
+\item 
+const \hyperlink{class_c_vector4}{C\-Vector4} \& \hyperlink{class_c_vector4_a695d4e0612c0cc3de4643a5f9c5a1e64}{operator$\ast$=} (float \hyperlink{gl_8h_a00140d6f5c548b26daf170bf16e86a6d}{t})
+\item 
+const \hyperlink{class_c_vector4}{C\-Vector4} \& \hyperlink{class_c_vector4_a7ae9d0dd61aaf5f94267fa05f63abb01}{operator/=} (float \hyperlink{gl_8h_a00140d6f5c548b26daf170bf16e86a6d}{t})
+\item 
+bool \hyperlink{class_c_vector4_ade99ff60cad22dc8c50fbf65d3530cc0}{operator==} (const \hyperlink{class_c_vector4}{C\-Vector4} \&\hyperlink{gl_8h_a4568fc090febc136eed4577a600739ca}{v}) const 
+\item 
+bool \hyperlink{class_c_vector4_a804a579d02c26bf3584338e697250fb9}{operator!=} (const \hyperlink{class_c_vector4}{C\-Vector4} \&\hyperlink{gl_8h_a4568fc090febc136eed4577a600739ca}{v}) const 
+\end{DoxyCompactItemize}
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_c_vector4_a598c4247754f6601f7c3d47d8f050af0}{x}
+\begin{DoxyCompactList}\small\item\em Composante X. \end{DoxyCompactList}\item 
+float \hyperlink{class_c_vector4_aa45e3cb54bd202f878d61755ac2de91e}{y}
+\begin{DoxyCompactList}\small\item\em Composante Y. \end{DoxyCompactList}\item 
+float \hyperlink{class_c_vector4_aca03ecfdf87d21a98c903268c29c5ed7}{z}
+\begin{DoxyCompactList}\small\item\em Composante Z. \end{DoxyCompactList}\item 
+float \hyperlink{class_c_vector4_a7512fc4c3ce6843060219ba4abc5ea51}{w}
+\begin{DoxyCompactList}\small\item\em Composante W. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description dÃ©taillÃ©e}
+
+
+DÃ©finition Ã  la ligne 17 du fichier C\-Vector4.\-h.
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_c_vector4_a236fe8016565dce87ddb8223021df0dc}{\index{C\-Vector4@{C\-Vector4}!C\-Vector4@{C\-Vector4}}
+\index{C\-Vector4@{C\-Vector4}!CVector4@{C\-Vector4}}
+\subsubsection[{C\-Vector4}]{\setlength{\rightskip}{0pt plus 5cm}C\-Vector4\-::\-C\-Vector4 (
+\begin{DoxyParamCaption}
+\item[{float}]{X = {\ttfamily 0}, }
+\item[{float}]{Y = {\ttfamily 0}, }
+\item[{float}]{Z = {\ttfamily 0}, }
+\item[{float}]{W = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector4_a236fe8016565dce87ddb8223021df0dc}
+Constructeur par défaut
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em X} & \-: Composante X du vecteur \\
+\hline
+{\em Y} & \-: Composante Y du vecteur \\
+\hline
+{\em Z} & \-: Composante Z du vecteur \\
+\hline
+\end{DoxyParams}
+
+
+DÃ©finition Ã  la ligne 106 du fichier C\-Vector4.\-h.
+
+\hypertarget{class_c_vector4_a0ee36e3ebd1fae7de147c81c60656aa7}{\index{C\-Vector4@{C\-Vector4}!C\-Vector4@{C\-Vector4}}
+\index{C\-Vector4@{C\-Vector4}!CVector4@{C\-Vector4}}
+\subsubsection[{C\-Vector4}]{\setlength{\rightskip}{0pt plus 5cm}C\-Vector4\-::\-C\-Vector4 (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector3} \&}]{vec, }
+\item[{float}]{W = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector4_a0ee36e3ebd1fae7de147c81c60656aa7}
+
+
+DÃ©finition Ã  la ligne 109 du fichier C\-Vector4.\-h.
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_c_vector4_a3e6002e72c8f06a63017d18c55efe37d}{\index{C\-Vector4@{C\-Vector4}!Length@{Length}}
+\index{Length@{Length}!CVector4@{C\-Vector4}}
+\subsubsection[{Length}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Vector4\-::\-Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector4_a3e6002e72c8f06a63017d18c55efe37d}
+Renvoie la norme du vecteur
+
+\begin{DoxyReturn}{Renvoie}
+Valeur de la norme du vecteur sqrt(x² + y² + z²) 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 137 du fichier C\-Vector4.\-h.
+
+\hypertarget{class_c_vector4_ac4a7349170b4e1fab63cd729ad0c9ebc}{\index{C\-Vector4@{C\-Vector4}!Length\-Sq@{Length\-Sq}}
+\index{Length\-Sq@{Length\-Sq}!CVector4@{C\-Vector4}}
+\subsubsection[{Length\-Sq}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Vector4\-::\-Length\-Sq (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector4_ac4a7349170b4e1fab63cd729ad0c9ebc}
+Renvoie la norme au carré du vecteur
+
+\begin{DoxyReturn}{Renvoie}
+Carré de la norme du vecteur (x² + y² + z²) 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 149 du fichier C\-Vector4.\-h.
+
+\hypertarget{class_c_vector4_ab2cde28a4114f4cb8bc32070c1eb1919}{\index{C\-Vector4@{C\-Vector4}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!CVector4@{C\-Vector4}}
+\subsubsection[{Normalize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Vector4\-::\-Normalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector4_ab2cde28a4114f4cb8bc32070c1eb1919}
+Normalise le vecteur 
+
+DÃ©finition Ã  la ligne 159 du fichier C\-Vector4.\-h.
+
+\hypertarget{class_c_vector4_a804a579d02c26bf3584338e697250fb9}{\index{C\-Vector4@{C\-Vector4}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!CVector4@{C\-Vector4}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-Vector4\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector4} \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector4_a804a579d02c26bf3584338e697250fb9}
+Opérateur de comparaison !=
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em v} & \-: Vecteur à comparer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+True si les deux vecteurs sont différents 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 328 du fichier C\-Vector4.\-h.
+
+\hypertarget{class_c_vector4_a695d4e0612c0cc3de4643a5f9c5a1e64}{\index{C\-Vector4@{C\-Vector4}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!CVector4@{C\-Vector4}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\-Vector4} \& C\-Vector4\-::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{float}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector4_a695d4e0612c0cc3de4643a5f9c5a1e64}
+Opérateur $\ast$= avec un scalaire
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em t} & \-: Scalaire\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Résultat de l'opération 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 273 du fichier C\-Vector4.\-h.
+
+\hypertarget{class_c_vector4_abf9248218fcde2670f05702b3e455c11}{\index{C\-Vector4@{C\-Vector4}!operator+@{operator+}}
+\index{operator+@{operator+}!CVector4@{C\-Vector4}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Vector4} C\-Vector4\-::operator+ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector4_abf9248218fcde2670f05702b3e455c11}
+Opérateur unaire +
+
+\begin{DoxyReturn}{Renvoie}
+Résultat de l'opération 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 179 du fichier C\-Vector4.\-h.
+
+\hypertarget{class_c_vector4_a4f7c263e0b24b89fd72ea309406c1193}{\index{C\-Vector4@{C\-Vector4}!operator+@{operator+}}
+\index{operator+@{operator+}!CVector4@{C\-Vector4}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Vector4} C\-Vector4\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector4} \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector4_a4f7c263e0b24b89fd72ea309406c1193}
+Opérateur binaire +
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em v} & \-: Vecteur à additionner\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Résultat de l'opération 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 207 du fichier C\-Vector4.\-h.
+
+\hypertarget{class_c_vector4_a39b66d70237b50b867dcaf8d4f16bc00}{\index{C\-Vector4@{C\-Vector4}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!CVector4@{C\-Vector4}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\-Vector4} \& C\-Vector4\-::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector4} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector4_a39b66d70237b50b867dcaf8d4f16bc00}
+Opérateur +=
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em v} & \-: Vecteur à additioner\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Résultat de l'opération 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 235 du fichier C\-Vector4.\-h.
+
+\hypertarget{class_c_vector4_a77217c90d67ad13be142dc5feb99919b}{\index{C\-Vector4@{C\-Vector4}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!CVector4@{C\-Vector4}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Vector4} C\-Vector4\-::operator-\/ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector4_a77217c90d67ad13be142dc5feb99919b}
+Opérateur unaire -\/
+
+\begin{DoxyReturn}{Renvoie}
+Résultat de l'opération 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 192 du fichier C\-Vector4.\-h.
+
+\hypertarget{class_c_vector4_ab4becd5f56b3c29a694e0b0e6919d22d}{\index{C\-Vector4@{C\-Vector4}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!CVector4@{C\-Vector4}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Vector4} C\-Vector4\-::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector4} \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector4_ab4becd5f56b3c29a694e0b0e6919d22d}
+Opérateur binaire -\/
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em v} & \-: Vecteur à soustraire\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Résultat de l'opération 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 222 du fichier C\-Vector4.\-h.
+
+\hypertarget{class_c_vector4_a095a1ea2c124a3d2928238c787c2ac69}{\index{C\-Vector4@{C\-Vector4}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!CVector4@{C\-Vector4}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\-Vector4} \& C\-Vector4\-::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector4} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector4_a095a1ea2c124a3d2928238c787c2ac69}
+Opérateur -\/=
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em v} & \-: Vecteur à soustraire\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Résultat de l'opération 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 254 du fichier C\-Vector4.\-h.
+
+\hypertarget{class_c_vector4_a7ae9d0dd61aaf5f94267fa05f63abb01}{\index{C\-Vector4@{C\-Vector4}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!CVector4@{C\-Vector4}}
+\subsubsection[{operator/=}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf C\-Vector4} \& C\-Vector4\-::operator/= (
+\begin{DoxyParamCaption}
+\item[{float}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector4_a7ae9d0dd61aaf5f94267fa05f63abb01}
+Opérateur /= avec un scalaire
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em t} & \-: Scalaire\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Résultat de l'opération 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 292 du fichier C\-Vector4.\-h.
+
+\hypertarget{class_c_vector4_ade99ff60cad22dc8c50fbf65d3530cc0}{\index{C\-Vector4@{C\-Vector4}!operator==@{operator==}}
+\index{operator==@{operator==}!CVector4@{C\-Vector4}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-Vector4\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Vector4} \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector4_ade99ff60cad22dc8c50fbf65d3530cc0}
+Opérateur de comparaison ==
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em v} & \-: Vecteur à comparer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+True si les deux vecteurs sont identiques 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 311 du fichier C\-Vector4.\-h.
+
+\hypertarget{class_c_vector4_a396c0e6f50c58da882ba0c28dbc9cac5}{\index{C\-Vector4@{C\-Vector4}!Set@{Set}}
+\index{Set@{Set}!CVector4@{C\-Vector4}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} C\-Vector4\-::\-Set (
+\begin{DoxyParamCaption}
+\item[{float}]{X, }
+\item[{float}]{Y, }
+\item[{float}]{Z, }
+\item[{float}]{W}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_vector4_a396c0e6f50c58da882ba0c28dbc9cac5}
+Réinitialise le vecteur
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em X} & \-: Composante X du vecteur \\
+\hline
+{\em Y} & \-: Composante Y du vecteur \\
+\hline
+{\em Z} & \-: Composante Z du vecteur \\
+\hline
+\end{DoxyParams}
+
+
+DÃ©finition Ã  la ligne 122 du fichier C\-Vector4.\-h.
+
+
+
+\subsection{Documentation des donnÃ©es membres}
+\hypertarget{class_c_vector4_a7512fc4c3ce6843060219ba4abc5ea51}{\index{C\-Vector4@{C\-Vector4}!w@{w}}
+\index{w@{w}!CVector4@{C\-Vector4}}
+\subsubsection[{w}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Vector4\-::w}}\label{class_c_vector4_a7512fc4c3ce6843060219ba4abc5ea51}
+
+
+Composante W. 
+
+
+
+DÃ©finition Ã  la ligne 84 du fichier C\-Vector4.\-h.
+
+\hypertarget{class_c_vector4_a598c4247754f6601f7c3d47d8f050af0}{\index{C\-Vector4@{C\-Vector4}!x@{x}}
+\index{x@{x}!CVector4@{C\-Vector4}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Vector4\-::x}}\label{class_c_vector4_a598c4247754f6601f7c3d47d8f050af0}
+
+
+Composante X. 
+
+
+
+DÃ©finition Ã  la ligne 81 du fichier C\-Vector4.\-h.
+
+\hypertarget{class_c_vector4_aa45e3cb54bd202f878d61755ac2de91e}{\index{C\-Vector4@{C\-Vector4}!y@{y}}
+\index{y@{y}!CVector4@{C\-Vector4}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Vector4\-::y}}\label{class_c_vector4_aa45e3cb54bd202f878d61755ac2de91e}
+
+
+Composante Y. 
+
+
+
+DÃ©finition Ã  la ligne 82 du fichier C\-Vector4.\-h.
+
+\hypertarget{class_c_vector4_aca03ecfdf87d21a98c903268c29c5ed7}{\index{C\-Vector4@{C\-Vector4}!z@{z}}
+\index{z@{z}!CVector4@{C\-Vector4}}
+\subsubsection[{z}]{\setlength{\rightskip}{0pt plus 5cm}float C\-Vector4\-::z}}\label{class_c_vector4_aca03ecfdf87d21a98c903268c29c5ed7}
+
+
+Composante Z. 
+
+
+
+DÃ©finition Ã  la ligne 83 du fichier C\-Vector4.\-h.
+
+
+
+La documentation de cette classe a Ã©tÃ© gÃ©nÃ©rÃ©e Ã  partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+/home/cj/workspace/\-Tetris/src/math/\hyperlink{_c_vector4_8h}{C\-Vector4.\-h}\end{DoxyCompactItemize}

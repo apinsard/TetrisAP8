@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_case" kind="struct" prot="public">
+    <compoundname>Case</compoundname>
+    <includes refid="_c_t_game_table_8h" local="no">CTGameTable.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_case_1ab36a7bb1d1f4da76aedde0cd2db71f88" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Case::m_used</definition>
+        <argsstring></argsstring>
+        <name>m_used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/CTGameTable.h" line="16" bodyfile="/home/cj/workspace/Tetris/src/tetris/CTGameTable.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_case_1a2edf0eece87b9b67e7cd6b97e1f63622" prot="public" static="no" mutable="no">
+        <type><ref refid="class_c_vector3" kindref="compound">CVector3</ref></type>
+        <definition>CVector3 Case::m_color</definition>
+        <argsstring></argsstring>
+        <name>m_color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/CTGameTable.h" line="17" bodyfile="/home/cj/workspace/Tetris/src/tetris/CTGameTable.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_case_1a14237e17aab1829965adab76b747db6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Case::Case</definition>
+        <argsstring>()</argsstring>
+        <name>Case</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/tetris/CTGameTable.h" line="15" bodyfile="/home/cj/workspace/Tetris/src/tetris/CTGameTable.h" bodystart="15" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="90">
+        <label>CVector3</label>
+        <link refid="class_c_vector3"/>
+      </node>
+      <node id="89">
+        <label>Case</label>
+        <link refid="struct_case"/>
+        <childnode refid="90" relation="usage">
+          <edgelabel>m_color</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/cj/workspace/Tetris/src/tetris/CTGameTable.h" line="14" bodyfile="/home/cj/workspace/Tetris/src/tetris/CTGameTable.h" bodystart="14" bodyend="18"/>
+    <listofallmembers>
+      <member refid="struct_case_1a14237e17aab1829965adab76b747db6c" prot="public" virt="non-virtual"><scope>Case</scope><name>Case</name></member>
+      <member refid="struct_case_1a2edf0eece87b9b67e7cd6b97e1f63622" prot="public" virt="non-virtual"><scope>Case</scope><name>m_color</name></member>
+      <member refid="struct_case_1ab36a7bb1d1f4da76aedde0cd2db71f88" prot="public" virt="non-virtual"><scope>Case</scope><name>m_used</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

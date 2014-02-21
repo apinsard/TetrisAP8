@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_____d_r_i2config_query_extension_rec" kind="struct" prot="public">
+    <compoundname>__DRI2configQueryExtensionRec</compoundname>
+    <includes refid="dri__interface_8h" local="no">dri_interface.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_____d_r_i2config_query_extension_rec_1a1034a62a113739a223fd6d57a5294564" prot="public" static="no" mutable="no">
+        <type><ref refid="dri__interface_8h_1a4e0a61c8ece00d2b2c6792a9a1b55385" kindref="member">__DRIextension</ref></type>
+        <definition>__DRIextension __DRI2configQueryExtensionRec::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="980" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="980" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_r_i2config_query_extension_rec_1ac7614ec002c335e3b9bbf35d2057f239" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* __DRI2configQueryExtensionRec::configQueryb)(__DRIscreen *screen, const char *var, GLboolean *val)</definition>
+        <argsstring>)(__DRIscreen *screen, const char *var, GLboolean *val)</argsstring>
+        <name>configQueryb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="982" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="982" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_r_i2config_query_extension_rec_1a71a4045f75a88a2b648a63b942970414" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* __DRI2configQueryExtensionRec::configQueryi)(__DRIscreen *screen, const char *var, GLint *val)</definition>
+        <argsstring>)(__DRIscreen *screen, const char *var, GLint *val)</argsstring>
+        <name>configQueryi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="983" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="983" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_____d_r_i2config_query_extension_rec_1a08e40806457fda19b143308d525c7cc1" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* __DRI2configQueryExtensionRec::configQueryf)(__DRIscreen *screen, const char *var, GLfloat *val)</definition>
+        <argsstring>)(__DRIscreen *screen, const char *var, GLfloat *val)</argsstring>
+        <name>configQueryf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="984" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="984" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>__DRIextensionRec</label>
+        <link refid="struct_____d_r_iextension_rec"/>
+      </node>
+      <node id="1">
+        <label>__DRI2configQueryExtensionRec</label>
+        <link refid="struct_____d_r_i2config_query_extension_rec"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>base</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" line="979" bodyfile="/home/cj/workspace/Tetris/src/glut/internal/dri_interface.h" bodystart="979" bodyend="985"/>
+    <listofallmembers>
+      <member refid="struct_____d_r_i2config_query_extension_rec_1a1034a62a113739a223fd6d57a5294564" prot="public" virt="non-virtual"><scope>__DRI2configQueryExtensionRec</scope><name>base</name></member>
+      <member refid="struct_____d_r_i2config_query_extension_rec_1ac7614ec002c335e3b9bbf35d2057f239" prot="public" virt="non-virtual"><scope>__DRI2configQueryExtensionRec</scope><name>configQueryb</name></member>
+      <member refid="struct_____d_r_i2config_query_extension_rec_1a08e40806457fda19b143308d525c7cc1" prot="public" virt="non-virtual"><scope>__DRI2configQueryExtensionRec</scope><name>configQueryf</name></member>
+      <member refid="struct_____d_r_i2config_query_extension_rec_1a71a4045f75a88a2b648a63b942970414" prot="public" virt="non-virtual"><scope>__DRI2configQueryExtensionRec</scope><name>configQueryi</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

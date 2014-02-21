@@ -1,0 +1,90 @@
+.TH "/home/cj/workspace/Tetris/src/test/test.cpp" 3 "Vendredi Février 21 2014" "Version alpha" "Tetris" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/cj/workspace/Tetris/src/test/test.cpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'test\&.h'\fP
+.br
+
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "\fBstring\fP \fBfillLine\fP (\fBstring\fP begin, \fBstring\fP \fBend\fP)"
+.br
+.RI "\fIRemplit une ligne avec des points entre le début et la fin de manière à ce qu'elle fasse exactement COL_WIDTH caractères\&. \fP"
+.ti -1c
+.RI "\fBstring\fP \fBfillLine\fP (\fBstring\fP begin)"
+.br
+.RI "\fIRemplit une ligne avec des points à la fin de manière à ce qu'elle fasse exactement COL_WIDTH caractères\&. \fP"
+.ti -1c
+.RI "\fBstring\fP \fBformatResult\fP (int \fBdepth\fP, \fBstring\fP label, bool success)"
+.br
+.RI "\fIFormate un résultat (échec ou succès) avec la méthode fillLine\&. Si le résultat est un succès, on ajoute [PASS] en vert à la fin\&. Dans le cas contraire, on ajoute [FAIL] en vert à la fin\&. \fP"
+.ti -1c
+.RI "\fBvoid\fP \fBprintTestResult\fP (\fBstring\fP label, bool success)"
+.br
+.RI "\fIAffiche à l'écran formatResult avec un niveau d'indentation de 2 (cas le plus usuel)\&. \fP"
+.ti -1c
+.RI "\fBvoid\fP \fBtestPieceCli\fP (\fBstring\fP pieceT, \fBstring\fP pieceR, \fBstring\fP pieceB, \fBstring\fP pieceL, \fBCPieceAbstract\fP piece)"
+.br
+.RI "\fITest une pièce du jeu en mode console\&. \fP"
+.in -1c
+.SH "Documentation des fonctions"
+.PP 
+.SS "\fBstring\fP fillLine (\fBstring\fPbegin, \fBstring\fPend)"
+
+.PP
+Remplit une ligne avec des points entre le début et la fin de manière à ce qu'elle fasse exactement COL_WIDTH caractères\&. 
+.PP
+Définition à la ligne 3 du fichier test\&.cpp\&.
+.SS "\fBstring\fP fillLine (\fBstring\fPbegin)"
+
+.PP
+Remplit une ligne avec des points à la fin de manière à ce qu'elle fasse exactement COL_WIDTH caractères\&. 
+.PP
+Définition à la ligne 14 du fichier test\&.cpp\&.
+.SS "\fBstring\fP formatResult (intdepth, \fBstring\fPlabel, boolsuccess)"
+
+.PP
+Formate un résultat (échec ou succès) avec la méthode fillLine\&. Si le résultat est un succès, on ajoute [PASS] en vert à la fin\&. Dans le cas contraire, on ajoute [FAIL] en vert à la fin\&. \fBParamètres:\fP
+.RS 4
+\fIdepth\fP le niveau d'indentation de la ligne 
+.br
+\fIlabel\fP le libellé du test 
+.RE
+.PP
+
+.PP
+Définition à la ligne 18 du fichier test\&.cpp\&.
+.SS "\fBvoid\fP printTestResult (\fBstring\fPlabel, boolsuccess)"
+
+.PP
+Affiche à l'écran formatResult avec un niveau d'indentation de 2 (cas le plus usuel)\&. 
+.PP
+Définition à la ligne 41 du fichier test\&.cpp\&.
+.SS "\fBvoid\fP testPieceCli (\fBstring\fPpieceT, \fBstring\fPpieceR, \fBstring\fPpieceB, \fBstring\fPpieceL, \fBCPieceAbstract\fPpiece)"
+
+.PP
+Test une pièce du jeu en mode console\&. \fBParamètres:\fP
+.RS 4
+\fIpieceT\fP la représentation sous forme de string de la pièce dans l'état TOP\&. 
+.br
+\fIpieceR\fP la représentation de la pièce dans l'état RIGHT 
+.br
+\fIpieceB\fP la représentation de la pièce dans l'état BOTTOM 
+.br
+\fIpieceL\fP la représentation de la pièce dans l'état LEFT 
+.br
+\fIpiece\fP la pièce a tester 
+.RE
+.PP
+
+.PP
+Définition à la ligne 45 du fichier test\&.cpp\&.
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Tetris à partir du code source\&.

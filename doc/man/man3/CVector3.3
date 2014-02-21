@@ -1,0 +1,326 @@
+.TH "CVector3" 3 "Vendredi FÃ©vrier 21 2014" "Version alpha" "Tetris" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CVector3 \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CVector3\&.h>\fP
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBCVector3\fP (float X=0, float Y=0, float Z=0)"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBSet\fP (float X, float Y, float Z)"
+.br
+.ti -1c
+.RI "float \fBLength\fP () const "
+.br
+.ti -1c
+.RI "float \fBLengthSq\fP () const "
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBNormalize\fP ()"
+.br
+.ti -1c
+.RI "\fBCVector3\fP \fBoperator+\fP () const "
+.br
+.ti -1c
+.RI "\fBCVector3\fP \fBoperator-\fP () const "
+.br
+.ti -1c
+.RI "\fBCVector3\fP \fBoperator+\fP (const \fBCVector3\fP &\fBv\fP) const "
+.br
+.ti -1c
+.RI "\fBCVector3\fP \fBoperator-\fP (const \fBCVector3\fP &\fBv\fP) const "
+.br
+.ti -1c
+.RI "const \fBCVector3\fP & \fBoperator+=\fP (const \fBCVector3\fP &\fBv\fP)"
+.br
+.ti -1c
+.RI "const \fBCVector3\fP & \fBoperator-=\fP (const \fBCVector3\fP &\fBv\fP)"
+.br
+.ti -1c
+.RI "const \fBCVector3\fP & \fBoperator*=\fP (float \fBt\fP)"
+.br
+.ti -1c
+.RI "const \fBCVector3\fP & \fBoperator/=\fP (float \fBt\fP)"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBCVector3\fP &\fBv\fP) const "
+.br
+.ti -1c
+.RI "bool \fBoperator!=\fP (const \fBCVector3\fP &\fBv\fP) const "
+.br
+.ti -1c
+.RI "\fBoperator float *\fP ()"
+.br
+.in -1c
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "float \fBx\fP"
+.br
+.RI "\fIComposante X\&. \fP"
+.ti -1c
+.RI "float \fBy\fP"
+.br
+.RI "\fIComposante Y\&. \fP"
+.ti -1c
+.RI "float \fBz\fP"
+.br
+.RI "\fIComposante Z\&. \fP"
+.in -1c
+.SH "Description dÃ©taillÃ©e"
+.PP 
+DÃ©finition Ã  la ligne 17 du fichier CVector3\&.h\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "CVector3::CVector3 (floatX = \fC0\fP, floatY = \fC0\fP, floatZ = \fC0\fP)\fC [inline]\fP"
+Constructeur par défaut
+.PP
+\fBParamÃ¨tres:\fP
+.RS 4
+\fIX\fP : Composante X du vecteur 
+.br
+\fIY\fP : Composante Y du vecteur 
+.br
+\fIZ\fP : Composante Z du vecteur 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 110 du fichier CVector3\&.h\&.
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "float CVector3::Length () const\fC [inline]\fP"
+Renvoie la norme du vecteur
+.PP
+\fBRenvoie:\fP
+.RS 4
+Valeur de la norme du vecteur sqrt(x² + y² + z²) 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 137 du fichier CVector3\&.h\&.
+.SS "float CVector3::LengthSq () const\fC [inline]\fP"
+Renvoie la norme au carré du vecteur
+.PP
+\fBRenvoie:\fP
+.RS 4
+Carré de la norme du vecteur (x² + y² + z²) 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 149 du fichier CVector3\&.h\&.
+.SS "\fBvoid\fP CVector3::Normalize ()\fC [inline]\fP"
+Normalise le vecteur 
+.PP
+DÃ©finition Ã  la ligne 159 du fichier CVector3\&.h\&.
+.SS "CVector3::operator float * ()\fC [inline]\fP"
+Opérateur de cast en float*
+.PP
+\fBRenvoie:\fP
+.RS 4
+Pointeur sur les composantes du vecteur 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 334 du fichier CVector3\&.h\&.
+.SS "bool CVector3::operator!= (const \fBCVector3\fP &v) const\fC [inline]\fP"
+Opérateur de comparaison !=
+.PP
+\fBParamÃ¨tres:\fP
+.RS 4
+\fIv\fP : Vecteur à comparer
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+True si les deux vecteurs sont différents 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 322 du fichier CVector3\&.h\&.
+.SS "const \fBCVector3\fP & CVector3::operator*= (floatt)\fC [inline]\fP"
+Opérateur *= avec un scalaire
+.PP
+\fBParamÃ¨tres:\fP
+.RS 4
+\fIt\fP : Scalaire
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Résultat de l'opération 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 270 du fichier CVector3\&.h\&.
+.SS "\fBCVector3\fP CVector3::operator+ () const\fC [inline]\fP"
+Opérateur unaire +
+.PP
+\fBRenvoie:\fP
+.RS 4
+Résultat de l'opération 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 178 du fichier CVector3\&.h\&.
+.SS "\fBCVector3\fP CVector3::operator+ (const \fBCVector3\fP &v) const\fC [inline]\fP"
+Opérateur binaire +
+.PP
+\fBParamÃ¨tres:\fP
+.RS 4
+\fIv\fP : Vecteur à additionner
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Résultat de l'opération 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 206 du fichier CVector3\&.h\&.
+.SS "const \fBCVector3\fP & CVector3::operator+= (const \fBCVector3\fP &v)\fC [inline]\fP"
+Opérateur +=
+.PP
+\fBParamÃ¨tres:\fP
+.RS 4
+\fIv\fP : Vecteur à additioner
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Résultat de l'opération 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 234 du fichier CVector3\&.h\&.
+.SS "\fBCVector3\fP CVector3::operator- () const\fC [inline]\fP"
+Opérateur unaire -
+.PP
+\fBRenvoie:\fP
+.RS 4
+Résultat de l'opération 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 191 du fichier CVector3\&.h\&.
+.SS "\fBCVector3\fP CVector3::operator- (const \fBCVector3\fP &v) const\fC [inline]\fP"
+Opérateur binaire -
+.PP
+\fBParamÃ¨tres:\fP
+.RS 4
+\fIv\fP : Vecteur à soustraire
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Résultat de l'opération 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 221 du fichier CVector3\&.h\&.
+.SS "const \fBCVector3\fP & CVector3::operator-= (const \fBCVector3\fP &v)\fC [inline]\fP"
+Opérateur -=
+.PP
+\fBParamÃ¨tres:\fP
+.RS 4
+\fIv\fP : Vecteur à soustraire
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Résultat de l'opération 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 252 du fichier CVector3\&.h\&.
+.SS "const \fBCVector3\fP & CVector3::operator/= (floatt)\fC [inline]\fP"
+Opérateur /= avec un scalaire
+.PP
+\fBParamÃ¨tres:\fP
+.RS 4
+\fIt\fP : Scalaire
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Résultat de l'opération 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 288 du fichier CVector3\&.h\&.
+.SS "bool CVector3::operator== (const \fBCVector3\fP &v) const\fC [inline]\fP"
+Opérateur de comparaison ==
+.PP
+\fBParamÃ¨tres:\fP
+.RS 4
+\fIv\fP : Vecteur à comparer
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+True si les deux vecteurs sont identiques 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 306 du fichier CVector3\&.h\&.
+.SS "\fBvoid\fP CVector3::Set (floatX, floatY, floatZ)\fC [inline]\fP"
+Réinitialise le vecteur
+.PP
+\fBParamÃ¨tres:\fP
+.RS 4
+\fIX\fP : Composante X du vecteur 
+.br
+\fIY\fP : Composante Y du vecteur 
+.br
+\fIZ\fP : Composante Z du vecteur 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 123 du fichier CVector3\&.h\&.
+.SH "Documentation des donnÃ©es membres"
+.PP 
+.SS "float CVector3::x"
+
+.PP
+Composante X\&. 
+.PP
+DÃ©finition Ã  la ligne 84 du fichier CVector3\&.h\&.
+.SS "float CVector3::y"
+
+.PP
+Composante Y\&. 
+.PP
+DÃ©finition Ã  la ligne 85 du fichier CVector3\&.h\&.
+.SS "float CVector3::z"
+
+.PP
+Composante Z\&. 
+.PP
+DÃ©finition Ã  la ligne 86 du fichier CVector3\&.h\&.
+
+.SH "Auteur"
+.PP 
+GÃ©nÃ©rÃ© automatiquement par Doxygen pour Tetris Ã  partir du code source\&.

@@ -1,0 +1,151 @@
+.TH "CGuiGlut" 3 "Vendredi Février 21 2014" "Version alpha" "Tetris" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CGuiGlut \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CGuiGlut\&.h>\fP
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBCGuiGlut\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~CGuiGlut\fP ()"
+.br
+.in -1c
+.SS "Fonctions membres publiques statiques"
+
+.in +1c
+.ti -1c
+.RI "static \fBvoid\fP \fBInitializeGraphics\fP (int argc, char **argv, \fBCApplication\fP *application)"
+.br
+.ti -1c
+.RI "static \fBvoid\fP \fBRunGraphics\fP (\fBvoid\fP)"
+.br
+.in -1c
+.SS "Fonctions membres protégées statiques"
+
+.in +1c
+.ti -1c
+.RI "static \fBvoid\fP \fBInitGL\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "static \fBvoid\fP \fBReshapeFunc\fP (int \fBwidth\fP, int \fBheight\fP)"
+.br
+.ti -1c
+.RI "static \fBvoid\fP \fBDisplayFunc\fP (\fBvoid\fP)"
+.br
+.ti -1c
+.RI "static \fBvoid\fP \fBKeyboardFunc\fP (unsigned char key, int, int)"
+.br
+.ti -1c
+.RI "static \fBvoid\fP \fBSpecialFunc\fP (int key, int, int)"
+.br
+.in -1c
+.SS "Attributs protégés statiques"
+
+.in +1c
+.ti -1c
+.RI "static \fBCApplication\fP * \fBm_application\fP = 0"
+.br
+.ti -1c
+.RI "static int \fBwindowID\fP = 0"
+.br
+.ti -1c
+.RI "static \fBstd::string\fP \fBappVersionName\fP = 'Tetris 0\&.0\&.1'"
+.br
+.ti -1c
+.RI "static bool \fBgMouseAdjustingCameraAngle\fP = false"
+.br
+.ti -1c
+.RI "static bool \fBgMouseAdjustingCameraRadius\fP = false"
+.br
+.ti -1c
+.RI "static int \fBgMouseAdjustingCameraLastX\fP = 0"
+.br
+.ti -1c
+.RI "static int \fBgMouseAdjustingCameraLastY\fP = 0"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+Définition à la ligne 44 du fichier CGuiGlut\&.h\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "CGuiGlut::CGuiGlut ()\fC [inline]\fP"
+
+.PP
+Définition à la ligne 51 du fichier CGuiGlut\&.h\&.
+.SS "virtual CGuiGlut::~CGuiGlut ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Définition à la ligne 56 du fichier CGuiGlut\&.h\&.
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "\fBvoid\fP CGuiGlut::DisplayFunc (\fBvoid\fP)\fC [static]\fP, \fC [protected]\fP"
+
+.PP
+Définition à la ligne 139 du fichier CGuiGlut\&.cpp\&.
+.SS "\fBvoid\fP CGuiGlut::InitGL (\fBvoid\fP)\fC [static]\fP, \fC [protected]\fP"
+
+.PP
+Définition à la ligne 80 du fichier CGuiGlut\&.cpp\&.
+.SS "\fBvoid\fP CGuiGlut::InitializeGraphics (intargc, char **argv, \fBCApplication\fP *application)\fC [static]\fP"
+
+.PP
+Définition à la ligne 29 du fichier CGuiGlut\&.cpp\&.
+.SS "\fBvoid\fP CGuiGlut::KeyboardFunc (unsigned charkey, int, int)\fC [static]\fP, \fC [protected]\fP"
+
+.PP
+Définition à la ligne 164 du fichier CGuiGlut\&.cpp\&.
+.SS "\fBvoid\fP CGuiGlut::ReshapeFunc (intwidth, intheight)\fC [static]\fP, \fC [protected]\fP"
+
+.PP
+Définition à la ligne 119 du fichier CGuiGlut\&.cpp\&.
+.SS "\fBvoid\fP CGuiGlut::RunGraphics (\fBvoid\fP)\fC [static]\fP"
+
+.PP
+Définition à la ligne 256 du fichier CGuiGlut\&.cpp\&.
+.SS "\fBvoid\fP CGuiGlut::SpecialFunc (intkey, int, int)\fC [static]\fP, \fC [protected]\fP"
+
+.PP
+Définition à la ligne 208 du fichier CGuiGlut\&.cpp\&.
+.SH "Documentation des données membres"
+.PP 
+.SS "\fBstd::string\fP CGuiGlut::appVersionName = 'Tetris 0\&.0\&.1'\fC [static]\fP, \fC [protected]\fP"
+
+.PP
+Définition à la ligne 81 du fichier CGuiGlut\&.h\&.
+.SS "bool CGuiGlut::gMouseAdjustingCameraAngle = false\fC [static]\fP, \fC [protected]\fP"
+
+.PP
+Définition à la ligne 82 du fichier CGuiGlut\&.h\&.
+.SS "int CGuiGlut::gMouseAdjustingCameraLastX = 0\fC [static]\fP, \fC [protected]\fP"
+
+.PP
+Définition à la ligne 84 du fichier CGuiGlut\&.h\&.
+.SS "int CGuiGlut::gMouseAdjustingCameraLastY = 0\fC [static]\fP, \fC [protected]\fP"
+
+.PP
+Définition à la ligne 85 du fichier CGuiGlut\&.h\&.
+.SS "bool CGuiGlut::gMouseAdjustingCameraRadius = false\fC [static]\fP, \fC [protected]\fP"
+
+.PP
+Définition à la ligne 83 du fichier CGuiGlut\&.h\&.
+.SS "\fBCApplication\fP * CGuiGlut::m_application = 0\fC [static]\fP, \fC [protected]\fP"
+
+.PP
+Définition à la ligne 77 du fichier CGuiGlut\&.h\&.
+.SS "int CGuiGlut::windowID = 0\fC [static]\fP, \fC [protected]\fP"
+
+.PP
+Définition à la ligne 80 du fichier CGuiGlut\&.h\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Tetris à partir du code source\&.

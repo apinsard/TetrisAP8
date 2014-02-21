@@ -1,0 +1,151 @@
+\hypertarget{struct_____d_r_icore_extension_rec}{\section{Référence de la structure \-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}
+\label{struct_____d_r_icore_extension_rec}\index{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}}
+}
+
+
+{\ttfamily \#include $<$dri\-\_\-interface.\-h$>$}
+
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\-\_\-\-\_\-\-D\-R\-Iextension} \hyperlink{struct_____d_r_icore_extension_rec_a5f960f7c4747dbda8574a66c246f2cc0}{base}
+\item 
+\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\-\_\-\-\_\-\-D\-R\-Iscreen} $\ast$($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_a03d777e65a01236f2fe86dcbe64947bc}{create\-New\-Screen} )(int screen, int fd, unsigned int sarea\-\_\-handle, const \hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\-\_\-\-\_\-\-D\-R\-Iextension} $\ast$$\ast$extensions, const \hyperlink{dri__interface_8h_aeac81999efbbf8b1d6886338e3ea24d9}{\-\_\-\-\_\-\-D\-R\-Iconfig} $\ast$$\ast$$\ast$driver\-Configs, \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} $\ast$loader\-Private)
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void}($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_a883e228e8f452c7939a63107ef17326a}{destroy\-Screen} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\-\_\-\-\_\-\-D\-R\-Iscreen} $\ast$screen)
+\item 
+const \hyperlink{dri__interface_8h_a4e0a61c8ece00d2b2c6792a9a1b55385}{\-\_\-\-\_\-\-D\-R\-Iextension} $\ast$$\ast$($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_adb2a7440735042ebec39fc388c5ccf8e}{get\-Extensions} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\-\_\-\-\_\-\-D\-R\-Iscreen} $\ast$screen)
+\item 
+int($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_ae6ce8717daa2354781534cf2b2a28e35}{get\-Config\-Attrib} )(const \hyperlink{dri__interface_8h_aeac81999efbbf8b1d6886338e3ea24d9}{\-\_\-\-\_\-\-D\-R\-Iconfig} $\ast$config, unsigned int attrib, unsigned int $\ast$\hyperlink{glext_8h_a79169be77d7e02a24f68a5bfe627dc29}{value})
+\item 
+int($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_a400d591a81525ef10d04b98d93f59ae6}{index\-Config\-Attrib} )(const \hyperlink{dri__interface_8h_aeac81999efbbf8b1d6886338e3ea24d9}{\-\_\-\-\_\-\-D\-R\-Iconfig} $\ast$config, int \hyperlink{glext_8h_a57f14e05b1900f16a2da82ade47d0c6d}{index}, unsigned int $\ast$attrib, unsigned int $\ast$\hyperlink{glext_8h_a79169be77d7e02a24f68a5bfe627dc29}{value})
+\item 
+\hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\-\_\-\-\_\-\-D\-R\-Idrawable} $\ast$($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_a9b214cbc2041b95158ba16b4dc663604}{create\-New\-Drawable} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\-\_\-\-\_\-\-D\-R\-Iscreen} $\ast$screen, const \hyperlink{dri__interface_8h_aeac81999efbbf8b1d6886338e3ea24d9}{\-\_\-\-\_\-\-D\-R\-Iconfig} $\ast$config, unsigned int drawable\-\_\-id, unsigned int head, \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} $\ast$loader\-Private)
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void}($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_a82b397efee01051d5797a1e1d77b8cec}{destroy\-Drawable} )(\hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\-\_\-\-\_\-\-D\-R\-Idrawable} $\ast$drawable)
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void}($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_ae87dc970a4508935533c226d2cc38830}{swap\-Buffers} )(\hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\-\_\-\-\_\-\-D\-R\-Idrawable} $\ast$drawable)
+\item 
+\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\-\_\-\-\_\-\-D\-R\-Icontext} $\ast$($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_a30d6170fea13798429c529fb2bbb3b7a}{create\-New\-Context} )(\hyperlink{dri__interface_8h_a9961b01d421ee1fd6ed3c05acc9ca561}{\-\_\-\-\_\-\-D\-R\-Iscreen} $\ast$screen, const \hyperlink{dri__interface_8h_aeac81999efbbf8b1d6886338e3ea24d9}{\-\_\-\-\_\-\-D\-R\-Iconfig} $\ast$config, \hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\-\_\-\-\_\-\-D\-R\-Icontext} $\ast$shared, \hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void} $\ast$loader\-Private)
+\item 
+int($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_a74b07ad3c83c038d8361f97933891d35}{copy\-Context} )(\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\-\_\-\-\_\-\-D\-R\-Icontext} $\ast$dest, \hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\-\_\-\-\_\-\-D\-R\-Icontext} $\ast$\hyperlink{glext_8h_a2a98ddb6f79ec1048ff9e15cdd2422ba}{src}, unsigned long \hyperlink{glext_8h_abb269dedb7ad104274cc9f5c0c7285bc}{mask})
+\item 
+\hyperlink{glu_8h_a4292190e3f1f6b373a760c7d9316ad3c}{void}($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_a6f249e0f6b2476facdbef491c056d188}{destroy\-Context} )(\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\-\_\-\-\_\-\-D\-R\-Icontext} $\ast$context)
+\item 
+int($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_a0813f2048a824e6b4103c6f52a210fcf}{bind\-Context} )(\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\-\_\-\-\_\-\-D\-R\-Icontext} $\ast$ctx, \hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\-\_\-\-\_\-\-D\-R\-Idrawable} $\ast$pdraw, \hyperlink{dri__interface_8h_a5bfb832a0a08208d95b3bbef439d2262}{\-\_\-\-\_\-\-D\-R\-Idrawable} $\ast$pread)
+\item 
+int($\ast$ \hyperlink{struct_____d_r_icore_extension_rec_ae4a43dd34f32ac00dad2e7d789042488}{unbind\-Context} )(\hyperlink{dri__interface_8h_a3fd295cba82b5a3d79f1ee7e12bfb908}{\-\_\-\-\_\-\-D\-R\-Icontext} $\ast$ctx)
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+
+
+Définition à la ligne 550 du fichier dri\-\_\-interface.\-h.
+
+
+
+\subsection{Documentation des données membres}
+\hypertarget{struct_____d_r_icore_extension_rec_a5f960f7c4747dbda8574a66c246f2cc0}{\index{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}!base@{base}}
+\index{base@{base}!__DRIcoreExtensionRec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}}
+\subsubsection[{base}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-\_\-\-\_\-\-D\-R\-Iextension} \-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec\-::base}}\label{struct_____d_r_icore_extension_rec_a5f960f7c4747dbda8574a66c246f2cc0}
+
+
+Définition à la ligne 551 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_icore_extension_rec_a0813f2048a824e6b4103c6f52a210fcf}{\index{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}!bind\-Context@{bind\-Context}}
+\index{bind\-Context@{bind\-Context}!__DRIcoreExtensionRec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}}
+\subsubsection[{bind\-Context}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ \-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec\-::bind\-Context)({\bf \-\_\-\-\_\-\-D\-R\-Icontext} $\ast$ctx, {\bf \-\_\-\-\_\-\-D\-R\-Idrawable} $\ast$pdraw, {\bf \-\_\-\-\_\-\-D\-R\-Idrawable} $\ast$pread)}}\label{struct_____d_r_icore_extension_rec_a0813f2048a824e6b4103c6f52a210fcf}
+
+
+Définition à la ligne 591 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_icore_extension_rec_a74b07ad3c83c038d8361f97933891d35}{\index{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}!copy\-Context@{copy\-Context}}
+\index{copy\-Context@{copy\-Context}!__DRIcoreExtensionRec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}}
+\subsubsection[{copy\-Context}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ \-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec\-::copy\-Context)({\bf \-\_\-\-\_\-\-D\-R\-Icontext} $\ast$dest, {\bf \-\_\-\-\_\-\-D\-R\-Icontext} $\ast${\bf src}, unsigned long {\bf mask})}}\label{struct_____d_r_icore_extension_rec_a74b07ad3c83c038d8361f97933891d35}
+
+
+Définition à la ligne 585 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_icore_extension_rec_a30d6170fea13798429c529fb2bbb3b7a}{\index{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}!create\-New\-Context@{create\-New\-Context}}
+\index{create\-New\-Context@{create\-New\-Context}!__DRIcoreExtensionRec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}}
+\subsubsection[{create\-New\-Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-\_\-\-\_\-\-D\-R\-Icontext}$\ast$($\ast$ \-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec\-::create\-New\-Context)({\bf \-\_\-\-\_\-\-D\-R\-Iscreen} $\ast$screen, const {\bf \-\_\-\-\_\-\-D\-R\-Iconfig} $\ast$config, {\bf \-\_\-\-\_\-\-D\-R\-Icontext} $\ast$shared, {\bf void} $\ast$loader\-Private)}}\label{struct_____d_r_icore_extension_rec_a30d6170fea13798429c529fb2bbb3b7a}
+
+
+Définition à la ligne 580 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_icore_extension_rec_a9b214cbc2041b95158ba16b4dc663604}{\index{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}!create\-New\-Drawable@{create\-New\-Drawable}}
+\index{create\-New\-Drawable@{create\-New\-Drawable}!__DRIcoreExtensionRec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}}
+\subsubsection[{create\-New\-Drawable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-\_\-\-\_\-\-D\-R\-Idrawable}$\ast$($\ast$ \-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec\-::create\-New\-Drawable)({\bf \-\_\-\-\_\-\-D\-R\-Iscreen} $\ast$screen, const {\bf \-\_\-\-\_\-\-D\-R\-Iconfig} $\ast$config, unsigned int drawable\-\_\-id, unsigned int head, {\bf void} $\ast$loader\-Private)}}\label{struct_____d_r_icore_extension_rec_a9b214cbc2041b95158ba16b4dc663604}
+
+
+Définition à la ligne 570 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_icore_extension_rec_a03d777e65a01236f2fe86dcbe64947bc}{\index{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}!create\-New\-Screen@{create\-New\-Screen}}
+\index{create\-New\-Screen@{create\-New\-Screen}!__DRIcoreExtensionRec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}}
+\subsubsection[{create\-New\-Screen}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-\_\-\-\_\-\-D\-R\-Iscreen}$\ast$($\ast$ \-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec\-::create\-New\-Screen)(int screen, int fd, unsigned int sarea\-\_\-handle, const {\bf \-\_\-\-\_\-\-D\-R\-Iextension} $\ast$$\ast$extensions, const {\bf \-\_\-\-\_\-\-D\-R\-Iconfig} $\ast$$\ast$$\ast$driver\-Configs, {\bf void} $\ast$loader\-Private)}}\label{struct_____d_r_icore_extension_rec_a03d777e65a01236f2fe86dcbe64947bc}
+
+
+Définition à la ligne 553 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_icore_extension_rec_a6f249e0f6b2476facdbef491c056d188}{\index{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}!destroy\-Context@{destroy\-Context}}
+\index{destroy\-Context@{destroy\-Context}!__DRIcoreExtensionRec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}}
+\subsubsection[{destroy\-Context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void}($\ast$ \-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec\-::destroy\-Context)({\bf \-\_\-\-\_\-\-D\-R\-Icontext} $\ast$context)}}\label{struct_____d_r_icore_extension_rec_a6f249e0f6b2476facdbef491c056d188}
+
+
+Définition à la ligne 589 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_icore_extension_rec_a82b397efee01051d5797a1e1d77b8cec}{\index{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}!destroy\-Drawable@{destroy\-Drawable}}
+\index{destroy\-Drawable@{destroy\-Drawable}!__DRIcoreExtensionRec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}}
+\subsubsection[{destroy\-Drawable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void}($\ast$ \-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec\-::destroy\-Drawable)({\bf \-\_\-\-\_\-\-D\-R\-Idrawable} $\ast$drawable)}}\label{struct_____d_r_icore_extension_rec_a82b397efee01051d5797a1e1d77b8cec}
+
+
+Définition à la ligne 576 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_icore_extension_rec_a883e228e8f452c7939a63107ef17326a}{\index{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}!destroy\-Screen@{destroy\-Screen}}
+\index{destroy\-Screen@{destroy\-Screen}!__DRIcoreExtensionRec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}}
+\subsubsection[{destroy\-Screen}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void}($\ast$ \-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec\-::destroy\-Screen)({\bf \-\_\-\-\_\-\-D\-R\-Iscreen} $\ast$screen)}}\label{struct_____d_r_icore_extension_rec_a883e228e8f452c7939a63107ef17326a}
+
+
+Définition à la ligne 559 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_icore_extension_rec_ae6ce8717daa2354781534cf2b2a28e35}{\index{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}!get\-Config\-Attrib@{get\-Config\-Attrib}}
+\index{get\-Config\-Attrib@{get\-Config\-Attrib}!__DRIcoreExtensionRec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}}
+\subsubsection[{get\-Config\-Attrib}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ \-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec\-::get\-Config\-Attrib)(const {\bf \-\_\-\-\_\-\-D\-R\-Iconfig} $\ast$config, unsigned int attrib, unsigned int $\ast${\bf value})}}\label{struct_____d_r_icore_extension_rec_ae6ce8717daa2354781534cf2b2a28e35}
+
+
+Définition à la ligne 563 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_icore_extension_rec_adb2a7440735042ebec39fc388c5ccf8e}{\index{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}!get\-Extensions@{get\-Extensions}}
+\index{get\-Extensions@{get\-Extensions}!__DRIcoreExtensionRec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}}
+\subsubsection[{get\-Extensions}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf \-\_\-\-\_\-\-D\-R\-Iextension}$\ast$$\ast$($\ast$ \-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec\-::get\-Extensions)({\bf \-\_\-\-\_\-\-D\-R\-Iscreen} $\ast$screen)}}\label{struct_____d_r_icore_extension_rec_adb2a7440735042ebec39fc388c5ccf8e}
+
+
+Définition à la ligne 561 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_icore_extension_rec_a400d591a81525ef10d04b98d93f59ae6}{\index{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}!index\-Config\-Attrib@{index\-Config\-Attrib}}
+\index{index\-Config\-Attrib@{index\-Config\-Attrib}!__DRIcoreExtensionRec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}}
+\subsubsection[{index\-Config\-Attrib}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ \-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec\-::index\-Config\-Attrib)(const {\bf \-\_\-\-\_\-\-D\-R\-Iconfig} $\ast$config, int {\bf index}, unsigned int $\ast$attrib, unsigned int $\ast${\bf value})}}\label{struct_____d_r_icore_extension_rec_a400d591a81525ef10d04b98d93f59ae6}
+
+
+Définition à la ligne 567 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_icore_extension_rec_ae87dc970a4508935533c226d2cc38830}{\index{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}!swap\-Buffers@{swap\-Buffers}}
+\index{swap\-Buffers@{swap\-Buffers}!__DRIcoreExtensionRec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}}
+\subsubsection[{swap\-Buffers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void}($\ast$ \-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec\-::swap\-Buffers)({\bf \-\_\-\-\_\-\-D\-R\-Idrawable} $\ast$drawable)}}\label{struct_____d_r_icore_extension_rec_ae87dc970a4508935533c226d2cc38830}
+
+
+Définition à la ligne 578 du fichier dri\-\_\-interface.\-h.
+
+\hypertarget{struct_____d_r_icore_extension_rec_ae4a43dd34f32ac00dad2e7d789042488}{\index{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}!unbind\-Context@{unbind\-Context}}
+\index{unbind\-Context@{unbind\-Context}!__DRIcoreExtensionRec@{\-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec}}
+\subsubsection[{unbind\-Context}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ \-\_\-\-\_\-\-D\-R\-Icore\-Extension\-Rec\-::unbind\-Context)({\bf \-\_\-\-\_\-\-D\-R\-Icontext} $\ast$ctx)}}\label{struct_____d_r_icore_extension_rec_ae4a43dd34f32ac00dad2e7d789042488}
+
+
+Définition à la ligne 595 du fichier dri\-\_\-interface.\-h.
+
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+/home/cj/workspace/\-Tetris/src/glut/internal/\hyperlink{dri__interface_8h}{dri\-\_\-interface.\-h}\end{DoxyCompactItemize}

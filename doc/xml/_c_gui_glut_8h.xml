@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_c_gui_glut_8h" kind="file">
+    <compoundname>CGuiGlut.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes refid="_common_8h" local="yes">Common.h</includes>
+    <includes local="yes">GL/glut.h</includes>
+    <includes refid="_c_application_8h" local="yes">CApplication.h</includes>
+    <includedby refid="_c_gui_glut_8cpp" local="yes">/home/cj/workspace/Tetris/src/appliBase/CGuiGlut.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">/home/cj/workspace/Tetris/src/main.cpp</includedby>
+    <includedby refid="test_c_i_piece_8cpp" local="yes">/home/cj/workspace/Tetris/src/test/testCIPiece.cpp</includedby>
+    <includedby refid="test_c_l1_piece_8cpp" local="yes">/home/cj/workspace/Tetris/src/test/testCL1Piece.cpp</includedby>
+    <includedby refid="test_c_l2_piece_8cpp" local="yes">/home/cj/workspace/Tetris/src/test/testCL2Piece.cpp</includedby>
+    <includedby refid="test_c_o_piece_8cpp" local="yes">/home/cj/workspace/Tetris/src/test/testCOPiece.cpp</includedby>
+    <includedby refid="test_c_t_piece_8cpp" local="yes">/home/cj/workspace/Tetris/src/test/testCTPiece.cpp</includedby>
+    <includedby refid="test_c_z1_piece_8cpp" local="yes">/home/cj/workspace/Tetris/src/test/testCZ1Piece.cpp</includedby>
+    <includedby refid="test_c_z2_piece_8cpp" local="yes">/home/cj/workspace/Tetris/src/test/testCZ2Piece.cpp</includedby>
+    <incdepgraph>
+      <node id="99">
+        <label>GL/glut.h</label>
+      </node>
+      <node id="96">
+        <label>limits</label>
+      </node>
+      <node id="84">
+        <label>/home/cj/workspace/Tetris/src/appliBase/CGuiGlut.h</label>
+        <link refid="CGuiGlut.h"/>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>cmath</label>
+      </node>
+      <node id="87">
+        <label>string</label>
+      </node>
+      <node id="97">
+        <label>CVector4.h</label>
+        <link refid="_c_vector4_8h"/>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>CMatrix44.h</label>
+        <link refid="_c_matrix44_8h"/>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>ctime</label>
+      </node>
+      <node id="101">
+        <label>CRenderer.h</label>
+        <link refid="_c_renderer_8h"/>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>vector</label>
+      </node>
+      <node id="88">
+        <label>sstream</label>
+      </node>
+      <node id="95">
+        <label>CVector3.h</label>
+        <link refid="_c_vector3_8h"/>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>cstdlib</label>
+      </node>
+      <node id="89">
+        <label>iostream</label>
+      </node>
+      <node id="86">
+        <label>Common.h</label>
+        <link refid="_common_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>CApplication.h</label>
+        <link refid="_c_application_8h"/>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>algorithm</label>
+      </node>
+      <node id="92">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="103">
+        <label>/home/cj/workspace/Tetris/src/appliBase/CGuiGlut.cpp</label>
+        <link refid="_c_gui_glut_8cpp"/>
+      </node>
+      <node id="102">
+        <label>/home/cj/workspace/Tetris/src/appliBase/CGuiGlut.h</label>
+        <link refid="CGuiGlut.h"/>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>/home/cj/workspace/Tetris/src/test/testCOPiece.cpp</label>
+        <link refid="test_c_o_piece_8cpp"/>
+      </node>
+      <node id="109">
+        <label>/home/cj/workspace/Tetris/src/test/testCTPiece.cpp</label>
+        <link refid="test_c_t_piece_8cpp"/>
+      </node>
+      <node id="104">
+        <label>/home/cj/workspace/Tetris/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="105">
+        <label>/home/cj/workspace/Tetris/src/test/testCIPiece.cpp</label>
+        <link refid="test_c_i_piece_8cpp"/>
+      </node>
+      <node id="106">
+        <label>/home/cj/workspace/Tetris/src/test/testCL1Piece.cpp</label>
+        <link refid="test_c_l1_piece_8cpp"/>
+      </node>
+      <node id="110">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ1Piece.cpp</label>
+        <link refid="test_c_z1_piece_8cpp"/>
+      </node>
+      <node id="107">
+        <label>/home/cj/workspace/Tetris/src/test/testCL2Piece.cpp</label>
+        <link refid="test_c_l2_piece_8cpp"/>
+      </node>
+      <node id="111">
+        <label>/home/cj/workspace/Tetris/src/test/testCZ2Piece.cpp</label>
+        <link refid="test_c_z2_piece_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_c_gui_glut" prot="public">CGuiGlut</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_c_gui_glut_8h_1a5003a4b87e0150fc45ae1f79775b3952" prot="public" static="no">
+        <name>__GUI_H__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/cj/workspace/Tetris/src/appliBase/CGuiGlut.h" line="18" bodyfile="/home/cj/workspace/Tetris/src/appliBase/CGuiGlut.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Projet<sp/>C/C++</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2013-2014<sp/>Equipe<sp/>SEASIDE<sp/>(T.<sp/>LE<sp/>NAOUR,<sp/>J.F<sp/>KAMP)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IRISA<sp/>-<sp/>UBS<sp/><sp/>/<sp/>IUT<sp/>Informatique<sp/>Vannes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//=====================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>classe<sp/>GUI,<sp/>s&apos;occupe<sp/>du<sp/>fenetrage<sp/>et<sp/>de<sp/>l&apos;interface<sp/>avec<sp/>l&apos;utilisateur</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//=====================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Ici<sp/>fichier<sp/>des<sp/>déclarations<sp/>des<sp/>fonctions.<sp/>Une<sp/>fonction<sp/>ne<sp/>peut<sp/>être<sp/>déclarée<sp/>qu&apos;une<sp/>seule<sp/>fois</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>d&apos;ou<sp/>l&apos;ajout<sp/>d&apos;une<sp/>routine<sp/>qui<sp/>dit<sp/>que<sp/>si<sp/>votre<sp/>fichier<sp/>à<sp/>déjà<sp/>été<sp/>inclu<sp/>avant<sp/>pas<sp/>la<sp/>peine<sp/>de<sp/>le<sp/>re-inclure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__GUI_H__<sp/><sp/><sp/>//<sp/>routine<sp/>qui<sp/>sert<sp/>à<sp/>pas<sp/>inclure<sp/>2<sp/>fois<sp/>le<sp/>même<sp/>fichier</highlight></codeline>
+<codeline lineno="18" refid="_c_gui_glut_8h_1a5003a4b87e0150fc45ae1f79775b3952" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__GUI_H__<sp/><sp/><sp/>//</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>On<sp/>inclu<sp/>les<sp/>fichiers<sp/>.h<sp/>qui<sp/>contiennent<sp/>les<sp/>déclarations<sp/>des<sp/>fonctions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>On<sp/>a<sp/>besoin<sp/>ici<sp/>des<sp/>objets<sp/>SDL<sp/>(SDLKey,<sp/>SDL_Event)<sp/>déclarés<sp/>dans<sp/>SDL.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ainsi<sp/>que<sp/>des<sp/>déclarations<sp/>des<sp/>fonctions<sp/>OPENGL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>utilisé<sp/>par<sp/>&quot;std::vector&lt;SDLKey&gt;<sp/>m_keyEvents;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_common_8h" kindref="compound">Common.h</ref>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>structure<sp/>UserEvents<sp/>utilisée<sp/>pour<sp/>récupérer<sp/>les<sp/>données<sp/>liées<sp/>à<sp/>la<sp/>souris</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;GL/glut.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_application_8h" kindref="compound">CApplication.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//class<sp/>MyApplication:<sp/>public<sp/>CApplication</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>void<sp/>OnInit(){std::cout&lt;&lt;&quot;OnInit&quot;&lt;&lt;<sp/>std::endl;};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>void<sp/>OnRender(){std::cout&lt;&lt;&quot;OnRender&quot;&lt;&lt;<sp/>std::endl;};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>void<sp/>OnRelease(){std::cout&lt;&lt;&quot;OnRelease&quot;&lt;&lt;<sp/>std::endl;};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="comment">//<sp/>Class<sp/>qui<sp/>définit<sp/>un<sp/>GUI<sp/>à<sp/>partir<sp/>de<sp/>la<sp/>bibliotheque<sp/>GLFW,<sp/>à<sp/>savoir<sp/>la<sp/>création<sp/>de<sp/>la<sp/>fenetre,<sp/><sp/>gestion<sp/>de<sp/>la<sp/>caméra,<sp/>clavier<sp/>,<sp/>joystik<sp/>...</highlight></codeline>
+<codeline lineno="44" refid="class_c_gui_glut" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_c_gui_glut" kindref="compound">CGuiGlut</ref></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>les<sp/>fonctions<sp/>suivantes<sp/>peuvent<sp/>être<sp/>appelées<sp/>par<sp/>d&apos;autres<sp/>classes<sp/>/<sp/>programmes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructeur</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="class_c_gui_glut_1a574d62a27525fba7eee3fadcc0079665" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_gui_glut_1a574d62a27525fba7eee3fadcc0079665" kindref="member">CGuiGlut</ref>(){}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Destructeur</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="class_c_gui_glut_1aa218520a7f4a2d2a6fee447226b33fdf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_c_gui_glut_1aa218520a7f4a2d2a6fee447226b33fdf" kindref="member">~CGuiGlut</ref>(){}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>intialisation<sp/>du<sp/>GUI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_gui_glut_1a593668780f9c164e730872a2a5e9633a" kindref="member">InitializeGraphics</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/><ref refid="class_c_application" kindref="compound">CApplication</ref>*<sp/>application);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>instruction<sp/>a<sp/>lancer<sp/>pour<sp/>le<sp/>rendu<sp/>de<sp/>la<sp/>scene</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_gui_glut_1a3137ce1e74cc56d756b2656933769e2f" kindref="member">RunGraphics</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/><sp/></highlight><highlight class="comment">//<sp/>les<sp/>fonctions<sp/>suivantes<sp/>peuvent<sp/>être<sp/>appelées<sp/>seulement<sp/>pas<sp/>cettte<sp/>même<sp/>classe<sp/>et<sp/>les<sp/>classes<sp/>filles<sp/>de<sp/>cette<sp/>classe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_gui_glut_1adb22d019a77d1aad91540f68357588d3" kindref="member">InitGL</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_gui_glut_1a4eca507ba68303bf022cf403d8e399ed" kindref="member">ReshapeFunc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1a30a197eaed803ac3cd1b444d4c972354" kindref="member">width</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gl_8h_1aab021b2df174b06135ca6744356dcf34" kindref="member">height</ref>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_gui_glut_1a8fe1811c9e5893602d07c31093e6aba2" kindref="member">DisplayFunc</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_gui_glut_1a51ac7b3fa2a2ebff359678451ae92332" kindref="member">KeyboardFunc</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>key,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*x*/</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*y*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_gui_glut_1a841c450eb681af1c986dd68004bbb7fe" kindref="member">SpecialFunc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>key,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*x*/</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*y*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>application</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="class_c_gui_glut_1af1cfef33678aad68798ac49e595dcb4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_c_application" kindref="compound">CApplication</ref>*<sp/><sp/><sp/><sp/><ref refid="class_c_gui_glut_1af1cfef33678aad68798ac49e595dcb4a" kindref="member">m_application</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>number<sp/>of<sp/>our<sp/>GLUT<sp/>window</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="class_c_gui_glut_1a4878717c11f5a307853512a09de37310" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_gui_glut_1a4878717c11f5a307853512a09de37310" kindref="member">windowID</ref>;</highlight></codeline>
+<codeline lineno="81" refid="class_c_gui_glut_1a12e31814a513a7a045f822caa350327e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><sp/><ref refid="glext_8h_1a06b88fc81ad0b30d1512e9609e3d7c82" kindref="member">std::string</ref><sp/><ref refid="class_c_gui_glut_1a12e31814a513a7a045f822caa350327e" kindref="member">appVersionName</ref>;</highlight></codeline>
+<codeline lineno="82" refid="class_c_gui_glut_1a7ef01c153415d9a8b45cd1a50bf852f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_gui_glut_1a7ef01c153415d9a8b45cd1a50bf852f2" kindref="member">gMouseAdjustingCameraAngle</ref><sp/>;</highlight></codeline>
+<codeline lineno="83" refid="class_c_gui_glut_1a8d68818a05092a8b55e0ba7003485e3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_gui_glut_1a8d68818a05092a8b55e0ba7003485e3f" kindref="member">gMouseAdjustingCameraRadius</ref><sp/>;</highlight></codeline>
+<codeline lineno="84" refid="class_c_gui_glut_1ae55158d240b75d6bceee346e0155de84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_gui_glut_1ae55158d240b75d6bceee346e0155de84" kindref="member">gMouseAdjustingCameraLastX</ref>;</highlight></codeline>
+<codeline lineno="85" refid="class_c_gui_glut_1a24c5393cda1ad9cb013ba13f43fc4a25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_c_gui_glut_1a24c5393cda1ad9cb013ba13f43fc4a25" kindref="member">gMouseAdjustingCameraLastY</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__GUI_H__<sp/>fin<sp/>de<sp/>la<sp/>routine</highlight></codeline>
+    </programlisting>
+    <location file="/home/cj/workspace/Tetris/src/appliBase/CGuiGlut.h"/>
+  </compounddef>
+</doxygen>

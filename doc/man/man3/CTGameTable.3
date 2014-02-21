@@ -1,0 +1,66 @@
+.TH "CTGameTable" 3 "Vendredi Février 21 2014" "Version alpha" "Tetris" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CTGameTable \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CTGameTable\&.h>\fP
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBCTGameTable\fP (int \fBwidth\fP, int \fBheight\fP)"
+.br
+.ti -1c
+.RI "\fBCTGameTable\fP ()"
+.br
+.ti -1c
+.RI "\fBvoid\fP \fBsetCase\fP (unsigned int \fBx\fP, unsigned int \fBy\fP, \fBCase\fP newCase)"
+.br
+.ti -1c
+.RI "vector< \fBTGameRow\fP > & \fBGetGameTable\fP ()"
+.br
+.in -1c
+.SS "Amis"
+
+.in +1c
+.ti -1c
+.RI "ostream & \fBoperator<<\fP (ostream &out, const \fBCTGameTable\fP &\fBobj\fP)"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+Définition à la ligne 22 du fichier CTGameTable\&.h\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "CTGameTable::CTGameTable (intwidth, intheight)"
+
+.PP
+Définition à la ligne 3 du fichier CTGameTable\&.cpp\&.
+.SS "CTGameTable::CTGameTable ()\fC [inline]\fP"
+
+.PP
+Définition à la ligne 28 du fichier CTGameTable\&.h\&.
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "vector< \fBTGameRow\fP > & CTGameTable::GetGameTable ()"
+
+.PP
+Définition à la ligne 35 du fichier CTGameTable\&.cpp\&.
+.SS "\fBvoid\fP CTGameTable::setCase (unsigned intx, unsigned inty, \fBCase\fPnewCase)"
+
+.PP
+Définition à la ligne 26 du fichier CTGameTable\&.cpp\&.
+.SH "Documentation des fonctions amies et associées"
+.PP 
+.SS "ostream& operator<< (ostream &out, const \fBCTGameTable\fP &obj)\fC [friend]\fP"
+
+.PP
+Définition à la ligne 12 du fichier CTGameTable\&.cpp\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Tetris à partir du code source\&.

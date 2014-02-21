@@ -1,0 +1,56 @@
+.TH "__DRI2flushExtensionRec" 3 "Vendredi Février 21 2014" "Version alpha" "Tetris" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+__DRI2flushExtensionRec \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <dri_interface\&.h>\fP
+.SS "Attributs publics"
+
+.in +1c
+.ti -1c
+.RI "\fB__DRIextension\fP \fBbase\fP"
+.br
+.ti -1c
+.RI "\fBvoid\fP(* \fBflush\fP )(\fB__DRIdrawable\fP *drawable)"
+.br
+.ti -1c
+.RI "\fBvoid\fP(* \fBinvalidate\fP )(\fB__DRIdrawable\fP *drawable)"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+Définition à la ligne 271 du fichier dri_interface\&.h\&.
+.SH "Documentation des données membres"
+.PP 
+.SS "\fB__DRIextension\fP __DRI2flushExtensionRec::base"
+
+.PP
+Définition à la ligne 272 du fichier dri_interface\&.h\&.
+.SS "\fBvoid\fP(* __DRI2flushExtensionRec::flush)(\fB__DRIdrawable\fP *drawable)"
+
+.PP
+Définition à la ligne 273 du fichier dri_interface\&.h\&.
+.SS "\fBvoid\fP(* __DRI2flushExtensionRec::invalidate)(\fB__DRIdrawable\fP *drawable)"
+Ask the driver to call getBuffers/getBuffersWithFormat before it starts rendering again\&.
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIdrawable\fP the drawable to invalidate
+.RE
+.PP
+\fBDepuis:\fP
+.RS 4
+3 
+.RE
+.PP
+
+.PP
+Définition à la ligne 283 du fichier dri_interface\&.h\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Tetris à partir du code source\&.

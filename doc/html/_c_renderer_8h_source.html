@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>Tetris:  Fichier source de /home/cj/workspace/Tetris/src/appliBase/CRenderer.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Les-Stages-a-l-IUT-Informatique-de-Vannes-en-2006_img_200.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Tetris
+   &#160;<span id="projectnumber">alpha</span>
+   </div>
+   <div id="projectbrief">Juan revival</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- GÃ©nÃ©rÃ© par Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associÃ©es</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_c_renderer_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>DÃ©finitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Ã‰numÃ©rations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs Ã©numÃ©rÃ©es</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">CRenderer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_c_renderer_8h.html">Aller Ã  la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//========================================================================</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Projet C/C++</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Copyright (c) 2013-2014 Equipe SEASIDE (T. LE NAOUR, J.F KAMP)</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// IRISA - UBS  / IUT Informatique Vannes</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//========================================================================</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//=====================================================================</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// classe CRenderer, s&#39;occupe de gérer l&#39;affichage de la scene</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//=====================================================================</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//-----------------------------------------------------------------</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// Ici fichier des déclarations des fonctions. Une fonction ne peut être déclarée qu&#39;une seule fois par le fichier principal (main.cpp)</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// d&#39;ou l&#39;ajout d&#39;une routine qui dit que si votre fichier à déjà été inclu avant pas la peine de le re-inclure</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//-----------------------------------------------------------------</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifndef __RENDERER_H__  // routine qui sert à pas inclure 2 fois le même fichier</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="_c_renderer_8h.html#adaf2e88873b28de8f5bca6db4f48dc53">   17</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __RENDERER_H__  //</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//-----------------------------------------------------------------</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// On inclu les fichiers .h qui contiennent les déclarations des fonctions dont a besion</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// On a besoin ici de la structure UserEvents contenant les déplacement de la souris à chaque frame</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//-----------------------------------------------------------------</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_common_8h.html">Common.h</a>&quot;</span>     <span class="comment">// données liées à la souris</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;GL/glut.h&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="class_c_camera.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_camera.html">CCamera</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// constructeur de l&#39;objet</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="class_c_camera.html#a2eb95595766a84cb745ec00783595190">   37</a></span>&#160;    <a class="code" href="class_c_camera.html#a2eb95595766a84cb745ec00783595190">CCamera</a>()</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        :<a class="code" href="class_c_camera.html#a8378bd672ab258ca762326ca50a241cc" title="pointeur sur l&#39;objet partagé mouse events mis à jour par le GUI">m_UserEvents</a>(0), <a class="code" href="class_c_camera.html#af4692e9f23bf7f3e438a5abfcacc515e">m_XOffset</a>(0.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>), <a class="code" href="class_c_camera.html#aa2cc5b4ddb3e2c590096fe9aecf581c2">m_YOffset</a>(0.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>), <a class="code" href="class_c_camera.html#af0fe5db70b4e35a5f147037fbee15246" title="x,y rotate">m_ZOffset</a>(100.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>), <a class="code" href="class_c_camera.html#ab29a2c9d274ebc7a086486f26011901c">m_rotateX</a>(0.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>), <a class="code" href="class_c_camera.html#a3c40e7ab1b5f00bdac413e0ea59251c7" title="x,y,z offset">m_rotateY</a>(45.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>){}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// Destructeur de l&#39;objet</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="class_c_camera.html#a0123231b9f52caebf8cc7e95baa1403e">   43</a></span>&#160;    <a class="code" href="class_c_camera.html#a0123231b9f52caebf8cc7e95baa1403e">~CCamera</a>()</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="class_c_camera.html#a8378bd672ab258ca762326ca50a241cc" title="pointeur sur l&#39;objet partagé mouse events mis à jour par le GUI">m_UserEvents</a> = 0;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// compute met à jour les coordonnées de poistion de la caméra</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_matrix44.html" title="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</a>&amp; <a class="code" href="class_c_camera.html#aaae931e9df3443887264780ea5e4add6">Compute</a>() = 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// Données membres</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="class_c_camera.html#a8378bd672ab258ca762326ca50a241cc">   57</a></span>&#160;    <a class="code" href="struct_user_events.html">UserEvents</a>*     <a class="code" href="class_c_camera.html#a8378bd672ab258ca762326ca50a241cc" title="pointeur sur l&#39;objet partagé mouse events mis à jour par le GUI">m_UserEvents</a>                ;       </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="class_c_camera.html#af84199bbddf1a37cdc9d5e82ec6018e9">   58</a></span>&#160;    <a class="code" href="class_c_matrix44.html" title="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</a>       <a class="code" href="class_c_camera.html#af84199bbddf1a37cdc9d5e82ec6018e9" title="matrice de transformation de la vue">m_viewMatrix</a>                ;       </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="class_c_camera.html#af0fe5db70b4e35a5f147037fbee15246">   59</a></span>&#160;    <span class="keywordtype">float</span>           <a class="code" href="class_c_camera.html#af4692e9f23bf7f3e438a5abfcacc515e">m_XOffset</a>, <a class="code" href="class_c_camera.html#aa2cc5b4ddb3e2c590096fe9aecf581c2">m_YOffset</a>, <a class="code" href="class_c_camera.html#af0fe5db70b4e35a5f147037fbee15246" title="x,y rotate">m_ZOffset</a>,    </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                    <a class="code" href="class_c_camera.html#ab29a2c9d274ebc7a086486f26011901c">m_rotateX</a>, <a class="code" href="class_c_camera.html#a3c40e7ab1b5f00bdac413e0ea59251c7" title="x,y,z offset">m_rotateY</a>;               </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="class_c_camera.html#ab7cde03d56f26b36091c134197b73f0c">   61</a></span>&#160;    <a class="code" href="class_c_vector4.html">CVector4</a>            <a class="code" href="class_c_camera.html#ab7cde03d56f26b36091c134197b73f0c">m_translate</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="class_c_camera_look_at.html">   65</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_camera_look_at.html">CCameraLookAt</a>: <span class="keyword">public</span> <a class="code" href="class_c_camera.html">CCamera</a></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// constructeur de l&#39;objet</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="class_c_camera_look_at.html#a9919d1d649785596c5948a14b45425bf">   71</a></span>&#160;    <a class="code" href="class_c_camera_look_at.html#a9919d1d649785596c5948a14b45425bf">CCameraLookAt</a>()</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        :<a class="code" href="class_c_camera_look_at.html#a989e33c7633c9698b8f2bde9e4cda725">m_posX</a>(50.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>), <a class="code" href="class_c_camera_look_at.html#ab2e0d297fed9a6ed790373c3241ba7f4">m_posY</a>(50.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>), <a class="code" href="class_c_camera_look_at.html#aade107961266e4d08c1b2d1e15c81176" title="look at variables (pos)">m_posZ</a>(50.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>),</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;         <a class="code" href="class_c_camera_look_at.html#a7d426fe87c65c00cdca44989abc34c6a">m_viewX</a>(0.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>), <a class="code" href="class_c_camera_look_at.html#ac194ff8295143f3313c22a1a24ac4b3b">m_viewY</a>(0.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>), <a class="code" href="class_c_camera_look_at.html#a8654306ba0b31ba6ea5abea14b2c9028" title="look at variables (view)">m_viewZ</a>(0.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>),</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;         <a class="code" href="class_c_camera_look_at.html#ac7ba83f089c502f9c7e0cc761d1c331f">m_upX</a>(0.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>), <a class="code" href="class_c_camera_look_at.html#aa93ea2b698cd033799e071db1af5061a">m_upY</a>(1.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>), <a class="code" href="class_c_camera_look_at.html#abbb8f744dd0751cf624ea90c818a4ee8" title="look at variables (up)">m_upZ</a>(0.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>){}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// Destructeur de l&#39;objet</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="class_c_camera_look_at.html#a887d07ee683d794ebd9acc35fb2c01c2">   79</a></span>&#160;    <a class="code" href="class_c_camera_look_at.html#a887d07ee683d794ebd9acc35fb2c01c2">~CCameraLookAt</a>() {}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">// compute met à jour les coordonnées de poistion de la caméra</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="class_c_matrix44.html" title="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</a>&amp; <a class="code" href="class_c_camera_look_at.html#a700fcf7befa6fa590b856c1d5e2e096c">Compute</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">// Données membres</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="code" href="class_c_camera_look_at.html#aade107961266e4d08c1b2d1e15c81176">   90</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_camera_look_at.html#a989e33c7633c9698b8f2bde9e4cda725">m_posX</a>,   <a class="code" href="class_c_camera_look_at.html#ab2e0d297fed9a6ed790373c3241ba7f4">m_posY</a>,  <a class="code" href="class_c_camera_look_at.html#aade107961266e4d08c1b2d1e15c81176" title="look at variables (pos)">m_posZ</a> ;   </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="code" href="class_c_camera_look_at.html#a8654306ba0b31ba6ea5abea14b2c9028">   91</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_camera_look_at.html#a7d426fe87c65c00cdca44989abc34c6a">m_viewX</a>,  <a class="code" href="class_c_camera_look_at.html#ac194ff8295143f3313c22a1a24ac4b3b">m_viewY</a>, <a class="code" href="class_c_camera_look_at.html#a8654306ba0b31ba6ea5abea14b2c9028" title="look at variables (view)">m_viewZ</a>;   </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="code" href="class_c_camera_look_at.html#abbb8f744dd0751cf624ea90c818a4ee8">   92</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_camera_look_at.html#ac7ba83f089c502f9c7e0cc761d1c331f">m_upX</a>,    <a class="code" href="class_c_camera_look_at.html#aa93ea2b698cd033799e071db1af5061a">m_upY</a>,   <a class="code" href="class_c_camera_look_at.html#abbb8f744dd0751cf624ea90c818a4ee8" title="look at variables (up)">m_upZ</a>  ;   </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">// opengl helper</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="code" href="struct_c_graphic_cylinder.html">  104</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_c_graphic_cylinder.html" title="Noeud graphique représentant un cylindre. Le cylindre est décrit par les rayons de lsa base et de son som...">CGraphicCylinder</a></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;{</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="struct_c_graphic_cylinder.html#a60dcaa2b9850bda875b00ab2661587bb">Draw</a>(<span class="keywordtype">float</span> radius, <span class="keywordtype">float</span> <a class="code" href="gl_8h.html#a0cdec8e97a75ee9458b23d152bf962d4">x</a>, <span class="keywordtype">float</span> <a class="code" href="gl_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a>, <span class="keywordtype">float</span> <a class="code" href="glext_8h.html#aee38b51639b577753f6a92029fb92000">z</a>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;} ;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="code" href="struct_c_graphic_sphere.html">  116</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_c_graphic_sphere.html" title="Noeud de géométrie représentant une sphère.">CGraphicSphere</a></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="struct_c_graphic_sphere.html#a31e5ad66feb6cd8988acafc917848a0f" title="Gestion de l&#39;affichage OpenGL.">Draw</a>(<span class="keywordtype">float</span> radius, <a class="code" href="class_c_vector3.html">CVector3</a> <a class="code" href="glext_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a> = <a class="code" href="class_c_vector3.html">CVector3</a>(1.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>, 0.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>, 0.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>));</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="code" href="_c_renderer_8h.html#a240c1924416689e5700ff0d9f30539d9">  134</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_c_renderer_8h.html#a240c1924416689e5700ff0d9f30539d9">PrimitiveType</a></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;{</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="code" href="_c_renderer_8h.html#a240c1924416689e5700ff0d9f30539d9a915f906f584da40cd4c601bcb312087d">  136</a></span>&#160;    <a class="code" href="_c_renderer_8h.html#a240c1924416689e5700ff0d9f30539d9a915f906f584da40cd4c601bcb312087d">PT_Face</a> = 1,</div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="code" href="_c_renderer_8h.html#a240c1924416689e5700ff0d9f30539d9a5bac2363bf071c0a3452b8f8dcbe9421">  137</a></span>&#160;    <a class="code" href="_c_renderer_8h.html#a240c1924416689e5700ff0d9f30539d9a5bac2363bf071c0a3452b8f8dcbe9421">PT_Edge</a> = 10,</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="code" href="_c_renderer_8h.html#a240c1924416689e5700ff0d9f30539d9abc120163d92d76b97883802227e87742">  138</a></span>&#160;    <a class="code" href="_c_renderer_8h.html#a240c1924416689e5700ff0d9f30539d9abc120163d92d76b97883802227e87742">PT_Vertex</a> = 100</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;};</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="code" href="class_c_renderer.html">  141</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_renderer.html">CRenderer</a></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;{</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keyword">public</span>:     <span class="comment">// les fonctions suivantes peuvent être appelées par d&#39;autres classes / programmes</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="comment">// constructeur par défaut de l&#39;objet (appeler automatiquement à la déclaration (si l&#39;objet n&#39;est pas un pointeur))</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="comment">// rien à mettre dedans pour le moment, notre programme n&#39;a pas besoin d&#39;objets temporaires</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <a class="code" href="class_c_renderer.html#a0405b4e5059dcda9c5072d5fd7e7d6fc">CRenderer</a>();</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="comment">// constructeur de l&#39;objet (appelée uniquement par la classe CApplication !!!!!!)</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <a class="code" href="class_c_renderer.html#a0405b4e5059dcda9c5072d5fd7e7d6fc">CRenderer</a>(<a class="code" href="struct_window_setup.html">WindowSetup</a>* windowSetup, <a class="code" href="struct_user_events.html">UserEvents</a>* <a class="code" href="struct_user_events.html">UserEvents</a>, <a class="code" href="class_c_camera.html">CCamera</a>* camera);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="comment">// Autre façon de créer le renderer (appelée uniquement par la classe CApplication !!!!!!)</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_renderer.html#a7ce1242671a1005ff04e67a1cd35b538">Create</a>(<a class="code" href="struct_window_setup.html">WindowSetup</a>* windowSetup, UserEvents* UserEvents, <a class="code" href="class_c_camera.html">CCamera</a>* camera);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="comment">// Destructeur de l&#39;objet appeler automatiquement à la fin de la fonction main (si l&#39;objet n&#39;est pas un pointeur))</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="comment">// rien à mettre dedans pour le moment, notre programme n&#39;a pas besoin d&#39;objets temporaires</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <a class="code" href="class_c_renderer.html#acb0a66a0d9205fe5f24cec41f0e0b249">~CRenderer</a>();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="comment">// fonction d&#39;initialisation, initialie OPENGL  (appelée uniquement par la classe CApplication !!!!!!)</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_renderer.html#a4253c2477ff48b0a50b2d6e256aeee78">Init</a>();</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="comment">// fonction d&#39;affichage appelé à chaque bouche de rendu (appelée uniquement par la classe CApplication !!!!!!)</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_renderer.html#ac2fb4f50b7bd87f667d0f27640d6f97e">StartRender</a>();</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="comment">// fonction qui permet de configurer les options propres au renderer</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <a class="code" href="struct_renderer_setup.html">RendererSetup</a>*  <a class="code" href="class_c_renderer.html#ade810b90f573f4e63c2c76b89778dfa0">SetUpRenderer</a>();</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="comment">// fonction d&#39;initialisation de la transformation de projection</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_renderer.html#a02dc846e2a724aec1a5955868c1cea4d">LoadProjectionMatrix</a>(<a class="code" href="class_c_matrix44.html" title="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</a>&amp; projection);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="comment">// fonction dde mise à jour de la transformation de vue</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_renderer.html#a7c935b45be28e843a16f9c0d06545351">LoadViewMatrix</a>(<span class="keyword">const</span> <a class="code" href="class_c_matrix44.html" title="[SmrCoreMath] define float 4*4 Matrix">CMatrix44</a>&amp; view);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="comment">// lancement d&#39;une phase d&#39;affichage 2D (A appeler éventuellement dans OnRender()</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_renderer.html#a304c6e86e556ebaf250e46342b99a95e">Start2DRender</a>();</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="comment">// fin d&#39;affichage 2D (A appeler éventuellement dans OnRender()</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_renderer.html#a180311e3b15212752710a0ad66cedcb6">End2DRender</a>();</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="comment">// Affichage d&#39;un texte</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="comment">// \param string : le texte</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="comment">// \param int : position en x</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="comment">// \param int : position en y</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="comment">// \param TextSize : taille du texte</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="comment">// \param CVector3 : couleur du texte RGB, r,g,v \in [0,1]</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="code" href="class_c_renderer.html#ae92b4f96fd8512b28a3800cd673c73e6a4bc17bab5c43df73339d80f85ea9e3ee">  216</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_c_renderer.html#ae92b4f96fd8512b28a3800cd673c73e6">TextSize</a>{<a class="code" href="class_c_renderer.html#ae92b4f96fd8512b28a3800cd673c73e6af4f0a0fc69b0084780bcfe9e489ef96f">TS_10</a>, <a class="code" href="class_c_renderer.html#ae92b4f96fd8512b28a3800cd673c73e6ab44fb4c932da34b5f1649a02ac7738e0">TS_12</a>, <a class="code" href="class_c_renderer.html#ae92b4f96fd8512b28a3800cd673c73e6a4bc17bab5c43df73339d80f85ea9e3ee">TS_18</a>};</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_renderer.html#a967c742c349b52eac2551fa8b1567814">DrawText</a>(<span class="keyword">const</span> <a class="code" href="glext_8h.html#a06b88fc81ad0b30d1512e9609e3d7c82">std::string</a>&amp; text, <span class="keywordtype">int</span> <a class="code" href="gl_8h.html#a0cdec8e97a75ee9458b23d152bf962d4">x</a>, <span class="keywordtype">int</span> <a class="code" href="gl_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a>, <a class="code" href="class_c_renderer.html#ae92b4f96fd8512b28a3800cd673c73e6">TextSize</a> <a class="code" href="gl_8h.html#ad585a1393cfa368fa9dc3d8ebff640d5">s</a> = <a class="code" href="class_c_renderer.html#ae92b4f96fd8512b28a3800cd673c73e6ab44fb4c932da34b5f1649a02ac7738e0">TS_12</a>, <a class="code" href="class_c_vector3.html">CVector3</a> <a class="code" href="glext_8h.html#a3ea846f998d64f079b86052b6c4193a8">color</a> = <a class="code" href="class_c_vector3.html">CVector3</a>(1.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>, 0.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>, 0.0<a class="code" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">f</a>));</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="keyword">protected</span>:  <span class="comment">// les fonctions suivantes peuvent être appelées seulement pas cettte même classe et les classes filles de cette classe</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="comment">// Données membres</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno"><a class="code" href="class_c_renderer.html#adabcf6d79f19667e8ed9a9fd0fb2484b">  226</a></span>&#160;    <a class="code" href="struct_window_setup.html">WindowSetup</a>*    <a class="code" href="class_c_renderer.html#adabcf6d79f19667e8ed9a9fd0fb2484b">m_windowSetup</a>   ;   <span class="comment">// config et evenement liés à la fenêtre</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno"><a class="code" href="class_c_renderer.html#aecc712a89cf23200f0f18a4411b77416">  227</a></span>&#160;    <a class="code" href="class_c_camera.html">CCamera</a>*            <a class="code" href="class_c_renderer.html#aecc712a89cf23200f0f18a4411b77416">m_camera</a>        ;   <span class="comment">// la camera</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno"><a class="code" href="class_c_renderer.html#a83fe85f084b151b323e6a15f1f6aa325">  228</a></span>&#160;    <a class="code" href="struct_renderer_setup.html">RendererSetup</a>   <a class="code" href="class_c_renderer.html#a83fe85f084b151b323e6a15f1f6aa325">m_rendererSetup</a> ;   <span class="comment">// config et evenement du renderer</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="comment">// fonction qui affiche un plan dans l&#39;espace 3d</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_renderer.html#a21d9ea20232f017980f6ad52b643ccf1">DrawGround</a>(<span class="keywordtype">float</span> _size);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="comment">// Affichage d&#39;un texte</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_renderer.html#a967c742c349b52eac2551fa8b1567814">DrawText</a>(<span class="keyword">const</span> <a class="code" href="glext_8h.html#a06b88fc81ad0b30d1512e9609e3d7c82">std::string</a>&amp; text, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">void</span> *police);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;};</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="comment">// les fonctions inline permette une optimisation du code. Brievement, le corps des fonctions suivantes</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="comment">// remplace les valeurs appelés dans le code par ces mêmes fonctions</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="code" href="class_c_renderer.html#a0405b4e5059dcda9c5072d5fd7e7d6fc">  246</a></span>&#160;<span class="keyword">inline</span>  <a class="code" href="class_c_renderer.html#a0405b4e5059dcda9c5072d5fd7e7d6fc">CRenderer::CRenderer</a>() :m_camera() {}</div>
+<div class="line"><a name="l00247"></a><span class="lineno"><a class="code" href="class_c_renderer.html#acb0a66a0d9205fe5f24cec41f0e0b249">  247</a></span>&#160;<span class="keyword">inline</span>  <a class="code" href="class_c_renderer.html#acb0a66a0d9205fe5f24cec41f0e0b249">CRenderer::~CRenderer</a>(){<a class="code" href="class_c_renderer.html#adabcf6d79f19667e8ed9a9fd0fb2484b">m_windowSetup</a> = 0;}</div>
+<div class="line"><a name="l00248"></a><span class="lineno"><a class="code" href="class_c_renderer.html#abfcaab7ed83b6d8bed61b0f9e2ed3e75">  248</a></span>&#160;<span class="keyword">inline</span>  <a class="code" href="class_c_renderer.html#a0405b4e5059dcda9c5072d5fd7e7d6fc">CRenderer::CRenderer</a>(<a class="code" href="struct_window_setup.html">WindowSetup</a>* windowSetup, UserEvents* UserEvents,  <a class="code" href="class_c_camera.html">CCamera</a>* camera)</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    :m_windowSetup(windowSetup), m_camera(camera)</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;{</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <a class="code" href="class_c_renderer.html#aecc712a89cf23200f0f18a4411b77416">m_camera</a>-&gt;<a class="code" href="class_c_camera.html#a8378bd672ab258ca762326ca50a241cc" title="pointeur sur l&#39;objet partagé mouse events mis à jour par le GUI">m_UserEvents</a> = UserEvents;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;}</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno"><a class="code" href="class_c_renderer.html#a7ce1242671a1005ff04e67a1cd35b538">  254</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_renderer.html#a7ce1242671a1005ff04e67a1cd35b538">CRenderer::Create</a>(<a class="code" href="struct_window_setup.html">WindowSetup</a>* windowSetup, UserEvents* UserEvents, <a class="code" href="class_c_camera.html">CCamera</a>* camera)</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;{</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <a class="code" href="class_c_renderer.html#adabcf6d79f19667e8ed9a9fd0fb2484b">m_windowSetup</a> = windowSetup;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <a class="code" href="class_c_renderer.html#aecc712a89cf23200f0f18a4411b77416">m_camera</a> = camera;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <a class="code" href="class_c_renderer.html#aecc712a89cf23200f0f18a4411b77416">m_camera</a>-&gt;<a class="code" href="class_c_camera.html#a8378bd672ab258ca762326ca50a241cc" title="pointeur sur l&#39;objet partagé mouse events mis à jour par le GUI">m_UserEvents</a> = UserEvents;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;}</div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="code" href="class_c_renderer.html#ade810b90f573f4e63c2c76b89778dfa0">  260</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="struct_renderer_setup.html">RendererSetup</a>*   <a class="code" href="class_c_renderer.html#ade810b90f573f4e63c2c76b89778dfa0">CRenderer::SetUpRenderer</a>()  { <span class="keywordflow">return</span> &amp;<a class="code" href="class_c_renderer.html#a83fe85f084b151b323e6a15f1f6aa325">m_rendererSetup</a>;}</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor">#endif // __RENDERER_H__ fin de la routine</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9124c449f6ad3e74f678d7ea8bacc325.html">appliBase</a></li><li class="navelem"><a class="el" href="_c_renderer_8h.html">CRenderer.h</a></li>
+    <li class="footer">GÃ©nÃ©rÃ© le Vendredi FÃ©vrier 21 2014 22:34:25 pour Tetris par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
+  </ul>
+</div>
+</body>
+</html>

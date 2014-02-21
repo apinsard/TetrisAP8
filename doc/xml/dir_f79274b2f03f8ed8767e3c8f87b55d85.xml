@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_f79274b2f03f8ed8767e3c8f87b55d85" kind="dir">
+    <compoundname>/home/cj/workspace/Tetris/src/test/testCOPiece</compoundname>
+    <innerfile refid="test_c_o_piece_2_c_projet_tetris_piece_8cpp">CProjetTetrisPiece.cpp</innerfile>
+    <innerfile refid="test_c_o_piece_2_c_projet_tetris_piece_8h">CProjetTetrisPiece.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/cj/workspace/Tetris/src/test/testCOPiece/"/>
+  </compounddef>
+</doxygen>
