@@ -1,6 +1,7 @@
 # Répertoire des fichiers sources du projet
-SRC = ../src
-INCDIRS = -I../src/appliBase
+SHELL    = /bin/bash
+SRC      = ../src
+INCDIRS  = -I../src/appliBase
 INCDIRS += -I../src/glut
 INCDIRS += -I../src/math
 INCDIRS += -I../src/tetris
@@ -47,10 +48,12 @@ $(BIN)/main.o: $(SRC)/main.cpp
 #------------------------------------------------------------
 # compilation et exécution des tests
 #------------------------------------------------------------
+binArbo:
+	mkdir -p $(BIN)/testC{T,O,I,Z1,Z2,L1,L2}Piece
 
 test: testPiece
 
-testPiece: testCTPiece testCOPiece testCIPiece testCZ1Piece testCZ2Piece testCL1Piece testCL2Piece
+testPiece: binArbo testCTPiece testCOPiece testCIPiece testCZ1Piece testCZ2Piece testCL1Piece testCL2Piece
 
 $(BIN)/%.o: $(SRC)/test/%.cpp
 	$(GPP) -o $@ -c $<
