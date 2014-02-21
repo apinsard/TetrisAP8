@@ -98,5 +98,5 @@ actuellement).
 ### Gestion de l'aléatoire
 
 Lorsque les pièces défilent très rapidement (niveau élevé ou lorsqu'on laisse
-enfoncé la touche `↓`), la forme et la couleur des pièces ne change pas.
+enfoncé la touche `↓` ou `space`), la forme et/ou la couleur des pièces ne change pas.
 
