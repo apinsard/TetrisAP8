@@ -12,9 +12,11 @@ Par Julien Cadic et Antoine Pinsard
 
 ## Avancement
 
-Les pièces T, I, O, Z1, Z2, L1 et L2 ont été implémentées et testées. Tous les
-déplacements ont été implémentés à l'exception de la « descente rapide » *(Cf.
-Fonctionnalités à implémenter)*.
+Les pièces I, L1, L2, O, T, Z1 et Z2 ont été implémentées et testées. Tous les
+déplacements sont gérés, y compris la « chute nette » avec la barre d'espace. La
+gestion du score est également implémentée, avec des niveaux plus rapides au fur
+et à mesure que l'on détruit des lignes. Lorsque le jeu est terminé, on affiche
+« Game Over », le score obtenu et le niveau atteint.
 
 ## Choix techniques
 
@@ -24,12 +26,12 @@ Nous avons fait le choix de ne pas implémenter la méthode
 `CPieceAbstract::Turn()` dans les classes filles et d'effectuer la rotation de
 la pièce directement dans les méthodes `CPieceAbstract::TurnRight()` et
 `CPieceAbstract::TurnLeft()`. En effet, pour la rotation nous ne nous basons pas
-sur une disjonction de cas en fonction de l'état de la pièce, mais sur un calcul
-dépendant de la matrice de la pièce et du sens de rotation. Pour faire tourner
-une pièce vers la droite, il suffit, pour chaque élément de la matrice, de
-modifier son ordonnée en son abscisse actuelle, et son abscisse en la taille de
-la matrice moins 1 moins son ordonnée. Et pour la rotation vers la gauche, c'est
-l'inverse. Ce qui nous donne simplement :
+sur le traitement séparé de chaque état de la pièce. Nous calculons simplement
+la nouvelle position à partir de la matrice de la pièce et du sens de rotation.
+Pour faire tourner une pièce vers la droite, il suffit, pour chaque élément de
+la matrice, de modifier son ordonnée en son abscisse actuelle, et son abscisse
+en la taille de la matrice moins 1 moins son ordonnée. Pour la rotation vers la
+gauche, c'est l'inverse. Ce qui nous donne plus formellement :
 
 * Rotation vers droite :
   * newRow = oldCol
@@ -40,18 +42,18 @@ l'inverse. Ce qui nous donne simplement :
 
 L'intérêt est d'avoir une méthode générique à toutes les pièces, plutôt que de
 faire une disjonction de cas pour chaque sens (Top, Right, Bottom, Left) de
-chaque pièce (T, I, O, L1, L2, Z1, Z2). Nous avons ainsi deux cas à gérer au
+chaque pièce (I, L1, L2, 0, T, Z1, Z2). Nous avons ainsi deux cas à gérer au
 lieu de 21 (`4×6 - 3`, la pièce O étant "insensible" à la rotation).
 
 ### Génération aléatoire des pièces
 
-Ayant du mal à cerner le but de la classe CRandomize et comment l'utiliser, nous
-avons fait le choix d'utiliser la fonction `rand()` de C++. Nous générons un
-nombre entre 0 et 6 associé arbitrairement à une pièce.
+Ayant du mal à cerner le but de la classe CRandomizer et comment l'utiliser,
+nous avons fait le choix d'utiliser la fonction `rand()` de C++. Nous générons
+un nombre entre 0 et 6 associé arbitrairement à une pièce.
 
 Au niveau des couleurs nous avons aussi généré le taux de rouge, vert et bleu
-aléatoirement. L'inconvénient est que le contraste de la pièce et du fond peut
-être un peu faible. Celà rajoute un peu de "difficulté" au jeu. Ce serait
+aléatoirement. L'inconvénient est que le contraste entre la pièce et le fond
+peut être un peu faible. Celà rajoute un peu de "difficulté" au jeu. Ce serait
 intéressant d'évaluer ce contraste et regénérer la couleur s'il est jugé trop
 faible par l'algorithme. Dans la grande majorité des cas, la pièce est tout de
 même bien visible.
@@ -82,21 +84,14 @@ arguments (`../bin/testC?Piece.bin` en remplaçant évidemment le `?` par la pi�
 Lance tous les tests des pièces (testCTPiece, testCIPiece, testCOPiece, ...)
 
 ### `make test`
-Lance l'intégralité des tests en mode console
+Lance l'intégralité des tests en mode console (seulement `make testPiece`
+actuellement).
 
-## Fonctionnalités à implémenter
+## Fonctionnalités à implémenter (Todo list)
 
-### « Descente rapide » avec la barre d'espace
-
-Cette fonctionnalité n'a pas été implémentée pour l'instant car elle n'est pas
-indispensable : Laisser enfoncer la touche `↓` a un effet similaire. De plus
-elle est légèrement plus complexe à implémenter que les autres mouvements.
-Effectivement, lors d'une collision, on replace la pièce dans la position
-précédente, ce qui a tout son sens pour un déplacement d'une unité. Mais pas
-dans un déplacement de plusieurs cases en même temps. Il faudrait en fait
-descendre la pièce de une case *n* fois plutôt que la descendre une fois de *n*
-cases. Ou, pour faire complètement tomber la pièce, la faire descendre de une
-case jusqu'à ce que l'on rencontre une collision.
+* Afficher la prochaine pièce au dessus du score.
+* Permettre de recommencer une partie après un Game Over.
+* Ajouter du son.
 
 ## Bugs connus
 

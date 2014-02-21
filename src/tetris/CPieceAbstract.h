@@ -39,7 +39,7 @@ class CPieceAbstract {
       \brief rotation de la piece en fonction de l'état courant (à redéfinir
       dans les classes filles)
       */
-    // virtual void Turn() = 0; ///< Not used
+    // virtual void Turn() = 0; ///< Non utilisé
 
     /**
       \brief renvoit la matrice d'état courante
@@ -89,6 +89,9 @@ class CPieceAbstract {
       */
     void SetRowIndex ( int newRowIndex );
 
+    /**
+     * \return la dimension de la pièce
+     */
     unsigned int GetDim();
 
     /**

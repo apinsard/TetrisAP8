@@ -124,7 +124,8 @@ ActionResult CTetrisGame::MovePiece(PieceAction action) {
       this->m_pPiece->SetIncDecColIndex(-1);
       break;
     case PA_MoveBottom2:
-      break; // Non implémenté
+      while (MovePiece(PA_MoveBottom) == AR_Ok);
+      return MovePiece(PA_MoveBottom);
     case PA_MoveBottom:
       this->m_pPiece->SetIncDecRowIndex(-1);
       break;
@@ -146,8 +147,6 @@ ActionResult CTetrisGame::MovePiece(PieceAction action) {
       case PA_MoveLeft:
         this->m_pPiece->SetIncDecColIndex(1);
         break;
-      case PA_MoveBottom2:
-        break; // Non implémenté
       case PA_MoveBottom:
         this->m_pPiece->SetIncDecRowIndex(1);
 
