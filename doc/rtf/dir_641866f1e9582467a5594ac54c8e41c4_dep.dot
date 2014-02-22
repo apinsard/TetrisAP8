@@ -1,9 +1,0 @@
-digraph "/home/cj/workspace/Tetris/src/test/testCZ2Piece" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_120ed4da3e3217b1e7fc0b4f48568e79 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="test" fontname="Helvetica", fontsize="10", URL="dir_120ed4da3e3217b1e7fc0b4f48568e79.html"]
-  dir_641866f1e9582467a5594ac54c8e41c4 [shape=box, label="testCZ2Piece", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_641866f1e9582467a5594ac54c8e41c4.html"];
-  }
-}

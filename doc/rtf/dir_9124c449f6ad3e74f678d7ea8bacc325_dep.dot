@@ -1,9 +1,0 @@
-digraph "/home/cj/workspace/Tetris/src/appliBase" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_68267d1309a1af8e8297ef4c3efbcdba {
-    graph [ bgcolor="#ddddee", pencolor="black", label="src" fontname="Helvetica", fontsize="10", URL="dir_68267d1309a1af8e8297ef4c3efbcdba.html"]
-  dir_9124c449f6ad3e74f678d7ea8bacc325 [shape=box, label="appliBase", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_9124c449f6ad3e74f678d7ea8bacc325.html"];
-  }
-}
